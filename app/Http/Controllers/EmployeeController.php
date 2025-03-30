@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Employee;
 use Illuminate\Support\Facades\Validator;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class EmployeeController extends Controller
 {
@@ -18,21 +21,74 @@ class EmployeeController extends Controller
     // ✅ Create a New Employee
     public function store(Request $request)
     {
-        // Validate request
-        $validator = Validator::make($request->all(), [
-            'employee_name' => 'required|string|max:255',
-            'department' => 'required|string|max:255',
-            'work_station' => 'required|string|max:255',
-            'status' => 'required|in:active,inactive'
-        ]);
+    
+        if($request->access_for_login =="true"){
+            
+            $validator = Validator::make($request->all(), [
+                'employee_name' => 'required|string|max:255',
+                'department' => 'required|string|max:255',
+                'work_station' => 'required|string|max:255',
+                'status' => 'required|in:active,inactive',
+                'access_for_login' =>'required|in:true,false',
+                'role_id'=>'required',
+                'email' => 'required|email:dns|unique:users,email',
+                'password' => 'required|min:6',
 
-        if ($validator->fails()) {
-            return response()->json(['error' => $validator->errors()], 400);
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['error' => $validator->errors()], 400);
+            }
+        }else {
+            $validator = Validator::make($request->all(), [
+                'employee_name' => 'required|string|max:255',
+                'department' => 'required|string|max:255',
+                'work_station' => 'required|string|max:255',
+                'status' => 'required|in:active,inactive'
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['error' => $validator->errors()], 400);
+            }
         }
 
-        $employee = Employee::create($request->all());
+        if($request->access_for_login==="true"){
+            
+            $employee = Employee::create([
+                'employee_name' => $request->employee_name,
+                'department' => $request->department,
+                'work_station' => $request->work_station,
+                'status' => $request->status,
+                'access_for_login' => $request->access_for_login,
+            ]);
+        
+            // Ensure Employee was created successfully
+            if ($employee) {
+                // Create User
+                $user = User::create([
+                    'employee_id' => $employee->id, // Use object property instead of array notation
+                    'role_id' => $request->role_id,
+                    'name' => $request->employee_name,
+                    'email' => $request->email,
+                    'password' => Hash::make($request->password),
+                ]);
 
-        return response()->json(['message' => 'Employee created successfully', 'employee' => $employee], 201);
+            // Generate a JWT token for the user
+            $token = JWTAuth::fromUser($user);
+            }
+
+            return response()->json([
+                'message' => 'Employee and user created successfully',
+                'employee' => $employee,
+                'user' => $user,
+                'token' => $token,
+            ], 200);
+
+        }else{
+            $employee = Employee::create($request->all());
+            return response()->json(['message' => 'Employee created successfully', 'employee' => $employee], 200);
+        }
+
     }
 
     // ✅ Get Single Employee
@@ -42,8 +98,13 @@ class EmployeeController extends Controller
         if (!$employee) {
             return response()->json(['error' => 'Employee not found'], 404);
         }
-
-        return response()->json($employee, 200);
+        $usersdata = User::where('employee_id',$id)->first();
+        if(!empty($usersdata)){
+            return response()->json(['employee'=>$employee, 'user'=>$usersdata], 200);
+        }else{
+            return response()->json(['employee'=>$employee], 200);
+        }
+        
     }
 
     // ✅ Update Employee
@@ -54,21 +115,111 @@ class EmployeeController extends Controller
             return response()->json(['error' => 'Employee not found'], 404);
         }
 
-        // Validate request
-        $validator = Validator::make($request->all(), [
-            'employee_name' => 'required|string|max:255',
-            'department' => 'required|string|max:255',
-            'work_station' => 'required|string|max:255',
-            'status' => 'required|in:active,inactive'
-        ]);
+        if($request->access_for_login =="true"){
+            
+            $validator = Validator::make($request->all(), [
+                'employee_name' => 'required|string|max:255',
+                'department' => 'required|string|max:255',
+                'work_station' => 'required|string|max:255',
+                'status' => 'required|in:active,inactive',
+                'access_for_login' =>'required|in:true,false',
+                'role_id'=>'required',
+                'email' => 'required|email:dns|unique:users,email',
+                'password' => 'required|min:6',
 
-        if ($validator->fails()) {
-            return response()->json(['error' => $validator->errors()], 400);
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['error' => $validator->errors()], 400);
+            }
+        }else {
+            $validator = Validator::make($request->all(), [
+                'employee_name' => 'required|string|max:255',
+                'department' => 'required|string|max:255',
+                'work_station' => 'required|string|max:255',
+                'status' => 'required|in:active,inactive'
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['error' => $validator->errors()], 400);
+            }
         }
 
-        $employee->update($request->all());
+        if($request->access_for_login==="true"){
+            
+            // $employee = Employee::create([
+            //     'employee_name' => $request->employee_name,
+            //     'department' => $request->department,
+            //     'work_station' => $request->work_station,
+            //     'status' => $request->status,
+            //     'access_for_login' => $request->access_for_login,
+            // ]);
 
-        return response()->json(['message' => 'Employee updated successfully', 'employee' => $employee], 200);
+            $employee->update([
+                'employee_name' => $request->employee_name,
+                'department' => $request->department,
+                'work_station' => $request->work_station,
+                'status' => $request->status,
+                'access_for_login' => $request->access_for_login,
+            ]);
+        
+            // Ensure Employee was created successfully
+            if ($employee) {
+                // Create User
+                $usersdata = User::where('employee_id',$id)->first();
+
+                if(!empty($usersdata)){
+                    $usersdata->update([
+                        'employee_id' => $employee->id, // Use object property instead of array notation
+                        'role_id' => $request->role_id,
+                        'name' => $request->employee_name,
+                        'email' => $request->email,
+                        'password' => Hash::make($request->password),
+                    ]);
+                }else{
+                    $user = User::create([
+                        'employee_id' => $employee->id, // Use object property instead of array notation
+                        'role_id' => $request->role_id,
+                        'name' => $request->employee_name,
+                        'email' => $request->email,
+                        'password' => Hash::make($request->password),
+                    ]);
+    
+                }
+                
+            // Generate a JWT token for the user
+            $token = JWTAuth::fromUser($user);
+            }
+
+            return response()->json([
+                'message' => 'Employee and user created successfully',
+                'employee' => $employee,
+                'user' => $user,
+                'token' => $token,
+            ], 200);
+
+        }else{
+            $employee->update($request->all());
+
+            return response()->json(['message' => 'Employee updated successfully', 'employee' => $employee], 200);
+        }
+        
+
+        // Validate request
+        // $validator = Validator::make($request->all(), [
+        //     'employee_name' => 'required|string|max:255',
+        //     'department' => 'required|string|max:255',
+        //     'work_station' => 'required|string|max:255',
+        //     'status' => 'required|in:active,inactive'
+        // ]);
+
+        // if ($validator->fails()) {
+        //     return response()->json(['error' => $validator->errors()], 400);
+        // }
+
+        // $employee->update($request->all());
+
+        // return response()->json(['message' => 'Employee updated successfully', 'employee' => $employee], 200);
     }
 
     // ✅ Delete Employee
@@ -80,7 +231,11 @@ class EmployeeController extends Controller
         }
 
         $employee->delete();
+        $usersdata = User::where('employee_id',$id)->first();
+        if(!empty($usersdata)){
 
+            $usersdata->delete();
+        }
         return response()->json(['message' => 'Employee deleted successfully'], 200);
     }
 }

@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('employees', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('employee_name');
-            $table->string('department');
-            $table->string('work_station');
-            $table->enum('access_for_login', ['true', 'false'])->default('false');
-            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->string('product_id');
+            $table->string('sku');
+            $table->integer('current_stock');
+            $table->integer('threshold_count');
+            $table->string('location');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('employees');
+        Schema::dropIfExists('orders');
     }
 };

@@ -21,8 +21,8 @@ class MeasurementUnitController extends Controller
         // Validate request
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255|unique:measurement_units',
-            'description' => 'nullable|string',
-            'status' => 'required|in:active,inactive'
+            // 'description' => 'nullable|string',
+            // 'status' => 'required|in:active,inactive'
         ]);
 
         if ($validator->fails()) {
@@ -56,8 +56,8 @@ class MeasurementUnitController extends Controller
         // Validate request
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255|unique:measurement_units,name,' . $id,
-            'description' => 'nullable|string',
-            'status' => 'required|in:active,inactive'
+            // 'description' => 'nullable|string',
+            // 'status' => 'required|in:active,inactive'
         ]);
 
         if ($validator->fails()) {

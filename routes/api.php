@@ -14,7 +14,11 @@ use App\Http\Controllers\WeightUnitController;
 use App\Http\Controllers\MeasurementUnitController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\CurrencySettingController;
-
+use App\Http\Controllers\VendorController;
+use App\Http\Controllers\BarcodeSettingController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ScanInOutProductController;
 
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -119,11 +123,66 @@ Route::prefix('employees')->group(function () {
 
 Route::prefix('currencies')->group(function () {
     Route::get('/', [CurrencySettingController::class, 'index']); // Get all currencies
-    Route::post('/', [CurrencySettingController::class, 'store']); // Create currency
-    Route::get('/{id}', [CurrencySettingController::class, 'show']); // Get single currency
-    Route::put('/{id}', [CurrencySettingController::class, 'update']); // Update currency
-    Route::delete('/{id}', [CurrencySettingController::class, 'destroy']); // Delete currency
+    Route::post('/add', [CurrencySettingController::class, 'store']); // Create currency
+    Route::get('/edit/{id}', [CurrencySettingController::class, 'show']); // Get single currency
+    Route::put('/update/{id}', [CurrencySettingController::class, 'update']); // Update currency
+    Route::delete('/delete/{id}', [CurrencySettingController::class, 'destroy']); // Delete currency
 });
 
 
+// vendor api
+Route::prefix('vendor')->group(function () {
+    Route::get('/', [VendorController::class, 'index']); // Get all currencies
+    Route::post('/add', [VendorController::class, 'store']); // Create currency
+    Route::get('/edit/{id}', [VendorController::class, 'show']); // Get single currency
+    Route::put('/update/{id}', [VendorController::class, 'update']); // Update currency
+    Route::delete('/delete/{id}', [VendorController::class, 'destroy']); // Delete currency
+});
+
+
+// barcode setting
+Route::prefix('barcode-settings')->group(function () {
+     Route::get('/', [BarcodeSettingController::class, 'show']); // Get single currency
+    Route::put('/update', [BarcodeSettingController::class, 'update']); // Update currency
+   });
+
+// product 
+   Route::prefix('products')->group(function () {
+    Route::get('/', [ProductController::class, 'index']); // Get all currencies
+    Route::post('/add', [ProductController::class, 'store']); // Create currency
+    Route::get('/edit/{id}', [ProductController::class, 'show']); // Get single currency
+    Route::get('/view/{id}', [ProductController::class, 'view']); // Get single currency
+    Route::put('/update/{id}', [ProductController::class, 'update']); // Update currency
+    Route::put('/updateStock/{product_id}', [ProductController::class, 'updateStock']); // Update currency
+    Route::delete('/delete/{id}', [ProductController::class, 'destroy']); // Delete currency
+
+    Route::get('inventoryAlert', [ProductController::class, 'inventoryAlert']); // Get all currencies
+});
+
+Route::prefix('reports')->group(function () {
+
+    Route::get('inventoryAdjustments', [ProductController::class, 'inventoryAdjustmentsReport']); // Get all currencies
+    
+});
+
+Route::get('inventorySummaryReport', [ScanInOutProductController::class, 'inventorySummaryReport']); // Get all currencies
+
+Route::prefix('order')->group(function () {
+
+    Route::get('/', [OrderController::class, 'index']); // Get all currencies
+    Route::post('/add', [OrderController::class, 'store']); // Create currency
+});
+
+Route::prefix('scan-in')->group(function () {
+
+    // Route::get('/', [ScanInOutProductController::class, 'index']); // Get all currencies
+    Route::post('/add', [ScanInOutProductController::class, 'storeIn']); // Create currency
+});
+
+Route::prefix('scan-out')->group(function () {
+
+    // Route::get('/', [ScanInOutProductController::class, 'index']); // Get all currencies
+    Route::post('/add', [ScanInOutProductController::class, 'storeOut']); // Create currency
+});
+Route::get('recent_scan', [ScanInOutProductController::class, 'index']); // Get all currencies
 });

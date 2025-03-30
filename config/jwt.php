@@ -102,7 +102,7 @@ return [
     */
 
     'ttl' => env('JWT_TTL', 60),
-
+    // 'ttl' => null,  // Tokens will not expire
     /*
     |--------------------------------------------------------------------------
     | Refresh time to live
