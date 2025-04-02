@@ -25,13 +25,25 @@ class Product extends Model
         'commit_stock_check' => 'boolean',
     ];
 
+    // public function category()
+    // {
+    //     return $this->belongsTo(Category::class);
+    // }
+
+    // public function vendor()
+    // {
+    //     return $this->belongsTo(Vendor::class);
+    // }
+
     public function category()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class, 'category');
     }
-
+    
     public function vendor()
     {
-        return $this->belongsTo(Vendor::class);
+        return $this->belongsTo(Vendor::class, 'vendor');
     }
+    
 }
+

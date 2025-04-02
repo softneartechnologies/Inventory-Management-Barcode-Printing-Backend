@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('product_name');
             $table->string('sku')->unique();
-            $table->string('generated_barcode')->nullable();
-            $table->string('generated_qrcode')->nullable();
+            $table->text('generated_barcode')->nullable();
+            $table->text('generated_qrcode')->nullable();
             $table->string('units');
             $table->string('category');
             $table->string('sub_category')->nullable();

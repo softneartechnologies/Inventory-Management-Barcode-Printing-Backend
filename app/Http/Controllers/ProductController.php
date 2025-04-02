@@ -392,29 +392,190 @@ class ProductController extends Controller
         }
 
 
-    public function inventoryAdjustmentsReport(){
+    // public function inventoryAdjustmentsReport(){
 
-        // $stock = Stock::all();
+    //     // $stock = Stock::all();
 
-        $stock = Stock::with('product:id,product_name,sku,category', 'product.category:id,name')->get();
+    //     $stock = Stock::with('product:id,product_name,sku,category', 'product.category:id,name')->get();
 
-        // Transform data to move product_name to the root level
-        $stock = $stock->map(function ($stock) {
-            return [
-                'id' => $stock->id,
-                'product_id' => $stock->product_id,
-                'sku' => $stock->product->sku,
-                'current_stock' => $stock->current_stock,
-                'location' => $stock->location,
-                'created_at' => $stock->created_at,
-                'updated_at' => $stock->updated_at,
-                'product_name' => $stock->product->product_name ?? null, // Move product_name outside
-                'category' => $stock->product->category->name ?? null, // Ensure category exists
-            ];
-        });
+    //     // Transform data to move product_name to the root level
+    //     $stock = $stock->map(function ($stock) {
 
-        return response()->json(['inventory_adjustments' => $stock], 200);
+    //         if($stock->adjustment == 'subscription'){
+    //             $new_stock =  $stock->current_stock -$stock->quantity;
+    //             $adjustment =  ' - '.$stock->quantity;
+                
+
+    //         }else if($stock->adjustment == 'add'){
+    //             $new_stock =  $stock->current_stock + $stock->quantity;
+    //             $adjustment =  ' + '.$stock->quantity;
+    //         }
+           
+    //         return [
+    //             'id' => $stock->id,
+    //             'product_id' => $stock->product_id,
+    //             'product_name' => $stock->product->product_name ?? null, // Move product_name outside
+    //             'sku' => $stock->product->sku,
+    //             'category_name' => $stock->product->category->name ?? null, // Ensure category exists
+    //             'vendor_name' => $stock->product->category->name ?? null, // Ensure category exists
+    //             'previous_stock' => $stock->current_stock,
+    //             'new_stock' => $stock->new_stock,
+    //             'adjustment' => $adjustment,
+    //             'reason' => $stock->reason_for_update,
+    //             'location' => $stock->location,
+    //             'created_at' => $stock->created_at,
+    //             'updated_at' => $stock->updated_at,
+                
+                
+    //         ];
+    //     });
+
+    //     return response()->json(['inventory_adjustments' => $stock], 200);
        
+    // }
+
+//     public function inventoryAdjustmentsReport()
+// {
+//     // Fetch stock details with related product, vendor, and category
+//     $stock = Stock::with([
+//         'product:id,product_name,sku,category,vendor',
+//         'product.category:id,name',
+//         'product.vendor:id,vendor_name'
+//     ])->get();
+
+//     // Transform data
+//     $stock = $stock->map(function ($stock) {
+//         // Calculate adjustment
+//         if ($stock->adjustment == 'subscription') {
+//             $new_stock = $stock->current_stock - $stock->quantity;
+//             $adjustment = ' - ' . $stock->quantity;
+//         } elseif ($stock->adjustment == 'add') {
+//             $new_stock = $stock->current_stock + $stock->quantity;
+//             $adjustment = ' + ' . $stock->quantity;
+//         }
+
+//         return [
+//             'id' => $stock->id,
+//             'product_id' => $stock->product_id,
+//             'product_name' => $stock->product->product_name ?? null,
+//             'sku' => $stock->product->sku ?? null,
+//             'category_name' => $stock->product->category->name ?? null,
+//             'vendor_name' => $stock->product->vendor->vendor_name ?? null,
+//             'previous_stock' => $stock->current_stock,
+//             'new_stock' => $new_stock,
+//             'adjustment' => $adjustment,
+//             'reason' => $stock->reason_for_update,
+//             'location' => $stock->location,
+//             'created_at' => $stock->created_at,
+//             'updated_at' => $stock->updated_at
+//         ];
+//     });
+
+//     return response()->json(['inventory_adjustments' => $stock], 200);
+// }
+
+
+public function inventoryAdjustmentsReport()
+{
+    $stocks = Stock::with([
+        'product.category', // Load category via product
+        'product.vendor'    // Load vendor via product
+    ])->get();
+
+
+    $adjustments = $stocks->map(function ($stock) {
+        $adjustmentSymbol = $stock->adjustment == 'subscription' ? '-' : '+';
+        $newStock = $stock->adjustment == 'subscription'
+            ? $stock->current_stock - $stock->quantity
+            : $stock->current_stock + $stock->quantity;
+
+            // print_r($stock->product->category);die;
+        return [
+            'id' => $stock->id,
+            'product_id' => $stock->product_id,
+            'product_name' => $stock->product->product_name ?? 'N/A',
+            'sku' => $stock->product->sku ?? 'N/A',
+            'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
+            'vendor_name' => $stock->product->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+            'previous_stock' => $stock->current_stock,
+            'new_stock' => $newStock,
+            'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+            'reason' => $stock->reason_for_update ?? 'N/A',
+            'location' => $stock->location ?? 'N/A',
+            'created_at' => $stock->created_at,
+            'updated_at' => $stock->updated_at,
+        ];
+    });
+
+    return response()->json(['inventory_adjustments' => $adjustments], 200);
+}
+
+
+
+
+
+    public function uploadCSV(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:csv,txt|max:2048' // Ensure it's a CSV file
+        ]);
+
+        $file = $request->file('file');
+        $handle = fopen($file->getPathname(), "r");
+
+        // Read and validate CSV header
+        $header = fgetcsv($handle);
+        $expectedHeaders = [
+            "Product Name", "SKU", "Units", "Category", "Sub Category", "Manufacturer",
+            "Vendor", "Model", "Storage Location (Rack)", "Description", "Opening Stock",
+            "Selling Cost", "Cost Price", "Project Name", "Weight", "Weight Unit",
+            "Dim.Length", "Dim.Width", "Dim.Depth", "Dim.Measurement Unit",
+            "Inventory Alert (Threhold Count)", "Status", "Returnable"
+        ];
+
+        if ($header !== $expectedHeaders) {
+            return response()->json(['error' => 'Invalid CSV format'], 400);
+        }
+
+        $products = [];
+
+        while ($row = fgetcsv($handle)) {
+            $products[] = [
+                'name' => $row[0],
+                'sku' => $row[1],
+                'units' => $row[2],
+                'category' => $row[3],
+                'sub_category' => $row[4],
+                'manufacturer' => $row[5],
+                'vendor' => $row[6],
+                'model' => $row[7],
+                'storage_location' => $row[8],
+                'description' => $row[9],
+                'opening_stock' => $row[10],
+                'selling_cost' => $row[11],
+                'cost_price' => $row[12],
+                'project_name' => $row[13],
+                'weight' => $row[14],
+                'weight_unit' => $row[15],
+                'dim_length' => $row[16],
+                'dim_width' => $row[17],
+                'dim_depth' => $row[18],
+                'dim_measurement_unit' => $row[19],
+                'inventory_alert' => $row[20],
+                'status' => $row[21],
+                'returnable' => $row[22] === 'Yes' ? 1 : 0,
+                'created_at' => now(),
+                'updated_at' => now()
+            ];
+        }
+
+        fclose($handle);
+
+        Product::insert($products);
+
+        return response()->json([
+            'message' => count($products) . ' products uploaded successfully'
+        ], 201);
     }
 }
 
