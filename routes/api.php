@@ -50,6 +50,7 @@ Route::middleware('auth:api')->group(function () {
 
     // sub category api route
 
+    
     Route::prefix('subcategories')->group(function () {
         Route::get('/', [SubcategoryController::class, 'index']); // Get all subcategories
         Route::post('/add', [SubcategoryController::class, 'store']); // Create subcategory
