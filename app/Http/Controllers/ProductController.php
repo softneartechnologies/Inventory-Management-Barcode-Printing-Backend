@@ -451,6 +451,313 @@ class ProductController extends Controller
 
     return response()->json(['inventory_adjustments' => $adjustments], 200);
 }
+
+public function uploadCSV(Request $request)
+{
+    // ✅ Validate CSV file
+    $request->validate([
+        'file' => 'required|mimes:csv,txt|max:2048' // Max 2MB file
+    ]);
+
+    $file = $request->file('file');
+    $handle = fopen($file->getPathname(), "r");
+
+    // ✅ Read CSV header
+    $header = fgetcsv($handle);
+    $expectedHeaders = [
+        "Product Name", "SKU", "Units", "Category", "Sub Category", "Manufacturer",
+        "Vendor", "Model", "Storage Location (Rack)", "Description", "Opening Stock",
+        "Selling Cost", "Cost Price", "Project Name", "Weight", "Weight Unit",
+        "Dim.Length", "Dim.Width", "Dim.Depth", "Dim.Measurement Unit",
+        "Inventory Alert (Threhold Count)", "Status", "Returnable"
+    ];
+
+    if ($header !== $expectedHeaders) {
+        return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    }
+
+    $products = [];
+    $invalidRows = [];
+    $rowNumber = 2;
+
+    while ($row = fgetcsv($handle)) {
+        if (count($row) !== count($expectedHeaders)) {
+            $invalidRows[] = $rowNumber;
+            continue;
+        }
+
+        // ✅ Validate Required Fields
+        if (empty($row[0]) || empty($row[1])) {
+            $invalidRows[] = $rowNumber;
+            continue;
+        }
+
+        // ✅ Check Duplicate SKU
+        if (Product::where('sku', $row[1])->exists()) {
+            continue; // Skip duplicate SKU
+        }
+
+        $products[] = [
+            'name' => $row[0],
+            'sku' => $row[1],
+            'units' => $row[2],
+            'category' => $row[3],
+            'sub_category' => $row[4],
+            'manufacturer' => $row[5],
+            'vendor' => $row[6],
+            'model' => $row[7],
+            'storage_location' => $row[8],
+            'description' => $row[9],
+            'opening_stock' => (int)$row[10],
+            'selling_cost' => (float)$row[11],
+            'cost_price' => (float)$row[12],
+            'project_name' => $row[13],
+            'weight' => (float)$row[14],
+            'weight_unit' => $row[15],
+            'dim_length' => (float)$row[16],
+            'dim_width' => (float)$row[17],
+            'dim_depth' => (float)$row[18],
+            'dim_measurement_unit' => $row[19],
+            'inventory_alert' => (int)$row[20],
+            'status' => $row[21],
+            'returnable' => strtolower($row[22]) === 'yes' ? 1 : 0,
+            'created_at' => now(),
+            'updated_at' => now()
+        ];
+        $rowNumber++;
+    }
+
+    fclose($handle);
+
+    if (!empty($products)) {
+        Product::insert($products);
+    }
+
+    return response()->json([
+        'message' => count($products) . ' products uploaded successfully',
+        'invalid_rows' => $invalidRows
+    ], 201);
+}
+
+    // public function uploadCsv(Request $request) {
+        
+    //     {
+    //         $request->validate([
+    //             'file' => 'required|file|mimes:csv,txt'
+    //         ]);
+    
+    //         $file = $request->file('file');
+    //         $path = $file->getRealPath();
+            
+    //         $products = [];
+    //         $errors = [];
+           
+    //         if (($handle = fopen($path, "r")) !== FALSE) {
+    //             // Skip header row
+    //             $headers = fgetcsv($handle);
+                
+    //             $row = 2; // Start from row 2 (after headers)
+    //             while (($data = fgetcsv($handle)) !== FALSE) {
+    //                 $productData = array_combine($headers, $data);
+    //                 // print_r($productData);die;
+    //                 $generator = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+    
+                    
+    //                 $validator = Validator::make($productData, [
+    //                     'name' => 'required|string|max:255',
+    //                     'brand' => 'nullable|string|max:100',
+    //                     'vendor' => 'nullable|string|max:100',
+    //                     'product_category' => 'nullable|string|max:100',
+    //                     'barcode_number' => 'required',
+    //                     'avg_cost' => 'nullable|string',
+    //                     'last_cost' => 'nullable|numeric|min:0',
+    //                     'price' => 'required|numeric|min:0',
+    //                     'quantity' => 'nullable|string',
+    //                     'low_qty_warning' => 'nullable|integer|min:0',
+    //                     'max_quantity' => 'nullable|integer|min:0',
+    //                     'min_order_quantity' => 'required|integer|min:0',
+    //                 ]);
+    
+                    
+    //                 if ($validator->fails()) {
+    //                     $errors[] = "Row {$row}: " . implode(', ', $validator->errors()->all());
+    //                 } else {
+    //                     try {
+                            
+    //                         $barcode = DNS1D::getBarcodePNG($productData['barcode_number'], 'C128', 2, 100);
+                
+    //                         // print_r($productData);die;
+    //                         $productData['barcode'] = $barcode;
+    
+    //                         $product = Product::create([
+    //                             'name' => $productData['name'],
+    //                             'brand' => $productData['brand'],
+    //                             'vendor' => $productData['vendor'],
+    //                             'category' => $productData['product_category'],
+    //                             'barcode_number'=> $productData['barcode_number'],
+    //                             'avg_cost' => $productData['avg_cost'],
+    //                             'last_cost' => $productData['last_cost'],
+    //                             'price' => $productData['price'],
+    //                             'stock' => $productData['quantity'],
+    //                             'low_stock_warning' => $productData['low_qty_warning'],
+    //                             'max_quantity' => $productData['max_quantity'],
+    //                             'min_order_quantity' => $productData['min_order_quantity'],
+    //                             'barcode' => $productData['barcode'],
+    //                             'sku' => $productData['brand'],
+    //                             'description' => 'add',
+    //                         ]);
+                            
+    //                         // $productData['barcode'] = $barcode;
+    
+    //                         // $product = new Product();
+    //                         // $product->fill($productData); // Assigns attributes from $productData
+    //                         // $product->save(); // Saves the product to the database
+    
+    //                         // $product = new Product();
+    //                         // $product->name = $productData['name'];
+    //                         // $product->brand = $productData['brand'];
+    //                         // $product->vendor = $productData['vendor'];
+    //                         // $product->category = $productData['product_category'];
+    //                         // $product->barcode_number = $productData['barcode_number'];
+    //                         // $product->avg_cost = $productData['avg_cost'];
+    //                         // $product->last_cost = $productData['last_cost'];
+    //                         // $product->price = $productData['price'];
+    //                         // $product->stock = $productData['quantity'];
+    //                         // $product->low_stock_warning = $productData['low_qty_warning'];
+    //                         // $product->max_quantity = $productData['max_quantity'];
+    //                         // $product->min_order_quantity = $productData['min_order_quantity'];
+    //                         // $product->barcode = $barcode;
+    //                         // $product->save();
+    //                         // $product = new Product();
+    //                         // $product->name = $productData['name'];
+    //                         // $product->brand = $productData['brand'];
+    //                         // $product->vendor = $productData['vendor'];
+    //                         // $product->category = $productData['product_category'];
+    //                         // $product->barcode_number = $productData['barcode_number'];
+    //                         // $product->avg_cost = $productData['avg_cost'];
+    //                         // $product->last_cost = $productData['last_cost'];
+    //                         // $product->price = $productData['price'];
+    //                         // $product->stock = $productData['quantity'];
+    //                         // $product->low_stock_warning = $productData['low_qty_warning'];
+    //                         // $product->max_quantity = $productData['max_quantity'];
+    //                         // $product->min_order_quantity = $productData['min_order_quantity'];
+    //                         // $product->barcode = $productData['barcode'];
+    //                         // $product->sku = '1';
+    //                         // $product->description = 'add';
+    //                         // $product->save();
+    
+    //                         $products[] = $product;
+    //                     } catch (\Exception $e) {
+    //                         $errors[] = "Row {$row}: Failed to create product - " . $e->getMessage();
+    //                     }
+    //                 }
+    //                 $row++;
+    //             }
+    //             fclose($handle);
+    //         }
+    
+    //         $message = count($products) . ' products imported successfully.';
+    //         if (!empty($errors)) {
+    //             $message .= ' Errors: ' . implode('; ', $errors);
+    //             return redirect()->route('products.create')
+    //                 ->with('warning', $message);
+    //         }
+    
+    //         return redirect()->route('products.index')
+    //             ->with('success', $message);
+    //     }
+    // }
+
+
+    // public function uploadCsv(Request $request)
+    // {
+    //     $request->validate([
+    //         'file' => 'required|file|mimes:csv,txt'
+    //     ]);
+
+    //     $file = $request->file('file');
+    //     $path = $file->getRealPath();
+
+    //     $products = [];
+    //     $errors = [];
+
+    //     if (($handle = fopen($path, "r")) !== FALSE) {
+    //         $headers = fgetcsv($handle);
+            
+    //         if (!$headers) {
+    //             return response()->json(['error' => 'Invalid CSV file format. No headers found.'], 400);
+    //         }
+
+    //         $requiredColumns = ['name', 'brand', 'vendor', 'product_category', 'barcode_number', 'avg_cost', 'last_cost', 'price', 'quantity', 'low_qty_warning', 'max_quantity', 'min_order_quantity'];
+
+    //         // Check if all required columns are present
+    //         if (count(array_intersect($requiredColumns, $headers)) !== count($requiredColumns)) {
+    //             return response()->json(['error' => 'CSV file is missing required columns.'], 400);
+    //         }
+
+    //         $row = 2;
+    //         while (($data = fgetcsv($handle)) !== FALSE) {
+    //             $productData = array_combine($headers, $data);
+
+    //             $validator = Validator::make($productData, [
+    //                 'name' => 'required|string|max:255',
+    //                 'brand' => 'nullable|string|max:100',
+    //                 'vendor' => 'nullable|string|max:100',
+    //                 'product_category' => 'nullable|string|max:100',
+    //                 'barcode_number' => 'required|string',
+    //                 'avg_cost' => 'nullable|string',
+    //                 'last_cost' => 'nullable|numeric|min:0',
+    //                 'price' => 'required|numeric|min:0',
+    //                 'quantity' => 'nullable|integer|min:0',
+    //                 'low_qty_warning' => 'nullable|integer|min:0',
+    //                 'max_quantity' => 'nullable|integer|min:0',
+    //                 'min_order_quantity' => 'required|integer|min:0',
+    //             ]);
+
+    //             if ($validator->fails()) {
+    //                 $errors[] = "Row {$row}: " . implode(', ', $validator->errors()->all());
+    //             } else {
+    //                 try {
+    //                     DB::beginTransaction();
+
+    //                     $barcode = DNS1D::getBarcodePNG($productData['barcode_number'], 'C128', 2, 100);
+
+    //                     $product = Product::create([
+    //                         'name' => $productData['name'],
+    //                         'brand' => $productData['brand'],
+    //                         'vendor' => $productData['vendor'],
+    //                         'category' => $productData['product_category'],
+    //                         'barcode_number' => $productData['barcode_number'],
+    //                         'avg_cost' => $productData['avg_cost'],
+    //                         'last_cost' => $productData['last_cost'],
+    //                         'price' => $productData['price'],
+    //                         'stock' => $productData['quantity'],
+    //                         'low_stock_warning' => $productData['low_qty_warning'],
+    //                         'max_quantity' => $productData['max_quantity'],
+    //                         'min_order_quantity' => $productData['min_order_quantity'],
+    //                         'barcode' => $barcode,
+    //                         'sku' => strtoupper(substr($productData['name'], 0, 3)) . rand(1000, 9999), 
+    //                         'description' => 'Auto-imported from CSV',
+    //                     ]);
+
+    //                     DB::commit();
+
+    //                     $products[] = $product;
+    //                 } catch (\Exception $e) {
+    //                     DB::rollBack();
+    //                     $errors[] = "Row {$row}: Failed to create product - " . $e->getMessage();
+    //                 }
+    //             }
+    //             $row++;
+    //         }
+    //         fclose($handle);
+    //     }
+
+    //     return response()->json([
+    //         'success' => count($products) . ' products imported successfully.',
+    //         'errors' => $errors
+    //     ]);
+    // }
 }
 
 

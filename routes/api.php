@@ -20,6 +20,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ScanInOutProductController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\RolePermissionController;
 
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -158,6 +159,8 @@ Route::prefix('barcode-settings')->group(function () {
     Route::delete('/delete/{id}', [ProductController::class, 'destroy']); // Delete currency
 
     Route::get('inventoryAlert', [ProductController::class, 'inventoryAlert']); // Get all currencies
+    Route::post('/upload-csv', [ProductController::class, 'uploadCSV']);
+    
 });
 
 Route::prefix('reports')->group(function () {
@@ -188,12 +191,18 @@ Route::prefix('scan-out')->group(function () {
 Route::get('recent_scan', [ScanInOutProductController::class, 'index']); // Get all currencies
 
 
-Route::prefix('roles')->group(function () {
-    Route::get('/', [RoleController::class, 'index']); // List roles
-    Route::post('/add', [RoleController::class, 'store']); // Add role
-    Route::get('/edit/{id}', [RoleController::class, 'show']); // Show role
-    Route::put('/update/{id}', [RoleController::class, 'update']); // Update role
-    Route::delete('/delete/{id}', [RoleController::class, 'destroy']); // Delete role
-});
+// Route::prefix('roles')->group(function () {
+//     Route::get('/', [RoleController::class, 'index']); // List roles
+//     Route::post('/add', [RoleController::class, 'store']); // Add role
+//     Route::get('/edit/{id}', [RoleController::class, 'show']); // Show role
+//     Route::put('/update/{id}', [RoleController::class, 'update']); // Update role
+//     Route::delete('/delete/{id}', [RoleController::class, 'destroy']); // Delete role
+// });
+
+Route::get('/roles', [RolePermissionController::class, 'getRoles']);
+    Route::post('/roles/add', [RolePermissionController::class, 'createRole']);
+    Route::get('/roles/edit_permission/{roleId}', [RolePermissionController::class, 'getRoleDetails']);
+    Route::post('/roles/update_permission/{roleId}', [RolePermissionController::class, 'updateRole']);
+    Route::delete('/roles/delete/{roleId}', [RolePermissionController::class, 'deleteRole']);
 
 });
