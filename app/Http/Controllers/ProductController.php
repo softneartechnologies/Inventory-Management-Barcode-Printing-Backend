@@ -6,12 +6,14 @@ use App\Models\Product;
 use App\Models\Stock;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
+// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
+// use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
 use PDF;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use DB;
+use Milon\Barcode\DNS1D;
+use Milon\Barcode\DNS2D;
 
 
 
@@ -122,8 +124,8 @@ class ProductController extends Controller
         $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
-        $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
-        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        // $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
         // ✅ Convert Base64 to an Image File
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
