@@ -122,7 +122,7 @@ class ProductController extends Controller
         $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
-        $barcodeImage = \Milon\Barcode\Facades\DNS1DFacade::getBarcodePNG($barcodeNumber, 'C39');
+        $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
         // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
         // ✅ Convert Base64 to an Image File
