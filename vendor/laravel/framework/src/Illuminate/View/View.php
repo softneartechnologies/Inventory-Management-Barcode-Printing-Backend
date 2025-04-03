@@ -67,6 +67,7 @@ class View implements ArrayAccess, Htmlable, Stringable, ViewContract
      * @param  string  $view
      * @param  string  $path
      * @param  mixed  $data
+     * @return void
      */
     public function __construct(Factory $factory, Engine $engine, $view, $path, $data = [])
     {

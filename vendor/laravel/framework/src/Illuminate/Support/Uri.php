@@ -153,18 +153,6 @@ class Uri implements Htmlable, Responsable, Stringable
     }
 
     /**
-     * Get the URI's path segments.
-     *
-     * Empty or missing paths are returned as an empty collection.
-     */
-    public function pathSegments(): Collection
-    {
-        $path = $this->path();
-
-        return $path === '/' ? new Collection : new Collection(explode('/', $path));
-    }
-
-    /**
      * Get the URI's query string.
      */
     public function query(): UriQueryString
@@ -207,7 +195,7 @@ class Uri implements Htmlable, Responsable, Stringable
     /**
      * Specify the port of the URI.
      */
-    public function withPort(?int $port): static
+    public function withPort(int|null $port): static
     {
         return new static($this->uri->withPort($port));
     }
@@ -247,7 +235,7 @@ class Uri implements Htmlable, Responsable, Stringable
             }
         }
 
-        return new static($this->uri->withQuery(Arr::query($newQuery) ?: null));
+        return new static($this->uri->withQuery(Arr::query($newQuery)));
     }
 
     /**

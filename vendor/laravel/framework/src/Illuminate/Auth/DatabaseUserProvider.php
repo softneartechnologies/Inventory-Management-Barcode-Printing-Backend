@@ -38,6 +38,7 @@ class DatabaseUserProvider implements UserProvider
      * @param  \Illuminate\Database\ConnectionInterface  $connection
      * @param  \Illuminate\Contracts\Hashing\Hasher  $hasher
      * @param  string  $table
+     * @return void
      */
     public function __construct(ConnectionInterface $connection, HasherContract $hasher, $table)
     {

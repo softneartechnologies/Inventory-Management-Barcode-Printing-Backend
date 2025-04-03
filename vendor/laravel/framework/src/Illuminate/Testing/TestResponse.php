@@ -71,6 +71,7 @@ class TestResponse implements ArrayAccess
      *
      * @param  TResponse  $response
      * @param  \Illuminate\Http\Request|null  $request
+     * @return void
      */
     public function __construct($response, $request = null)
     {

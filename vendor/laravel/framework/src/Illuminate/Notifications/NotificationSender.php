@@ -51,6 +51,7 @@ class NotificationSender
      * @param  \Illuminate\Contracts\Bus\Dispatcher  $bus
      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
      * @param  string|null  $locale
+     * @return void
      */
     public function __construct($manager, $bus, $events, $locale = null)
     {

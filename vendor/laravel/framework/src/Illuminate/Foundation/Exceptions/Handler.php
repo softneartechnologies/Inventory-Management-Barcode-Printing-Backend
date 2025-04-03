@@ -184,6 +184,7 @@ class Handler implements ExceptionHandlerContract
      * Create a new exception handler instance.
      *
      * @param  \Illuminate\Contracts\Container\Container  $container
+     * @return void
      */
     public function __construct(Container $container)
     {

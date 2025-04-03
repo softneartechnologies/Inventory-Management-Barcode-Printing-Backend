@@ -59,6 +59,7 @@ class BroadcastableModelEventOccurred implements ShouldBroadcast
      *
      * @param  \Illuminate\Database\Eloquent\Model  $model
      * @param  string  $event
+     * @return void
      */
     public function __construct($model, $event)
     {

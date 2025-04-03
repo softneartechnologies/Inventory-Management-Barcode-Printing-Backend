@@ -51,6 +51,7 @@ class Response implements ArrayAccess, Stringable
      * Create a new response instance.
      *
      * @param  \Psr\Http\Message\MessageInterface  $response
+     * @return void
      */
     public function __construct($response)
     {

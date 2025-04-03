@@ -97,6 +97,7 @@ class PendingProcess
      * Create a new pending process instance.
      *
      * @param  \Illuminate\Process\Factory  $factory
+     * @return void
      */
     public function __construct(Factory $factory)
     {

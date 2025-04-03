@@ -251,6 +251,8 @@ class Builder implements BuilderContract
 
     /**
      * Create a new query builder instance.
+     *
+     * @return void
      */
     public function __construct(
         ConnectionInterface $connection,
@@ -866,7 +868,7 @@ class Builder implements BuilderContract
         // where null clause to the query. So, we will allow a short-cut here to
         // that method for convenience so the developer doesn't have to check.
         if (is_null($value)) {
-            return $this->whereNull($column, $boolean, ! in_array($operator, ['=', '<=>'], true));
+            return $this->whereNull($column, $boolean, $operator !== '=');
         }
 
         $type = 'Basic';
@@ -958,7 +960,7 @@ class Builder implements BuilderContract
     protected function invalidOperatorAndValue($operator, $value)
     {
         return is_null($value) && in_array($operator, $this->operators) &&
-             ! in_array($operator, ['=', '<=>', '<>', '!=']);
+             ! in_array($operator, ['=', '<>', '!=']);
     }
 
     /**
@@ -2399,7 +2401,7 @@ class Builder implements BuilderContract
      *
      * @param  \Illuminate\Contracts\Database\Query\Expression|\Closure|string  $column
      * @param  \DateTimeInterface|string|int|float|null  $operator
-     * @param  \Illuminate\Contracts\Database\Query\Expression|\DateTimeInterface|string|int|float|null  $value
+     * @param  \DateTimeInterface|string|int|float|null  $value
      * @param  string  $boolean
      * @return $this
      */
@@ -2451,7 +2453,7 @@ class Builder implements BuilderContract
      *
      * @param  \Illuminate\Contracts\Database\Query\Expression|\Closure|string  $column
      * @param  \DateTimeInterface|string|int|float|null  $operator
-     * @param  \Illuminate\Contracts\Database\Query\Expression|\DateTimeInterface|string|int|float|null  $value
+     * @param  \DateTimeInterface|string|int|float|null  $value
      * @return $this
      */
     public function orHaving($column, $operator = null, $value = null)
@@ -2790,9 +2792,7 @@ class Builder implements BuilderContract
     {
         $this->orders = $this->removeExistingOrdersFor($column);
 
-        if (is_null($lastId)) {
-            $this->whereNotNull($column);
-        } else {
+        if (! is_null($lastId)) {
             $this->where($column, '<', $lastId);
         }
 
@@ -2812,9 +2812,7 @@ class Builder implements BuilderContract
     {
         $this->orders = $this->removeExistingOrdersFor($column);
 
-        if (is_null($lastId)) {
-            $this->whereNotNull($column);
-        } else {
+        if (! is_null($lastId)) {
             $this->where($column, '>', $lastId);
         }
 

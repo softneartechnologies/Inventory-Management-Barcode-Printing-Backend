@@ -26,6 +26,7 @@ class UniqueBroadcastEvent extends BroadcastEvent implements ShouldBeUnique
      * Create a new event instance.
      *
      * @param  mixed  $event
+     * @return void
      */
     public function __construct($event)
     {

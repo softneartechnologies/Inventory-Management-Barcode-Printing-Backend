@@ -36,6 +36,7 @@ class MailChannel
      *
      * @param  \Illuminate\Contracts\Mail\Factory  $mailer
      * @param  \Illuminate\Mail\Markdown  $markdown
+     * @return void
      */
     public function __construct(MailFactory $mailer, Markdown $markdown)
     {

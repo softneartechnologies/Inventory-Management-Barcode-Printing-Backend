@@ -29,6 +29,7 @@ class Composer
      *
      * @param  \Illuminate\Filesystem\Filesystem  $files
      * @param  string|null  $workingPath
+     * @return void
      */
     public function __construct(Filesystem $files, $workingPath = null)
     {

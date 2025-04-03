@@ -175,7 +175,7 @@ trait InteractsWithInput
     /**
      * Get an array of all of the files on the request.
      *
-     * @return array<int, \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]>
+     * @return array
      */
     public function allFiles()
     {
@@ -187,8 +187,8 @@ trait InteractsWithInput
     /**
      * Convert the given array of Symfony UploadedFiles to custom Laravel UploadedFiles.
      *
-     * @param  array<int, \Symfony\Component\HttpFoundation\File\UploadedFile|\Symfony\Component\HttpFoundation\File\UploadedFile[]>  $files
-     * @return array<int, \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]>
+     * @param  array  $files
+     * @return array
      */
     protected function convertUploadedFiles(array $files)
     {
@@ -240,7 +240,7 @@ trait InteractsWithInput
      *
      * @param  string|null  $key
      * @param  mixed  $default
-     * @return ($key is null ? array<int, \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]> : \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]|null)
+     * @return \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]|array|null
      */
     public function file($key = null, $default = null)
     {

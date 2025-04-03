@@ -113,6 +113,7 @@ class Batch implements Arrayable, JsonSerializable
      * @param  \Carbon\CarbonImmutable  $createdAt
      * @param  \Carbon\CarbonImmutable|null  $cancelledAt
      * @param  \Carbon\CarbonImmutable|null  $finishedAt
+     * @return void
      */
     public function __construct(
         QueueFactory $queue,

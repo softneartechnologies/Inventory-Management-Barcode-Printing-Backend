@@ -54,6 +54,7 @@ class ComponentTagCompiler
      * @param  array  $aliases
      * @param  array  $namespaces
      * @param  \Illuminate\View\Compilers\BladeCompiler|null  $blade
+     * @return void
      */
     public function __construct(array $aliases = [], array $namespaces = [], ?BladeCompiler $blade = null)
     {

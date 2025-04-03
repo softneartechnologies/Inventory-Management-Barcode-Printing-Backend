@@ -10,10 +10,8 @@ use Illuminate\Support\Collection;
 /**
  * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
  * @template TDeclaringModel of \Illuminate\Database\Eloquent\Model
- * @template TPivotModel of \Illuminate\Database\Eloquent\Relations\Pivot = \Illuminate\Database\Eloquent\Relations\MorphPivot
- * @template TAccessor of string = 'pivot'
  *
- * @extends \Illuminate\Database\Eloquent\Relations\BelongsToMany<TRelatedModel, TDeclaringModel, TPivotModel, TAccessor>
+ * @extends \Illuminate\Database\Eloquent\Relations\BelongsToMany<TRelatedModel, TDeclaringModel, \Illuminate\Database\Eloquent\Relations\Pivot>
  */
 class MorphToMany extends BelongsToMany
 {
@@ -27,7 +25,7 @@ class MorphToMany extends BelongsToMany
     /**
      * The class name of the morph type constraint.
      *
-     * @var class-string<TRelatedModel>
+     * @var string
      */
     protected $morphClass;
 
@@ -53,6 +51,7 @@ class MorphToMany extends BelongsToMany
      * @param  string  $relatedKey
      * @param  string|null  $relationName
      * @param  bool  $inverse
+     * @return void
      */
     public function __construct(
         Builder $query,
@@ -123,7 +122,7 @@ class MorphToMany extends BelongsToMany
     /**
      * Get the pivot models that are currently attached.
      *
-     * @return \Illuminate\Support\Collection<int, TPivotModel>
+     * @return \Illuminate\Support\Collection<int, \Illuminate\Database\Eloquent\Relations\Pivot|\Illuminate\Database\Eloquent\Relations\MorphPivot>
      */
     protected function getCurrentlyAttachedPivots()
     {
@@ -150,7 +149,7 @@ class MorphToMany extends BelongsToMany
      *
      * @param  array  $attributes
      * @param  bool  $exists
-     * @return TPivotModel
+     * @return \Illuminate\Database\Eloquent\Relations\Pivot
      */
     public function newPivot(array $attributes = [], $exists = false)
     {
@@ -213,7 +212,7 @@ class MorphToMany extends BelongsToMany
     /**
      * Get the class name of the parent model.
      *
-     * @return class-string<TRelatedModel>
+     * @return string
      */
     public function getMorphClass()
     {

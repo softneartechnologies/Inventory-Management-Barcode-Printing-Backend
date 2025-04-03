@@ -61,6 +61,7 @@ class PendingChain
      *
      * @param  mixed  $job
      * @param  array  $chain
+     * @return void
      */
     public function __construct($job, $chain)
     {

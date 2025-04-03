@@ -39,6 +39,7 @@ class ExceptionHandlerFake implements ExceptionHandler, Fake
      *
      * @param  \Illuminate\Contracts\Debug\ExceptionHandler  $handler
      * @param  list<class-string<\Throwable>>  $exceptions
+     * @return void
      */
     public function __construct(
         protected ExceptionHandler $handler,

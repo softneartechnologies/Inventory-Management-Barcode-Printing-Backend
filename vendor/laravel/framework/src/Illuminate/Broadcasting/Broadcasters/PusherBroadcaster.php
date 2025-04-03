@@ -24,6 +24,7 @@ class PusherBroadcaster extends Broadcaster
      * Create a new broadcaster instance.
      *
      * @param  \Pusher\Pusher  $pusher
+     * @return void
      */
     public function __construct(Pusher $pusher)
     {

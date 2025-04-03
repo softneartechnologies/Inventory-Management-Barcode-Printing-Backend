@@ -13,6 +13,7 @@ class Onceable
      * @param  string  $hash
      * @param  object|null  $object
      * @param  callable  $callable
+     * @return void
      */
     public function __construct(
         public string $hash,

@@ -35,6 +35,7 @@ class MigrationCreator
      *
      * @param  \Illuminate\Filesystem\Filesystem  $files
      * @param  string  $customStubPath
+     * @return void
      */
     public function __construct(Filesystem $files, $customStubPath)
     {

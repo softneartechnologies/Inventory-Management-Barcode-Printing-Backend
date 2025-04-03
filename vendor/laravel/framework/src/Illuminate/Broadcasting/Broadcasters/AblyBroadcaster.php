@@ -26,6 +26,7 @@ class AblyBroadcaster extends Broadcaster
      * Create a new broadcaster instance.
      *
      * @param  \Ably\AblyRest  $ably
+     * @return void
      */
     public function __construct(AblyRest $ably)
     {

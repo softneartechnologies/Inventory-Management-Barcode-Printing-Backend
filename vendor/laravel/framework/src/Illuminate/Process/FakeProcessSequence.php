@@ -32,6 +32,7 @@ class FakeProcessSequence
      * Create a new fake process sequence instance.
      *
      * @param  array  $processes
+     * @return void
      */
     public function __construct(array $processes = [])
     {

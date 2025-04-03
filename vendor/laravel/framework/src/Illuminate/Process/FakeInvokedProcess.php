@@ -60,6 +60,7 @@ class FakeInvokedProcess implements InvokedProcessContract
      *
      * @param  string  $command
      * @param  \Illuminate\Process\FakeProcessDescription  $process
+     * @return void
      */
     public function __construct(string $command, FakeProcessDescription $process)
     {

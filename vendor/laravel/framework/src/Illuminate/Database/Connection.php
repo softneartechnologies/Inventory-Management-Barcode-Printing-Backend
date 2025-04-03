@@ -208,6 +208,7 @@ class Connection implements ConnectionInterface
      * @param  string  $database
      * @param  string  $tablePrefix
      * @param  array  $config
+     * @return void
      */
     public function __construct($pdo, $database = '', $tablePrefix = '', array $config = [])
     {

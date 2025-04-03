@@ -78,10 +78,7 @@ class HasOneThrough extends HasOneOrManyThrough implements SupportsPartialRelati
     {
         $query->addSelect([$this->getQualifiedFirstKeyName()]);
 
-        // We need to join subqueries that aren't the inner-most subquery which is joined in the CanBeOneOfMany::ofMany method...
-        if ($this->getOneOfManySubQuery() !== null) {
-            $this->performJoin($query);
-        }
+        $this->performJoin($query);
     }
 
     /** @inheritDoc */

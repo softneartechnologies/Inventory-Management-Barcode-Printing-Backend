@@ -54,6 +54,7 @@ class BroadcastEvent implements ShouldQueue
      * Create a new job handler instance.
      *
      * @param  mixed  $event
+     * @return void
      */
     public function __construct($event)
     {

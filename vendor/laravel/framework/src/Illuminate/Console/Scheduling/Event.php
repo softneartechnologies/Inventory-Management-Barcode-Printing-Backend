@@ -96,6 +96,7 @@ class Event
      * @param  \Illuminate\Console\Scheduling\EventMutex  $mutex
      * @param  string  $command
      * @param  \DateTimeZone|string|null  $timezone
+     * @return void
      */
     public function __construct(EventMutex $mutex, $command, $timezone = null)
     {

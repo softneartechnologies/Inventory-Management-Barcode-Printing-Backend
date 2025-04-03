@@ -40,6 +40,7 @@ class ResponseFactory implements FactoryContract
      *
      * @param  \Illuminate\Contracts\View\Factory  $view
      * @param  \Illuminate\Routing\Redirector  $redirector
+     * @return void
      */
     public function __construct(ViewFactory $view, Redirector $redirector)
     {
@@ -150,10 +151,7 @@ class ResponseFactory implements FactoryContract
                 echo 'data: '.$message;
                 echo "\n\n";
 
-                if (ob_get_level() > 0) {
-                    ob_flush();
-                }
-
+                ob_flush();
                 flush();
             }
 
@@ -169,10 +167,7 @@ class ResponseFactory implements FactoryContract
                 echo 'data: '.$endStreamWith;
                 echo "\n\n";
 
-                if (ob_get_level() > 0) {
-                    ob_flush();
-                }
-
+                ob_flush();
                 flush();
             }
         }, 200, array_merge($headers, [
