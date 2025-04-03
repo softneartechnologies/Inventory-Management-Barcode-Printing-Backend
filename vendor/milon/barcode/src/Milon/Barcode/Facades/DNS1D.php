@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string|false getBarcodePNGPath(string $code, string $type, int|float $w = 2, int|float $h = 30, array $color = [0, 0, 0], bool $showCode = false)
  * @method static \Illuminate\Contracts\Routing\UrlGenerator|string getBarcodePNGUri(string $code, string $type, int|float $w = 2, int|float $h = 30, array $color = [0, 0, 0])
  */
-class DNS1DFacade extends Facade {
+class DNS1D extends Facade {
 
     /**
      * Get the registered name of the component.

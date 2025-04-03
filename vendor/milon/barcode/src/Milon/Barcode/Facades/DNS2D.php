@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string|false getBarcodePNGPath(string $code, string $type, int $w = 2, int $h = 30, array $color = [0, 0, 0])
  * @method static \Milon\Barcode\DNS2D setStorPath(string $path)
  */
-class DNS2DFacade extends Facade
+class DNS2D extends Facade
 {
 
     /**

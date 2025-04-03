@@ -12,8 +12,10 @@ use PDF;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use DB;
-use Milon\Barcode\DNS1D;
-use Milon\Barcode\DNS2D;
+// use Milon\Barcode\DNS1D;
+// use Milon\Barcode\DNS2D;
+use Milon\Barcode\Facades\DNS1D;
+use Milon\Barcode\Facades\DNS2D;
 
 
 
