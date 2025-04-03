@@ -127,8 +127,9 @@ class ProductController extends Controller
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
         // $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
-        $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
+        $barcodeImage = 'jjkkjjhjkkjsakjasasajajasjjsajassaejejea';
         // ✅ Convert Base64 to an Image File
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
         Storage::put($imagePath, base64_decode($barcodeImage));
