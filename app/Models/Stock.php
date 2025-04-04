@@ -1,27 +1,28 @@
 <?php
 
 namespace App\Models;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Stock extends Model
 {
     //
-    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit', 'reason_for_update', 'location', 'stock_date', 'vendor','category', 'adjustment'];
+    use HasFactory;
+    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit', 'reason_for_update', 'location', 'stock_date', 'vendor_id','category_id', 'adjustment'];
 
     public function product()
     {
-        return $this->belongsTo(Product::class, 'product_id');
+        return $this->belongsTo(Product::class);
     }
     
         public function vendor()
         {
-            return $this->belongsTo(Vendor::class, 'vendor');
+            return $this->belongsTo(Vendor::class);
         }
     
     
         public function Category()
         {
-            return $this->belongsTo(Category::class, 'category');
+            return $this->belongsTo(Category::class);
         }
 }

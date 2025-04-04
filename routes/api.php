@@ -182,6 +182,7 @@ Route::prefix('scan-in')->group(function () {
     // Route::get('/', [ScanInOutProductController::class, 'index']); // Get all currencies
     Route::post('/add', [ScanInOutProductController::class, 'storeIn']); // Create currency
 });
+Route::get('/employee/issuance/history', [ScanInOutProductController::class, 'employeeIssuanceHistory']); // Get all currencies
 
 Route::prefix('scan-out')->group(function () {
 

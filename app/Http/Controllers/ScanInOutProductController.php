@@ -22,7 +22,7 @@ class ScanInOutProductController extends Controller
                 'out_quantity' => $scanRecords->out_quantity,
                 'type' => $scanRecords->type,
                 'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
-                'employee_name' => $scanRecords->product->employee->employee_name ?? null, // Ensure category exists
+                'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
             ];
@@ -117,5 +117,28 @@ class ScanInOutProductController extends Controller
     {
         $scanInOutProduct->delete();
         return response()->json(null, 204);
+    }
+
+    public function employeeIssuanceHistory(){
+        
+        $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name'])->where('type','in')->get();
+
+        $scanRecords = $scanRecords->map(function ($scanRecords) {
+            return [
+                'id' => $scanRecords->id,
+                'product_id' => $scanRecords->product_id,
+                'employee_id' => $scanRecords->employee_id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'in_quantity' => $scanRecords->in_quantity,
+                'out_quantity' => $scanRecords->out_quantity,
+                'type' => $scanRecords->type,
+                'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
+                'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
+                'created_at' => $scanRecords->created_at,
+                'updated_at' => $scanRecords->updated_at,
+            ];
+        });
+
+        return response()->json($scanRecords, 200);
     }
 }

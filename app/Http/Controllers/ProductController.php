@@ -123,7 +123,7 @@ class ProductController extends Controller
         
         // }
         
-        $barcodeNumber = $request->sku; // Unique barcode
+    $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
         // $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
@@ -364,12 +364,13 @@ class ProductController extends Controller
             'reason_for_update' => 'nullable|string',
             'location' => 'nullable|string',
             'stock_date' => 'nullable|string',
-            'vendor' => 'nullable|string',
+            'vendor_id' => 'nullable|string',
             'adjustment' => 'nullable|string',
            
         ]);
 
         $validatedData['product_id'] = $product_id;
+        $validatedData['category_id'] = $product->category;
 
         if($request->adjustment =='add'){
 
@@ -432,7 +433,7 @@ class ProductController extends Controller
 {
     $stocks = Stock::with([
         'product.category', // Load category via product
-        'product.vendor'    // Load vendor via product
+        'category:id,name','vendor:id,vendor_name'    // Load vendor via product
     ])->get();
 
 
@@ -448,8 +449,8 @@ class ProductController extends Controller
             'product_id' => $stock->product_id,
             'product_name' => $stock->product->product_name ?? 'N/A',
             'sku' => $stock->product->sku ?? 'N/A',
-            'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
-            'vendor_name' => $stock->product->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+            'category_name' => $stock->category->name ?? 'N/A',  // Ensure category is not null
+            'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
             'previous_stock' => $stock->current_stock,
             'new_stock' => $newStock,
             'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
@@ -476,11 +477,11 @@ public function uploadCSV(Request $request)
     // ✅ Read CSV header
     $header = fgetcsv($handle);
     $expectedHeaders = [
-        "Product Name", "SKU", "Units", "Category", "Sub Category", "Manufacturer",
-        "Vendor", "Model", "Storage Location (Rack)", "Description", "Opening Stock",
-        "Selling Cost", "Cost Price", "Project Name", "Weight", "Weight Unit",
-        "Dim.Length", "Dim.Width", "Dim.Depth", "Dim.Measurement Unit",
-        "Inventory Alert (Threhold Count)", "Status", "Returnable"
+        "product_name", "sku", "units", "category", "sub_category", "manufacturer",
+        "vendor", "model", "storage_location", "description","returnable", "track_inventory", "opening_stock",
+        "selling_cost", "cost_price", "commit_stock_check","project_name",
+        "weight", "weight_unit", "length", "width",
+        "depth", "measurement_unit","inventory_alert_threshold","status" 
     ];
 
     if ($header !== $expectedHeaders) {
@@ -508,9 +509,72 @@ public function uploadCSV(Request $request)
             continue; // Skip duplicate SKU
         }
 
-        $products[] = [
+
+        $barcodeNumber = $row[1]; // Unique barcode
+        if ($barcodeNumber) {
+            // ✅ Generate Barcode as Base64
+            // $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+            $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        
+            // $barcodeImage = 'jjkkjjhjkkjsakjasasajajasjjsajassaejejea';
+            // ✅ Convert Base64 to an Image File
+            $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
+            Storage::put($imagePath, base64_decode($barcodeImage));
+        
+            // ✅ Store the public path for access
+            $savedBarcodePath = str_replace('public/', 'storage/', $imagePath);
+        }
+
+        // Add barcode data
+        $row['barcode_number'] = $barcodeNumber;
+        $row['generated_barcode'] = $barcodeImage;
+    
+        // ✅ Create Product
+        
+    
+        // ✅ Generate QR Code after product is created
+        $productDetails = [
+            'barcode_number' => $row[1],
             'name' => $row[0],
             'sku' => $row[1],
+            'description' => $row[9],
+            'price' => number_format($row[13], 2),
+            'stock' => $row[12]
+        ];
+    
+        // $validatedData['generated_qrcode'] = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
+    
+        // if ($validatedData['generated_qrcode']) {
+        //     $path = $validatedData['generated_qrcode']->store('public/qrcode');
+        //     // $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
+        // }
+    
+        if ($productDetails) {
+            // ✅ Generate a Unique QR Code Name
+            $fileName = 'qrcode_' . time() . '.png';
+        
+            // ✅ Generate QR Code as Base64
+    
+            $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
+            // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
+        
+            // ✅ Convert Base64 to an Image File and Save
+            $imagePath = 'public/qrcode/' . $fileName; 
+            Storage::put($imagePath, base64_decode($qrcodeBase64));
+        
+            // ✅ Store the public path for access
+            $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
+        
+            // ✅ Store QR Code Path in Database
+            $row['generated_qrcode'] = $qrcodeBase64;
+        }
+
+
+        $products[] = [
+            'product_name' => $row[0],
+            'sku' => $row[1],
+            'generated_barcode' => $row['generated_barcode'],
+            'generated_qrcode' => $row['generated_qrcode'],
             'units' => $row[2],
             'category' => $row[3],
             'sub_category' => $row[4],
@@ -519,19 +583,22 @@ public function uploadCSV(Request $request)
             'model' => $row[7],
             'storage_location' => $row[8],
             'description' => $row[9],
-            'opening_stock' => (int)$row[10],
-            'selling_cost' => (float)$row[11],
-            'cost_price' => (float)$row[12],
-            'project_name' => $row[13],
-            'weight' => (float)$row[14],
-            'weight_unit' => $row[15],
-            'dim_length' => (float)$row[16],
-            'dim_width' => (float)$row[17],
-            'dim_depth' => (float)$row[18],
-            'dim_measurement_unit' => $row[19],
-            'inventory_alert' => (int)$row[20],
-            'status' => $row[21],
-            'returnable' => strtolower($row[22]) === 'yes' ? 1 : 0,
+            'returnable' => strtolower($row[10]) === 'yes' ? 1 : 0,
+            'track_inventory' => $row[11],
+            'opening_stock' => (int)$row[12],
+            'selling_cost' => (float)$row[13],
+            'cost_price' => (float)$row[14],
+            'commit_stock_check' => (float)$row[15],
+            'project_name' => $row[16],
+            'weight' => (float)$row[17],
+            'weight_unit' => $row[18],
+            'length' => (float)$row[19],
+            'width' => (float)$row[20],
+            'depth' => (float)$row[21],
+            'measurement_unit' => $row[22],
+            'barcode_number' => $row['barcode_number'],
+            'inventory_alert_threshold' => (int)$row[23],
+            'status' => $row[24],
             'created_at' => now(),
             'updated_at' => now()
         ];
@@ -547,7 +614,7 @@ public function uploadCSV(Request $request)
     return response()->json([
         'message' => count($products) . ' products uploaded successfully',
         'invalid_rows' => $invalidRows
-    ], 201);
+    ], 200);
 }
 
     // public function uploadCsv(Request $request) {

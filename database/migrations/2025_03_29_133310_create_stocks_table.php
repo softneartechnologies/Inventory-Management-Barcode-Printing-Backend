@@ -21,7 +21,8 @@ return new class extends Migration
             $table->text('reason_for_update')->nullable();
             $table->string('location')->nullable();
             $table->date('stock_date')->nullable();
-            $table->string('vendor')->nullable();
+            $table->string('vendor_id')->nullable();
+            $table->string('category_id')->nullable();
             $table->string('adjustment')->nullable(); // Remove the underscore (_) to avoid errors
             $table->timestamps();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
