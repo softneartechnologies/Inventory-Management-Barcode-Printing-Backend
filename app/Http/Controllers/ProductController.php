@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Location;
 use App\Models\Stock;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -96,7 +97,7 @@ class ProductController extends Controller
         'model' => 'nullable|string',
         'weight' => 'nullable|numeric',
         'weight_unit' => 'nullable|string',
-        'storage_location' => 'nullable|string',
+        'storage_location' => 'array',
         'thumbnail' => 'nullable|string',
         'description' => 'nullable|string',
         'returnable' => 'boolean',
@@ -127,9 +128,9 @@ class ProductController extends Controller
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
         // $barcodeImage = \Milon\Barcode\DNS1D::getBarcodePNG($barcodeNumber, 'C39');
-        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
-        $barcodeImage = 'jjkkjjhjkkjsakjasasajajasjjsajassaejejea';
+        // $barcodeImage = 'jjkkjjhjkkjsakjasasajajasjjsajassaejejea';
         // ✅ Convert Base64 to an Image File
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
         Storage::put($imagePath, base64_decode($barcodeImage));
@@ -172,8 +173,8 @@ class ProductController extends Controller
     
         // ✅ Generate QR Code as Base64
 
-        // $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
-        $qrcodeBase64 = json_encode($productDetails).'QRCODE';
+        $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
+        // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
     
         // ✅ Convert Base64 to an Image File and Save
         $imagePath = 'public/qrcode/' . $fileName; 
@@ -192,14 +193,26 @@ class ProductController extends Controller
         $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
     }
 
+    $validatedData['location_id'] = json_encode($request->storage_location);
+
+    
     $product = Product::create($validatedData);
 
-    // Stock::create([
-    //     'product_id'=>$product->id,
-    //     'current_stock'=>$product->id,
-    //     'unit'=>$product->id,
-    //     'location'=>$product->id,
-    // ]);
+   $multiLocation = $request->storage_location;
+
+    foreach($multiLocation as $multiData){
+
+    
+            Stock::create([
+                'product_id'=>$product->id,
+                'vendor_id'=>$request->vendor,
+                'category_id'=>$request->category,
+                'current_stock'=>$request->opening_stock,
+                'unit'=>$request->units,
+                'location_id'=>$multiData,
+                'stock_date'=>now(),
+            ]);
+        }
 
     return response()->json([
         'message' => 'Product created successfully',
@@ -245,7 +258,7 @@ class ProductController extends Controller
             'model' => 'nullable|string',
             'weight' => 'nullable|numeric',
             'weight_unit' => 'nullable|string',
-            'storage_location' => 'nullable|string',
+            'location_id' => 'nullable|string',
             'thumbnail' => 'nullable|string',
             'description' => 'nullable|string',
             'returnable' => 'boolean',
@@ -348,6 +361,165 @@ class ProductController extends Controller
         return response()->json(['message' => 'Product deleted successfully'], 200);
     }
 
+    // public function updateStock(Request $request, $product_id)
+    // {
+    //     // print_r($request->all());die;
+    //     $product = Product::find($product_id);
+    //     if (!$product) {
+    //         return response()->json(['error' => 'Product not found'], 404);
+    //     }
+
+    //     $validatedData = $request->validate([
+           
+    //         // 'product_id' => 'string',
+    //         'current_stock' => 'nullable|string',
+    //         'quantity' => 'nullable|string',
+    //         'unit' => 'nullable|string',
+    //         'reason_for_update' => 'nullable|string',
+    //         'location' => 'array',
+    //         'stock_date' => 'nullable|string',
+    //         'vendor_id' => 'nullable|string',
+    //         'adjustment' => 'nullable|string',
+           
+    //     ]);
+
+    //     // foreach(){
+
+    //     $multiLocation = $request->storage_location;
+
+        
+    //     foreach($multiLocation as $key=>$multiData){
+            
+    //         $product_location = Stock::where('product_id',$product_id)->where('location',$multiData['location'])->first();
+
+    //         // print_r($product_location->location);die;
+    //         // print_r($multiData['adjustment']);die;
+    //         $validatedData['product_id'] = $product_id;
+    //         $validatedData['category_id'] = $product->category;
+
+    //         if($multiData['adjustment'] =='add'){
+
+    //             $productopening_stock =  $product->opening_stock + $multiData['quantity'];
+    //         }
+
+    //         if($multiData['adjustment'] =='subscription'){
+
+    //             $productopening_stock = $product->opening_stock - $multiData['quantity'];
+    //         }
+
+
+    //         // ✅ Generate QR Code after product is created
+    //         $productDetails = [
+    //             'opening_stock' => $productopening_stock
+    //         ];
+    //             $validatedData['current_stock'] =$product->opening_stock;
+    //             $validatedData['new_stock'] =$productopening_stock;
+
+    //             // print_r($product_location->location);die;
+
+    //             if($product_location->location === $multiData['location']){
+
+    //                 $product_location->update($validatedData);
+    //             }else{
+
+    //                 $newStock =  $multiData;
+    //                 $newStock['stock_date'] = $rewuest->stock_date;
+    //                 $newStock['vendor_id'] = $rewuest->vendor_id;
+    //                 $newStock['reason_for_update'] = $rewuest->reason_for_update;
+    //                 print_r($newStock);die;
+    //                 $stock = Stock::create($validatedData);
+    //             }
+
+    //     }
+    //         $product->update($productDetails);
+
+    //      return response()->json(['message' => 'Stock updated successfully', 'product' => $stock], 200);
+    // }
+
+    // public function updateStock(Request $request, $product_id)
+    // {
+    //     $product = Product::find($product_id);
+    //     if (!$product) {
+    //         return response()->json(['error' => 'Product not found'], 404);
+    //     }
+
+    //     $validatedData = $request->validate([
+    //         'stock_date' => 'nullable|string',
+    //         'vendor_id' => 'nullable|string',
+    //         'reason_for_update' => 'nullable|string',
+    //         'storage_location' => 'required|array',
+    //         'storage_location.*.current_stock' => 'nullable|string',
+    //         'storage_location.*.quantity' => 'required|numeric',
+    //         'storage_location.*.unit' => 'nullable|string',
+    //         'storage_location.*.location' => 'required|string',
+    //         'storage_location.*.adjustment' => 'required|string|in:add,subscription',
+    //     ]);
+
+    //     $multiLocation = $request->storage_location;
+
+    //     foreach ($multiLocation as $multiData) {
+    //         $product_location = Stock::where('product_id', $product_id)
+    //             ->where('location', $multiData['location'])
+    //             ->first();
+                
+    //             $validatedData = [
+    //                 'product_id' => $product_id,
+    //                 'category_id' => $product->category,
+    //                 'current_stock' =>$multiData['current_stock'],
+    //                 'unit' => $multiData['unit'] ?? null,
+    //                 'location' => $multiData['location'],
+    //                 'quantity' => $multiData['quantity'],
+    //                 'adjustment' => $multiData['adjustment'],
+    //                 'stock_date' => $request->stock_date,
+    //                 'vendor_id' => $request->vendor_id,
+    //                 'reason_for_update' => $request->reason_for_update,
+    //             ];
+
+    //         // Adjust stock
+    //         if ($multiData['adjustment'] === 'add') {
+    //             $productopening_stock = $product->opening_stock + $multiData['quantity'];
+    //             $new_stock = $product_location->current_stock + $multiData['quantity'];
+
+    //             if(!empty($product_location->current_stock)){
+    //                 $new_stock = $product_location->current_stock + $multiData['quantity'];
+    //                 $validatedData['current_stock'] = $product_location->current_stock;
+    //             }else{
+
+    //                 $new_stock = $multiData['current_stock'] + $multiData['quantity'];
+    //                 $validatedData['current_stock'] = $multiData['current_stock'];
+    //             }
+
+    //         } else if($multiData['adjustment'] ==='subscription'){
+    //             $productopening_stock = $product->opening_stock - $multiData['quantity'];
+    //             if(!empty($product_location->current_stock)){
+    //                 $new_stock = $product_location->current_stock - $multiData['quantity'];
+
+    //                 $validatedData['current_stock'] = $product_location->current_stock;
+    //             }else{
+
+    //                 $new_stock = $multiData['current_stock'] - $multiData['quantity'];
+
+    //                 $validatedData['current_stock'] = $multiData['current_stock'];
+    //             }
+    //         }
+
+    //         $validatedData['new_stock'] = $new_stock;
+            
+            
+
+    //         if ($product_location) {
+    //             $product_location->update($validatedData);
+    //         } else {
+    //             Stock::create($validatedData);
+    //         }
+
+    //         // Update product's opening stock once per loop
+    //         $product->update(['opening_stock' => $productopening_stock]);
+    //     }
+
+    //     return response()->json(['message' => 'Stock updated successfully'], 200);
+    // }
+
     public function updateStock(Request $request, $product_id)
     {
         $product = Product::find($product_id);
@@ -355,50 +527,183 @@ class ProductController extends Controller
             return response()->json(['error' => 'Product not found'], 404);
         }
 
-        $validatedData = $request->validate([
-           
-            // 'product_id' => 'string',
-            'current_stock' => 'nullable|string',
-            'quantity' => 'nullable|string',
-            'unit' => 'nullable|string',
-            'reason_for_update' => 'nullable|string',
-            'location' => 'nullable|string',
+        $validatedRequest = $request->validate([
             'stock_date' => 'nullable|string',
             'vendor_id' => 'nullable|string',
-            'adjustment' => 'nullable|string',
-           
+            'reason_for_update' => 'nullable|string',
+            'storage_location' => 'required|array',
+            'storage_location.*.current_stock' => 'nullable|numeric',
+            'storage_location.*.quantity' => 'required|numeric',
+            'storage_location.*.unit' => 'nullable|string',
+            'storage_location.*.location' => 'required|string',
+            'storage_location.*.adjustment' => 'required|string|in:add,subscription',
         ]);
 
-        $validatedData['product_id'] = $product_id;
-        $validatedData['category_id'] = $product->category;
+        $multiLocation = $validatedRequest['storage_location'];
 
-        if($request->adjustment =='add'){
+        foreach ($multiLocation as $multiData) {
+            $product_location = Stock::where('product_id', $product_id)
+                ->where('location_id', $multiData['location'])
+                ->first();
 
-            $productopening_stock =  $product->opening_stock + $request->quantity;
+            $quantity = $multiData['quantity'];
+            $adjustment = $multiData['adjustment'];
+
+            if ($product_location) {
+                // Update existing stock record
+                // $currentStock = $product_location->current_stock;
+                $currentStock = $multiData['current_stock'];
+
+                if ($adjustment === 'add') {
+                    $newStock = $currentStock + $quantity;
+                    $productOpeningStock = $product->opening_stock + $quantity;
+                } else {
+                    $newStock = $currentStock - $quantity;
+                    $productOpeningStock = $product->opening_stock - $quantity;
+                }
+
+                $stockData = [
+                    'current_stock' => $currentStock,
+                    'new_stock' => $newStock,
+                    'unit' => $multiData['unit'] ?? $product_location->unit,
+                    'quantity' => $quantity,
+                    'adjustment' => $adjustment,
+                    'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                ];
+
+                $product_location->update($stockData);
+            } else {
+                // Create new stock record
+                $currentStock = $multiData['current_stock'] ?? 0;
+
+                if ($adjustment === 'add') {
+                    $newStock = $currentStock + $quantity;
+                    $productOpeningStock = $product->opening_stock + $quantity;
+                } else {
+                    $newStock = $currentStock - $quantity;
+                    $productOpeningStock = $product->opening_stock - $quantity;
+                }
+
+                $stockData = [
+                    'product_id' => $product_id,
+                    'category_id' => $product->category,
+                    'current_stock' => $currentStock,
+                    'new_stock' => $newStock,
+                    'unit' => $multiData['unit'] ?? null,
+                    'location_id' => $multiData['location'],
+                    'quantity' => $quantity,
+                    'adjustment' => $adjustment,
+                    'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                ];
+
+                Stock::create($stockData);
+            }
+
+            // Update the product's opening stock
+            $product->update(['opening_stock' => $productOpeningStock]);
         }
 
-        if($request->adjustment =='subscription'){
-
-            $productopening_stock = $product->opening_stock - $request->quantity;
-        }
-
-
-    // ✅ Generate QR Code after product is created
-    $productDetails = [
-        'opening_stock' => $productopening_stock
-    ];
-        $validatedData['current_stock'] =$product->opening_stock;
-        $validatedData['new_stock'] =$productopening_stock;
-        
-        $stock = Stock::create($validatedData);
-        $product->update($productDetails);
-
-        return response()->json(['message' => 'Stock updated successfully', 'product' => $stock], 200);
+        return response()->json(['message' => 'Stock updated successfully'], 200);
     }
+    // public function editStock($product_id)
+    // {
+    //     // Fetch all stock entries with relations
+    //     $stocks = Stock::with([
+    //         'product:id,product_name,opening_stock',
+    //         'category:id,name',
+    //         'vendor:id,vendor_name','location:id,name'
+    //     ])->where('product_id', $product_id)->get();
+
+    //     // Check if stock records exist
+    //     if ($stocks->isEmpty()) {
+    //         return response()->json(['error' => 'Stock not found for this product'], 404);
+    //     }
+
+    //     // Get product info from the first stock record
+    //     $product = $stocks->first()->product;
+
+    //     // Map stock details
+    //     $stockDetails = $stocks->map(function ($stock) {
+    //         return [
+    //             'stock_id' => $stock->id,
+    //             'location' => $stock->location->name, // Assuming 'location' is a string field in Stock table
+    //             'current_stock' => $stock->current_stock,
+    //             'new_stock' => $stock->new_stock,
+    //             'unit' => $stock->unit,
+    //             'quantity' => $stock->quantity,
+    //             'adjustment' => $stock->adjustment,
+    //             'stock_date' => $stock->stock_date,
+    //             'vendor_id' => $stock->vendor_id,
+    //             'vendor_name' => optional($stock->vendor)->vendor_name,
+    //             'category' => $stock->category->name,
+    //             'reason_for_update' => $stock->reason_for_update,
+    //         ];
+    //     });
+
+    //     return response()->json([
+    //         'product_id' => $product->id,
+    //         'product_name' => $product->product_name,
+    //         'opening_stock' => $product->opening_stock,
+    //         'stock_details' => $stockDetails
+    //     ], 200);
+    // }
+
+    
+    public function editStock($product_id)
+{
+    // Fetch all stock entries with necessary relations
+    $stocks = Stock::with([
+        'product:id,product_name,opening_stock',
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'location:id,name'
+    ])->where('product_id', $product_id)->get();
+
+    // Check if stock records exist
+    if ($stocks->isEmpty()) {
+        return response()->json(['error' => 'Stock not found for this product'], 404);
+    }
+
+    // Get product info from the first stock record
+    $product = $stocks->first()->product;
+
+    // Map each stock record
+    $stockDetails = $stocks->map(function ($stock) {
+        return [
+            'stock_id' => $stock->id,
+            'location' => optional($stock->location)->name, // Safely get location name
+            'current_stock' => $stock->current_stock,
+            'new_stock' => $stock->new_stock,
+            'unit' => $stock->unit,
+            'quantity' => $stock->quantity,
+            'adjustment' => $stock->adjustment,
+            'stock_date' => $stock->stock_date,
+            'vendor_id' => $stock->vendor_id,
+            'vendor_name' => optional($stock->vendor)->vendor_name,
+            'category' => optional($stock->category)->name,
+            'reason_for_update' => $stock->reason_for_update,
+        ];
+    });
+
+    return response()->json([
+        'product_id' => $product->id,
+        'product_name' => $product->product_name,
+        'opening_stock' => $product->opening_stock,
+        'stock_details' => $stockDetails
+    ], 200);
+}
+
+    
+
+    
 
     public function inventoryAlert()
         {
-        $inventory_alert = Product::select('id','product_name','sku','opening_stock','storage_location','inventory_alert_threshold',DB::raw("'Warning' as status"))->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))->get();
+        $inventory_alert = Product::select('id','product_name','sku','opening_stock','location_id','inventory_alert_threshold',DB::raw("'Warning' as status"))->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))->get();
 
         return response()->json(['inventory_alert' => $inventory_alert], 200);
         }
@@ -581,7 +886,7 @@ public function uploadCSV(Request $request)
             'manufacturer' => $row[5],
             'vendor' => $row[6],
             'model' => $row[7],
-            'storage_location' => $row[8],
+            'location_id' => $row[8],
             'description' => $row[9],
             'returnable' => strtolower($row[10]) === 'yes' ? 1 : 0,
             'track_inventory' => $row[11],
@@ -617,225 +922,48 @@ public function uploadCSV(Request $request)
     ], 200);
 }
 
-    // public function uploadCsv(Request $request) {
-        
-    //     {
-    //         $request->validate([
-    //             'file' => 'required|file|mimes:csv,txt'
-    //         ]);
+
+public function locationList()
+{
+    $location = Location::all();
+
     
-    //         $file = $request->file('file');
-    //         $path = $file->getRealPath();
-            
-    //         $products = [];
-    //         $errors = [];
-           
-    //         if (($handle = fopen($path, "r")) !== FALSE) {
-    //             // Skip header row
-    //             $headers = fgetcsv($handle);
-                
-    //             $row = 2; // Start from row 2 (after headers)
-    //             while (($data = fgetcsv($handle)) !== FALSE) {
-    //                 $productData = array_combine($headers, $data);
-    //                 // print_r($productData);die;
-    //                 $generator = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+        return response()->json([
+            'message' => 'Location list',
+            'location' => $location,
+        ], 200);
     
-                    
-    //                 $validator = Validator::make($productData, [
-    //                     'name' => 'required|string|max:255',
-    //                     'brand' => 'nullable|string|max:100',
-    //                     'vendor' => 'nullable|string|max:100',
-    //                     'product_category' => 'nullable|string|max:100',
-    //                     'barcode_number' => 'required',
-    //                     'avg_cost' => 'nullable|string',
-    //                     'last_cost' => 'nullable|numeric|min:0',
-    //                     'price' => 'required|numeric|min:0',
-    //                     'quantity' => 'nullable|string',
-    //                     'low_qty_warning' => 'nullable|integer|min:0',
-    //                     'max_quantity' => 'nullable|integer|min:0',
-    //                     'min_order_quantity' => 'required|integer|min:0',
-    //                 ]);
-    
-                    
-    //                 if ($validator->fails()) {
-    //                     $errors[] = "Row {$row}: " . implode(', ', $validator->errors()->all());
-    //                 } else {
-    //                     try {
-                            
-    //                         $barcode = DNS1D::getBarcodePNG($productData['barcode_number'], 'C128', 2, 100);
-                
-    //                         // print_r($productData);die;
-    //                         $productData['barcode'] = $barcode;
-    
-    //                         $product = Product::create([
-    //                             'name' => $productData['name'],
-    //                             'brand' => $productData['brand'],
-    //                             'vendor' => $productData['vendor'],
-    //                             'category' => $productData['product_category'],
-    //                             'barcode_number'=> $productData['barcode_number'],
-    //                             'avg_cost' => $productData['avg_cost'],
-    //                             'last_cost' => $productData['last_cost'],
-    //                             'price' => $productData['price'],
-    //                             'stock' => $productData['quantity'],
-    //                             'low_stock_warning' => $productData['low_qty_warning'],
-    //                             'max_quantity' => $productData['max_quantity'],
-    //                             'min_order_quantity' => $productData['min_order_quantity'],
-    //                             'barcode' => $productData['barcode'],
-    //                             'sku' => $productData['brand'],
-    //                             'description' => 'add',
-    //                         ]);
-                            
-    //                         // $productData['barcode'] = $barcode;
-    
-    //                         // $product = new Product();
-    //                         // $product->fill($productData); // Assigns attributes from $productData
-    //                         // $product->save(); // Saves the product to the database
-    
-    //                         // $product = new Product();
-    //                         // $product->name = $productData['name'];
-    //                         // $product->brand = $productData['brand'];
-    //                         // $product->vendor = $productData['vendor'];
-    //                         // $product->category = $productData['product_category'];
-    //                         // $product->barcode_number = $productData['barcode_number'];
-    //                         // $product->avg_cost = $productData['avg_cost'];
-    //                         // $product->last_cost = $productData['last_cost'];
-    //                         // $product->price = $productData['price'];
-    //                         // $product->stock = $productData['quantity'];
-    //                         // $product->low_stock_warning = $productData['low_qty_warning'];
-    //                         // $product->max_quantity = $productData['max_quantity'];
-    //                         // $product->min_order_quantity = $productData['min_order_quantity'];
-    //                         // $product->barcode = $barcode;
-    //                         // $product->save();
-    //                         // $product = new Product();
-    //                         // $product->name = $productData['name'];
-    //                         // $product->brand = $productData['brand'];
-    //                         // $product->vendor = $productData['vendor'];
-    //                         // $product->category = $productData['product_category'];
-    //                         // $product->barcode_number = $productData['barcode_number'];
-    //                         // $product->avg_cost = $productData['avg_cost'];
-    //                         // $product->last_cost = $productData['last_cost'];
-    //                         // $product->price = $productData['price'];
-    //                         // $product->stock = $productData['quantity'];
-    //                         // $product->low_stock_warning = $productData['low_qty_warning'];
-    //                         // $product->max_quantity = $productData['max_quantity'];
-    //                         // $product->min_order_quantity = $productData['min_order_quantity'];
-    //                         // $product->barcode = $productData['barcode'];
-    //                         // $product->sku = '1';
-    //                         // $product->description = 'add';
-    //                         // $product->save();
-    
-    //                         $products[] = $product;
-    //                     } catch (\Exception $e) {
-    //                         $errors[] = "Row {$row}: Failed to create product - " . $e->getMessage();
-    //                     }
-    //                 }
-    //                 $row++;
-    //             }
-    //             fclose($handle);
-    //         }
-    
-    //         $message = count($products) . ' products imported successfully.';
-    //         if (!empty($errors)) {
-    //             $message .= ' Errors: ' . implode('; ', $errors);
-    //             return redirect()->route('products.create')
-    //                 ->with('warning', $message);
-    //         }
-    
-    //         return redirect()->route('products.index')
-    //             ->with('success', $message);
-    //     }
-    // }
+}
+public function createLocation(Request $request)
+{
+    // Validate that location_name is a required string
+    $validated = $request->validate([
+        'location_name' => 'required|string|max:255',
+    ]);
 
+    // Check if location already exists
+    $existing = Location::where('name', $validated['location_name'])->first();
 
-    // public function uploadCsv(Request $request)
-    // {
-    //     $request->validate([
-    //         'file' => 'required|file|mimes:csv,txt'
-    //     ]);
+    if ($existing) {
+        return response()->json([
+            'message' => 'Location already exists.',
+            'status' => 'duplicate',
+            'location' => $existing,
+        ], 200);
+    }
 
-    //     $file = $request->file('file');
-    //     $path = $file->getRealPath();
+    // Create new location
+    $location = Location::create([
+        'name' => $validated['location_name'],
+    ]);
 
-    //     $products = [];
-    //     $errors = [];
+    return response()->json([
+        'message' => 'Location created successfully.',
+        'status' => 'created',
+        'location' => $location,
+    ], 201);
+}
 
-    //     if (($handle = fopen($path, "r")) !== FALSE) {
-    //         $headers = fgetcsv($handle);
-            
-    //         if (!$headers) {
-    //             return response()->json(['error' => 'Invalid CSV file format. No headers found.'], 400);
-    //         }
-
-    //         $requiredColumns = ['name', 'brand', 'vendor', 'product_category', 'barcode_number', 'avg_cost', 'last_cost', 'price', 'quantity', 'low_qty_warning', 'max_quantity', 'min_order_quantity'];
-
-    //         // Check if all required columns are present
-    //         if (count(array_intersect($requiredColumns, $headers)) !== count($requiredColumns)) {
-    //             return response()->json(['error' => 'CSV file is missing required columns.'], 400);
-    //         }
-
-    //         $row = 2;
-    //         while (($data = fgetcsv($handle)) !== FALSE) {
-    //             $productData = array_combine($headers, $data);
-
-    //             $validator = Validator::make($productData, [
-    //                 'name' => 'required|string|max:255',
-    //                 'brand' => 'nullable|string|max:100',
-    //                 'vendor' => 'nullable|string|max:100',
-    //                 'product_category' => 'nullable|string|max:100',
-    //                 'barcode_number' => 'required|string',
-    //                 'avg_cost' => 'nullable|string',
-    //                 'last_cost' => 'nullable|numeric|min:0',
-    //                 'price' => 'required|numeric|min:0',
-    //                 'quantity' => 'nullable|integer|min:0',
-    //                 'low_qty_warning' => 'nullable|integer|min:0',
-    //                 'max_quantity' => 'nullable|integer|min:0',
-    //                 'min_order_quantity' => 'required|integer|min:0',
-    //             ]);
-
-    //             if ($validator->fails()) {
-    //                 $errors[] = "Row {$row}: " . implode(', ', $validator->errors()->all());
-    //             } else {
-    //                 try {
-    //                     DB::beginTransaction();
-
-    //                     $barcode = DNS1D::getBarcodePNG($productData['barcode_number'], 'C128', 2, 100);
-
-    //                     $product = Product::create([
-    //                         'name' => $productData['name'],
-    //                         'brand' => $productData['brand'],
-    //                         'vendor' => $productData['vendor'],
-    //                         'category' => $productData['product_category'],
-    //                         'barcode_number' => $productData['barcode_number'],
-    //                         'avg_cost' => $productData['avg_cost'],
-    //                         'last_cost' => $productData['last_cost'],
-    //                         'price' => $productData['price'],
-    //                         'stock' => $productData['quantity'],
-    //                         'low_stock_warning' => $productData['low_qty_warning'],
-    //                         'max_quantity' => $productData['max_quantity'],
-    //                         'min_order_quantity' => $productData['min_order_quantity'],
-    //                         'barcode' => $barcode,
-    //                         'sku' => strtoupper(substr($productData['name'], 0, 3)) . rand(1000, 9999), 
-    //                         'description' => 'Auto-imported from CSV',
-    //                     ]);
-
-    //                     DB::commit();
-
-    //                     $products[] = $product;
-    //                 } catch (\Exception $e) {
-    //                     DB::rollBack();
-    //                     $errors[] = "Row {$row}: Failed to create product - " . $e->getMessage();
-    //                 }
-    //             }
-    //             $row++;
-    //         }
-    //         fclose($handle);
-    //     }
-
-    //     return response()->json([
-    //         'success' => count($products) . ' products imported successfully.',
-    //         'errors' => $errors
-    //     ]);
-    // }
 }
 
 

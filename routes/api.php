@@ -156,7 +156,10 @@ Route::prefix('barcode-settings')->group(function () {
     Route::get('/view/{id}', [ProductController::class, 'view']); // Get single currency
     Route::put('/update/{id}', [ProductController::class, 'update']); // Update currency
     Route::put('/updateStock/{product_id}', [ProductController::class, 'updateStock']); // Update currency
+    Route::get('/editStock/{product_id}', [ProductController::class, 'editStock']); // Update currency
     Route::delete('/delete/{id}', [ProductController::class, 'destroy']); // Delete currency
+    Route::post('/addLocations', [ProductController::class, 'createLocation']); // Delete currency
+    Route::get('/locationList', [ProductController::class, 'locationList']); // Delete currency
 
     Route::get('inventoryAlert', [ProductController::class, 'inventoryAlert']); // Get all currencies
     Route::post('/upload-csv', [ProductController::class, 'uploadCSV']);

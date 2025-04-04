@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('quantity')->default(0);
             $table->string('unit')->nullable();
             $table->text('reason_for_update')->nullable();
-            $table->string('location')->nullable();
+            $table->string('location_id')->nullable();
             $table->date('stock_date')->nullable();
             $table->string('vendor_id')->nullable();
             $table->string('category_id')->nullable();

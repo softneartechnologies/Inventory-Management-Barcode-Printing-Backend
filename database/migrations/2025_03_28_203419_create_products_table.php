@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('model')->nullable();
             $table->decimal('weight', 8, 2)->nullable();
             $table->string('weight_unit')->nullable();
-            $table->string('storage_location')->nullable();
+            $table->string('location_id')->nullable();
             $table->string('thumbnail')->nullable();
             $table->text('description')->nullable();
             $table->boolean('returnable')->default(false);
