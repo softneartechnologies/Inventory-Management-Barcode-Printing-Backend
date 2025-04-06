@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ScanInOutProduct;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ScanInOutProductController extends Controller
@@ -34,6 +35,8 @@ class ScanInOutProductController extends Controller
     // Store a new scan record
     public function storeIn(Request $request)
     {
+        $product = Product::find($request->product_id);
+// print_r($product->vendor_id);die;
         $validated = $request->validate([
             'product_id' => 'required|exists:products,id',
             'employee_id' => 'required|exists:employees,id',
@@ -41,7 +44,7 @@ class ScanInOutProductController extends Controller
             'type' => 'required|in:in',
             'in_quantity' => 'required|integer|min:1'
         ]);
-
+        $validated['vendor_id'] = $product->vendor_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
         return response()->json($scanRecord, 200);
@@ -49,6 +52,9 @@ class ScanInOutProductController extends Controller
 
     public function storeOut(Request $request)
     {
+
+        $product = Product::find($request->product_id);
+
         $validated = $request->validate([
             'product_id' => 'required|exists:products,id',
             'employee_id' => 'required|exists:employees,id',
@@ -57,6 +63,7 @@ class ScanInOutProductController extends Controller
             'out_quantity' => 'required|integer|min:1'
         ]);
 
+        $validated['vendor_id'] = $product->vendor_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
         return response()->json($scanRecord, 200);
@@ -65,23 +72,26 @@ class ScanInOutProductController extends Controller
 
     public function inventorySummaryReport(){
 
-        $scanRecords = ScanInOutProduct::with(['product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock', 'vendor:id,vendor_name'])->get();
+        $scanRecords = ScanInOutProduct::with(['product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock','vendor:id,vendor_name', 'employee:id,employee_name'])->get();
 
+        // print_r($scanRecords);die;
         $scanRecords = $scanRecords->map(function ($scanRecords) {
+            // print_r($scanRecords);die;
             return [
                 'id' => $scanRecords->id,
-                'product_id' => $scanRecords->product_id,
-                'employee_id' => $scanRecords->employee_id,
                 'in_out_date_time' => $scanRecords->in_out_date_time,
                 'in_quantity' => $scanRecords->in_quantity,
                 'out_quantity' => $scanRecords->out_quantity,
                 'type' => $scanRecords->type,
-                'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
-                'sku' => $scanRecords->product->sku ?? null, // Move product_name outside
+                'product_id' => $scanRecords->product_id,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'employee_id' => $scanRecords->employee_id,
+                'employee_name' => optional($scanRecords->employee)->employee_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
                 'inventory_alert_threshold' => $scanRecords->product->inventory_alert_threshold ?? null, // Move product_name outside
                 'commit_stock_check' => $scanRecords->product->commit_stock_check ?? null, // Move product_name outside
                 'opening_stock' => $scanRecords->product->opening_stock ?? null, // Move product_name outside
-                'vendor_name' => $scanRecords->product->vendor->vendor_name ?? null, // Ensure category exists
+                'vendor_name' => $scanRecords->vendor->vendor_name ?? null, // Ensure category exists
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
             ];
@@ -140,5 +150,13 @@ class ScanInOutProductController extends Controller
         });
 
         return response()->json($scanRecords, 200);
+    }
+
+
+    public function productScaned($sku){
+        
+        $product = Product::where('sku',$sku)->get();
+
+        return response()->json(['product'=>$product], 200);
     }
 }

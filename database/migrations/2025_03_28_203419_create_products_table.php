@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('generated_barcode')->nullable();
             $table->string('generated_qrcode')->nullable();
             $table->string('units');
-            $table->string('category');
-            $table->string('sub_category')->nullable();
+            $table->string('category_id');
+            $table->string('sub_category_id')->nullable();
             $table->string('manufacturer')->nullable();
-            $table->string('vendor')->nullable();
+            $table->string('vendor_id')->nullable();
             $table->string('model')->nullable();
             $table->decimal('weight', 8, 2)->nullable();
             $table->string('weight_unit')->nullable();

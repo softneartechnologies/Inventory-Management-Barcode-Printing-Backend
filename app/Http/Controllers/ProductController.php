@@ -193,24 +193,44 @@ class ProductController extends Controller
         $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
     }
 
-    $validatedData['location_id'] = json_encode($request->storage_location);
+    // $validatedData['location_id'] = json_encode($request->storage_location);
 
     
-    $product = Product::create($validatedData);
+//     $product = Product::create($validatedData);
 
-   $multiLocation = $request->storage_location;
+//    $multiLocation = $request->storage_location;
 
-    foreach($multiLocation as $multiData){
-
+//     foreach($multiLocation as $multiData){
+//         print_r($multiData);die;
     
+//             Stock::create([
+//                 'product_id'=>$product->id,
+//                 'vendor_id'=>$request->vendor,
+//                 'category_id'=>$request->category,
+//                 'current_stock'=>$request->opening_stock,
+//                 'unit'=>$request->units,
+//                 'location_id'=>$multiData,
+//                 'stock_date'=>now(),
+//             ]);
+//         }
+
+        $validatedData['location_id'] = json_encode(
+            collect($request->storage_location)->pluck('location')->all()
+        );
+        // $validatedData['location_id'] = json_encode($request->storage_location->location);
+
+        $product = Product::create($validatedData);
+
+        foreach ($request->storage_location as $multiData) {
             Stock::create([
-                'product_id'=>$product->id,
-                'vendor_id'=>$request->vendor,
-                'category_id'=>$request->category,
-                'current_stock'=>$request->opening_stock,
-                'unit'=>$request->units,
-                'location_id'=>$multiData,
-                'stock_date'=>now(),
+                'product_id'    => $product->id,
+                'vendor_id'     => $request->vendor,
+                'category_id'   => $request->category,
+                'current_stock' => $multiData['quantity'],
+                'unit'          => $multiData['unit'],
+                'location_id'   => $multiData['location'],
+                'adjustment' => $multiData['adjustment'],
+                'stock_date'    => now(),
             ]);
         }
 
@@ -220,29 +240,114 @@ class ProductController extends Controller
     ], 200);
 }
 
-    public function show($id)
+    public function show($product_id)
     {
-        $product = Product::find($id);
-        if (!$product) {
+        $product_detail = Product::find($product_id);
+        if (!$product_detail) {
             return response()->json(['error' => 'Product not found'], 404);
         }
-        return response()->json($product);
+       
+
+        $stocks = Stock::with([
+            'product:id,product_name,opening_stock',
+            'category:id,name',
+            'vendor:id,vendor_name',
+            'location:id,name'
+        ])->where('product_id', $product_id)->get();
+    
+        // Check if stock records exist
+        if ($stocks->isEmpty()) {
+            return response()->json(['error' => 'Stock not found for this product'], 404);
+        }
+    
+        // Get product info from the first stock record
+        $product = $stocks->first()->product;
+    
+        // Map each stock record
+        $stockDetails = $stocks->map(function ($stock) {
+            return [
+                'stock_id' => $stock->id,
+                'location_d' => $stock->location_id,
+                'location' => optional($stock->location)->name, // Safely get location name
+                'current_stock' => $stock->current_stock,
+                'new_stock' => $stock->new_stock,
+                'unit' => $stock->unit,
+                'quantity' => $stock->quantity,
+                'adjustment' => $stock->adjustment,
+                'stock_date' => $stock->stock_date,
+                'vendor_id' => $stock->vendor_id,
+                'vendor_name' => optional($stock->vendor)->vendor_name,
+                'category' => optional($stock->category)->name,
+                // 'reason_for_update' => $stock->reason_for_update,
+            ];
+        });
+    
+        return response()->json([
+            'product_data'=>$product_detail,
+            // 'product_id' => $product->id,
+            // 'product_name' => $product->product_name,
+            // 'opening_stock' => $product->opening_stock,
+            'stock_details' => $stockDetails
+        ], 200);
     }
 
 
-    public function view($id)
+    public function view($product_id)
     {
-        $product = Product::find($id);
-        if (!$product) {
+        $product_detail = Product::find($product_id);
+        if (!$product_detail) {
             return response()->json(['error' => 'Product not found'], 404);
         }
-        return response()->json($product);
+       
+
+        $stocks = Stock::with([
+            'product:id,product_name,opening_stock',
+            'category:id,name',
+            'vendor:id,vendor_name',
+            'location:id,name'
+        ])->where('product_id', $product_id)->get();
+    
+        // Check if stock records exist
+        if ($stocks->isEmpty()) {
+            return response()->json(['error' => 'Stock not found for this product'], 404);
+        }
+    
+        // Get product info from the first stock record
+        $product = $stocks->first()->product;
+    
+        // Map each stock record
+        $stockDetails = $stocks->map(function ($stock) {
+            return [
+                'stock_id' => $stock->id,
+                'location_d' => $stock->location_id, // Safely get location name
+                'location' => optional($stock->location)->name, // Safely get location name
+                'current_stock' => $stock->current_stock,
+                'new_stock' => $stock->new_stock,
+                'unit' => $stock->unit,
+                'quantity' => $stock->quantity,
+                'adjustment' => $stock->adjustment,
+                'stock_date' => $stock->stock_date,
+                'vendor_id' => $stock->vendor_id,
+                'vendor_name' => optional($stock->vendor)->vendor_name,
+                'category' => optional($stock->category)->name,
+                // 'reason_for_update' => $stock->reason_for_update,
+            ];
+        });
+    
+        return response()->json([
+            'product_data'=>$product_detail,
+            // 'product_id' => $product->id,
+            // 'product_name' => $product->product_name,
+            // 'opening_stock' => $product->opening_stock,
+            'stock_details' => $stockDetails
+        ], 200);
     }
 
 
     public function update(Request $request, $id)
     {
-        $product = Product::find($id);
+        $product = Product::with(['stocks:*'])->find($id);
+    
         if (!$product) {
             return response()->json(['error' => 'Product not found'], 404);
         }
@@ -258,7 +363,7 @@ class ProductController extends Controller
             'model' => 'nullable|string',
             'weight' => 'nullable|numeric',
             'weight_unit' => 'nullable|string',
-            'location_id' => 'nullable|string',
+            // 'location_id' => 'nullable|string',
             'thumbnail' => 'nullable|string',
             'description' => 'nullable|string',
             'returnable' => 'boolean',
@@ -335,7 +440,6 @@ class ProductController extends Controller
         // ✅ Store the public path for access
         $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
     
-        // ✅ Store QR Code Path in Database
         $validatedData['generated_qrcode'] = $qrcodeBase64;
     }
 
@@ -345,14 +449,90 @@ class ProductController extends Controller
         $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
     }
 
+        $validatedData['location_id'] = json_encode(
+            collect($request->storage_location)->pluck('location')->all()
+        );
 
         $product->update($validatedData);
-        return response()->json(['message' => 'Product updated successfully', 'product' => $product], 200);
+
+        $multiLocation = $request->storage_location;
+        $product_id=$id;
+        foreach ($multiLocation as $multiData) {
+            $product_location = Stock::where('product_id', $product_id)
+                ->where('location_id', $multiData['location'])
+                ->first();
+
+            $quantity = $multiData['quantity'];
+            $adjustment = $multiData['adjustment'];
+
+            if ($product_location) {
+                // Update existing stock record
+                // $currentStock = $product_location->current_stock;
+                $currentStock = $multiData['quantity'];
+
+                if ($adjustment === 'add') {
+                    $newStock = $currentStock + $quantity;
+                    $productOpeningStock = $product->opening_stock + $quantity;
+                } else {
+                    $newStock = $currentStock - $quantity;
+                    $productOpeningStock = $product->opening_stock - $quantity;
+                }
+
+                $stockData = [
+                    'current_stock' => $currentStock,
+                    'new_stock' => $newStock,
+                    'unit' => $multiData['unit'] ?? $product_location->unit,
+                    'quantity' => $quantity,
+                    'adjustment' => $adjustment,
+                    'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    'vendor_id'     => $request->vendor,
+                    'category_id'   => $request->category,
+                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                ];
+
+                $product_location->update($stockData);
+            } else {
+                // Create new stock record
+                $currentStock = $multiData['quantity'] ?? 0;
+
+                if ($adjustment === 'add') {
+                    $newStock = $currentStock + $quantity;
+                    $productOpeningStock = $product->opening_stock + $quantity;
+                } else {
+                    $newStock = $currentStock - $quantity;
+                    $productOpeningStock = $product->opening_stock - $quantity;
+                }
+
+                $stockData = [
+                    'product_id' => $product_id,
+                    'category_id' => $product->category,
+                    'current_stock' => $currentStock,
+                    'new_stock' => $newStock,
+                    'unit' => $multiData['unit'] ?? null,
+                    'location_id' => $multiData['location'],
+                    'quantity' => $quantity,
+                    'adjustment' => $adjustment,
+                    'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    'vendor_id'     => $request->vendor,
+                    'category_id'   => $request->category,
+                ];
+
+                Stock::create($stockData);
+            }
+
+            // Update the product's opening stock
+            // $product->update(['opening_stock' => $productOpeningStock]);
+        }
+
+    return response()->json(['message' => 'Product updated successfully', 'product' => $product], 200);
+
+
     }
 
     public function destroy($id)
     {
-        $product = Product::find($id);
+        // $product = Product::find($id);
+        $product = Product::with(['stocks:*'])->find($id);
         if (!$product) {
             return response()->json(['error' => 'Product not found'], 404);
         }
@@ -675,6 +855,7 @@ class ProductController extends Controller
     $stockDetails = $stocks->map(function ($stock) {
         return [
             'stock_id' => $stock->id,
+            'location_d' => $stock->location_id,
             'location' => optional($stock->location)->name, // Safely get location name
             'current_stock' => $stock->current_stock,
             'new_stock' => $stock->new_stock,
@@ -735,39 +916,40 @@ class ProductController extends Controller
     // }
 
     public function inventoryAdjustmentsReport()
-{
-    $stocks = Stock::with([
-        'product.category', // Load category via product
-        'category:id,name','vendor:id,vendor_name'    // Load vendor via product
-    ])->get();
+    {
+        $stocks = Stock::with([
+            'product.category', // Load category via product
+            'category:id,name','vendor:id,vendor_name','location:id,name'
+        ])->where('new_stock', '>', 0)->get();
 
 
-    $adjustments = $stocks->map(function ($stock) {
-        $adjustmentSymbol = $stock->adjustment == 'subscription' ? '-' : '+';
-        $newStock = $stock->adjustment == 'subscription'
-            ? $stock->current_stock - $stock->quantity
-            : $stock->current_stock + $stock->quantity;
+        $adjustments = $stocks->map(function ($stock) {
+            $adjustmentSymbol = $stock->adjustment == 'subscription' ? '-' : '+';
+            $newStock = $stock->adjustment == 'subscription'
+                ? $stock->current_stock - $stock->quantity
+                : $stock->current_stock + $stock->quantity;
 
-            // print_r($stock->product->category);die;
-        return [
-            'id' => $stock->id,
-            'product_id' => $stock->product_id,
-            'product_name' => $stock->product->product_name ?? 'N/A',
-            'sku' => $stock->product->sku ?? 'N/A',
-            'category_name' => $stock->category->name ?? 'N/A',  // Ensure category is not null
-            'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
-            'previous_stock' => $stock->current_stock,
-            'new_stock' => $newStock,
-            'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
-            'reason' => $stock->reason_for_update ?? 'N/A',
-            'location' => $stock->location ?? 'N/A',
-            'created_at' => $stock->created_at,
-            'updated_at' => $stock->updated_at,
-        ];
-    });
+                // print_r($stock->product->category);die;
+            return [
+                'id' => $stock->id,
+                'product_id' => $stock->product_id,
+                'product_name' => $stock->product->product_name ?? 'N/A',
+                'sku' => $stock->product->sku ?? 'N/A',
+                'category_name' => $stock->category->name ?? 'N/A',  // Ensure category is not null
+                'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+                'previous_stock' => $stock->current_stock,
+                'new_stock' => $newStock,
+                'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+                'reason' => $stock->reason_for_update ?? 'N/A',
+                'location' => optional($stock->location)->name, 
+                'created_at' => $stock->created_at,
+                'updated_at' => $stock->updated_at,
+            ];
+        });
 
-    return response()->json(['inventory_adjustments' => $adjustments], 200);
-}
+        // print_r($adjustments);die;
+        return response()->json(['inventory_adjustments' => $adjustments], 200);
+    }
 
 public function uploadCSV(Request $request)
 {

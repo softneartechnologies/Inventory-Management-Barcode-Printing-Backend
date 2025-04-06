@@ -11,8 +11,8 @@ class Product extends Model
     use HasFactory;
     protected $fillable = [
         'product_name', 'sku', 'generated_barcode','barcode_number',
-        'generated_qrcode', 'units', 'category', 'sub_category',
-        'manufacturer', 'vendor', 'model', 'weight', 'weight_unit',
+        'generated_qrcode', 'units', 'category_id', 'sub_category_id',
+        'manufacturer', 'vendor_id', 'model', 'weight', 'weight_unit',
         'location_id', 'thumbnail', 'description', 'returnable',
         'track_inventory', 'opening_stock', 'selling_cost', 'cost_price',
         'commit_stock_check', 'project_name', 'length', 'width', 'depth',
@@ -43,6 +43,11 @@ class Product extends Model
     public function location()
     {
         return $this->belongsTo(Location::class);
+    }
+
+    public function vendorsdata()
+    {
+        return $this->belongsTo(Vendor::class);
     }
 
 }

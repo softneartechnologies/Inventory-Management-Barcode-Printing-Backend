@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('product_id')->constrained()->onDelete('cascade');
             $table->foreignId('employee_id')->constrained()->onDelete('cascade');
+            $table->string('vendor_id')->default(0);
             $table->dateTime('in_out_date_time');
             $table->enum('type', ['in', 'out']);
             $table->integer('in_quantity')->default(0);

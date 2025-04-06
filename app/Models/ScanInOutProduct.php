@@ -15,7 +15,8 @@ class ScanInOutProduct extends Model
         'in_out_date_time',
         'type',
         'in_quantity',
-        'out_quantity'
+        'out_quantity',
+        'vendor_id'
         
     ];
 

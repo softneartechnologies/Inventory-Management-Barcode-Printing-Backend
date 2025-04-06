@@ -173,6 +173,8 @@ Route::prefix('reports')->group(function () {
 });
 
 Route::get('inventorySummaryReport', [ScanInOutProductController::class, 'inventorySummaryReport']); // Get all currencies
+Route::get('productScaned/{id}', [ScanInOutProductController::class, 'productScaned']); // Get all currencies
+
 
 Route::prefix('order')->group(function () {
 
