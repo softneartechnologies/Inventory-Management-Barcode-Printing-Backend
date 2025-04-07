@@ -21,6 +21,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ScanInOutProductController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\RolePermissionController;
+use App\Http\Controllers\DashboardController;
 
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -32,6 +33,8 @@ Route::post('reset', [UserController::class, 'reset']);
 
 Route::middleware('auth:api')->group(function () {
     Route::post('logout', [UserController::class, 'logout']);
+    Route::get('dashboard', [DashboardController::class, 'index']);
+
     Route::get('/employee', [UserController::class, 'index']);
     // Route::get('/superadmin_show', [SuperAdminController::class, 'superAdminProfileShow']);
     // Route::get('/superadmin/edit_profile', [SuperAdminController::class, 'superAdminEditProfile']);

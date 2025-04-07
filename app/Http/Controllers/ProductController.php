@@ -25,8 +25,22 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return response()->json(Product::all(), 200);
+        $products = Product::with('category:id,name','vendor:id,vendor_name',
+        'subcategory:id,name')->get();
+    
+        $products = $products->map(function ($product) {
+            // Get all product attributes + add category name
+            $data = $product->toArray();
+            $data['category_name'] = optional($product->category)->name;
+            $data['subcategory_name'] = optional($product->subcategory)->name;
+            $data['vendor_name'] = optional($product->vendor)->vendor_name;
+    
+            return $data;
+        });
+    
+        return response()->json(['products' => $products], 200);
     }
+    
 
     // public function store(Request $request)
     // {
@@ -917,6 +931,7 @@ class ProductController extends Controller
 
     public function inventoryAdjustmentsReport()
     {
+        
         $stocks = Stock::with([
             'product.category', // Load category via product
             'category:id,name','vendor:id,vendor_name','location:id,name'
@@ -942,6 +957,7 @@ class ProductController extends Controller
                 'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
                 'reason' => $stock->reason_for_update ?? 'N/A',
                 'location' => optional($stock->location)->name, 
+                'stock_date' => $stock->stock_date,
                 'created_at' => $stock->created_at,
                 'updated_at' => $stock->updated_at,
             ];
