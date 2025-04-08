@@ -17,7 +17,7 @@ use DB;
 // use Milon\Barcode\DNS2D;
 use Milon\Barcode\Facades\DNS1D;
 use Milon\Barcode\Facades\DNS2D;
-
+use App\Models\BarcodeSetting;
 
 
 
@@ -1249,6 +1249,19 @@ public function printBarcode(Request $request)
             $barcodes[] = DNS2D::getBarcodeHTML($request->data, 'QRCODE');
         }
     }
+
+    // $barcodedetail  = BarcodeSetting::get();
+
+    // $barcodeDetail = BarcodeSetting::first(); // Assuming there's only one row
+    // $enabledFields = [];
+
+    // foreach ($barcodeDetail->toArray() as $key => $value) {
+    //     if ($value == 1) {
+    //         $enabledFields[] = $key;
+    //     }
+    // }
+
+    // print_r($enabledFields);die;
 
     $pdf = PDF::loadView('pdf.barcodes', [
         'barcodes' => $barcodes,
