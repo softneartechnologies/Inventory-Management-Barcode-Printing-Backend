@@ -910,52 +910,78 @@ class ProductController extends Controller
             ->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))
             ->get();
     
-        // $inventory_alert = $products->map(function ($product) {
-        //     // Decode location IDs (JSON string to array)
-        //     $locationIds = json_decode($product->location_id, true);
-    
-        //     // Get location names from DB
-        //     $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
-    
-        //     return [
-        //         'id' => $product->id,
-        //         'product_name' => $product->product_name,
-        //         'sku' => $product->sku,
-        //         'opening_stock' => $product->opening_stock,
-        //         'inventory_alert_threshold' => $product->inventory_alert_threshold,
-        //         'location_id' => $locationIds, // optional: keep raw IDs
-        //         'location_name' => $locationNames, // array of location names
-        //         'status' => 'Warning',
-        //     ];
-        // });
-    
-        // return response()->json(['inventory_alert' => $inventory_alert], 200);
-
         $inventory_alert = $products->map(function ($product) {
             // Decode location IDs (JSON string to array)
             $locationIds = json_decode($product->location_id, true);
-        
-            // Safe fallback if null
-            $locationIds = is_array($locationIds) ? $locationIds : [];
-        
+    
             // Get location names from DB
-            $locationNames = count($locationIds) > 0
-                ? \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray()
-                : [];
-        
+            $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+    
             return [
                 'id' => $product->id,
                 'product_name' => $product->product_name,
                 'sku' => $product->sku,
                 'opening_stock' => $product->opening_stock,
                 'inventory_alert_threshold' => $product->inventory_alert_threshold,
-                'location_id' => $locationIds, // optional
+                'location_id' => $locationIds, // optional: keep raw IDs
                 'location_name' => $locationNames, // array of location names
                 'status' => 'Warning',
             ];
         });
-    }
     
+        return response()->json(['inventory_alert' => $inventory_alert], 200);
+    }
+    // public function inventoryAlert()
+    // {
+    //     $products = Product::select('id', 'product_name', 'sku', 'opening_stock', 'location_id', 'inventory_alert_threshold', DB::raw("'Warning' as status"))
+    //         ->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))
+    //         ->get();
+    
+    //     // $inventory_alert = $products->map(function ($product) {
+    //     //     // Decode location IDs (JSON string to array)
+    //     //     $locationIds = json_decode($product->location_id, true);
+    
+    //     //     // Get location names from DB
+    //     //     $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+    
+    //     //     return [
+    //     //         'id' => $product->id,
+    //     //         'product_name' => $product->product_name,
+    //     //         'sku' => $product->sku,
+    //     //         'opening_stock' => $product->opening_stock,
+    //     //         'inventory_alert_threshold' => $product->inventory_alert_threshold,
+    //     //         'location_id' => $locationIds, // optional: keep raw IDs
+    //     //         'location_name' => $locationNames, // array of location names
+    //     //         'status' => 'Warning',
+    //     //     ];
+    //     // });
+    
+    //     // return response()->json(['inventory_alert' => $inventory_alert], 200);
+
+    //     $inventory_alert = $products->map(function ($product) {
+    //         // Decode location IDs (JSON string to array)
+    //         $locationIds = json_decode($product->location_id, true);
+        
+    //         // Safe fallback if null
+    //         $locationIds = is_array($locationIds) ? $locationIds : [];
+        
+    //         // Get location names from DB
+    //         $locationNames = count($locationIds) > 0
+    //             ? \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray()
+    //             : [];
+        
+    //         return [
+    //             'id' => $product->id,
+    //             'product_name' => $product->product_name,
+    //             'sku' => $product->sku,
+    //             'opening_stock' => $product->opening_stock,
+    //             'inventory_alert_threshold' => $product->inventory_alert_threshold,
+    //             'location_id' => $locationIds, // optional
+    //             'location_name' => $locationNames, // array of location names
+    //             'status' => 'Warning',
+    //         ];
+    //     });
+    // }
     
 
     // public function inventoryAdjustmentsReport(){
