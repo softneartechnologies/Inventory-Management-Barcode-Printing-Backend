@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 // use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
 // use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
-use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use DB;
@@ -17,6 +17,8 @@ use DB;
 // use Milon\Barcode\DNS2D;
 use Milon\Barcode\Facades\DNS1D;
 use Milon\Barcode\Facades\DNS2D;
+
+
 
 
 
@@ -104,7 +106,7 @@ class ProductController extends Controller
         'product_name' => 'required|string|max:255',
         'sku' => 'required|string|max:255|unique:products',
         'units' => 'required|string',
-        'category' => 'required|string',
+        'category_id' => 'required|string',
         'sub_category' => 'nullable|string',
         'manufacturer' => 'nullable|string',
         'vendor' => 'nullable|string',
@@ -1223,6 +1225,43 @@ public function exportProductsToCSV()
     };
 
     return response()->stream($callback, 200, $headers);
+}
+
+
+public function printBarcode(Request $request)
+{
+    $request->validate([
+        'type' => 'required|in:barcode,qrcode',
+        'count' => 'required|integer|min:1',
+        'format' => 'required|in:only_barcode,with_details',
+        'orientation' => 'required|in:vertical,horizontal',
+        'size' => 'required|in:small,medium,large',
+        'data' => 'required|string', // SKU or product code
+    ]);
+
+    $barcodes = [];
+    for ($i = 0; $i < $request->count; $i++) {
+        if ($request->type == 'barcode') {
+            $barcodes[] = DNS1D::getBarcodePNG($request->data, 'C128', 2, 60);
+    
+            // $barcodes[] = DNS1D::getBarcodeHTML($request->data, 'C128', 2, 60);
+        } else {
+            $barcodes[] = DNS2D::getBarcodeHTML($request->data, 'QRCODE');
+        }
+    }
+
+    $pdf = PDF::loadView('pdf.barcodes', [
+        'barcodes' => $barcodes,
+        'orientation' => $request->orientation,
+        'format' => $request->format,
+        'size' => $request->size,
+        'data' => $request->data,
+        'type' => $request->type,
+        'count' => $request->count,
+        
+    ]);
+
+    return $pdf->download('barcodes.pdf');
 }
 
 
