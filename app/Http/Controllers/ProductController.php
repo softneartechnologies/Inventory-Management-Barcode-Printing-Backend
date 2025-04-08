@@ -258,12 +258,11 @@ class ProductController extends Controller
 
     public function show($product_id)
     {
-        $product_detail = Product::find($product_id);
+        $product_detail = Product::with('category:id,name','sub_category:id,name','vendor:id,vendor_name')->find($product_id);
         if (!$product_detail) {
             return response()->json(['error' => 'Product not found'], 404);
         }
-       
-
+      
         $stocks = Stock::with([
             'product:id,product_name,opening_stock',
             'category:id,name',
@@ -298,11 +297,50 @@ class ProductController extends Controller
             ];
         });
     
+        $productsss= array(['id' => $product_detail->id,
+        'product_name' => $product_detail->product_name,
+        'sku' => $product_detail->sku,
+        'generated_barcode'=>$product_detail->generated_barcode,
+        'generated_qrcode'=>$product_detail->generated_qrcode,
+        'units'=>$product_detail->units,
+        'category_id'=>$product_detail->category_id,
+        'category_name' => $product_detail->category->name ?? null,
+        'sub_category_id'=>$product_detail->sub_category_id,
+        'subcategory_name' => $product_detail->sub_category->name ?? null,
+        'manufacturer'=>$product_detail->manufacturer,
+        'vendor_name'=>$product_detail->vendor->vendor_name,
+        'vendor_id'=>$product_detail->vendor_id,
+        'model'=>$product_detail->model,
+        'weight'=>$product_detail->weight,
+        'weight_unit'=>$product_detail->weight_unit,
+        'location_id'=>$product_detail->location_id,
+        'thumbnail'=>$product_detail->thumbnail,
+        'description'=>$product_detail->description,
+        'returnable'=>$product_detail->returnable,
+        'track_inventory'=>$product_detail->track_inventory,
+        'opening_stock' => $product_detail->opening_stock,
+        'selling_cost' => $product_detail->selling_cost,
+        'cost_price' => $product_detail->cost_price,
+        'commit_stock_check' => $product_detail->commit_stock_check,
+        'project_name' => $product_detail->project_name,
+        'length' => $product_detail->length,
+        'width' => $product_detail->width,
+        'depth' => $product_detail->depth,
+        'measurement_unit' => $product_detail->measurement_unit,
+        'barcode_number' => $product_detail->barcode_number,
+        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
+        'status' => $product_detail->status,
+        'created_at' => $product_detail->created_at,
+        'updated_at' => $product_detail->updated_at,
+    ]);
         return response()->json([
-            'product_data'=>$product_detail,
+            // 'product_data'=>$product_detail,
             // 'product_id' => $product->id,
             // 'product_name' => $product->product_name,
             // 'opening_stock' => $product->opening_stock,
+
+                'product_data'=>$productsss,
+
             'stock_details' => $stockDetails
         ], 200);
     }
@@ -310,12 +348,11 @@ class ProductController extends Controller
 
     public function view($product_id)
     {
-        $product_detail = Product::find($product_id);
+        $product_detail = Product::with('category:id,name','sub_category:id,name','vendor:id,vendor_name')->find($product_id);
         if (!$product_detail) {
             return response()->json(['error' => 'Product not found'], 404);
         }
-       
-
+      
         $stocks = Stock::with([
             'product:id,product_name,opening_stock',
             'category:id,name',
@@ -335,7 +372,7 @@ class ProductController extends Controller
         $stockDetails = $stocks->map(function ($stock) {
             return [
                 'stock_id' => $stock->id,
-                'location_d' => $stock->location_id, // Safely get location name
+                'location_d' => $stock->location_id,
                 'location' => optional($stock->location)->name, // Safely get location name
                 'current_stock' => $stock->current_stock,
                 'new_stock' => $stock->new_stock,
@@ -350,11 +387,50 @@ class ProductController extends Controller
             ];
         });
     
+        $productsss= array(['id' => $product_detail->id,
+        'product_name' => $product_detail->product_name,
+        'sku' => $product_detail->sku,
+        'generated_barcode'=>$product_detail->generated_barcode,
+        'generated_qrcode'=>$product_detail->generated_qrcode,
+        'units'=>$product_detail->units,
+        'category_id'=>$product_detail->category_id,
+        'category_name' => $product_detail->category->name ?? null,
+        'sub_category_id'=>$product_detail->sub_category_id,
+        'subcategory_name' => $product_detail->sub_category->name ?? null,
+        'manufacturer'=>$product_detail->manufacturer,
+        'vendor_name'=>$product_detail->vendor->vendor_name,
+        'vendor_id'=>$product_detail->vendor_id,
+        'model'=>$product_detail->model,
+        'weight'=>$product_detail->weight,
+        'weight_unit'=>$product_detail->weight_unit,
+        'location_id'=>$product_detail->location_id,
+        'thumbnail'=>$product_detail->thumbnail,
+        'description'=>$product_detail->description,
+        'returnable'=>$product_detail->returnable,
+        'track_inventory'=>$product_detail->track_inventory,
+        'opening_stock' => $product_detail->opening_stock,
+        'selling_cost' => $product_detail->selling_cost,
+        'cost_price' => $product_detail->cost_price,
+        'commit_stock_check' => $product_detail->commit_stock_check,
+        'project_name' => $product_detail->project_name,
+        'length' => $product_detail->length,
+        'width' => $product_detail->width,
+        'depth' => $product_detail->depth,
+        'measurement_unit' => $product_detail->measurement_unit,
+        'barcode_number' => $product_detail->barcode_number,
+        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
+        'status' => $product_detail->status,
+        'created_at' => $product_detail->created_at,
+        'updated_at' => $product_detail->updated_at,
+    ]);
         return response()->json([
-            'product_data'=>$product_detail,
+            // 'product_data'=>$product_detail,
             // 'product_id' => $product->id,
             // 'product_name' => $product->product_name,
             // 'opening_stock' => $product->opening_stock,
+
+                'product_data'=>$productsss,
+
             'stock_details' => $stockDetails
         ], 200);
     }
