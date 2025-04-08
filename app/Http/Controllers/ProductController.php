@@ -28,7 +28,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::with('category:id,name','vendor:id,vendor_name',
-        'subcategory:id,name')->get();
+        'sub_category:id,name')->get();
     
         $products = $products->map(function ($product) {
             // Get all product attributes + add category name
