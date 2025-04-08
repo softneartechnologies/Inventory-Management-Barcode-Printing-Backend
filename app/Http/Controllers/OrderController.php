@@ -40,7 +40,8 @@ class OrderController extends Controller
             'sku' => 'required',
             'current_stock' => 'required|integer',
             'threshold_count' => 'required|integer',
-            'location' => 'required|string',
+            'location' => 'required|integer',
+            'quantity' => 'required|integer',
         ]);
 
         $Order = Order::create($validated);

@@ -166,7 +166,7 @@ Route::prefix('barcode-settings')->group(function () {
 
     Route::get('inventoryAlert', [ProductController::class, 'inventoryAlert']); // Get all currencies
     Route::post('/upload-csv', [ProductController::class, 'uploadCSV']);
-    
+    Route::get('/export-products', [ProductController::class, 'exportProductsToCSV']);
 });
 
 Route::prefix('reports')->group(function () {

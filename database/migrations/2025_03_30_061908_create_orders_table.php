@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('current_stock');
             $table->integer('threshold_count');
             $table->string('location');
+            $table->string('quantity');
             $table->timestamps();
         });
     }

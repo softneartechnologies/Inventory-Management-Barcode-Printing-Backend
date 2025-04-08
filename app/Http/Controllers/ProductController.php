@@ -896,13 +896,41 @@ class ProductController extends Controller
 
     
 
+    // public function inventoryAlert()
+    //     {
+    //     $inventory_alert = Product::with('location:id,name')->select('id','product_name','sku','opening_stock','location_id','inventory_alert_threshold',DB::raw("'Warning' as status"))->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))->get();
+
+    //     return response()->json(['inventory_alert' => $inventory_alert], 200);
+    //     }
     public function inventoryAlert()
-        {
-        $inventory_alert = Product::select('id','product_name','sku','opening_stock','location_id','inventory_alert_threshold',DB::raw("'Warning' as status"))->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))->get();
-
+    {
+        $products = Product::select('id', 'product_name', 'sku', 'opening_stock', 'location_id', 'inventory_alert_threshold', DB::raw("'Warning' as status"))
+            ->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))
+            ->get();
+    
+        $inventory_alert = $products->map(function ($product) {
+            // Decode location IDs (JSON string to array)
+            $locationIds = json_decode($product->location_id, true);
+    
+            // Get location names from DB
+            $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+    
+            return [
+                'id' => $product->id,
+                'product_name' => $product->product_name,
+                'sku' => $product->sku,
+                'opening_stock' => $product->opening_stock,
+                'inventory_alert_threshold' => $product->inventory_alert_threshold,
+                'location_id' => $locationIds, // optional: keep raw IDs
+                'location_name' => $locationNames, // array of location names
+                'status' => 'Warning',
+            ];
+        });
+    
         return response()->json(['inventory_alert' => $inventory_alert], 200);
-        }
-
+    }
+    
+    
 
     // public function inventoryAdjustmentsReport(){
 
@@ -1161,6 +1189,42 @@ public function createLocation(Request $request)
         'location' => $location,
     ], 201);
 }
+
+public function exportProductsToCSV()
+{
+    $fileName = 'products.csv';
+    $products = Product::select('id', 'product_name', 'sku', 'opening_stock', 'inventory_alert_threshold')->get();
+
+    $headers = [
+        "Content-type"        => "text/csv",
+        "Content-Disposition" => "attachment; filename=$fileName",
+        "Pragma"              => "no-cache",
+        "Cache-Control"       => "must-revalidate, post-check=0, pre-check=0",
+        "Expires"             => "0"
+    ];
+
+    $columns = ['ID', 'Product Name', 'SKU', 'Opening Stock', 'Inventory Alert Threshold'];
+
+    $callback = function () use ($products, $columns) {
+        $file = fopen('php://output', 'w');
+        fputcsv($file, $columns); // heading
+
+        foreach ($products as $product) {
+            fputcsv($file, [
+                $product->id,
+                $product->product_name,
+                $product->sku,
+                $product->opening_stock,
+                $product->inventory_alert_threshold,
+            ]);
+        }
+
+        fclose($file);
+    };
+
+    return response()->stream($callback, 200, $headers);
+}
+
 
 }
 
