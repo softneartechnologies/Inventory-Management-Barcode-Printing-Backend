@@ -21,6 +21,14 @@ Route::get('/storage-link', function () {
     return 'Storage link created successfully!';
 });
 
+Route::get('/test-class', function () {
+    if (class_exists(\Milon\Barcode\Facades\DNS1DFacade::class)) {
+        return "Class Found!";
+    } else {
+        return "Class Not Found!";
+    }
+});
+
 Route::get('/composer-update', function () {
     $output = shell_exec('composer update 2>&1');
     return "<pre>$output</pre>";
