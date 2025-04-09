@@ -146,14 +146,14 @@ class ProductController extends Controller
     $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
        
-        // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+        $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
 
         // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
-        $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG($barcodeNumber, 'C39'));
+        // $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG($barcodeNumber, 'C39'));
 
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
-        Storage::put($imagePath, $barcodeBase64);
+        Storage::put($imagePath, $barcodeImage);
     
         // ✅ Store the public path for access
         $savedBarcodePath = str_replace('public/', 'storage/', $imagePath);
