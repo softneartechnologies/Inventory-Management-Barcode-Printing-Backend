@@ -14,8 +14,8 @@ use Illuminate\Validation\Rule;
 // use Milon\Barcode\Facades\DNS2DFacade;
 
 // use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
-use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
+// use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
+// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
 
 
 use Barryvdh\DomPDF\Facade\Pdf;
@@ -26,6 +26,8 @@ use DB;
 // use Milon\Barcode\DNS2D;
 // use Milon\Barcode\DNS1D;
 // use Milon\Barcode\DNS2D;
+use Milon\Barcode\DNS1D;
+use Milon\Barcode\DNS2D;
 use App\Models\BarcodeSetting;
 
 
@@ -143,11 +145,15 @@ class ProductController extends Controller
  
     $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
-        // ✅ Generate Barcode as Base64
-        $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+       
+        $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+
+        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
+        $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG('123456789', 'C39'));
+
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
-        Storage::put($imagePath, base64_decode($barcodeImage));
+        Storage::put($imagePath, $barcodeBase64);
     
         // ✅ Store the public path for access
         $savedBarcodePath = str_replace('public/', 'storage/', $imagePath);
