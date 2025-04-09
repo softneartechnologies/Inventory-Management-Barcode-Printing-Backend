@@ -179,65 +179,35 @@ class ProductController extends Controller
         'price' => number_format($request->selling_cost, 2),
         'stock' => $request->opening_stock
     ];
-
-    // $validatedData['generated_qrcode'] = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
-
-    // if ($validatedData['generated_qrcode']) {
-    //     $path = $validatedData['generated_qrcode']->store('public/qrcode');
-    //     // $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
-    // }
-
+    
     if ($productDetails) {
-        // ✅ Generate a Unique QR Code Name
+        // Convert to string (JSON format)
+        $productString = json_encode($productDetails, JSON_UNESCAPED_UNICODE);
+    
+        // Generate QR code
+        $qrCodeImage = (new DNS2D)->getBarcodePNG($productString, 'QRCODE');
+    
+        // Encode to base64
+        $qrcodeBase64 = base64_encode($qrCodeImage);
+    
+        // Save to storage
         $fileName = 'qrcode_' . time() . '.png';
+        $imagePath = 'public/qrcode/' . $fileName;
+        Storage::put($imagePath, $qrCodeImage); // Save actual binary, not base64
     
-        // ✅ Generate QR Code as Base64
-
-        $qrcodeBase64 = base64_encode((new DNS2D)->getBarcodePNG($productDetails, 'QRCODE'));
-
-        // $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
-        // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
-    
-        // ✅ Convert Base64 to an Image File and Save
-        $imagePath = 'public/qrcode/' . $fileName; 
-        // $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG('123456789', 'C39'));
-
-
-        Storage::put($imagePath, $qrcodeBase64);
-    
-        // ✅ Store the public path for access
+        // Path to use for displaying
         $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
     
-        // ✅ Store QR Code Path in Database
-        $validatedData['generated_qrcode'] = $qrcodeBase64;
+        // Optional: store path or base64 in DB
+        $validatedData['generated_qrcode'] = $savedQRCodePath; // OR use $qrcodeBase64
     }
+    
 
 
     if ($request->hasFile('thumbnail')) {
         $path = $request->file('thumbnail')->store('public/thumbnails');
         $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
     }
-
-    // $validatedData['location_id'] = json_encode($request->storage_location);
-
-    
-//     $product = Product::create($validatedData);
-
-//    $multiLocation = $request->storage_location;
-
-//     foreach($multiLocation as $multiData){
-//         print_r($multiData);die;
-    
-//             Stock::create([
-//                 'product_id'=>$product->id,
-//                 'vendor_id'=>$request->vendor,
-//                 'category_id'=>$request->category,
-//                 'current_stock'=>$request->opening_stock,
-//                 'unit'=>$request->units,
-//                 'location_id'=>$multiData,
-//                 'stock_date'=>now(),
-//             ]);
-//         }
 
         $validatedData['location_id'] = json_encode(
             collect($request->storage_location)->pluck('location')->all()
