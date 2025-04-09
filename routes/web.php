@@ -20,3 +20,8 @@ Route::get('/storage-link', function () {
     Artisan::call('storage:link');
     return 'Storage link created successfully!';
 });
+
+Route::get('/composer-update', function () {
+    $output = shell_exec('composer update 2>&1');
+    return "<pre>$output</pre>";
+});
