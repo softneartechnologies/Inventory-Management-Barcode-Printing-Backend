@@ -193,12 +193,17 @@ class ProductController extends Controller
     
         // ✅ Generate QR Code as Base64
 
-        $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
+        $qrcodeBase64 = base64_encode((new DNS2D)->getBarcodePNG($productDetails, 'QRCODE'));
+
+        // $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
         // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
     
         // ✅ Convert Base64 to an Image File and Save
         $imagePath = 'public/qrcode/' . $fileName; 
-        Storage::put($imagePath, base64_decode($qrcodeBase64));
+        // $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG('123456789', 'C39'));
+
+
+        Storage::put($imagePath, $qrcodeBase64);
     
         // ✅ Store the public path for access
         $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
