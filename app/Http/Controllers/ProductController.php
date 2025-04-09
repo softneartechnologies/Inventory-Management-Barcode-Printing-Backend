@@ -146,11 +146,11 @@ class ProductController extends Controller
     $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
        
-        $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+        // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
 
         // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
     
-        $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG('123456789', 'C39'));
+        $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG($barcodeNumber, 'C39'));
 
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
         Storage::put($imagePath, $barcodeBase64);
@@ -201,7 +201,7 @@ class ProductController extends Controller
         // Optional: store path or base64 in DB
         $validatedData['generated_qrcode'] = $savedQRCodePath; // OR use $qrcodeBase64
     }
-    
+
 
 
     if ($request->hasFile('thumbnail')) {
@@ -1348,11 +1348,33 @@ public function printBarcode(Request $request)
     $barcodes = [];
     for ($i = 0; $i < $request->count; $i++) {
         if ($request->type == 'barcode') {
-            $barcodes[] = DNS1D::getBarcodePNG($request->data, 'C128', 2, 60);
+            // $barcodes[]  = (new DNS1D)->getBarcodePNG($request->data, 'C128', 2, 60);
+            $barcodes[] = base64_encode((new DNS1D)->getBarcodePNG($request->data, 'C128', 2, 60));
+
+        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+    
+        // $barcodeBase64 = base64_encode((new DNS1D)->getBarcodePNG('123456789', 'C39'));
+
+            // $barcodes[] = DNS1D::getBarcodePNG($request->data, 'C128', 2, 60);
     
             // $barcodes[] = DNS1D::getBarcodeHTML($request->data, 'C128', 2, 60);
         } else {
-            $barcodes[] = DNS2D::getBarcodeHTML($request->data, 'QRCODE');
+
+            // $barcodes[] = DNS2D::getBarcodeHTML($request->data, 'QRCODE');
+            // $productString = json_encode($productDetails, JSON_UNESCAPED_UNICODE);
+    
+        // Generate QR code
+        $barcodes[] = (new DNS2D)->getBarcodePNG($request->data, 'QRCODE');
+    
+        // Encode to base64
+        // $qrcodeBase64 = base64_encode($qrCodeImage);
+    
+        // // Save to storage
+        // $fileName = 'qrcode_' . time() . '.png';
+        // $imagePath = 'public/qrcode/' . $fileName;
+        // Storage::put($imagePath, $qrCodeImage); // Save actual binary, not base64
+    
+
         }
     }
 
