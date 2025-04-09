@@ -33,3 +33,10 @@ Route::get('/composer-update', function () {
     $output = shell_exec('composer update 2>&1');
     return "<pre>$output</pre>";
 });
+Route::get('/publish-dompdf', function () {
+    Artisan::call('vendor:publish', [
+        '--provider' => "Barryvdh\\DomPDF\\ServiceProvider"
+    ]);
+
+    return 'DomPDF config published successfully!';
+});

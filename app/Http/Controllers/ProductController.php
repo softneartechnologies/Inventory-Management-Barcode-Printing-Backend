@@ -34,6 +34,7 @@ use App\Models\BarcodeSetting;
 
 
 
+
 class ProductController extends Controller
 {
     public function index()
