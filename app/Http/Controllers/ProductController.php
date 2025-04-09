@@ -14,8 +14,8 @@ use Illuminate\Validation\Rule;
 // use Milon\Barcode\Facades\DNS2DFacade;
 
 // use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-// use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
-// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
+use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
+use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
 
 
 use Barryvdh\DomPDF\Facade\Pdf;
@@ -24,8 +24,8 @@ use Illuminate\Support\Facades\File;
 use DB;
 // use Milon\Barcode\DNS1D;
 // use Milon\Barcode\DNS2D;
-use Milon\Barcode\DNS1D;
-use Milon\Barcode\DNS2D;
+// use Milon\Barcode\DNS1D;
+// use Milon\Barcode\DNS2D;
 use App\Models\BarcodeSetting;
 
 
