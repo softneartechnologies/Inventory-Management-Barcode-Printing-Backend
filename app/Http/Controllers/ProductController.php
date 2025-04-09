@@ -143,10 +143,8 @@ class ProductController extends Controller
     $barcodeNumber = $request->sku; // Unique barcode
     if ($barcodeNumber) {
         // ✅ Generate Barcode as Base64
-        // $barcodeImage = DNS1DFacade::getBarcodePNG($barcodeNumber, 'C39');
-        $barcodeImage = DNS1D::getBarcodeHTML($barcodeNumber, 'C39');
-        // $barcodeImage = 'jjkkjjhjkkjsakjasasajajasjjsajassaejejea';
-        // ✅ Convert Base64 to an Image File
+        $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
+    
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
         Storage::put($imagePath, base64_decode($barcodeImage));
     
