@@ -1368,30 +1368,8 @@ public function printBarcode(Request $request)
         // Generate QR code
         $barcodes[] = (new DNS2D)->getBarcodePNG($request->data, 'QRCODE');
     
-        // Encode to base64
-        // $qrcodeBase64 = base64_encode($qrCodeImage);
-    
-        // // Save to storage
-        // $fileName = 'qrcode_' . time() . '.png';
-        // $imagePath = 'public/qrcode/' . $fileName;
-        // Storage::put($imagePath, $qrCodeImage); // Save actual binary, not base64
-    
-
         }
     }
-
-    // $barcodedetail  = BarcodeSetting::get();
-
-    // $barcodeDetail = BarcodeSetting::first(); // Assuming there's only one row
-    // $enabledFields = [];
-
-    // foreach ($barcodeDetail->toArray() as $key => $value) {
-    //     if ($value == 1) {
-    //         $enabledFields[] = $key;
-    //     }
-    // }
-
-    // print_r($enabledFields);die;
 
     $pdf = PDF::loadView('pdf.barcodes', [
         'barcodes' => $barcodes,
