@@ -21,7 +21,7 @@ use Barryvdh\DomPDF\Facade\Pdf;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-use DB;
+use Illuminate\Support\Facades\DB;
 // use Milon\Barcode\DNS1D;
 // use Milon\Barcode\DNS2D;
 // use Milon\Barcode\DNS1D;
