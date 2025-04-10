@@ -17,7 +17,6 @@ use Illuminate\Validation\Rule;
 // use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
 // use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
 
-
 use Barryvdh\DomPDF\Facade\Pdf;
 
 use Illuminate\Support\Facades\Storage;

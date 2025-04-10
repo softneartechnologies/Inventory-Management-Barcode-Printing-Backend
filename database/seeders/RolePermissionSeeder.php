@@ -28,7 +28,7 @@ class RolePermissionSeeder extends Seeder
             'Employee' => ['Add Employees', 'Edit Employees', 'Remove Employees'],
             'Reports' => ['Inventory Adjustments', 'Inventory Summary Report', 'Inventory Alert'],
             'Orders' => ['Order', 'Update Stock', 'Delete'],
-            'ProductIssuance' => ['Returnable', 'Goods Out', 'Employee Issuance'],
+            'ProductAssign' => ['Returnable Only Scan','Returnable Issue to', 'Goods Out Only Scan', 'Goods Out Issue to', 'Employee Issuance'],
             'RolesPermission' => ['Add Roles', 'Edit Roles', 'Delete Roles'],
             'CurrencySettings' => ['Add Currency', 'Edit Currency', 'Delete Currency'],
             'BarcodeSettings' => ['Barcode Settings']

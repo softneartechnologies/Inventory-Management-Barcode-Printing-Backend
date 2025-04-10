@@ -7,7 +7,7 @@ use App\Models\Product;
 use App\Models\Location;
 use App\Models\Stock;
 use App\Models\ScanInOutProduct;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class DashboardController extends Controller
