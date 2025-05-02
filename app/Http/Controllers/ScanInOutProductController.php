@@ -72,15 +72,40 @@ class ScanInOutProductController extends Controller
     {
         $product = Product::find($request->product_id);
 
-        $validated = $request->validate([
-            'product_id' => 'required|exists:products,id',
-            'issue_from_user_id' => 'required',
-            'employee_id' => 'required|exists:employees,id',
-            'in_out_date_time' => 'required|date',
-            'type' => 'required|in:in',
-            'purpose' => 'required',
-            'in_quantity' => 'required|integer|min:1'
-        ]);
+        
+
+        if($request->purpose =="Repairs"){
+            
+            $validated = $request->validate([
+                'product_id' => 'required|exists:products,id',
+                'issue_from_user_id' => 'required',
+                'employee_id' => 'required|exists:employees,id',
+                'in_out_date_time' => 'required|date',
+                'type' => 'required|in:in',
+                'purpose' => 'required',
+                'department_id' => 'required',
+                'work_station_id' => 'required',
+                'machine_id' => 'required',
+                'comments' => 'required',
+                'in_quantity' => 'required|integer|min:1'
+            ]);
+
+            
+        }else {
+            $validated = $request->validate([
+                'product_id' => 'required|exists:products,id',
+                'issue_from_user_id' => 'required',
+                'employee_id' => 'required|exists:employees,id',
+                'in_out_date_time' => 'required|date',
+                'type' => 'required|in:in',
+                'purpose' => 'required',
+                'comments' => 'required',
+                'in_quantity' => 'required|integer|min:1'
+            ]);
+
+           
+        }
+
         $validated['vendor_id'] = $product->vendor_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
@@ -97,15 +122,37 @@ class ScanInOutProductController extends Controller
 
         $product = Product::find($request->product_id);
 
-        $validated = $request->validate([
-            'product_id' => 'required|exists:products,id',
-            'issue_from_user_id' => 'required',
-            'employee_id' => 'required|exists:employees,id',
-            'in_out_date_time' => 'required|date',
-            'type' => 'required|in:out',
-            'purpose' => 'required',
-            'out_quantity' => 'required|integer|min:1'
-        ]);
+        if($request->purpose =="Repairs"){
+            
+            $validated = $request->validate([
+                'product_id' => 'required|exists:products,id',
+                'issue_from_user_id' => 'required',
+                'employee_id' => 'required|exists:employees,id',
+                'in_out_date_time' => 'required|date',
+                'type' => 'required',
+                'purpose' => 'required',
+                'department_id' => 'required',
+                'work_station_id' => 'required',
+                'machine_id' => 'required',
+                'comments' => 'required',
+                'out_quantity' => 'required|integer|min:1'
+            ]);
+
+            
+        }else {
+            $validated = $request->validate([
+                'product_id' => 'required|exists:products,id',
+                'issue_from_user_id' => 'required',
+                'employee_id' => 'required|exists:employees,id',
+                'in_out_date_time' => 'required|date',
+                'type' => 'required',
+                'purpose' => 'required',
+                'comments' => 'required',
+                'out_quantity' => 'required|integer|min:1'
+            ]);
+
+            
+        }
 
         $validated['vendor_id'] = $product->vendor_id;
         $scanRecord = ScanInOutProduct::create($validated);

@@ -16,6 +16,10 @@ class ScanInOutProduct extends Model
         'in_out_date_time',
         'type',
         'purpose',
+        'department_id',
+        'work_station_id',
+        'machine_id',
+        'comments',
         'in_quantity',
         'out_quantity',
         'vendor_id'

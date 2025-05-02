@@ -20,6 +20,10 @@ return new class extends Migration
             $table->dateTime('in_out_date_time');
             $table->enum('type', ['in', 'out']);
             $table->enum('purpose', ['Repairs', 'Personal Use']);
+            $table->string('department_id')->nullable();
+            $table->string('work_station_id')->nullable();
+            $table->string('machine_id')->nullable();
+            $table->string('comments')->nullable();
             $table->integer('in_quantity')->default(0);
             $table->integer('out_quantity')->default(0);
             $table->timestamps();
