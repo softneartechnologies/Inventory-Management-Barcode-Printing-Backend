@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('new_stock')->default(0);
             $table->integer('quantity')->default(0);
             $table->string('unit')->nullable();
+            $table->string('unit_cost')->nullable();
+            $table->string('total_cost')->nullable();
             $table->text('reason_for_update')->nullable();
             $table->string('location_id')->nullable();
             $table->date('stock_date')->nullable();

@@ -8,7 +8,7 @@ class Stock extends Model
 {
     //
     use HasFactory;
-    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit', 'reason_for_update', 'location_id', 'stock_date', 'vendor_id','category_id', 'adjustment'];
+    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit', 'unit_cost','total_cost', 'reason_for_update', 'location_id', 'stock_date', 'vendor_id','category_id', 'adjustment'];
 
     public function product()
     {
