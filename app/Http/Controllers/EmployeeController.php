@@ -91,21 +91,58 @@ class EmployeeController extends Controller
 
     }
 
-    // ✅ Get Single Employee
+   
     public function show($id)
-    {
-        $employee = Employee::find($id);
-        if (!$employee) {
-            return response()->json(['error' => 'Employee not found'], 404);
-        }
-        $usersdata = User::where('employee_id',$id)->first();
-        if(!empty($usersdata)){
-            return response()->json(['employee'=>$employee, 'user'=>$usersdata], 200);
-        }else{
-            return response()->json(['employee'=>$employee], 200);
-        }
+{
+    // Get the user with employee relation
+    // $employee = User::with('employee:id,employee_name,department,work_station,access_for_login,status')
+    //     ->where('employee:id', $id)
+    //     ->first();
+    $employee = User::with('employee:id,employee_name,department,work_station,access_for_login,status')
+    ->whereHas('employee', function ($query) use ($id) {
+        $query->where('id', $id);
+    })
+    ->first();
+    
+
+    if (!$employee || !$employee->employee) {
         
+        $employee = Employee::where('id',$id)->first();
+          if (!empty($employee)) {
+        $employeeDetails = [
+        'employee_id'       => $employee->id,
+        'employee_name'     => $employee->employee_name,
+        'department'        => $employee->department,
+        'work_station'      => $employee->work_station,
+        'access_for_login'  => $employee->access_for_login,
+        'status'            => $employee->status,
+    ];
+          }else{
+        return response()->json(['message' => 'Employee not found'], 404);
+              
+          }
+        
+    }else{
+        
+    
+
+    $employeeDetails = [
+        'employee_id'       => $employee->employee->id,
+        'employee_name'     => $employee->employee->employee_name,
+        'department'        => $employee->employee->department,
+        'work_station'      => $employee->employee->work_station,
+        'access_for_login'  => $employee->employee->access_for_login,
+        'email'             => $employee->email,
+        'role_id'           => $employee->role_id,
+        'status'            => $employee->employee->status,
+    ];
     }
+
+    return response()->json([
+        'employee_details' => $employeeDetails
+    ], 200);
+}
+
 
     // ✅ Update Employee
     public function update(Request $request, $id)
@@ -124,7 +161,7 @@ class EmployeeController extends Controller
                 'status' => 'required|in:active,inactive',
                 'access_for_login' =>'required|in:true,false',
                 'role_id'=>'required',
-                'email' => 'required|email:dns|unique:users,email',
+                'email' => 'required',
                 'password' => 'required|min:6',
 
             ]);
@@ -169,6 +206,18 @@ class EmployeeController extends Controller
                 $usersdata = User::where('employee_id',$id)->first();
 
                 if(!empty($usersdata)){
+                    $emailscheck = User::where('email',$request->email)->first();
+                    if(!empty($emailscheck)){
+                         $usersdata->update([
+                        'employee_id' => $employee->id, // Use object property instead of array notation
+                        'role_id' => $request->role_id,
+                        'name' => $request->employee_name,
+                        // 'email' => $request->email,
+                        'password' => Hash::make($request->password),
+                    ]);
+                    }else{
+                        
+                   
                     $usersdata->update([
                         'employee_id' => $employee->id, // Use object property instead of array notation
                         'role_id' => $request->role_id,
@@ -176,8 +225,9 @@ class EmployeeController extends Controller
                         'email' => $request->email,
                         'password' => Hash::make($request->password),
                     ]);
+                    }
                 }else{
-                    $user = User::create([
+                    $usersdata = User::create([
                         'employee_id' => $employee->id, // Use object property instead of array notation
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
@@ -188,13 +238,13 @@ class EmployeeController extends Controller
                 }
                 
             // Generate a JWT token for the user
-            $token = JWTAuth::fromUser($user);
+            $token = JWTAuth::fromUser($usersdata);
             }
 
             return response()->json([
                 'message' => 'Employee and user created successfully',
                 'employee' => $employee,
-                'user' => $user,
+                'user' => $usersdata,
                 'token' => $token,
             ], 200);
 

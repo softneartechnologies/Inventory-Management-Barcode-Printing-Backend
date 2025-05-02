@@ -123,21 +123,39 @@ public function createRole(Request $request)
 // }
 
 
-// ✅ Update Role Name and Permissions
+
 public function updateRole(Request $request, $id)
 {
     $validator = Validator::make($request->all(), [
-        'name' => 'required|unique:roles,name,' . $id,
+        'name' => 'required',
         'permissions' => 'required|array',
-        'permissions.*' => 'exists:permissions,name'
+        // 'permissions.*' => 'exists:permissions,name'
     ]);
 
     if ($validator->fails()) {
         return response()->json(['errors' => $validator->errors()], 422);
     }
 
+// dd($request->all());
+        
+    // $role = Role::findOrFail($id);
+    // $role->update(['name' => $request->name]);
+
+
     $role = Role::findOrFail($id);
-    $role->update(['name' => $request->name]);
+
+    // Check if the name is already taken by another role
+    $existingRole = Role::where('name', $request->name)
+        ->where('id', '!=', $id)
+        ->first();
+    
+    if ($existingRole) {
+        // Duplicate found, don't update
+    }else {
+        $role->update(['name' => $request->name]);
+    }
+
+    
 
     $permissions = Permission::whereIn('name', $request->permissions)->get();
     $role->permissions()->sync($permissions);

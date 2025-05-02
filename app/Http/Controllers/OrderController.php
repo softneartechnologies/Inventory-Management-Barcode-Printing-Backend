@@ -10,17 +10,20 @@ class OrderController extends Controller
 {
     public function index()
     {
-        $orders = Order::with('product:id,product_name')->get();
+        $orders = Order::with('product:id,product_name')->where('deleted', '0')->orderBy('id', 'desc')->get();
     
         // Transform data to move product_name to the root level
         $orders = $orders->map(function ($order) {
             return [
                 'id' => $order->id,
+                'deleted' => $order->deleted,
+                'current_date' => $order->current_date,
                 'product_id' => $order->product_id,
                 'sku' => $order->sku,
                 'current_stock' => $order->current_stock,
                 'threshold_count' => $order->threshold_count,
                 'location' => $order->location,
+                'quantity'=>$order->quantity,
                 'created_at' => $order->created_at,
                 'updated_at' => $order->updated_at,
                 'product_name' => $order->product->product_name ?? null, // Move product_name outside
@@ -42,6 +45,7 @@ class OrderController extends Controller
             'threshold_count' => 'required|integer',
             'location' => 'required|integer',
             'quantity' => 'required|integer',
+            'current_date' => 'required',
         ]);
 
         $Order = Order::create($validated);
@@ -77,6 +81,22 @@ class OrderController extends Controller
         $Order->delete();
 
         return response()->json(null, 204);
+    }
+    
+     public function removeOrder($id)
+    {
+
+        $order = Order::find($id);
+        if (!$order) {
+            return response()->json(['error' => 'Order not found'], 404);
+        }
+
+        $validatedData['deleted'] = '1';
+            
+
+        $order->update($validatedData);
+        
+        return response()->json(['message' => 'Order Removed successfully'], 200);
     }
     
 }

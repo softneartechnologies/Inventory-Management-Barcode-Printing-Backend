@@ -22,6 +22,10 @@ use App\Http\Controllers\ScanInOutProductController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\RolePermissionController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ReasonController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\WorkstationController;
+use App\Http\Controllers\MachineController;
 
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -81,6 +85,28 @@ Route::prefix('manufacturers')->group(function () {
     Route::delete('/delete/{id}', [ManufacturerController::class, 'destroy']); // Delete manufacturer
 });
 
+Route::prefix('department')->group(function () {
+    Route::get('/', [DepartmentController::class, 'index']); // Get all manufacturers
+    Route::post('/add', [DepartmentController::class, 'store']); // Create manufacturer
+    Route::get('/edit/{id}', [DepartmentController::class, 'show']); // Get single manufacturer
+    Route::post('/update/{id}', [DepartmentController::class, 'update']); // Update manufacturer
+    Route::delete('/delete/{id}', [DepartmentController::class, 'destroy']); // Delete manufacturer
+});
+
+Route::prefix('workstation')->group(function () {
+    Route::get('/', [WorkstationController::class, 'index']); // Get all manufacturers
+    Route::post('/add', [WorkstationController::class, 'store']); // Create manufacturer
+    Route::get('/edit/{id}', [WorkstationController::class, 'show']); // Get single manufacturer
+    Route::post('/update/{id}', [WorkstationController::class, 'update']); // Update manufacturer
+    Route::delete('/delete/{id}', [WorkstationController::class, 'destroy']); // Delete manufacturer
+});
+Route::prefix('machine')->group(function () {
+    Route::get('/', [MachineController::class, 'index']); // Get all manufacturers
+    Route::post('/add', [MachineController::class, 'store']); // Create manufacturer
+    Route::get('/edit/{id}', [MachineController::class, 'show']); // Get single manufacturer
+    Route::post('/update/{id}', [MachineController::class, 'update']); // Update manufacturer
+    Route::delete('/delete/{id}', [MachineController::class, 'destroy']); // Delete manufacturer
+});
 
 // unit api route 
 
@@ -157,7 +183,7 @@ Route::prefix('barcode-settings')->group(function () {
     Route::post('/add', [ProductController::class, 'store']); // Create currency
     Route::get('/edit/{id}', [ProductController::class, 'show']); // Get single currency
     Route::get('/view/{id}', [ProductController::class, 'view']); // Get single currency
-    Route::put('/update/{id}', [ProductController::class, 'update']); // Update currency
+    Route::post('/update/{id}', [ProductController::class, 'update']); // Update currency
     Route::put('/updateStock/{product_id}', [ProductController::class, 'updateStock']); // Update currency
     Route::get('/editStock/{product_id}', [ProductController::class, 'editStock']); // Update currency
     Route::delete('/delete/{id}', [ProductController::class, 'destroy']); // Delete currency
@@ -168,6 +194,9 @@ Route::prefix('barcode-settings')->group(function () {
     Route::post('/upload-csv', [ProductController::class, 'uploadCSV']);
     Route::get('/export-products', [ProductController::class, 'exportProductsToCSV']);
     Route::post('/printBarcode', [ProductController::class, 'printBarcode']);
+    
+    Route::get('/download-csv', [ProductController::class, 'downloadCsv']);
+    Route::get('/download-template', [ProductController::class, 'generateTemplateCsvUrl']);
 });
 
 Route::prefix('reports')->group(function () {
@@ -178,12 +207,15 @@ Route::prefix('reports')->group(function () {
 
 Route::get('inventorySummaryReport', [ScanInOutProductController::class, 'inventorySummaryReport']); // Get all currencies
 Route::get('productScaned/{id}', [ScanInOutProductController::class, 'productScaned']); // Get all currencies
+Route::get('employeeHistory/{id}', [ScanInOutProductController::class, 'employeeHistory']); // Get all currencies
+
 
 
 Route::prefix('order')->group(function () {
 
-    Route::get('/', [OrderController::class, 'index']); // Get all currencies
-    Route::post('/add', [OrderController::class, 'store']); // Create currency
+    Route::get('/', [OrderController::class, 'index']);
+    Route::post('/add', [OrderController::class, 'store']);
+    Route::post('/remove/{id}', [OrderController::class, 'removeOrder']);
 });
 
 Route::prefix('scan-in')->group(function () {
@@ -201,13 +233,13 @@ Route::prefix('scan-out')->group(function () {
 Route::get('recent_scan', [ScanInOutProductController::class, 'index']); // Get all currencies
 
 
-// Route::prefix('roles')->group(function () {
-//     Route::get('/', [RoleController::class, 'index']); // List roles
-//     Route::post('/add', [RoleController::class, 'store']); // Add role
-//     Route::get('/edit/{id}', [RoleController::class, 'show']); // Show role
-//     Route::put('/update/{id}', [RoleController::class, 'update']); // Update role
-//     Route::delete('/delete/{id}', [RoleController::class, 'destroy']); // Delete role
-// });
+Route::prefix('reason')->group(function () {
+    Route::get('/', [ReasonController::class, 'index']); 
+    Route::post('/add', [ReasonController::class, 'store']); 
+    Route::get('/edit/{id}', [ReasonController::class, 'show']); 
+    Route::post('/update/{id}', [ReasonController::class, 'update']); 
+    Route::delete('/delete/{id}', [ReasonController::class, 'destroy']);
+});
 
 Route::get('/roles', [RolePermissionController::class, 'getRoles']);
     Route::post('/roles/add', [RolePermissionController::class, 'createRole']);

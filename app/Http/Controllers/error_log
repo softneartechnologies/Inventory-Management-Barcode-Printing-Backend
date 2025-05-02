@@ -1,0 +1,172 @@
+[14-Apr-2025 16:49:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/AuthController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/AuthController.php on line 11
+[14-Apr-2025 16:49:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BarcodeSettingController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BarcodeSettingController.php on line 8
+[14-Apr-2025 16:49:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BaseController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BaseController.php on line 8
+[14-Apr-2025 16:49:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BrandController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BrandController.php on line 9
+[14-Apr-2025 16:49:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/CategoryController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/CategoryController.php on line 9
+[14-Apr-2025 16:49:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/Controller.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/Controller.php on line 8
+[14-Apr-2025 16:49:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/CurrencySettingController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/CurrencySettingController.php on line 9
+[14-Apr-2025 16:49:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/DashboardController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/DashboardController.php on line 13
+[14-Apr-2025 16:49:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/EmployeeController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/EmployeeController.php on line 12
+[14-Apr-2025 16:49:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ManufacturerController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ManufacturerController.php on line 9
+[14-Apr-2025 16:49:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/MeasurementUnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/MeasurementUnitController.php on line 9
+[14-Apr-2025 16:49:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/OrderController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/OrderController.php on line 9
+[14-Apr-2025 16:49:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ProductController.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ProductController.php on line 38
+[14-Apr-2025 16:49:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/RoleController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/RoleController.php on line 9
+[14-Apr-2025 16:49:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/RolePermissionController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/RolePermissionController.php on line 11
+[14-Apr-2025 16:49:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ScanInOutProductController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ScanInOutProductController.php on line 9
+[14-Apr-2025 16:49:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/SubcategoryController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/SubcategoryController.php on line 10
+[14-Apr-2025 16:49:21 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/UnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/UnitController.php on line 9
+[14-Apr-2025 16:49:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/UserController.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/UserController.php on line 28
+[14-Apr-2025 16:49:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/VendorController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/VendorController.php on line 8
+[14-Apr-2025 16:49:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/WeightUnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/WeightUnitController.php on line 9
+[24-Apr-2025 03:46:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/AuthController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/AuthController.php on line 11
+[24-Apr-2025 03:46:21 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BarcodeSettingController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BarcodeSettingController.php on line 8
+[24-Apr-2025 03:46:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BaseController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BaseController.php on line 8
+[24-Apr-2025 03:46:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/BrandController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/BrandController.php on line 9
+[24-Apr-2025 03:46:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/CategoryController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/CategoryController.php on line 9
+[24-Apr-2025 03:46:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/Controller.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/Controller.php on line 8
+[24-Apr-2025 03:46:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/CurrencySettingController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/CurrencySettingController.php on line 9
+[24-Apr-2025 03:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/DashboardController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/DashboardController.php on line 13
+[24-Apr-2025 03:46:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/EmployeeController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/EmployeeController.php on line 12
+[24-Apr-2025 03:46:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ManufacturerController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ManufacturerController.php on line 9
+[24-Apr-2025 03:46:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/MeasurementUnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/MeasurementUnitController.php on line 9
+[24-Apr-2025 03:46:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/OrderController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/OrderController.php on line 9
+[24-Apr-2025 03:46:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ProductController.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ProductController.php on line 44
+[24-Apr-2025 03:46:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ReasonController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ReasonController.php on line 9
+[24-Apr-2025 03:46:43 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/RoleController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/RoleController.php on line 9
+[24-Apr-2025 03:46:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/RolePermissionController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/RolePermissionController.php on line 11
+[24-Apr-2025 03:46:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/ScanInOutProductController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/ScanInOutProductController.php on line 10
+[24-Apr-2025 03:46:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/SubcategoryController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/SubcategoryController.php on line 10
+[24-Apr-2025 03:46:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/UnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/UnitController.php on line 9
+[24-Apr-2025 03:46:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/UserController.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/UserController.php on line 28
+[24-Apr-2025 03:46:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/VendorController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/VendorController.php on line 8
+[24-Apr-2025 03:46:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/softoroa/flight.softnear.com/app/Http/Controllers/WeightUnitController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Http/Controllers/WeightUnitController.php on line 9

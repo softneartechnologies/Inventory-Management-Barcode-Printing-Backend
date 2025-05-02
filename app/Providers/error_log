@@ -1,0 +1,8 @@
+[14-Apr-2025 12:13:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Providers/AppServiceProvider.php on line 7
+[23-Apr-2025 21:51:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Providers/AppServiceProvider.php on line 7

@@ -11,9 +11,11 @@ class ScanInOutProduct extends Model
 
     protected $fillable = [
         'product_id',
+        'issue_from_user_id',
         'employee_id',
         'in_out_date_time',
         'type',
+        'purpose',
         'in_quantity',
         'out_quantity',
         'vendor_id'
@@ -28,6 +30,11 @@ class ScanInOutProduct extends Model
     public function employee()
     {
         return $this->belongsTo(Employee::class);
+    }
+    
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'issue_from_user_id');
     }
 
     public function vendor()

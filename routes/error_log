@@ -1,0 +1,24 @@
+[14-Apr-2025 05:27:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/softoroa/flight.softnear.com/routes/api.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/api.php on line 27
+[14-Apr-2025 05:27:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/softoroa/flight.softnear.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/console.php on line 6
+[14-Apr-2025 05:27:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/softoroa/flight.softnear.com/routes/web.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/web.php on line 5
+[23-Apr-2025 14:24:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/softoroa/flight.softnear.com/routes/api.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/api.php on line 28
+[23-Apr-2025 14:24:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/softoroa/flight.softnear.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/console.php on line 6
+[23-Apr-2025 14:24:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/softoroa/flight.softnear.com/routes/web.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/routes/web.php on line 5

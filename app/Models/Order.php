@@ -15,7 +15,9 @@ class Order extends Model
         'current_stock',
         'threshold_count',
         'location',
-        'quantity'
+        'quantity',
+        'current_date',
+        'deleted'
     ];
 
     public function product()
