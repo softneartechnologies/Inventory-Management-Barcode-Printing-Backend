@@ -415,6 +415,8 @@ public function store(Request $request)
                 'current_stock' => $stock->current_stock,
                 'new_stock' => $stock->new_stock,
                 'unit' => $stock->unit,
+                'unit_cost'=> $stock->unit_cost,
+                'total_cost'=> $stock->total_cost,
                 'quantity' => $stock->quantity,
                 'adjustment' => $stock->adjustment,
                 'stock_date' => $stock->stock_date,
@@ -505,6 +507,8 @@ public function store(Request $request)
                 'current_stock' => $stock->current_stock,
                 'new_stock' => $stock->new_stock,
                 'unit' => $stock->unit,
+                'unit_cost'=> $stock->unit_cost,
+                'total_cost'=> $stock->total_cost,
                 'quantity' => $stock->quantity,
                 'adjustment' => $stock->adjustment,
                 'stock_date' => $stock->stock_date,
@@ -872,6 +876,7 @@ public function store(Request $request)
         $multiLocation = $request->storage_location;
         $product_id=$id;
         foreach ($multiLocation as $multiData) {
+            // print_r($multiData['unit_cost']);die;
             $product_location = Stock::where('product_id', $product_id)
                 ->where('location_id', $multiData['location'])
                 ->first();
@@ -884,10 +889,12 @@ public function store(Request $request)
                 // $currentStock = $product_location->current_stock;
                 $currentStock = $multiData['quantity'];
 
-
+                // print_r($multiData['unit_cost']);die;
                 $stockData = [
                     'current_stock' => $currentStock,
                     'unit' => $multiData['unit'] ?? $product_location->unit,
+                    'unit_cost'=> $multiData['unit_cost'],
+                    'total_cost'=> $multiData['total_cost'],
                     'quantity' => $quantity,
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
                     'vendor_id'     => $request->vendor,
@@ -906,8 +913,8 @@ public function store(Request $request)
                     'category_id' => $product->category,
                     'current_stock' => $currentStock,
                     'unit' => $multiData['unit'] ?? null,
-                    'unit_cost'          => $multiData['unit_cost'],
-                    'total_cost'          => $multiData['total_cost'],
+                    'unit_cost' => $multiData['unit_cost'],
+                    'total_cost' => $multiData['total_cost'],
                     'location_id' => $multiData['location'],
                     'quantity' => $quantity,
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
@@ -1137,6 +1144,8 @@ public function store(Request $request)
             'current_stock' => $stock->current_stock,
             'new_stock' => $stock->new_stock,
             'unit' => $stock->unit,
+            'unit_cost'=> $stock->unit_cost,
+            'total_cost'=> $stock->total_cost,
             'quantity' => $stock->quantity,
             'adjustment' => $stock->adjustment,
             'stock_date' => $stock->stock_date,

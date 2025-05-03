@@ -106,6 +106,7 @@ Route::prefix('machine')->group(function () {
     Route::get('/edit/{id}', [MachineController::class, 'show']); // Get single manufacturer
     Route::post('/update/{id}', [MachineController::class, 'update']); // Update manufacturer
     Route::delete('/delete/{id}', [MachineController::class, 'destroy']); // Delete manufacturer
+    Route::get('/history/{id}', [MachineController::class, 'machineHistory']); // Delete manufacturer
 });
 
 // unit api route 
