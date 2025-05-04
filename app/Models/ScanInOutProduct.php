@@ -45,5 +45,17 @@ class ScanInOutProduct extends Model
     {
         return $this->belongsTo(Vendor::class);
     }
+    public function machine()
+    {
+        return $this->belongsTo(Machine::class);
+    }
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+    public function workStation()
+    {
+        return $this->belongsTo(Workstation::class);
+    }
 }
 

@@ -8,6 +8,7 @@ use App\Models\Stock;
 use App\Models\Category;
 use App\Models\Subcategory;
 use App\Models\Vendor;
+use App\Models\ScanInOutProduct;
 use App\Models\Unit;
 use App\Models\InventoryAdjustmentReports;
 use Illuminate\Http\Request;
@@ -763,6 +764,67 @@ public function store(Request $request)
 
     // }
         
+    public function movement($id)
+    {
+        // Get product with related category, sub-category, and vendor
+        $product_detail = Product::with('category:id,name', 'sub_category:id,name', 'vendor:id,vendor_name')->find($id);
+
+        if (!$product_detail) {
+            return response()->json(['error' => 'Product not found'], 404);
+        }
+
+        // Fetch scan in/out records with relations
+        $scanRecords = ScanInOutProduct::with([
+            'product:id,product_name,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name','machine:id,name','department:id,name','workStation:id,name'
+        ])->where('product_id', $id)->get();
+
+        // Map and transform scan records
+        $scanRecords = $scanRecords->map(function ($record) {
+            return [
+                'id' => $record->id,
+                'in_out_date_time' => $record->in_out_date_time,
+                'machine_name' => $record->machine->name ?? null,
+                'departmente_name' => $record->department->name ?? null,
+                'workStation_name' => $record->workStation->name ?? null,
+                'issue_from_name' => $record->user->name ?? null, 
+                'employee_name' => $record->employee->employee_name ?? null,
+                'product_name' => $record->product->product_name ?? null,
+                'in_quantity' => $record->in_quantity,
+                'out_quantity' => $record->out_quantity,
+                'type' => $record->type,
+                'purpose' => $record->purpose,
+                'comments' => $record->comments,
+                'quantity' => $record->product->opening_stock ?? null,
+                'product_id' => $record->product_id,
+                'issue_from_user_id' => $record->issue_from_user_id,
+                'employee_id' => $record->employee_id,
+                'created_at' => $record->created_at,
+                'updated_at' => $record->updated_at,
+            ];
+        });
+
+        // Prepare product data response
+        $productData = [[
+            'id' => $product_detail->id,
+            'product_name' => $product_detail->product_name,
+            'sku' => $product_detail->sku,
+            'category_name' => $product_detail->category->name ?? null,
+            'opening_stock' => $product_detail->opening_stock,
+            'selling_cost' => $product_detail->selling_cost,
+            'cost_price' => $product_detail->cost_price,
+            'status' => $product_detail->status,
+        ]];
+
+        // Return as JSON
+        return response()->json([
+            'product_data' => $productData,
+            'stock_details' => $scanRecords
+        ], 200);
+    }
+
+
         public function update(Request $request, $id)
     {
         $product = Product::with(['stocks:*'])->find($id);

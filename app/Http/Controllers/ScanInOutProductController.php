@@ -296,21 +296,22 @@ class ScanInOutProductController extends Controller
 
     public function employeeIssuanceHistory(){
         
-        $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->get();
+        $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->orderBy('id','desc')->get();
 
         $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
                 'id' => $scanRecords->id,
-                'product_id' => $scanRecords->product_id,
-                'employee_id' => $scanRecords->employee_id,
                 'in_out_date_time' => $scanRecords->in_out_date_time,
+                'employee_id' => $scanRecords->employee_id,
+                'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
+                'issue_from_name' => $scanRecords->user->name ?? null,
+                'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
                 'in_quantity' => $scanRecords->in_quantity,
                 'out_quantity' => $scanRecords->out_quantity,
                 'type' => $scanRecords->type,
                 'purpose' => $scanRecords->purpose,
-                'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
-                'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
-                'issue_from_name' => $scanRecords->user->name ?? null,
+                'comments' => $scanRecords->comments,
+                'product_id' => $scanRecords->product_id,
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
             ];

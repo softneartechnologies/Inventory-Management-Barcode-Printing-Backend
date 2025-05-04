@@ -184,6 +184,7 @@ Route::prefix('barcode-settings')->group(function () {
     Route::post('/add', [ProductController::class, 'store']); // Create currency
     Route::get('/edit/{id}', [ProductController::class, 'show']); // Get single currency
     Route::get('/view/{id}', [ProductController::class, 'view']); // Get single currency
+    Route::get('/movement/{id}', [ProductController::class, 'movement']); // Get single currency
     Route::post('/update/{id}', [ProductController::class, 'update']); // Update currency
     Route::put('/updateStock/{product_id}', [ProductController::class, 'updateStock']); // Update currency
     Route::get('/editStock/{product_id}', [ProductController::class, 'editStock']); // Update currency
