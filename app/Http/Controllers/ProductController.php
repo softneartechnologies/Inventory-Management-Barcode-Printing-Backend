@@ -1268,6 +1268,167 @@ public function store(Request $request)
         //     ], 200);
         // }
 
+// public function uploadCSV(Request $request)
+// {
+//     $request->validate([
+//         'file' => 'required|mimes:csv,txt|max:2048'
+//     ]);
+
+//     $file = $request->file('file');
+//     // print_r($file);die;
+//     $handle = fopen($file->getPathname(), "r");
+
+//     $header = fgetcsv($handle);
+//     // $expectedHeaders = [
+//     //     "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
+//     //     "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
+//     //     "cost_price", "commit_stock_check", "project_name", "weight",
+//     //     "weight_unit", "length", "width", "depth",
+//     //     "measurement_unit", "returnable", "status"
+//     // ];
+//     $expectedHeaders =["Part names","SKU","Stock location","Current stock","Stock unit","Unit cost","Category","Sub category","Manufacture","Vendor","Model","Description","Threshold","Weight","Weight unit","dim_Length","dim_Width","dim_Height","dim_Measurement_Unit","Status"];
+
+//     if ($header !== $expectedHeaders) {
+//         return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+//     }
+
+//     $products = [];
+//     $invalidRows = [];
+//     $rowNumber = 2;
+//     // $locationNames = json_decode(); 
+    
+//     while ($row = fgetcsv($handle)) {
+        
+//         $locationString = $row[8];
+//         $locationNames = explode(",", $locationString);
+    
+//     // print_r($locationNames);die;
+//         $locationIds = [];
+        
+//         if (is_array($locationNames)) {
+//             foreach ($locationNames as $name) {
+//                 $name = trim($name);
+        
+//                 $location = \App\Models\Location::firstOrCreate(
+//                     ['name' => $name],
+//                     ['name' => $name]
+//                 );
+        
+//                 $locationIds[] = $location->id;
+//             }
+//         } else {
+//             // Handle invalid JSON
+//             Log::error('Invalid JSON in location column:', ['value' => $row[8]]);
+//         }
+// // print_r($locationIds);die;
+
+//         if (count($row) !== count($expectedHeaders)) {
+//             $invalidRows[] = $rowNumber;
+//             continue;
+//         }
+
+//         if (empty($row[0]) || empty($row[1])) {
+//             $invalidRows[] = $rowNumber;
+//             continue;
+//         }
+
+//         if (Product::where('sku', $row[1])->exists()) {
+//             continue;
+//         }
+       
+
+//         $barcodeNumber = $row[1];
+//         $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+//         $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+//         Storage::put($barcodePath, $barcodeImage);
+//         $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+
+//         $productDetails = ['sku' => $row[1]];
+//         $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+//         $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+//         $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+//         Storage::put($qrCodePath, $qrCodeImage);
+//         $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
+//         $unit = Unit::firstOrCreate(['name' => $row[10]], ['name' => $row[10]]);
+//         $category = Category::firstOrCreate(['name' => $row[2]], ['name' => $row[2]]);
+//         $subcategory = Subcategory::firstOrCreate([
+//             'name' => $row[3],
+//             'category_id' => $category->id
+//         ], [
+//             'name' => $row[3],
+//             'category_id' => $category->id
+//         ]);
+//         $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
+        
+        
+        
+//         $product = Product::create([
+//             'product_name' => $row[0],
+//             'sku' => $row[1],
+//             'generated_barcode' => $barcodeImage,
+//             'generated_qrcode' => $qrCodeImage,
+//             'units' => $unit->id,
+//             'category_id' => $category->id,
+//             'sub_category_id' => $subcategory->id,
+//             'manufacturer' => $row[5],
+//             'vendor_id' => $vendor->id,
+//             'model' => $row[6],
+//             'description' => $row[7],
+//             'returnable' => strtolower($row[24]) === 'yes' ? 1 : 0,
+//             'track_inventory' => $row[12],
+//             'opening_stock' => (int) $row[12],
+//             'selling_cost' => (float) $row[14],
+//             'cost_price' => (float) $row[15],
+//             'commit_stock_check' => (float) $row[16],
+//             'project_name' => $row[17],
+//             'location_id' => json_encode($locationIds),
+//             'weight' => (float) $row[18],
+//             'weight_unit' => $row[19],
+//             'length' => (float) $row[20],
+//             'width' => (float) $row[21],
+//             'depth' => (float) $row[22],
+//             'measurement_unit' => $row[23],
+//             'barcode_number' => $row[1],
+//             'inventory_alert_threshold' => (int) $row[13],
+//             'status' => $row[25],
+//             // 'thumbnail'=>$thumbnail,
+//             'created_at' => now(),
+//             'updated_at' => now(),
+//         ]);
+     
+//         $totalStock = 0;
+//         foreach ($locationIds as $locationId) {
+//             // print_r($locationId);die;
+//             $currentStock = (int)$row[9];
+//             $totalStock += $currentStock;
+    
+//             Stock::create([
+//                 'product_id'    => $product->id,
+//                 'vendor_id'     => $vendor->id,
+//                 'category_id'   => $category->id,
+//                 'current_stock' => $currentStock,
+//                 'unit'          => $unit->name,
+//                 // 'unit_cost'     => $row[11],
+//                 'location_id'   => $locationId,
+//                 'stock_date'    => now(),
+//             ]);
+//         }
+//         $product->opening_stock = $totalStock;
+//         $product->opening_stock = $totalStock;
+//         $product->save();
+
+//         $rowNumber++;
+//     }
+
+//     fclose($handle);
+
+//     return response()->json([
+//         'message' => 'CSV uploaded successfully.',
+//         'total_rows' => $invalidRows
+//     ], 200);
+// }
+
 public function uploadCSV(Request $request)
 {
     $request->validate([
@@ -1279,17 +1440,32 @@ public function uploadCSV(Request $request)
     $handle = fopen($file->getPathname(), "r");
 
     $header = fgetcsv($handle);
-    $expectedHeaders = [
-        "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
-        "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
-        "cost_price", "commit_stock_check", "project_name", "weight",
-        "weight_unit", "length", "width", "depth",
-        "measurement_unit", "returnable", "status"
-    ];
+    // $expectedHeaders = [
+    //     "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
+    //     "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
+    //     "cost_price", "commit_stock_check", "project_name", "weight",
+    //     "weight_unit", "length", "width", "depth",
+    //     "measurement_unit", "returnable", "status"
+    // ];
+    // $expectedHeaders =["Part names","SKU","Stock location","Current stock","Stock unit","Unit cost","Category","Sub category","Manufacture","Vendor","Model","Description","Threshold","Weight","Weight unit","dim_Length","dim_Width","dim_Height","dim_Measurement_Unit","Status"];
 
+    // if ($header !== $expectedHeaders) {
+    //     return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    // }
+
+    $expectedHeaders = array_map('trim', [
+        "Part names","SKU","Stock location","Current stock","Stock unit","Unit cost",
+        "Category","Sub category","Manufacture","Vendor","Model","Description",
+        "Threshold","Weight","Weight unit","dim_Length","dim_Width",
+        "dim_Height","dim_Measurement_Unit","Status"
+    ]);
+    
+    $header = array_map('trim', $header);
+    
     if ($header !== $expectedHeaders) {
         return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
     }
+    
 
     $products = [];
     $invalidRows = [];
@@ -1298,7 +1474,7 @@ public function uploadCSV(Request $request)
     
     while ($row = fgetcsv($handle)) {
         
-        $locationString = $row[8];
+        $locationString = $row[2];
         $locationNames = explode(",", $locationString);
     
     // print_r($locationNames);die;
@@ -1319,7 +1495,7 @@ public function uploadCSV(Request $request)
             // Handle invalid JSON
             Log::error('Invalid JSON in location column:', ['value' => $row[8]]);
         }
-// print_r($locationIds);die;
+        // print_r($locationIds);die;
 
         if (count($row) !== count($expectedHeaders)) {
             $invalidRows[] = $rowNumber;
@@ -1349,16 +1525,19 @@ public function uploadCSV(Request $request)
         Storage::put($qrCodePath, $qrCodeImage);
         $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
-        $unit = Unit::firstOrCreate(['name' => $row[10]], ['name' => $row[10]]);
-        $category = Category::firstOrCreate(['name' => $row[2]], ['name' => $row[2]]);
+        $unit = Unit::firstOrCreate(['name' => $row[4]], ['name' => $row[4]]);
+        $category = Category::firstOrCreate(
+            ['name' => $row[6]],
+            ['name' => $row[6], 'description' => '']
+        );
         $subcategory = Subcategory::firstOrCreate([
-            'name' => $row[3],
+            'name' => $row[7],
             'category_id' => $category->id
         ], [
-            'name' => $row[3],
+            'name' => $row[7],
             'category_id' => $category->id
         ]);
-        $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
+        $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[9]], ['vendor_name' => $row[9]]);
         
         
         
@@ -1370,11 +1549,11 @@ public function uploadCSV(Request $request)
             'units' => $unit->id,
             'category_id' => $category->id,
             'sub_category_id' => $subcategory->id,
-            'manufacturer' => $row[5],
+            'manufacturer' => $row[8],
             'vendor_id' => $vendor->id,
-            'model' => $row[6],
-            'description' => $row[7],
-            'returnable' => strtolower($row[24]) === 'yes' ? 1 : 0,
+            'model' => $row[10],
+            'description' =>$row[11],
+            // 'returnable' => strtolower($row[24]) === 'yes' ? 1 : 0,
             'track_inventory' => $row[12],
             'opening_stock' => (int) $row[12],
             'selling_cost' => (float) $row[14],
@@ -1382,15 +1561,15 @@ public function uploadCSV(Request $request)
             'commit_stock_check' => (float) $row[16],
             'project_name' => $row[17],
             'location_id' => json_encode($locationIds),
-            'weight' => (float) $row[18],
-            'weight_unit' => $row[19],
-            'length' => (float) $row[20],
-            'width' => (float) $row[21],
-            'depth' => (float) $row[22],
-            'measurement_unit' => $row[23],
+            'weight' => (float) $row[13],
+            'weight_unit' => $row[14],
+            'length' => (float) $row[15],
+            'width' => (float) $row[16],
+            'depth' => (float) $row[17],
+            'measurement_unit' => $row[18],
             'barcode_number' => $row[1],
-            'inventory_alert_threshold' => (int) $row[13],
-            'status' => $row[25],
+            'inventory_alert_threshold' => (int) $row[12],
+            'status' => $row[19],
             // 'thumbnail'=>$thumbnail,
             'created_at' => now(),
             'updated_at' => now(),
@@ -1399,7 +1578,7 @@ public function uploadCSV(Request $request)
         $totalStock = 0;
         foreach ($locationIds as $locationId) {
             // print_r($locationId);die;
-            $currentStock = (int)$row[9];
+            $currentStock = (int)$row[3];
             $totalStock += $currentStock;
     
             Stock::create([
@@ -1408,7 +1587,7 @@ public function uploadCSV(Request $request)
                 'category_id'   => $category->id,
                 'current_stock' => $currentStock,
                 'unit'          => $unit->name,
-                // 'unit_cost'     => $row[11],
+                'unit_cost'     => $row[5],
                 'location_id'   => $locationId,
                 'stock_date'    => now(),
             ]);
@@ -1713,13 +1892,21 @@ public function generateTemplateCsvUrl()
     //     "weight", "weight_unit", "length", "width",
     //     "depth", "measurement_unit", "returnable", "status"
     // ];
-    $columns = [
-        "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
-        "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
-        "cost_price", "commit_stock_check", "project_name", "weight",
-        "weight_unit", "length", "width", "depth",
-        "measurement_unit", "returnable", "status"
-    ];
+    // $columns = [
+    //     "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
+    //     "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
+    //     "cost_price", "commit_stock_check", "project_name", "weight",
+    //     "weight_unit", "length", "width", "depth",
+    //     "measurement_unit", "returnable", "status"
+    // ];
+
+    $columns = array_map('trim', [
+        "Part names","SKU","Stock location","Current stock","Stock unit","Unit cost",
+        "Category","Sub category","Manufacture","Vendor","Model","Description",
+        "Threshold","Weight","Weight unit","dim_Length","dim_Width",
+        "dim_Height","dim_Measurement_Unit","Status"
+    ]);
+
     // Open file for writing in local storage
     $filePath = storage_path("app/public/{$filename}");
     $file = fopen($filePath, 'w');

@@ -38,7 +38,7 @@ class ScanInOutProductController extends Controller
     public function index()
 {
     $scanRecords = ScanInOutProduct::with([
-        'product:id,product_name,opening_stock',
+        'product:id,product_name,sku,opening_stock',
         'employee:id,employee_name',
         'user:id,name'
     ])->get();
@@ -55,6 +55,7 @@ class ScanInOutProductController extends Controller
             'type' => $scanRecords->type,
             'purpose' => $scanRecords->purpose,
             'product_name' => $scanRecords->product->product_name ?? null,
+            'sku' => $scanRecords->product->sku ?? null,
             'quantity' => $scanRecords->product->opening_stock ?? null,
             'issue_from_name' => $scanRecords->user->name ?? null, 
             'employee_name' => $scanRecords->employee->employee_name ?? null,
