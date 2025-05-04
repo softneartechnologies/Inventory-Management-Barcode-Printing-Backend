@@ -206,6 +206,9 @@ Route::prefix('reports')->group(function () {
     Route::get('inventoryAdjustments', [ProductController::class, 'inventoryAdjustmentsReport']); // Get all currencies
     
 });
+Route::get('recentStockUpdate', [ProductController::class, 'recentStockUpdate']); // Get all currencies
+    
+
 
 Route::get('inventorySummaryReport', [ScanInOutProductController::class, 'inventorySummaryReport']); // Get all currencies
 Route::get('productScaned/{id}', [ScanInOutProductController::class, 'productScaned']); // Get all currencies

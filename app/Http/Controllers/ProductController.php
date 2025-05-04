@@ -1108,6 +1108,57 @@ public function store(Request $request)
         return response()->json(['inventory_adjustments' => $adjustments], 200);
     }
 
+    public function recentStockUpdate()
+    {
+        // Fetch all stock entries with necessary relations
+        $stocks = Stock::with([
+            'product:id,product_name,sku,opening_stock',
+            'category:id,name',
+            'vendor:id,vendor_name',
+            'location:id,name'
+        ])->orderBy('stock_date','desc')->get();
+    
+        // Check if stock records exist
+        if ($stocks->isEmpty()) {
+            return response()->json(['error' => 'Stock not found for this product'], 404);
+        }
+    
+        // Get product info from the first stock record
+        $product = $stocks->first()->product;
+    
+        // Map each stock record
+        $stockDetails = $stocks->map(function ($stock) {
+            return [
+                'stock_id' => $stock->id,
+                'stock_date' => $stock->stock_date,
+                'product_name' => $stock->product->product_name,
+                'sku' => $stock->product->sku,
+                'quantity' => $stock->quantity,
+                'adjustment' => $stock->adjustment,
+                'reason_for_update' => $stock->reason_for_update,
+               
+                // 'location_d' => $stock->location_id,
+                // 'location' => optional($stock->location)->name, // Safely get location name
+                'current_stock' => $stock->current_stock,
+                'new_stock' => $stock->new_stock,
+                // 'unit' => $stock->unit,
+                // 'unit_cost'=> $stock->unit_cost,
+                // 'total_cost'=> $stock->total_cost,
+                // 'vendor_id' => $stock->vendor_id,
+                // 'vendor_name' => optional($stock->vendor)->vendor_name,
+                // 'category' => optional($stock->category)->name,
+                
+            ];
+        });
+    
+        return response()->json([
+            // 'product_id' => $product->id,
+            // 'product_name' => $product->product_name,
+            // 'opening_stock' => $product->opening_stock,
+            'recent_stock_update' => $stockDetails
+        ], 200);
+    }
+
         // public function uploadCSV(Request $request)
         // {
         //     $request->validate([
