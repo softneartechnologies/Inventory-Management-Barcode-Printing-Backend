@@ -1,0 +1,24 @@
+[19-Apr-2025 04:35:08 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php on line 20
+[19-Apr-2025 04:35:10 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php on line 19
+[19-Apr-2025 04:35:14 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php on line 20
+[29-Apr-2025 04:02:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/AsIsNormalizerStrategy.php on line 20
+[29-Apr-2025 04:02:06 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/FlatNormalizerStrategy.php on line 19
+[29-Apr-2025 04:02:09 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/Normalizer/RelativeNormalizerStrategy.php on line 20

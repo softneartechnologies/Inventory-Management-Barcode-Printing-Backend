@@ -1,0 +1,12 @@
+[16-Apr-2025 01:30:08 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Complexity\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php on line 12
+[25-Apr-2025 08:12:24 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Complexity\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php on line 12
+[28-Apr-2025 10:13:54 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Complexity\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Exception/RuntimeException.php on line 12

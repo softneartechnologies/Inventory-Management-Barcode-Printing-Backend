@@ -1,0 +1,8 @@
+[16-Apr-2025 22:35:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpCsFixer\Fixer\FixerInterface" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/tools/php-cs-fixer.d/PhpdocSingleLineVarFixer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/tools/php-cs-fixer.d/PhpdocSingleLineVarFixer.php on line 19
+[25-Apr-2025 20:23:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpCsFixer\Fixer\FixerInterface" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/tools/php-cs-fixer.d/PhpdocSingleLineVarFixer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/tools/php-cs-fixer.d/PhpdocSingleLineVarFixer.php on line 19

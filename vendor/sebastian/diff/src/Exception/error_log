@@ -1,0 +1,24 @@
+[16-Apr-2025 01:31:01 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Diff\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php on line 17
+[16-Apr-2025 01:31:12 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Diff\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php on line 12
+[25-Apr-2025 08:12:41 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Diff\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php on line 17
+[25-Apr-2025 08:12:44 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Diff\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php on line 12
+[28-Apr-2025 10:14:05 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Diff\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/ConfigurationException.php on line 17
+[28-Apr-2025 10:14:06 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\Diff\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/diff/src/Exception/InvalidArgumentException.php on line 12

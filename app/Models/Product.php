@@ -10,20 +10,14 @@ class Product extends Model
     //
     use HasFactory;
     protected $fillable = [
-        'product_name', 'sku', 'generated_barcode','barcode_number',
-        'generated_qrcode', 'units', 'category_id', 'sub_category_id',
-        'manufacturer', 'vendor_id', 'model', 'weight', 'weight_unit',
-        'location_id', 'thumbnail', 'description', 'returnable',
-        'track_inventory', 'opening_stock', 'selling_cost', 'cost_price',
-        'commit_stock_check', 'project_name', 'length', 'width', 'depth',
-        'measurement_unit', 'inventory_alert_threshold', 'status'
+        'thumbnail','product_name', 'sku', 'generated_barcode','generated_qrcode',
+        'barcode_number', 'category_id', 'sub_category_id', 'manufacturer',
+        'vendor_id', 'model', 'unit_of_measurement_category', 'description',
+        'returnable', 'commit_stock_check', 'inventory_alert_threshold', 'location_id',
+        'quantity', 'unit_of_measure', 'per_unit_cost', 'total_cost',
+        'opening_stock', 'status'
     ];
 
-    protected $casts = [
-        'returnable' => 'boolean',
-        'track_inventory' => 'boolean',
-        'commit_stock_check' => 'boolean',
-    ];
 
     public function category()
     {

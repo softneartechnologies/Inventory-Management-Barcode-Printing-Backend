@@ -1,0 +1,88 @@
+[14-Apr-2025 23:26:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php on line 22
+[14-Apr-2025 23:27:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php on line 24
+[14-Apr-2025 23:27:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HeaderRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HeaderRequestMatcher.php on line 22
+[14-Apr-2025 23:27:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php on line 22
+[14-Apr-2025 23:27:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IpsRequestMatcher.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IpsRequestMatcher.php on line 23
+[14-Apr-2025 23:27:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IsJsonRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IsJsonRequestMatcher.php on line 22
+[14-Apr-2025 23:27:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php on line 22
+[14-Apr-2025 23:27:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php on line 22
+[14-Apr-2025 23:27:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php on line 22
+[14-Apr-2025 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/QueryParameterRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/QueryParameterRequestMatcher.php on line 22
+[14-Apr-2025 23:27:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/SchemeRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/SchemeRequestMatcher.php on line 22
+[24-Apr-2025 12:43:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php on line 22
+[24-Apr-2025 12:43:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php on line 24
+[24-Apr-2025 12:43:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HeaderRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HeaderRequestMatcher.php on line 22
+[24-Apr-2025 12:43:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php on line 22
+[24-Apr-2025 12:43:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IpsRequestMatcher.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IpsRequestMatcher.php on line 23
+[24-Apr-2025 12:43:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IsJsonRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/IsJsonRequestMatcher.php on line 22
+[24-Apr-2025 12:43:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php on line 22
+[24-Apr-2025 12:43:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php on line 22
+[24-Apr-2025 12:43:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php on line 22
+[24-Apr-2025 12:43:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/QueryParameterRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/QueryParameterRequestMatcher.php on line 22
+[24-Apr-2025 12:43:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/SchemeRequestMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RequestMatcher/SchemeRequestMatcher.php on line 22

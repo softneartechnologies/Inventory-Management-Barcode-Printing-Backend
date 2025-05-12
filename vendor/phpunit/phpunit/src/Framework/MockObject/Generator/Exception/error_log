@@ -1,0 +1,112 @@
+[20-Apr-2025 05:59:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/CannotUseAddMethodsException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/CannotUseAddMethodsException.php on line 19
+[20-Apr-2025 05:59:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsEnumerationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsEnumerationException.php on line 19
+[20-Apr-2025 05:59:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsFinalException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsFinalException.php on line 19
+[20-Apr-2025 05:59:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/DuplicateMethodException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/DuplicateMethodException.php on line 22
+[20-Apr-2025 05:59:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/Exception.php on line 19
+[20-Apr-2025 05:59:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/InvalidMethodNameException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/InvalidMethodNameException.php on line 19
+[20-Apr-2025 05:59:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/NameAlreadyInUseException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/NameAlreadyInUseException.php on line 19
+[20-Apr-2025 05:59:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/OriginalConstructorInvocationRequiredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/OriginalConstructorInvocationRequiredException.php on line 17
+[20-Apr-2025 05:59:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ReflectionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ReflectionException.php on line 17
+[20-Apr-2025 05:59:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/RuntimeException.php on line 17
+[20-Apr-2025 05:59:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/SoapExtensionNotAvailableException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/SoapExtensionNotAvailableException.php on line 17
+[20-Apr-2025 05:59:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownClassException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownClassException.php on line 19
+[20-Apr-2025 05:59:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTraitException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTraitException.php on line 21
+[20-Apr-2025 06:00:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTypeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTypeException.php on line 19
+[30-Apr-2025 00:25:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/CannotUseAddMethodsException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/CannotUseAddMethodsException.php on line 19
+[30-Apr-2025 00:25:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsEnumerationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsEnumerationException.php on line 19
+[30-Apr-2025 00:25:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsFinalException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ClassIsFinalException.php on line 19
+[30-Apr-2025 00:25:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/DuplicateMethodException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/DuplicateMethodException.php on line 22
+[30-Apr-2025 00:25:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/Exception.php on line 19
+[30-Apr-2025 00:25:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/InvalidMethodNameException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/InvalidMethodNameException.php on line 19
+[30-Apr-2025 00:25:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/NameAlreadyInUseException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/NameAlreadyInUseException.php on line 19
+[30-Apr-2025 00:25:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/OriginalConstructorInvocationRequiredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/OriginalConstructorInvocationRequiredException.php on line 17
+[30-Apr-2025 00:25:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ReflectionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/ReflectionException.php on line 17
+[30-Apr-2025 00:25:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/RuntimeException.php on line 17
+[30-Apr-2025 00:25:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/SoapExtensionNotAvailableException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/SoapExtensionNotAvailableException.php on line 17
+[30-Apr-2025 00:25:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownClassException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownClassException.php on line 19
+[30-Apr-2025 00:25:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTraitException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTraitException.php on line 21
+[30-Apr-2025 00:25:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTypeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Exception/UnknownTypeException.php on line 19

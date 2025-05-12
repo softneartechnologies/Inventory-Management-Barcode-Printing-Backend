@@ -1,0 +1,216 @@
+[16-Apr-2025 20:41:14 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php on line 30
+[16-Apr-2025 20:41:18 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php on line 30
+[16-Apr-2025 20:41:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php on line 27
+[16-Apr-2025 20:41:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php on line 29
+[16-Apr-2025 20:41:23 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php on line 32
+[16-Apr-2025 20:41:25 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php on line 34
+[16-Apr-2025 20:41:27 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php on line 33
+[16-Apr-2025 20:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php on line 34
+[16-Apr-2025 20:41:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php on line 28
+[17-Apr-2025 04:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php on line 22
+[17-Apr-2025 04:55:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php on line 24
+[17-Apr-2025 04:55:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php on line 28
+[17-Apr-2025 04:55:38 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php on line 27
+[17-Apr-2025 04:55:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php on line 19
+[17-Apr-2025 04:55:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php on line 24
+[17-Apr-2025 04:55:43 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php on line 20
+[17-Apr-2025 04:55:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php on line 21
+[17-Apr-2025 04:55:46 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php on line 19
+[17-Apr-2025 04:55:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php on line 30
+[17-Apr-2025 04:55:49 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php on line 28
+[17-Apr-2025 04:55:51 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php on line 26
+[17-Apr-2025 04:55:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php on line 32
+[17-Apr-2025 04:55:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php on line 21
+[17-Apr-2025 04:55:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php on line 31
+[17-Apr-2025 04:55:57 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php on line 31
+[17-Apr-2025 04:55:59 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php on line 24
+[17-Apr-2025 04:56:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php on line 22
+[25-Apr-2025 09:15:14 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AbstractClassPass.php on line 22
+[25-Apr-2025 09:15:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/AssignThisVariablePass.php on line 24
+[25-Apr-2025 09:15:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CallTimePassByReferencePass.php on line 28
+[25-Apr-2025 09:15:19 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CalledClassPass.php on line 27
+[25-Apr-2025 09:15:21 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/CodeCleanerPass.php on line 19
+[25-Apr-2025 09:15:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/EmptyArrayDimFetchPass.php on line 24
+[25-Apr-2025 09:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ExitPass.php on line 20
+[25-Apr-2025 09:15:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FinalClassPass.php on line 21
+[25-Apr-2025 09:15:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php on line 19
+[25-Apr-2025 09:15:30 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/FunctionReturnInWriteContextPass.php on line 30
+[25-Apr-2025 09:15:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ImplicitReturnPass.php on line 28
+[25-Apr-2025 09:15:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/IssetPass.php on line 26
+[25-Apr-2025 09:15:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LabelContextPass.php on line 32
+[25-Apr-2025 09:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LeavePsyshAlonePass.php on line 21
+[25-Apr-2025 09:15:38 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ListPass.php on line 31
+[25-Apr-2025 09:15:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/LoopContextPass.php on line 31
+[25-Apr-2025 09:15:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/MagicConstantsPass.php on line 24
+[25-Apr-2025 09:15:43 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespaceAwarePass.php on line 22
+[25-Apr-2025 09:15:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/NamespacePass.php on line 30
+[25-Apr-2025 09:15:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php on line 30
+[25-Apr-2025 09:15:50 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/RequirePass.php on line 27
+[25-Apr-2025 09:15:51 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ReturnTypePass.php on line 29
+[25-Apr-2025 09:15:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/StrictTypesPass.php on line 32
+[25-Apr-2025 09:15:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/UseStatementPass.php on line 34
+[25-Apr-2025 09:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php on line 33
+[25-Apr-2025 09:15:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidConstructorPass.php on line 34
+[25-Apr-2025 09:16:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\NamespaceAwarePass" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/CodeCleaner/ValidFunctionNamePass.php on line 28

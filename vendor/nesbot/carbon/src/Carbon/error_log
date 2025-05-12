@@ -1,0 +1,60 @@
+[16-Apr-2025 01:37:56 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Factory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php:130
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php on line 130
+[16-Apr-2025 01:38:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "Symfony\Component\Translation\Translator" does not exist in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php:20
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php(20): ReflectionMethod->__construct()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php on line 20
+[16-Apr-2025 01:38:04 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/TranslatorImmutable.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/TranslatorImmutable.php on line 20
+[16-Apr-2025 01:38:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/WrapperClock.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/WrapperClock.php on line 24
+[16-Apr-2025 11:40:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/AbstractTranslator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/AbstractTranslator.php on line 24
+[16-Apr-2025 11:40:25 UTC] PHP Fatal error:  Trait "Carbon\Traits\Date" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 836
+[16-Apr-2025 11:40:39 UTC] PHP Fatal error:  Trait "Carbon\Traits\Date" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonImmutable.php on line 836
+[16-Apr-2025 11:40:54 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonInterval.php on line 194
+[16-Apr-2025 11:41:04 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriod.php on line 183
+[16-Apr-2025 11:41:15 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\CarbonPeriod" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriodImmutable.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriodImmutable.php on line 16
+[16-Apr-2025 11:41:22 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonTimeZone.php on line 24
+[25-Apr-2025 20:20:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/AbstractTranslator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/AbstractTranslator.php on line 24
+[25-Apr-2025 20:20:08 UTC] PHP Fatal error:  Trait "Carbon\Traits\Date" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 836
+[25-Apr-2025 20:20:12 UTC] PHP Fatal error:  Trait "Carbon\Traits\Date" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonImmutable.php on line 836
+[25-Apr-2025 20:20:15 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonInterval.php on line 194
+[25-Apr-2025 20:20:17 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriod.php on line 183
+[25-Apr-2025 20:20:19 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\CarbonPeriod" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriodImmutable.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonPeriodImmutable.php on line 16
+[25-Apr-2025 20:20:20 UTC] PHP Fatal error:  Trait "Carbon\Traits\LocalFactory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/CarbonTimeZone.php on line 24
+[25-Apr-2025 20:20:24 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Factory" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php:130
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php on line 130
+[25-Apr-2025 20:20:29 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "Symfony\Component\Translation\Translator" does not exist in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php:20
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php(20): ReflectionMethod->__construct()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Translator.php on line 20
+[25-Apr-2025 20:20:30 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/TranslatorImmutable.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/TranslatorImmutable.php on line 20
+[25-Apr-2025 20:20:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/WrapperClock.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/WrapperClock.php on line 24

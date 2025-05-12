@@ -1,0 +1,24 @@
+[16-Apr-2025 22:38:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestSuite" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php on line 23
+[16-Apr-2025 22:38:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestCase.php:119
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestCase.php on line 119
+[16-Apr-2025 22:38:17 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\Reorderable" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php on line 59
+[25-Apr-2025 08:14:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestSuite" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/DataProviderTestSuite.php on line 23
+[25-Apr-2025 08:14:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestCase.php:119
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestCase.php on line 119
+[25-Apr-2025 08:14:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\Reorderable" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestSuite.php on line 59

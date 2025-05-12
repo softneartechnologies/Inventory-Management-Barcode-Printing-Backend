@@ -1,0 +1,44 @@
+[18-Apr-2025 05:01:42 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/AbstractCursorPaginator.php on line 27
+[18-Apr-2025 05:01:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator.php on line 21
+[18-Apr-2025 05:01:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Cursor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Cursor.php on line 10
+[18-Apr-2025 05:01:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractCursorPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/CursorPaginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/CursorPaginator.php on line 26
+[18-Apr-2025 05:01:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php on line 26
+[18-Apr-2025 05:01:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php on line 7
+[18-Apr-2025 05:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php on line 26
+[27-Apr-2025 04:14:29 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/AbstractCursorPaginator.php on line 27
+[27-Apr-2025 04:14:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/AbstractPaginator.php on line 21
+[27-Apr-2025 04:14:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Cursor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Cursor.php on line 10
+[27-Apr-2025 04:14:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractCursorPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/CursorPaginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/CursorPaginator.php on line 26
+[27-Apr-2025 04:14:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php on line 26
+[27-Apr-2025 04:14:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php on line 7
+[27-Apr-2025 04:14:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Pagination\AbstractPaginator" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pagination/Paginator.php on line 26

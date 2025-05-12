@@ -1,0 +1,24 @@
+[16-Apr-2025 01:30:28 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php on line 27
+[16-Apr-2025 01:30:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php on line 27
+[25-Apr-2025 08:12:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php on line 27
+[25-Apr-2025 08:12:33 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php on line 27
+[28-Apr-2025 10:13:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php on line 27
+[28-Apr-2025 10:13:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php on line 27

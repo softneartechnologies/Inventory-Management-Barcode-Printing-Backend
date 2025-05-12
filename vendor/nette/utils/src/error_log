@@ -1,0 +1,4 @@
+[15-Apr-2025 01:32:35 UTC] PHP Warning:  Class "Nette\HtmlStringable" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/compatibility.php on line 20
+[15-Apr-2025 01:32:35 UTC] PHP Warning:  Class "Nette\Localization\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/compatibility.php on line 31
+[24-Apr-2025 17:36:11 UTC] PHP Warning:  Class "Nette\HtmlStringable" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/compatibility.php on line 20
+[24-Apr-2025 17:36:11 UTC] PHP Warning:  Class "Nette\Localization\Translator" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/compatibility.php on line 31

@@ -1,0 +1,16 @@
+[18-Apr-2025 00:13:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 17
+[18-Apr-2025 00:13:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9
+[27-Apr-2025 04:18:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php on line 17
+[27-Apr-2025 04:18:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/RedisServiceProvider.php on line 9

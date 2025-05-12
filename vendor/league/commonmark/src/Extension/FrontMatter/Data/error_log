@@ -1,0 +1,16 @@
+[19-Apr-2025 04:29:11 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\FrontMatter\Data\FrontMatterDataParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/LibYamlFrontMatterParser.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/LibYamlFrontMatterParser.php on line 19
+[19-Apr-2025 04:29:13 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\FrontMatter\Data\FrontMatterDataParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/SymfonyYamlFrontMatterParser.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/SymfonyYamlFrontMatterParser.php on line 21
+[29-Apr-2025 13:26:50 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\FrontMatter\Data\FrontMatterDataParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/LibYamlFrontMatterParser.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/LibYamlFrontMatterParser.php on line 19
+[29-Apr-2025 13:26:52 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\FrontMatter\Data\FrontMatterDataParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/SymfonyYamlFrontMatterParser.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Data/SymfonyYamlFrontMatterParser.php on line 21

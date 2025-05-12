@@ -1,0 +1,96 @@
+[19-Apr-2025 12:54:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php on line 21
+[19-Apr-2025 12:54:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php on line 21
+[19-Apr-2025 12:54:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php on line 21
+[19-Apr-2025 12:54:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php on line 21
+[19-Apr-2025 12:54:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php on line 21
+[19-Apr-2025 12:54:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php on line 20
+[19-Apr-2025 12:54:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 20
+[19-Apr-2025 12:54:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php on line 21
+[19-Apr-2025 12:54:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteBeforeFirstTestMethodErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteBeforeFirstTestMethodErroredSubscriber.php on line 21
+[19-Apr-2025 12:54:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[19-Apr-2025 12:54:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteSkippedSubscriber.php on line 21
+[19-Apr-2025 12:55:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php on line 20
+[29-Apr-2025 03:53:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestConsideredRiskySubscriber.php on line 21
+[29-Apr-2025 03:53:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestErroredSubscriber.php on line 21
+[29-Apr-2025 03:53:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFailedSubscriber.php on line 21
+[29-Apr-2025 03:53:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestFinishedSubscriber.php on line 21
+[29-Apr-2025 03:54:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestMarkedIncompleteSubscriber.php on line 21
+[29-Apr-2025 10:14:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestPreparedSubscriber.php on line 20
+[29-Apr-2025 10:14:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 20
+[29-Apr-2025 10:14:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSkippedSubscriber.php on line 21
+[29-Apr-2025 10:14:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteBeforeFirstTestMethodErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteBeforeFirstTestMethodErroredSubscriber.php on line 21
+[29-Apr-2025 10:14:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[29-Apr-2025 10:14:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteSkippedSubscriber.php on line 21
+[29-Apr-2025 10:14:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\TeamCity\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/TeamCity/Subscriber/TestSuiteStartedSubscriber.php on line 20

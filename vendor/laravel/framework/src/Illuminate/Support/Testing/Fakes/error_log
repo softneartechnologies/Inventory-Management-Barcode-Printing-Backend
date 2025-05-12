@@ -1,0 +1,58 @@
+[20-Apr-2025 12:19:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\Batch" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php on line 11
+[20-Apr-2025 12:19:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php on line 12
+[20-Apr-2025 12:19:42 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php on line 16
+[20-Apr-2025 12:19:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php on line 17
+[20-Apr-2025 12:19:45 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/ExceptionHandlerFake.php on line 19
+[20-Apr-2025 12:19:47 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php on line 18
+[20-Apr-2025 12:19:48 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php on line 18
+[20-Apr-2025 12:19:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\PendingBatch" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php on line 8
+[20-Apr-2025 12:19:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Bus\PendingChain" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php on line 9
+[20-Apr-2025 12:19:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\PendingMail" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php on line 8
+[20-Apr-2025 12:19:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\QueueManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php on line 17
+[29-Apr-2025 23:06:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\Batch" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php on line 11
+[29-Apr-2025 23:06:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php on line 12
+[29-Apr-2025 23:06:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php on line 16
+[29-Apr-2025 23:06:37 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php on line 17
+[29-Apr-2025 23:06:38 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/ExceptionHandlerFake.php on line 19
+[29-Apr-2025 23:06:42 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php on line 18
+[29-Apr-2025 23:06:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php on line 18
+[29-Apr-2025 23:06:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Bus\PendingBatch" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingBatchFake.php on line 8
+[29-Apr-2025 23:06:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Bus\PendingChain" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingChainFake.php on line 9
+[29-Apr-2025 23:06:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\PendingMail" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/PendingMailFake.php on line 8
+[29-Apr-2025 23:06:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\QueueManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php on line 17

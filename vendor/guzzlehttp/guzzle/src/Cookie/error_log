@@ -1,0 +1,24 @@
+[16-Apr-2025 11:24:33 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Cookie\CookieJarInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php on line 11
+[16-Apr-2025 11:24:43 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Cookie\CookieJar" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php on line 10
+[16-Apr-2025 11:24:48 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Cookie\CookieJar" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php on line 8
+[25-Apr-2025 20:18:27 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Cookie\CookieJarInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php on line 11
+[25-Apr-2025 20:18:31 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Cookie\CookieJar" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php on line 10
+[25-Apr-2025 20:18:33 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Cookie\CookieJar" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php on line 8

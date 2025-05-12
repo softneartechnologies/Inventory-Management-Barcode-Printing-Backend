@@ -1,0 +1,32 @@
+[20-Apr-2025 06:01:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\InvocationStubber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/InvocationMocker.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/InvocationMocker.php on line 49
+[20-Apr-2025 06:01:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\ParametersMatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/MethodNameMatch.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/MethodNameMatch.php on line 19
+[20-Apr-2025 06:01:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/ParametersMatch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/ParametersMatch.php on line 17
+[20-Apr-2025 06:01:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Identity" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/Stub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/Stub.php on line 19
+[01-May-2025 04:02:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\InvocationStubber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/InvocationMocker.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/InvocationMocker.php on line 49
+[01-May-2025 04:03:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\ParametersMatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/MethodNameMatch.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/MethodNameMatch.php on line 19
+[01-May-2025 04:03:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/ParametersMatch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/ParametersMatch.php on line 17
+[01-May-2025 04:03:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Builder\Identity" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/Stub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Builder/Stub.php on line 19

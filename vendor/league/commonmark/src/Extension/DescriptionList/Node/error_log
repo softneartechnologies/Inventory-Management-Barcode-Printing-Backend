@@ -1,0 +1,24 @@
+[19-Apr-2025 04:23:58 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/Description.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/Description.php on line 19
+[19-Apr-2025 04:24:00 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionList.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionList.php on line 18
+[19-Apr-2025 04:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionTerm.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionTerm.php on line 18
+[29-Apr-2025 13:25:09 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/Description.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/Description.php on line 19
+[29-Apr-2025 13:25:11 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionList.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionList.php on line 18
+[29-Apr-2025 13:25:13 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionTerm.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Node/DescriptionTerm.php on line 18

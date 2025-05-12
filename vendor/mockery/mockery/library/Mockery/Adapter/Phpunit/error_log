@@ -1,0 +1,12 @@
+[19-Apr-2025 04:36:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php on line 15
+[19-Apr-2025 04:36:57 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\TestListenerDefaultImplementation" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php on line 18
+[19-Apr-2025 15:15:27 UTC] PHP Fatal error:  Trait "Mockery\Adapter\Phpunit\MockeryPHPUnitIntegrationAssertPostConditions" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php on line 23
+[29-Apr-2025 06:02:31 UTC] PHP Fatal error:  Trait "Mockery\Adapter\Phpunit\MockeryPHPUnitIntegrationAssertPostConditions" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php on line 23
+[29-Apr-2025 06:02:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php on line 15
+[29-Apr-2025 06:02:37 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\TestListenerDefaultImplementation" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php on line 18

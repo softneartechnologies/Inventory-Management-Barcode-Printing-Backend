@@ -1,0 +1,180 @@
+[16-Apr-2025 08:56:24 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php on line 28
+[16-Apr-2025 08:56:26 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php on line 15
+[16-Apr-2025 08:56:28 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php on line 15
+[16-Apr-2025 08:56:30 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php on line 21
+[16-Apr-2025 08:56:32 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php on line 20
+[16-Apr-2025 08:56:34 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php on line 15
+[16-Apr-2025 08:56:35 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php on line 15
+[16-Apr-2025 08:56:37 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php on line 15
+[16-Apr-2025 08:56:39 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php on line 18
+[16-Apr-2025 08:56:41 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php on line 17
+[16-Apr-2025 08:56:42 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php on line 18
+[16-Apr-2025 08:56:44 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php on line 15
+[16-Apr-2025 08:56:48 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php on line 20
+[16-Apr-2025 08:56:50 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php on line 15
+[16-Apr-2025 08:56:52 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php on line 15
+[25-Apr-2025 08:13:40 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php on line 28
+[25-Apr-2025 08:13:42 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php on line 15
+[25-Apr-2025 08:13:44 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php on line 15
+[25-Apr-2025 08:13:46 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php on line 21
+[25-Apr-2025 08:13:47 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php on line 20
+[25-Apr-2025 08:13:49 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php on line 15
+[25-Apr-2025 08:13:51 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php on line 15
+[25-Apr-2025 08:13:52 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php on line 15
+[25-Apr-2025 08:13:54 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php on line 18
+[25-Apr-2025 08:13:56 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php on line 17
+[25-Apr-2025 08:13:57 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php on line 18
+[25-Apr-2025 08:13:59 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php on line 15
+[25-Apr-2025 08:14:02 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php on line 20
+[25-Apr-2025 08:14:03 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php on line 15
+[25-Apr-2025 08:14:05 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php on line 15
+[28-Apr-2025 10:14:41 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/CallableType.php on line 28
+[28-Apr-2025 10:14:42 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/FalseType.php on line 15
+[28-Apr-2025 10:14:43 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/GenericObjectType.php on line 15
+[28-Apr-2025 10:14:43 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IntersectionType.php on line 21
+[28-Apr-2025 10:14:45 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/IterableType.php on line 20
+[28-Apr-2025 10:14:46 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/MixedType.php on line 15
+[28-Apr-2025 10:14:46 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NeverType.php on line 15
+[28-Apr-2025 10:14:48 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/NullType.php on line 15
+[28-Apr-2025 10:14:49 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/ObjectType.php on line 18
+[28-Apr-2025 10:14:50 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/SimpleType.php on line 17
+[28-Apr-2025 10:14:50 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/StaticType.php on line 18
+[28-Apr-2025 10:14:52 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/TrueType.php on line 15
+[28-Apr-2025 10:14:54 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnionType.php on line 20
+[28-Apr-2025 10:14:54 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/UnknownType.php on line 15
+[28-Apr-2025 10:14:56 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\Type\Type" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/type/src/type/VoidType.php on line 15

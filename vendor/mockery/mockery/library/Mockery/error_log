@@ -1,0 +1,56 @@
+[16-Apr-2025 11:36:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\LegacyMockInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/MockInterface.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/MockInterface.php on line 13
+[16-Apr-2025 11:36:46 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Expectation" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php on line 13
+[16-Apr-2025 14:10:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php on line 18
+[16-Apr-2025 14:10:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception.php on line 16
+[16-Apr-2025 14:10:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Expectation.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Expectation.php on line 49
+[16-Apr-2025 14:10:22 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\HigherOrderMessage" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php on line 13
+[16-Apr-2025 14:10:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\MockInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Mock.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Mock.php on line 32
+[25-Apr-2025 08:12:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php on line 18
+[25-Apr-2025 08:12:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception.php on line 16
+[25-Apr-2025 08:12:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\ExpectationInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Expectation.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Expectation.php on line 49
+[25-Apr-2025 08:12:54 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\HigherOrderMessage" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php on line 13
+[25-Apr-2025 08:13:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\MockInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Mock.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Mock.php on line 32
+[25-Apr-2025 08:13:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\LegacyMockInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/MockInterface.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/MockInterface.php on line 13
+[25-Apr-2025 08:13:14 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Expectation" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php on line 13

@@ -1,0 +1,32 @@
+[18-Apr-2025 00:07:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Translation\Loader" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/ArrayLoader.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/ArrayLoader.php on line 7
+[18-Apr-2025 00:07:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Translation\Loader" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php on line 10
+[18-Apr-2025 00:07:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php on line 8
+[18-Apr-2025 00:07:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\NamespacedItemResolver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/Translator.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/Translator.php on line 15
+[27-Apr-2025 04:23:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Translation\Loader" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/ArrayLoader.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/ArrayLoader.php on line 7
+[27-Apr-2025 04:24:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Translation\Loader" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/FileLoader.php on line 10
+[27-Apr-2025 04:24:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/TranslationServiceProvider.php on line 8
+[27-Apr-2025 04:24:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\NamespacedItemResolver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/Translator.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Translation/Translator.php on line 15

@@ -1,0 +1,8 @@
+[16-Apr-2025 06:42:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Pail\Contracts\Printer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Printers/CliPrinter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Printers/CliPrinter.php on line 17
+[25-Apr-2025 17:59:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Pail\Contracts\Printer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Printers/CliPrinter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Printers/CliPrinter.php on line 17

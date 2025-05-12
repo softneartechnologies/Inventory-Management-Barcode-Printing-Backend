@@ -1,0 +1,8 @@
+[19-Apr-2025 00:38:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Filesystem\Filesystem" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Cloud.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Cloud.php on line 5
+[28-Apr-2025 06:53:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Filesystem\Filesystem" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Cloud.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Cloud.php on line 5

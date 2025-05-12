@@ -1,0 +1,8 @@
+[14-Apr-2025 23:29:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/ControllerMetadata/ArgumentMetadataFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/ControllerMetadata/ArgumentMetadataFactory.php on line 19
+[24-Apr-2025 15:39:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/ControllerMetadata/ArgumentMetadataFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/ControllerMetadata/ArgumentMetadataFactory.php on line 19

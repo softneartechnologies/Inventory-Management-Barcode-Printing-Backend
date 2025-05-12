@@ -1,0 +1,8 @@
+[15-Apr-2025 01:35:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8
+[24-Apr-2025 10:50:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/container/src/NotFoundExceptionInterface.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/container/src/NotFoundExceptionInterface.php on line 8

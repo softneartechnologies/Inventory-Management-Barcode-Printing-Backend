@@ -1,0 +1,24 @@
+[18-Apr-2025 09:58:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php on line 28
+[18-Apr-2025 09:58:24 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Converter\Number\BigNumberConverter" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php on line 23
+[18-Apr-2025 09:58:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php on line 27
+[27-Apr-2025 18:24:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/BigNumberConverter.php on line 28
+[27-Apr-2025 18:24:09 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Converter\Number\BigNumberConverter" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/DegradedNumberConverter.php on line 23
+[27-Apr-2025 18:24:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Converter\NumberConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Converter/Number/GenericNumberConverter.php on line 27

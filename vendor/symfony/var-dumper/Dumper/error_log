@@ -1,0 +1,40 @@
+[14-Apr-2025 22:58:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/AbstractDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/AbstractDumper.php on line 22
+[14-Apr-2025 22:58:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\AbstractDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/CliDumper.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 23
+[14-Apr-2025 22:58:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php on line 20
+[14-Apr-2025 22:58:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 22
+[14-Apr-2025 22:58:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ServerDumper.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ServerDumper.php on line 23
+[24-Apr-2025 10:44:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/AbstractDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/AbstractDumper.php on line 22
+[24-Apr-2025 10:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\AbstractDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/CliDumper.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 23
+[24-Apr-2025 10:44:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextualizedDumper.php on line 20
+[24-Apr-2025 10:44:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 22
+[24-Apr-2025 10:45:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\DataDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ServerDumper.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ServerDumper.php on line 23

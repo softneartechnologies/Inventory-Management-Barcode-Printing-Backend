@@ -1,0 +1,72 @@
+[14-Apr-2025 22:57:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidArgumentException.php on line 14
+[14-Apr-2025 22:57:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidParameterException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidParameterException.php on line 19
+[14-Apr-2025 22:57:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php on line 21
+[14-Apr-2025 22:57:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php on line 20
+[14-Apr-2025 22:57:14 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\ResourceNotFoundException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/NoConfigurationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/NoConfigurationException.php on line 19
+[14-Apr-2025 22:57:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php on line 21
+[14-Apr-2025 22:57:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php on line 14
+[14-Apr-2025 22:57:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteNotFoundException.php on line 19
+[14-Apr-2025 22:57:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RuntimeException.php on line 14
+[24-Apr-2025 08:31:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidArgumentException.php on line 14
+[24-Apr-2025 08:31:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidParameterException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/InvalidParameterException.php on line 19
+[24-Apr-2025 08:31:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MethodNotAllowedException.php on line 21
+[24-Apr-2025 08:31:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/MissingMandatoryParametersException.php on line 20
+[24-Apr-2025 08:31:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\ResourceNotFoundException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/NoConfigurationException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/NoConfigurationException.php on line 19
+[24-Apr-2025 08:31:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/ResourceNotFoundException.php on line 21
+[24-Apr-2025 08:31:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteCircularReferenceException.php on line 14
+[24-Apr-2025 08:31:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteNotFoundException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RouteNotFoundException.php on line 19
+[24-Apr-2025 08:31:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Exception/RuntimeException.php on line 14

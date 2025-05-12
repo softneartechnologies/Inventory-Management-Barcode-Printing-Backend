@@ -1,0 +1,72 @@
+[20-Apr-2025 08:09:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php on line 8
+[20-Apr-2025 08:09:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php on line 15
+[20-Apr-2025 08:09:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php on line 11
+[20-Apr-2025 08:09:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php on line 21
+[20-Apr-2025 08:09:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php on line 12
+[20-Apr-2025 08:09:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php on line 14
+[20-Apr-2025 08:09:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php on line 13
+[20-Apr-2025 08:09:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php on line 13
+[20-Apr-2025 08:09:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/StatusCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/StatusCommand.php on line 12
+[30-Apr-2025 21:00:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php on line 8
+[30-Apr-2025 21:00:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php on line 15
+[30-Apr-2025 21:00:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/InstallCommand.php on line 11
+[30-Apr-2025 21:01:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php on line 21
+[30-Apr-2025 21:01:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php on line 12
+[30-Apr-2025 21:01:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php on line 14
+[30-Apr-2025 21:01:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/ResetCommand.php on line 13
+[30-Apr-2025 21:01:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php on line 13
+[30-Apr-2025 21:01:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\Migrations\BaseCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/StatusCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/StatusCommand.php on line 12

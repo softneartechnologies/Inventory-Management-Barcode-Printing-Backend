@@ -1,0 +1,8 @@
+[15-Apr-2025 10:29:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Dflydev\DotAccessData\DataInterface" not found in /home/softoroa/flight.softnear.com/vendor/dflydev/dot-access-data/src/Data.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dflydev/dot-access-data/src/Data.php on line 24
+[24-Apr-2025 10:52:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Dflydev\DotAccessData\DataInterface" not found in /home/softoroa/flight.softnear.com/vendor/dflydev/dot-access-data/src/Data.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dflydev/dot-access-data/src/Data.php on line 24

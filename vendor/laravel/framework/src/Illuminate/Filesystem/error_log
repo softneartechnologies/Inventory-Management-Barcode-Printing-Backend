@@ -1,0 +1,36 @@
+[18-Apr-2025 09:51:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Filesystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php on line 10
+[18-Apr-2025 09:51:05 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 17
+[18-Apr-2025 09:51:07 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php on line 45
+[18-Apr-2025 09:51:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Filesystem\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php on line 28
+[18-Apr-2025 09:51:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php on line 10
+[18-Apr-2025 09:51:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Filesystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/LocalFilesystemAdapter.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/LocalFilesystemAdapter.php on line 9
+[27-Apr-2025 04:08:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Filesystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/LocalFilesystemAdapter.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/LocalFilesystemAdapter.php on line 9
+[27-Apr-2025 06:22:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Filesystem\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php on line 28
+[27-Apr-2025 06:22:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php on line 10
+[27-Apr-2025 08:52:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Filesystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/AwsS3V3Adapter.php on line 10
+[27-Apr-2025 08:52:32 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 17
+[27-Apr-2025 08:52:33 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php on line 45

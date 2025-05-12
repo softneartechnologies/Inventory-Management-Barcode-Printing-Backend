@@ -1,0 +1,16 @@
+[16-Apr-2025 01:37:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Access\AuthorizationException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingAbilityException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingAbilityException.php on line 8
+[16-Apr-2025 01:37:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Access\AuthorizationException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingScopeException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingScopeException.php on line 12
+[26-Apr-2025 06:10:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Access\AuthorizationException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingAbilityException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingAbilityException.php on line 8
+[26-Apr-2025 06:10:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Access\AuthorizationException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingScopeException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Exceptions/MissingScopeException.php on line 12

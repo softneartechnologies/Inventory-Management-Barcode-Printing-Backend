@@ -1,0 +1,96 @@
+[18-Apr-2025 05:15:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php on line 20
+[18-Apr-2025 05:15:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php on line 20
+[18-Apr-2025 05:15:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php on line 20
+[18-Apr-2025 07:31:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php on line 19
+[18-Apr-2025 07:31:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php on line 19
+[18-Apr-2025 07:31:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php on line 20
+[18-Apr-2025 09:55:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExtendTestCaseException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExtendTestCaseException.php on line 20
+[18-Apr-2025 09:55:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php on line 20
+[18-Apr-2025 09:55:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryDoesNotExistException.php on line 20
+[18-Apr-2025 09:55:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ErrorException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ErrorException.php on line 19
+[18-Apr-2025 09:55:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php on line 17
+[18-Apr-2025 09:55:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php on line 20
+[27-Apr-2025 15:12:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassCannotBeFoundException.php on line 20
+[27-Apr-2025 15:12:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExtendTestCaseException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassDoesNotExtendTestCaseException.php on line 20
+[27-Apr-2025 15:12:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ClassIsAbstractException.php on line 20
+[27-Apr-2025 15:12:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/DirectoryDoesNotExistException.php on line 20
+[27-Apr-2025 15:12:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ErrorException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ErrorException.php on line 19
+[27-Apr-2025 15:12:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/Exception.php on line 17
+[27-Apr-2025 15:12:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/FileDoesNotExistException.php on line 20
+[27-Apr-2025 15:12:34 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidOrderException.php on line 19
+[27-Apr-2025 15:12:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/InvalidPhptFileException.php on line 19
+[27-Apr-2025 15:12:36 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/ParameterDoesNotExistException.php on line 20
+[27-Apr-2025 15:12:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/PhptExternalFileCannotBeLoadedException.php on line 20
+[27-Apr-2025 15:12:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Exception/UnsupportedPhptSectionException.php on line 20

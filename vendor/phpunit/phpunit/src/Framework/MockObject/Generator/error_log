@@ -1,0 +1,20 @@
+[19-Apr-2025 12:53:41 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\MockObject\Generator\TemplateLoader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Generator.php on line 84
+[19-Apr-2025 12:53:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Generator\MockType" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockClass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockClass.php on line 20
+[19-Apr-2025 12:53:47 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\MockObject\Generator\TemplateLoader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockMethod.php on line 38
+[19-Apr-2025 12:53:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Generator\MockType" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockTrait.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockTrait.php on line 21
+[29-Apr-2025 06:09:33 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\MockObject\Generator\TemplateLoader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/Generator.php on line 84
+[29-Apr-2025 06:09:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Generator\MockType" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockClass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockClass.php on line 20
+[29-Apr-2025 06:09:39 UTC] PHP Fatal error:  Trait "PHPUnit\Framework\MockObject\Generator\TemplateLoader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockMethod.php on line 38
+[29-Apr-2025 06:09:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Generator\MockType" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockTrait.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Generator/MockTrait.php on line 21

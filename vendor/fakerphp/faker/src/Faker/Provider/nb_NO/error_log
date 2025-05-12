@@ -1,0 +1,40 @@
+[19-Apr-2025 03:25:19 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Address.php on line 5
+[19-Apr-2025 03:25:23 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Company.php on line 5
+[19-Apr-2025 03:25:26 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Payment.php on line 5
+[19-Apr-2025 03:25:29 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Person.php on line 5
+[19-Apr-2025 03:25:34 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/PhoneNumber.php on line 5
+[28-Apr-2025 08:32:41 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Address.php on line 5
+[28-Apr-2025 08:32:42 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Company.php on line 5
+[28-Apr-2025 08:32:44 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Payment.php on line 5
+[28-Apr-2025 08:32:46 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/Person.php on line 5
+[28-Apr-2025 08:32:48 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/nb_NO/PhoneNumber.php on line 5

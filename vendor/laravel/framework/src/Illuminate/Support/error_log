@@ -1,0 +1,58 @@
+[18-Apr-2025 00:05:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/AggregateServiceProvider.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/AggregateServiceProvider.php on line 5
+[18-Apr-2025 00:05:31 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Carbon" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Carbon.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Carbon.php on line 12
+[18-Apr-2025 00:05:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Fluent.php on line 19
+[18-Apr-2025 00:05:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/HtmlString.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/HtmlString.php on line 8
+[18-Apr-2025 00:05:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Js.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Js.php on line 12
+[18-Apr-2025 00:05:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Jsonable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php on line 12
+[18-Apr-2025 00:05:59 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Number.php on line 9
+[18-Apr-2025 00:06:04 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Optional.php on line 9
+[18-Apr-2025 00:06:12 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Sleep.php on line 12
+[18-Apr-2025 00:06:14 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Str.php on line 24
+[18-Apr-2025 00:06:15 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Stringable.php on line 15
+[18-Apr-2025 00:06:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Uri.php on line 18
+[18-Apr-2025 00:06:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/UriQueryString.php on line 10
+[18-Apr-2025 00:06:22 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/ValidatedInput.php on line 11
+[27-Apr-2025 04:02:49 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Optional.php on line 9
+[27-Apr-2025 04:20:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/AggregateServiceProvider.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/AggregateServiceProvider.php on line 5
+[27-Apr-2025 04:20:52 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Carbon" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Carbon.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Carbon.php on line 12
+[27-Apr-2025 04:21:10 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Fluent.php on line 19
+[27-Apr-2025 04:21:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/HtmlString.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/HtmlString.php on line 8
+[27-Apr-2025 04:21:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Js.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Js.php on line 12
+[27-Apr-2025 04:21:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Jsonable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php on line 12
+[27-Apr-2025 04:21:47 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Number.php on line 9
+[27-Apr-2025 04:22:01 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Sleep.php on line 12
+[27-Apr-2025 04:22:05 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Str.php on line 24
+[27-Apr-2025 04:22:09 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Stringable.php on line 15
+[27-Apr-2025 04:22:14 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Uri.php on line 18
+[27-Apr-2025 04:22:16 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/UriQueryString.php on line 10
+[27-Apr-2025 04:22:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\InteractsWithData" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/ValidatedInput.php on line 11

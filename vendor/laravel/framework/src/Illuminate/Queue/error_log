@@ -1,0 +1,90 @@
+[18-Apr-2025 00:12:25 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Batchable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedClosure.php on line 14
+[18-Apr-2025 00:12:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php on line 16
+[18-Apr-2025 00:12:31 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php on line 14
+[18-Apr-2025 00:12:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\WorkerOptions" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/ListenerOptions.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/ListenerOptions.php on line 5
+[18-Apr-2025 00:12:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/NullQueue.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/NullQueue.php on line 7
+[18-Apr-2025 00:12:48 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Queue.php on line 17
+[18-Apr-2025 00:12:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php on line 13
+[18-Apr-2025 00:12:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php on line 24
+[18-Apr-2025 00:12:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php on line 13
+[18-Apr-2025 00:12:59 UTC] PHP Fatal error:  Trait "Illuminate\Queue\SerializesAndRestoresModelIdentifiers" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php on line 9
+[18-Apr-2025 00:13:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php on line 13
+[18-Apr-2025 00:13:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\MaxAttemptsExceededException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/TimeoutExceededException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/TimeoutExceededException.php on line 5
+[18-Apr-2025 00:13:05 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsLostConnections" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Worker.php on line 23
+[18-Apr-2025 14:03:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php on line 13
+[18-Apr-2025 14:03:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php on line 11
+[27-Apr-2025 04:17:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/BeanstalkdQueue.php on line 13
+[27-Apr-2025 04:17:05 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Batchable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedClosure.php on line 14
+[27-Apr-2025 04:17:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php on line 16
+[27-Apr-2025 04:17:14 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php on line 14
+[27-Apr-2025 04:17:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\WorkerOptions" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/ListenerOptions.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/ListenerOptions.php on line 5
+[27-Apr-2025 04:17:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/NullQueue.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/NullQueue.php on line 7
+[27-Apr-2025 04:17:37 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Queue.php on line 17
+[27-Apr-2025 04:17:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php on line 13
+[27-Apr-2025 04:17:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php on line 24
+[27-Apr-2025 04:17:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/RedisQueue.php on line 13
+[27-Apr-2025 04:17:50 UTC] PHP Fatal error:  Trait "Illuminate\Queue\SerializesAndRestoresModelIdentifiers" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php on line 9
+[27-Apr-2025 04:17:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SqsQueue.php on line 11
+[27-Apr-2025 04:17:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Queue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php on line 13
+[27-Apr-2025 04:17:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\MaxAttemptsExceededException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/TimeoutExceededException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/TimeoutExceededException.php on line 5
+[27-Apr-2025 04:17:58 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsLostConnections" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Worker.php on line 23

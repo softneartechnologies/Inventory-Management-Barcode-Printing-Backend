@@ -1,0 +1,8 @@
+[19-Apr-2025 00:46:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php on line 7
+[29-Apr-2025 01:55:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php on line 7

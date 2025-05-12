@@ -1,0 +1,40 @@
+[16-Apr-2025 16:30:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/AbstractEvent.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/AbstractEvent.php on line 30
+[16-Apr-2025 16:30:13 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php on line 21
+[16-Apr-2025 16:30:15 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php on line 22
+[16-Apr-2025 16:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php on line 21
+[16-Apr-2025 16:30:20 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php on line 18
+[25-Apr-2025 08:42:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/AbstractEvent.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/AbstractEvent.php on line 30
+[25-Apr-2025 08:42:33 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentParsedEvent.php on line 21
+[25-Apr-2025 08:42:34 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreParsedEvent.php on line 22
+[25-Apr-2025 08:42:36 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentPreRenderEvent.php on line 21
+[25-Apr-2025 08:42:38 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Event\AbstractEvent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Event/DocumentRenderedEvent.php on line 18

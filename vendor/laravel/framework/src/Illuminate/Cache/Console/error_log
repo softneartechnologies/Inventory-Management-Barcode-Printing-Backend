@@ -1,0 +1,32 @@
+[19-Apr-2025 03:26:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php on line 9
+[19-Apr-2025 03:26:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php on line 13
+[19-Apr-2025 03:26:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php on line 10
+[19-Apr-2025 03:26:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/PruneStaleTagsCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/PruneStaleTagsCommand.php on line 12
+[28-Apr-2025 06:22:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php on line 9
+[28-Apr-2025 06:22:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php on line 13
+[28-Apr-2025 06:22:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/ForgetCommand.php on line 10
+[28-Apr-2025 06:22:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/PruneStaleTagsCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Console/PruneStaleTagsCommand.php on line 12

@@ -1,0 +1,16 @@
+[24-Apr-2025 15:44:31 UTC] PHP Fatal error:  Uncaught Error: Class "League\Uri\Exceptions\SyntaxError" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/ConversionFailed.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/ConversionFailed.php on line 20
+[24-Apr-2025 15:44:33 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriException" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/MissingFeature.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/MissingFeature.php on line 19
+[24-Apr-2025 15:44:35 UTC] PHP Fatal error:  Uncaught Error: Class "League\Uri\Exceptions\SyntaxError" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/OffsetOutOfBounds.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/OffsetOutOfBounds.php on line 16
+[24-Apr-2025 15:44:36 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriException" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/SyntaxError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Exceptions/SyntaxError.php on line 19

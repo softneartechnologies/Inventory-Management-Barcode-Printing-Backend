@@ -73,14 +73,13 @@ class ScanInOutProductController extends Controller
     {
         $product = Product::find($request->product_id);
 
-        
-
         if($request->purpose =="Repairs"){
             
             $validated = $request->validate([
                 'product_id' => 'required|exists:products,id',
                 'issue_from_user_id' => 'required',
                 'employee_id' => 'required|exists:employees,id',
+                'location_id' => 'required',
                 'in_out_date_time' => 'required|date',
                 'type' => 'required|in:in',
                 'purpose' => 'required',
@@ -88,7 +87,10 @@ class ScanInOutProductController extends Controller
                 'work_station_id' => 'required',
                 'machine_id' => 'required',
                 'comments' => 'required',
-                'in_quantity' => 'required|integer|min:1'
+                'in_quantity' => 'required|integer|min:1',
+                'previous_stock' => 'required',
+                'total_current_stock' => 'required',
+                'threshold' => 'required',
             ]);
 
             
@@ -97,17 +99,22 @@ class ScanInOutProductController extends Controller
                 'product_id' => 'required|exists:products,id',
                 'issue_from_user_id' => 'required',
                 'employee_id' => 'required|exists:employees,id',
+                'location_id' => 'required',
                 'in_out_date_time' => 'required|date',
                 'type' => 'required|in:in',
                 'purpose' => 'required',
                 'comments' => 'required',
-                'in_quantity' => 'required|integer|min:1'
+                'in_quantity' => 'required|integer|min:1',
+                'previous_stock' => 'required',
+                'total_current_stock' => 'required',
+                'threshold' => 'required',
             ]);
 
            
         }
 
         $validated['vendor_id'] = $product->vendor_id;
+        $validated['category_id'] = $product->category_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
         $quantity = $request->in_quantity;
@@ -129,6 +136,7 @@ class ScanInOutProductController extends Controller
                 'product_id' => 'required|exists:products,id',
                 'issue_from_user_id' => 'required',
                 'employee_id' => 'required|exists:employees,id',
+                'location_id' => 'required',
                 'in_out_date_time' => 'required|date',
                 'type' => 'required',
                 'purpose' => 'required',
@@ -136,7 +144,10 @@ class ScanInOutProductController extends Controller
                 'work_station_id' => 'required',
                 'machine_id' => 'required',
                 'comments' => 'required',
-                'out_quantity' => 'required|integer|min:1'
+                'out_quantity' => 'required|integer|min:1',
+                'previous_stock' => 'required',
+                'total_current_stock' => 'required',
+                'threshold' => 'required',
             ]);
 
             
@@ -145,17 +156,22 @@ class ScanInOutProductController extends Controller
                 'product_id' => 'required|exists:products,id',
                 'issue_from_user_id' => 'required',
                 'employee_id' => 'required|exists:employees,id',
+                'location_id' => 'required',
                 'in_out_date_time' => 'required|date',
                 'type' => 'required',
                 'purpose' => 'required',
                 'comments' => 'required',
-                'out_quantity' => 'required|integer|min:1'
+                'out_quantity' => 'required|integer|min:1',
+                'previous_stock' => 'required',
+                'total_current_stock' => 'required',
+                'threshold' => 'required',
             ]);
 
             
         }
 
         $validated['vendor_id'] = $product->vendor_id;
+        $validated['category_id'] = $product->category_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
         $quantity = $request->out_quantity;
@@ -171,42 +187,73 @@ class ScanInOutProductController extends Controller
 
      public function inventorySummaryReport()
     {
-        $deleted ='1';
+        // $deleted ='1';
+        // $scanRecords = ScanInOutProduct::with([
+        //     'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+        //     'product.category:id,name',
+        //     'product.orders:id,product_id,quantity,deleted', // include orders
+        //     'vendor:id,vendor_name',
+        //     'employee:id,employee_name','user:id,name'
+        // ])->get();
+        
+        //     $scanRecords = $scanRecords->map(function ($scanRecord) {
+        //     $orderQuantity = $scanRecord->product->orders->sum('quantity') ?? 0; 
+        //     $deletedOrder = $scanRecord->product->deleted;
+        //     return [
+        //         'id' => $scanRecord->id,
+        //         'in_out_date_time' => $scanRecord->in_out_date_time,
+        //         'in_quantity' => $scanRecord->in_quantity,
+        //         'out_quantity' => $scanRecord->out_quantity,
+        //         'type' => $scanRecord->type,
+        //         'purpose' => $scanRecord->purpose,
+        //         'product_id' => $scanRecord->product_id,
+        //         'product_name' => $scanRecord->product->product_name ?? null,
+        //         'category_name' => optional($scanRecord->product->category)->name ?? null,
+        //         'employee_id' => $scanRecord->employee_id,
+        //         'employee_name' => optional($scanRecord->employee)->employee_name ?? null,
+        //         'issue_from_name' => $scanRecord->user->name ?? null,
+        //         'sku' => $scanRecord->product->sku ?? null,
+        //         'inventory_alert_threshold' => $scanRecord->product->inventory_alert_threshold ?? null,
+        //         'commit_stock_check' => $scanRecord->product->commit_stock_check ?? null,
+        //         'opening_stock' => $scanRecord->product->opening_stock ?? null,
+        //         'vendor_name' => optional($scanRecord->vendor)->vendor_name ?? null,
+        //         'order_quantity' => $orderQuantity,
+        //         'deleted' =>$deletedOrder,
+        //         'created_at' => $scanRecord->created_at,
+        //         'updated_at' => $scanRecord->updated_at,
+        //     ];
+        // });
+
         $scanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
-            'product.category:id,name',
-            'product.orders:id,product_id,quantity,deleted', // include orders
-            'vendor:id,vendor_name',
-            'employee:id,employee_name','user:id,name'
-        ])->get();
-        
-        // print_r($scanRecords);die;
-        
-        $scanRecords = $scanRecords->map(function ($scanRecord) {
-            $orderQuantity = $scanRecord->product->orders->sum('quantity') ?? 0; 
-    $deletedOrder = $scanRecord->product->deleted;
+            'product:id,product_name,sku,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name','category:id,name','location:id,name'
+        ])->orderBy('id','desc')->get();
+
+        $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
-                'id' => $scanRecord->id,
-                'in_out_date_time' => $scanRecord->in_out_date_time,
-                'in_quantity' => $scanRecord->in_quantity,
-                'out_quantity' => $scanRecord->out_quantity,
-                'type' => $scanRecord->type,
-                'purpose' => $scanRecord->purpose,
-                'product_id' => $scanRecord->product_id,
-                'product_name' => $scanRecord->product->product_name ?? null,
-                'category_name' => optional($scanRecord->product->category)->name ?? null,
-                'employee_id' => $scanRecord->employee_id,
-                'employee_name' => optional($scanRecord->employee)->employee_name ?? null,
-                'issue_from_name' => $scanRecord->user->name ?? null,
-                'sku' => $scanRecord->product->sku ?? null,
-                'inventory_alert_threshold' => $scanRecord->product->inventory_alert_threshold ?? null,
-                'commit_stock_check' => $scanRecord->product->commit_stock_check ?? null,
-                'opening_stock' => $scanRecord->product->opening_stock ?? null,
-                'vendor_name' => optional($scanRecord->vendor)->vendor_name ?? null,
-                'order_quantity' => $orderQuantity,
-                'deleted' =>$deletedOrder,
-                'created_at' => $scanRecord->created_at,
-                'updated_at' => $scanRecord->updated_at,
+                'id' => $scanRecords->id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'product_id' => $scanRecords->product_id,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
+                'category' => $scanRecords->category->name ?? null,
+                'location' => $scanRecords->location->name ?? null,
+                'quantity' => $scanRecords->product->opening_stock ?? null,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'issue_from_user_id' => $scanRecords->issue_from_user_id,
+                'employee_id' => $scanRecords->employee_id,
+                'in_quantity' => $scanRecords->in_quantity,
+                'out_quantity' => $scanRecords->out_quantity,
+                'previous_stock' => $scanRecords->previous_stock,
+                'total_current_stock' => $scanRecords->total_current_stock,
+                'threshold' => $scanRecords->threshold,
+                'type' => $scanRecords->type,
+                'purpose' => $scanRecords->purpose,
+                'comments' => $scanRecords->comments,
+                'created_at' => $scanRecords->created_at,
+                'updated_at' => $scanRecords->updated_at,
             ];
         });
     
@@ -297,22 +344,55 @@ class ScanInOutProductController extends Controller
 
     public function employeeIssuanceHistory(){
         
-        $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->orderBy('id','desc')->get();
+        // $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->orderBy('id','desc')->get();
+
+        // $scanRecords = $scanRecords->map(function ($scanRecords) {
+        //     return [
+        //         'id' => $scanRecords->id,
+        //         'in_out_date_time' => $scanRecords->in_out_date_time,
+        //         'employee_id' => $scanRecords->employee_id,
+        //         'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
+        //         'issue_from_name' => $scanRecords->user->name ?? null,
+        //         'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
+        //         'in_quantity' => $scanRecords->in_quantity,
+        //         'out_quantity' => $scanRecords->out_quantity,
+        //         'type' => $scanRecords->type,
+        //         'purpose' => $scanRecords->purpose,
+        //         'comments' => $scanRecords->comments,
+        //         'product_id' => $scanRecords->product_id,
+        //         'created_at' => $scanRecords->created_at,
+        //         'updated_at' => $scanRecords->updated_at,
+        //     ];
+        // });
+
+        $scanRecords = ScanInOutProduct::with([
+            'product:id,product_name,sku,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name','category:id,name','location:id,name'
+        ])->orderBy('id','desc')->get();
 
         $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
                 'id' => $scanRecords->id,
                 'in_out_date_time' => $scanRecords->in_out_date_time,
+                'product_id' => $scanRecords->product_id,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
+                'category' => $scanRecords->category->name ?? null,
+                'location' => $scanRecords->location->name ?? null,
+                'quantity' => $scanRecords->product->opening_stock ?? null,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'issue_from_user_id' => $scanRecords->issue_from_user_id,
                 'employee_id' => $scanRecords->employee_id,
-                'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
-                'issue_from_name' => $scanRecords->user->name ?? null,
-                'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
                 'in_quantity' => $scanRecords->in_quantity,
                 'out_quantity' => $scanRecords->out_quantity,
+                'previous_stock' => $scanRecords->previous_stock,
+                'total_current_stock' => $scanRecords->total_current_stock,
+                'threshold' => $scanRecords->threshold,
                 'type' => $scanRecords->type,
                 'purpose' => $scanRecords->purpose,
                 'comments' => $scanRecords->comments,
-                'product_id' => $scanRecords->product_id,
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
             ];

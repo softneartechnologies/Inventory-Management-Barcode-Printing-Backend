@@ -1,0 +1,84 @@
+[16-Apr-2025 11:49:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\Extension\ExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php on line 24
+[16-Apr-2025 11:49:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php on line 27
+[16-Apr-2025 11:49:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php on line 26
+[16-Apr-2025 11:49:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php on line 31
+[16-Apr-2025 11:49:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php on line 29
+[16-Apr-2025 11:49:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php on line 28
+[16-Apr-2025 11:50:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php on line 27
+[25-Apr-2025 08:15:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\Extension\ExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php on line 24
+[25-Apr-2025 08:15:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php on line 27
+[25-Apr-2025 08:15:26 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php on line 26
+[25-Apr-2025 08:15:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php on line 31
+[25-Apr-2025 08:15:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php on line 29
+[25-Apr-2025 08:15:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php on line 28
+[25-Apr-2025 08:15:35 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php on line 27
+[28-Apr-2025 10:15:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\Extension\ExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AbstractExtension.php on line 24
+[28-Apr-2025 10:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/AttributeMatchingExtension.php on line 27
+[28-Apr-2025 10:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/CombinationExtension.php on line 26
+[28-Apr-2025 10:15:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/FunctionExtension.php on line 31
+[28-Apr-2025 10:15:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/HtmlExtension.php on line 29
+[28-Apr-2025 10:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/NodeExtension.php on line 28
+[28-Apr-2025 10:15:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\XPath\Extension\AbstractExtension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Extension/PseudoClassExtension.php on line 27

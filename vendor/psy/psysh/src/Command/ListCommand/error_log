@@ -1,0 +1,64 @@
+[18-Apr-2025 05:18:29 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php on line 19
+[18-Apr-2025 05:18:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php on line 20
+[18-Apr-2025 05:18:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php on line 20
+[18-Apr-2025 05:18:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php on line 20
+[18-Apr-2025 05:18:38 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php on line 19
+[18-Apr-2025 05:18:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php on line 19
+[18-Apr-2025 05:18:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php on line 19
+[18-Apr-2025 05:18:43 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php on line 21
+[27-Apr-2025 18:23:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassConstantEnumerator.php on line 19
+[27-Apr-2025 18:23:24 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ClassEnumerator.php on line 20
+[27-Apr-2025 18:23:26 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/ConstantEnumerator.php on line 20
+[27-Apr-2025 18:23:29 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/FunctionEnumerator.php on line 20
+[27-Apr-2025 18:23:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/GlobalVariableEnumerator.php on line 19
+[27-Apr-2025 18:23:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/MethodEnumerator.php on line 19
+[27-Apr-2025 18:23:34 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/PropertyEnumerator.php on line 19
+[27-Apr-2025 18:23:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ListCommand\Enumerator" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand/VariableEnumerator.php on line 21

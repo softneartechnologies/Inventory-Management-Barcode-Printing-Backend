@@ -1,0 +1,16 @@
+[14-Apr-2025 23:01:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Extractor\ExtractorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/ChainExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/ChainExtractor.php on line 21
+[14-Apr-2025 23:01:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\AbstractFileExtractor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/PhpAstExtractor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/PhpAstExtractor.php on line 27
+[24-Apr-2025 10:40:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Extractor\ExtractorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/ChainExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/ChainExtractor.php on line 21
+[24-Apr-2025 10:40:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\AbstractFileExtractor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/PhpAstExtractor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/PhpAstExtractor.php on line 27

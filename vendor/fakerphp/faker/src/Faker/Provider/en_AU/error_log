@@ -1,0 +1,24 @@
+[19-Apr-2025 10:14:23 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Address.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Address.php on line 8
+[19-Apr-2025 10:14:24 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Internet.php on line 5
+[19-Apr-2025 10:14:25 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/PhoneNumber.php on line 5
+[28-Apr-2025 08:31:30 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Address.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Address.php on line 8
+[28-Apr-2025 08:31:32 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/Internet.php on line 5
+[28-Apr-2025 08:31:33 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_AU/PhoneNumber.php on line 5

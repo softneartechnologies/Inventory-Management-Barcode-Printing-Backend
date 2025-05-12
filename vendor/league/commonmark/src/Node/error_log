@@ -1,0 +1,8 @@
+[16-Apr-2025 16:31:29 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Node\StringContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/RawMarkupContainerInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/RawMarkupContainerInterface.php on line 19
+[25-Apr-2025 08:07:45 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Node\StringContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/RawMarkupContainerInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/RawMarkupContainerInterface.php on line 19

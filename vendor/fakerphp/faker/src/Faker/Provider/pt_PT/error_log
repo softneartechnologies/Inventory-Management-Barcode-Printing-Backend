@@ -1,0 +1,48 @@
+[19-Apr-2025 03:28:41 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Address.php on line 5
+[19-Apr-2025 03:28:44 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Company.php on line 5
+[19-Apr-2025 03:28:47 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Internet.php on line 5
+[19-Apr-2025 03:28:49 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Payment.php on line 5
+[19-Apr-2025 03:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Person.php on line 5
+[19-Apr-2025 03:28:55 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/PhoneNumber.php on line 5
+[28-Apr-2025 08:34:30 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Address.php on line 5
+[28-Apr-2025 08:34:31 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Company.php on line 5
+[28-Apr-2025 08:34:33 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Internet.php on line 5
+[28-Apr-2025 08:34:34 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Payment.php on line 5
+[28-Apr-2025 08:34:36 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/Person.php on line 5
+[28-Apr-2025 08:34:38 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/pt_PT/PhoneNumber.php on line 5

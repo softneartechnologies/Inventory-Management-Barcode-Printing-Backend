@@ -1,0 +1,8 @@
+[17-Apr-2025 11:45:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Comment" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php on line 5
+[27-Apr-2025 18:17:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Comment" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Comment/Doc.php on line 5

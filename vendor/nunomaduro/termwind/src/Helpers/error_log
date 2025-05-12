@@ -1,0 +1,8 @@
+[16-Apr-2025 21:29:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php on line 15
+[26-Apr-2025 05:40:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/termwind/src/Helpers/QuestionHelper.php on line 15

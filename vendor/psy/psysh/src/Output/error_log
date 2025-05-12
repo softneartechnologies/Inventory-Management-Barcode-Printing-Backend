@@ -1,0 +1,32 @@
+[17-Apr-2025 04:57:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/OutputPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/OutputPager.php on line 20
+[17-Apr-2025 04:57:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/PassthruPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/PassthruPager.php on line 20
+[17-Apr-2025 04:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ProcOutputPager.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ProcOutputPager.php on line 24
+[17-Apr-2025 04:57:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ShellOutput.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ShellOutput.php on line 21
+[25-Apr-2025 09:17:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/OutputPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/OutputPager.php on line 20
+[25-Apr-2025 09:17:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/PassthruPager.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/PassthruPager.php on line 20
+[25-Apr-2025 09:17:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ProcOutputPager.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ProcOutputPager.php on line 24
+[25-Apr-2025 09:17:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ShellOutput.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Output/ShellOutput.php on line 21

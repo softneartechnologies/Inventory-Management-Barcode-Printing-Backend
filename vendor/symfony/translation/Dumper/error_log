@@ -1,0 +1,88 @@
+[14-Apr-2025 23:00:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/CsvFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/CsvFileDumper.php on line 21
+[14-Apr-2025 23:00:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Dumper\DumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/FileDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/FileDumper.php on line 26
+[14-Apr-2025 23:00:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IcuResFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IcuResFileDumper.php on line 21
+[14-Apr-2025 23:00:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IniFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IniFileDumper.php on line 21
+[14-Apr-2025 23:00:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/JsonFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/JsonFileDumper.php on line 21
+[14-Apr-2025 23:00:42 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/MoFileDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/MoFileDumper.php on line 22
+[14-Apr-2025 23:00:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PhpFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PhpFileDumper.php on line 21
+[14-Apr-2025 23:00:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PoFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PoFileDumper.php on line 21
+[14-Apr-2025 23:00:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/QtFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/QtFileDumper.php on line 21
+[14-Apr-2025 23:00:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/XliffFileDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/XliffFileDumper.php on line 22
+[14-Apr-2025 23:00:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/YamlFileDumper.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/YamlFileDumper.php on line 24
+[24-Apr-2025 10:39:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/CsvFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/CsvFileDumper.php on line 21
+[24-Apr-2025 10:39:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Dumper\DumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/FileDumper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/FileDumper.php on line 26
+[24-Apr-2025 10:39:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IcuResFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IcuResFileDumper.php on line 21
+[24-Apr-2025 10:39:29 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IniFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/IniFileDumper.php on line 21
+[24-Apr-2025 10:39:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/JsonFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/JsonFileDumper.php on line 21
+[24-Apr-2025 10:39:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/MoFileDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/MoFileDumper.php on line 22
+[24-Apr-2025 10:39:34 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PhpFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PhpFileDumper.php on line 21
+[24-Apr-2025 10:39:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PoFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/PoFileDumper.php on line 21
+[24-Apr-2025 10:39:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/QtFileDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/QtFileDumper.php on line 21
+[24-Apr-2025 10:39:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/XliffFileDumper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/XliffFileDumper.php on line 22
+[24-Apr-2025 10:39:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Dumper\FileDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/YamlFileDumper.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Dumper/YamlFileDumper.php on line 24

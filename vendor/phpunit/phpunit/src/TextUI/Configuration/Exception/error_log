@@ -1,0 +1,120 @@
+[19-Apr-2025 10:32:48 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CannotFindSchemaException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CannotFindSchemaException.php on line 20
+[19-Apr-2025 10:32:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CodeCoverageReportNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CodeCoverageReportNotConfiguredException.php on line 19
+[19-Apr-2025 10:32:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/ConfigurationCannotBeBuiltException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/ConfigurationCannotBeBuiltException.php on line 19
+[19-Apr-2025 10:32:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/Exception.php on line 17
+[19-Apr-2025 10:32:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/FilterNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/FilterNotConfiguredException.php on line 19
+[19-Apr-2025 10:32:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/LoggingNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/LoggingNotConfiguredException.php on line 19
+[19-Apr-2025 10:33:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBaselineException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBaselineException.php on line 19
+[19-Apr-2025 10:33:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBootstrapException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBootstrapException.php on line 19
+[19-Apr-2025 10:33:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCacheDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCacheDirectoryException.php on line 19
+[19-Apr-2025 10:33:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoConfigurationFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoConfigurationFileException.php on line 19
+[19-Apr-2025 10:33:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCoverageCacheDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCoverageCacheDirectoryException.php on line 19
+[19-Apr-2025 10:33:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCustomCssFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCustomCssFileException.php on line 19
+[19-Apr-2025 10:33:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoDefaultTestSuiteException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoDefaultTestSuiteException.php on line 19
+[19-Apr-2025 10:33:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoPharExtensionDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoPharExtensionDirectoryException.php on line 19
+[19-Apr-2025 10:33:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/SpecificDeprecationToStopOnNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/SpecificDeprecationToStopOnNotConfiguredException.php on line 19
+[29-Apr-2025 10:16:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CannotFindSchemaException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CannotFindSchemaException.php on line 20
+[29-Apr-2025 10:16:45 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CodeCoverageReportNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/CodeCoverageReportNotConfiguredException.php on line 19
+[29-Apr-2025 10:16:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/ConfigurationCannotBeBuiltException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/ConfigurationCannotBeBuiltException.php on line 19
+[29-Apr-2025 10:16:47 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/Exception.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/Exception.php on line 17
+[29-Apr-2025 10:16:48 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/FilterNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/FilterNotConfiguredException.php on line 19
+[29-Apr-2025 10:16:49 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/LoggingNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/LoggingNotConfiguredException.php on line 19
+[29-Apr-2025 10:16:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBaselineException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBaselineException.php on line 19
+[29-Apr-2025 10:16:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBootstrapException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoBootstrapException.php on line 19
+[29-Apr-2025 10:16:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCacheDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCacheDirectoryException.php on line 19
+[29-Apr-2025 10:16:53 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoConfigurationFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoConfigurationFileException.php on line 19
+[29-Apr-2025 10:16:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCoverageCacheDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCoverageCacheDirectoryException.php on line 19
+[29-Apr-2025 10:16:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCustomCssFileException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoCustomCssFileException.php on line 19
+[29-Apr-2025 10:16:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoDefaultTestSuiteException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoDefaultTestSuiteException.php on line 19
+[29-Apr-2025 10:16:57 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoPharExtensionDirectoryException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/NoPharExtensionDirectoryException.php on line 19
+[29-Apr-2025 10:16:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Configuration\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/SpecificDeprecationToStopOnNotConfiguredException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Exception/SpecificDeprecationToStopOnNotConfiguredException.php on line 19

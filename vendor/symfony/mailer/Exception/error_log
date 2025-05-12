@@ -1,0 +1,72 @@
+[14-Apr-2025 20:59:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/HttpTransportException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/HttpTransportException.php on line 19
+[14-Apr-2025 20:59:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php on line 17
+[14-Apr-2025 20:59:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php on line 17
+[14-Apr-2025 20:59:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/LogicException.php on line 17
+[14-Apr-2025 20:59:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/RuntimeException.php on line 17
+[14-Apr-2025 20:59:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportException.php on line 17
+[14-Apr-2025 20:59:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php on line 17
+[14-Apr-2025 20:59:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnexpectedResponseException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnexpectedResponseException.php on line 14
+[14-Apr-2025 20:59:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php on line 20
+[24-Apr-2025 13:02:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/HttpTransportException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/HttpTransportException.php on line 19
+[24-Apr-2025 13:02:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/IncompleteDsnException.php on line 17
+[24-Apr-2025 13:02:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/InvalidArgumentException.php on line 17
+[24-Apr-2025 13:02:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/LogicException.php on line 17
+[24-Apr-2025 13:02:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/RuntimeException.php on line 17
+[24-Apr-2025 13:02:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportException.php on line 17
+[24-Apr-2025 13:02:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/TransportExceptionInterface.php on line 17
+[24-Apr-2025 13:03:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\TransportException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnexpectedResponseException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnexpectedResponseException.php on line 14
+[24-Apr-2025 13:03:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Exception/UnsupportedSchemeException.php on line 20

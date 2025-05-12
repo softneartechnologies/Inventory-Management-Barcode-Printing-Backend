@@ -1,0 +1,16 @@
+[19-Apr-2025 03:27:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\RateLimiting\Limit" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/GlobalLimit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/GlobalLimit.php on line 5
+[19-Apr-2025 03:27:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\RateLimiting\GlobalLimit" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/Unlimited.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/Unlimited.php on line 5
+[28-Apr-2025 06:22:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\RateLimiting\Limit" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/GlobalLimit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/GlobalLimit.php on line 5
+[28-Apr-2025 06:22:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\RateLimiting\GlobalLimit" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/Unlimited.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/RateLimiting/Unlimited.php on line 5

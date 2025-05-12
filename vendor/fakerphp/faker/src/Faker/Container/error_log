@@ -1,0 +1,32 @@
+[17-Apr-2025 21:49:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Container\ContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/Container.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/Container.php on line 14
+[17-Apr-2025 21:49:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerException.php on line 12
+[17-Apr-2025 21:49:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerInterface.php on line 7
+[17-Apr-2025 21:49:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\NotFoundExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/NotInContainerException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/NotInContainerException.php on line 12
+[27-Apr-2025 08:44:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Faker\Container\ContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/Container.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/Container.php on line 14
+[27-Apr-2025 08:44:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerException.php on line 12
+[27-Apr-2025 08:44:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\ContainerInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/ContainerInterface.php on line 7
+[27-Apr-2025 08:44:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\NotFoundExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/NotInContainerException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Container/NotInContainerException.php on line 12

@@ -1,0 +1,12 @@
+[19-Apr-2025 04:33:46 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Mention\Generator\MentionGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php on line 19
+[29-Apr-2025 04:01:43 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Mention\Generator\MentionGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/CallbackGenerator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/CallbackGenerator.php on line 20
+[29-Apr-2025 04:01:46 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Mention\Generator\MentionGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Mention/Generator/StringTemplateLinkGenerator.php on line 19

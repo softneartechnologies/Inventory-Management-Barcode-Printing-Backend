@@ -1,0 +1,16 @@
+[14-Apr-2025 22:58:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Cloner\ClonerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/AbstractCloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/AbstractCloner.php on line 22
+[14-Apr-2025 22:58:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\AbstractCloner" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/VarCloner.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/VarCloner.php on line 17
+[24-Apr-2025 10:44:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Cloner\ClonerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/AbstractCloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/AbstractCloner.php on line 22
+[24-Apr-2025 10:44:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\AbstractCloner" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/VarCloner.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Cloner/VarCloner.php on line 17

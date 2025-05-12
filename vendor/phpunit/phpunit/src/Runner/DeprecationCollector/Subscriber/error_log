@@ -1,0 +1,16 @@
+[19-Apr-2025 10:29:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\DeprecationCollector\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestPreparedSubscriber.php on line 20
+[19-Apr-2025 10:29:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\DeprecationCollector\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestTriggeredDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestTriggeredDeprecationSubscriber.php on line 20
+[29-Apr-2025 10:15:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\DeprecationCollector\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestPreparedSubscriber.php on line 20
+[29-Apr-2025 10:15:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\DeprecationCollector\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestTriggeredDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/DeprecationCollector/Subscriber/TestTriggeredDeprecationSubscriber.php on line 20

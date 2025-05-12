@@ -1,0 +1,18 @@
+[19-Apr-2025 12:48:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Middleware\RateLimited" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/RateLimitedWithRedis.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/RateLimitedWithRedis.php on line 10
+[19-Apr-2025 12:49:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Middleware\ThrottlesExceptions" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/ThrottlesExceptionsWithRedis.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/ThrottlesExceptionsWithRedis.php on line 11
+[19-Apr-2025 12:49:05 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/WithoutOverlapping.php on line 9
+[28-Apr-2025 06:55:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Middleware\RateLimited" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/RateLimitedWithRedis.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/RateLimitedWithRedis.php on line 10
+[28-Apr-2025 06:55:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Middleware\ThrottlesExceptions" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/ThrottlesExceptionsWithRedis.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/ThrottlesExceptionsWithRedis.php on line 11
+[28-Apr-2025 06:55:27 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Middleware/WithoutOverlapping.php on line 9

@@ -1,0 +1,16 @@
+[16-Apr-2025 22:36:47 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Node\AbstractNode" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/Directory.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/Directory.php on line 23
+[16-Apr-2025 22:36:48 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Node\AbstractNode" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/File.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/File.php on line 93
+[25-Apr-2025 20:25:36 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Node\AbstractNode" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/Directory.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/Directory.php on line 23
+[25-Apr-2025 20:25:38 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Node\AbstractNode" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/File.php:93
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Node/File.php on line 93

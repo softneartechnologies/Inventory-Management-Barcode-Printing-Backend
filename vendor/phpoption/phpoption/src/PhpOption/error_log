@@ -1,0 +1,24 @@
+[16-Apr-2025 22:36:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php on line 28
+[16-Apr-2025 22:36:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/None.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/None.php on line 26
+[16-Apr-2025 22:36:03 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/Some.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/Some.php on line 28
+[25-Apr-2025 20:24:14 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php on line 28
+[25-Apr-2025 20:24:16 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/None.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/None.php on line 26
+[25-Apr-2025 20:24:19 UTC] PHP Fatal error:  Uncaught Error: Class "PhpOption\Option" not found in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/Some.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpoption/phpoption/src/PhpOption/Some.php on line 28

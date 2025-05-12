@@ -1,0 +1,2 @@
+[20-Apr-2025 12:19:56 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Dumpable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Fluent/Concerns/Debugging.php on line 7
+[29-Apr-2025 23:06:59 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Dumpable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Fluent/Concerns/Debugging.php on line 7

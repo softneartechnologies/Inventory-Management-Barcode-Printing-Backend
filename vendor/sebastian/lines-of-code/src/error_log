@@ -1,0 +1,12 @@
+[14-Apr-2025 23:29:23 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php on line 21
+[16-Apr-2025 23:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php on line 21
+[24-Apr-2025 19:36:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php on line 21

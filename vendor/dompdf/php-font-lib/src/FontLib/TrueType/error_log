@@ -1,0 +1,32 @@
+[17-Apr-2025 21:45:06 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Collection.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Collection.php on line 20
+[17-Apr-2025 21:45:09 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/File.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/File.php on line 24
+[17-Apr-2025 21:45:11 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Header" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Header.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Header.php on line 15
+[17-Apr-2025 21:45:14 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\DirectoryEntry" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/TableDirectoryEntry.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/TableDirectoryEntry.php on line 17
+[27-Apr-2025 04:33:08 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Collection.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Collection.php on line 20
+[27-Apr-2025 04:33:10 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/File.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/File.php on line 24
+[27-Apr-2025 04:33:11 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Header" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Header.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/Header.php on line 15
+[27-Apr-2025 04:33:13 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\DirectoryEntry" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/TableDirectoryEntry.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/TrueType/TableDirectoryEntry.php on line 17

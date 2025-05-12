@@ -1,0 +1,18 @@
+[19-Apr-2025 03:12:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Request" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php on line 15
+[19-Apr-2025 03:12:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\HtmlDumper" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php on line 12
+[19-Apr-2025 03:12:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php on line 20
+[29-Apr-2025 10:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Request" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php on line 15
+[29-Apr-2025 10:57:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\HtmlDumper" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/HtmlDumper.php on line 12
+[29-Apr-2025 10:57:43 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php on line 20

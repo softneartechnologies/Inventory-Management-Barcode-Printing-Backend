@@ -1,0 +1,8 @@
+[18-Apr-2025 09:50:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Proxy\AbstractProxy" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php on line 19
+[27-Apr-2025 19:59:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Proxy\AbstractProxy" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php on line 19

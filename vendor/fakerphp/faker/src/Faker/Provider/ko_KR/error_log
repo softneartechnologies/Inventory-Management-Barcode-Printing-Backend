@@ -1,0 +1,48 @@
+[19-Apr-2025 03:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Address.php on line 5
+[19-Apr-2025 03:02:03 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Company.php on line 5
+[19-Apr-2025 03:02:06 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Internet.php on line 5
+[19-Apr-2025 03:02:08 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Person.php on line 5
+[19-Apr-2025 03:02:10 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/PhoneNumber.php on line 5
+[19-Apr-2025 03:02:12 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Text" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Text.php on line 5
+[28-Apr-2025 08:31:13 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Address.php on line 5
+[28-Apr-2025 08:31:14 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Company.php on line 5
+[28-Apr-2025 08:31:16 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Internet.php on line 5
+[28-Apr-2025 08:31:18 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Person.php on line 5
+[28-Apr-2025 08:31:19 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/PhoneNumber.php on line 5
+[28-Apr-2025 08:31:21 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Text" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/ko_KR/Text.php on line 5

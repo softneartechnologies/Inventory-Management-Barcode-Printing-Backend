@@ -1,0 +1,8 @@
+[19-Apr-2025 10:36:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/config/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/config/config.php on line 28
+[24-Apr-2025 10:47:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/config/config.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/config/config.php on line 28

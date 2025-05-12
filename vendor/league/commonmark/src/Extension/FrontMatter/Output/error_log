@@ -1,0 +1,8 @@
+[19-Apr-2025 04:32:59 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Output\RenderedContent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Output/RenderedContentWithFrontMatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Output/RenderedContentWithFrontMatter.php on line 23
+[29-Apr-2025 04:01:34 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Output\RenderedContent" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Output/RenderedContentWithFrontMatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Output/RenderedContentWithFrontMatter.php on line 23

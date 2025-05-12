@@ -1,0 +1,64 @@
+[18-Apr-2025 19:35:47 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Address.php on line 5
+[18-Apr-2025 19:35:49 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Color" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Color.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Color.php on line 5
+[18-Apr-2025 19:35:51 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Company.php on line 5
+[18-Apr-2025 19:35:53 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Internet.php on line 5
+[18-Apr-2025 19:35:54 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Payment.php on line 5
+[18-Apr-2025 19:35:56 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Person.php on line 5
+[18-Apr-2025 19:35:58 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/PhoneNumber.php on line 5
+[18-Apr-2025 19:35:59 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Text" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Text.php on line 5
+[28-Apr-2025 08:36:19 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Address.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Address.php on line 5
+[28-Apr-2025 08:36:21 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Color" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Color.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Color.php on line 5
+[28-Apr-2025 08:36:22 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Company" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Company.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Company.php on line 5
+[28-Apr-2025 08:36:24 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Internet" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Internet.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Internet.php on line 5
+[28-Apr-2025 08:36:26 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\Payment" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Payment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Payment.php on line 5
+[28-Apr-2025 08:36:27 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Person" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Person.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Person.php on line 5
+[28-Apr-2025 08:36:29 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/PhoneNumber.php on line 5
+[28-Apr-2025 08:36:30 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\fr_FR\Text" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Text.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/fr_CH/Text.php on line 5

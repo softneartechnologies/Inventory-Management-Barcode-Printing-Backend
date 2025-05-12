@@ -1,0 +1,8 @@
+[15-Apr-2025 10:28:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php on line 10
+[24-Apr-2025 10:52:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/ServiceProvider.php on line 10

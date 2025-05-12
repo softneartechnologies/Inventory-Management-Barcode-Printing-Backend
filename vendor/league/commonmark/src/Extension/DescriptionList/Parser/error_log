@@ -1,0 +1,32 @@
+[19-Apr-2025 04:24:18 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionContinueParser.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionContinueParser.php on line 23
+[19-Apr-2025 04:24:22 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionListContinueParser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionListContinueParser.php on line 25
+[19-Apr-2025 04:24:26 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Block\BlockStartParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionStartParser.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionStartParser.php on line 23
+[19-Apr-2025 04:24:29 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionTermContinueParser.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionTermContinueParser.php on line 24
+[29-Apr-2025 13:25:21 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionContinueParser.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionContinueParser.php on line 23
+[29-Apr-2025 13:25:23 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionListContinueParser.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionListContinueParser.php on line 25
+[29-Apr-2025 13:25:25 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Block\BlockStartParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionStartParser.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionStartParser.php on line 23
+[29-Apr-2025 13:25:26 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionTermContinueParser.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DescriptionList/Parser/DescriptionTermContinueParser.php on line 24

@@ -1,0 +1,16 @@
+[14-Apr-2025 23:26:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/Stream.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/Stream.php on line 19
+[14-Apr-2025 23:26:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/UploadedFile.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/UploadedFile.php on line 32
+[24-Apr-2025 12:43:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/Stream.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/Stream.php on line 19
+[24-Apr-2025 12:43:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/UploadedFile.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/File/UploadedFile.php on line 32

@@ -1,0 +1,2 @@
+[16-Apr-2025 20:38:39 UTC] PHP Fatal error:  Trait "Nette\SmartObject" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/Iterators/CachingIterator.php on line 27
+[26-Apr-2025 06:11:26 UTC] PHP Fatal error:  Trait "Nette\SmartObject" not found in /home/softoroa/flight.softnear.com/vendor/nette/utils/src/Iterators/CachingIterator.php on line 27

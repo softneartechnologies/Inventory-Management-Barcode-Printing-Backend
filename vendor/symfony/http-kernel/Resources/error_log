@@ -1,0 +1,12 @@
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $version in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 242
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $version in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 250
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $projectDir in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 255
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 260
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 268
+[14-Apr-2025 20:58:36 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 291
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $version in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 242
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $version in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 250
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $projectDir in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 255
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 260
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 268
+[24-Apr-2025 13:01:52 UTC] PHP Warning:  Undefined variable $docVersion in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Resources/welcome.html.php on line 291

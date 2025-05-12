@@ -1,0 +1,24 @@
+[14-Apr-2025 23:23:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[14-Apr-2025 23:23:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[14-Apr-2025 23:23:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20
+[24-Apr-2025 10:57:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/ClassNotFoundErrorEnhancer.php on line 22
+[24-Apr-2025 10:57:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedFunctionErrorEnhancer.php on line 20
+[24-Apr-2025 10:57:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorEnhancer\ErrorEnhancerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorEnhancer/UndefinedMethodErrorEnhancer.php on line 20

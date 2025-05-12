@@ -1,0 +1,8 @@
+[17-Apr-2025 09:42:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/ExternalLink/ExternalLinkExtension.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/ExternalLink/ExternalLinkExtension.php on line 22
+[27-Apr-2025 04:08:37 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/ExternalLink/ExternalLinkExtension.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/ExternalLink/ExternalLinkExtension.php on line 22

@@ -1,0 +1,12 @@
+[16-Apr-2025 11:47:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php on line 17
+[25-Apr-2025 08:14:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php on line 17
+[28-Apr-2025 10:15:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/Constraint/CommandIsSuccessful.php on line 17

@@ -1,0 +1,24 @@
+[14-Apr-2025 23:28:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmer.php on line 19
+[14-Apr-2025 23:28:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php on line 23
+[14-Apr-2025 23:28:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\WarmableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerInterface.php on line 19
+[24-Apr-2025 12:45:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmer.php on line 19
+[24-Apr-2025 12:45:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerAggregate.php on line 23
+[24-Apr-2025 12:45:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheWarmer\WarmableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheWarmer/CacheWarmerInterface.php on line 19

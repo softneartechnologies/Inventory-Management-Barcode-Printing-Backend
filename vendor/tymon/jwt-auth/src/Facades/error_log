@@ -1,0 +1,24 @@
+[20-Apr-2025 06:03:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php on line 16
+[20-Apr-2025 06:03:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTFactory.php on line 16
+[20-Apr-2025 06:03:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTProvider.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTProvider.php on line 16
+[24-Apr-2025 20:27:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php on line 16
+[24-Apr-2025 20:27:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTFactory.php on line 16
+[24-Apr-2025 20:28:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTProvider.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Facades/JWTProvider.php on line 16

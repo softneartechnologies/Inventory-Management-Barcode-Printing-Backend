@@ -1,0 +1,48 @@
+[18-Apr-2025 00:10:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/Exception.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/Exception.php on line 12
+[18-Apr-2025 00:10:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidAttributeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidAttributeException.php on line 22
+[18-Apr-2025 00:10:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidVersionRequirementException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidVersionRequirementException.php on line 14
+[18-Apr-2025 00:10:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/NoVersionRequirementException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/NoVersionRequirementException.php on line 14
+[18-Apr-2025 00:10:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/ReflectionException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/ReflectionException.php on line 20
+[18-Apr-2025 05:14:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/AnnotationsAreNotSupportedForInternalClassesException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/AnnotationsAreNotSupportedForInternalClassesException.php on line 21
+[27-Apr-2025 11:02:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/AnnotationsAreNotSupportedForInternalClassesException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/AnnotationsAreNotSupportedForInternalClassesException.php on line 21
+[27-Apr-2025 11:02:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/Exception.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/Exception.php on line 12
+[27-Apr-2025 11:02:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidAttributeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidAttributeException.php on line 22
+[27-Apr-2025 11:02:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidVersionRequirementException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/InvalidVersionRequirementException.php on line 14
+[27-Apr-2025 11:02:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/NoVersionRequirementException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/NoVersionRequirementException.php on line 14
+[27-Apr-2025 11:02:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/ReflectionException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Exception/ReflectionException.php on line 20

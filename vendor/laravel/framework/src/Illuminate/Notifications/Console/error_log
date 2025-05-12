@@ -1,0 +1,8 @@
+[19-Apr-2025 03:20:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php on line 9
+[29-Apr-2025 08:41:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/Console/NotificationTableCommand.php on line 9

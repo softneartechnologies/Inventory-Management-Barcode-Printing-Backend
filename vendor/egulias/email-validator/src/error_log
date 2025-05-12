@@ -1,0 +1,24 @@
+[15-Apr-2025 10:32:22 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Common\Lexer\AbstractLexer" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailLexer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailLexer.php on line 9
+[15-Apr-2025 10:32:24 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailParser.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailParser.php on line 13
+[15-Apr-2025 10:32:27 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/MessageIDParser.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/MessageIDParser.php on line 13
+[24-Apr-2025 19:31:55 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Common\Lexer\AbstractLexer" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailLexer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailLexer.php on line 9
+[24-Apr-2025 19:31:56 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailParser.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/EmailParser.php on line 13
+[24-Apr-2025 19:31:58 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/MessageIDParser.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/MessageIDParser.php on line 13

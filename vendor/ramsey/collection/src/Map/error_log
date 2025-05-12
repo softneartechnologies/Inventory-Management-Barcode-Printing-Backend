@@ -1,0 +1,56 @@
+[16-Apr-2025 20:43:57 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractMap.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractMap.php on line 35
+[16-Apr-2025 20:43:59 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractTypedMap.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractTypedMap.php on line 30
+[16-Apr-2025 20:44:01 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AssociativeArrayMap.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AssociativeArrayMap.php on line 22
+[16-Apr-2025 20:44:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/MapInterface.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/MapInterface.php on line 28
+[16-Apr-2025 20:44:04 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/NamedParameterMap.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/NamedParameterMap.php on line 31
+[16-Apr-2025 20:44:06 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractTypedMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMap.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMap.php on line 85
+[16-Apr-2025 20:44:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\Map\MapInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMapInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMapInterface.php on line 25
+[25-Apr-2025 09:19:55 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractArray" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractMap.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractMap.php on line 35
+[25-Apr-2025 09:19:57 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractTypedMap.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AbstractTypedMap.php on line 30
+[25-Apr-2025 09:19:59 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AssociativeArrayMap.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/AssociativeArrayMap.php on line 22
+[25-Apr-2025 09:20:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\ArrayInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/MapInterface.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/MapInterface.php on line 28
+[25-Apr-2025 09:20:02 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/NamedParameterMap.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/NamedParameterMap.php on line 31
+[25-Apr-2025 09:20:03 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\Map\AbstractTypedMap" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMap.php:85
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMap.php on line 85
+[25-Apr-2025 09:20:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Collection\Map\MapInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMapInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/collection/src/Map/TypedMapInterface.php on line 25

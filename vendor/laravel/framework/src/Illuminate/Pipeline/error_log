@@ -1,0 +1,18 @@
+[18-Apr-2025 14:02:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Pipeline\Hub" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php on line 9
+[18-Apr-2025 14:02:35 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php on line 12
+[18-Apr-2025 14:02:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php on line 9
+[27-Apr-2025 04:15:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Pipeline\Hub" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Hub.php on line 9
+[27-Apr-2025 04:15:33 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php on line 12
+[27-Apr-2025 04:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php on line 9

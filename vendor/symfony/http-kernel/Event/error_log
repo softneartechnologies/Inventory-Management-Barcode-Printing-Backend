@@ -1,0 +1,72 @@
+[14-Apr-2025 23:30:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerArgumentsEvent.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerArgumentsEvent.php on line 29
+[14-Apr-2025 23:30:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerEvent.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerEvent.php on line 28
+[14-Apr-2025 23:30:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\RequestEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ExceptionEvent.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ExceptionEvent.php on line 30
+[14-Apr-2025 23:31:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/FinishRequestEvent.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/FinishRequestEvent.php on line 19
+[14-Apr-2025 23:31:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/KernelEvent.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/KernelEvent.php on line 23
+[14-Apr-2025 23:31:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/RequestEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/RequestEvent.php on line 25
+[14-Apr-2025 23:31:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ResponseEvent.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ResponseEvent.php on line 27
+[14-Apr-2025 23:31:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/TerminateEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/TerminateEvent.php on line 26
+[14-Apr-2025 23:31:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\RequestEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ViewEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ViewEvent.php on line 26
+[24-Apr-2025 12:47:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerArgumentsEvent.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerArgumentsEvent.php on line 29
+[24-Apr-2025 12:47:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerEvent.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ControllerEvent.php on line 28
+[24-Apr-2025 12:47:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\RequestEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ExceptionEvent.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ExceptionEvent.php on line 30
+[24-Apr-2025 12:47:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/FinishRequestEvent.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/FinishRequestEvent.php on line 19
+[24-Apr-2025 12:47:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/KernelEvent.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/KernelEvent.php on line 23
+[24-Apr-2025 12:47:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/RequestEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/RequestEvent.php on line 25
+[24-Apr-2025 12:47:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ResponseEvent.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ResponseEvent.php on line 27
+[24-Apr-2025 12:47:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\KernelEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/TerminateEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/TerminateEvent.php on line 26
+[24-Apr-2025 12:47:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Event\RequestEvent" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ViewEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Event/ViewEvent.php on line 26

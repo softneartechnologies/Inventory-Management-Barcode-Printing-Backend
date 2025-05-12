@@ -1,0 +1,48 @@
+[18-Apr-2025 05:00:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\UploadedFile" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php on line 13
+[18-Apr-2025 09:52:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/File.php on line 7
+[18-Apr-2025 09:52:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\JsonResponse" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php on line 12
+[18-Apr-2025 09:52:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RedirectResponse" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php on line 15
+[18-Apr-2025 09:52:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Request" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Request.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Request.php on line 26
+[18-Apr-2025 09:52:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Response.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Response.php on line 15
+[27-Apr-2025 04:10:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\UploadedFile" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php on line 13
+[27-Apr-2025 08:53:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/File.php on line 7
+[27-Apr-2025 08:53:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\JsonResponse" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php on line 12
+[27-Apr-2025 08:53:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RedirectResponse" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php on line 15
+[27-Apr-2025 08:53:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Request" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Request.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Request.php on line 26
+[27-Apr-2025 08:53:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Response.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Response.php on line 15

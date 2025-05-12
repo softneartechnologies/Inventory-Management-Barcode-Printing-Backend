@@ -1,0 +1,24 @@
+[18-Apr-2025 14:09:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Parser\EventHandler" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/DOMTreeBuilder.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/DOMTreeBuilder.php on line 26
+[18-Apr-2025 14:10:04 UTC] PHP Fatal error:  Uncaught Error: Class "Masterminds\HTML5\Parser\StringInputStream" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/FileInputStream.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/FileInputStream.php on line 17
+[18-Apr-2025 14:10:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Parser\InputStream" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/StringInputStream.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/StringInputStream.php on line 46
+[27-Apr-2025 08:57:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Parser\InputStream" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/StringInputStream.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/StringInputStream.php on line 46
+[27-Apr-2025 13:36:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Parser\EventHandler" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/DOMTreeBuilder.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/DOMTreeBuilder.php on line 26
+[27-Apr-2025 13:36:52 UTC] PHP Fatal error:  Uncaught Error: Class "Masterminds\HTML5\Parser\StringInputStream" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/FileInputStream.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Parser/FileInputStream.php on line 17

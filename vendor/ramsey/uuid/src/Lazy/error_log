@@ -1,0 +1,8 @@
+[17-Apr-2025 04:55:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\UuidInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Lazy/LazyUuidFromString.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Lazy/LazyUuidFromString.php on line 55
+[25-Apr-2025 09:22:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\UuidInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Lazy/LazyUuidFromString.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Lazy/LazyUuidFromString.php on line 55

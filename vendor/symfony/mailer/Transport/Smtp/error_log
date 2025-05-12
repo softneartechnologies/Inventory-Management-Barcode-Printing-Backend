@@ -1,0 +1,24 @@
+[16-Apr-2025 14:10:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransportFactory.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransportFactory.php on line 23
+[16-Apr-2025 14:10:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php on line 34
+[16-Apr-2025 14:11:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\SmtpTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php on line 29
+[25-Apr-2025 06:05:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\SmtpTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php on line 29
+[25-Apr-2025 06:05:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransportFactory.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/EsmtpTransportFactory.php on line 23
+[25-Apr-2025 06:05:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php on line 34

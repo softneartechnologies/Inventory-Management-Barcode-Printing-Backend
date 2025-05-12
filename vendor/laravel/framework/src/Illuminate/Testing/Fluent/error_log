@@ -1,0 +1,2 @@
+[19-Apr-2025 03:07:38 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Fluent\Concerns\Has" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Fluent/AssertableJson.php on line 14
+[28-Apr-2025 07:00:20 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Fluent\Concerns\Has" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Fluent/AssertableJson.php on line 14

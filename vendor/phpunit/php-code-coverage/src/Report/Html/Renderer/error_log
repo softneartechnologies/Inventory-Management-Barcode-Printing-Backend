@@ -1,0 +1,24 @@
+[19-Apr-2025 17:20:00 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Dashboard.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Dashboard.php on line 30
+[19-Apr-2025 17:20:01 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Directory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Directory.php on line 24
+[19-Apr-2025 17:20:02 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php:114
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php on line 114
+[29-Apr-2025 06:06:29 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Dashboard.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Dashboard.php on line 30
+[29-Apr-2025 06:06:30 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Directory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Directory.php on line 24
+[29-Apr-2025 06:06:32 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Report\Html\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php:114
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php on line 114

@@ -1,0 +1,16 @@
+[17-Apr-2025 09:43:17 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/DocumentRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/DocumentRenderer.php on line 25
+[17-Apr-2025 09:43:18 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/ParagraphRenderer.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/ParagraphRenderer.php on line 27
+[27-Apr-2025 13:36:27 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/DocumentRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/DocumentRenderer.php on line 25
+[27-Apr-2025 13:36:29 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/ParagraphRenderer.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Renderer/Block/ParagraphRenderer.php on line 27

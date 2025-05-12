@@ -1,0 +1,2 @@
+[16-Apr-2025 14:11:00 UTC] PHP Fatal error:  Cannot declare class Normalizer, because the name is already in use in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php on line 3
+[25-Apr-2025 06:07:19 UTC] PHP Fatal error:  Cannot declare class Normalizer, because the name is already in use in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php on line 3

@@ -1,0 +1,8 @@
+[19-Apr-2025 17:19:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php on line 28
+[29-Apr-2025 06:05:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php on line 28

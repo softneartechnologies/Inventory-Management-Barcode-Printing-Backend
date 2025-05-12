@@ -1,0 +1,282 @@
+[18-Apr-2025 05:19:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterAggregate.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterAggregate.php on line 44
+[18-Apr-2025 05:19:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterPath.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterPath.php on line 44
+[18-Apr-2025 05:19:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterWord.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterWord.php on line 44
+[18-Apr-2025 05:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Console" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleCursor.php:695
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleCursor.php on line 695
+[18-Apr-2025 05:19:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleException.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleException.php on line 44
+[18-Apr-2025 07:31:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\StreamIn" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleInput.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleInput.php on line 46
+[18-Apr-2025 07:31:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\StreamOut" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleOutput.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleOutput.php on line 45
+[18-Apr-2025 07:31:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Stream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleProcessus.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleProcessus.php on line 42
+[18-Apr-2025 07:31:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\EventSource" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleWindow.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleWindow.php on line 46
+[18-Apr-2025 07:31:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventException.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventException.php on line 42
+[18-Apr-2025 07:31:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\EventSource" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventListenable.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventListenable.php on line 42
+[18-Apr-2025 07:31:47 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ExceptionIdle" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Exception.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Exception.php on line 42
+[18-Apr-2025 07:31:50 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileGeneric" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/File.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/File.php on line 44
+[18-Apr-2025 07:31:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileGeneric" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDirectory.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDirectory.php on line 44
+[18-Apr-2025 07:31:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDoesNotExistException.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDoesNotExistException.php on line 46
+[18-Apr-2025 07:31:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileException.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileException.php on line 46
+[18-Apr-2025 07:31:59 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Stream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileGeneric.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileGeneric.php on line 44
+[18-Apr-2025 07:32:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLink.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLink.php on line 44
+[18-Apr-2025 07:32:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileLink" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkRead.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkRead.php on line 46
+[18-Apr-2025 07:32:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileLink" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkReadWrite.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkReadWrite.php on line 44
+[18-Apr-2025 07:32:05 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileRead.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileRead.php on line 44
+[18-Apr-2025 07:32:07 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileReadWrite.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileReadWrite.php on line 44
+[18-Apr-2025 07:32:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ProtocolNode" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Protocol.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Protocol.php on line 42
+[18-Apr-2025 07:32:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolException.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolException.php on line 42
+[18-Apr-2025 07:32:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ProtocolNode" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolNodeLibrary.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolNodeLibrary.php on line 42
+[18-Apr-2025 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Console" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Readline.php:1032
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Readline.php on line 1032
+[18-Apr-2025 07:32:27 UTC] PHP Fatal error:  Trait "Psy\Readline\Hoa\EventListens" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Stream.php on line 44
+[18-Apr-2025 09:20:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamBufferable.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamBufferable.php on line 46
+[18-Apr-2025 09:57:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamException.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamException.php on line 44
+[18-Apr-2025 09:57:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamIn.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamIn.php on line 44
+[18-Apr-2025 09:57:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamLockable.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamLockable.php on line 46
+[18-Apr-2025 09:57:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamOut.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamOut.php on line 44
+[18-Apr-2025 09:57:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPathable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPathable.php on line 44
+[18-Apr-2025 09:57:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPointable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPointable.php on line 44
+[18-Apr-2025 09:57:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamStatable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamStatable.php on line 44
+[18-Apr-2025 09:57:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamTouchable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamTouchable.php on line 44
+[28-Apr-2025 00:38:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterAggregate.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterAggregate.php on line 44
+[28-Apr-2025 00:38:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterPath.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterPath.php on line 44
+[28-Apr-2025 00:38:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\Autocompleter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterWord.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/AutocompleterWord.php on line 44
+[28-Apr-2025 00:38:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Console" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleCursor.php:695
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleCursor.php on line 695
+[28-Apr-2025 00:38:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleException.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleException.php on line 44
+[28-Apr-2025 00:38:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\StreamIn" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleInput.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleInput.php on line 46
+[28-Apr-2025 00:38:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\StreamOut" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleOutput.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleOutput.php on line 45
+[28-Apr-2025 00:38:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Stream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleProcessus.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleProcessus.php on line 42
+[28-Apr-2025 00:38:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\EventSource" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleWindow.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ConsoleWindow.php on line 46
+[28-Apr-2025 00:38:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventException.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventException.php on line 42
+[28-Apr-2025 00:38:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\EventSource" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventListenable.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/EventListenable.php on line 42
+[28-Apr-2025 00:38:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ExceptionIdle" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Exception.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Exception.php on line 42
+[28-Apr-2025 00:39:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileGeneric" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/File.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/File.php on line 44
+[28-Apr-2025 00:39:06 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileGeneric" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDirectory.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDirectory.php on line 44
+[28-Apr-2025 00:39:06 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDoesNotExistException.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileDoesNotExistException.php on line 46
+[28-Apr-2025 00:39:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileException.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileException.php on line 46
+[28-Apr-2025 00:39:14 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Stream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileGeneric.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileGeneric.php on line 44
+[28-Apr-2025 00:39:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLink.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLink.php on line 44
+[28-Apr-2025 00:39:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileLink" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkRead.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkRead.php on line 46
+[28-Apr-2025 00:39:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\FileLink" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkReadWrite.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileLinkReadWrite.php on line 44
+[28-Apr-2025 00:39:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileRead.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileRead.php on line 44
+[28-Apr-2025 00:39:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\File" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileReadWrite.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/FileReadWrite.php on line 44
+[28-Apr-2025 00:39:31 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ProtocolNode" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Protocol.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Protocol.php on line 42
+[28-Apr-2025 00:39:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolException.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolException.php on line 42
+[28-Apr-2025 00:39:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\ProtocolNode" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolNodeLibrary.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/ProtocolNodeLibrary.php on line 42
+[28-Apr-2025 00:39:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Console" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Readline.php:1032
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Readline.php on line 1032
+[28-Apr-2025 00:39:47 UTC] PHP Fatal error:  Trait "Psy\Readline\Hoa\EventListens" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/Stream.php on line 44
+[28-Apr-2025 00:39:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamBufferable.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamBufferable.php on line 46
+[28-Apr-2025 00:39:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\Hoa\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamException.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamException.php on line 44
+[28-Apr-2025 00:39:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamIn.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamIn.php on line 44
+[28-Apr-2025 00:39:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamLockable.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamLockable.php on line 46
+[28-Apr-2025 00:39:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamOut.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamOut.php on line 44
+[28-Apr-2025 00:40:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPathable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPathable.php on line 44
+[28-Apr-2025 00:40:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPointable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamPointable.php on line 44
+[28-Apr-2025 00:40:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamStatable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamStatable.php on line 44
+[28-Apr-2025 00:40:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Hoa\IStream" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamTouchable.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Hoa/StreamTouchable.php on line 44

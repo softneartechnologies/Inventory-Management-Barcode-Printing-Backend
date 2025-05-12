@@ -1,0 +1,24 @@
+[17-Apr-2025 04:56:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\ExecutionLoop\Listener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php on line 19
+[17-Apr-2025 04:56:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php on line 24
+[17-Apr-2025 04:56:34 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php on line 24
+[25-Apr-2025 09:17:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\ExecutionLoop\Listener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/AbstractListener.php on line 19
+[25-Apr-2025 09:17:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/ProcessForker.php on line 24
+[25-Apr-2025 09:17:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionLoop\AbstractListener" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoop/RunkitReloader.php on line 24

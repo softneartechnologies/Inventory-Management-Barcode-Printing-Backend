@@ -1,0 +1,2 @@
+[19-Apr-2025 03:16:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Dumpable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php on line 13
+[29-Apr-2025 11:00:26 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Dumpable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php on line 13

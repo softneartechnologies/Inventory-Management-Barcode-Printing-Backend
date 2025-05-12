@@ -1,0 +1,24 @@
+[19-Apr-2025 03:16:35 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/MalformedUrlException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/MalformedUrlException.php on line 7
+[19-Apr-2025 03:16:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php on line 8
+[19-Apr-2025 03:16:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php on line 8
+[29-Apr-2025 11:00:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/MalformedUrlException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/MalformedUrlException.php on line 7
+[29-Apr-2025 11:00:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/PostTooLargeException.php on line 8
+[29-Apr-2025 11:00:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Exceptions/ThrottleRequestsException.php on line 8

@@ -1,0 +1,16 @@
+[19-Apr-2025 04:37:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php on line 39
+[19-Apr-2025 04:37:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php on line 24
+[29-Apr-2025 06:03:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ChannelLevelActivationStrategy.php on line 39
+[29-Apr-2025 06:03:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\FingersCrossed\ActivationStrategyInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossed/ErrorLevelActivationStrategy.php on line 24

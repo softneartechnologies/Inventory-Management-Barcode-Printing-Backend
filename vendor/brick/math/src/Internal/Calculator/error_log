@@ -1,0 +1,24 @@
+[17-Apr-2025 21:02:48 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php on line 17
+[17-Apr-2025 21:02:49 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php on line 17
+[17-Apr-2025 21:02:50 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php on line 17
+[26-Apr-2025 06:01:40 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/BcMathCalculator.php on line 17
+[26-Apr-2025 06:01:42 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/GmpCalculator.php on line 17
+[26-Apr-2025 06:01:46 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Internal\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Internal/Calculator/NativeCalculator.php on line 17

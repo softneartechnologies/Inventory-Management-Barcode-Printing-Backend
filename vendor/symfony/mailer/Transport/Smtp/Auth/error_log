@@ -1,0 +1,32 @@
+[18-Apr-2025 09:50:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/CramMd5Authenticator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/CramMd5Authenticator.php on line 22
+[18-Apr-2025 09:50:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/LoginAuthenticator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/LoginAuthenticator.php on line 21
+[18-Apr-2025 09:50:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/PlainAuthenticator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/PlainAuthenticator.php on line 21
+[18-Apr-2025 09:50:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/XOAuth2Authenticator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/XOAuth2Authenticator.php on line 23
+[28-Apr-2025 00:41:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/CramMd5Authenticator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/CramMd5Authenticator.php on line 22
+[28-Apr-2025 00:41:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/LoginAuthenticator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/LoginAuthenticator.php on line 21
+[28-Apr-2025 00:41:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/PlainAuthenticator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/PlainAuthenticator.php on line 21
+[28-Apr-2025 00:41:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\Smtp\Auth\AuthenticatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/XOAuth2Authenticator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Auth/XOAuth2Authenticator.php on line 23

@@ -1,0 +1,8 @@
+[14-Apr-2025 21:01:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php on line 23
+[24-Apr-2025 13:04:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/DependencyInjection/AddMimeTypeGuesserPass.php on line 23

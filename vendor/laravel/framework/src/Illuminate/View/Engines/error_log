@@ -1,0 +1,24 @@
+[19-Apr-2025 03:09:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Engines\PhpEngine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php on line 15
+[19-Apr-2025 03:09:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php on line 8
+[19-Apr-2025 03:09:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php on line 9
+[28-Apr-2025 06:41:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Engines\PhpEngine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php on line 15
+[28-Apr-2025 06:41:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/FileEngine.php on line 8
+[28-Apr-2025 06:41:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php on line 9

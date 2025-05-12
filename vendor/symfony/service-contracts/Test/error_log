@@ -1,0 +1,10 @@
+[14-Apr-2025 22:58:42 UTC] PHP Warning:  Class "Symfony\Contracts\Service\Test\ServiceLocatorTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTest.php on line 14
+[14-Apr-2025 22:58:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTestCase.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTestCase.php on line 20
+[24-Apr-2025 08:32:58 UTC] PHP Warning:  Class "Symfony\Contracts\Service\Test\ServiceLocatorTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTest.php on line 14
+[24-Apr-2025 08:33:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTestCase.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/service-contracts/Test/ServiceLocatorTestCase.php on line 20

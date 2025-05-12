@@ -1,0 +1,12 @@
+[14-Apr-2025 23:32:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php on line 31
+[16-Apr-2025 23:29:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php on line 31
+[24-Apr-2025 10:57:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\XPath\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/XPath/Translator.php on line 31

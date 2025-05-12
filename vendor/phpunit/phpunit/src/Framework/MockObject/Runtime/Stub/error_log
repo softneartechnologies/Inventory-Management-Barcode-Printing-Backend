@@ -1,0 +1,64 @@
+[20-Apr-2025 06:02:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ConsecutiveCalls.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ConsecutiveCalls.php on line 22
+[20-Apr-2025 06:02:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/Exception.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/Exception.php on line 20
+[20-Apr-2025 06:02:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnArgument.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnArgument.php on line 19
+[20-Apr-2025 06:02:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnCallback.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnCallback.php on line 20
+[20-Apr-2025 06:02:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnReference.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnReference.php on line 19
+[20-Apr-2025 06:02:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnSelf.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnSelf.php on line 20
+[20-Apr-2025 06:02:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnStub.php on line 19
+[20-Apr-2025 06:02:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnValueMap.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnValueMap.php on line 22
+[01-May-2025 04:11:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ConsecutiveCalls.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ConsecutiveCalls.php on line 22
+[01-May-2025 04:11:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/Exception.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/Exception.php on line 20
+[01-May-2025 04:11:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnArgument.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnArgument.php on line 19
+[01-May-2025 04:12:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnCallback.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnCallback.php on line 20
+[01-May-2025 04:12:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnReference.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnReference.php on line 19
+[01-May-2025 04:12:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnSelf.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnSelf.php on line 20
+[01-May-2025 04:12:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnStub.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnStub.php on line 19
+[01-May-2025 04:13:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Stub\Stub" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnValueMap.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Stub/ReturnValueMap.php on line 22

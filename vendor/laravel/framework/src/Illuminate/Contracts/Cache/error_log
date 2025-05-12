@@ -1,0 +1,8 @@
+[19-Apr-2025 03:32:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php on line 8
+[28-Apr-2025 06:51:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Repository.php on line 8

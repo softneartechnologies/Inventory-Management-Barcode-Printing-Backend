@@ -1,0 +1,16 @@
+[19-Apr-2025 00:42:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldBeUnique" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldBeUniqueUntilProcessing.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldBeUniqueUntilProcessing.php on line 5
+[19-Apr-2025 00:43:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueueAfterCommit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueueAfterCommit.php on line 5
+[29-Apr-2025 10:52:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldBeUnique" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldBeUniqueUntilProcessing.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldBeUniqueUntilProcessing.php on line 5
+[29-Apr-2025 10:52:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueueAfterCommit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueueAfterCommit.php on line 5

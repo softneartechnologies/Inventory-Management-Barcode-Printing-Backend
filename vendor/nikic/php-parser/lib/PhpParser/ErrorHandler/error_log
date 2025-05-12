@@ -1,0 +1,28 @@
+[17-Apr-2025 11:46:13 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php on line 13
+[17-Apr-2025 11:46:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[27-Apr-2025 08:27:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[27-Apr-2025 08:27:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[27-Apr-2025 08:27:47 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[27-Apr-2025 08:28:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Throwing.php on line 13
+[27-Apr-2025 18:18:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\ErrorHandler" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler/Collecting.php on line 13

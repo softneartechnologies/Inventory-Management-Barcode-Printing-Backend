@@ -1,0 +1,8 @@
+[19-Apr-2025 04:25:27 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Embed\EmbedAdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php on line 21
+[29-Apr-2025 13:25:47 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\Embed\EmbedAdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Embed/Bridge/OscaroteroEmbedAdapter.php on line 21

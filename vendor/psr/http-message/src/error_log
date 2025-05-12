@@ -1,0 +1,24 @@
+[15-Apr-2025 01:35:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\MessageInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/RequestInterface.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/RequestInterface.php on line 24
+[15-Apr-2025 01:35:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\MessageInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ResponseInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ResponseInterface.php on line 20
+[15-Apr-2025 01:35:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\RequestInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ServerRequestInterface.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ServerRequestInterface.php on line 43
+[24-Apr-2025 10:51:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\MessageInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/RequestInterface.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/RequestInterface.php on line 24
+[24-Apr-2025 10:51:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\MessageInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ResponseInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ResponseInterface.php on line 20
+[24-Apr-2025 10:51:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\RequestInterface" not found in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ServerRequestInterface.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/http-message/src/ServerRequestInterface.php on line 43

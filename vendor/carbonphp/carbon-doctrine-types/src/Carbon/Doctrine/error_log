@@ -1,0 +1,32 @@
+[17-Apr-2025 21:02:58 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Doctrine\DateTimeImmutableType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonImmutableType.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonImmutableType.php on line 7
+[17-Apr-2025 21:02:59 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Doctrine\DateTimeType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonType.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonType.php on line 7
+[17-Apr-2025 21:03:03 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Types\VarDateTimeImmutableType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeImmutableType.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeImmutableType.php on line 12
+[17-Apr-2025 21:03:04 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Types\VarDateTimeType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeType.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeType.php on line 12
+[26-Apr-2025 06:02:09 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Doctrine\DateTimeImmutableType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonImmutableType.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonImmutableType.php on line 7
+[26-Apr-2025 06:02:14 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\Doctrine\DateTimeType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonType.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/CarbonType.php on line 7
+[26-Apr-2025 06:02:25 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Types\VarDateTimeImmutableType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeImmutableType.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeImmutableType.php on line 12
+[26-Apr-2025 06:02:28 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\DBAL\Types\VarDateTimeType" not found in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeType.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine/DateTimeType.php on line 12

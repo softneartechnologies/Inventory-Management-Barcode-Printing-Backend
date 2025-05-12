@@ -1,0 +1,144 @@
+[21-Apr-2025 10:41:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestMarkedIncompleteSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestMarkedIncompleteSubscriber.php on line 20
+[21-Apr-2025 10:41:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestPreparedSubscriber.php on line 20
+[21-Apr-2025 10:41:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestRunnerExecutionStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestRunnerExecutionStartedSubscriber.php on line 20
+[21-Apr-2025 10:41:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestSkippedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestSkippedSubscriber.php on line 20
+[21-Apr-2025 10:41:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredDeprecationSubscriber.php on line 20
+[21-Apr-2025 10:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredErrorSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredErrorSubscriber.php on line 20
+[21-Apr-2025 10:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredNoticeSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredNoticeSubscriber.php on line 20
+[21-Apr-2025 10:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 20
+[21-Apr-2025 10:41:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpNoticeSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 20
+[21-Apr-2025 10:41:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 20
+[21-Apr-2025 10:41:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php on line 20
+[21-Apr-2025 10:41:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitWarningSubscriber.php on line 20
+[21-Apr-2025 10:41:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredWarningSubscriber.php on line 20
+[21-Apr-2025 12:46:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/BeforeTestClassMethodErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/BeforeTestClassMethodErroredSubscriber.php on line 20
+[21-Apr-2025 12:46:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestConsideredRiskySubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestConsideredRiskySubscriber.php on line 20
+[21-Apr-2025 12:46:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestErroredSubscriber.php on line 20
+[21-Apr-2025 12:46:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFailedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFailedSubscriber.php on line 20
+[21-Apr-2025 12:46:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFinishedSubscriber.php on line 20
+[01-May-2025 04:33:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/BeforeTestClassMethodErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/BeforeTestClassMethodErroredSubscriber.php on line 20
+[01-May-2025 04:33:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestConsideredRiskySubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestConsideredRiskySubscriber.php on line 20
+[01-May-2025 04:33:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestErroredSubscriber.php on line 20
+[01-May-2025 04:33:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFailedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFailedSubscriber.php on line 20
+[01-May-2025 04:33:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestFinishedSubscriber.php on line 20
+[01-May-2025 04:34:11 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestMarkedIncompleteSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestMarkedIncompleteSubscriber.php on line 20
+[01-May-2025 04:34:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestPreparedSubscriber.php on line 20
+[01-May-2025 04:34:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestRunnerExecutionStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestRunnerExecutionStartedSubscriber.php on line 20
+[01-May-2025 04:34:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestSkippedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestSkippedSubscriber.php on line 20
+[01-May-2025 04:34:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredDeprecationSubscriber.php on line 20
+[01-May-2025 04:34:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredErrorSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredErrorSubscriber.php on line 20
+[01-May-2025 04:35:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredNoticeSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredNoticeSubscriber.php on line 20
+[01-May-2025 04:35:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 20
+[01-May-2025 04:35:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpNoticeSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 20
+[01-May-2025 04:35:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 20
+[01-May-2025 04:35:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitDeprecationSubscriber.php on line 20
+[01-May-2025 04:36:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredPhpunitWarningSubscriber.php on line 20
+[01-May-2025 04:36:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\Output\Default\ProgressPrinter\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredWarningSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/ProgressPrinter/Subscriber/TestTriggeredWarningSubscriber.php on line 20

@@ -1,0 +1,16 @@
+[14-Apr-2025 15:31:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Process" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpProcess.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpProcess.php on line 26
+[14-Apr-2025 15:32:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Process" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpSubprocess.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpSubprocess.php on line 44
+[24-Apr-2025 05:03:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Process" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpProcess.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpProcess.php on line 26
+[24-Apr-2025 05:03:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Process" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpSubprocess.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/PhpSubprocess.php on line 44

@@ -1,0 +1,48 @@
+[16-Apr-2025 01:26:49 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php on line 15
+[16-Apr-2025 01:27:07 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php on line 15
+[16-Apr-2025 01:27:13 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php on line 15
+[16-Apr-2025 01:27:21 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php on line 15
+[25-Apr-2025 08:11:33 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php on line 15
+[25-Apr-2025 08:11:36 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php on line 15
+[25-Apr-2025 08:11:37 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php on line 15
+[25-Apr-2025 08:11:39 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php on line 15
+[28-Apr-2025 10:13:23 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php on line 15
+[28-Apr-2025 10:13:25 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php on line 15
+[28-Apr-2025 10:13:26 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/RequiredOptionArgumentMissingException.php on line 15
+[28-Apr-2025 10:13:26 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CliParser\Exception" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php on line 15

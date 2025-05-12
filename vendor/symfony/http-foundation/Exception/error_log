@@ -1,0 +1,48 @@
+[14-Apr-2025 23:26:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/BadRequestException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/BadRequestException.php on line 17
+[14-Apr-2025 23:26:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php on line 19
+[14-Apr-2025 23:26:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/JsonException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/JsonException.php on line 19
+[14-Apr-2025 23:26:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/LogicException.php on line 17
+[14-Apr-2025 23:26:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SessionNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SessionNotFoundException.php on line 21
+[14-Apr-2025 23:26:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php on line 18
+[24-Apr-2025 12:43:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/BadRequestException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/BadRequestException.php on line 17
+[24-Apr-2025 12:43:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/ConflictingHeadersException.php on line 19
+[24-Apr-2025 12:43:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/JsonException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/JsonException.php on line 19
+[24-Apr-2025 12:43:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/LogicException.php on line 17
+[24-Apr-2025 12:43:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SessionNotFoundException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SessionNotFoundException.php on line 21
+[24-Apr-2025 12:43:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Exception\UnexpectedValueException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Exception/SuspiciousOperationException.php on line 18

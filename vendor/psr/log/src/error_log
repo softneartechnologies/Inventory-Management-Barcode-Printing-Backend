@@ -1,0 +1,10 @@
+[15-Apr-2025 01:36:02 UTC] PHP Fatal error:  Trait "Psr\Log\LoggerTrait" not found in /home/softoroa/flight.softnear.com/vendor/psr/log/src/AbstractLogger.php on line 12
+[15-Apr-2025 01:36:09 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/softoroa/flight.softnear.com/vendor/psr/log/src/NullLogger.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/log/src/NullLogger.php on line 13
+[24-Apr-2025 10:51:24 UTC] PHP Fatal error:  Trait "Psr\Log\LoggerTrait" not found in /home/softoroa/flight.softnear.com/vendor/psr/log/src/AbstractLogger.php on line 12
+[24-Apr-2025 10:51:37 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/softoroa/flight.softnear.com/vendor/psr/log/src/NullLogger.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/log/src/NullLogger.php on line 13

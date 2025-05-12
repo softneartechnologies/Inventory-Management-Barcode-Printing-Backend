@@ -1,0 +1,12 @@
+[24-Apr-2025 15:44:43 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\IPv4\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/BCMathCalculator.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/BCMathCalculator.php on line 25
+[24-Apr-2025 15:44:49 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\IPv4\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/GMPCalculator.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/GMPCalculator.php on line 29
+[24-Apr-2025 15:44:50 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\IPv4\Calculator" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/NativeCalculator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/IPv4/NativeCalculator.php on line 19

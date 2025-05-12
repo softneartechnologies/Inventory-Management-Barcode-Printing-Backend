@@ -1,0 +1,48 @@
+[14-Apr-2025 20:53:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatter.php on line 17
+[14-Apr-2025 20:53:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php on line 17
+[14-Apr-2025 20:53:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatter.php on line 24
+[14-Apr-2025 20:53:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php on line 21
+[14-Apr-2025 20:53:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php on line 20
+[14-Apr-2025 20:53:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php on line 19
+[24-Apr-2025 17:43:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatter.php on line 17
+[24-Apr-2025 17:43:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/NullOutputFormatterStyle.php on line 17
+[24-Apr-2025 17:43:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatter.php on line 24
+[24-Apr-2025 17:43:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterStyleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyle.php on line 21
+[24-Apr-2025 17:43:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/OutputFormatterStyleStack.php on line 20
+[24-Apr-2025 17:43:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Formatter\OutputFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Formatter/WrappableOutputFormatterInterface.php on line 19

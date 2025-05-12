@@ -1,0 +1,32 @@
+[19-Apr-2025 17:20:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Finished.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Finished.php on line 21
+[19-Apr-2025 17:20:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php on line 17
+[19-Apr-2025 17:20:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Started.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Started.php on line 22
+[19-Apr-2025 17:20:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/StartedSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/StartedSubscriber.php on line 17
+[29-Apr-2025 06:06:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Finished.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Finished.php on line 21
+[29-Apr-2025 06:06:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php on line 17
+[29-Apr-2025 06:06:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Event" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Started.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/Started.php on line 22
+[29-Apr-2025 08:46:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/StartedSubscriber.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Events/Application/StartedSubscriber.php on line 17

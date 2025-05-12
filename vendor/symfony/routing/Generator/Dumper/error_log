@@ -1,0 +1,16 @@
+[16-Apr-2025 11:25:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Generator\Dumper\GeneratorDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/CompiledUrlGeneratorDumper.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/CompiledUrlGeneratorDumper.php on line 25
+[16-Apr-2025 11:25:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Generator\Dumper\GeneratorDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/GeneratorDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/GeneratorDumper.php on line 21
+[24-Apr-2025 15:40:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Generator\Dumper\GeneratorDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/CompiledUrlGeneratorDumper.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/CompiledUrlGeneratorDumper.php on line 25
+[24-Apr-2025 15:40:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Generator\Dumper\GeneratorDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/GeneratorDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Generator/Dumper/GeneratorDumper.php on line 21

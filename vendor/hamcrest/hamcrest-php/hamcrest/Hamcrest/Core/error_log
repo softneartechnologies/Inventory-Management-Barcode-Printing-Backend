@@ -1,0 +1,144 @@
+[17-Apr-2025 19:12:23 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Is.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Is.php on line 19
+[17-Apr-2025 19:12:25 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsAnything.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsAnything.php on line 13
+[17-Apr-2025 19:12:26 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsCollectionContaining.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsCollectionContaining.php on line 15
+[17-Apr-2025 19:12:28 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsEqual.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsEqual.php on line 14
+[17-Apr-2025 19:12:30 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsSame" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsIdentical.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsIdentical.php on line 13
+[17-Apr-2025 19:12:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsInstanceOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsInstanceOf.php on line 13
+[17-Apr-2025 19:12:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNot.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNot.php on line 15
+[17-Apr-2025 19:12:35 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNull.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNull.php on line 13
+[17-Apr-2025 19:12:36 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsSame.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsSame.php on line 14
+[17-Apr-2025 19:12:38 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsTypeOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsTypeOf.php on line 13
+[17-Apr-2025 19:12:40 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php on line 22
+[17-Apr-2025 19:12:42 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/ShortcutCombination.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/ShortcutCombination.php on line 12
+[17-Apr-2025 21:07:13 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AllOf.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AllOf.php on line 16
+[17-Apr-2025 21:07:14 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\ShortcutCombination" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AnyOf.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AnyOf.php on line 15
+[17-Apr-2025 21:07:15 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/CombinableMatcher.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/CombinableMatcher.php on line 12
+[17-Apr-2025 21:07:17 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/DescribedAs.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/DescribedAs.php on line 14
+[17-Apr-2025 21:07:20 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeDiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php on line 12
+[17-Apr-2025 21:07:20 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/HasToString.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/HasToString.php on line 15
+[27-Apr-2025 06:18:29 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/CombinableMatcher.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/CombinableMatcher.php on line 12
+[27-Apr-2025 06:18:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/DescribedAs.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/DescribedAs.php on line 14
+[27-Apr-2025 06:18:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeDiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Every.php on line 12
+[27-Apr-2025 06:18:34 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/HasToString.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/HasToString.php on line 15
+[27-Apr-2025 06:18:36 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Is.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Is.php on line 19
+[27-Apr-2025 06:18:38 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsAnything.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsAnything.php on line 13
+[27-Apr-2025 06:18:39 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsCollectionContaining.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsCollectionContaining.php on line 15
+[27-Apr-2025 06:18:41 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsEqual.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsEqual.php on line 14
+[27-Apr-2025 06:18:43 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsSame" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsIdentical.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsIdentical.php on line 13
+[27-Apr-2025 06:18:44 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsInstanceOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsInstanceOf.php on line 13
+[27-Apr-2025 06:18:46 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNot.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNot.php on line 15
+[27-Apr-2025 06:18:48 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNull.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsNull.php on line 13
+[27-Apr-2025 06:18:50 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsSame.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsSame.php on line 14
+[27-Apr-2025 06:18:51 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsTypeOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/IsTypeOf.php on line 13
+[27-Apr-2025 06:18:53 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/Set.php on line 22
+[27-Apr-2025 06:18:55 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/ShortcutCombination.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/ShortcutCombination.php on line 12
+[27-Apr-2025 13:30:52 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\DiagnosingMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AllOf.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AllOf.php on line 16
+[27-Apr-2025 13:30:54 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\ShortcutCombination" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AnyOf.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Core/AnyOf.php on line 15

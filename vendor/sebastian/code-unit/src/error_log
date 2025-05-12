@@ -1,0 +1,99 @@
+[14-Apr-2025 23:27:15 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php on line 15
+[14-Apr-2025 23:27:17 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php on line 15
+[14-Apr-2025 23:27:20 UTC] PHP Fatal error:  Could not check compatibility between SebastianBergmann\CodeUnit\CodeUnitCollection::getIterator(): SebastianBergmann\CodeUnit\CodeUnitCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class SebastianBergmann\CodeUnit\CodeUnitCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/CodeUnitCollection.php on line 51
+[14-Apr-2025 23:27:23 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php on line 15
+[14-Apr-2025 23:27:24 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php on line 15
+[14-Apr-2025 23:27:26 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php on line 15
+[14-Apr-2025 23:27:27 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php on line 15
+[14-Apr-2025 23:27:30 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php on line 15
+[14-Apr-2025 23:27:32 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php on line 15
+[16-Apr-2025 23:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php on line 15
+[16-Apr-2025 23:24:06 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php on line 15
+[16-Apr-2025 23:24:10 UTC] PHP Fatal error:  Could not check compatibility between SebastianBergmann\CodeUnit\CodeUnitCollection::getIterator(): SebastianBergmann\CodeUnit\CodeUnitCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class SebastianBergmann\CodeUnit\CodeUnitCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/CodeUnitCollection.php on line 51
+[16-Apr-2025 23:24:13 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php on line 15
+[16-Apr-2025 23:24:14 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php on line 15
+[16-Apr-2025 23:24:16 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php on line 15
+[16-Apr-2025 23:24:18 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php on line 15
+[16-Apr-2025 23:24:21 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php on line 15
+[16-Apr-2025 23:24:23 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php on line 15
+[24-Apr-2025 10:54:00 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassMethodUnit.php on line 15
+[24-Apr-2025 10:54:02 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/ClassUnit.php on line 15
+[24-Apr-2025 10:54:05 UTC] PHP Fatal error:  Could not check compatibility between SebastianBergmann\CodeUnit\CodeUnitCollection::getIterator(): SebastianBergmann\CodeUnit\CodeUnitCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class SebastianBergmann\CodeUnit\CodeUnitCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/CodeUnitCollection.php on line 51
+[24-Apr-2025 10:54:09 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FileUnit.php on line 15
+[24-Apr-2025 10:54:10 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/FunctionUnit.php on line 15
+[24-Apr-2025 10:54:12 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceMethodUnit.php on line 15
+[24-Apr-2025 10:54:14 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/InterfaceUnit.php on line 15
+[24-Apr-2025 10:54:17 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitMethodUnit.php on line 15
+[24-Apr-2025 10:54:19 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeUnit\CodeUnit" not found in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sebastian/code-unit/src/TraitUnit.php on line 15

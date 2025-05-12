@@ -1,0 +1,18 @@
+[20-Apr-2025 05:59:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php on line 17
+[20-Apr-2025 05:59:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php on line 17
+[20-Apr-2025 05:59:23 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\TestData\TestDataCollection::getIterator(): PHPUnit\Event\TestData\TestDataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\TestData\TestDataCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/TestDataCollection.php on line 84
+[30-Apr-2025 00:25:23 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\TestData\TestDataCollection::getIterator(): PHPUnit\Event\TestData\TestDataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\TestData\TestDataCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/TestDataCollection.php on line 84
+[01-May-2025 03:57:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromDataProvider.php on line 17
+[01-May-2025 03:57:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\TestData\TestData" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestData/DataFromTestDependency.php on line 17

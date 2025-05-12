@@ -1,0 +1,8 @@
+[18-Apr-2025 05:18:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand/TimeitVisitor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand/TimeitVisitor.php on line 32
+[28-Apr-2025 00:38:25 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand/TimeitVisitor.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand/TimeitVisitor.php on line 32

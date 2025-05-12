@@ -1,0 +1,48 @@
+[16-Apr-2025 08:57:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php on line 29
+[16-Apr-2025 11:48:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php on line 28
+[16-Apr-2025 11:48:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php on line 32
+[16-Apr-2025 11:48:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php on line 29
+[25-Apr-2025 08:15:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php on line 29
+[25-Apr-2025 08:15:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php on line 28
+[25-Apr-2025 08:15:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php on line 32
+[25-Apr-2025 08:15:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php on line 29
+[28-Apr-2025 10:15:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php on line 29
+[28-Apr-2025 10:15:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/ElementParser.php on line 28
+[28-Apr-2025 10:15:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/EmptyStringParser.php on line 32
+[28-Apr-2025 10:15:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\CssSelector\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php on line 29

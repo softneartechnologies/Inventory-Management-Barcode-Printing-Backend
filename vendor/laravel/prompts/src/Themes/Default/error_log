@@ -1,0 +1,122 @@
+[18-Apr-2025 00:08:50 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ClearRenderer.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ClearRenderer.php on line 5
+[18-Apr-2025 00:08:52 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ConfirmPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ConfirmPromptRenderer.php on line 7
+[18-Apr-2025 00:08:53 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSearchPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSearchPromptRenderer.php on line 8
+[18-Apr-2025 00:08:55 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSelectPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSelectPromptRenderer.php on line 8
+[18-Apr-2025 00:08:56 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/NoteRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/NoteRenderer.php on line 7
+[18-Apr-2025 00:08:58 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PasswordPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PasswordPromptRenderer.php on line 7
+[18-Apr-2025 00:09:00 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PausePromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PausePromptRenderer.php on line 7
+[18-Apr-2025 00:09:01 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ProgressRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ProgressRenderer.php on line 7
+[18-Apr-2025 00:09:03 UTC] PHP Fatal error:  Trait "Laravel\Prompts\Concerns\Colors" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/Renderer.php on line 9
+[18-Apr-2025 00:09:04 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SearchPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SearchPromptRenderer.php on line 8
+[18-Apr-2025 00:09:06 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SelectPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SelectPromptRenderer.php on line 8
+[18-Apr-2025 00:09:07 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SpinnerRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SpinnerRenderer.php on line 7
+[18-Apr-2025 00:09:09 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SuggestPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SuggestPromptRenderer.php on line 8
+[18-Apr-2025 00:09:10 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TableRenderer.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TableRenderer.php on line 10
+[18-Apr-2025 00:09:12 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextPromptRenderer.php on line 7
+[18-Apr-2025 00:09:13 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextareaPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextareaPromptRenderer.php on line 8
+[27-Apr-2025 04:04:17 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ClearRenderer.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ClearRenderer.php on line 5
+[27-Apr-2025 04:04:19 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ConfirmPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ConfirmPromptRenderer.php on line 7
+[27-Apr-2025 04:04:21 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSearchPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSearchPromptRenderer.php on line 8
+[27-Apr-2025 04:04:22 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSelectPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/MultiSelectPromptRenderer.php on line 8
+[27-Apr-2025 04:04:24 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/NoteRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/NoteRenderer.php on line 7
+[27-Apr-2025 04:04:26 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PasswordPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PasswordPromptRenderer.php on line 7
+[27-Apr-2025 04:04:28 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PausePromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/PausePromptRenderer.php on line 7
+[27-Apr-2025 04:04:29 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ProgressRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/ProgressRenderer.php on line 7
+[27-Apr-2025 04:04:31 UTC] PHP Fatal error:  Trait "Laravel\Prompts\Concerns\Colors" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/Renderer.php on line 9
+[27-Apr-2025 04:04:33 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SearchPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SearchPromptRenderer.php on line 8
+[27-Apr-2025 04:04:35 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SelectPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SelectPromptRenderer.php on line 8
+[27-Apr-2025 04:04:37 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SpinnerRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SpinnerRenderer.php on line 7
+[27-Apr-2025 04:04:38 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SuggestPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/SuggestPromptRenderer.php on line 8
+[27-Apr-2025 04:04:40 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TableRenderer.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TableRenderer.php on line 10
+[27-Apr-2025 04:04:42 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextPromptRenderer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextPromptRenderer.php on line 7
+[27-Apr-2025 04:04:43 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Themes\Default\Renderer" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextareaPromptRenderer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/TextareaPromptRenderer.php on line 8

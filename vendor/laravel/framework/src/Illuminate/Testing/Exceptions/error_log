@@ -1,0 +1,8 @@
+[19-Apr-2025 03:07:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php on line 7
+[28-Apr-2025 07:00:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Exceptions/InvalidArgumentException.php on line 7

@@ -1,0 +1,96 @@
+[14-Apr-2025 23:31:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php on line 17
+[14-Apr-2025 23:31:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php on line 30
+[14-Apr-2025 23:31:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php on line 20
+[14-Apr-2025 23:31:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php on line 22
+[14-Apr-2025 23:31:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php on line 25
+[14-Apr-2025 23:31:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php on line 31
+[14-Apr-2025 23:31:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php on line 30
+[14-Apr-2025 23:31:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php on line 22
+[16-Apr-2025 23:28:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php on line 17
+[16-Apr-2025 23:28:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php on line 30
+[16-Apr-2025 23:28:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php on line 20
+[16-Apr-2025 23:28:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php on line 22
+[16-Apr-2025 23:28:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php on line 25
+[16-Apr-2025 23:28:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php on line 31
+[16-Apr-2025 23:28:35 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php on line 30
+[16-Apr-2025 23:28:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php on line 22
+[24-Apr-2025 10:55:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/BufferedOutput.php on line 17
+[24-Apr-2025 10:55:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutput.php on line 30
+[24-Apr-2025 10:55:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleOutputInterface.php on line 20
+[24-Apr-2025 10:55:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\StreamOutput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/ConsoleSectionOutput.php on line 22
+[24-Apr-2025 10:55:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/NullOutput.php on line 25
+[24-Apr-2025 10:55:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/Output.php on line 31
+[24-Apr-2025 10:55:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/StreamOutput.php on line 30
+[24-Apr-2025 10:55:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\Output" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Output/TrimmedBufferOutput.php on line 22

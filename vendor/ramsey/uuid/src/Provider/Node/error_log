@@ -1,0 +1,40 @@
+[18-Apr-2025 09:48:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php on line 33
+[18-Apr-2025 09:48:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php on line 45
+[18-Apr-2025 09:59:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php on line 25
+[18-Apr-2025 09:59:07 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php on line 31
+[18-Apr-2025 09:59:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php on line 36
+[27-Apr-2025 18:24:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/FallbackNodeProvider.php on line 25
+[27-Apr-2025 18:24:43 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/NodeProviderCollection.php on line 31
+[27-Apr-2025 18:24:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/RandomNodeProvider.php on line 36
+[27-Apr-2025 18:24:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/StaticNodeProvider.php on line 33
+[27-Apr-2025 18:24:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\NodeProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Node/SystemNodeProvider.php on line 45

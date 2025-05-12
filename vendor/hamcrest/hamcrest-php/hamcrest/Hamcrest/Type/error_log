@@ -1,0 +1,80 @@
+[17-Apr-2025 19:13:24 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php on line 12
+[17-Apr-2025 19:13:26 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php on line 12
+[17-Apr-2025 19:13:27 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php on line 12
+[17-Apr-2025 19:13:29 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php on line 14
+[17-Apr-2025 19:13:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php on line 12
+[17-Apr-2025 19:13:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php on line 12
+[17-Apr-2025 19:13:34 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php on line 12
+[17-Apr-2025 19:13:36 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php on line 12
+[17-Apr-2025 19:13:38 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php on line 12
+[17-Apr-2025 19:13:39 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php on line 12
+[27-Apr-2025 06:19:45 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsArray.php on line 12
+[27-Apr-2025 06:19:46 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsBoolean.php on line 12
+[27-Apr-2025 06:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsCallable.php on line 12
+[27-Apr-2025 06:19:50 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsDouble.php on line 14
+[27-Apr-2025 06:19:51 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsInteger.php on line 12
+[27-Apr-2025 06:19:53 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsNumeric.php on line 12
+[27-Apr-2025 06:19:55 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsObject.php on line 12
+[27-Apr-2025 06:19:56 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsResource.php on line 12
+[27-Apr-2025 06:19:58 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsScalar.php on line 12
+[27-Apr-2025 06:20:00 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Core\IsTypeOf" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php on line 12

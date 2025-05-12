@@ -1,0 +1,16 @@
+[17-Apr-2025 09:33:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/MonologTestCase.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/MonologTestCase.php on line 26
+[17-Apr-2025 09:33:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Test\MonologTestCase" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php on line 21
+[26-Apr-2025 18:21:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/MonologTestCase.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/MonologTestCase.php on line 26
+[26-Apr-2025 18:21:21 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Test\MonologTestCase" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Test/TestCase.php on line 21

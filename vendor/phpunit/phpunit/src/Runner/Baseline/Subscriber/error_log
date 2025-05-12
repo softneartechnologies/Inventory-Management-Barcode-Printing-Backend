@@ -1,0 +1,48 @@
+[19-Apr-2025 10:29:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredDeprecationSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredDeprecationSubscriber.php on line 21
+[19-Apr-2025 10:29:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredNoticeSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredNoticeSubscriber.php on line 21
+[19-Apr-2025 10:29:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 21
+[19-Apr-2025 10:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpNoticeSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 21
+[19-Apr-2025 10:29:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpWarningSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 21
+[19-Apr-2025 10:29:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredWarningSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredWarningSubscriber.php on line 21
+[29-Apr-2025 10:15:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredDeprecationSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredDeprecationSubscriber.php on line 21
+[29-Apr-2025 10:15:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredNoticeSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredNoticeSubscriber.php on line 21
+[29-Apr-2025 10:15:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpDeprecationSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpDeprecationSubscriber.php on line 21
+[29-Apr-2025 10:15:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpNoticeSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpNoticeSubscriber.php on line 21
+[29-Apr-2025 10:15:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpWarningSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredPhpWarningSubscriber.php on line 21
+[29-Apr-2025 10:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\Baseline\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredWarningSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/Baseline/Subscriber/TestTriggeredWarningSubscriber.php on line 21

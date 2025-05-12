@@ -1,0 +1,16 @@
+[19-Apr-2025 04:35:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS1D.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS1D.php on line 14
+[19-Apr-2025 04:35:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS2D.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS2D.php on line 14
+[29-Apr-2025 04:02:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS1D.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS1D.php on line 14
+[29-Apr-2025 04:02:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS2D.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/Facades/DNS2D.php on line 14

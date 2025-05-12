@@ -1,0 +1,48 @@
+[17-Apr-2025 09:43:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/BadMethodCallException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/BadMethodCallException.php on line 13
+[17-Apr-2025 09:43:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidArgumentException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidArgumentException.php on line 13
+[17-Apr-2025 09:43:55 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidCountException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidCountException.php on line 18
+[17-Apr-2025 09:43:56 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidOrderException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidOrderException.php on line 16
+[17-Apr-2025 09:44:00 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/NoMatchingExpectationException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/NoMatchingExpectationException.php on line 16
+[17-Apr-2025 09:44:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php on line 15
+[27-Apr-2025 08:47:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/BadMethodCallException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/BadMethodCallException.php on line 13
+[27-Apr-2025 08:47:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidArgumentException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidArgumentException.php on line 13
+[27-Apr-2025 08:47:46 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidCountException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidCountException.php on line 18
+[27-Apr-2025 08:47:47 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidOrderException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/InvalidOrderException.php on line 16
+[27-Apr-2025 08:47:51 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Exception" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/NoMatchingExpectationException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/NoMatchingExpectationException.php on line 16
+[27-Apr-2025 08:47:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php on line 15

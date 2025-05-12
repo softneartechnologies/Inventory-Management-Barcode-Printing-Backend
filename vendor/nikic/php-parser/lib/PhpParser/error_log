@@ -1,0 +1,48 @@
+[16-Apr-2025 20:40:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Node" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php on line 5
+[16-Apr-2025 20:40:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\NodeTraverserInterface" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php on line 5
+[16-Apr-2025 20:40:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\NodeVisitor" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php on line 8
+[16-Apr-2025 20:40:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php on line 38
+[16-Apr-2025 20:40:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\PrettyPrinter" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php on line 22
+[16-Apr-2025 20:40:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Internal\TokenPolyfill" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Token.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Token.php on line 8
+[25-Apr-2025 20:20:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php on line 38
+[26-Apr-2025 05:38:57 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\Node" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeAbstract.php on line 5
+[26-Apr-2025 05:39:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\NodeTraverserInterface" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeTraverser.php on line 5
+[26-Apr-2025 05:39:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\NodeVisitor" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php on line 8
+[26-Apr-2025 05:39:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PhpParser\PrettyPrinter" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php on line 22
+[26-Apr-2025 05:39:09 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Internal\TokenPolyfill" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Token.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Token.php on line 8

@@ -1,0 +1,2 @@
+[19-Apr-2025 03:21:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\CapsuleManagerTrait" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Capsule/Manager.php on line 14
+[29-Apr-2025 08:42:49 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\CapsuleManagerTrait" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Capsule/Manager.php on line 14

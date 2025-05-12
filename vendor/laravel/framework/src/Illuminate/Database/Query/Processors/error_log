@@ -1,0 +1,40 @@
+[20-Apr-2025 08:11:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\MySqlProcessor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MariaDbProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MariaDbProcessor.php on line 5
+[20-Apr-2025 08:12:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php on line 7
+[20-Apr-2025 08:12:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php on line 7
+[20-Apr-2025 08:12:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php on line 5
+[20-Apr-2025 08:12:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php on line 9
+[30-Apr-2025 21:03:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\MySqlProcessor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MariaDbProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MariaDbProcessor.php on line 5
+[30-Apr-2025 21:03:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php on line 7
+[30-Apr-2025 21:03:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/PostgresProcessor.php on line 7
+[30-Apr-2025 21:03:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SQLiteProcessor.php on line 5
+[30-Apr-2025 21:04:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Processors\Processor" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/SqlServerProcessor.php on line 9

@@ -1,0 +1,16 @@
+[14-Apr-2025 22:54:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php on line 17
+[14-Apr-2025 22:54:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php on line 20
+[24-Apr-2025 13:05:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/DefaultHtmlToTextConverter.php on line 17
+[24-Apr-2025 13:05:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\HtmlToTextConverter\HtmlToTextConverterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/HtmlToTextConverter/LeagueHtmlToMarkdownConverter.php on line 20

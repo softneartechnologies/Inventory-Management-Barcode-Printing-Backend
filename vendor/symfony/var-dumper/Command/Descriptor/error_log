@@ -1,0 +1,16 @@
+[16-Apr-2025 11:27:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Command\Descriptor\DumpDescriptorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php on line 27
+[16-Apr-2025 11:27:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Command\Descriptor\DumpDescriptorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php on line 25
+[24-Apr-2025 20:24:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Command\Descriptor\DumpDescriptorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php on line 27
+[24-Apr-2025 20:24:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Command\Descriptor\DumpDescriptorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php on line 25

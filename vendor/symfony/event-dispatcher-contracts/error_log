@@ -1,0 +1,16 @@
+[14-Apr-2025 16:59:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[14-Apr-2025 16:59:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19
+[24-Apr-2025 04:56:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/Event.php on line 31
+[24-Apr-2025 04:56:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher-contracts/EventDispatcherInterface.php on line 19

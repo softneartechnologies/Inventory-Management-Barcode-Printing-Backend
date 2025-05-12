@@ -1,0 +1,16 @@
+[17-Apr-2025 09:42:13 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodsClassReflectionExtension" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php on line 35
+[17-Apr-2025 09:42:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodReflection" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroMethodReflection.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroMethodReflection.php on line 24
+[26-Apr-2025 18:41:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodsClassReflectionExtension" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroExtension.php on line 35
+[26-Apr-2025 18:41:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPStan\Reflection\MethodReflection" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroMethodReflection.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/PHPStan/MacroMethodReflection.php on line 24

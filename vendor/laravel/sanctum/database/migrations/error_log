@@ -1,0 +1,8 @@
+[16-Apr-2025 14:05:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php on line 7
+[26-Apr-2025 06:10:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Migrations\Migration" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php on line 7

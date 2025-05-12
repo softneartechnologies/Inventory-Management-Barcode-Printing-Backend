@@ -1,0 +1,126 @@
+[19-Apr-2025 03:18:50 UTC] PHP Warning:  Undefined variable $tables in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 6
+[19-Apr-2025 03:18:50 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 6
+[19-Apr-2025 03:18:50 UTC] PHP Warning:  Undefined variable $handlers in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 35
+[19-Apr-2025 03:18:50 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 35
+[19-Apr-2025 03:18:58 UTC] PHP Warning:  Undefined variable $has_frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 4
+[19-Apr-2025 03:18:58 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 5
+[19-Apr-2025 03:18:58 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 5
+[19-Apr-2025 03:19:04 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_list.html.php on line 4
+[19-Apr-2025 03:19:04 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_list.html.php on line 4
+[19-Apr-2025 03:19:10 UTC] PHP Warning:  Undefined variable $active_frames_tab in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 1
+[19-Apr-2025 03:19:10 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 2
+[19-Apr-2025 03:19:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 2
+[19-Apr-2025 03:19:18 UTC] PHP Warning:  Undefined variable $has_frames_tabs in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 1
+[19-Apr-2025 03:19:18 UTC] PHP Warning:  Undefined variable $has_frames_tabs in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 2
+[19-Apr-2025 03:19:18 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 11
+[19-Apr-2025 03:19:18 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 11
+[19-Apr-2025 03:19:29 UTC] PHP Warning:  Undefined variable $name in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 3
+[19-Apr-2025 03:19:29 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 3
+[19-Apr-2025 03:19:29 UTC] PHP Warning:  Undefined variable $code in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 10
+[19-Apr-2025 03:19:29 UTC] PHP Warning:  Undefined variable $name in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 53
+[19-Apr-2025 03:19:29 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($array) must be of type array, string given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php:53
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php(53): implode()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 53
+[19-Apr-2025 03:19:41 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php on line 2
+[19-Apr-2025 03:19:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php on line 2
+[19-Apr-2025 03:19:44 UTC] PHP Warning:  Undefined variable $preface in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 6
+[19-Apr-2025 03:19:44 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 12
+[19-Apr-2025 03:19:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function escape() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 12
+[19-Apr-2025 03:19:53 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php on line 1
+[19-Apr-2025 03:19:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php on line 1
+[19-Apr-2025 03:20:00 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php on line 2
+[19-Apr-2025 03:20:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php on line 2
+[19-Apr-2025 03:20:06 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php on line 2
+[19-Apr-2025 03:20:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php on line 2
+[19-Apr-2025 03:20:20 UTC] PHP Warning:  Undefined variable $has_frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 1
+[19-Apr-2025 03:20:20 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 2
+[19-Apr-2025 03:20:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 2
+[28-Apr-2025 06:19:39 UTC] PHP Warning:  Undefined variable $tables in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 6
+[28-Apr-2025 06:19:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 6
+[28-Apr-2025 06:19:39 UTC] PHP Warning:  Undefined variable $handlers in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 35
+[28-Apr-2025 06:19:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php on line 35
+[28-Apr-2025 06:19:43 UTC] PHP Warning:  Undefined variable $has_frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 4
+[28-Apr-2025 06:19:43 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 5
+[28-Apr-2025 06:19:43 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_code.html.php on line 5
+[28-Apr-2025 06:19:44 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_list.html.php on line 4
+[28-Apr-2025 06:19:44 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frame_list.html.php on line 4
+[28-Apr-2025 06:19:46 UTC] PHP Warning:  Undefined variable $active_frames_tab in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 1
+[28-Apr-2025 06:19:46 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 2
+[28-Apr-2025 06:19:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_container.html.php on line 2
+[28-Apr-2025 06:19:48 UTC] PHP Warning:  Undefined variable $has_frames_tabs in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 1
+[28-Apr-2025 06:19:48 UTC] PHP Warning:  Undefined variable $has_frames_tabs in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 2
+[28-Apr-2025 06:19:48 UTC] PHP Warning:  Undefined variable $frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 11
+[28-Apr-2025 06:19:48 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/frames_description.html.php on line 11
+[28-Apr-2025 06:19:49 UTC] PHP Warning:  Undefined variable $name in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 3
+[28-Apr-2025 06:19:49 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 3
+[28-Apr-2025 06:19:49 UTC] PHP Warning:  Undefined variable $code in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 10
+[28-Apr-2025 06:19:49 UTC] PHP Warning:  Undefined variable $name in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 53
+[28-Apr-2025 06:19:49 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($array) must be of type array, string given in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php:53
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php(53): implode()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header.html.php on line 53
+[28-Apr-2025 06:19:51 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php on line 2
+[28-Apr-2025 06:19:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/header_outer.html.php on line 2
+[28-Apr-2025 06:19:53 UTC] PHP Warning:  Undefined variable $preface in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 6
+[28-Apr-2025 06:19:53 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 12
+[28-Apr-2025 06:19:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function escape() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php on line 12
+[28-Apr-2025 06:19:55 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php on line 1
+[28-Apr-2025 06:19:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details.html.php on line 1
+[28-Apr-2025 06:19:56 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php on line 2
+[28-Apr-2025 06:19:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_details_outer.html.php on line 2
+[28-Apr-2025 06:19:58 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php on line 2
+[28-Apr-2025 06:19:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left.html.php on line 2
+[28-Apr-2025 06:19:59 UTC] PHP Warning:  Undefined variable $has_frames in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 1
+[28-Apr-2025 06:19:59 UTC] PHP Warning:  Undefined variable $tpl in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 2
+[28-Apr-2025 06:19:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Resources/views/panel_left_outer.html.php on line 2

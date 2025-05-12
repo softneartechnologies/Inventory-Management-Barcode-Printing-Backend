@@ -1,0 +1,16 @@
+[20-Apr-2025 06:01:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Runtime\PropertyHook" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertyGetHook.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertyGetHook.php on line 17
+[20-Apr-2025 06:01:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Runtime\PropertyHook" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertySetHook.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertySetHook.php on line 17
+[01-May-2025 04:06:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Runtime\PropertyHook" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertyGetHook.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertyGetHook.php on line 17
+[01-May-2025 04:07:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Runtime\PropertyHook" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertySetHook.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/PropertyHook/PropertySetHook.php on line 17

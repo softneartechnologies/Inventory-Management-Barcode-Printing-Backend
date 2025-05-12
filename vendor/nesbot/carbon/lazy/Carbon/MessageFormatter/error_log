@@ -1,0 +1,16 @@
+[17-Apr-2025 09:35:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperStrongType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperStrongType.php on line 17
+[17-Apr-2025 09:35:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperWeakType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperWeakType.php on line 18
+[26-Apr-2025 18:22:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperStrongType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperStrongType.php on line 17
+[27-Apr-2025 13:37:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperWeakType.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/MessageFormatter/MessageFormatterMapperWeakType.php on line 18

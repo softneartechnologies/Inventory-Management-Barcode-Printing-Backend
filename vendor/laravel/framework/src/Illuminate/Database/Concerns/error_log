@@ -1,0 +1,2 @@
+[19-Apr-2025 00:46:49 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php on line 27
+[29-Apr-2025 01:56:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php on line 27

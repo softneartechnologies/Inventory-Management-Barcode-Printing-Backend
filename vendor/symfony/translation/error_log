@@ -1,0 +1,66 @@
+[14-Apr-2025 15:34:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DataCollectorTranslator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DataCollectorTranslator.php on line 23
+[14-Apr-2025 15:35:04 UTC] PHP Fatal error:  Trait "Symfony\Contracts\Translation\TranslatorTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/IdentityTranslator.php on line 23
+[14-Apr-2025 15:35:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\LocaleAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LocaleSwitcher.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LocaleSwitcher.php on line 20
+[14-Apr-2025 15:35:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LoggingTranslator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LoggingTranslator.php on line 21
+[14-Apr-2025 15:35:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\MessageCatalogueInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/MessageCatalogue.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/MessageCatalogue.php on line 20
+[14-Apr-2025 15:35:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/PseudoLocalizationTranslator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/PseudoLocalizationTranslator.php on line 20
+[14-Apr-2025 15:35:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatableMessage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatableMessage.php on line 20
+[14-Apr-2025 15:35:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Translator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Translator.php on line 34
+[14-Apr-2025 15:35:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\TranslatorBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatorBag.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatorBag.php on line 17
+[24-Apr-2025 03:44:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DataCollectorTranslator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DataCollectorTranslator.php on line 23
+[24-Apr-2025 03:44:31 UTC] PHP Fatal error:  Trait "Symfony\Contracts\Translation\TranslatorTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/IdentityTranslator.php on line 23
+[24-Apr-2025 03:44:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\LocaleAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LocaleSwitcher.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LocaleSwitcher.php on line 20
+[24-Apr-2025 03:44:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LoggingTranslator.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/LoggingTranslator.php on line 21
+[24-Apr-2025 03:44:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\MessageCatalogueInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/MessageCatalogue.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/MessageCatalogue.php on line 20
+[24-Apr-2025 03:44:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/PseudoLocalizationTranslator.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/PseudoLocalizationTranslator.php on line 20
+[24-Apr-2025 03:45:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatableMessage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatableMessage.php on line 20
+[24-Apr-2025 03:45:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Translator.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Translator.php on line 34
+[24-Apr-2025 03:45:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\TranslatorBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatorBag.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/TranslatorBag.php on line 17

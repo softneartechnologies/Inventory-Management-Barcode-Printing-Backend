@@ -1,0 +1,98 @@
+[14-Apr-2025 23:30:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpKernel\DependencyInjection\trigger_deprecation() in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/AddAnnotatedClassesToCachePass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/AddAnnotatedClassesToCachePass.php on line 20
+[14-Apr-2025 23:30:29 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\DependencyInjection\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ConfigurableExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ConfigurableExtension.php on line 28
+[14-Apr-2025 23:30:30 UTC] PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ControllerArgumentValueResolverPass.php on line 29
+[14-Apr-2025 23:30:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Extension\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/Extension.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/Extension.php on line 23
+[14-Apr-2025 23:30:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/FragmentRendererPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/FragmentRendererPass.php on line 26
+[14-Apr-2025 23:30:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Fragment\FragmentHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php on line 24
+[14-Apr-2025 23:30:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LoggerPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LoggerPass.php on line 26
+[14-Apr-2025 23:30:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Compiler\MergeExtensionConfigurationPass" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/MergeExtensionConfigurationPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/MergeExtensionConfigurationPass.php on line 22
+[14-Apr-2025 23:30:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterControllerArgumentLocatorsPass.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterControllerArgumentLocatorsPass.php on line 35
+[14-Apr-2025 23:30:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterLocaleAwareServicesPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterLocaleAwareServicesPass.php on line 24
+[14-Apr-2025 23:30:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RemoveEmptyControllerArgumentLocatorsPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RemoveEmptyControllerArgumentLocatorsPass.php on line 22
+[14-Apr-2025 23:30:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ResettableServicePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ResettableServicePass.php on line 24
+[14-Apr-2025 23:30:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ServicesResetter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ServicesResetter.php on line 26
+[24-Apr-2025 12:46:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\HttpKernel\DependencyInjection\trigger_deprecation() in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/AddAnnotatedClassesToCachePass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/AddAnnotatedClassesToCachePass.php on line 20
+[24-Apr-2025 12:46:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\DependencyInjection\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ConfigurableExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ConfigurableExtension.php on line 28
+[24-Apr-2025 12:46:29 UTC] PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ControllerArgumentValueResolverPass.php on line 29
+[24-Apr-2025 12:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Extension\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/Extension.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/Extension.php on line 23
+[24-Apr-2025 12:46:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/FragmentRendererPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/FragmentRendererPass.php on line 26
+[24-Apr-2025 12:46:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Fragment\FragmentHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LazyLoadingFragmentHandler.php on line 24
+[24-Apr-2025 12:46:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LoggerPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/LoggerPass.php on line 26
+[24-Apr-2025 12:46:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Compiler\MergeExtensionConfigurationPass" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/MergeExtensionConfigurationPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/MergeExtensionConfigurationPass.php on line 22
+[24-Apr-2025 12:46:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterControllerArgumentLocatorsPass.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterControllerArgumentLocatorsPass.php on line 35
+[24-Apr-2025 12:46:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterLocaleAwareServicesPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RegisterLocaleAwareServicesPass.php on line 24
+[24-Apr-2025 12:46:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RemoveEmptyControllerArgumentLocatorsPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/RemoveEmptyControllerArgumentLocatorsPass.php on line 22
+[24-Apr-2025 12:46:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ResettableServicePass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ResettableServicePass.php on line 24
+[24-Apr-2025 12:46:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ServicesResetter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/DependencyInjection/ServicesResetter.php on line 26

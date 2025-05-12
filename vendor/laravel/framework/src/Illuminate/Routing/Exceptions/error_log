@@ -1,0 +1,8 @@
+[19-Apr-2025 15:12:26 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Exceptions/InvalidSignatureException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Exceptions/InvalidSignatureException.php on line 7
+[29-Apr-2025 08:44:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Exceptions/InvalidSignatureException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Exceptions/InvalidSignatureException.php on line 7

@@ -1,0 +1,36 @@
+[16-Apr-2025 01:41:18 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php on line 14
+[16-Apr-2025 01:41:21 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php on line 29
+[16-Apr-2025 01:41:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php on line 23
+[25-Apr-2025 08:10:52 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php on line 14
+[25-Apr-2025 08:10:54 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php on line 29
+[25-Apr-2025 08:10:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php on line 23
+[28-Apr-2025 10:13:00 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/AtRuleSet.php on line 14
+[28-Apr-2025 10:13:01 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\RuleSet\RuleSet" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/DeclarationBlock.php on line 29
+[28-Apr-2025 10:13:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/RuleSet/RuleSet.php on line 23

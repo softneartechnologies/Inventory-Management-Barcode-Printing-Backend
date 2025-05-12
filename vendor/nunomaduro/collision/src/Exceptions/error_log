@@ -1,0 +1,8 @@
+[16-Apr-2025 20:41:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Exceptions/TestOutcome.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Exceptions/TestOutcome.php on line 12
+[25-Apr-2025 20:20:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Exceptions/TestOutcome.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Exceptions/TestOutcome.php on line 12

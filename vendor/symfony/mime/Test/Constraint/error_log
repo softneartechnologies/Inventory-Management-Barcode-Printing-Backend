@@ -1,0 +1,56 @@
+[16-Apr-2025 11:24:18 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php on line 19
+[16-Apr-2025 11:24:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php on line 18
+[16-Apr-2025 11:24:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php on line 17
+[16-Apr-2025 11:24:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php on line 18
+[16-Apr-2025 11:24:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php on line 18
+[16-Apr-2025 11:24:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailSubjectContains.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailSubjectContains.php on line 17
+[16-Apr-2025 11:24:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php on line 18
+[25-Apr-2025 06:06:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAddressContains.php on line 19
+[25-Apr-2025 06:06:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailAttachmentCount.php on line 18
+[25-Apr-2025 06:06:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHasHeader.php on line 17
+[25-Apr-2025 06:06:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHeaderSame.php on line 18
+[25-Apr-2025 06:06:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailHtmlBodyContains.php on line 18
+[25-Apr-2025 06:06:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailSubjectContains.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailSubjectContains.php on line 17
+[25-Apr-2025 06:06:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Test/Constraint/EmailTextBodyContains.php on line 18

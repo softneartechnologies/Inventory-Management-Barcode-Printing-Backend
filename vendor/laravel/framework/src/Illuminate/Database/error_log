@@ -1,0 +1,86 @@
+[18-Apr-2025 09:58:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ConfigurationUrlParser" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php on line 7
+[18-Apr-2025 09:58:29 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsConcurrencyErrors" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 28
+[18-Apr-2025 09:58:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\ConnectionResolverInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php on line 5
+[18-Apr-2025 09:58:37 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php on line 19
+[18-Apr-2025 09:58:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php on line 13
+[18-Apr-2025 09:58:50 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Grammar.php on line 10
+[18-Apr-2025 09:58:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\MySqlConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MariaDbConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MariaDbConnection.php on line 13
+[18-Apr-2025 09:59:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php on line 20
+[18-Apr-2025 09:59:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php on line 15
+[18-Apr-2025 09:59:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php on line 13
+[18-Apr-2025 09:59:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php on line 13
+[18-Apr-2025 09:59:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php on line 15
+[18-Apr-2025 09:59:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\QueryException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/UniqueConstraintViolationException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/UniqueConstraintViolationException.php on line 5
+[27-Apr-2025 08:51:11 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Grammar.php on line 10
+[27-Apr-2025 08:51:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\MySqlConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MariaDbConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MariaDbConnection.php on line 13
+[27-Apr-2025 08:51:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MigrationServiceProvider.php on line 20
+[27-Apr-2025 08:51:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php on line 15
+[27-Apr-2025 08:51:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php on line 13
+[27-Apr-2025 08:51:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php on line 13
+[27-Apr-2025 08:51:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/SqlServerConnection.php on line 15
+[27-Apr-2025 08:51:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\QueryException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/UniqueConstraintViolationException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/UniqueConstraintViolationException.php on line 5
+[27-Apr-2025 08:57:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ConfigurationUrlParser" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConfigurationUrlParser.php on line 7
+[27-Apr-2025 08:58:01 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsConcurrencyErrors" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 28
+[27-Apr-2025 08:58:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\ConnectionResolverInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/ConnectionResolver.php on line 5
+[27-Apr-2025 08:58:07 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php on line 19
+[27-Apr-2025 08:58:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php on line 13

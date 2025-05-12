@@ -1,0 +1,120 @@
+[19-Apr-2025 03:21:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/BatchesTableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/BatchesTableCommand.php on line 11
+[19-Apr-2025 03:21:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ClearCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ClearCommand.php on line 15
+[19-Apr-2025 03:21:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FailedTableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FailedTableCommand.php on line 11
+[19-Apr-2025 03:21:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php on line 9
+[19-Apr-2025 03:21:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ForgetFailedCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ForgetFailedCommand.php on line 9
+[19-Apr-2025 03:22:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListFailedCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListFailedCommand.php on line 11
+[19-Apr-2025 03:22:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php on line 12
+[19-Apr-2025 03:22:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/MonitorCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/MonitorCommand.php on line 13
+[19-Apr-2025 03:22:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneBatchesCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneBatchesCommand.php on line 13
+[19-Apr-2025 03:22:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneFailedJobsCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneFailedJobsCommand.php on line 11
+[19-Apr-2025 03:22:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php on line 11
+[19-Apr-2025 03:22:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryBatchCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryBatchCommand.php on line 11
+[19-Apr-2025 03:22:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryCommand.php on line 15
+[19-Apr-2025 03:22:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/TableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/TableCommand.php on line 11
+[19-Apr-2025 03:22:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php on line 24
+[29-Apr-2025 01:59:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneFailedJobsCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneFailedJobsCommand.php on line 11
+[29-Apr-2025 01:59:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php on line 11
+[29-Apr-2025 01:59:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryBatchCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryBatchCommand.php on line 11
+[29-Apr-2025 01:59:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/RetryCommand.php on line 15
+[29-Apr-2025 01:59:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/TableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/TableCommand.php on line 11
+[29-Apr-2025 01:59:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/WorkCommand.php on line 24
+[29-Apr-2025 08:43:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/BatchesTableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/BatchesTableCommand.php on line 11
+[29-Apr-2025 08:43:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ClearCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ClearCommand.php on line 15
+[29-Apr-2025 08:43:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\MigrationGeneratorCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FailedTableCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FailedTableCommand.php on line 11
+[29-Apr-2025 08:43:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/FlushFailedCommand.php on line 9
+[29-Apr-2025 08:43:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ForgetFailedCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ForgetFailedCommand.php on line 9
+[29-Apr-2025 08:43:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListFailedCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListFailedCommand.php on line 11
+[29-Apr-2025 08:43:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/ListenCommand.php on line 12
+[29-Apr-2025 08:43:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/MonitorCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/MonitorCommand.php on line 13
+[29-Apr-2025 08:43:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneBatchesCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Console/PruneBatchesCommand.php on line 13

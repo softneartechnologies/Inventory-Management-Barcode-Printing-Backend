@@ -1,0 +1,8 @@
+[20-Apr-2025 07:35:08 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Inflector\GenericLanguageInflectorFactory" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php on line 10
+[01-May-2025 04:03:53 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Inflector\GenericLanguageInflectorFactory" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/English/InflectorFactory.php on line 10

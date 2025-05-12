@@ -1,0 +1,2 @@
+[20-Apr-2025 08:13:02 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithExceptionHandling.php on line 15
+[29-Apr-2025 23:00:22 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithExceptionHandling.php on line 15

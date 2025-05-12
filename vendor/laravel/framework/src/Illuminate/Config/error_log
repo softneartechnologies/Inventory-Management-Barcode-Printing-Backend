@@ -1,0 +1,2 @@
+[18-Apr-2025 09:57:05 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Config/Repository.php on line 11
+[27-Apr-2025 04:05:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Config/Repository.php on line 11

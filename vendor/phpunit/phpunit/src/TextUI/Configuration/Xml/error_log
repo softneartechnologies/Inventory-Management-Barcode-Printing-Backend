@@ -1,0 +1,24 @@
+[19-Apr-2025 10:34:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php on line 34
+[19-Apr-2025 10:34:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php on line 19
+[19-Apr-2025 10:34:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php on line 26
+[29-Apr-2025 04:00:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/DefaultConfiguration.php on line 34
+[29-Apr-2025 04:00:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Exception.php on line 19
+[29-Apr-2025 04:00:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\Configuration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/LoadedFromFileConfiguration.php on line 26

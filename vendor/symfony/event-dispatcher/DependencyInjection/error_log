@@ -1,0 +1,16 @@
+[14-Apr-2025 23:24:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php on line 22
+[14-Apr-2025 23:24:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php on line 26
+[24-Apr-2025 12:42:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php on line 22
+[24-Apr-2025 12:42:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php on line 26

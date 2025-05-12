@@ -1,0 +1,10 @@
+[14-Apr-2025 22:56:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/AddExpressionLanguageProvidersPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/AddExpressionLanguageProvidersPass.php on line 23
+[14-Apr-2025 22:56:59 UTC] PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24
+[24-Apr-2025 08:30:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/AddExpressionLanguageProvidersPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/AddExpressionLanguageProvidersPass.php on line 23
+[24-Apr-2025 08:30:59 UTC] PHP Fatal error:  Trait "Symfony\Component\DependencyInjection\Compiler\PriorityTaggedServiceTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/DependencyInjection/RoutingResolverPass.php on line 24

@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreignId('employee_id')->constrained()->onDelete('cascade');
             $table->string('issue_from_user_id')->default(0);
             $table->string('vendor_id')->default(0);
+            $table->string('location_id')->default(0);
+            $table->string('category_id')->default(0);
             $table->dateTime('in_out_date_time');
             $table->enum('type', ['in', 'out']);
             $table->enum('purpose', ['Repairs', 'Personal Use']);
@@ -26,6 +28,9 @@ return new class extends Migration
             $table->string('comments')->nullable();
             $table->integer('in_quantity')->default(0);
             $table->integer('out_quantity')->default(0);
+            $table->string('previous_stock')->default(0);
+            $table->string('total_current_stock')->default(0);
+            $table->string('threshold')->default(0);
             $table->timestamps();
         });
     }

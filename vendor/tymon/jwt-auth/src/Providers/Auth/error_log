@@ -1,0 +1,8 @@
+[21-Apr-2025 10:43:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Providers\Auth" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Auth/Illuminate.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Auth/Illuminate.php on line 17
+[25-Apr-2025 06:11:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Providers\Auth" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Auth/Illuminate.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Auth/Illuminate.php on line 17

@@ -1,0 +1,8 @@
+[18-Apr-2025 14:10:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/BarcodeServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/BarcodeServiceProvider.php on line 7
+[27-Apr-2025 08:57:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/BarcodeServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/Milon/Barcode/BarcodeServiceProvider.php on line 7

@@ -1,0 +1,48 @@
+[16-Apr-2025 16:29:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ConstraintViolation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ConstraintViolation.php on line 11
+[16-Apr-2025 16:29:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/NoConstraintsGiven.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/NoConstraintsGiven.php on line 9
+[16-Apr-2025 16:29:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/RequiredConstraintsViolated.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/RequiredConstraintsViolated.php on line 12
+[16-Apr-2025 16:29:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validation\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/SignedWith.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/SignedWith.php on line 6
+[16-Apr-2025 16:29:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validation\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ValidAt.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ValidAt.php on line 6
+[16-Apr-2025 16:29:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validator" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/Validator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/Validator.php on line 8
+[25-Apr-2025 08:41:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ConstraintViolation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ConstraintViolation.php on line 11
+[25-Apr-2025 08:41:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/NoConstraintsGiven.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/NoConstraintsGiven.php on line 9
+[25-Apr-2025 08:41:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/RequiredConstraintsViolated.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/RequiredConstraintsViolated.php on line 12
+[25-Apr-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validation\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/SignedWith.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/SignedWith.php on line 6
+[25-Apr-2025 08:41:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validation\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ValidAt.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/ValidAt.php on line 6
+[25-Apr-2025 08:41:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Validator" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/Validator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Validation/Validator.php on line 8

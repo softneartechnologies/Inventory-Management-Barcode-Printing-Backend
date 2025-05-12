@@ -1,0 +1,16 @@
+[14-Apr-2025 21:00:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/AbstractTransportFactoryTestCase.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/AbstractTransportFactoryTestCase.php on line 21
+[14-Apr-2025 21:00:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Test\AbstractTransportFactoryTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/TransportFactoryTestCase.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/TransportFactoryTestCase.php on line 26
+[24-Apr-2025 13:03:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/AbstractTransportFactoryTestCase.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/AbstractTransportFactoryTestCase.php on line 21
+[24-Apr-2025 13:03:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Test\AbstractTransportFactoryTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/TransportFactoryTestCase.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/TransportFactoryTestCase.php on line 26

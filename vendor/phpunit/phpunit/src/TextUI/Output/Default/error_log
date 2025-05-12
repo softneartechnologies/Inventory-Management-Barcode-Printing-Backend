@@ -1,0 +1,8 @@
+[19-Apr-2025 10:35:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Test\PrintedUnexpectedOutputSubscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/UnexpectedOutputPrinter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/UnexpectedOutputPrinter.php on line 19
+[29-Apr-2025 04:01:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Test\PrintedUnexpectedOutputSubscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/UnexpectedOutputPrinter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Default/UnexpectedOutputPrinter.php on line 19

@@ -1,0 +1,4 @@
+[29-Apr-2025 06:03:35 UTC] PHP Fatal error:  Uncaught Error: Interface "DeepCopy\Matcher\Matcher" not found in /home/softoroa/flight.softnear.com/vendor/myclabs/deep-copy/src/DeepCopy/Matcher/Doctrine/DoctrineProxyMatcher.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/myclabs/deep-copy/src/DeepCopy/Matcher/Doctrine/DoctrineProxyMatcher.php on line 11

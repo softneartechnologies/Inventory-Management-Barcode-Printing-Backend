@@ -1,0 +1,64 @@
+[16-Apr-2025 22:35:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\VersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AbstractVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AbstractVersionConstraint.php on line 12
+[16-Apr-2025 22:35:41 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AndVersionConstraintGroup.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AndVersionConstraintGroup.php on line 12
+[16-Apr-2025 22:35:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\VersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AnyVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AnyVersionConstraint.php on line 12
+[16-Apr-2025 22:35:43 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/ExactVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/ExactVersionConstraint.php on line 12
+[16-Apr-2025 22:35:43 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/GreaterThanOrEqualToVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/GreaterThanOrEqualToVersionConstraint.php on line 12
+[16-Apr-2025 22:35:44 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/OrVersionConstraintGroup.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/OrVersionConstraintGroup.php on line 12
+[16-Apr-2025 22:35:46 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorAndMinorVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorAndMinorVersionConstraint.php on line 12
+[16-Apr-2025 22:35:46 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorVersionConstraint.php on line 12
+[25-Apr-2025 20:23:34 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\VersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AbstractVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AbstractVersionConstraint.php on line 12
+[25-Apr-2025 20:23:36 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AndVersionConstraintGroup.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AndVersionConstraintGroup.php on line 12
+[25-Apr-2025 20:23:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\VersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AnyVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/AnyVersionConstraint.php on line 12
+[25-Apr-2025 20:23:40 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/ExactVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/ExactVersionConstraint.php on line 12
+[25-Apr-2025 20:23:42 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/GreaterThanOrEqualToVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/GreaterThanOrEqualToVersionConstraint.php on line 12
+[25-Apr-2025 20:23:43 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/OrVersionConstraintGroup.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/OrVersionConstraintGroup.php on line 12
+[25-Apr-2025 20:23:45 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorAndMinorVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorAndMinorVersionConstraint.php on line 12
+[25-Apr-2025 20:23:47 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Version\AbstractVersionConstraint" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorVersionConstraint.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/constraints/SpecificMajorVersionConstraint.php on line 12

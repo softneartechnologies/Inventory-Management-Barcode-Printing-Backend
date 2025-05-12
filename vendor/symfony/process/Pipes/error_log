@@ -1,0 +1,24 @@
+[14-Apr-2025 22:56:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Pipes\PipesInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/AbstractPipes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/AbstractPipes.php on line 21
+[14-Apr-2025 22:56:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Pipes\AbstractPipes" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/UnixPipes.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/UnixPipes.php on line 23
+[14-Apr-2025 22:56:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Pipes\AbstractPipes" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/WindowsPipes.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/WindowsPipes.php on line 27
+[24-Apr-2025 13:08:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Pipes\PipesInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/AbstractPipes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/AbstractPipes.php on line 21
+[24-Apr-2025 13:08:14 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Pipes\AbstractPipes" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/UnixPipes.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/UnixPipes.php on line 23
+[24-Apr-2025 13:08:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Pipes\AbstractPipes" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/WindowsPipes.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Pipes/WindowsPipes.php on line 27

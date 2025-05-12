@@ -1,0 +1,52 @@
+[19-Apr-2025 12:48:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php on line 10
+[19-Apr-2025 12:48:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php on line 9
+[19-Apr-2025 12:48:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJobRecord.php on line 7
+[19-Apr-2025 12:48:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/FakeJob.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/FakeJob.php on line 7
+[19-Apr-2025 12:48:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php on line 14
+[19-Apr-2025 12:48:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php on line 9
+[19-Apr-2025 12:48:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php on line 9
+[19-Apr-2025 12:48:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php on line 8
+[29-Apr-2025 02:00:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/BeanstalkdJob.php on line 10
+[29-Apr-2025 02:00:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJob.php on line 9
+[29-Apr-2025 02:00:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/DatabaseJobRecord.php on line 7
+[29-Apr-2025 02:00:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/FakeJob.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/FakeJob.php on line 7
+[29-Apr-2025 02:00:24 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php on line 14
+[29-Apr-2025 02:00:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/RedisJob.php on line 9
+[29-Apr-2025 02:00:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SqsJob.php on line 9
+[29-Apr-2025 02:00:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Queue\Jobs\Job" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/SyncJob.php on line 8

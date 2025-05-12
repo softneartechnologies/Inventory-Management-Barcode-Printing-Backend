@@ -1,0 +1,32 @@
+[19-Apr-2025 04:26:21 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/Footnote.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/Footnote.php on line 21
+[19-Apr-2025 04:26:24 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteBackref.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteBackref.php on line 24
+[19-Apr-2025 04:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteContainer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteContainer.php on line 19
+[19-Apr-2025 04:26:30 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteRef.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteRef.php on line 21
+[29-Apr-2025 13:26:08 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/Footnote.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/Footnote.php on line 21
+[29-Apr-2025 13:26:10 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteBackref.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteBackref.php on line 24
+[29-Apr-2025 13:26:12 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteContainer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteContainer.php on line 19
+[29-Apr-2025 13:26:14 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteRef.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Node/FootnoteRef.php on line 21

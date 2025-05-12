@@ -1,0 +1,4 @@
+[19-Apr-2025 17:01:38 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/ConcurrencyLimiterBuilder.php on line 8
+[19-Apr-2025 17:01:42 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/DurationLimiterBuilder.php on line 8
+[28-Apr-2025 06:56:22 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/ConcurrencyLimiterBuilder.php on line 8
+[28-Apr-2025 06:56:26 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Limiters/DurationLimiterBuilder.php on line 8

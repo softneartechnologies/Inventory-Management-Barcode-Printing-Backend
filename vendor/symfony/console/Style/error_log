@@ -1,0 +1,20 @@
+[14-Apr-2025 20:55:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/OutputStyle.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/OutputStyle.php on line 24
+[14-Apr-2025 23:31:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\OutputStyle" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php on line 39
+[16-Apr-2025 23:28:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\OutputStyle" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php on line 39
+[24-Apr-2025 10:55:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Output\OutputInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/OutputStyle.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/OutputStyle.php on line 24
+[24-Apr-2025 10:55:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\OutputStyle" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Style/SymfonyStyle.php on line 39

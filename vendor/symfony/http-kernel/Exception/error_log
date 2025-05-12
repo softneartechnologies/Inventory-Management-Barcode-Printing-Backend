@@ -1,0 +1,136 @@
+[14-Apr-2025 20:56:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/AccessDeniedHttpException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/AccessDeniedHttpException.php on line 18
+[14-Apr-2025 20:56:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/BadRequestHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/BadRequestHttpException.php on line 17
+[14-Apr-2025 20:56:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ConflictHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ConflictHttpException.php on line 17
+[14-Apr-2025 20:56:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/GoneHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/GoneHttpException.php on line 17
+[14-Apr-2025 20:56:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Exception\HttpExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/HttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/HttpException.php on line 19
+[14-Apr-2025 20:56:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php on line 17
+[14-Apr-2025 20:56:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LockedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LockedHttpException.php on line 17
+[14-Apr-2025 20:56:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php on line 17
+[14-Apr-2025 20:56:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotAcceptableHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotAcceptableHttpException.php on line 17
+[14-Apr-2025 20:56:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php on line 17
+[14-Apr-2025 20:56:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionFailedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionFailedHttpException.php on line 17
+[14-Apr-2025 20:56:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionRequiredHttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionRequiredHttpException.php on line 19
+[14-Apr-2025 20:56:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ServiceUnavailableHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ServiceUnavailableHttpException.php on line 17
+[14-Apr-2025 20:56:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/TooManyRequestsHttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/TooManyRequestsHttpException.php on line 19
+[14-Apr-2025 20:56:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnauthorizedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnauthorizedHttpException.php on line 17
+[14-Apr-2025 20:56:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnprocessableEntityHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnprocessableEntityHttpException.php on line 17
+[14-Apr-2025 20:56:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnsupportedMediaTypeHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnsupportedMediaTypeHttpException.php on line 17
+[24-Apr-2025 12:47:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/AccessDeniedHttpException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/AccessDeniedHttpException.php on line 18
+[24-Apr-2025 12:47:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/BadRequestHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/BadRequestHttpException.php on line 17
+[24-Apr-2025 12:47:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ConflictHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ConflictHttpException.php on line 17
+[24-Apr-2025 12:47:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/GoneHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/GoneHttpException.php on line 17
+[24-Apr-2025 12:47:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Exception\HttpExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/HttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/HttpException.php on line 19
+[24-Apr-2025 12:48:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LengthRequiredHttpException.php on line 17
+[24-Apr-2025 12:48:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LockedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/LockedHttpException.php on line 17
+[24-Apr-2025 12:48:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/MethodNotAllowedHttpException.php on line 17
+[24-Apr-2025 12:48:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotAcceptableHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotAcceptableHttpException.php on line 17
+[24-Apr-2025 12:48:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php on line 17
+[24-Apr-2025 12:48:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionFailedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionFailedHttpException.php on line 17
+[24-Apr-2025 12:48:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionRequiredHttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/PreconditionRequiredHttpException.php on line 19
+[24-Apr-2025 12:48:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ServiceUnavailableHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/ServiceUnavailableHttpException.php on line 17
+[24-Apr-2025 12:48:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/TooManyRequestsHttpException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/TooManyRequestsHttpException.php on line 19
+[24-Apr-2025 12:48:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnauthorizedHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnauthorizedHttpException.php on line 17
+[24-Apr-2025 12:48:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnprocessableEntityHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnprocessableEntityHttpException.php on line 17
+[24-Apr-2025 12:48:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Exception\HttpException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnsupportedMediaTypeHttpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Exception/UnsupportedMediaTypeHttpException.php on line 17

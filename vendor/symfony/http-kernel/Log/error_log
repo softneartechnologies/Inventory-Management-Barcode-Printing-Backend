@@ -1,0 +1,8 @@
+[14-Apr-2025 20:58:12 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Log/Logger.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Log/Logger.php on line 25
+[24-Apr-2025 12:50:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Log/Logger.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Log/Logger.php on line 25

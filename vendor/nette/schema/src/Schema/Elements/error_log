@@ -1,0 +1,12 @@
+[17-Apr-2025 11:44:16 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[17-Apr-2025 11:44:20 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Structure.php on line 18
+[17-Apr-2025 11:44:21 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 18
+[27-Apr-2025 08:26:48 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[27-Apr-2025 08:26:51 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 18
+[27-Apr-2025 08:26:57 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[27-Apr-2025 08:27:00 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 18
+[27-Apr-2025 08:27:13 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[27-Apr-2025 08:27:16 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 18
+[27-Apr-2025 08:27:30 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/AnyOf.php on line 18
+[27-Apr-2025 08:27:33 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Type.php on line 18
+[27-Apr-2025 18:17:38 UTC] PHP Fatal error:  Trait "Nette\Schema\Elements\Base" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Elements/Structure.php on line 18

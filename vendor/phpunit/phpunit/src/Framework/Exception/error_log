@@ -1,0 +1,120 @@
+[18-Apr-2025 04:54:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php on line 17
+[18-Apr-2025 04:54:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php on line 17
+[18-Apr-2025 04:54:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php on line 17
+[18-Apr-2025 04:54:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php on line 43
+[18-Apr-2025 04:54:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php on line 26
+[18-Apr-2025 04:54:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php on line 19
+[18-Apr-2025 04:54:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php on line 17
+[18-Apr-2025 04:54:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\CodeCoverageException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php on line 17
+[18-Apr-2025 04:54:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php on line 17
+[18-Apr-2025 04:54:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php on line 17
+[18-Apr-2025 04:54:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php on line 17
+[18-Apr-2025 04:54:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php on line 19
+[18-Apr-2025 04:54:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php on line 17
+[18-Apr-2025 04:54:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php on line 19
+[18-Apr-2025 04:54:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownTypeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownTypeException.php on line 19
+[27-Apr-2025 15:11:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php on line 17
+[27-Apr-2025 15:11:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/CodeCoverageException.php on line 17
+[27-Apr-2025 15:11:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/EmptyStringException.php on line 17
+[27-Apr-2025 15:11:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Exception.php on line 43
+[27-Apr-2025 15:11:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ExpectationFailedException.php on line 26
+[27-Apr-2025 15:11:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/GeneratorNotSupportedException.php on line 19
+[27-Apr-2025 15:11:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidArgumentException.php on line 17
+[27-Apr-2025 15:11:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\CodeCoverageException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidCoversTargetException.php on line 17
+[27-Apr-2025 15:11:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDataProviderException.php on line 17
+[27-Apr-2025 15:11:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/InvalidDependencyException.php on line 17
+[27-Apr-2025 15:11:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/NoChildTestSuiteException.php on line 17
+[27-Apr-2025 15:11:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/PhptAssertionFailedError.php on line 19
+[27-Apr-2025 15:11:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/ProcessIsolationException.php on line 17
+[27-Apr-2025 15:11:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownClassOrInterfaceException.php on line 19
+[27-Apr-2025 15:11:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownTypeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/UnknownTypeException.php on line 19

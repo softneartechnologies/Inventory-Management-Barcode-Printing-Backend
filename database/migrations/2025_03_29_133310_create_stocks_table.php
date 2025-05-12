@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
+            $table->string('location_id')->nullable();
             $table->unsignedBigInteger('product_id');
+            $table->string('vendor_id')->nullable();
+            $table->string('category_id')->nullable();
+            $table->date('stock_date')->nullable();
             $table->integer('current_stock')->default(0);
             $table->integer('new_stock')->default(0);
             $table->integer('quantity')->default(0);
-            $table->string('unit')->nullable();
-            $table->string('unit_cost')->nullable();
+            $table->string('unit_of_measure')->nullable();
+            $table->string('per_unit_cost')->nullable();
             $table->string('total_cost')->nullable();
             $table->text('reason_for_update')->nullable();
-            $table->string('location_id')->nullable();
-            $table->date('stock_date')->nullable();
-            $table->string('vendor_id')->nullable();
-            $table->string('category_id')->nullable();
             $table->string('adjustment')->nullable(); // Remove the underscore (_) to avoid errors
             $table->timestamps();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');

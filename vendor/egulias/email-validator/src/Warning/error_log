@@ -1,0 +1,160 @@
+[16-Apr-2025 06:40:51 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php on line 7
+[16-Apr-2025 06:40:53 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedString.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedString.php on line 5
+[16-Apr-2025 06:40:55 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/TLD.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/TLD.php on line 5
+[16-Apr-2025 11:22:53 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php on line 5
+[16-Apr-2025 11:22:55 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php on line 5
+[16-Apr-2025 11:22:58 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php on line 5
+[16-Apr-2025 11:23:02 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/Comment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/Comment.php on line 5
+[16-Apr-2025 11:23:05 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php on line 5
+[16-Apr-2025 11:23:09 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php on line 5
+[16-Apr-2025 11:23:13 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php on line 7
+[16-Apr-2025 11:23:16 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php on line 5
+[16-Apr-2025 11:23:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php on line 5
+[16-Apr-2025 11:23:22 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php on line 5
+[16-Apr-2025 11:23:26 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php on line 5
+[16-Apr-2025 11:23:31 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php on line 5
+[16-Apr-2025 11:23:36 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php on line 5
+[16-Apr-2025 11:23:38 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php on line 5
+[16-Apr-2025 11:23:41 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php on line 5
+[16-Apr-2025 11:23:45 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php on line 5
+[16-Apr-2025 11:23:49 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php on line 5
+[25-Apr-2025 20:17:07 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/AddressLiteral.php on line 5
+[25-Apr-2025 20:17:09 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSNearAt.php on line 5
+[25-Apr-2025 20:17:10 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/CFWSWithFWS.php on line 5
+[25-Apr-2025 20:17:12 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/Comment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/Comment.php on line 5
+[25-Apr-2025 20:17:14 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DeprecatedComment.php on line 5
+[25-Apr-2025 20:17:16 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/DomainLiteral.php on line 5
+[25-Apr-2025 20:17:17 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/EmailTooLong.php on line 7
+[25-Apr-2025 20:17:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6BadChar.php on line 5
+[25-Apr-2025 20:17:20 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonEnd.php on line 5
+[25-Apr-2025 20:17:23 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6ColonStart.php on line 5
+[25-Apr-2025 20:17:24 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6Deprecated.php on line 5
+[25-Apr-2025 20:17:26 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6DoubleColon.php on line 5
+[25-Apr-2025 20:17:28 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6GroupCount.php on line 5
+[25-Apr-2025 20:17:30 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/IPV6MaxGroups.php on line 5
+[25-Apr-2025 20:17:31 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/LocalTooLong.php on line 5
+[25-Apr-2025 20:17:33 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/NoDNSMXRecord.php on line 5
+[25-Apr-2025 20:17:35 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/ObsoleteDTEXT.php on line 5
+[25-Apr-2025 20:17:37 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedPart.php on line 7
+[25-Apr-2025 20:17:39 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedString.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/QuotedString.php on line 5
+[25-Apr-2025 20:17:40 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Warning\Warning" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/TLD.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Warning/TLD.php on line 5

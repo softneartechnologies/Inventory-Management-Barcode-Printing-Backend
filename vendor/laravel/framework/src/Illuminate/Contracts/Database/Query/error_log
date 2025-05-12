@@ -1,0 +1,8 @@
+[20-Apr-2025 08:08:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Query\Expression" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Database/Query/ConditionExpression.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Database/Query/ConditionExpression.php on line 5
+[30-Apr-2025 21:00:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Query\Expression" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Database/Query/ConditionExpression.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Database/Query/ConditionExpression.php on line 5

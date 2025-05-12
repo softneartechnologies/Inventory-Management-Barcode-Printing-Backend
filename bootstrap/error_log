@@ -1,0 +1,8 @@
+[14-Apr-2025 05:25:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/softoroa/flight.softnear.com/bootstrap/app.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/bootstrap/app.php on line 7
+[23-Apr-2025 14:24:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/softoroa/flight.softnear.com/bootstrap/app.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/bootstrap/app.php on line 7

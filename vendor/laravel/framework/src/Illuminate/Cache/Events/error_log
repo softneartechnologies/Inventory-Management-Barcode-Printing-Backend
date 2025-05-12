@@ -1,0 +1,88 @@
+[19-Apr-2025 03:03:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWriteFailed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWriteFailed.php on line 5
+[19-Apr-2025 03:26:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php on line 5
+[19-Apr-2025 03:26:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php on line 5
+[19-Apr-2025 03:26:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/ForgettingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/ForgettingKey.php on line 5
+[19-Apr-2025 03:26:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgetFailed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgetFailed.php on line 5
+[19-Apr-2025 03:26:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php on line 5
+[19-Apr-2025 03:26:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php on line 5
+[19-Apr-2025 03:26:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingKey.php on line 5
+[19-Apr-2025 03:27:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingManyKeys.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingManyKeys.php on line 5
+[19-Apr-2025 03:27:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingKey.php on line 5
+[19-Apr-2025 03:27:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingManyKeys.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingManyKeys.php on line 5
+[28-Apr-2025 06:22:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheHit.php on line 5
+[28-Apr-2025 06:22:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/CacheMissed.php on line 5
+[28-Apr-2025 06:22:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/ForgettingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/ForgettingKey.php on line 5
+[28-Apr-2025 06:22:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgetFailed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgetFailed.php on line 5
+[28-Apr-2025 06:22:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyForgotten.php on line 5
+[28-Apr-2025 06:22:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWriteFailed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWriteFailed.php on line 5
+[28-Apr-2025 06:22:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/KeyWritten.php on line 5
+[28-Apr-2025 06:22:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingKey.php on line 5
+[28-Apr-2025 06:22:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingManyKeys.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/RetrievingManyKeys.php on line 5
+[28-Apr-2025 06:22:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingKey.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingKey.php on line 5
+[28-Apr-2025 06:22:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cache\Events\CacheEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingManyKeys.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Cache/Events/WritingManyKeys.php on line 5

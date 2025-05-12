@@ -1,0 +1,147 @@
+[16-Apr-2025 11:51:01 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php on line 4
+[16-Apr-2025 11:51:04 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 1
+[16-Apr-2025 11:51:04 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[16-Apr-2025 11:51:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllPrevious() on null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[16-Apr-2025 11:51:12 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[16-Apr-2025 11:51:12 UTC] PHP Warning:  Undefined variable $statusCode in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[16-Apr-2025 11:51:12 UTC] PHP Warning:  Undefined variable $statusText in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[16-Apr-2025 11:51:12 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 5
+[16-Apr-2025 11:51:16 UTC] PHP Warning:  Undefined variable $logs in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[16-Apr-2025 11:51:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $prefix in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $i in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[16-Apr-2025 11:51:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[16-Apr-2025 11:51:24 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 1
+[16-Apr-2025 11:51:24 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[16-Apr-2025 11:51:24 UTC] PHP Warning:  Undefined variable $expand in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[16-Apr-2025 11:51:24 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 5
+[16-Apr-2025 11:51:30 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[16-Apr-2025 11:51:30 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[16-Apr-2025 11:51:30 UTC] PHP Warning:  Undefined variable $numExceptions in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 6
+[16-Apr-2025 11:51:30 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[16-Apr-2025 11:51:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[16-Apr-2025 11:51:30 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10
+[25-Apr-2025 08:15:58 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php on line 4
+[25-Apr-2025 08:16:01 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 1
+[25-Apr-2025 08:16:01 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[25-Apr-2025 08:16:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllPrevious() on null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[25-Apr-2025 08:16:03 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[25-Apr-2025 08:16:03 UTC] PHP Warning:  Undefined variable $statusCode in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[25-Apr-2025 08:16:03 UTC] PHP Warning:  Undefined variable $statusText in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[25-Apr-2025 08:16:03 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 5
+[25-Apr-2025 08:16:05 UTC] PHP Warning:  Undefined variable $logs in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[25-Apr-2025 08:16:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $prefix in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $i in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[25-Apr-2025 08:16:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[25-Apr-2025 08:16:08 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 1
+[25-Apr-2025 08:16:08 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[25-Apr-2025 08:16:08 UTC] PHP Warning:  Undefined variable $expand in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[25-Apr-2025 08:16:08 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 5
+[25-Apr-2025 08:16:10 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[25-Apr-2025 08:16:10 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[25-Apr-2025 08:16:10 UTC] PHP Warning:  Undefined variable $numExceptions in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 6
+[25-Apr-2025 08:16:10 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[25-Apr-2025 08:16:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[25-Apr-2025 08:16:10 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10
+[28-Apr-2025 10:16:03 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/error.html.php on line 4
+[28-Apr-2025 10:16:06 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 1
+[28-Apr-2025 10:16:06 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[28-Apr-2025 10:16:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getAllPrevious() on null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception.html.php on line 5
+[28-Apr-2025 10:16:07 UTC] PHP Warning:  Undefined variable $exceptionMessage in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[28-Apr-2025 10:16:07 UTC] PHP Warning:  Undefined variable $statusCode in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[28-Apr-2025 10:16:07 UTC] PHP Warning:  Undefined variable $statusText in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 1
+[28-Apr-2025 10:16:07 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/exception_full.html.php on line 5
+[28-Apr-2025 10:16:07 UTC] PHP Warning:  Undefined variable $logs in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[28-Apr-2025 10:16:07 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/logs.html.php on line 13
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $prefix in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $i in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 2
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $style in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 7
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 11
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $trace in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/trace.html.php on line 34
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 1
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[28-Apr-2025 10:16:09 UTC] PHP Warning:  Undefined variable $expand in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 4
+[28-Apr-2025 10:16:09 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces.html.php on line 5
+[28-Apr-2025 10:16:11 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[28-Apr-2025 10:16:11 UTC] PHP Warning:  Undefined variable $index in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 4
+[28-Apr-2025 10:16:11 UTC] PHP Warning:  Undefined variable $numExceptions in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 6
+[28-Apr-2025 10:16:11 UTC] PHP Warning:  Undefined variable $exception in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[28-Apr-2025 10:16:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 9
+[28-Apr-2025 10:16:11 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/views/traces_text.html.php on line 10

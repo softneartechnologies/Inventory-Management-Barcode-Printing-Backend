@@ -1,0 +1,32 @@
+[19-Apr-2025 12:51:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/DirectoryExists.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/DirectoryExists.php on line 18
+[19-Apr-2025 12:51:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/FileExists.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/FileExists.php on line 18
+[19-Apr-2025 12:51:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsReadable.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsReadable.php on line 18
+[19-Apr-2025 12:52:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsWritable.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsWritable.php on line 18
+[29-Apr-2025 06:06:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsReadable.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsReadable.php on line 18
+[29-Apr-2025 06:06:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsWritable.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/IsWritable.php on line 18
+[29-Apr-2025 10:14:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/DirectoryExists.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/DirectoryExists.php on line 18
+[29-Apr-2025 10:14:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/FileExists.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Filesystem/FileExists.php on line 18

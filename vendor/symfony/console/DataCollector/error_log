@@ -1,0 +1,8 @@
+[14-Apr-2025 20:49:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\DataCollector\DataCollector" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/DataCollector/CommandDataCollector.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/DataCollector/CommandDataCollector.php on line 28
+[24-Apr-2025 17:41:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\DataCollector\DataCollector" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/DataCollector/CommandDataCollector.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/DataCollector/CommandDataCollector.php on line 28

@@ -1,0 +1,8 @@
+[21-Apr-2025 10:43:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Providers\Storage" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Storage/Illuminate.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Storage/Illuminate.php on line 19
+[25-Apr-2025 06:11:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Providers\Storage" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Storage/Illuminate.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/Storage/Illuminate.php on line 19

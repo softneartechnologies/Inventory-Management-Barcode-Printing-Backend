@@ -1,0 +1,40 @@
+[17-Apr-2025 09:43:43 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exact.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exact.php on line 17
+[17-Apr-2025 09:43:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php on line 16
+[18-Apr-2025 14:11:08 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php on line 17
+[18-Apr-2025 14:11:10 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtMost.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtMost.php on line 17
+[18-Apr-2025 14:11:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\CountValidator\CountValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/CountValidatorAbstract.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/CountValidatorAbstract.php on line 15
+[27-Apr-2025 08:47:26 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtLeast.php on line 17
+[27-Apr-2025 08:47:28 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtMost.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/AtMost.php on line 17
+[27-Apr-2025 08:47:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\CountValidator\CountValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/CountValidatorAbstract.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/CountValidatorAbstract.php on line 15
+[27-Apr-2025 08:47:33 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\CountValidator\CountValidatorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exact.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exact.php on line 17
+[27-Apr-2025 08:47:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Exception\MockeryExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php on line 16

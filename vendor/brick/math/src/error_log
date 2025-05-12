@@ -1,0 +1,24 @@
+[15-Apr-2025 10:29:10 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigDecimal.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigDecimal.php on line 18
+[15-Apr-2025 10:29:12 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigInteger.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigInteger.php on line 23
+[15-Apr-2025 10:29:15 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigRational.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigRational.php on line 20
+[24-Apr-2025 08:48:43 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigDecimal.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigDecimal.php on line 18
+[24-Apr-2025 08:48:44 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigInteger.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigInteger.php on line 23
+[24-Apr-2025 08:48:48 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigRational.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/BigRational.php on line 20

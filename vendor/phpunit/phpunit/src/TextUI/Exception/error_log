@@ -1,0 +1,40 @@
+[18-Apr-2025 05:17:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/CannotOpenSocketException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/CannotOpenSocketException.php on line 20
+[18-Apr-2025 05:17:17 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/InvalidSocketException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/InvalidSocketException.php on line 20
+[18-Apr-2025 05:17:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php on line 17
+[18-Apr-2025 05:17:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php on line 20
+[18-Apr-2025 05:17:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php on line 20
+[27-Apr-2025 17:43:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/CannotOpenSocketException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/CannotOpenSocketException.php on line 20
+[27-Apr-2025 17:43:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/InvalidSocketException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/InvalidSocketException.php on line 20
+[27-Apr-2025 17:43:36 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/RuntimeException.php on line 17
+[27-Apr-2025 17:43:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestDirectoryNotFoundException.php on line 20
+[27-Apr-2025 17:43:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Exception/TestFileNotFoundException.php on line 20

@@ -1,0 +1,56 @@
+[16-Apr-2025 14:06:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotDecodeContent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotDecodeContent.php on line 10
+[16-Apr-2025 14:07:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotEncodeContent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotEncodeContent.php on line 10
+[16-Apr-2025 14:07:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/ChainedFormatter.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/ChainedFormatter.php on line 8
+[16-Apr-2025 14:07:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Encoder" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/JoseEncoder.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/JoseEncoder.php on line 21
+[16-Apr-2025 14:07:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/MicrosecondBasedDateConversion.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/MicrosecondBasedDateConversion.php on line 12
+[16-Apr-2025 14:07:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnifyAudience.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnifyAudience.php on line 13
+[16-Apr-2025 14:07:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnixTimestampDates.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnixTimestampDates.php on line 12
+[25-Apr-2025 08:40:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotDecodeContent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotDecodeContent.php on line 10
+[25-Apr-2025 08:40:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotEncodeContent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/CannotEncodeContent.php on line 10
+[25-Apr-2025 08:40:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/ChainedFormatter.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/ChainedFormatter.php on line 8
+[25-Apr-2025 08:40:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Encoder" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/JoseEncoder.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/JoseEncoder.php on line 21
+[25-Apr-2025 08:40:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/MicrosecondBasedDateConversion.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/MicrosecondBasedDateConversion.php on line 12
+[25-Apr-2025 08:40:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnifyAudience.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnifyAudience.php on line 13
+[25-Apr-2025 08:40:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\ClaimsFormatter" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnixTimestampDates.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Encoding/UnixTimestampDates.php on line 12

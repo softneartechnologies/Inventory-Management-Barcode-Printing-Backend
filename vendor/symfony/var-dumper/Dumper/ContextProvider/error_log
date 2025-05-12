@@ -1,0 +1,24 @@
+[16-Apr-2025 11:27:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php on line 19
+[16-Apr-2025 11:27:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php on line 23
+[16-Apr-2025 11:27:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php on line 26
+[24-Apr-2025 20:24:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php on line 19
+[24-Apr-2025 20:25:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php on line 23
+[24-Apr-2025 20:25:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\VarDumper\Dumper\ContextProvider\ContextProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php on line 26

@@ -1,0 +1,8 @@
+[19-Apr-2025 10:32:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php on line 19
+[29-Apr-2025 10:16:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Cli/Exception.php on line 19

@@ -1,0 +1,624 @@
+[17-Apr-2025 09:32:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php on line 26
+[17-Apr-2025 09:32:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php on line 32
+[17-Apr-2025 09:32:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php on line 32
+[17-Apr-2025 09:32:19 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php on line 35
+[17-Apr-2025 09:32:21 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\StreamHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 28
+[17-Apr-2025 09:32:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php on line 32
+[17-Apr-2025 09:32:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php on line 22
+[17-Apr-2025 09:32:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[17-Apr-2025 09:32:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[17-Apr-2025 09:32:34 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[17-Apr-2025 09:32:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[17-Apr-2025 09:32:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[17-Apr-2025 09:32:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 29
+[17-Apr-2025 09:32:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 30
+[17-Apr-2025 09:32:45 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[17-Apr-2025 09:32:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 37
+[17-Apr-2025 09:32:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[17-Apr-2025 09:32:55 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[17-Apr-2025 09:32:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[17-Apr-2025 09:45:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php on line 25
+[17-Apr-2025 09:45:45 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php on line 24
+[17-Apr-2025 09:45:47 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php on line 21
+[17-Apr-2025 09:45:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php on line 23
+[17-Apr-2025 09:45:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\BufferHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php on line 39
+[17-Apr-2025 09:45:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php on line 25
+[17-Apr-2025 09:45:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php on line 28
+[17-Apr-2025 09:45:55 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php on line 49
+[17-Apr-2025 09:45:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php on line 60
+[17-Apr-2025 09:45:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php on line 25
+[17-Apr-2025 09:46:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php on line 24
+[17-Apr-2025 09:46:02 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php on line 30
+[17-Apr-2025 09:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php on line 40
+[17-Apr-2025 09:46:06 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php on line 23
+[17-Apr-2025 09:46:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php on line 27
+[17-Apr-2025 09:46:09 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php on line 32
+[17-Apr-2025 09:46:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php on line 26
+[17-Apr-2025 09:46:15 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php on line 23
+[17-Apr-2025 09:46:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php on line 19
+[17-Apr-2025 09:46:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php on line 35
+[17-Apr-2025 09:46:22 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php on line 29
+[17-Apr-2025 09:46:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php on line 23
+[17-Apr-2025 09:46:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php on line 20
+[17-Apr-2025 09:46:27 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php on line 27
+[17-Apr-2025 09:46:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php on line 22
+[17-Apr-2025 09:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php on line 23
+[17-Apr-2025 09:46:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php on line 23
+[17-Apr-2025 09:46:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php on line 35
+[17-Apr-2025 09:46:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php on line 23
+[17-Apr-2025 09:46:39 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php on line 29
+[17-Apr-2025 09:46:41 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php on line 25
+[17-Apr-2025 09:46:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php on line 27
+[17-Apr-2025 09:46:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php on line 38
+[17-Apr-2025 09:46:46 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php on line 89
+[17-Apr-2025 09:46:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php on line 28
+[17-Apr-2025 09:46:53 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php on line 28
+[18-Apr-2025 14:12:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php on line 28
+[18-Apr-2025 14:12:34 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php on line 27
+[18-Apr-2025 14:30:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php on line 28
+[18-Apr-2025 14:30:15 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php on line 38
+[18-Apr-2025 14:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php on line 25
+[26-Apr-2025 18:19:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php on line 25
+[26-Apr-2025 18:19:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php on line 24
+[26-Apr-2025 18:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AbstractSyslogHandler.php on line 21
+[26-Apr-2025 18:19:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/AmqpHandler.php on line 23
+[26-Apr-2025 18:19:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php on line 28
+[26-Apr-2025 18:19:42 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/BufferHandler.php on line 27
+[26-Apr-2025 18:19:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ChromePHPHandler.php on line 28
+[26-Apr-2025 18:19:46 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CouchDBHandler.php on line 38
+[26-Apr-2025 18:19:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php on line 25
+[26-Apr-2025 18:19:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\BufferHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DeduplicationHandler.php on line 39
+[26-Apr-2025 18:19:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DoctrineCouchDBHandler.php on line 25
+[26-Apr-2025 18:19:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/DynamoDbHandler.php on line 28
+[26-Apr-2025 18:19:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticaHandler.php on line 49
+[26-Apr-2025 18:19:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ElasticsearchHandler.php on line 60
+[26-Apr-2025 18:20:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php on line 25
+[26-Apr-2025 18:20:03 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FallbackGroupHandler.php on line 24
+[26-Apr-2025 18:20:05 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FilterHandler.php on line 30
+[26-Apr-2025 18:20:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FingersCrossedHandler.php on line 40
+[26-Apr-2025 18:20:10 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FirePHPHandler.php on line 23
+[26-Apr-2025 18:20:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FleepHookHandler.php on line 27
+[26-Apr-2025 18:20:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php on line 32
+[26-Apr-2025 18:20:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GelfHandler.php on line 26
+[26-Apr-2025 18:20:22 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/GroupHandler.php on line 23
+[26-Apr-2025 18:20:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/Handler.php on line 19
+[26-Apr-2025 18:20:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/HandlerWrapper.php on line 35
+[26-Apr-2025 18:20:31 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/IFTTTHandler.php on line 29
+[26-Apr-2025 18:20:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/InsightOpsHandler.php on line 23
+[26-Apr-2025 18:20:35 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogEntriesHandler.php on line 20
+[26-Apr-2025 18:20:37 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php on line 27
+[26-Apr-2025 18:20:39 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/LogmaticHandler.php on line 22
+[26-Apr-2025 18:20:41 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MailHandler.php on line 23
+[26-Apr-2025 18:20:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php on line 23
+[26-Apr-2025 18:20:48 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/MongoDBHandler.php on line 35
+[26-Apr-2025 18:20:50 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NativeMailerHandler.php on line 23
+[26-Apr-2025 18:20:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NewRelicHandler.php on line 29
+[26-Apr-2025 18:20:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NoopHandler.php on line 25
+[26-Apr-2025 18:20:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/NullHandler.php on line 27
+[26-Apr-2025 18:20:58 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PHPConsoleHandler.php on line 89
+[27-Apr-2025 08:20:51 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[27-Apr-2025 08:20:52 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[27-Apr-2025 08:20:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[27-Apr-2025 08:20:54 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[27-Apr-2025 08:20:55 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[27-Apr-2025 08:20:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[27-Apr-2025 08:20:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[27-Apr-2025 08:20:57 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[27-Apr-2025 08:20:58 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[27-Apr-2025 08:20:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[27-Apr-2025 08:20:59 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[27-Apr-2025 08:21:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 29
+[27-Apr-2025 08:21:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[27-Apr-2025 08:21:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[27-Apr-2025 08:21:01 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 30
+[27-Apr-2025 08:21:02 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[27-Apr-2025 08:21:03 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 29
+[27-Apr-2025 08:21:03 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[27-Apr-2025 08:21:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[27-Apr-2025 08:21:05 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 37
+[27-Apr-2025 08:21:05 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 30
+[27-Apr-2025 08:21:06 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 29
+[27-Apr-2025 08:21:06 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackHandler.php on line 26
+[27-Apr-2025 08:21:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[27-Apr-2025 08:21:07 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[27-Apr-2025 08:21:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SlackWebhookHandler.php on line 26
+[27-Apr-2025 08:21:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 30
+[27-Apr-2025 08:21:09 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 37
+[27-Apr-2025 08:21:09 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[27-Apr-2025 08:21:10 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php on line 23
+[27-Apr-2025 08:21:10 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[27-Apr-2025 08:21:10 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[27-Apr-2025 08:21:11 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 37
+[27-Apr-2025 08:21:11 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SqsHandler.php on line 24
+[27-Apr-2025 08:21:12 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[27-Apr-2025 08:21:13 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php on line 25
+[27-Apr-2025 08:21:13 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[27-Apr-2025 08:21:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[27-Apr-2025 08:21:15 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SymfonyMailerHandler.php on line 29
+[27-Apr-2025 08:21:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[27-Apr-2025 08:21:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[27-Apr-2025 08:21:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogHandler.php on line 30
+[27-Apr-2025 08:21:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[27-Apr-2025 08:21:18 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractSyslogHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SyslogUdpHandler.php on line 26
+[27-Apr-2025 08:21:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TelegramBotHandler.php on line 37
+[27-Apr-2025 08:21:22 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php on line 71
+[27-Apr-2025 08:21:25 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\GroupHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/WhatFailureGroupHandler.php on line 23
+[27-Apr-2025 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php on line 25
+[27-Apr-2025 08:49:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/OverflowHandler.php on line 38
+[27-Apr-2025 08:49:28 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/ProcessHandler.php on line 28
+[27-Apr-2025 08:49:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PsrHandler.php on line 28
+[27-Apr-2025 08:49:35 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\SocketHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/PushoverHandler.php on line 26
+[27-Apr-2025 08:49:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisHandler.php on line 32
+[27-Apr-2025 08:49:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RedisPubSubHandler.php on line 32
+[27-Apr-2025 08:49:40 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractProcessingHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RollbarHandler.php on line 35
+[27-Apr-2025 08:49:42 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\StreamHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/RotatingFileHandler.php on line 28
+[27-Apr-2025 08:49:43 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\AbstractHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SamplingHandler.php on line 32
+[27-Apr-2025 08:49:45 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Handler\MailHandler" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Handler/SendGridHandler.php on line 22

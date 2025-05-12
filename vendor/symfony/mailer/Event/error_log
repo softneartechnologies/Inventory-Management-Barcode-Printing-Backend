@@ -1,0 +1,24 @@
+[14-Apr-2025 20:59:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/FailedMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/FailedMessageEvent.php on line 20
+[14-Apr-2025 20:59:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/MessageEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/MessageEvent.php on line 25
+[14-Apr-2025 20:59:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/SentMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/SentMessageEvent.php on line 20
+[24-Apr-2025 13:02:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/FailedMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/FailedMessageEvent.php on line 20
+[24-Apr-2025 13:02:22 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/MessageEvent.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/MessageEvent.php on line 25
+[24-Apr-2025 13:02:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/SentMessageEvent.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Event/SentMessageEvent.php on line 20

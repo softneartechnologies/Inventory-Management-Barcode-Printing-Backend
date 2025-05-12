@@ -1,0 +1,48 @@
+[18-Apr-2025 14:08:00 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php on line 27
+[18-Apr-2025 14:08:02 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php on line 26
+[18-Apr-2025 14:08:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\TableOfContentsGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php on line 33
+[18-Apr-2025 14:08:09 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php on line 27
+[18-Apr-2025 14:08:10 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php on line 21
+[18-Apr-2025 14:08:12 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php on line 21
+[27-Apr-2025 13:35:01 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsBuilder.php on line 27
+[27-Apr-2025 13:35:02 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsExtension.php on line 26
+[27-Apr-2025 13:35:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\TableOfContents\TableOfContentsGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsGenerator.php on line 33
+[27-Apr-2025 13:35:08 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php on line 27
+[27-Apr-2025 13:35:09 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php on line 21
+[27-Apr-2025 13:35:11 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsRenderer.php on line 21

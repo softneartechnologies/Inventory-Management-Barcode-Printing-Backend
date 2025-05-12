@@ -1,0 +1,48 @@
+[16-Apr-2025 16:28:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Builder" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Builder.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Builder.php on line 18
+[16-Apr-2025 16:28:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/InvalidTokenStructure.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/InvalidTokenStructure.php on line 9
+[16-Apr-2025 16:28:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Parser" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Parser.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Parser.php on line 18
+[16-Apr-2025 16:28:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\UnencryptedToken" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Plain.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Plain.php on line 11
+[16-Apr-2025 16:28:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/RegisteredClaimGiven.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/RegisteredClaimGiven.php on line 11
+[16-Apr-2025 16:28:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/UnsupportedHeaderFound.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/UnsupportedHeaderFound.php on line 9
+[25-Apr-2025 08:41:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Builder" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Builder.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Builder.php on line 18
+[25-Apr-2025 08:41:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/InvalidTokenStructure.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/InvalidTokenStructure.php on line 9
+[25-Apr-2025 08:41:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Parser" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Parser.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Parser.php on line 18
+[25-Apr-2025 08:41:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\UnencryptedToken" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Plain.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/Plain.php on line 11
+[25-Apr-2025 08:41:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/RegisteredClaimGiven.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/RegisteredClaimGiven.php on line 11
+[25-Apr-2025 08:41:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/UnsupportedHeaderFound.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Token/UnsupportedHeaderFound.php on line 9

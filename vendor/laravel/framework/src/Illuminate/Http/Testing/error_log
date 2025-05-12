@@ -1,0 +1,8 @@
+[19-Apr-2025 03:17:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\UploadedFile" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Testing/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Testing/File.php on line 7
+[29-Apr-2025 08:39:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\UploadedFile" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Testing/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Testing/File.php on line 7

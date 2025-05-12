@@ -1,0 +1,160 @@
+[17-Apr-2025 09:44:41 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php on line 13
+[17-Apr-2025 09:44:42 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php on line 13
+[17-Apr-2025 09:44:44 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php on line 13
+[17-Apr-2025 09:44:46 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php on line 15
+[17-Apr-2025 09:44:49 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php on line 13
+[17-Apr-2025 09:44:51 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php on line 16
+[17-Apr-2025 09:44:52 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php on line 17
+[17-Apr-2025 09:44:54 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php on line 19
+[17-Apr-2025 09:44:56 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php on line 18
+[17-Apr-2025 09:44:57 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsEqual.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsEqual.php on line 13
+[17-Apr-2025 09:44:59 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsSame.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsSame.php on line 13
+[17-Apr-2025 09:45:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Matcher\MatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MatcherAbstract.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MatcherAbstract.php on line 17
+[17-Apr-2025 09:45:04 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php on line 13
+[17-Apr-2025 09:45:06 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php on line 18
+[17-Apr-2025 09:45:08 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php on line 15
+[17-Apr-2025 09:45:10 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php on line 13
+[17-Apr-2025 09:45:11 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php on line 13
+[17-Apr-2025 09:45:13 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php on line 15
+[17-Apr-2025 09:45:15 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php on line 17
+[17-Apr-2025 09:45:17 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php on line 20
+[26-Apr-2025 18:18:15 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Pattern.php on line 15
+[26-Apr-2025 18:18:17 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php on line 17
+[26-Apr-2025 18:18:19 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Type.php on line 20
+[27-Apr-2025 08:48:39 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AndAnyOtherArgs.php on line 13
+[27-Apr-2025 08:48:41 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Any.php on line 13
+[27-Apr-2025 08:48:42 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyArgs.php on line 13
+[27-Apr-2025 08:48:44 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php on line 15
+[27-Apr-2025 08:48:47 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php on line 13
+[27-Apr-2025 08:48:49 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php on line 16
+[27-Apr-2025 08:48:51 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php on line 19
+[27-Apr-2025 08:48:53 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php on line 18
+[27-Apr-2025 08:48:54 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsEqual.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsEqual.php on line 13
+[27-Apr-2025 08:48:56 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsSame.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/IsSame.php on line 13
+[27-Apr-2025 08:48:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Matcher\MatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MatcherAbstract.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MatcherAbstract.php on line 17
+[27-Apr-2025 08:49:01 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MultiArgumentClosure.php on line 13
+[27-Apr-2025 08:49:03 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php on line 18
+[27-Apr-2025 08:49:05 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NoArgs.php on line 15
+[27-Apr-2025 08:49:07 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Not.php on line 13
+[27-Apr-2025 08:49:09 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php on line 13
+[27-Apr-2025 08:58:07 UTC] PHP Fatal error:  Uncaught Error: Class "Mockery\Matcher\MatcherAbstract" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php on line 17

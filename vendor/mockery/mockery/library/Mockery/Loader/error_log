@@ -1,0 +1,16 @@
+[17-Apr-2025 09:44:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Loader\Loader" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 17
+[17-Apr-2025 09:44:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Loader\Loader" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 28
+[27-Apr-2025 08:48:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Loader\Loader" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 17
+[27-Apr-2025 08:48:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Loader\Loader" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 28

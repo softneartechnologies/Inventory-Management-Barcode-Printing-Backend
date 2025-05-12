@@ -1,0 +1,18 @@
+[19-Apr-2025 12:50:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php on line 17
+[19-Apr-2025 12:50:50 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\Code\TestCollection::getIterator(): PHPUnit\Event\Code\TestCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\Code\TestCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestCollection.php on line 56
+[19-Apr-2025 12:50:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php on line 22
+[29-Apr-2025 10:13:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/Phpt.php on line 17
+[29-Apr-2025 10:13:56 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Event\Code\TestCollection::getIterator(): PHPUnit\Event\Code\TestCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Event\Code\TestCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestCollection.php on line 56
+[29-Apr-2025 10:14:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Event\Code\Test" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Test/TestMethod.php on line 22

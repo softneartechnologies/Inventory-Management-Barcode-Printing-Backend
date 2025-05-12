@@ -1,0 +1,8 @@
+[16-Apr-2025 21:28:46 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\SolutionsRepository" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php on line 13
+[25-Apr-2025 20:20:56 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\SolutionsRepository" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php on line 13

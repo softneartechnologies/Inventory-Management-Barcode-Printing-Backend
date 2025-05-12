@@ -1,0 +1,12 @@
+[24-Apr-2025 15:41:57 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/config/src/Configuration.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/config/src/Configuration.php on line 28
+[24-Apr-2025 15:42:01 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\MutableConfigurationInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/config/src/ConfigurationBuilderInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/config/src/ConfigurationBuilderInterface.php on line 19
+[24-Apr-2025 15:42:07 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/config/src/ReadOnlyConfiguration.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/config/src/ReadOnlyConfiguration.php on line 19

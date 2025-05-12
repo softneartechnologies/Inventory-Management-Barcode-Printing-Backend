@@ -1,0 +1,56 @@
+[19-Apr-2025 12:52:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Operator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/BinaryOperator.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/BinaryOperator.php on line 18
+[19-Apr-2025 12:52:11 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalAnd.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalAnd.php on line 15
+[19-Apr-2025 12:52:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\UnaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalNot.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalNot.php on line 22
+[19-Apr-2025 12:52:14 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalOr.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalOr.php on line 15
+[19-Apr-2025 12:52:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalXor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalXor.php on line 19
+[19-Apr-2025 12:52:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/Operator.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/Operator.php on line 15
+[19-Apr-2025 12:52:18 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Operator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/UnaryOperator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/UnaryOperator.php on line 17
+[29-Apr-2025 06:07:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Operator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/BinaryOperator.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/BinaryOperator.php on line 18
+[29-Apr-2025 06:07:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalAnd.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalAnd.php on line 15
+[29-Apr-2025 06:07:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\UnaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalNot.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalNot.php on line 22
+[29-Apr-2025 06:07:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalOr.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalOr.php on line 15
+[29-Apr-2025 06:07:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\BinaryOperator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalXor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/LogicalXor.php on line 19
+[29-Apr-2025 06:07:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/Operator.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/Operator.php on line 15
+[29-Apr-2025 06:07:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Operator" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/UnaryOperator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Operator/UnaryOperator.php on line 17

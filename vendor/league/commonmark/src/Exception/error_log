@@ -1,0 +1,48 @@
+[16-Apr-2025 16:30:32 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/AlreadyInitializedException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/AlreadyInitializedException.php on line 16
+[16-Apr-2025 16:30:36 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/IOException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/IOException.php on line 16
+[16-Apr-2025 16:30:38 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/InvalidArgumentException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/InvalidArgumentException.php on line 16
+[16-Apr-2025 16:30:41 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/LogicException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/LogicException.php on line 16
+[16-Apr-2025 16:30:44 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/MissingDependencyException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/MissingDependencyException.php on line 16
+[16-Apr-2025 16:30:46 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/UnexpectedEncodingException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/UnexpectedEncodingException.php on line 16
+[25-Apr-2025 08:42:49 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/AlreadyInitializedException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/AlreadyInitializedException.php on line 16
+[25-Apr-2025 08:42:53 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/IOException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/IOException.php on line 16
+[25-Apr-2025 08:42:54 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/InvalidArgumentException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/InvalidArgumentException.php on line 16
+[25-Apr-2025 08:42:56 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/LogicException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/LogicException.php on line 16
+[25-Apr-2025 08:42:58 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/MissingDependencyException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/MissingDependencyException.php on line 16
+[25-Apr-2025 08:43:00 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/UnexpectedEncodingException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Exception/UnexpectedEncodingException.php on line 16

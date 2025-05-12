@@ -1,0 +1,8 @@
+[16-Apr-2025 16:31:58 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Output\RenderedContentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Output/RenderedContent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Output/RenderedContent.php on line 18
+[25-Apr-2025 08:08:12 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Output\RenderedContentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Output/RenderedContent.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Output/RenderedContent.php on line 18

@@ -1,0 +1,8 @@
+[15-Apr-2025 14:59:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config-stubs/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config-stubs/app.php on line 16
+[24-Apr-2025 19:34:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config-stubs/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config-stubs/app.php on line 16

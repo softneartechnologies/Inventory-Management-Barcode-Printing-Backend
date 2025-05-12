@@ -1,0 +1,40 @@
+[19-Apr-2025 12:50:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\GarbageCollectorStatusProvider" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php81GarbageCollectorStatusProvider.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php81GarbageCollectorStatusProvider.php on line 21
+[19-Apr-2025 12:50:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\GarbageCollectorStatusProvider" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php83GarbageCollectorStatusProvider.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php83GarbageCollectorStatusProvider.php on line 19
+[19-Apr-2025 12:50:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\MemoryMeter" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php on line 20
+[19-Apr-2025 12:50:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php on line 20
+[19-Apr-2025 12:50:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php on line 22
+[29-Apr-2025 08:49:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\GarbageCollectorStatusProvider" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php81GarbageCollectorStatusProvider.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php81GarbageCollectorStatusProvider.php on line 21
+[29-Apr-2025 10:13:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\GarbageCollectorStatusProvider" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php83GarbageCollectorStatusProvider.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/Php83GarbageCollectorStatusProvider.php on line 19
+[29-Apr-2025 10:13:47 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\MemoryMeter" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemMemoryMeter.php on line 20
+[29-Apr-2025 10:13:48 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatch.php on line 20
+[29-Apr-2025 10:13:49 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Telemetry\StopWatch" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Value/Telemetry/SystemStopWatchWithOffset.php on line 22

@@ -1,0 +1,296 @@
+[21-Apr-2025 12:44:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ConvertLogTypes.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ConvertLogTypes.php on line 20
+[21-Apr-2025 12:44:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCloverToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCloverToReport.php on line 19
+[21-Apr-2025 12:44:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCrap4jToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCrap4jToReport.php on line 19
+[21-Apr-2025 12:44:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageHtmlToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageHtmlToReport.php on line 19
+[21-Apr-2025 12:44:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoveragePhpToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoveragePhpToReport.php on line 19
+[21-Apr-2025 12:44:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageTextToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageTextToReport.php on line 19
+[21-Apr-2025 12:44:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageXmlToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageXmlToReport.php on line 19
+[21-Apr-2025 12:45:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCacheDirectoryAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCacheDirectoryAttribute.php on line 21
+[21-Apr-2025 12:45:02 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCoverageElement.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCoverageElement.php on line 19
+[21-Apr-2025 12:45:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/LogToReportMigration.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/LogToReportMigration.php on line 23
+[21-Apr-2025 12:45:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php on line 20
+[21-Apr-2025 12:45:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromRootToCoverage.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromRootToCoverage.php on line 21
+[21-Apr-2025 12:45:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveCoverageDirectoriesToSource.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveCoverageDirectoriesToSource.php on line 22
+[21-Apr-2025 12:45:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistExcludesToCoverage.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistExcludesToCoverage.php on line 22
+[21-Apr-2025 12:45:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistIncludesToCoverage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistIncludesToCoverage.php on line 20
+[21-Apr-2025 12:45:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutResourceUsageDuringSmallTestsAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutResourceUsageDuringSmallTestsAttribute.php on line 21
+[21-Apr-2025 12:45:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutTodoAnnotatedTestsAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutTodoAnnotatedTestsAttribute.php on line 21
+[21-Apr-2025 12:45:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheResultFileAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheResultFileAttribute.php on line 21
+[21-Apr-2025 12:45:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheTokensAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheTokensAttribute.php on line 21
+[21-Apr-2025 12:45:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveConversionToExceptionsAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveConversionToExceptionsAttributes.php on line 21
+[21-Apr-2025 12:45:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementCacheDirectoryAttribute.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementCacheDirectoryAttribute.php on line 20
+[21-Apr-2025 12:45:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementProcessUncoveredFilesAttribute.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementProcessUncoveredFilesAttribute.php on line 20
+[21-Apr-2025 12:45:49 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveEmptyFilter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveEmptyFilter.php on line 21
+[21-Apr-2025 12:45:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveListeners.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveListeners.php on line 20
+[21-Apr-2025 12:45:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLogTypes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLogTypes.php on line 21
+[21-Apr-2025 12:45:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLoggingElements.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLoggingElements.php on line 22
+[21-Apr-2025 12:45:59 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveNoInteractionAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveNoInteractionAttribute.php on line 21
+[21-Apr-2025 12:46:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemovePrinterAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemovePrinterAttributes.php on line 21
+[21-Apr-2025 12:46:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveRegisterMockObjectsFromTestArgumentsRecursivelyAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveRegisterMockObjectsFromTestArgumentsRecursivelyAttribute.php on line 21
+[21-Apr-2025 12:46:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestDoxGroupsElement.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestDoxGroupsElement.php on line 20
+[21-Apr-2025 12:46:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestSuiteLoaderAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestSuiteLoaderAttributes.php on line 21
+[21-Apr-2025 12:46:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveVerboseAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveVerboseAttribute.php on line 21
+[21-Apr-2025 12:46:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBackupStaticAttributesAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBackupStaticAttributesAttribute.php on line 21
+[21-Apr-2025 12:46:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBeStrictAboutCoversAnnotationAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBeStrictAboutCoversAnnotationAttribute.php on line 21
+[21-Apr-2025 12:46:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameForceCoversAnnotationAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameForceCoversAnnotationAttribute.php on line 21
+[21-Apr-2025 12:46:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ReplaceRestrictDeprecationsWithIgnoreDeprecations.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ReplaceRestrictDeprecationsWithIgnoreDeprecations.php on line 21
+[21-Apr-2025 12:46:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/UpdateSchemaLocation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/UpdateSchemaLocation.php on line 23
+[01-May-2025 04:23:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ConvertLogTypes.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ConvertLogTypes.php on line 20
+[01-May-2025 04:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCloverToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCloverToReport.php on line 19
+[01-May-2025 04:24:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCrap4jToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageCrap4jToReport.php on line 19
+[01-May-2025 04:24:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageHtmlToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageHtmlToReport.php on line 19
+[01-May-2025 04:24:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoveragePhpToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoveragePhpToReport.php on line 19
+[01-May-2025 04:24:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageTextToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageTextToReport.php on line 19
+[01-May-2025 04:25:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\TextUI\XmlConfiguration\LogToReportMigration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageXmlToReport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/CoverageXmlToReport.php on line 19
+[01-May-2025 04:25:17 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCacheDirectoryAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCacheDirectoryAttribute.php on line 21
+[01-May-2025 04:25:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCoverageElement.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/IntroduceCoverageElement.php on line 19
+[01-May-2025 04:25:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/LogToReportMigration.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/LogToReportMigration.php on line 23
+[01-May-2025 04:26:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php on line 20
+[01-May-2025 04:26:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromRootToCoverage.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveAttributesFromRootToCoverage.php on line 21
+[01-May-2025 04:26:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveCoverageDirectoriesToSource.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveCoverageDirectoriesToSource.php on line 22
+[01-May-2025 04:26:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistExcludesToCoverage.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistExcludesToCoverage.php on line 22
+[01-May-2025 04:26:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistIncludesToCoverage.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/MoveWhitelistIncludesToCoverage.php on line 20
+[01-May-2025 04:26:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutResourceUsageDuringSmallTestsAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutResourceUsageDuringSmallTestsAttribute.php on line 21
+[01-May-2025 04:26:57 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutTodoAnnotatedTestsAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveBeStrictAboutTodoAnnotatedTestsAttribute.php on line 21
+[01-May-2025 04:27:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheResultFileAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheResultFileAttribute.php on line 21
+[01-May-2025 04:27:19 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheTokensAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCacheTokensAttribute.php on line 21
+[01-May-2025 04:27:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveConversionToExceptionsAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveConversionToExceptionsAttributes.php on line 21
+[01-May-2025 04:27:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementCacheDirectoryAttribute.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementCacheDirectoryAttribute.php on line 20
+[01-May-2025 04:27:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementProcessUncoveredFilesAttribute.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveCoverageElementProcessUncoveredFilesAttribute.php on line 20
+[01-May-2025 04:28:02 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveEmptyFilter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveEmptyFilter.php on line 21
+[01-May-2025 04:28:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveListeners.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveListeners.php on line 20
+[01-May-2025 04:28:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLogTypes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLogTypes.php on line 21
+[01-May-2025 04:28:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLoggingElements.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveLoggingElements.php on line 22
+[01-May-2025 04:28:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveNoInteractionAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveNoInteractionAttribute.php on line 21
+[01-May-2025 04:28:59 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemovePrinterAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemovePrinterAttributes.php on line 21
+[01-May-2025 04:29:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveRegisterMockObjectsFromTestArgumentsRecursivelyAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveRegisterMockObjectsFromTestArgumentsRecursivelyAttribute.php on line 21
+[01-May-2025 04:29:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestDoxGroupsElement.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestDoxGroupsElement.php on line 20
+[01-May-2025 04:29:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestSuiteLoaderAttributes.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveTestSuiteLoaderAttributes.php on line 21
+[01-May-2025 04:29:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveVerboseAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RemoveVerboseAttribute.php on line 21
+[01-May-2025 04:29:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBackupStaticAttributesAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBackupStaticAttributesAttribute.php on line 21
+[01-May-2025 04:30:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBeStrictAboutCoversAnnotationAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameBeStrictAboutCoversAnnotationAttribute.php on line 21
+[01-May-2025 04:30:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameForceCoversAnnotationAttribute.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/RenameForceCoversAnnotationAttribute.php on line 21
+[01-May-2025 04:30:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ReplaceRestrictDeprecationsWithIgnoreDeprecations.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/ReplaceRestrictDeprecationsWithIgnoreDeprecations.php on line 21
+[01-May-2025 04:30:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\XmlConfiguration\Migration" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/UpdateSchemaLocation.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Migration/Migrations/UpdateSchemaLocation.php on line 23

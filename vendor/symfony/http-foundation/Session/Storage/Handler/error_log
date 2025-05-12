@@ -1,0 +1,56 @@
+[18-Apr-2025 09:49:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Cache\Marshaller\MarshallerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php on line 19
+[18-Apr-2025 09:49:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php on line 22
+[18-Apr-2025 09:49:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php on line 29
+[18-Apr-2025 09:49:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php on line 19
+[18-Apr-2025 09:49:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php on line 44
+[18-Apr-2025 09:49:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php on line 23
+[18-Apr-2025 09:50:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php on line 19
+[27-Apr-2025 18:25:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Cache\Marshaller\MarshallerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php on line 19
+[27-Apr-2025 18:25:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php on line 22
+[27-Apr-2025 18:25:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/MongoDbSessionHandler.php on line 29
+[27-Apr-2025 19:59:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/NullSessionHandler.php on line 19
+[27-Apr-2025 19:59:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php on line 44
+[27-Apr-2025 19:59:22 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php on line 23
+[27-Apr-2025 19:59:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php on line 19

@@ -1,0 +1,14 @@
+[19-Apr-2025 03:19:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Attachment" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Attachment.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Attachment.php on line 7
+[19-Apr-2025 03:19:02 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Content.php on line 7
+[19-Apr-2025 03:19:04 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Envelope.php on line 10
+[19-Apr-2025 03:19:08 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Headers.php on line 9
+[29-Apr-2025 08:40:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Attachment" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Attachment.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Attachment.php on line 7
+[29-Apr-2025 08:40:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Content.php on line 7
+[29-Apr-2025 08:40:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Envelope.php on line 10
+[29-Apr-2025 13:27:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailables/Headers.php on line 9

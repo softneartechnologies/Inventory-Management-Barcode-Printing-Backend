@@ -1,0 +1,48 @@
+[15-Apr-2025 12:10:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/CompleteCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/CompleteCommand.php on line 33
+[15-Apr-2025 12:10:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/DumpCompletionCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/DumpCompletionCommand.php on line 28
+[15-Apr-2025 12:10:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/HelpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/HelpCommand.php on line 26
+[15-Apr-2025 12:10:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/LazyCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/LazyCommand.php on line 27
+[15-Apr-2025 12:10:22 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/ListCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/ListCommand.php on line 26
+[15-Apr-2025 12:10:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/TraceableCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/TraceableCommand.php on line 30
+[24-Apr-2025 17:40:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/CompleteCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/CompleteCommand.php on line 33
+[24-Apr-2025 17:40:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/DumpCompletionCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/DumpCompletionCommand.php on line 28
+[24-Apr-2025 17:40:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/HelpCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/HelpCommand.php on line 26
+[24-Apr-2025 17:40:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/LazyCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/LazyCommand.php on line 27
+[24-Apr-2025 17:40:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/ListCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/ListCommand.php on line 26
+[24-Apr-2025 17:41:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/TraceableCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Command/TraceableCommand.php on line 30

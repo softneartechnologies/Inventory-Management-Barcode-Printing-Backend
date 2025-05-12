@@ -1,0 +1,20 @@
+[17-Apr-2025 11:47:53 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\PrettyPrinterAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 16
+[27-Apr-2025 08:29:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\PrettyPrinterAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 16
+[27-Apr-2025 08:29:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\PrettyPrinterAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 16
+[27-Apr-2025 08:29:33 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\PrettyPrinterAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 16
+[27-Apr-2025 08:29:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\PrettyPrinterAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 16

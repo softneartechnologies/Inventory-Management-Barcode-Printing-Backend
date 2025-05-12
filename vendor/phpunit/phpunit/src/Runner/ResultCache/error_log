@@ -1,0 +1,16 @@
+[18-Apr-2025 05:16:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\ResultCache\ResultCache" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/DefaultResultCache.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/DefaultResultCache.php on line 34
+[18-Apr-2025 05:16:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\ResultCache\ResultCache" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/NullResultCache.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/NullResultCache.php on line 19
+[27-Apr-2025 18:21:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\ResultCache\ResultCache" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/DefaultResultCache.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/DefaultResultCache.php on line 34
+[27-Apr-2025 18:21:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Runner\ResultCache\ResultCache" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/NullResultCache.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/NullResultCache.php on line 19

@@ -12,6 +12,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
         "milon/barcode": "^12.0",
+        "php-units-of-measure/php-units-of-measure": "^2.2",
         "tymon/jwt-auth": "^2.2"
     },
     "require-dev": {

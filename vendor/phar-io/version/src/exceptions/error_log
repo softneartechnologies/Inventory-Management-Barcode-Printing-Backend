@@ -1,0 +1,40 @@
+[16-Apr-2025 22:35:52 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 4
+[16-Apr-2025 22:35:54 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 4
+[16-Apr-2025 22:35:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php on line 4
+[16-Apr-2025 22:35:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php on line 4
+[16-Apr-2025 22:35:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 12
+[25-Apr-2025 20:23:59 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidPreReleaseSuffixException.php on line 4
+[25-Apr-2025 20:24:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/InvalidVersionException.php on line 4
+[25-Apr-2025 20:24:02 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoBuildMetaDataException.php on line 4
+[25-Apr-2025 20:24:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/NoPreReleaseSuffixException.php on line 4
+[25-Apr-2025 20:24:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Version\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/version/src/exceptions/UnsupportedVersionConstraintException.php on line 12

@@ -1,0 +1,18 @@
+[16-Apr-2025 11:39:20 UTC] PHP Fatal error:  Access level to Carbon\DatePeriodBase::$start must be public (as in class DatePeriod) in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/ProtectedDatePeriod.php on line 17
+[16-Apr-2025 11:39:26 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\AbstractTranslator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorStrongType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorStrongType.php on line 17
+[16-Apr-2025 11:39:31 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\AbstractTranslator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorWeakType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorWeakType.php on line 15
+[25-Apr-2025 08:13:53 UTC] PHP Fatal error:  Access level to Carbon\DatePeriodBase::$start must be public (as in class DatePeriod) in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/ProtectedDatePeriod.php on line 17
+[25-Apr-2025 08:13:54 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\AbstractTranslator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorStrongType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorStrongType.php on line 17
+[25-Apr-2025 08:13:56 UTC] PHP Fatal error:  Uncaught Error: Class "Carbon\AbstractTranslator" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorWeakType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/lazy/Carbon/TranslatorWeakType.php on line 15

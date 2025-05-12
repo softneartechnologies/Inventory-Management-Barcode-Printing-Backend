@@ -1,0 +1,40 @@
+[14-Apr-2025 16:58:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/Clock.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/Clock.php on line 21
+[14-Apr-2025 16:58:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/ClockInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/ClockInterface.php on line 19
+[14-Apr-2025 16:58:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MockClock.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MockClock.php on line 21
+[14-Apr-2025 16:58:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MonotonicClock.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MonotonicClock.php on line 19
+[14-Apr-2025 16:58:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/NativeClock.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/NativeClock.php on line 19
+[24-Apr-2025 04:22:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/Clock.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/Clock.php on line 21
+[24-Apr-2025 04:22:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/ClockInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/ClockInterface.php on line 19
+[24-Apr-2025 04:22:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MockClock.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MockClock.php on line 21
+[24-Apr-2025 04:22:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MonotonicClock.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/MonotonicClock.php on line 19
+[24-Apr-2025 04:22:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/clock/NativeClock.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/clock/NativeClock.php on line 19

@@ -1,0 +1,4 @@
+[24-Apr-2025 15:45:28 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriException" not found in /home/softoroa/flight.softnear.com/vendor/league/uri/UriTemplate/TemplateCanNotBeExpanded.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri/UriTemplate/TemplateCanNotBeExpanded.php on line 19

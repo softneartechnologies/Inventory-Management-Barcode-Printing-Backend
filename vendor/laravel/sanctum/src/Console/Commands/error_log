@@ -1,0 +1,8 @@
+[18-Apr-2025 00:09:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Console/Commands/PruneExpired.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Console/Commands/PruneExpired.php on line 10
+[27-Apr-2025 04:05:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Console/Commands/PruneExpired.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/Console/Commands/PruneExpired.php on line 10

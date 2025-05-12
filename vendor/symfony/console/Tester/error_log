@@ -1,0 +1,6 @@
+[14-Apr-2025 23:31:29 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/ApplicationTester.php on line 27
+[14-Apr-2025 23:31:32 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/CommandTester.php on line 23
+[16-Apr-2025 23:28:48 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/ApplicationTester.php on line 27
+[16-Apr-2025 23:28:51 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/CommandTester.php on line 23
+[24-Apr-2025 10:55:54 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/ApplicationTester.php on line 27
+[24-Apr-2025 10:55:58 UTC] PHP Fatal error:  Trait "Symfony\Component\Console\Tester\TesterTrait" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Tester/CommandTester.php on line 23

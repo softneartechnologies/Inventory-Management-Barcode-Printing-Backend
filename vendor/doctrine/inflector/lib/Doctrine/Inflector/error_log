@@ -1,0 +1,32 @@
+[17-Apr-2025 21:03:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php on line 7
+[17-Apr-2025 21:03:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\LanguageInflectorFactory" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php on line 11
+[17-Apr-2025 21:03:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/NoopWordInflector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/NoopWordInflector.php on line 7
+[17-Apr-2025 21:03:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/RulesetInflector.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/RulesetInflector.php on line 20
+[26-Apr-2025 23:16:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php on line 7
+[26-Apr-2025 23:16:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\LanguageInflectorFactory" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php on line 11
+[27-Apr-2025 06:18:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/NoopWordInflector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/NoopWordInflector.php on line 7
+[27-Apr-2025 08:44:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/RulesetInflector.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/RulesetInflector.php on line 20

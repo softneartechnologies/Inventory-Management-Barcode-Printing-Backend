@@ -1,0 +1,54 @@
+[18-Apr-2025 00:07:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/AnonymousComponent.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/AnonymousComponent.php on line 5
+[18-Apr-2025 00:08:02 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentAttributeBag.php on line 19
+[18-Apr-2025 00:08:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentSlot.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentSlot.php on line 9
+[18-Apr-2025 00:08:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/DynamicComponent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/DynamicComponent.php on line 10
+[18-Apr-2025 00:08:07 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 14
+[18-Apr-2025 00:08:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\View\ViewFinderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php on line 8
+[18-Apr-2025 00:08:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\DeferringDisplayableValue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/InvokableComponentVariable.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/InvokableComponentVariable.php on line 13
+[18-Apr-2025 00:08:13 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/View.php on line 21
+[18-Apr-2025 00:08:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php on line 13
+[27-Apr-2025 04:03:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/AnonymousComponent.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/AnonymousComponent.php on line 5
+[27-Apr-2025 04:03:21 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentAttributeBag.php on line 19
+[27-Apr-2025 04:03:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Htmlable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentSlot.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ComponentSlot.php on line 9
+[27-Apr-2025 04:03:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/DynamicComponent.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/DynamicComponent.php on line 10
+[27-Apr-2025 04:03:27 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 14
+[27-Apr-2025 04:03:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\View\ViewFinderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php on line 8
+[27-Apr-2025 04:03:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\DeferringDisplayableValue" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/InvokableComponentVariable.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/InvokableComponentVariable.php on line 13
+[27-Apr-2025 04:03:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/View.php on line 21
+[27-Apr-2025 04:03:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php on line 13

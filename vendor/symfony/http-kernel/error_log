@@ -1,0 +1,40 @@
+[14-Apr-2025 17:01:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[14-Apr-2025 17:01:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernel.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernel.php on line 52
+[14-Apr-2025 17:01:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernelBrowser.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 30
+[14-Apr-2025 17:01:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Kernel.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Kernel.php on line 55
+[14-Apr-2025 17:01:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/KernelInterface.php on line 25
+[24-Apr-2025 04:59:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[24-Apr-2025 04:59:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernel.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernel.php on line 52
+[24-Apr-2025 04:59:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernelBrowser.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 30
+[24-Apr-2025 04:59:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Kernel.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Kernel.php on line 55
+[24-Apr-2025 04:59:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/KernelInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/KernelInterface.php on line 25

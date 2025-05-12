@@ -1,0 +1,88 @@
+[18-Apr-2025 05:05:20 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/Table.php on line 20
+[18-Apr-2025 05:05:22 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCell.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCell.php on line 20
+[18-Apr-2025 05:05:25 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCellRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCellRenderer.php on line 25
+[18-Apr-2025 05:05:27 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableExtension.php on line 24
+[18-Apr-2025 05:05:30 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableParser.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableParser.php on line 26
+[18-Apr-2025 05:05:32 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRenderer.php on line 24
+[18-Apr-2025 05:05:35 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRow.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRow.php on line 20
+[18-Apr-2025 05:05:37 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRowRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRowRenderer.php on line 24
+[18-Apr-2025 05:05:43 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSection.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSection.php on line 20
+[18-Apr-2025 05:05:45 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSectionRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSectionRenderer.php on line 24
+[18-Apr-2025 14:07:50 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Block\BlockStartParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableStartParser.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableStartParser.php on line 24
+[27-Apr-2025 04:10:15 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/Table.php on line 20
+[27-Apr-2025 04:10:17 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCell.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCell.php on line 20
+[27-Apr-2025 04:10:18 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableExtension.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableExtension.php on line 24
+[27-Apr-2025 13:34:41 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCellRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableCellRenderer.php on line 25
+[27-Apr-2025 13:34:42 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableParser.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableParser.php on line 26
+[27-Apr-2025 13:34:44 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRenderer.php on line 24
+[27-Apr-2025 13:34:46 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRow.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRow.php on line 20
+[27-Apr-2025 13:34:48 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRowRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableRowRenderer.php on line 24
+[27-Apr-2025 13:34:49 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Block\AbstractBlock" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSection.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSection.php on line 20
+[27-Apr-2025 13:34:51 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSectionRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableSectionRenderer.php on line 24
+[27-Apr-2025 13:34:52 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Block\BlockStartParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableStartParser.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Table/TableStartParser.php on line 24

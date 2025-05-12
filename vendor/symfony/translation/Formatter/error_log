@@ -1,0 +1,16 @@
+[14-Apr-2025 23:01:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\IntlFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/IntlFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/IntlFormatter.php on line 21
+[14-Apr-2025 23:01:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/MessageFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/MessageFormatter.php on line 23
+[24-Apr-2025 10:40:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\IntlFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/IntlFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/IntlFormatter.php on line 21
+[24-Apr-2025 10:40:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Formatter\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/MessageFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Formatter/MessageFormatter.php on line 23

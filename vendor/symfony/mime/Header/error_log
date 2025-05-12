@@ -1,0 +1,64 @@
+[14-Apr-2025 21:02:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Header\HeaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/AbstractHeader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/AbstractHeader.php on line 21
+[14-Apr-2025 21:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/DateHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/DateHeader.php on line 19
+[14-Apr-2025 21:02:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/IdentificationHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/IdentificationHeader.php on line 22
+[14-Apr-2025 21:02:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxHeader.php on line 22
+[14-Apr-2025 21:02:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxListHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxListHeader.php on line 22
+[14-Apr-2025 21:02:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/ParameterizedHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/ParameterizedHeader.php on line 19
+[14-Apr-2025 22:54:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/PathHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/PathHeader.php on line 22
+[14-Apr-2025 22:54:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/UnstructuredHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/UnstructuredHeader.php on line 19
+[24-Apr-2025 13:05:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Header\HeaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/AbstractHeader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/AbstractHeader.php on line 21
+[24-Apr-2025 13:05:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/DateHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/DateHeader.php on line 19
+[24-Apr-2025 13:05:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/IdentificationHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/IdentificationHeader.php on line 22
+[24-Apr-2025 13:05:35 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxHeader.php on line 22
+[24-Apr-2025 13:05:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxListHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/MailboxListHeader.php on line 22
+[24-Apr-2025 13:05:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\UnstructuredHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/ParameterizedHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/ParameterizedHeader.php on line 19
+[24-Apr-2025 13:05:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/PathHeader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/PathHeader.php on line 22
+[24-Apr-2025 13:05:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Header\AbstractHeader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/UnstructuredHeader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Header/UnstructuredHeader.php on line 19

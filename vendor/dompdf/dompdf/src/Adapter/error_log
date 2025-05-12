@@ -1,0 +1,24 @@
+[16-Apr-2025 06:04:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/CPDF.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 34
+[16-Apr-2025 06:04:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/GD.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/GD.php on line 22
+[16-Apr-2025 06:04:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/PDFLib.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/PDFLib.php on line 31
+[26-Apr-2025 06:04:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/CPDF.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/CPDF.php on line 34
+[26-Apr-2025 06:04:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/GD.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/GD.php on line 22
+[26-Apr-2025 06:04:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Dompdf\Canvas" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/PDFLib.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Adapter/PDFLib.php on line 31

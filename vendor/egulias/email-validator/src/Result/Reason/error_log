@@ -1,0 +1,264 @@
+[17-Apr-2025 21:47:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/AtextAfterCFWS.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/AtextAfterCFWS.php on line 5
+[17-Apr-2025 21:47:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFAtTheEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFAtTheEnd.php on line 5
+[17-Apr-2025 21:47:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFX2.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFX2.php on line 5
+[17-Apr-2025 21:47:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRNoLF.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRNoLF.php on line 5
+[17-Apr-2025 21:47:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CharNotAllowed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CharNotAllowed.php on line 5
+[17-Apr-2025 21:47:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommaInDomain.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommaInDomain.php on line 5
+[17-Apr-2025 21:47:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommentsInIDRight.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommentsInIDRight.php on line 5
+[17-Apr-2025 21:47:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveAt.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveAt.php on line 5
+[17-Apr-2025 21:47:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveDot.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveDot.php on line 5
+[17-Apr-2025 21:47:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DetailedReason.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DetailedReason.php on line 5
+[17-Apr-2025 21:47:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainAcceptsNoMail.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainAcceptsNoMail.php on line 5
+[17-Apr-2025 21:47:40 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\DetailedReason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainHyphened.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainHyphened.php on line 5
+[17-Apr-2025 21:47:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainTooLong.php on line 5
+[17-Apr-2025 21:47:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtEnd.php on line 5
+[17-Apr-2025 21:47:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtStart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtStart.php on line 5
+[17-Apr-2025 21:47:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/EmptyReason.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/EmptyReason.php on line 5
+[17-Apr-2025 21:47:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExceptionFound.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExceptionFound.php on line 5
+[17-Apr-2025 21:47:54 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\DetailedReason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingATEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingATEXT.php on line 5
+[17-Apr-2025 21:47:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingCTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingCTEXT.php on line 5
+[17-Apr-2025 21:48:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDTEXT.php on line 5
+[17-Apr-2025 21:48:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDomainLiteralClose.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDomainLiteralClose.php on line 5
+[17-Apr-2025 21:48:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LabelTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LabelTooLong.php on line 5
+[17-Apr-2025 21:48:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LocalOrReservedDomain.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LocalOrReservedDomain.php on line 5
+[17-Apr-2025 21:48:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDNSRecord.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDNSRecord.php on line 5
+[17-Apr-2025 21:48:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDomainPart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDomainPart.php on line 5
+[17-Apr-2025 21:48:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoLocalPart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoLocalPart.php on line 5
+[17-Apr-2025 21:48:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/RFCWarnings.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/RFCWarnings.php on line 5
+[17-Apr-2025 21:48:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/SpoofEmail.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/SpoofEmail.php on line 5
+[17-Apr-2025 21:48:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnOpenedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnOpenedComment.php on line 5
+[17-Apr-2025 21:48:24 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\NoDNSRecord" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnableToGetDNSRecord.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnableToGetDNSRecord.php on line 8
+[17-Apr-2025 21:48:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedComment.php on line 5
+[17-Apr-2025 21:48:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedQuotedString.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedQuotedString.php on line 5
+[17-Apr-2025 21:48:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnusualElements.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnusualElements.php on line 5
+[27-Apr-2025 04:34:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/AtextAfterCFWS.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/AtextAfterCFWS.php on line 5
+[27-Apr-2025 04:34:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFAtTheEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFAtTheEnd.php on line 5
+[27-Apr-2025 04:34:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFX2.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRLFX2.php on line 5
+[27-Apr-2025 04:34:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRNoLF.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CRNoLF.php on line 5
+[27-Apr-2025 04:34:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CharNotAllowed.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CharNotAllowed.php on line 5
+[27-Apr-2025 04:34:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommaInDomain.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommaInDomain.php on line 5
+[27-Apr-2025 04:34:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommentsInIDRight.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/CommentsInIDRight.php on line 5
+[27-Apr-2025 04:34:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveAt.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveAt.php on line 5
+[27-Apr-2025 04:35:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveDot.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ConsecutiveDot.php on line 5
+[27-Apr-2025 04:35:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DetailedReason.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DetailedReason.php on line 5
+[27-Apr-2025 04:35:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainAcceptsNoMail.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainAcceptsNoMail.php on line 5
+[27-Apr-2025 04:35:05 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\DetailedReason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainHyphened.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainHyphened.php on line 5
+[27-Apr-2025 04:35:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DomainTooLong.php on line 5
+[27-Apr-2025 04:35:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtEnd.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtEnd.php on line 5
+[27-Apr-2025 04:35:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtStart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/DotAtStart.php on line 5
+[27-Apr-2025 04:35:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/EmptyReason.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/EmptyReason.php on line 5
+[27-Apr-2025 04:35:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExceptionFound.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExceptionFound.php on line 5
+[27-Apr-2025 04:35:15 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\DetailedReason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingATEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingATEXT.php on line 5
+[27-Apr-2025 04:35:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingCTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingCTEXT.php on line 5
+[27-Apr-2025 04:35:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDTEXT.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDTEXT.php on line 5
+[27-Apr-2025 04:35:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDomainLiteralClose.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/ExpectingDomainLiteralClose.php on line 5
+[27-Apr-2025 04:35:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LabelTooLong.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LabelTooLong.php on line 5
+[27-Apr-2025 04:35:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LocalOrReservedDomain.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/LocalOrReservedDomain.php on line 5
+[27-Apr-2025 04:35:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDNSRecord.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDNSRecord.php on line 5
+[27-Apr-2025 04:35:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDomainPart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoDomainPart.php on line 5
+[27-Apr-2025 04:35:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoLocalPart.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/NoLocalPart.php on line 5
+[27-Apr-2025 04:35:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/RFCWarnings.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/RFCWarnings.php on line 5
+[27-Apr-2025 04:35:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/SpoofEmail.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/SpoofEmail.php on line 5
+[27-Apr-2025 04:35:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnOpenedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnOpenedComment.php on line 5
+[27-Apr-2025 04:35:37 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Result\Reason\NoDNSRecord" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnableToGetDNSRecord.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnableToGetDNSRecord.php on line 8
+[27-Apr-2025 04:35:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedComment.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedComment.php on line 5
+[27-Apr-2025 04:35:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedQuotedString.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnclosedQuotedString.php on line 5
+[27-Apr-2025 04:35:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Result\Reason\Reason" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnusualElements.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Result/Reason/UnusualElements.php on line 5

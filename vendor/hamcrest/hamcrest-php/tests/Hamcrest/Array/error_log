@@ -1,0 +1,56 @@
+[17-Apr-2025 19:13:46 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayTest.php on line 6
+[17-Apr-2025 19:13:48 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayWithSizeTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayWithSizeTest.php on line 6
+[17-Apr-2025 21:49:59 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php on line 6
+[17-Apr-2025 21:50:02 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php on line 6
+[17-Apr-2025 21:50:04 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyTest.php on line 6
+[17-Apr-2025 21:50:06 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyValuePairTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyValuePairTest.php on line 6
+[17-Apr-2025 21:50:09 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingTest.php on line 6
+[27-Apr-2025 06:20:16 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInAnyOrderTest.php on line 6
+[27-Apr-2025 06:20:18 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingInOrderTest.php on line 6
+[27-Apr-2025 06:20:19 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyTest.php on line 6
+[27-Apr-2025 06:20:21 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyValuePairTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingKeyValuePairTest.php on line 6
+[27-Apr-2025 06:20:23 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayContainingTest.php on line 6
+[27-Apr-2025 06:20:24 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayTest.php on line 6
+[27-Apr-2025 06:20:26 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\AbstractMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayWithSizeTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/Array/IsArrayWithSizeTest.php on line 6

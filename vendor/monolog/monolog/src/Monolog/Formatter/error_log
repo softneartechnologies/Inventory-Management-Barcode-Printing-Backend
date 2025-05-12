@@ -1,0 +1,144 @@
+[17-Apr-2025 09:45:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php on line 38
+[17-Apr-2025 09:45:22 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php on line 26
+[17-Apr-2025 09:45:24 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php on line 21
+[17-Apr-2025 09:45:26 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php on line 21
+[17-Apr-2025 09:45:27 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php on line 24
+[17-Apr-2025 09:45:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[17-Apr-2025 09:45:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 24
+[17-Apr-2025 09:45:32 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php on line 22
+[17-Apr-2025 09:45:34 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\LineFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php on line 23
+[17-Apr-2025 09:45:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php on line 24
+[18-Apr-2025 14:12:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php on line 22
+[18-Apr-2025 14:12:14 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php on line 22
+[18-Apr-2025 14:12:16 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php on line 22
+[18-Apr-2025 14:12:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php on line 22
+[18-Apr-2025 14:12:21 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php on line 25
+[18-Apr-2025 14:12:23 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php on line 25
+[18-Apr-2025 14:12:25 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php on line 25
+[18-Apr-2025 14:12:27 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php on line 25
+[26-Apr-2025 18:18:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php on line 22
+[26-Apr-2025 18:18:44 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php on line 22
+[26-Apr-2025 18:18:46 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ElasticsearchFormatter.php on line 22
+[26-Apr-2025 18:18:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FlowdockFormatter.php on line 22
+[26-Apr-2025 18:18:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php on line 38
+[26-Apr-2025 18:18:56 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GelfMessageFormatter.php on line 25
+[26-Apr-2025 18:18:58 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/GoogleCloudLoggingFormatter.php on line 25
+[26-Apr-2025 18:19:00 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/HtmlFormatter.php on line 25
+[26-Apr-2025 18:19:02 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/JsonFormatter.php on line 25
+[26-Apr-2025 18:19:04 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php on line 26
+[26-Apr-2025 18:19:06 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogglyFormatter.php on line 21
+[26-Apr-2025 18:19:08 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\JsonFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogmaticFormatter.php on line 21
+[26-Apr-2025 18:19:10 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/LogstashFormatter.php on line 24
+[26-Apr-2025 18:19:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/MongoDBFormatter.php on line 24
+[26-Apr-2025 18:19:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Formatter\FormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php on line 24
+[26-Apr-2025 18:19:17 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/ScalarFormatter.php on line 22
+[26-Apr-2025 18:19:19 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\LineFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/SyslogFormatter.php on line 23
+[26-Apr-2025 18:19:21 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Formatter\NormalizerFormatter" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Formatter/WildfireFormatter.php on line 24

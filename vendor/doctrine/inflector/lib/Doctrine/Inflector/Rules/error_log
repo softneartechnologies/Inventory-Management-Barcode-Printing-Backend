@@ -1,0 +1,24 @@
+[19-Apr-2025 05:17:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Substitutions.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Substitutions.php on line 13
+[19-Apr-2025 05:17:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformation.php on line 11
+[19-Apr-2025 05:17:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformations.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformations.php on line 9
+[28-Apr-2025 08:30:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Substitutions.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Substitutions.php on line 13
+[28-Apr-2025 08:30:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformation.php on line 11
+[28-Apr-2025 08:30:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Doctrine\Inflector\WordInflector" not found in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformations.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/doctrine/inflector/lib/Doctrine/Inflector/Rules/Transformations.php on line 9

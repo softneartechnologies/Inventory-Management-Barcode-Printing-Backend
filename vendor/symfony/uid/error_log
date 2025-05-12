@@ -1,0 +1,112 @@
+[14-Apr-2025 15:35:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Uid\HashableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/AbstractUid.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/AbstractUid.php on line 17
+[14-Apr-2025 15:35:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Ulid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUlid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUlid.php on line 14
+[14-Apr-2025 15:35:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUuid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUuid.php on line 14
+[14-Apr-2025 15:35:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Ulid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUlid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUlid.php on line 14
+[14-Apr-2025 15:35:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUuid.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUuid.php on line 17
+[14-Apr-2025 15:35:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\AbstractUid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Ulid.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Ulid.php on line 21
+[14-Apr-2025 15:36:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\AbstractUid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Uuid.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Uuid.php on line 19
+[14-Apr-2025 15:36:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV1.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV1.php on line 19
+[14-Apr-2025 15:36:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV3.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV3.php on line 21
+[14-Apr-2025 15:36:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV4.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV4.php on line 19
+[14-Apr-2025 15:36:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV5.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV5.php on line 21
+[14-Apr-2025 15:36:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV6.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV6.php on line 21
+[14-Apr-2025 15:36:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV7.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV7.php on line 21
+[14-Apr-2025 15:36:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV8.php on line 19
+[24-Apr-2025 03:45:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Uid\HashableInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/AbstractUid.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/AbstractUid.php on line 17
+[24-Apr-2025 03:45:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Ulid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUlid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUlid.php on line 14
+[24-Apr-2025 03:45:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUuid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/MaxUuid.php on line 14
+[24-Apr-2025 03:45:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Ulid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUlid.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUlid.php on line 14
+[24-Apr-2025 03:45:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUuid.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/NilUuid.php on line 17
+[24-Apr-2025 03:46:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\AbstractUid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Ulid.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Ulid.php on line 21
+[24-Apr-2025 03:46:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\AbstractUid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Uuid.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/Uuid.php on line 19
+[24-Apr-2025 03:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV1.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV1.php on line 19
+[24-Apr-2025 03:46:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV3.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV3.php on line 21
+[24-Apr-2025 03:46:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV4.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV4.php on line 19
+[24-Apr-2025 03:46:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV5.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV5.php on line 21
+[24-Apr-2025 03:46:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV6.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV6.php on line 21
+[24-Apr-2025 03:46:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV7.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV7.php on line 21
+[24-Apr-2025 03:46:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Uid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/uid/UuidV8.php on line 19

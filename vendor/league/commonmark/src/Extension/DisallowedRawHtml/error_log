@@ -1,0 +1,16 @@
+[18-Apr-2025 05:02:53 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlExtension.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlExtension.php on line 25
+[18-Apr-2025 05:02:56 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlRenderer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlRenderer.php on line 22
+[27-Apr-2025 04:08:07 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlExtension.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlExtension.php on line 25
+[27-Apr-2025 04:08:08 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Renderer\NodeRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlRenderer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DisallowedRawHtml/DisallowedRawHtmlRenderer.php on line 22

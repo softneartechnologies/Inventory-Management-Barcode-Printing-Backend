@@ -1,0 +1,104 @@
+[20-Apr-2025 20:18:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php on line 7
+[20-Apr-2025 20:18:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php on line 7
+[20-Apr-2025 20:18:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php on line 7
+[20-Apr-2025 20:18:51 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php on line 7
+[20-Apr-2025 20:18:53 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php on line 7
+[20-Apr-2025 20:18:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php on line 7
+[20-Apr-2025 20:18:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php on line 7
+[20-Apr-2025 20:18:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php on line 7
+[20-Apr-2025 20:18:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php on line 7
+[20-Apr-2025 20:19:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php on line 7
+[20-Apr-2025 20:19:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php on line 7
+[20-Apr-2025 20:19:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php on line 7
+[20-Apr-2025 20:19:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php on line 7
+[29-Apr-2025 23:10:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php on line 7
+[29-Apr-2025 23:10:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseOr.php on line 7
+[29-Apr-2025 23:10:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseXor.php on line 7
+[29-Apr-2025 23:10:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Coalesce.php on line 7
+[29-Apr-2025 23:11:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Concat.php on line 7
+[29-Apr-2025 23:11:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Div.php on line 7
+[29-Apr-2025 23:11:03 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Minus.php on line 7
+[29-Apr-2025 23:11:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mod.php on line 7
+[29-Apr-2025 23:11:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Mul.php on line 7
+[29-Apr-2025 23:11:08 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Plus.php on line 7
+[29-Apr-2025 23:11:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/Pow.php on line 7
+[29-Apr-2025 23:11:12 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftLeft.php on line 7
+[29-Apr-2025 23:11:14 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\AssignOp" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/ShiftRight.php on line 7

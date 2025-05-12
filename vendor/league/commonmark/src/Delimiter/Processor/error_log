@@ -1,0 +1,24 @@
+[18-Apr-2025 14:05:49 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/CacheableDelimiterProcessorInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/CacheableDelimiterProcessorInterface.php on line 25
+[18-Apr-2025 14:05:51 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorCollectionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/DelimiterProcessorCollection.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/DelimiterProcessorCollection.php on line 24
+[18-Apr-2025 14:05:58 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/StaggeredDelimiterProcessor.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/StaggeredDelimiterProcessor.php on line 31
+[27-Apr-2025 04:07:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/CacheableDelimiterProcessorInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/CacheableDelimiterProcessorInterface.php on line 25
+[27-Apr-2025 04:07:06 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorCollectionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/DelimiterProcessorCollection.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/DelimiterProcessorCollection.php on line 24
+[27-Apr-2025 04:07:11 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\Processor\DelimiterProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/StaggeredDelimiterProcessor.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Processor/StaggeredDelimiterProcessor.php on line 31

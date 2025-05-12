@@ -1,0 +1,80 @@
+[19-Apr-2025 15:17:51 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php on line 7
+[19-Apr-2025 15:17:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php:9
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php on line 9
+[19-Apr-2025 15:17:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/InterpolatedStringPart.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php(7): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/InterpolatedStringPart.php on line 7
+[19-Apr-2025 15:17:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php on line 7
+[19-Apr-2025 15:17:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php on line 8
+[19-Apr-2025 15:17:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php on line 9
+[19-Apr-2025 15:18:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php:8
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php on line 8
+[19-Apr-2025 15:18:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php on line 7
+[19-Apr-2025 15:18:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php on line 8
+[29-Apr-2025 08:45:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/DNumber.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php on line 7
+[29-Apr-2025 08:45:38 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/InterpolatedStringPart.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/EncapsedStringPart.php(7): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/InterpolatedStringPart.php on line 7
+[29-Apr-2025 08:45:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Float_.php on line 7
+[29-Apr-2025 08:45:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php on line 8
+[29-Apr-2025 08:45:44 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php on line 9
+[29-Apr-2025 08:45:46 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php:8
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/LNumber.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Int_.php on line 8
+[29-Apr-2025 08:45:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst.php on line 7
+[29-Apr-2025 08:45:49 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/String_.php on line 8
+[29-Apr-2025 13:29:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php:9
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/Encapsed.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/InterpolatedString.php on line 9

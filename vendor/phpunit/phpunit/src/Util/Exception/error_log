@@ -1,0 +1,40 @@
+[18-Apr-2025 05:17:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php on line 20
+[18-Apr-2025 05:17:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php on line 19
+[18-Apr-2025 05:17:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php on line 20
+[18-Apr-2025 05:17:44 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php on line 20
+[18-Apr-2025 05:17:46 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php on line 20
+[27-Apr-2025 17:44:21 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidDirectoryException.php on line 20
+[27-Apr-2025 17:44:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidJsonException.php on line 19
+[27-Apr-2025 18:22:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/InvalidVersionOperatorException.php on line 20
+[27-Apr-2025 18:22:39 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/PhpProcessException.php on line 20
+[27-Apr-2025 18:22:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Exception/XmlException.php on line 20

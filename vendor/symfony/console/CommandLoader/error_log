@@ -1,0 +1,16 @@
+[15-Apr-2025 10:34:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php on line 23
+[15-Apr-2025 10:34:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php on line 22
+[24-Apr-2025 17:41:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/ContainerCommandLoader.php on line 23
+[24-Apr-2025 17:41:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/CommandLoader/FactoryCommandLoader.php on line 22

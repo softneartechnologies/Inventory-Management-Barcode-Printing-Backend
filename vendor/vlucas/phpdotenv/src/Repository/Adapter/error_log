@@ -1,0 +1,88 @@
+[21-Apr-2025 10:43:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php on line 7
+[21-Apr-2025 10:43:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php on line 11
+[21-Apr-2025 10:43:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php on line 10
+[21-Apr-2025 10:43:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php on line 10
+[21-Apr-2025 10:44:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php on line 7
+[21-Apr-2025 10:44:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php on line 7
+[21-Apr-2025 10:44:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php on line 9
+[21-Apr-2025 10:44:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php on line 7
+[21-Apr-2025 10:44:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php on line 11
+[21-Apr-2025 10:44:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php on line 7
+[21-Apr-2025 10:44:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php on line 10
+[25-Apr-2025 06:11:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php on line 7
+[25-Apr-2025 06:11:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ApacheAdapter.php on line 11
+[25-Apr-2025 06:11:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ArrayAdapter.php on line 10
+[25-Apr-2025 06:11:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php on line 10
+[25-Apr-2025 06:11:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/GuardedWriter.php on line 7
+[25-Apr-2025 06:11:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ImmutableWriter.php on line 7
+[25-Apr-2025 06:11:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\ReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiReader.php on line 9
+[25-Apr-2025 06:11:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/MultiWriter.php on line 7
+[25-Apr-2025 06:11:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/PutenvAdapter.php on line 11
+[25-Apr-2025 06:11:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\WriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ReplacingWriter.php on line 7
+[25-Apr-2025 06:11:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Repository\Adapter\AdapterInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Repository/Adapter/ServerConstAdapter.php on line 10

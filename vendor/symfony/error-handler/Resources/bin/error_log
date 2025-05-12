@@ -1,0 +1,12 @@
+[16-Apr-2025 11:50:41 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php on line 14
+[25-Apr-2025 08:15:50 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php on line 14
+[28-Apr-2025 10:15:58 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Resources/bin/extract-tentative-return-types.php on line 14

@@ -1,0 +1,32 @@
+[15-Apr-2025 16:42:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/NewAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/NewAccessToken.php on line 8
+[15-Apr-2025 16:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/PersonalAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/PersonalAccessToken.php on line 8
+[15-Apr-2025 16:42:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php on line 14
+[15-Apr-2025 16:42:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Sanctum\Contracts\HasAbilities" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/TransientToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/TransientToken.php on line 7
+[24-Apr-2025 15:40:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/NewAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/NewAccessToken.php on line 8
+[24-Apr-2025 15:40:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/PersonalAccessToken.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/PersonalAccessToken.php on line 8
+[24-Apr-2025 15:40:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/SanctumServiceProvider.php on line 14
+[24-Apr-2025 15:40:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Laravel\Sanctum\Contracts\HasAbilities" not found in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/TransientToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/sanctum/src/TransientToken.php on line 7

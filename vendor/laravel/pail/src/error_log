@@ -1,0 +1,8 @@
+[15-Apr-2025 15:00:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/PailServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/PailServiceProvider.php on line 14
+[24-Apr-2025 19:34:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/PailServiceProvider.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/PailServiceProvider.php on line 14

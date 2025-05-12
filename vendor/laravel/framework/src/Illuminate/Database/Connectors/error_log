@@ -1,0 +1,42 @@
+[19-Apr-2025 00:47:14 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsLostConnections" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 10
+[19-Apr-2025 00:47:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\MySqlConnector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MariaDbConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MariaDbConnector.php on line 7
+[19-Apr-2025 00:47:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php on line 7
+[19-Apr-2025 00:47:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php on line 8
+[19-Apr-2025 00:47:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php on line 7
+[19-Apr-2025 00:47:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php on line 8
+[29-Apr-2025 01:57:16 UTC] PHP Fatal error:  Trait "Illuminate\Database\DetectsLostConnections" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 10
+[29-Apr-2025 01:57:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\MySqlConnector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MariaDbConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MariaDbConnector.php on line 7
+[29-Apr-2025 01:57:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php on line 7
+[29-Apr-2025 01:57:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/PostgresConnector.php on line 8
+[29-Apr-2025 01:57:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php on line 7
+[29-Apr-2025 01:57:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Connectors\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Connectors/SqlServerConnector.php on line 8

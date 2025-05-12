@@ -1,0 +1,104 @@
+[19-Apr-2025 00:48:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php on line 5
+[19-Apr-2025 00:48:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php on line 5
+[19-Apr-2025 00:48:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/NoPendingMigrations.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/NoPendingMigrations.php on line 7
+[19-Apr-2025 00:48:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php on line 5
+[19-Apr-2025 00:48:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php on line 5
+[19-Apr-2025 00:48:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php on line 5
+[19-Apr-2025 00:48:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php on line 5
+[19-Apr-2025 03:04:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php on line 7
+[19-Apr-2025 03:04:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php on line 5
+[19-Apr-2025 03:04:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php on line 8
+[19-Apr-2025 03:04:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php on line 5
+[19-Apr-2025 03:04:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php on line 5
+[19-Apr-2025 03:04:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php on line 7
+[29-Apr-2025 02:00:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/ConnectionEstablished.php on line 5
+[29-Apr-2025 02:01:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/DatabaseRefreshed.php on line 7
+[29-Apr-2025 02:01:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEnded.php on line 5
+[29-Apr-2025 02:01:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationEvent.php on line 8
+[29-Apr-2025 02:01:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationStarted.php on line 5
+[29-Apr-2025 02:01:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php on line 5
+[29-Apr-2025 02:01:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEvent.php on line 7
+[29-Apr-2025 02:01:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\MigrationsEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsStarted.php on line 5
+[29-Apr-2025 02:01:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Events\MigrationEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/NoPendingMigrations.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/NoPendingMigrations.php on line 7
+[29-Apr-2025 02:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionBeginning.php on line 5
+[29-Apr-2025 02:02:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitted.php on line 5
+[29-Apr-2025 02:02:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionCommitting.php on line 5
+[29-Apr-2025 02:02:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Events\ConnectionEvent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Events/TransactionRolledBack.php on line 5

@@ -1,0 +1,16 @@
+[19-Apr-2025 03:13:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\CallableDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php on line 8
+[19-Apr-2025 03:13:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\ControllerDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php on line 9
+[29-Apr-2025 10:58:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\CallableDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionCallableDispatcher.php on line 8
+[29-Apr-2025 10:58:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\ControllerDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Routing/PrecognitionControllerDispatcher.php on line 9

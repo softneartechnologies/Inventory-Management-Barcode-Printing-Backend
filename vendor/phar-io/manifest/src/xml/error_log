@@ -1,0 +1,104 @@
+[16-Apr-2025 22:35:14 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElement.php on line 13
+[16-Apr-2025 22:35:15 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php on line 13
+[16-Apr-2025 22:35:16 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/BundlesElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/BundlesElement.php on line 13
+[16-Apr-2025 22:35:17 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElement.php on line 13
+[16-Apr-2025 22:35:18 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php on line 13
+[16-Apr-2025 22:35:19 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ContainsElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ContainsElement.php on line 13
+[16-Apr-2025 22:35:20 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php on line 13
+[16-Apr-2025 22:35:22 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElement.php on line 13
+[16-Apr-2025 22:35:23 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php on line 13
+[16-Apr-2025 22:35:24 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php on line 13
+[16-Apr-2025 22:35:25 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/LicenseElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/LicenseElement.php on line 13
+[16-Apr-2025 22:35:28 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/PhpElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/PhpElement.php on line 13
+[16-Apr-2025 22:35:29 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/RequiresElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/RequiresElement.php on line 13
+[25-Apr-2025 20:22:50 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElement.php on line 13
+[25-Apr-2025 20:22:52 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/AuthorElementCollection.php on line 13
+[25-Apr-2025 20:22:54 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/BundlesElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/BundlesElement.php on line 13
+[25-Apr-2025 20:22:56 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElement.php on line 13
+[25-Apr-2025 20:22:57 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ComponentElementCollection.php on line 13
+[25-Apr-2025 20:22:59 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ContainsElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ContainsElement.php on line 13
+[25-Apr-2025 20:23:01 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/CopyrightElement.php on line 13
+[25-Apr-2025 20:23:04 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElement.php on line 13
+[25-Apr-2025 20:23:06 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ElementCollection" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtElementCollection.php on line 13
+[25-Apr-2025 20:23:07 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/ExtensionElement.php on line 13
+[25-Apr-2025 20:23:09 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/LicenseElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/LicenseElement.php on line 13
+[25-Apr-2025 20:23:14 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/PhpElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/PhpElement.php on line 13
+[25-Apr-2025 20:23:16 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\ManifestElement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/RequiresElement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/xml/RequiresElement.php on line 13

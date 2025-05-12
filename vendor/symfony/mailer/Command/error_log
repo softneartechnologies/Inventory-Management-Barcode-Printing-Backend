@@ -1,0 +1,8 @@
+[14-Apr-2025 20:58:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Command/MailerTestCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Command/MailerTestCommand.php on line 27
+[24-Apr-2025 13:02:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Command/MailerTestCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Command/MailerTestCommand.php on line 27

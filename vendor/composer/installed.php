@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '031c66f673cc2aaa907ef9994be41473801a8c06',
+        'reference' => 'ac5669cb4fdb987d15dbbb294a0c8d3ae46d1e00',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -424,7 +424,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '031c66f673cc2aaa907ef9994be41473801a8c06',
+            'reference' => 'ac5669cb4fdb987d15dbbb294a0c8d3ae46d1e00',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -696,6 +696,15 @@
             'install_path' => __DIR__ . '/../phar-io/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'php-units-of-measure/php-units-of-measure' => array(
+            'pretty_version' => 'v2.2.0',
+            'version' => '2.2.0.0',
+            'reference' => 'cf1b83b1ef7615dd53f70864c9e7f496b1ec0fd1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-units-of-measure/php-units-of-measure',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'phpoption/phpoption' => array(
             'pretty_version' => '1.9.3',
@@ -1372,6 +1381,12 @@
             'install_path' => __DIR__ . '/../tijsverkoyen/css-to-inline-styles',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'triplepoint/php-units-of-measure' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'tymon/jwt-auth' => array(
             'pretty_version' => '2.2.0',

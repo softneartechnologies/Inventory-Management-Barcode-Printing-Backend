@@ -1,0 +1,388 @@
+[19-Apr-2025 04:42:20 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php on line 7
+[19-Apr-2025 04:42:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ArrayItem.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ArrayItem.php on line 7
+[19-Apr-2025 04:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php on line 8
+[19-Apr-2025 04:42:28 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignRef.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignRef.php on line 7
+[19-Apr-2025 04:42:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php on line 7
+[19-Apr-2025 15:16:25 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrowFunction.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrowFunction.php on line 9
+[19-Apr-2025 15:16:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php on line 7
+[19-Apr-2025 15:16:29 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php on line 7
+[19-Apr-2025 15:16:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BitwiseNot.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BitwiseNot.php on line 7
+[19-Apr-2025 15:16:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php on line 7
+[19-Apr-2025 15:16:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/CallLike.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/CallLike.php on line 9
+[19-Apr-2025 15:16:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast.php on line 7
+[19-Apr-2025 15:16:37 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php on line 10
+[19-Apr-2025 15:16:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php on line 7
+[19-Apr-2025 15:16:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php on line 10
+[19-Apr-2025 15:16:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ClosureUse.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClosureUse.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ClosureUse.php on line 7
+[19-Apr-2025 15:16:44 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ConstFetch.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ConstFetch.php on line 8
+[19-Apr-2025 15:16:46 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php on line 7
+[19-Apr-2025 15:16:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Error.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Error.php on line 13
+[19-Apr-2025 15:16:49 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ErrorSuppress.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ErrorSuppress.php on line 7
+[19-Apr-2025 15:16:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Eval_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Eval_.php on line 7
+[19-Apr-2025 15:16:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php on line 7
+[19-Apr-2025 15:16:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/FuncCall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/FuncCall.php on line 8
+[19-Apr-2025 15:16:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php on line 7
+[19-Apr-2025 15:16:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Instanceof_.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Instanceof_.php on line 9
+[19-Apr-2025 15:16:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php on line 7
+[19-Apr-2025 15:17:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/List_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/List_.php on line 8
+[19-Apr-2025 15:17:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Match_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Match_.php on line 8
+[19-Apr-2025 15:17:03 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/MethodCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/MethodCall.php on line 11
+[19-Apr-2025 15:17:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php on line 10
+[19-Apr-2025 15:17:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafeMethodCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafeMethodCall.php on line 11
+[19-Apr-2025 15:17:09 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafePropertyFetch.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafePropertyFetch.php on line 9
+[19-Apr-2025 15:17:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostDec.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostDec.php on line 7
+[19-Apr-2025 15:17:12 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php on line 7
+[19-Apr-2025 15:17:13 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php on line 7
+[19-Apr-2025 15:17:15 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreInc.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreInc.php on line 7
+[19-Apr-2025 15:17:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Print_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Print_.php on line 7
+[19-Apr-2025 15:17:18 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php on line 9
+[19-Apr-2025 15:17:20 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ShellExec.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ShellExec.php on line 8
+[19-Apr-2025 15:17:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticCall.php on line 11
+[19-Apr-2025 15:17:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticPropertyFetch.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticPropertyFetch.php on line 10
+[19-Apr-2025 15:17:25 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Ternary.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Ternary.php on line 7
+[19-Apr-2025 15:17:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Throw_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Throw_.php on line 7
+[19-Apr-2025 15:17:29 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryMinus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryMinus.php on line 7
+[19-Apr-2025 15:17:30 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryPlus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryPlus.php on line 7
+[19-Apr-2025 15:17:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Variable.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Variable.php on line 7
+[19-Apr-2025 15:17:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/YieldFrom.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/YieldFrom.php on line 7
+[19-Apr-2025 15:17:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Yield_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Yield_.php on line 7
+[29-Apr-2025 06:04:30 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php on line 7
+[29-Apr-2025 06:04:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ArrayItem.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ArrayItem.php on line 7
+[29-Apr-2025 06:04:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php on line 8
+[29-Apr-2025 06:04:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrowFunction.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ArrowFunction.php on line 9
+[29-Apr-2025 06:04:37 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php on line 7
+[29-Apr-2025 06:04:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php on line 7
+[29-Apr-2025 06:04:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignRef.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/AssignRef.php on line 7
+[29-Apr-2025 06:04:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php on line 7
+[29-Apr-2025 06:04:44 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BitwiseNot.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BitwiseNot.php on line 7
+[29-Apr-2025 06:04:45 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BooleanNot.php on line 7
+[29-Apr-2025 06:04:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/CallLike.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/CallLike.php on line 9
+[29-Apr-2025 06:04:49 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Cast.php on line 7
+[29-Apr-2025 06:04:51 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php on line 10
+[29-Apr-2025 06:04:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php on line 7
+[29-Apr-2025 13:28:38 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php on line 10
+[29-Apr-2025 13:28:40 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ClosureUse.php:7
+Stack trace:
+#0 /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ClosureUse.php(5): require()
+#1 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/ClosureUse.php on line 7
+[29-Apr-2025 13:28:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ConstFetch.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ConstFetch.php on line 8
+[29-Apr-2025 13:28:43 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php on line 7
+[29-Apr-2025 13:28:45 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Error.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Error.php on line 13
+[29-Apr-2025 13:28:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ErrorSuppress.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ErrorSuppress.php on line 7
+[29-Apr-2025 13:28:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Eval_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Eval_.php on line 7
+[29-Apr-2025 13:28:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Exit_.php on line 7
+[29-Apr-2025 13:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/FuncCall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/FuncCall.php on line 8
+[29-Apr-2025 13:28:53 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Include_.php on line 7
+[29-Apr-2025 13:28:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Instanceof_.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Instanceof_.php on line 9
+[29-Apr-2025 13:28:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Isset_.php on line 7
+[29-Apr-2025 13:28:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/List_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/List_.php on line 8
+[29-Apr-2025 13:29:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Match_.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Match_.php on line 8
+[29-Apr-2025 13:29:01 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/MethodCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/MethodCall.php on line 11
+[29-Apr-2025 13:29:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/New_.php on line 10
+[29-Apr-2025 13:29:06 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafeMethodCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafeMethodCall.php on line 11
+[29-Apr-2025 13:29:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafePropertyFetch.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/NullsafePropertyFetch.php on line 9
+[29-Apr-2025 13:29:09 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostDec.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostDec.php on line 7
+[29-Apr-2025 13:29:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PostInc.php on line 7
+[29-Apr-2025 13:29:12 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreDec.php on line 7
+[29-Apr-2025 13:29:14 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreInc.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PreInc.php on line 7
+[29-Apr-2025 13:29:15 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Print_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Print_.php on line 7
+[29-Apr-2025 13:29:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/PropertyFetch.php on line 9
+[29-Apr-2025 13:29:19 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ShellExec.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/ShellExec.php on line 8
+[29-Apr-2025 13:29:20 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr\CallLike" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticCall.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticCall.php on line 11
+[29-Apr-2025 13:29:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticPropertyFetch.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/StaticPropertyFetch.php on line 10
+[29-Apr-2025 13:29:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Ternary.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Ternary.php on line 7
+[29-Apr-2025 13:29:25 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Throw_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Throw_.php on line 7
+[29-Apr-2025 13:29:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryMinus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryMinus.php on line 7
+[29-Apr-2025 13:29:28 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryPlus.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/UnaryPlus.php on line 7
+[29-Apr-2025 13:29:30 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Variable.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Variable.php on line 7
+[29-Apr-2025 13:29:32 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/YieldFrom.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/YieldFrom.php on line 7
+[29-Apr-2025 13:29:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Expr" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Yield_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Yield_.php on line 7

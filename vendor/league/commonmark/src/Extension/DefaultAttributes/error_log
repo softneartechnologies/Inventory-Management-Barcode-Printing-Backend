@@ -1,0 +1,16 @@
+[18-Apr-2025 14:06:39 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/ApplyDefaultAttributesProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/ApplyDefaultAttributesProcessor.php on line 21
+[18-Apr-2025 14:06:42 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/DefaultAttributesExtension.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/DefaultAttributesExtension.php on line 22
+[27-Apr-2025 04:07:48 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/ApplyDefaultAttributesProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/ApplyDefaultAttributesProcessor.php on line 21
+[27-Apr-2025 04:07:50 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Extension\ConfigurableExtensionInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/DefaultAttributesExtension.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/DefaultAttributes/DefaultAttributesExtension.php on line 22

@@ -1,0 +1,40 @@
+[16-Apr-2025 06:08:42 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/DivisionByZeroException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/DivisionByZeroException.php on line 10
+[16-Apr-2025 06:08:44 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/IntegerOverflowException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/IntegerOverflowException.php on line 12
+[16-Apr-2025 06:08:48 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NegativeNumberException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NegativeNumberException.php on line 10
+[16-Apr-2025 06:08:49 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NumberFormatException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NumberFormatException.php on line 10
+[16-Apr-2025 06:08:51 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/RoundingNecessaryException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/RoundingNecessaryException.php on line 10
+[24-Apr-2025 20:25:12 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/DivisionByZeroException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/DivisionByZeroException.php on line 10
+[24-Apr-2025 20:25:17 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/IntegerOverflowException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/IntegerOverflowException.php on line 12
+[24-Apr-2025 20:25:29 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NegativeNumberException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NegativeNumberException.php on line 10
+[24-Apr-2025 20:25:34 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NumberFormatException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/NumberFormatException.php on line 10
+[24-Apr-2025 20:25:39 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\Exception\MathException" not found in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/RoundingNecessaryException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/brick/math/src/Exception/RoundingNecessaryException.php on line 10

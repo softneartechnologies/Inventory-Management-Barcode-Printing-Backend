@@ -1,0 +1,24 @@
+[16-Apr-2025 11:23:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php on line 19
+[16-Apr-2025 11:23:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBag.php on line 19
+[16-Apr-2025 11:23:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\SessionBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php on line 21
+[25-Apr-2025 06:03:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php on line 19
+[25-Apr-2025 06:03:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBag.php on line 19
+[25-Apr-2025 06:03:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\SessionBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Flash/FlashBagInterface.php on line 21

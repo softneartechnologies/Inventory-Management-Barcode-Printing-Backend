@@ -1,0 +1,16 @@
+[17-Apr-2025 04:56:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\InputArgument" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/CodeArgument.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/CodeArgument.php on line 30
+[17-Apr-2025 04:56:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\StringInput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/ShellInput.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/ShellInput.php on line 20
+[25-Apr-2025 09:17:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\InputArgument" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/CodeArgument.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/CodeArgument.php on line 30
+[25-Apr-2025 09:17:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\StringInput" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/ShellInput.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Input/ShellInput.php on line 20

@@ -1,0 +1,32 @@
+[14-Apr-2025 22:59:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationLintCommand.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationLintCommand.php on line 32
+[14-Apr-2025 22:59:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPullCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPullCommand.php on line 33
+[14-Apr-2025 23:00:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPushCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPushCommand.php on line 33
+[14-Apr-2025 23:00:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/XliffLintCommand.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/XliffLintCommand.php on line 36
+[24-Apr-2025 08:34:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationLintCommand.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationLintCommand.php on line 32
+[24-Apr-2025 08:34:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPullCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPullCommand.php on line 33
+[24-Apr-2025 08:34:34 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPushCommand.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/TranslationPushCommand.php on line 33
+[24-Apr-2025 08:34:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/XliffLintCommand.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Command/XliffLintCommand.php on line 36

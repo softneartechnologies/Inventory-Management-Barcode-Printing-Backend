@@ -1,0 +1,8 @@
+[18-Apr-2025 05:17:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Http\Downloader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Http/PhpDownloader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Http/PhpDownloader.php on line 21
+[27-Apr-2025 18:22:51 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Util\Http\Downloader" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Http/PhpDownloader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Util/Http/PhpDownloader.php on line 21

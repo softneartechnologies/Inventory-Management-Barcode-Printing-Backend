@@ -1,0 +1,88 @@
+[19-Apr-2025 03:30:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Auth.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Auth.php on line 10
+[19-Apr-2025 03:30:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Authenticated.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Authenticated.php on line 10
+[19-Apr-2025 03:30:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Cache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Cache.php on line 10
+[19-Apr-2025 03:30:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Config.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Config.php on line 10
+[19-Apr-2025 03:30:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Container\Attributes\Authenticated" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/CurrentUser.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/CurrentUser.php on line 8
+[19-Apr-2025 03:30:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Container\Attributes\Database" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/DB.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/DB.php on line 8
+[19-Apr-2025 03:30:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Database.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Database.php on line 10
+[19-Apr-2025 03:30:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Log.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Log.php on line 10
+[19-Apr-2025 03:30:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/RouteParameter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/RouteParameter.php on line 10
+[19-Apr-2025 03:30:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Storage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Storage.php on line 10
+[19-Apr-2025 03:30:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Tag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Tag.php on line 12
+[28-Apr-2025 06:24:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Auth.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Auth.php on line 10
+[28-Apr-2025 06:24:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Authenticated.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Authenticated.php on line 10
+[28-Apr-2025 06:25:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Cache.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Cache.php on line 10
+[28-Apr-2025 06:25:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Config.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Config.php on line 10
+[28-Apr-2025 06:25:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Container\Attributes\Authenticated" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/CurrentUser.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/CurrentUser.php on line 8
+[28-Apr-2025 06:25:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Container\Attributes\Database" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/DB.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/DB.php on line 8
+[28-Apr-2025 06:25:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Database.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Database.php on line 10
+[28-Apr-2025 06:25:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Log.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Log.php on line 10
+[28-Apr-2025 06:25:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/RouteParameter.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/RouteParameter.php on line 10
+[28-Apr-2025 06:49:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Storage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Storage.php on line 10
+[28-Apr-2025 06:49:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualAttribute" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Tag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Attributes/Tag.php on line 12

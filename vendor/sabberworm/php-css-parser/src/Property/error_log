@@ -1,0 +1,60 @@
+[16-Apr-2025 01:40:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php on line 8
+[16-Apr-2025 01:40:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php on line 11
+[16-Apr-2025 01:40:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php on line 17
+[16-Apr-2025 01:41:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php on line 12
+[16-Apr-2025 01:41:02 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Property\Selector" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php on line 5
+[25-Apr-2025 08:10:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php on line 8
+[25-Apr-2025 08:10:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php on line 11
+[25-Apr-2025 08:10:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php on line 17
+[25-Apr-2025 08:10:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php on line 12
+[25-Apr-2025 08:10:31 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Property\Selector" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php on line 5
+[28-Apr-2025 10:12:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/AtRule.php on line 8
+[28-Apr-2025 10:12:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/CSSNamespace.php on line 11
+[28-Apr-2025 10:12:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Charset.php on line 17
+[28-Apr-2025 10:12:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Property\AtRule" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/Import.php on line 12
+[28-Apr-2025 10:12:49 UTC] PHP Fatal error:  Uncaught Error: Class "Sabberworm\CSS\Property\Selector" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Property/KeyframeSelector.php on line 5

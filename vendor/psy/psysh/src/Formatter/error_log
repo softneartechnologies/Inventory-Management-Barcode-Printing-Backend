@@ -1,0 +1,24 @@
+[17-Apr-2025 04:56:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php on line 20
+[17-Apr-2025 04:56:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php on line 20
+[17-Apr-2025 04:56:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 22
+[25-Apr-2025 09:17:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/CodeFormatter.php on line 20
+[25-Apr-2025 09:17:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/DocblockFormatter.php on line 20
+[25-Apr-2025 09:17:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Formatter\ReflectorFormatter" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Formatter/SignatureFormatter.php on line 22

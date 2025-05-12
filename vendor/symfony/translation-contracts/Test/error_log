@@ -1,0 +1,8 @@
+[14-Apr-2025 22:59:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation-contracts/Test/TranslatorTest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation-contracts/Test/TranslatorTest.php on line 31
+[24-Apr-2025 08:34:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation-contracts/Test/TranslatorTest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation-contracts/Test/TranslatorTest.php on line 31

@@ -1,0 +1,16 @@
+[19-Apr-2025 08:20:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasProperty.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasProperty.php on line 20
+[19-Apr-2025 10:18:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectEquals.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectEquals.php on line 25
+[29-Apr-2025 06:07:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectEquals.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectEquals.php on line 25
+[29-Apr-2025 06:07:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasProperty.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Constraint/Object/ObjectHasProperty.php on line 20

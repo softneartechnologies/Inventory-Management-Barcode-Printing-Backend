@@ -1,0 +1,32 @@
+[18-Apr-2025 05:00:52 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/TextMessage.php on line 10
+[18-Apr-2025 09:52:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Attachment.php on line 11
+[18-Apr-2025 14:01:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Mail\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php on line 35
+[18-Apr-2025 14:01:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php on line 8
+[18-Apr-2025 14:01:55 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php on line 31
+[18-Apr-2025 14:01:57 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php on line 24
+[18-Apr-2025 14:02:01 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Message.php on line 17
+[18-Apr-2025 14:02:03 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/PendingMail.php on line 10
+[18-Apr-2025 14:02:05 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/SendQueuedMailable.php on line 12
+[18-Apr-2025 14:02:08 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/SentMessage.php on line 12
+[27-Apr-2025 04:12:02 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Attachment.php on line 11
+[27-Apr-2025 04:12:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Mail\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailManager.php on line 35
+[27-Apr-2025 04:12:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/MailServiceProvider.php on line 8
+[27-Apr-2025 04:12:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php on line 31
+[27-Apr-2025 04:12:23 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php on line 24
+[27-Apr-2025 04:12:32 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Message.php on line 17
+[27-Apr-2025 04:12:35 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/PendingMail.php on line 10
+[27-Apr-2025 04:12:40 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/SendQueuedMailable.php on line 12
+[27-Apr-2025 04:12:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/SentMessage.php on line 12
+[27-Apr-2025 04:12:52 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/TextMessage.php on line 10

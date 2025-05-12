@@ -1,0 +1,8 @@
+[16-Apr-2025 16:31:07 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Input\MarkdownInputInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Input/MarkdownInput.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Input/MarkdownInput.php on line 18
+[25-Apr-2025 08:43:21 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Input\MarkdownInputInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Input/MarkdownInput.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Input/MarkdownInput.php on line 18

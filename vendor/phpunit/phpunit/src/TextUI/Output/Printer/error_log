@@ -1,0 +1,16 @@
+[19-Apr-2025 10:35:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 32
+[19-Apr-2025 10:35:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php on line 17
+[29-Apr-2025 04:02:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/DefaultPrinter.php on line 32
+[29-Apr-2025 04:02:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Output\Printer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Output/Printer/NullPrinter.php on line 17

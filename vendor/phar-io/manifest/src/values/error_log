@@ -1,0 +1,46 @@
+[16-Apr-2025 22:34:46 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Application.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Application.php on line 13
+[16-Apr-2025 22:34:49 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\AuthorCollection::getIterator(): PharIo\Manifest\AuthorCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\AuthorCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/AuthorCollection.php on line 37
+[16-Apr-2025 22:34:55 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\BundledComponentCollection::getIterator(): PharIo\Manifest\BundledComponentCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\BundledComponentCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/BundledComponentCollection.php on line 37
+[16-Apr-2025 22:35:00 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Extension.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Extension.php on line 16
+[16-Apr-2025 22:35:01 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Library.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Library.php on line 13
+[16-Apr-2025 22:35:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Manifest\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpExtensionRequirement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpExtensionRequirement.php on line 13
+[16-Apr-2025 22:35:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Manifest\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpVersionRequirement.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpVersionRequirement.php on line 15
+[16-Apr-2025 22:35:07 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\RequirementCollection::getIterator(): PharIo\Manifest\RequirementCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\RequirementCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/RequirementCollection.php on line 37
+[25-Apr-2025 20:22:09 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Application.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Application.php on line 13
+[25-Apr-2025 20:22:14 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\AuthorCollection::getIterator(): PharIo\Manifest\AuthorCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\AuthorCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/AuthorCollection.php on line 37
+[25-Apr-2025 20:22:19 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\BundledComponentCollection::getIterator(): PharIo\Manifest\BundledComponentCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\BundledComponentCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/BundledComponentCollection.php on line 37
+[25-Apr-2025 20:22:25 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Extension.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Extension.php on line 16
+[25-Apr-2025 20:22:27 UTC] PHP Fatal error:  Uncaught Error: Class "PharIo\Manifest\Type" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Library.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/Library.php on line 13
+[25-Apr-2025 20:22:32 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Manifest\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpExtensionRequirement.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpExtensionRequirement.php on line 13
+[25-Apr-2025 20:22:34 UTC] PHP Fatal error:  Uncaught Error: Interface "PharIo\Manifest\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpVersionRequirement.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/PhpVersionRequirement.php on line 15
+[25-Apr-2025 20:22:37 UTC] PHP Fatal error:  Could not check compatibility between PharIo\Manifest\RequirementCollection::getIterator(): PharIo\Manifest\RequirementCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PharIo\Manifest\RequirementCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phar-io/manifest/src/values/RequirementCollection.php on line 37

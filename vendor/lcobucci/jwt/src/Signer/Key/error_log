@@ -1,0 +1,24 @@
+[18-Apr-2025 09:53:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/FileCouldNotBeRead.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/FileCouldNotBeRead.php on line 10
+[18-Apr-2025 09:53:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Signer\Key" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/InMemory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/InMemory.php on line 15
+[18-Apr-2025 09:53:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Signer\Key" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/LocalFileReference.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/LocalFileReference.php on line 13
+[27-Apr-2025 04:06:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Exception" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/FileCouldNotBeRead.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/FileCouldNotBeRead.php on line 10
+[27-Apr-2025 04:06:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Signer\Key" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/InMemory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/InMemory.php on line 15
+[27-Apr-2025 04:06:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\JWT\Signer\Key" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/LocalFileReference.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Key/LocalFileReference.php on line 13

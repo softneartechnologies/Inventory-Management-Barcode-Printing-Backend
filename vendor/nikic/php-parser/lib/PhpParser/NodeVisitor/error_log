@@ -1,0 +1,140 @@
+[17-Apr-2025 11:47:28 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php on line 13
+[17-Apr-2025 11:47:30 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php on line 10
+[17-Apr-2025 11:47:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php on line 12
+[17-Apr-2025 11:47:33 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php on line 13
+[17-Apr-2025 11:47:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php on line 14
+[17-Apr-2025 11:47:36 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php on line 17
+[17-Apr-2025 11:47:38 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php on line 17
+[27-Apr-2025 08:28:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php on line 13
+[27-Apr-2025 08:28:33 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php on line 10
+[27-Apr-2025 08:28:35 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php on line 12
+[27-Apr-2025 08:28:36 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php on line 13
+[27-Apr-2025 08:28:38 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php on line 14
+[27-Apr-2025 08:28:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php on line 17
+[27-Apr-2025 08:28:41 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php on line 17
+[27-Apr-2025 08:28:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php on line 13
+[27-Apr-2025 08:28:48 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php on line 10
+[27-Apr-2025 08:28:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php on line 12
+[27-Apr-2025 08:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php on line 13
+[27-Apr-2025 08:28:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php on line 14
+[27-Apr-2025 08:28:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php on line 17
+[27-Apr-2025 08:28:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php on line 17
+[27-Apr-2025 08:29:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php on line 13
+[27-Apr-2025 08:29:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php on line 10
+[27-Apr-2025 08:29:06 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php on line 12
+[27-Apr-2025 08:29:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php on line 13
+[27-Apr-2025 08:29:09 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php on line 14
+[27-Apr-2025 08:29:11 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php on line 17
+[27-Apr-2025 08:29:13 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php on line 17
+[27-Apr-2025 08:29:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CloningVisitor.php on line 13
+[27-Apr-2025 08:29:19 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/CommentAnnotatingVisitor.php on line 10
+[27-Apr-2025 08:29:21 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FindingVisitor.php on line 12
+[27-Apr-2025 08:29:23 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/FirstFindingVisitor.php on line 13
+[27-Apr-2025 08:29:25 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NameResolver.php on line 14
+[27-Apr-2025 08:29:27 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/NodeConnectingVisitor.php on line 17
+[27-Apr-2025 08:29:28 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\NodeVisitorAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/NodeVisitor/ParentConnectingVisitor.php on line 17

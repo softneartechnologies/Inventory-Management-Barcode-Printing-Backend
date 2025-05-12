@@ -1,0 +1,36 @@
+[18-Apr-2025 00:12:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\ProcessResult" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeProcessResult.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeProcessResult.php on line 9
+[18-Apr-2025 14:02:48 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/Factory.php on line 11
+[18-Apr-2025 14:02:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\InvokedProcess" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeInvokedProcess.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeInvokedProcess.php on line 7
+[18-Apr-2025 14:02:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\InvokedProcess" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/InvokedProcess.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/InvokedProcess.php on line 10
+[18-Apr-2025 14:02:59 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php on line 15
+[18-Apr-2025 14:03:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\ProcessResult" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/ProcessResult.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/ProcessResult.php on line 9
+[27-Apr-2025 04:16:00 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/Factory.php on line 11
+[27-Apr-2025 04:16:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\InvokedProcess" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeInvokedProcess.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeInvokedProcess.php on line 7
+[27-Apr-2025 04:16:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\ProcessResult" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeProcessResult.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/FakeProcessResult.php on line 9
+[27-Apr-2025 04:16:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\InvokedProcess" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/InvokedProcess.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/InvokedProcess.php on line 10
+[27-Apr-2025 04:16:28 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/PendingProcess.php on line 15
+[27-Apr-2025 04:16:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Process\ProcessResult" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/ProcessResult.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Process/ProcessResult.php on line 9

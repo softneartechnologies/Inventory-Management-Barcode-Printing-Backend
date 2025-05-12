@@ -1,0 +1,56 @@
+[16-Apr-2025 14:11:59 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php on line 13
+[16-Apr-2025 14:12:01 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidTimeZoneException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidTimeZoneException.php on line 13
+[16-Apr-2025 14:12:03 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedIntervalStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedIntervalStringException.php on line 13
+[16-Apr-2025 14:12:05 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedPeriodStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedPeriodStringException.php on line 13
+[16-Apr-2025 14:12:08 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php on line 13
+[16-Apr-2025 14:12:10 UTC] PHP Fatal error:  Uncaught Error: Class "DateError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateObjectError.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateObjectError.php on line 13
+[16-Apr-2025 14:12:12 UTC] PHP Fatal error:  Uncaught Error: Class "DateError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateRangeError.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateRangeError.php on line 13
+[25-Apr-2025 06:08:23 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php on line 13
+[25-Apr-2025 06:08:25 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidTimeZoneException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateInvalidTimeZoneException.php on line 13
+[25-Apr-2025 06:08:27 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedIntervalStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedIntervalStringException.php on line 13
+[25-Apr-2025 06:08:29 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedPeriodStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedPeriodStringException.php on line 13
+[25-Apr-2025 06:08:31 UTC] PHP Fatal error:  Uncaught Error: Class "DateException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php on line 13
+[25-Apr-2025 06:08:33 UTC] PHP Fatal error:  Uncaught Error: Class "DateError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateObjectError.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateObjectError.php on line 13
+[25-Apr-2025 06:08:35 UTC] PHP Fatal error:  Uncaught Error: Class "DateError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateRangeError.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/polyfill-php83/Resources/stubs/DateRangeError.php on line 13

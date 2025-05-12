@@ -1,0 +1,8 @@
+[19-Apr-2025 03:23:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php on line 11
+[28-Apr-2025 06:21:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php on line 11

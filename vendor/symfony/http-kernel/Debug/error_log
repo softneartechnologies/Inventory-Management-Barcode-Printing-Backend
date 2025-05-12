@@ -1,0 +1,16 @@
+[14-Apr-2025 23:30:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php on line 24
+[14-Apr-2025 23:30:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RequestStack" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/VirtualRequestStack.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/VirtualRequestStack.php on line 24
+[24-Apr-2025 12:46:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php on line 24
+[24-Apr-2025 12:46:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RequestStack" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/VirtualRequestStack.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Debug/VirtualRequestStack.php on line 24

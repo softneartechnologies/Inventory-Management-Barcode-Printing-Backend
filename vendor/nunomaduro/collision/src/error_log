@@ -1,0 +1,8 @@
+[15-Apr-2025 01:32:56 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Handler.php on line 15
+[24-Apr-2025 17:36:40 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Handler.php on line 15

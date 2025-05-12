@@ -1,0 +1,8 @@
+[14-Apr-2025 22:56:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Writer\TranslationWriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Writer/TranslationWriter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Writer/TranslationWriter.php on line 24
+[24-Apr-2025 10:42:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Writer\TranslationWriterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Writer/TranslationWriter.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Writer/TranslationWriter.php on line 24

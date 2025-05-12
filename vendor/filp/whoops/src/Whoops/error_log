@@ -1,0 +1,8 @@
+[16-Apr-2025 06:41:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\RunInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Run.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Run.php on line 22
+[25-Apr-2025 20:18:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\RunInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Run.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Run.php on line 22

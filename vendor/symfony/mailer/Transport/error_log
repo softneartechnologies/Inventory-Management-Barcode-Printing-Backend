@@ -1,0 +1,96 @@
+[14-Apr-2025 21:00:34 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractHttpTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php on line 25
+[14-Apr-2025 21:00:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php on line 25
+[14-Apr-2025 21:00:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransport.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransport.php on line 31
+[14-Apr-2025 21:00:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php on line 22
+[14-Apr-2025 21:00:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\RoundRobinTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/FailoverTransport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/FailoverTransport.php on line 19
+[14-Apr-2025 21:00:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php on line 24
+[14-Apr-2025 21:00:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransport.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransport.php on line 21
+[14-Apr-2025 21:00:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransportFactory.php on line 19
+[14-Apr-2025 21:00:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php on line 25
+[14-Apr-2025 21:00:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransport.php on line 34
+[14-Apr-2025 21:00:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php on line 19
+[14-Apr-2025 21:01:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Transports.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Transports.php on line 24
+[24-Apr-2025 13:03:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractHttpTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractApiTransport.php on line 25
+[24-Apr-2025 13:03:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractHttpTransport.php on line 25
+[24-Apr-2025 13:03:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransport.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransport.php on line 31
+[24-Apr-2025 13:03:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/AbstractTransportFactory.php on line 22
+[24-Apr-2025 13:03:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\RoundRobinTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/FailoverTransport.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/FailoverTransport.php on line 19
+[24-Apr-2025 13:03:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NativeTransportFactory.php on line 24
+[24-Apr-2025 13:03:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransport.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransport.php on line 21
+[24-Apr-2025 13:03:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/NullTransportFactory.php on line 19
+[24-Apr-2025 13:03:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/RoundRobinTransport.php on line 25
+[24-Apr-2025 13:03:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransport.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransport.php on line 34
+[24-Apr-2025 13:03:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransportFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/SendmailTransportFactory.php on line 19
+[24-Apr-2025 13:04:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Transports.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Transports.php on line 24

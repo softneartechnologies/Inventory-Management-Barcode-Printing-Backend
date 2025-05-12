@@ -1,0 +1,32 @@
+[16-Apr-2025 16:32:14 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\InlineParserEngineInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php on line 29
+[16-Apr-2025 16:32:18 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParser.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParser.php on line 39
+[16-Apr-2025 16:32:22 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserStateInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php on line 22
+[16-Apr-2025 16:32:26 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/ParserLogicException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/ParserLogicException.php on line 18
+[25-Apr-2025 08:08:27 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\InlineParserEngineInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/InlineParserEngine.php on line 29
+[25-Apr-2025 08:08:30 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParser.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParser.php on line 39
+[25-Apr-2025 08:08:34 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\MarkdownParserStateInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/MarkdownParserState.php on line 22
+[25-Apr-2025 08:08:37 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Exception\CommonMarkException" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/ParserLogicException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Parser/ParserLogicException.php on line 18

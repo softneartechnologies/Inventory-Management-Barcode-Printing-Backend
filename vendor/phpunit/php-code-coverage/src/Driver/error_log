@@ -1,0 +1,16 @@
+[16-Apr-2025 22:36:13 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php on line 27
+[16-Apr-2025 22:36:15 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php on line 63
+[25-Apr-2025 20:24:38 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/PcovDriver.php on line 27
+[25-Apr-2025 20:24:41 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Driver\Driver" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Driver/XdebugDriver.php on line 63

@@ -1,0 +1,18 @@
+[20-Apr-2025 20:22:25 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Validators\Validator" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/PayloadValidator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/PayloadValidator.php on line 17
+[20-Apr-2025 20:22:27 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Validators\Validator" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php on line 16
+[20-Apr-2025 20:22:28 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\RefreshFlow" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/Validator.php on line 18
+[24-Apr-2025 20:28:36 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Validators\Validator" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/PayloadValidator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/PayloadValidator.php on line 17
+[24-Apr-2025 20:28:37 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Validators\Validator" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/TokenValidator.php on line 16
+[24-Apr-2025 20:28:39 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\RefreshFlow" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Validators/Validator.php on line 18

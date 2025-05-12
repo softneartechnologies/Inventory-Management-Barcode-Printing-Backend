@@ -1,0 +1,40 @@
+[19-Apr-2025 03:12:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php:111
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php on line 111
+[19-Apr-2025 03:12:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php on line 9
+[19-Apr-2025 03:12:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php on line 9
+[19-Apr-2025 03:13:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php on line 10
+[19-Apr-2025 03:13:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php on line 38
+[29-Apr-2025 10:57:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php:111
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php on line 111
+[29-Apr-2025 10:57:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ComposerServiceProvider.php on line 9
+[29-Apr-2025 10:58:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ConsoleSupportServiceProvider.php on line 9
+[29-Apr-2025 10:58:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FormRequestServiceProvider.php on line 10
+[29-Apr-2025 10:58:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\AggregateServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Providers/FoundationServiceProvider.php on line 38

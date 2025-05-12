@@ -1,0 +1,232 @@
+[17-Apr-2025 09:33:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php on line 27
+[17-Apr-2025 09:33:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php on line 25
+[17-Apr-2025 09:33:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php on line 19
+[17-Apr-2025 09:33:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php on line 30
+[17-Apr-2025 09:33:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php on line 21
+[17-Apr-2025 09:33:20 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php on line 22
+[17-Apr-2025 09:33:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php on line 19
+[17-Apr-2025 09:33:25 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php on line 22
+[17-Apr-2025 09:33:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php on line 24
+[17-Apr-2025 09:33:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php on line 21
+[17-Apr-2025 09:33:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/PsrLogMessageProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/PsrLogMessageProcessor.php on line 24
+[17-Apr-2025 09:33:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php on line 21
+[17-Apr-2025 09:33:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/UidProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/UidProcessor.php on line 22
+[17-Apr-2025 09:33:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/WebProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/WebProcessor.php on line 22
+[26-Apr-2025 18:21:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/PsrLogMessageProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/PsrLogMessageProcessor.php on line 24
+[26-Apr-2025 18:21:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php on line 21
+[26-Apr-2025 18:21:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/UidProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/UidProcessor.php on line 22
+[26-Apr-2025 18:21:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/WebProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/WebProcessor.php on line 22
+[27-Apr-2025 08:21:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php on line 27
+[27-Apr-2025 08:21:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php on line 25
+[27-Apr-2025 08:21:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php on line 19
+[27-Apr-2025 08:21:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php on line 27
+[27-Apr-2025 08:21:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php on line 30
+[27-Apr-2025 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php on line 25
+[27-Apr-2025 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php on line 27
+[27-Apr-2025 08:21:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php on line 21
+[27-Apr-2025 08:21:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php on line 19
+[27-Apr-2025 08:21:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php on line 25
+[27-Apr-2025 08:21:29 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php on line 22
+[27-Apr-2025 08:21:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php on line 19
+[27-Apr-2025 08:21:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php on line 30
+[27-Apr-2025 08:21:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php on line 19
+[27-Apr-2025 08:21:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php on line 30
+[27-Apr-2025 08:21:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php on line 21
+[27-Apr-2025 08:21:33 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php on line 22
+[27-Apr-2025 08:21:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php on line 21
+[27-Apr-2025 08:21:34 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php on line 22
+[27-Apr-2025 08:21:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php on line 24
+[27-Apr-2025 08:21:36 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php on line 22
+[27-Apr-2025 08:21:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php on line 19
+[27-Apr-2025 08:21:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php on line 21
+[27-Apr-2025 08:21:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ClosureContextProcessor.php on line 27
+[27-Apr-2025 08:21:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php on line 19
+[27-Apr-2025 08:21:38 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php on line 22
+[27-Apr-2025 08:21:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/GitProcessor.php on line 25
+[27-Apr-2025 08:21:39 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php on line 22
+[27-Apr-2025 08:21:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php on line 24
+[27-Apr-2025 08:21:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/HostnameProcessor.php on line 19
+[27-Apr-2025 08:21:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php on line 24
+[27-Apr-2025 08:21:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php on line 21
+[27-Apr-2025 08:21:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/IntrospectionProcessor.php on line 30
+[27-Apr-2025 08:21:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php on line 21
+[27-Apr-2025 08:21:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/LoadAverageProcessor.php on line 21
+[27-Apr-2025 08:21:45 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php on line 22
+[27-Apr-2025 08:21:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryProcessor.php on line 19
+[27-Apr-2025 08:21:49 UTC] PHP Fatal error:  Uncaught Error: Class "Monolog\Processor\MemoryProcessor" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php on line 22
+[27-Apr-2025 08:21:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/MercurialProcessor.php on line 24
+[27-Apr-2025 08:21:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Processor/ProcessIdProcessor.php on line 21

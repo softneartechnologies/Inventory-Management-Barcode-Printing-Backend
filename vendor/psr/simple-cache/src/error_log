@@ -1,0 +1,8 @@
+[15-Apr-2025 01:36:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheException" not found in /home/softoroa/flight.softnear.com/vendor/psr/simple-cache/src/InvalidArgumentException.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/simple-cache/src/InvalidArgumentException.php on line 11
+[24-Apr-2025 10:51:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheException" not found in /home/softoroa/flight.softnear.com/vendor/psr/simple-cache/src/InvalidArgumentException.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psr/simple-cache/src/InvalidArgumentException.php on line 11

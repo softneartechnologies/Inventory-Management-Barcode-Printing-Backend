@@ -1,0 +1,8 @@
+[17-Apr-2025 21:48:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Validation/Extra/SpoofCheckValidation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Validation/Extra/SpoofCheckValidation.php on line 11
+[27-Apr-2025 04:35:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Validation/Extra/SpoofCheckValidation.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Validation/Extra/SpoofCheckValidation.php on line 11

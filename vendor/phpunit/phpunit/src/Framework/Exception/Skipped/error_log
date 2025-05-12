@@ -1,0 +1,16 @@
+[19-Apr-2025 12:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedTestSuiteError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedTestSuiteError.php on line 17
+[19-Apr-2025 12:53:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedWithMessageException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedWithMessageException.php on line 17
+[29-Apr-2025 06:08:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedTestSuiteError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedTestSuiteError.php on line 17
+[29-Apr-2025 06:08:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\AssertionFailedError" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedWithMessageException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/Exception/Skipped/SkippedWithMessageException.php on line 17

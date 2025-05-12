@@ -1,0 +1,344 @@
+[19-Apr-2025 03:05:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php on line 37
+[19-Apr-2025 03:05:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php on line 25
+[19-Apr-2025 03:05:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php on line 99
+[19-Apr-2025 03:05:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php on line 37
+[19-Apr-2025 03:05:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php on line 40
+[19-Apr-2025 03:05:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php on line 64
+[19-Apr-2025 03:05:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php on line 44
+[19-Apr-2025 03:05:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php on line 23
+[19-Apr-2025 03:05:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php on line 22
+[19-Apr-2025 03:05:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php on line 19
+[19-Apr-2025 03:05:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php on line 51
+[19-Apr-2025 03:05:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php on line 62
+[19-Apr-2025 03:05:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php on line 23
+[19-Apr-2025 03:06:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php on line 28
+[19-Apr-2025 03:06:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php on line 35
+[19-Apr-2025 03:06:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php:191
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php on line 191
+[19-Apr-2025 03:06:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php on line 31
+[19-Apr-2025 03:06:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php on line 107
+[19-Apr-2025 03:06:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schedule.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schedule.php on line 88
+[19-Apr-2025 03:06:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php on line 55
+[19-Apr-2025 03:06:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php:76
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php on line 76
+[19-Apr-2025 03:06:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php on line 88
+[19-Apr-2025 03:06:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php on line 55
+[19-Apr-2025 03:06:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php on line 23
+[19-Apr-2025 03:06:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php on line 87
+[19-Apr-2025 03:06:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php on line 37
+[19-Apr-2025 15:13:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php:148
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php on line 148
+[19-Apr-2025 15:13:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php on line 28
+[19-Apr-2025 15:13:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php on line 70
+[19-Apr-2025 15:13:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php on line 51
+[19-Apr-2025 15:13:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php on line 39
+[19-Apr-2025 15:13:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php on line 57
+[19-Apr-2025 15:13:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php on line 62
+[19-Apr-2025 15:13:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Concurrency.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Concurrency.php on line 25
+[19-Apr-2025 17:02:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php on line 25
+[19-Apr-2025 17:02:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Context.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Context.php on line 48
+[19-Apr-2025 17:02:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php on line 24
+[19-Apr-2025 17:02:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php on line 19
+[19-Apr-2025 17:18:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php:120
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php on line 120
+[19-Apr-2025 17:18:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php:90
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php on line 90
+[19-Apr-2025 17:18:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php on line 42
+[19-Apr-2025 17:18:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Exceptions.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Exceptions.php on line 40
+[19-Apr-2025 17:18:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php on line 61
+[28-Apr-2025 06:56:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Config.php on line 25
+[28-Apr-2025 06:56:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Context.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Context.php on line 48
+[28-Apr-2025 06:56:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cookie.php on line 24
+[28-Apr-2025 06:56:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Crypt.php on line 19
+[28-Apr-2025 06:56:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php:120
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php on line 120
+[28-Apr-2025 06:56:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php:90
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Date.php on line 90
+[28-Apr-2025 06:56:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php on line 42
+[28-Apr-2025 06:56:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Exceptions.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Exceptions.php on line 40
+[28-Apr-2025 06:56:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php on line 61
+[28-Apr-2025 06:57:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Gate.php on line 37
+[28-Apr-2025 06:57:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Hash.php on line 25
+[28-Apr-2025 06:57:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Http.php on line 99
+[28-Apr-2025 06:57:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php on line 37
+[28-Apr-2025 06:57:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Log.php on line 40
+[28-Apr-2025 06:57:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php on line 64
+[28-Apr-2025 06:57:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php on line 44
+[28-Apr-2025 06:57:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/ParallelTesting.php on line 23
+[28-Apr-2025 06:57:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php on line 22
+[28-Apr-2025 06:57:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Pipeline.php on line 19
+[28-Apr-2025 06:57:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Process.php on line 51
+[28-Apr-2025 06:57:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php on line 62
+[28-Apr-2025 06:57:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/RateLimiter.php on line 23
+[28-Apr-2025 06:57:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php on line 28
+[28-Apr-2025 06:57:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Redis.php on line 35
+[28-Apr-2025 06:57:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php:191
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php on line 191
+[28-Apr-2025 06:57:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Response.php on line 31
+[28-Apr-2025 06:57:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php on line 107
+[28-Apr-2025 06:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schedule.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schedule.php on line 88
+[28-Apr-2025 06:57:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php on line 55
+[28-Apr-2025 06:57:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php:76
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Session.php on line 76
+[28-Apr-2025 06:57:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php on line 88
+[28-Apr-2025 06:57:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/URL.php on line 55
+[28-Apr-2025 06:57:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php on line 23
+[28-Apr-2025 06:57:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php:87
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/View.php on line 87
+[28-Apr-2025 06:57:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Vite.php on line 37
+[29-Apr-2025 13:29:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php:148
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php on line 148
+[29-Apr-2025 13:29:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Artisan.php on line 28
+[29-Apr-2025 13:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php on line 70
+[29-Apr-2025 13:29:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php on line 51
+[29-Apr-2025 13:29:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Broadcast.php on line 39
+[29-Apr-2025 13:29:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Bus.php on line 57
+[29-Apr-2025 13:29:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php on line 62
+[29-Apr-2025 13:29:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Concurrency.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Support/Facades/Concurrency.php on line 25

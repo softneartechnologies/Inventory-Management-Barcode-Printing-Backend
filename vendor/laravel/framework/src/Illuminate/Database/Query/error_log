@@ -1,0 +1,26 @@
+[19-Apr-2025 00:49:18 UTC] PHP Fatal error:  Trait "Illuminate\Database\Concerns\BuildsWhereDateClauses" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php on line 35
+[19-Apr-2025 00:49:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Query\Expression" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php on line 11
+[19-Apr-2025 00:49:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php on line 7
+[19-Apr-2025 00:49:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\JoinClause" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinLateralClause.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinLateralClause.php on line 5
+[29-Apr-2025 02:02:59 UTC] PHP Fatal error:  Trait "Illuminate\Database\Concerns\BuildsWhereDateClauses" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php on line 35
+[29-Apr-2025 02:03:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Database\Query\Expression" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/Expression.php on line 11
+[29-Apr-2025 02:03:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinClause.php on line 7
+[29-Apr-2025 02:03:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Query\JoinClause" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinLateralClause.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Query/JoinLateralClause.php on line 5

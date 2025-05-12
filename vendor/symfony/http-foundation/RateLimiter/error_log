@@ -1,0 +1,16 @@
+[14-Apr-2025 23:26:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RateLimiter\PeekableRequestRateLimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/AbstractRequestRateLimiter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/AbstractRequestRateLimiter.php on line 25
+[14-Apr-2025 23:26:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RateLimiter\RequestRateLimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/PeekableRequestRateLimiterInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/PeekableRequestRateLimiterInterface.php on line 32
+[24-Apr-2025 12:43:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RateLimiter\PeekableRequestRateLimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/AbstractRequestRateLimiter.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/AbstractRequestRateLimiter.php on line 25
+[24-Apr-2025 12:43:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RateLimiter\RequestRateLimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/PeekableRequestRateLimiterInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RateLimiter/PeekableRequestRateLimiterInterface.php on line 32

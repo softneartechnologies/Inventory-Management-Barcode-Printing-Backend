@@ -1,0 +1,122 @@
+[20-Apr-2025 08:11:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php on line 20
+[20-Apr-2025 08:11:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php on line 27
+[20-Apr-2025 08:11:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php on line 13
+[20-Apr-2025 08:11:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php on line 16
+[20-Apr-2025 08:11:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php on line 20
+[20-Apr-2025 08:11:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php on line 19
+[20-Apr-2025 08:11:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php on line 24
+[20-Apr-2025 08:11:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php on line 22
+[20-Apr-2025 08:11:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php on line 13
+[20-Apr-2025 08:11:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php on line 20
+[20-Apr-2025 08:11:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php on line 16
+[20-Apr-2025 08:11:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Pivot" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php on line 5
+[20-Apr-2025 08:11:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsTo" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php on line 17
+[20-Apr-2025 08:11:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsToMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php on line 16
+[20-Apr-2025 08:11:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php on line 8
+[20-Apr-2025 08:11:26 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php on line 24
+[30-Apr-2025 21:02:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php on line 20
+[30-Apr-2025 21:02:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php on line 27
+[30-Apr-2025 21:02:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasMany.php on line 13
+[30-Apr-2025 21:02:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php on line 16
+[30-Apr-2025 21:02:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php on line 20
+[30-Apr-2025 21:03:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php on line 19
+[30-Apr-2025 21:03:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Relation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php on line 24
+[30-Apr-2025 21:03:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrManyThrough" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneThrough.php on line 22
+[30-Apr-2025 21:03:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php on line 13
+[30-Apr-2025 21:03:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\MorphOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php on line 20
+[30-Apr-2025 21:03:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasOneOrMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php on line 16
+[30-Apr-2025 21:03:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Pivot" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php on line 5
+[30-Apr-2025 21:03:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsTo" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php on line 17
+[30-Apr-2025 21:03:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\BelongsToMany" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php on line 16
+[30-Apr-2025 21:03:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Pivot.php on line 8
+[30-Apr-2025 21:03:17 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php on line 24

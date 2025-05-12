@@ -1,0 +1,8 @@
+[21-Apr-2025 10:43:22 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Providers\JWT\Provider" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/JWT/Lcobucci.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/JWT/Lcobucci.php on line 31
+[25-Apr-2025 06:11:12 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Providers\JWT\Provider" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/JWT/Lcobucci.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Providers/JWT/Lcobucci.php on line 31

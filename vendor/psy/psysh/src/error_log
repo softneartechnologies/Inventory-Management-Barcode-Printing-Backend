@@ -1,0 +1,44 @@
+[14-Apr-2025 23:24:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php on line 54
+[14-Apr-2025 23:25:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php on line 17
+[14-Apr-2025 23:25:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php on line 17
+[15-Apr-2025 01:36:36 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionClosure" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoopClosure.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoopClosure.php on line 22
+[16-Apr-2025 23:21:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php on line 54
+[16-Apr-2025 23:22:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php on line 17
+[16-Apr-2025 23:22:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php on line 17
+[24-Apr-2025 10:52:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\ExecutionClosure" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoopClosure.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/ExecutionLoopClosure.php on line 22
+[24-Apr-2025 10:52:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Shell.php on line 54
+[24-Apr-2025 10:52:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SuperglobalsEnv.php on line 17
+[24-Apr-2025 10:52:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\EnvInterface" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/SystemEnv.php on line 17

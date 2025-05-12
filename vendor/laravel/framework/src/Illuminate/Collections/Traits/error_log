@@ -1,0 +1,2 @@
+[19-Apr-2025 03:27:45 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php on line 60
+[28-Apr-2025 06:23:04 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php on line 60

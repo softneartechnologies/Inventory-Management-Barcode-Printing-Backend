@@ -1,0 +1,42 @@
+[18-Apr-2025 00:06:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Assert.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Assert.php on line 13
+[18-Apr-2025 00:06:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Collection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/LoggedExceptionCollection.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/LoggedExceptionCollection.php on line 7
+[18-Apr-2025 00:06:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelConsoleOutput.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelConsoleOutput.php on line 9
+[18-Apr-2025 00:06:43 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Concerns\RunsInParallel" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelRunner.php on line 23
+[18-Apr-2025 00:06:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php on line 9
+[18-Apr-2025 00:06:48 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php on line 23
+[18-Apr-2025 00:06:50 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestComponent.php on line 10
+[18-Apr-2025 00:06:51 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Concerns\AssertsStatusCodes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php on line 35
+[18-Apr-2025 00:06:54 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestView.php on line 15
+[27-Apr-2025 04:22:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Assert" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Assert.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/Assert.php on line 13
+[27-Apr-2025 04:23:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Collection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/LoggedExceptionCollection.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/LoggedExceptionCollection.php on line 7
+[27-Apr-2025 04:23:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelConsoleOutput.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelConsoleOutput.php on line 9
+[27-Apr-2025 04:23:13 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Concerns\RunsInParallel" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelRunner.php on line 23
+[27-Apr-2025 04:23:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php on line 9
+[27-Apr-2025 04:23:23 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php on line 23
+[27-Apr-2025 04:23:26 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestComponent.php on line 10
+[27-Apr-2025 04:23:29 UTC] PHP Fatal error:  Trait "Illuminate\Testing\Concerns\AssertsStatusCodes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php on line 35
+[27-Apr-2025 04:23:34 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Testing/TestView.php on line 15

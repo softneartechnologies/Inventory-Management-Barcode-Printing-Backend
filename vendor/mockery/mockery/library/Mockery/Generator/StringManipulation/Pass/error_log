@@ -1,0 +1,112 @@
+[20-Apr-2025 19:55:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php on line 20
+[20-Apr-2025 19:55:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php on line 16
+[20-Apr-2025 19:55:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassAttributesPass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassAttributesPass.php on line 17
+[20-Apr-2025 19:56:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php on line 17
+[20-Apr-2025 19:56:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php on line 19
+[20-Apr-2025 19:56:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php on line 17
+[20-Apr-2025 20:18:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php on line 21
+[20-Apr-2025 20:18:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php on line 20
+[20-Apr-2025 20:18:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php on line 28
+[20-Apr-2025 20:18:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php on line 32
+[20-Apr-2025 20:18:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php on line 23
+[20-Apr-2025 20:18:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveDestructorPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveDestructorPass.php on line 19
+[20-Apr-2025 20:18:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php on line 24
+[20-Apr-2025 20:18:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php on line 19
+[29-Apr-2025 23:10:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/AvoidMethodClashPass.php on line 20
+[29-Apr-2025 23:10:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/CallTypeHintPass.php on line 16
+[29-Apr-2025 23:10:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassAttributesPass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassAttributesPass.php on line 17
+[29-Apr-2025 23:10:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassNamePass.php on line 17
+[29-Apr-2025 23:10:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ClassPass.php on line 19
+[29-Apr-2025 23:10:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/ConstantsPass.php on line 21
+[29-Apr-2025 23:10:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InstanceMockPass.php on line 17
+[29-Apr-2025 23:10:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/InterfacePass.php on line 20
+[29-Apr-2025 23:10:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MagicMethodTypeHintsPass.php on line 28
+[29-Apr-2025 23:10:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/MethodDefinitionPass.php on line 32
+[29-Apr-2025 23:10:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveBuiltinMethodsThatAreFinalPass.php on line 23
+[29-Apr-2025 23:10:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveDestructorPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveDestructorPass.php on line 19
+[29-Apr-2025 23:10:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/RemoveUnserializeForInternalSerializableClassesPass.php on line 24
+[29-Apr-2025 23:10:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Mockery\Generator\StringManipulation\Pass\Pass" not found in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/mockery/mockery/library/Mockery/Generator/StringManipulation/Pass/TraitPass.php on line 19

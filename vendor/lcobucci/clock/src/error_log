@@ -1,0 +1,24 @@
+[15-Apr-2025 12:06:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/Clock.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/Clock.php on line 9
+[15-Apr-2025 12:06:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\Clock\Clock" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/FrozenClock.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/FrozenClock.php on line 11
+[15-Apr-2025 12:06:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\Clock\Clock" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/SystemClock.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/SystemClock.php on line 12
+[24-Apr-2025 15:41:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Clock\ClockInterface" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/Clock.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/Clock.php on line 9
+[24-Apr-2025 15:41:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\Clock\Clock" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/FrozenClock.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/FrozenClock.php on line 11
+[24-Apr-2025 15:41:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Lcobucci\Clock\Clock" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/SystemClock.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/clock/src/SystemClock.php on line 12

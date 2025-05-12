@@ -1,0 +1,24 @@
+[18-Apr-2025 09:57:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\Container" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 23
+[18-Apr-2025 09:57:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualBindingBuilder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php on line 8
+[18-Apr-2025 09:57:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\NotFoundExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php on line 8
+[27-Apr-2025 08:57:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\Container" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 23
+[27-Apr-2025 08:57:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Container\ContextualBindingBuilder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/ContextualBindingBuilder.php on line 8
+[27-Apr-2025 08:57:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Container\NotFoundExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Container/EntryNotFoundException.php on line 8

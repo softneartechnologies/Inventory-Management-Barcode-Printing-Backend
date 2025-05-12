@@ -1,0 +1,160 @@
+[14-Apr-2025 10:24:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/BarcodeSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/BarcodeSetting.php on line 7
+[14-Apr-2025 10:24:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Brand.php on line 7
+[14-Apr-2025 10:25:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Category.php on line 7
+[14-Apr-2025 10:25:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/CurrencySetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/CurrencySetting.php on line 7
+[14-Apr-2025 10:25:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Employee.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Employee.php on line 7
+[14-Apr-2025 12:12:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Location.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Location.php on line 8
+[14-Apr-2025 12:12:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Manufacturer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Manufacturer.php on line 7
+[14-Apr-2025 12:12:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/MeasurementUnit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/MeasurementUnit.php on line 7
+[14-Apr-2025 12:12:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Order.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Order.php on line 8
+[14-Apr-2025 12:12:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Permission.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Permission.php on line 7
+[14-Apr-2025 12:12:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Product.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Product.php on line 8
+[14-Apr-2025 12:12:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Role.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Role.php on line 7
+[14-Apr-2025 12:13:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/ScanInOutProduct.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/ScanInOutProduct.php on line 8
+[14-Apr-2025 12:13:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Stock.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Stock.php on line 7
+[14-Apr-2025 12:13:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Subcategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Subcategory.php on line 7
+[14-Apr-2025 12:13:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Unit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Unit.php on line 7
+[14-Apr-2025 12:13:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/softoroa/flight.softnear.com/app/Models/User.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/User.php on line 12
+[14-Apr-2025 12:13:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Vendor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Vendor.php on line 7
+[14-Apr-2025 12:13:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/WeightUnit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/WeightUnit.php on line 7
+[23-Apr-2025 21:51:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/BarcodeSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/BarcodeSetting.php on line 7
+[23-Apr-2025 21:51:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Brand.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Brand.php on line 7
+[23-Apr-2025 21:51:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Category.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Category.php on line 7
+[23-Apr-2025 21:51:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/CurrencySetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/CurrencySetting.php on line 7
+[23-Apr-2025 21:51:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Employee.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Employee.php on line 7
+[23-Apr-2025 21:51:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/InventoryAdjustmentReports.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/InventoryAdjustmentReports.php on line 7
+[23-Apr-2025 21:51:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Location.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Location.php on line 8
+[23-Apr-2025 21:51:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Manufacturer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Manufacturer.php on line 7
+[23-Apr-2025 21:51:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/MeasurementUnit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/MeasurementUnit.php on line 7
+[23-Apr-2025 21:51:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Order.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Order.php on line 8
+[23-Apr-2025 21:51:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Permission.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Permission.php on line 7
+[23-Apr-2025 21:51:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Product.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Product.php on line 8
+[23-Apr-2025 21:51:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Reason.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Reason.php on line 7
+[23-Apr-2025 21:51:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Role.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Role.php on line 7
+[23-Apr-2025 21:51:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/ScanInOutProduct.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/ScanInOutProduct.php on line 8
+[23-Apr-2025 21:51:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Stock.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Stock.php on line 7
+[23-Apr-2025 21:51:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Subcategory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Subcategory.php on line 7
+[23-Apr-2025 21:51:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Unit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Unit.php on line 7
+[23-Apr-2025 21:51:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/softoroa/flight.softnear.com/app/Models/User.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/User.php on line 12
+[23-Apr-2025 21:51:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/Vendor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/Vendor.php on line 7
+[23-Apr-2025 21:51:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/softoroa/flight.softnear.com/app/Models/WeightUnit.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/app/Models/WeightUnit.php on line 7

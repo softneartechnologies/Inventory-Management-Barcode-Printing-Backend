@@ -1,0 +1,112 @@
+[15-Apr-2025 14:59:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/app.php on line 19
+[15-Apr-2025 14:59:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/auth.php on line 17
+[15-Apr-2025 14:59:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/broadcasting.php on line 18
+[15-Apr-2025 14:59:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/cache.php on line 18
+[15-Apr-2025 14:59:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/concurrency.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/concurrency.php on line 18
+[15-Apr-2025 14:59:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/database.php on line 19
+[15-Apr-2025 14:59:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/filesystems.php on line 16
+[15-Apr-2025 14:59:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/hashing.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/hashing.php on line 18
+[15-Apr-2025 14:59:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/logging.php on line 21
+[15-Apr-2025 14:59:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/mail.php on line 17
+[15-Apr-2025 14:59:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/queue.php on line 16
+[15-Apr-2025 14:59:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/services.php on line 18
+[15-Apr-2025 14:59:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/session.php on line 21
+[15-Apr-2025 14:59:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/view.php on line 17
+[24-Apr-2025 19:34:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/app.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/app.php on line 19
+[24-Apr-2025 19:34:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/auth.php on line 17
+[24-Apr-2025 19:34:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/broadcasting.php on line 18
+[24-Apr-2025 19:34:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/cache.php on line 18
+[24-Apr-2025 19:34:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/concurrency.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/concurrency.php on line 18
+[24-Apr-2025 19:34:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/database.php on line 19
+[24-Apr-2025 19:34:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/filesystems.php on line 16
+[24-Apr-2025 19:34:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/hashing.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/hashing.php on line 18
+[24-Apr-2025 19:34:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/logging.php on line 21
+[24-Apr-2025 19:34:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/mail.php on line 17
+[24-Apr-2025 19:34:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/queue.php on line 16
+[24-Apr-2025 19:34:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/services.php on line 18
+[24-Apr-2025 19:34:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/session.php on line 21
+[24-Apr-2025 19:34:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/config/view.php on line 17

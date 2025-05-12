@@ -1,0 +1,16 @@
+[18-Apr-2025 09:50:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php on line 24
+[18-Apr-2025 09:50:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php on line 24
+[28-Apr-2025 00:41:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/ProcessStream.php on line 24
+[28-Apr-2025 00:41:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php on line 24

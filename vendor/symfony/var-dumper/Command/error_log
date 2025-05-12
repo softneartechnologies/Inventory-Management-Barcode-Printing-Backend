@@ -1,0 +1,8 @@
+[14-Apr-2025 22:58:17 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/ServerDumpCommand.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/ServerDumpCommand.php on line 39
+[24-Apr-2025 10:44:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/ServerDumpCommand.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/var-dumper/Command/ServerDumpCommand.php on line 39

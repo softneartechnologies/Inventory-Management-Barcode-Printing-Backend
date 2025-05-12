@@ -1,0 +1,14 @@
+[17-Apr-2025 21:52:53 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Arr.php on line 11
+[17-Apr-2025 21:52:55 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 22
+[17-Apr-2025 21:52:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 21
+[17-Apr-2025 21:53:06 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/LazyCollection.php on line 24
+[27-Apr-2025 04:39:19 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Arr.php on line 11
+[27-Apr-2025 04:39:21 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 22
+[27-Apr-2025 04:39:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 21
+[27-Apr-2025 04:39:29 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\EnumeratesValues" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Collections/LazyCollection.php on line 24

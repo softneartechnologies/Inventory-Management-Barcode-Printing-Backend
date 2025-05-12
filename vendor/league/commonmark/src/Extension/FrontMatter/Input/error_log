@@ -1,0 +1,8 @@
+[19-Apr-2025 04:30:37 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Input\MarkdownInput" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Input/MarkdownInputWithFrontMatter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Input/MarkdownInputWithFrontMatter.php on line 19
+[29-Apr-2025 04:01:17 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Input\MarkdownInput" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Input/MarkdownInputWithFrontMatter.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/FrontMatter/Input/MarkdownInputWithFrontMatter.php on line 19

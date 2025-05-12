@@ -1,0 +1,120 @@
+[19-Apr-2025 05:17:30 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cmap.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cmap.php on line 16
+[19-Apr-2025 05:17:31 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cvt.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cvt.php on line 16
+[19-Apr-2025 05:17:33 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/fpgm.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/fpgm.php on line 16
+[19-Apr-2025 05:17:34 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/glyf.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/glyf.php on line 20
+[19-Apr-2025 05:17:36 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/head.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/head.php on line 17
+[19-Apr-2025 05:17:38 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hhea.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hhea.php on line 16
+[19-Apr-2025 05:17:39 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hmtx.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hmtx.php on line 16
+[19-Apr-2025 05:17:41 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/kern.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/kern.php on line 16
+[19-Apr-2025 05:17:43 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/loca.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/loca.php on line 16
+[19-Apr-2025 05:17:44 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/maxp.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/maxp.php on line 16
+[19-Apr-2025 05:17:46 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/nameRecord.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/nameRecord.php on line 17
+[19-Apr-2025 10:11:54 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/name.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/name.php on line 18
+[19-Apr-2025 10:11:55 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/os2.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/os2.php on line 16
+[19-Apr-2025 10:11:57 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/post.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/post.php on line 17
+[19-Apr-2025 10:11:59 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/prep.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/prep.php on line 18
+[28-Apr-2025 08:30:41 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cmap.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cmap.php on line 16
+[28-Apr-2025 08:31:46 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cvt.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/cvt.php on line 16
+[28-Apr-2025 08:31:49 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/fpgm.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/fpgm.php on line 16
+[28-Apr-2025 08:31:51 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/glyf.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/glyf.php on line 20
+[28-Apr-2025 08:31:52 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/head.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/head.php on line 17
+[28-Apr-2025 08:31:54 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hhea.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hhea.php on line 16
+[28-Apr-2025 08:31:56 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hmtx.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/hmtx.php on line 16
+[28-Apr-2025 08:31:58 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/kern.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/kern.php on line 16
+[28-Apr-2025 08:31:59 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/loca.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/loca.php on line 16
+[28-Apr-2025 08:32:01 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/maxp.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/maxp.php on line 16
+[28-Apr-2025 08:32:03 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/name.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/name.php on line 18
+[28-Apr-2025 08:32:05 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/nameRecord.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/nameRecord.php on line 17
+[28-Apr-2025 08:32:06 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/os2.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/os2.php on line 16
+[28-Apr-2025 08:32:08 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/post.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/post.php on line 17
+[28-Apr-2025 08:32:10 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Table\Table" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/prep.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Type/prep.php on line 18

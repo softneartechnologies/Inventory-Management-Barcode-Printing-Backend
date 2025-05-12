@@ -1,0 +1,24 @@
+[17-Apr-2025 21:44:18 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/Outline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/Outline.php on line 19
+[17-Apr-2025 21:44:23 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Glyph\Outline" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineComposite.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineComposite.php on line 16
+[17-Apr-2025 21:44:26 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Glyph\Outline" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineSimple.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineSimple.php on line 16
+[27-Apr-2025 04:32:35 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/Outline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/Outline.php on line 19
+[27-Apr-2025 04:32:38 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Glyph\Outline" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineComposite.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineComposite.php on line 16
+[27-Apr-2025 04:32:40 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Glyph\Outline" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineSimple.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Glyph/OutlineSimple.php on line 16

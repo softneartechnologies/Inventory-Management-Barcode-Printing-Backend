@@ -1,0 +1,8 @@
+[17-Apr-2025 11:49:55 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Emitter" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Emitter/DispatchingEmitter.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Emitter/DispatchingEmitter.php on line 37
+[27-Apr-2025 18:20:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Emitter" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Emitter/DispatchingEmitter.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Emitter/DispatchingEmitter.php on line 37

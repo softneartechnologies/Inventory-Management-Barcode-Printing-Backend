@@ -1,0 +1,16 @@
+[14-Apr-2025 17:05:22 UTC] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/FallbackMimeTypeDetector.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/FallbackMimeTypeDetector.php on line 10
+[14-Apr-2025 17:05:25 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Flysystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/LocalFilesystemAdapter.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/LocalFilesystemAdapter.php on line 50
+[24-Apr-2025 05:00:33 UTC] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/FallbackMimeTypeDetector.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/FallbackMimeTypeDetector.php on line 10
+[24-Apr-2025 05:00:36 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Flysystem\FilesystemAdapter" not found in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/LocalFilesystemAdapter.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/flysystem-local/LocalFilesystemAdapter.php on line 50

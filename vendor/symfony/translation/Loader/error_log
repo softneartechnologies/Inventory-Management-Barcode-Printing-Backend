@@ -1,0 +1,104 @@
+[14-Apr-2025 23:01:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/ArrayLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/ArrayLoader.php on line 21
+[14-Apr-2025 23:01:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/CsvFileLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/CsvFileLoader.php on line 21
+[14-Apr-2025 23:01:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\ArrayLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/FileLoader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/FileLoader.php on line 22
+[14-Apr-2025 23:01:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\IcuResFileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuDatFileLoader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuDatFileLoader.php on line 24
+[14-Apr-2025 23:01:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuResFileLoader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuResFileLoader.php on line 24
+[14-Apr-2025 23:01:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IniFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IniFileLoader.php on line 19
+[14-Apr-2025 23:01:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/JsonFileLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/JsonFileLoader.php on line 21
+[14-Apr-2025 23:01:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/MoFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/MoFileLoader.php on line 19
+[14-Apr-2025 23:01:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PhpFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PhpFileLoader.php on line 19
+[14-Apr-2025 23:01:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PoFileLoader.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PoFileLoader.php on line 18
+[14-Apr-2025 23:01:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/QtFileLoader.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/QtFileLoader.php on line 26
+[14-Apr-2025 23:02:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/XliffFileLoader.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/XliffFileLoader.php on line 29
+[14-Apr-2025 23:02:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/YamlFileLoader.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/YamlFileLoader.php on line 25
+[24-Apr-2025 10:40:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/ArrayLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/ArrayLoader.php on line 21
+[24-Apr-2025 10:40:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/CsvFileLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/CsvFileLoader.php on line 21
+[24-Apr-2025 10:40:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\ArrayLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/FileLoader.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/FileLoader.php on line 22
+[24-Apr-2025 10:40:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\IcuResFileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuDatFileLoader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuDatFileLoader.php on line 24
+[24-Apr-2025 10:40:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuResFileLoader.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IcuResFileLoader.php on line 24
+[24-Apr-2025 10:40:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IniFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/IniFileLoader.php on line 19
+[24-Apr-2025 10:40:52 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/JsonFileLoader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/JsonFileLoader.php on line 21
+[24-Apr-2025 10:40:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/MoFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/MoFileLoader.php on line 19
+[24-Apr-2025 10:40:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PhpFileLoader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PhpFileLoader.php on line 19
+[24-Apr-2025 10:40:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PoFileLoader.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/PoFileLoader.php on line 18
+[24-Apr-2025 10:41:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/QtFileLoader.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/QtFileLoader.php on line 26
+[24-Apr-2025 10:41:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Loader\LoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/XliffFileLoader.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/XliffFileLoader.php on line 29
+[24-Apr-2025 10:41:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Loader\FileLoader" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/YamlFileLoader.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Loader/YamlFileLoader.php on line 25

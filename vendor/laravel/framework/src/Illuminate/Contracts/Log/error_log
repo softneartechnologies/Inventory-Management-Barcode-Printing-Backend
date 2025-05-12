@@ -1,0 +1,8 @@
+[19-Apr-2025 00:40:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Log/ContextLogProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Log/ContextLogProcessor.php on line 7
+[28-Apr-2025 06:53:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Monolog\Processor\ProcessorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Log/ContextLogProcessor.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Log/ContextLogProcessor.php on line 7

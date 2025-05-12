@@ -1,0 +1,8 @@
+[16-Apr-2025 11:26:03 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Handler\CurlFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 21
+[25-Apr-2025 20:19:06 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Handler\CurlFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php on line 21

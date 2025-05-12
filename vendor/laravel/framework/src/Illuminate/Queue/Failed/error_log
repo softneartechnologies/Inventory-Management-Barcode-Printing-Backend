@@ -1,0 +1,40 @@
+[19-Apr-2025 12:48:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php on line 9
+[19-Apr-2025 12:48:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php on line 9
+[19-Apr-2025 12:48:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\FailedJobProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php on line 12
+[19-Apr-2025 12:48:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/FileFailedJobProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/FileFailedJobProvider.php on line 10
+[19-Apr-2025 12:48:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php on line 5
+[28-Apr-2025 06:54:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseFailedJobProvider.php on line 9
+[28-Apr-2025 06:54:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php on line 9
+[28-Apr-2025 06:54:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\FailedJobProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php on line 12
+[28-Apr-2025 06:54:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/FileFailedJobProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/FileFailedJobProvider.php on line 10
+[28-Apr-2025 06:54:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Queue\Failed\CountableFailedJobProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php on line 5

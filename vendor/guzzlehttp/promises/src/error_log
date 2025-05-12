@@ -1,0 +1,64 @@
+[15-Apr-2025 12:04:47 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Coroutine.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Coroutine.php on line 46
+[15-Apr-2025 12:04:52 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/EachPromise.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/EachPromise.php on line 13
+[15-Apr-2025 12:04:54 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/FulfilledPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/FulfilledPromise.php on line 15
+[15-Apr-2025 12:04:57 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Promise.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Promise.php on line 14
+[15-Apr-2025 12:05:02 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/RejectedPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/RejectedPromise.php on line 15
+[15-Apr-2025 12:05:05 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\TaskQueueInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/TaskQueue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/TaskQueue.php on line 18
+[15-Apr-2025 14:58:46 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/AggregateException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/AggregateException.php on line 10
+[15-Apr-2025 14:58:47 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/CancellationException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/CancellationException.php on line 10
+[24-Apr-2025 19:32:44 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/AggregateException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/AggregateException.php on line 10
+[24-Apr-2025 19:32:45 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/CancellationException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/CancellationException.php on line 10
+[24-Apr-2025 19:32:46 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Coroutine.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Coroutine.php on line 46
+[24-Apr-2025 19:32:49 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/EachPromise.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/EachPromise.php on line 13
+[24-Apr-2025 19:32:50 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/FulfilledPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/FulfilledPromise.php on line 15
+[24-Apr-2025 19:32:52 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Promise.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/Promise.php on line 14
+[24-Apr-2025 19:32:55 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/RejectedPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/RejectedPromise.php on line 15
+[24-Apr-2025 19:32:57 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\TaskQueueInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/TaskQueue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/promises/src/TaskQueue.php on line 18

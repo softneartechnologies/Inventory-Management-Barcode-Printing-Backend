@@ -1,0 +1,136 @@
+[17-Apr-2025 11:50:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php on line 17
+[17-Apr-2025 11:50:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php on line 17
+[17-Apr-2025 11:50:17 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php on line 12
+[17-Apr-2025 11:50:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php on line 15
+[17-Apr-2025 11:50:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php on line 17
+[17-Apr-2025 11:50:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php on line 17
+[17-Apr-2025 11:50:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php on line 17
+[17-Apr-2025 11:50:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php on line 18
+[17-Apr-2025 11:50:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php on line 18
+[17-Apr-2025 11:50:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php on line 17
+[17-Apr-2025 11:50:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoTestCaseObjectOnCallStackException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoTestCaseObjectOnCallStackException.php on line 20
+[17-Apr-2025 11:50:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php on line 15
+[17-Apr-2025 11:50:33 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php on line 17
+[18-Apr-2025 04:51:56 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php on line 17
+[18-Apr-2025 04:51:58 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php on line 17
+[18-Apr-2025 04:52:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php on line 17
+[18-Apr-2025 04:52:02 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php on line 17
+[27-Apr-2025 15:09:59 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventAlreadyAssignedException.php on line 17
+[27-Apr-2025 15:10:00 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/EventFacadeIsSealedException.php on line 17
+[27-Apr-2025 15:10:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/Exception.php on line 12
+[27-Apr-2025 15:10:02 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidArgumentException.php on line 15
+[27-Apr-2025 15:10:03 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidEventException.php on line 17
+[27-Apr-2025 15:10:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/InvalidSubscriberException.php on line 17
+[27-Apr-2025 15:10:05 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/MapError.php on line 17
+[27-Apr-2025 15:10:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoComparisonFailureException.php on line 18
+[27-Apr-2025 15:10:07 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoDataSetFromDataProviderException.php on line 18
+[27-Apr-2025 15:10:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoPreviousThrowableException.php on line 17
+[27-Apr-2025 15:10:09 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoTestCaseObjectOnCallStackException.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/NoTestCaseObjectOnCallStackException.php on line 20
+[27-Apr-2025 15:10:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/RuntimeException.php on line 15
+[27-Apr-2025 15:10:11 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/SubscriberTypeAlreadyRegisteredException.php on line 17
+[27-Apr-2025 15:10:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventException.php on line 17
+[27-Apr-2025 15:10:13 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownEventTypeException.php on line 17
+[27-Apr-2025 15:10:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberException.php on line 17
+[27-Apr-2025 15:10:15 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Event/Exception/UnknownSubscriberTypeException.php on line 17

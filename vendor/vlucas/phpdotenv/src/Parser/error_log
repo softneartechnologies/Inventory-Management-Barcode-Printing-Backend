@@ -1,0 +1,8 @@
+[20-Apr-2025 20:23:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 12
+[24-Apr-2025 20:29:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Dotenv\Parser\ParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/vlucas/phpdotenv/src/Parser/Parser.php on line 12

@@ -1,0 +1,104 @@
+[16-Apr-2025 06:05:12 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Frame" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 27
+[16-Apr-2025 06:05:13 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php on line 18
+[16-Apr-2025 06:05:15 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php on line 19
+[16-Apr-2025 06:05:17 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php on line 18
+[16-Apr-2025 06:05:18 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php on line 17
+[16-Apr-2025 06:05:20 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\ListBullet" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php on line 18
+[16-Apr-2025 06:05:22 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php on line 17
+[16-Apr-2025 06:05:23 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php on line 20
+[16-Apr-2025 06:05:25 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php on line 20
+[16-Apr-2025 06:05:27 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\Block" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php on line 18
+[16-Apr-2025 06:05:28 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php on line 17
+[16-Apr-2025 06:05:30 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php on line 19
+[16-Apr-2025 06:05:31 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php on line 18
+[25-Apr-2025 20:13:31 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Frame" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 27
+[25-Apr-2025 20:13:32 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Block.php on line 18
+[25-Apr-2025 20:13:34 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Image.php on line 19
+[25-Apr-2025 20:13:36 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Inline.php on line 18
+[25-Apr-2025 20:13:37 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBullet.php on line 17
+[25-Apr-2025 20:13:39 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\ListBullet" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/ListBulletImage.php on line 18
+[25-Apr-2025 20:13:40 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/NullFrameDecorator.php on line 17
+[25-Apr-2025 20:13:42 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Page.php on line 20
+[25-Apr-2025 20:13:44 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Table.php on line 20
+[25-Apr-2025 20:13:46 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\Block" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableCell.php on line 18
+[25-Apr-2025 20:13:47 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRow.php on line 17
+[25-Apr-2025 20:13:49 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/TableRowGroup.php on line 19
+[25-Apr-2025 20:13:50 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\FrameDecorator\AbstractFrameDecorator" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/FrameDecorator/Text.php on line 18

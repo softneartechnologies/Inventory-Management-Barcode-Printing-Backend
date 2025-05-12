@@ -1,0 +1,8 @@
+[14-Apr-2025 23:22:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\ErrorHandler\Error\FatalError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Error/OutOfMemoryError.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Error/OutOfMemoryError.php on line 14
+[24-Apr-2025 10:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\ErrorHandler\Error\FatalError" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Error/OutOfMemoryError.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/Error/OutOfMemoryError.php on line 14

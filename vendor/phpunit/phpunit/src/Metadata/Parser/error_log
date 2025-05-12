@@ -1,0 +1,32 @@
+[18-Apr-2025 00:10:35 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php on line 43
+[18-Apr-2025 00:10:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php on line 92
+[18-Apr-2025 00:10:38 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php on line 22
+[18-Apr-2025 00:11:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php on line 22
+[27-Apr-2025 11:02:41 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AnnotationParser.php on line 43
+[27-Apr-2025 11:02:43 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/AttributeParser.php on line 92
+[27-Apr-2025 11:02:45 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/CachingParser.php on line 22
+[27-Apr-2025 11:02:49 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Metadata\Parser\Parser" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Parser/ParserChain.php on line 22

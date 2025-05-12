@@ -1,0 +1,56 @@
+[16-Apr-2025 06:41:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php on line 9
+[16-Apr-2025 06:41:42 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php on line 5
+[16-Apr-2025 06:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php on line 18
+[16-Apr-2025 06:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php on line 6
+[16-Apr-2025 06:41:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php on line 6
+[16-Apr-2025 06:41:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php on line 6
+[16-Apr-2025 06:41:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php on line 6
+[25-Apr-2025 20:20:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/AbstractMatcherTest.php on line 9
+[25-Apr-2025 20:20:26 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/BaseMatcherTest.php on line 5
+[25-Apr-2025 20:20:28 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\FeatureMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/FeatureMatcherTest.php on line 18
+[25-Apr-2025 20:20:29 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcherTest" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/InvokedMatcherTest.php on line 6
+[25-Apr-2025 20:20:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/MatcherAssertTest.php on line 6
+[25-Apr-2025 20:20:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Hamcrest\SelfDescribing" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/StringDescriptionTest.php on line 6
+[25-Apr-2025 20:20:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/tests/Hamcrest/UtilTest.php on line 6

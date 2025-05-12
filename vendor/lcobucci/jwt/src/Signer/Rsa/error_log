@@ -1,0 +1,48 @@
+[18-Apr-2025 05:02:29 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha384.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha384.php on line 11
+[18-Apr-2025 05:02:32 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha512.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha512.php on line 11
+[18-Apr-2025 09:53:24 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php on line 10
+[18-Apr-2025 09:53:25 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php on line 10
+[18-Apr-2025 09:53:27 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php on line 10
+[18-Apr-2025 09:53:29 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha256.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha256.php on line 11
+[27-Apr-2025 04:06:23 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php on line 10
+[27-Apr-2025 04:06:25 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php on line 10
+[27-Apr-2025 04:06:26 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Rsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php on line 10
+[27-Apr-2025 04:06:28 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha256.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha256.php on line 11
+[27-Apr-2025 04:06:30 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha384.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha384.php on line 11
+[27-Apr-2025 04:06:31 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\UnsafeRsa" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha512.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Rsa/UnsafeSha512.php on line 11

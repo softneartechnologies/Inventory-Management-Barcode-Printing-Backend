@@ -1,0 +1,10 @@
+[16-Apr-2025 11:37:22 UTC] PHP Warning:  Class "Monolog\JsonSerializableDateTimeImmutable" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/DateTimeImmutable.php on line 14
+[16-Apr-2025 11:37:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Logger.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Logger.php on line 35
+[25-Apr-2025 08:13:23 UTC] PHP Warning:  Class "Monolog\JsonSerializableDateTimeImmutable" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/DateTimeImmutable.php on line 14
+[25-Apr-2025 20:19:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerInterface" not found in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Logger.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/monolog/monolog/src/Monolog/Logger.php on line 35

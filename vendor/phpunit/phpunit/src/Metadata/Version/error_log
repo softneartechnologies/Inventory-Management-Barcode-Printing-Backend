@@ -1,0 +1,16 @@
+[18-Apr-2025 00:11:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Version\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ComparisonRequirement.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ComparisonRequirement.php on line 20
+[18-Apr-2025 00:11:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Version\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ConstraintRequirement.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ConstraintRequirement.php on line 21
+[27-Apr-2025 11:03:02 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Version\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ComparisonRequirement.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ComparisonRequirement.php on line 20
+[27-Apr-2025 11:03:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Version\Requirement" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ConstraintRequirement.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Version/ConstraintRequirement.php on line 21

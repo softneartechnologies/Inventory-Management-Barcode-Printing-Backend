@@ -1,0 +1,8 @@
+[17-Apr-2025 09:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php on line 27
+[26-Apr-2025 18:41:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php on line 27

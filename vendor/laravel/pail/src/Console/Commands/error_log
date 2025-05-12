@@ -1,0 +1,8 @@
+[18-Apr-2025 00:08:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Console/Commands/PailCommand.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Console/Commands/PailCommand.php on line 18
+[27-Apr-2025 04:03:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Console/Commands/PailCommand.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/pail/src/Console/Commands/PailCommand.php on line 18

@@ -1,0 +1,26 @@
+[15-Apr-2025 10:33:28 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\BodySummarizerInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php on line 7
+[15-Apr-2025 10:33:31 UTC] PHP Fatal error:  Trait "GuzzleHttp\ClientTrait" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Client.php on line 17
+[15-Apr-2025 10:33:38 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php on line 38
+[15-Apr-2025 10:33:43 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Pool.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Pool.php on line 24
+[24-Apr-2025 19:32:22 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\BodySummarizerInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/BodySummarizer.php on line 7
+[24-Apr-2025 19:32:24 UTC] PHP Fatal error:  Trait "GuzzleHttp\ClientTrait" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Client.php on line 17
+[24-Apr-2025 19:32:28 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\MessageFormatterInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/MessageFormatter.php on line 38
+[24-Apr-2025 19:32:31 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Pool.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/guzzlehttp/guzzle/src/Pool.php on line 24

@@ -1,0 +1,24 @@
+[21-Apr-2025 10:42:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Http\Parser" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/AuthHeaders.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/AuthHeaders.php on line 17
+[21-Apr-2025 10:42:53 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/Cookies.php on line 18
+[21-Apr-2025 10:42:55 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/InputSource.php on line 17
+[21-Apr-2025 10:42:58 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Http\Parser\RouteParams" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/LumenRouteParams.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/LumenRouteParams.php on line 17
+[21-Apr-2025 10:43:02 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/QueryString.php on line 17
+[21-Apr-2025 10:43:04 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/RouteParams.php on line 17
+[25-Apr-2025 06:10:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Tymon\JWTAuth\Contracts\Http\Parser" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/AuthHeaders.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/AuthHeaders.php on line 17
+[25-Apr-2025 06:10:38 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/Cookies.php on line 18
+[25-Apr-2025 06:10:40 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/InputSource.php on line 17
+[25-Apr-2025 06:10:44 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\Http\Parser\RouteParams" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/LumenRouteParams.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/LumenRouteParams.php on line 17
+[25-Apr-2025 06:10:48 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/QueryString.php on line 17
+[25-Apr-2025 06:10:50 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Http\Parser\KeyTrait" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Http/Parser/RouteParams.php on line 17

@@ -1,0 +1,16 @@
+[19-Apr-2025 10:14:27 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/Address.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/Address.php on line 8
+[19-Apr-2025 10:14:29 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/PhoneNumber.php on line 5
+[28-Apr-2025 08:31:41 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\Address" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/Address.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/Address.php on line 8
+[28-Apr-2025 08:31:43 UTC] PHP Fatal error:  Uncaught Error: Class "Faker\Provider\en_US\PhoneNumber" not found in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/PhoneNumber.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/fakerphp/faker/src/Faker/Provider/en_CA/PhoneNumber.php on line 5

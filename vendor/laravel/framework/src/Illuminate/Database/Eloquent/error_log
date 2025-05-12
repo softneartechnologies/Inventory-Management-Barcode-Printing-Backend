@@ -1,0 +1,40 @@
+[19-Apr-2025 00:48:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\Eloquent\Scope" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php on line 5
+[19-Apr-2025 03:04:02 UTC] PHP Fatal error:  Trait "Illuminate\Broadcasting\InteractsWithSockets" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/BroadcastableModelEventOccurred.php on line 11
+[19-Apr-2025 03:04:06 UTC] PHP Fatal error:  Trait "Illuminate\Database\Eloquent\BroadcastsEvents" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/BroadcastsEventsAfterCommit.php on line 5
+[19-Apr-2025 03:04:08 UTC] PHP Fatal error:  Trait "Illuminate\Database\Concerns\BuildsQueries" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 35
+[19-Apr-2025 03:04:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Collection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php on line 19
+[19-Apr-2025 03:04:27 UTC] PHP Fatal error:  Trait "Illuminate\Database\Eloquent\Concerns\HasAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 29
+[19-Apr-2025 03:04:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\RecordsNotFoundException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php on line 11
+[19-Apr-2025 03:04:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\EntityResolver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php on line 8
+[29-Apr-2025 01:59:10 UTC] PHP Fatal error:  Trait "Illuminate\Broadcasting\InteractsWithSockets" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/BroadcastableModelEventOccurred.php on line 11
+[29-Apr-2025 01:59:18 UTC] PHP Fatal error:  Trait "Illuminate\Database\Eloquent\BroadcastsEvents" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/BroadcastsEventsAfterCommit.php on line 5
+[29-Apr-2025 01:59:22 UTC] PHP Fatal error:  Trait "Illuminate\Database\Concerns\BuildsQueries" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 35
+[29-Apr-2025 01:59:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Collection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php on line 19
+[29-Apr-2025 01:59:55 UTC] PHP Fatal error:  Trait "Illuminate\Database\Eloquent\Concerns\HasAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 29
+[29-Apr-2025 02:00:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\RecordsNotFoundException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php on line 11
+[29-Apr-2025 02:00:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\EntityResolver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/QueueEntityResolver.php on line 8
+[29-Apr-2025 02:00:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\Eloquent\Scope" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Eloquent/SoftDeletingScope.php on line 5

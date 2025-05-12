@@ -1,0 +1,86 @@
+[19-Apr-2025 03:03:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\EventMutex" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php on line 9
+[19-Apr-2025 03:03:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\SchedulingMutex" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php on line 8
+[19-Apr-2025 03:03:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Scheduling\Event" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php on line 12
+[19-Apr-2025 03:03:39 UTC] PHP Fatal error:  Trait "Illuminate\Console\Scheduling\ManagesAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/PendingEventAttributes.php on line 8
+[19-Apr-2025 03:03:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php on line 25
+[19-Apr-2025 03:03:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php on line 12
+[19-Apr-2025 03:03:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleInterruptCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleInterruptCommand.php on line 11
+[19-Apr-2025 03:03:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php on line 17
+[19-Apr-2025 03:03:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php on line 21
+[19-Apr-2025 03:03:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php on line 12
+[19-Apr-2025 03:03:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php on line 14
+[19-Apr-2025 03:29:38 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php on line 24
+[19-Apr-2025 03:29:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php on line 9
+[28-Apr-2025 06:24:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\EventMutex" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php on line 9
+[28-Apr-2025 06:24:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Console\Scheduling\SchedulingMutex" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php on line 8
+[28-Apr-2025 06:24:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Scheduling\Event" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php on line 12
+[28-Apr-2025 06:24:17 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php on line 24
+[28-Apr-2025 06:24:23 UTC] PHP Fatal error:  Trait "Illuminate\Console\Scheduling\ManagesAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/PendingEventAttributes.php on line 8
+[28-Apr-2025 06:24:25 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php on line 25
+[28-Apr-2025 06:24:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php on line 9
+[28-Apr-2025 06:24:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php on line 12
+[28-Apr-2025 06:24:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleInterruptCommand.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleInterruptCommand.php on line 11
+[28-Apr-2025 06:24:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleListCommand.php on line 17
+[28-Apr-2025 06:24:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php on line 21
+[28-Apr-2025 06:24:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleTestCommand.php on line 12
+[28-Apr-2025 06:24:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php on line 14

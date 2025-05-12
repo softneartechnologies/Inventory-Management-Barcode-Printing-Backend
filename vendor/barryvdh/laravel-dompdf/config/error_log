@@ -1,0 +1,8 @@
+[15-Apr-2025 10:28:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/config/dompdf.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/config/dompdf.php on line 48
+[24-Apr-2025 10:52:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/config/dompdf.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/config/dompdf.php on line 48

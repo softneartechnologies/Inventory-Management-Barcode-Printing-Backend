@@ -1,0 +1,24 @@
+[19-Apr-2025 10:36:33 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Factory.php on line 21
+[19-Apr-2025 10:36:36 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWT.php on line 21
+[19-Apr-2025 10:36:38 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\JWT" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTAuth.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTAuth.php on line 18
+[19-Apr-2025 10:36:40 UTC] PHP Fatal error:  Trait "Illuminate\Auth\GuardHelpers" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTGuard.php on line 24
+[19-Apr-2025 10:36:42 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Manager.php on line 20
+[19-Apr-2025 10:36:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Payload.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Payload.php on line 27
+[24-Apr-2025 10:39:14 UTC] PHP Fatal error:  Trait "Illuminate\Auth\GuardHelpers" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTGuard.php on line 24
+[24-Apr-2025 10:39:16 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Manager.php on line 20
+[24-Apr-2025 10:39:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Payload.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Payload.php on line 27
+[24-Apr-2025 10:47:27 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Factory.php on line 21
+[24-Apr-2025 10:47:30 UTC] PHP Fatal error:  Trait "Tymon\JWTAuth\Support\CustomClaims" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWT.php on line 21
+[24-Apr-2025 10:47:32 UTC] PHP Fatal error:  Uncaught Error: Class "Tymon\JWTAuth\JWT" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTAuth.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/JWTAuth.php on line 18

@@ -1,0 +1,72 @@
+[14-Apr-2025 20:53:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DebugFormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DebugFormatterHelper.php on line 21
+[14-Apr-2025 20:53:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DescriptorHelper.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DescriptorHelper.php on line 28
+[14-Apr-2025 20:53:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/FormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/FormatterHelper.php on line 21
+[14-Apr-2025 20:54:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Helper\HelperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/Helper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/Helper.php on line 22
+[14-Apr-2025 20:54:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/InputAwareHelper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/InputAwareHelper.php on line 22
+[14-Apr-2025 20:54:20 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/ProcessHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/ProcessHelper.php on line 26
+[14-Apr-2025 20:54:29 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/QuestionHelper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/QuestionHelper.php on line 35
+[14-Apr-2025 20:54:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\QuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php on line 26
+[15-Apr-2025 10:34:56 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\TableCell" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/TableSeparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/TableSeparator.php on line 19
+[24-Apr-2025 17:43:42 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DebugFormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DebugFormatterHelper.php on line 21
+[24-Apr-2025 17:43:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DescriptorHelper.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/DescriptorHelper.php on line 28
+[24-Apr-2025 17:43:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/FormatterHelper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/FormatterHelper.php on line 21
+[24-Apr-2025 17:43:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Helper\HelperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/Helper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/Helper.php on line 22
+[24-Apr-2025 17:43:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/InputAwareHelper.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/InputAwareHelper.php on line 22
+[24-Apr-2025 17:43:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/ProcessHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/ProcessHelper.php on line 26
+[24-Apr-2025 17:44:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\Helper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/QuestionHelper.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/QuestionHelper.php on line 35
+[24-Apr-2025 17:44:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\QuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/SymfonyQuestionHelper.php on line 26
+[24-Apr-2025 17:44:14 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\TableCell" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/TableSeparator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Helper/TableSeparator.php on line 19

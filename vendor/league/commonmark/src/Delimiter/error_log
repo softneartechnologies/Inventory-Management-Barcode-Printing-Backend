@@ -1,0 +1,16 @@
+[16-Apr-2025 16:29:35 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\DelimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Delimiter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Delimiter.php on line 21
+[16-Apr-2025 16:29:41 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Inline\InlineParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/DelimiterParser.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/DelimiterParser.php on line 20
+[25-Apr-2025 08:42:00 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Delimiter\DelimiterInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Delimiter.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/Delimiter.php on line 21
+[25-Apr-2025 08:42:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Parser\Inline\InlineParserInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/DelimiterParser.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Delimiter/DelimiterParser.php on line 20

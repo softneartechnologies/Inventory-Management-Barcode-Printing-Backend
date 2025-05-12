@@ -1,0 +1,8 @@
+[19-Apr-2025 03:31:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Auth\Guard" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Auth/StatefulGuard.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Auth/StatefulGuard.php on line 5
+[28-Apr-2025 06:50:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Auth\Guard" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Auth/StatefulGuard.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Auth/StatefulGuard.php on line 5

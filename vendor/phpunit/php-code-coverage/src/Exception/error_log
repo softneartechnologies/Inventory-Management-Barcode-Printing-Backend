@@ -1,0 +1,152 @@
+[16-Apr-2025 22:36:19 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/BranchAndPathCoverageNotSupportedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/BranchAndPathCoverageNotSupportedException.php on line 14
+[16-Apr-2025 22:36:20 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DeadCodeDetectionNotSupportedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DeadCodeDetectionNotSupportedException.php on line 14
+[16-Apr-2025 22:36:21 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DirectoryCouldNotBeCreatedException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DirectoryCouldNotBeCreatedException.php on line 15
+[16-Apr-2025 22:36:23 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/FileCouldNotBeWrittenException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/FileCouldNotBeWrittenException.php on line 14
+[16-Apr-2025 22:36:24 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/InvalidArgumentException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/InvalidArgumentException.php on line 12
+[16-Apr-2025 22:36:25 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverAvailableException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverAvailableException.php on line 14
+[16-Apr-2025 22:36:26 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverWithPathCoverageSupportAvailableException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverWithPathCoverageSupportAvailableException.php on line 14
+[16-Apr-2025 22:36:27 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ParserException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ParserException.php on line 14
+[16-Apr-2025 22:36:28 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PathExistsButIsNotDirectoryException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PathExistsButIsNotDirectoryException.php on line 16
+[16-Apr-2025 22:36:29 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PcovNotAvailableException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PcovNotAvailableException.php on line 15
+[16-Apr-2025 22:36:30 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReflectionException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReflectionException.php on line 14
+[16-Apr-2025 22:36:31 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReportAlreadyFinalizedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReportAlreadyFinalizedException.php on line 14
+[16-Apr-2025 22:36:34 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/StaticAnalysisCacheNotConfiguredException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/StaticAnalysisCacheNotConfiguredException.php on line 14
+[16-Apr-2025 22:36:34 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/TestIdMissingException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/TestIdMissingException.php on line 14
+[16-Apr-2025 22:36:35 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/UnintentionallyCoveredCodeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/UnintentionallyCoveredCodeException.php on line 14
+[16-Apr-2025 22:36:36 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/WriteOperationFailedException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/WriteOperationFailedException.php on line 16
+[16-Apr-2025 22:36:37 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotAvailableException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotAvailableException.php on line 15
+[16-Apr-2025 22:36:38 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotEnabledException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotEnabledException.php on line 15
+[16-Apr-2025 22:36:39 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XmlException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XmlException.php on line 14
+[25-Apr-2025 20:24:50 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/BranchAndPathCoverageNotSupportedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/BranchAndPathCoverageNotSupportedException.php on line 14
+[25-Apr-2025 20:24:52 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DeadCodeDetectionNotSupportedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DeadCodeDetectionNotSupportedException.php on line 14
+[25-Apr-2025 20:24:53 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DirectoryCouldNotBeCreatedException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/DirectoryCouldNotBeCreatedException.php on line 15
+[25-Apr-2025 20:24:57 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/FileCouldNotBeWrittenException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/FileCouldNotBeWrittenException.php on line 14
+[25-Apr-2025 20:24:58 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/InvalidArgumentException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/InvalidArgumentException.php on line 12
+[25-Apr-2025 20:25:00 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverAvailableException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverAvailableException.php on line 14
+[25-Apr-2025 20:25:02 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverWithPathCoverageSupportAvailableException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/NoCodeCoverageDriverWithPathCoverageSupportAvailableException.php on line 14
+[25-Apr-2025 20:25:04 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ParserException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ParserException.php on line 14
+[25-Apr-2025 20:25:05 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PathExistsButIsNotDirectoryException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PathExistsButIsNotDirectoryException.php on line 16
+[25-Apr-2025 20:25:07 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PcovNotAvailableException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/PcovNotAvailableException.php on line 15
+[25-Apr-2025 20:25:09 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReflectionException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReflectionException.php on line 14
+[25-Apr-2025 20:25:10 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReportAlreadyFinalizedException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/ReportAlreadyFinalizedException.php on line 14
+[25-Apr-2025 20:25:12 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/StaticAnalysisCacheNotConfiguredException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/StaticAnalysisCacheNotConfiguredException.php on line 14
+[25-Apr-2025 20:25:14 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/TestIdMissingException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/TestIdMissingException.php on line 14
+[25-Apr-2025 20:25:16 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/UnintentionallyCoveredCodeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/UnintentionallyCoveredCodeException.php on line 14
+[25-Apr-2025 20:25:17 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/WriteOperationFailedException.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/WriteOperationFailedException.php on line 16
+[25-Apr-2025 20:25:19 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotAvailableException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotAvailableException.php on line 15
+[25-Apr-2025 20:25:21 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotEnabledException.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XdebugNotEnabledException.php on line 15
+[25-Apr-2025 20:25:22 UTC] PHP Fatal error:  Uncaught Error: Interface "SebastianBergmann\CodeCoverage\Exception" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XmlException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/Exception/XmlException.php on line 14

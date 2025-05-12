@@ -1,0 +1,8 @@
+[14-Apr-2025 22:55:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Reader\TranslationReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Reader/TranslationReader.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Reader/TranslationReader.php on line 23
+[24-Apr-2025 10:41:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Reader\TranslationReaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Reader/TranslationReader.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Reader/TranslationReader.php on line 23

@@ -1,0 +1,32 @@
+[18-Apr-2025 00:09:58 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php on line 21
+[18-Apr-2025 00:10:03 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Newline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Newline.php on line 19
+[18-Apr-2025 00:10:05 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractStringContainer" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Text.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Text.php on line 19
+[18-Apr-2025 14:08:53 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Node" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php on line 21
+[27-Apr-2025 13:35:46 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Node" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractInline.php on line 21
+[27-Apr-2025 13:35:48 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/AbstractStringContainer.php on line 21
+[27-Apr-2025 13:35:52 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractInline" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Newline.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Newline.php on line 19
+[27-Apr-2025 13:35:54 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Node\Inline\AbstractStringContainer" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Text.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Node/Inline/Text.php on line 19

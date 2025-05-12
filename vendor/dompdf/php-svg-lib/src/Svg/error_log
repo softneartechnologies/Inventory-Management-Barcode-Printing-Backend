@@ -1,0 +1,16 @@
+[16-Apr-2025 06:07:44 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Style" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/DefaultStyle.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/DefaultStyle.php on line 10
+[16-Apr-2025 06:07:46 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Document.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Document.php on line 30
+[25-Apr-2025 20:15:33 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Style" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/DefaultStyle.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/DefaultStyle.php on line 10
+[25-Apr-2025 20:15:34 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Document.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Document.php on line 30

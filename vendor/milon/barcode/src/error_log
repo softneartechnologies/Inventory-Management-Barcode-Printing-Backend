@@ -1,0 +1,8 @@
+[15-Apr-2025 01:31:37 UTC] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/routes.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/routes.php on line 15
+[24-Apr-2025 17:35:25 UTC] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/routes.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/routes.php on line 15

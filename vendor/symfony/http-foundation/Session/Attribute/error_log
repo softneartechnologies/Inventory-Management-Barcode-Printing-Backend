@@ -1,0 +1,16 @@
+[16-Apr-2025 11:23:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Attribute\AttributeBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php on line 19
+[16-Apr-2025 11:23:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\SessionBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php on line 21
+[25-Apr-2025 06:03:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\Attribute\AttributeBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php on line 19
+[25-Apr-2025 06:03:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\Session\SessionBagInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/Session/Attribute/AttributeBagInterface.php on line 21

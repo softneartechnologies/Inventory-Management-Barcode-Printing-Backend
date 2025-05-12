@@ -1,0 +1,2 @@
+[19-Apr-2025 03:09:45 UTC] PHP Fatal error:  Trait "Laravel\Prompts\Themes\Default\Concerns\InteractsWithStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/Concerns/DrawsBoxes.php on line 7
+[29-Apr-2025 04:00:06 UTC] PHP Fatal error:  Trait "Laravel\Prompts\Themes\Default\Concerns\InteractsWithStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Themes/Default/Concerns/DrawsBoxes.php on line 7

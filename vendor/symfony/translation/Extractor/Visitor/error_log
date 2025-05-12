@@ -1,0 +1,24 @@
+[16-Apr-2025 11:26:26 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/ConstraintVisitor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/ConstraintVisitor.php on line 22
+[16-Apr-2025 11:26:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TransMethodVisitor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TransMethodVisitor.php on line 20
+[16-Apr-2025 11:26:30 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TranslatableMessageVisitor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TranslatableMessageVisitor.php on line 20
+[24-Apr-2025 15:42:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/ConstraintVisitor.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/ConstraintVisitor.php on line 22
+[24-Apr-2025 15:42:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TransMethodVisitor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TransMethodVisitor.php on line 20
+[24-Apr-2025 15:42:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Extractor\Visitor\AbstractVisitor" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TranslatableMessageVisitor.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Extractor/Visitor/TranslatableMessageVisitor.php on line 20

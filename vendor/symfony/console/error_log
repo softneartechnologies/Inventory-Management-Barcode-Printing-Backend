@@ -1,0 +1,16 @@
+[14-Apr-2025 16:58:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Application.php:74
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Application.php on line 74
+[14-Apr-2025 16:59:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/SingleCommandApplication.php on line 21
+[24-Apr-2025 04:23:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Application.php:74
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Application.php on line 74
+[24-Apr-2025 04:55:23 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/SingleCommandApplication.php on line 21

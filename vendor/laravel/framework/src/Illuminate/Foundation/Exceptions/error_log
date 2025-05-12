@@ -1,0 +1,4 @@
+[19-Apr-2025 03:12:03 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 57
+[19-Apr-2025 03:12:12 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/ReportableHandler.php on line 8
+[29-Apr-2025 10:57:24 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 57
+[29-Apr-2025 10:57:28 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ReflectsClosures" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/ReportableHandler.php on line 8

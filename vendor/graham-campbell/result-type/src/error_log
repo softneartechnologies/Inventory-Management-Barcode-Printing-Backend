@@ -1,0 +1,16 @@
+[15-Apr-2025 10:33:13 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Error.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Error.php on line 25
+[15-Apr-2025 10:33:17 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Success.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Success.php on line 25
+[24-Apr-2025 19:32:15 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Error.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Error.php on line 25
+[24-Apr-2025 19:32:17 UTC] PHP Fatal error:  Uncaught Error: Class "GrahamCampbell\ResultType\Result" not found in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Success.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/graham-campbell/result-type/src/Success.php on line 25

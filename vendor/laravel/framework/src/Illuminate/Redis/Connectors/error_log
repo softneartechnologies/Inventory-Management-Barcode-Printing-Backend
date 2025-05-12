@@ -1,0 +1,16 @@
+[19-Apr-2025 17:01:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php on line 15
+[19-Apr-2025 17:01:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php on line 12
+[28-Apr-2025 06:55:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php on line 15
+[28-Apr-2025 06:56:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Redis\Connector" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PredisConnector.php on line 12

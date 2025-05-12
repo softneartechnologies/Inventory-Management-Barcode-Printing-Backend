@@ -1,0 +1,24 @@
+[14-Apr-2025 22:55:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/AbstractProviderFactoryTestCase.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/AbstractProviderFactoryTestCase.php on line 20
+[14-Apr-2025 22:55:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Test\AbstractProviderFactoryTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php on line 29
+[14-Apr-2025 22:55:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderTestCase.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderTestCase.php on line 30
+[24-Apr-2025 10:41:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/AbstractProviderFactoryTestCase.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/AbstractProviderFactoryTestCase.php on line 20
+[24-Apr-2025 10:41:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Test\AbstractProviderFactoryTestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderFactoryTestCase.php on line 29
+[24-Apr-2025 10:42:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderTestCase.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Test/ProviderTestCase.php on line 30

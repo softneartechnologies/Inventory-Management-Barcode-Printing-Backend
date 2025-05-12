@@ -1,0 +1,52 @@
+[17-Apr-2025 19:16:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Batch.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Batch.php on line 15
+[17-Apr-2025 21:51:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php on line 13
+[17-Apr-2025 21:51:05 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Batchable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/ChainedBatch.php on line 13
+[17-Apr-2025 21:51:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\PrunableBatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DatabaseBatchRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DatabaseBatchRepository.php on line 14
+[17-Apr-2025 21:51:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Bus\QueueingDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php on line 17
+[17-Apr-2025 21:51:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DynamoBatchRepository.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DynamoBatchRepository.php on line 11
+[17-Apr-2025 21:51:17 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PendingBatch.php on line 18
+[17-Apr-2025 21:51:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PrunableBatchRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PrunableBatchRepository.php on line 7
+[27-Apr-2025 04:37:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Support\Arrayable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Batch.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Batch.php on line 15
+[27-Apr-2025 04:37:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/BusServiceProvider.php on line 13
+[27-Apr-2025 04:37:50 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Batchable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/ChainedBatch.php on line 13
+[27-Apr-2025 04:37:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\PrunableBatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DatabaseBatchRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DatabaseBatchRepository.php on line 14
+[27-Apr-2025 04:37:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Bus\QueueingDispatcher" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php on line 17
+[27-Apr-2025 04:37:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DynamoBatchRepository.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/DynamoBatchRepository.php on line 11
+[27-Apr-2025 04:37:59 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PendingBatch.php on line 18
+[27-Apr-2025 04:38:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Bus\BatchRepository" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PrunableBatchRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Bus/PrunableBatchRepository.php on line 7

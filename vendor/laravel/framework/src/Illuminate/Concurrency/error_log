@@ -1,0 +1,40 @@
+[17-Apr-2025 21:41:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\MultipleInstanceManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyManager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyManager.php on line 13
+[17-Apr-2025 21:41:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyServiceProvider.php on line 8
+[17-Apr-2025 21:41:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ForkDriver.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ForkDriver.php on line 13
+[18-Apr-2025 04:58:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ProcessDriver.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ProcessDriver.php on line 17
+[18-Apr-2025 04:58:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/SyncDriver.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/SyncDriver.php on line 12
+[27-Apr-2025 04:03:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\MultipleInstanceManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyManager.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyManager.php on line 13
+[27-Apr-2025 04:03:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ConcurrencyServiceProvider.php on line 8
+[27-Apr-2025 04:03:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ForkDriver.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ForkDriver.php on line 13
+[27-Apr-2025 04:03:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ProcessDriver.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/ProcessDriver.php on line 17
+[27-Apr-2025 04:04:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Concurrency\Driver" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/SyncDriver.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Concurrency/SyncDriver.php on line 12

@@ -1,0 +1,152 @@
+[17-Apr-2025 21:46:07 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Group" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Anchor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Anchor.php on line 10
+[17-Apr-2025 21:46:10 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Circle.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Circle.php on line 12
+[17-Apr-2025 21:46:13 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/ClipPath.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/ClipPath.php on line 12
+[17-Apr-2025 21:46:14 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Ellipse.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Ellipse.php on line 12
+[17-Apr-2025 21:46:17 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Group.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Group.php on line 12
+[17-Apr-2025 21:46:21 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Image.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Image.php on line 12
+[17-Apr-2025 21:46:23 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Line.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Line.php on line 12
+[17-Apr-2025 21:46:27 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/LinearGradient.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/LinearGradient.php on line 14
+[17-Apr-2025 21:46:29 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Path.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Path.php on line 12
+[17-Apr-2025 21:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polygon.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polygon.php on line 10
+[17-Apr-2025 21:46:34 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polyline.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polyline.php on line 10
+[17-Apr-2025 21:46:36 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/RadialGradient.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/RadialGradient.php on line 10
+[17-Apr-2025 21:46:38 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Rect.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Rect.php on line 12
+[17-Apr-2025 21:46:40 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Shape.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Shape.php on line 12
+[17-Apr-2025 21:46:42 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Stop.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Stop.php on line 10
+[17-Apr-2025 21:46:44 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/StyleTag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/StyleTag.php on line 12
+[17-Apr-2025 21:46:48 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Symbol.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Symbol.php on line 12
+[17-Apr-2025 21:46:50 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Text.php on line 12
+[17-Apr-2025 21:46:53 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/UseTag.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/UseTag.php on line 10
+[26-Apr-2025 18:18:11 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Ellipse.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Ellipse.php on line 12
+[27-Apr-2025 04:33:56 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Group" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Anchor.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Anchor.php on line 10
+[27-Apr-2025 04:33:57 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Circle.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Circle.php on line 12
+[27-Apr-2025 04:34:00 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/ClipPath.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/ClipPath.php on line 12
+[27-Apr-2025 04:34:01 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Group.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Group.php on line 12
+[27-Apr-2025 04:34:03 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Image.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Image.php on line 12
+[27-Apr-2025 04:34:05 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Line.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Line.php on line 12
+[27-Apr-2025 04:34:06 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/LinearGradient.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/LinearGradient.php on line 14
+[27-Apr-2025 04:34:08 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Path.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Path.php on line 12
+[27-Apr-2025 04:34:10 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polygon.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polygon.php on line 10
+[27-Apr-2025 04:34:12 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polyline.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Polyline.php on line 10
+[27-Apr-2025 04:34:13 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/RadialGradient.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/RadialGradient.php on line 10
+[27-Apr-2025 04:34:15 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Rect.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Rect.php on line 12
+[27-Apr-2025 04:34:17 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Shape.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Shape.php on line 12
+[27-Apr-2025 04:34:18 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Stop.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Stop.php on line 10
+[27-Apr-2025 04:34:20 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/StyleTag.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/StyleTag.php on line 12
+[27-Apr-2025 04:34:22 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Symbol.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Symbol.php on line 12
+[27-Apr-2025 04:34:24 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\Shape" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/Text.php on line 12
+[27-Apr-2025 04:34:25 UTC] PHP Fatal error:  Uncaught Error: Class "Svg\Tag\AbstractTag" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/UseTag.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-svg-lib/src/Svg/Tag/UseTag.php on line 10

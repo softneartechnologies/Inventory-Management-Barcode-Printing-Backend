@@ -1,0 +1,8 @@
+[15-Apr-2025 10:30:48 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Renderer.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Renderer.php on line 26
+[24-Apr-2025 20:29:10 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Renderer\AbstractRenderer" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Renderer.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Renderer.php on line 26

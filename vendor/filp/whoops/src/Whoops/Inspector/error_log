@@ -1,0 +1,8 @@
+[17-Apr-2025 21:06:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Inspector\InspectorFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Inspector/InspectorFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Inspector/InspectorFactory.php on line 11
+[27-Apr-2025 08:47:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Inspector\InspectorFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Inspector/InspectorFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Inspector/InspectorFactory.php on line 11

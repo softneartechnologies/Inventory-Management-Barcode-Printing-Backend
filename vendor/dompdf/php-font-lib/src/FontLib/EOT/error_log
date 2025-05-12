@@ -1,0 +1,16 @@
+[17-Apr-2025 21:03:53 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Header" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/Header.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/Header.php on line 20
+[17-Apr-2025 21:43:55 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\TrueType\File" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/File.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/File.php on line 15
+[27-Apr-2025 04:32:18 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\TrueType\File" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/File.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/File.php on line 15
+[27-Apr-2025 04:32:20 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\Header" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/Header.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/EOT/Header.php on line 20

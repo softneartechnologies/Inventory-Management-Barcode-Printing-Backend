@@ -13,25 +13,11 @@ use App\Models\Unit;
 use App\Models\InventoryAdjustmentReports;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-// use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
-
-// use Milon\Barcode\Facades\DNS1DFacade;
-// use Milon\Barcode\Facades\DNS2DFacade;
-
-// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-// use Milon\Barcode\Facades\DNS2DFacade as DNS2D;
-// use Milon\Barcode\Facades\DNS1DFacade as DNS1D;
-
 use Barryvdh\DomPDF\Facade\Pdf;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
-// use Milon\Barcode\DNS1D;
-// use Milon\Barcode\DNS2D;
-// use Milon\Barcode\DNS1D;
-// use Milon\Barcode\DNS2D;
 use Milon\Barcode\DNS1D;
 use Milon\Barcode\DNS2D;
 use App\Models\BarcodeSetting;
@@ -252,34 +238,28 @@ class ProductController extends Controller
 
 public function store(Request $request)
 {
+
+        
     $validatedData = $request->validate([
+        'thumbnail' => 'required',
         'product_name' => 'required|string|max:255',
         'sku' => 'required|string|max:255|unique:products',
-        'units' => 'required|string',
-        // 'unit_cost' => 'required|string',
-        // 'total_cost' => 'required|string',
         'category_id' => 'required|string',
         'sub_category_id' => 'required|string',
-        'manufacturer' => 'nullable|string',
+        'manufacturer' => 'required|string',
         'vendor_id' => 'required|string',
-        'model' => 'nullable|string',
-        'weight' => 'nullable|numeric',
-        'weight_unit' => 'nullable|string',
-        'storage_location' => 'array',
-        'thumbnail' => 'required',
-        'description' => 'nullable|string',
+        'model' => 'required|string',
+        'unit_of_measurement_category' => 'required|numeric',
+        'description' => 'required|string',
         'returnable' => 'boolean',
-        'track_inventory' => 'boolean',
-        'opening_stock' => 'integer|min:0',
-        'selling_cost' => 'nullable|numeric',
-        'cost_price' => 'nullable|numeric',
         'commit_stock_check' => 'boolean',
-        'project_name' => 'nullable|string',
-        'length' => 'nullable|numeric',
-        'width' => 'nullable|numeric',
-        'depth' => 'nullable|numeric',
-        'measurement_unit' => 'nullable|string',
         'inventory_alert_threshold' => 'integer|min:0',
+        'location_id' => 'array',
+        'quantity' => 'nullable|numeric',
+        'unit_of_measure' => 'nullable|string',
+        'per_unit_cost' => 'nullable|numeric',
+        'total_cost' => 'nullable|string',
+        'opening_stock' => 'integer|min:0',
         'status' => ['required', Rule::in(['active', 'inactive'])],
     ]);
 
@@ -357,7 +337,19 @@ public function store(Request $request)
     
 
         $validatedData['location_id'] = json_encode(
-            collect($request->storage_location)->pluck('location')->all()
+            collect($request->storage_location)->pluck('location_id')->all()
+        );
+        $validatedData['quantity'] = json_encode(
+            collect($request->storage_location)->pluck('quantity')->all()
+        );
+        $validatedData['unit_of_measure'] = json_encode(
+            collect($request->storage_location)->pluck('unit_of_measure')->all()
+        );
+        $validatedData['per_unit_cost'] = json_encode(
+            collect($request->storage_location)->pluck('per_unit_cost')->all()
+        );
+        $validatedData['total_cost'] = json_encode(
+            collect($request->storage_location)->pluck('total_cost')->all()
         );
         // $validatedData['location_id'] = json_encode($request->storage_location->location);
 
@@ -366,13 +358,13 @@ public function store(Request $request)
         foreach ($request->storage_location as $multiData) {
             Stock::create([
                 'product_id'    => $product->id,
-                'vendor_id'     => $request->vendor,
-                'category_id'   => $request->category,
-                'current_stock' => $multiData['quantity'],
-                'unit'          => $multiData['unit'],
-                'unit_cost'          => $multiData['unit_cost'],
+                'vendor_id'     => $request->vendor_id,
+                'category_id'   => $request->category_id,
+                'location_id'   => $multiData['location_id'],
+                'quantity' => $multiData['quantity'],
+                'unit_of_measure'=> $multiData['unit_of_measure'],
+                'per_unit_cost'          => $multiData['per_unit_cost'],
                 'total_cost'          => $multiData['total_cost'],
-                'location_id'   => $multiData['location'],
                 // 'adjustment' => $multiData['adjustment'],
                 'stock_date'    => now(),
             ]);
@@ -413,27 +405,29 @@ public function store(Request $request)
                 'stock_id' => $stock->id,
                 'location_d' => $stock->location_id,
                 'location' => optional($stock->location)->name, // Safely get location name
-                'current_stock' => $stock->current_stock,
-                'new_stock' => $stock->new_stock,
-                'unit' => $stock->unit,
-                'unit_cost'=> $stock->unit_cost,
-                'total_cost'=> $stock->total_cost,
-                'quantity' => $stock->quantity,
-                'adjustment' => $stock->adjustment,
-                'stock_date' => $stock->stock_date,
                 'vendor_id' => $stock->vendor_id,
                 'vendor_name' => optional($stock->vendor)->vendor_name,
                 'category' => optional($stock->category)->name,
+                'current_stock' => $stock->current_stock,
+                'new_stock' => $stock->new_stock,
+                'quantity' => $stock->quantity,
+                'unit_of_measure' => $stock->unit_of_measure,
+                'per_unit_cost'=> $stock->per_unit_cost,
+                'total_cost'=> $stock->total_cost,
+                'adjustment' => $stock->adjustment,
+                'stock_date' => $stock->stock_date,
+                
                 // 'reason_for_update' => $stock->reason_for_update,
             ];
         });
     
         $productsss= array(['id' => $product_detail->id,
+        'thumbnail'=>$product_detail->thumbnail,
         'product_name' => $product_detail->product_name,
         'sku' => $product_detail->sku,
         'generated_barcode'=>$product_detail->generated_barcode,
         'generated_qrcode'=>$product_detail->generated_qrcode,
-        'units'=>$product_detail->units,
+        'barcode_number' => $product_detail->barcode_number,
         'category_id'=>$product_detail->category_id,
         'category_name' => $product_detail->category->name ?? null,
         'sub_category_id'=>$product_detail->sub_category_id,
@@ -442,24 +436,17 @@ public function store(Request $request)
         'vendor_name'=>$product_detail->vendor->vendor_name,
         'vendor_id'=>$product_detail->vendor_id,
         'model'=>$product_detail->model,
-        'weight'=>$product_detail->weight,
-        'weight_unit'=>$product_detail->weight_unit,
-        'location_id'=>$product_detail->location_id,
-        'thumbnail'=>$product_detail->thumbnail,
+        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category,
         'description'=>$product_detail->description,
         'returnable'=>$product_detail->returnable,
-        'track_inventory'=>$product_detail->track_inventory,
-        'opening_stock' => $product_detail->opening_stock,
-        'selling_cost' => $product_detail->selling_cost,
-        'cost_price' => $product_detail->cost_price,
         'commit_stock_check' => $product_detail->commit_stock_check,
-        'project_name' => $product_detail->project_name,
-        'length' => $product_detail->length,
-        'width' => $product_detail->width,
-        'depth' => $product_detail->depth,
-        'measurement_unit' => $product_detail->measurement_unit,
-        'barcode_number' => $product_detail->barcode_number,
         'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
+        'location_id'=>$product_detail->location_id,
+        'quantity'=>$product_detail->quantity,
+        'unit_of_measure'=>$product_detail->unit_of_measure,
+        'per_unit_cost'=>$product_detail->per_unit_cost,
+        'total_cost' => $product_detail->total_cost,
+        'opening_stock' => $product_detail->opening_stock,
         'status' => $product_detail->status,
         'created_at' => $product_detail->created_at,
         'updated_at' => $product_detail->updated_at,
@@ -505,30 +492,29 @@ public function store(Request $request)
                 'stock_id' => $stock->id,
                 'location_d' => $stock->location_id,
                 'location' => optional($stock->location)->name, // Safely get location name
-                'current_stock' => $stock->current_stock,
-                'new_stock' => $stock->new_stock,
-                'unit' => $stock->unit,
-                'unit_cost'=> $stock->unit_cost,
-                'total_cost'=> $stock->total_cost,
-                'quantity' => $stock->quantity,
-                'adjustment' => $stock->adjustment,
-                'stock_date' => $stock->stock_date,
                 'vendor_id' => $stock->vendor_id,
                 'vendor_name' => optional($stock->vendor)->vendor_name,
                 'category' => optional($stock->category)->name,
+                'current_stock' => $stock->current_stock,
+                'new_stock' => $stock->new_stock,
+                'quantity' => $stock->quantity,
+                'unit_of_measure' => $stock->unit_of_measure,
+                'per_unit_cost'=> $stock->per_unit_cost,
+                'total_cost'=> $stock->total_cost,
+                'adjustment' => $stock->adjustment,
+                'stock_date' => $stock->stock_date,
+                
                 // 'reason_for_update' => $stock->reason_for_update,
             ];
         });
-        
-      
-                
     
         $productsss= array(['id' => $product_detail->id,
+        'thumbnail'=>$product_detail->thumbnail,
         'product_name' => $product_detail->product_name,
         'sku' => $product_detail->sku,
         'generated_barcode'=>$product_detail->generated_barcode,
         'generated_qrcode'=>$product_detail->generated_qrcode,
-        'units'=>$product_detail->units,
+        'barcode_number' => $product_detail->barcode_number,
         'category_id'=>$product_detail->category_id,
         'category_name' => $product_detail->category->name ?? null,
         'sub_category_id'=>$product_detail->sub_category_id,
@@ -537,24 +523,17 @@ public function store(Request $request)
         'vendor_name'=>$product_detail->vendor->vendor_name,
         'vendor_id'=>$product_detail->vendor_id,
         'model'=>$product_detail->model,
-        'weight'=>$product_detail->weight,
-        'weight_unit'=>$product_detail->weight_unit,
-        'location_id'=>$product_detail->location_id,
-        'thumbnail'=>$product_detail->thumbnail,
+        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category,
         'description'=>$product_detail->description,
         'returnable'=>$product_detail->returnable,
-        'track_inventory'=>$product_detail->track_inventory,
-        'opening_stock' => $product_detail->opening_stock,
-        'selling_cost' => $product_detail->selling_cost,
-        'cost_price' => $product_detail->cost_price,
         'commit_stock_check' => $product_detail->commit_stock_check,
-        'project_name' => $product_detail->project_name,
-        'length' => $product_detail->length,
-        'width' => $product_detail->width,
-        'depth' => $product_detail->depth,
-        'measurement_unit' => $product_detail->measurement_unit,
-        'barcode_number' => $product_detail->barcode_number,
         'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
+        'location_id'=>$product_detail->location_id,
+        'quantity'=>$product_detail->quantity,
+        'unit_of_measure'=>$product_detail->unit_of_measure,
+        'per_unit_cost'=>$product_detail->per_unit_cost,
+        'total_cost' => $product_detail->total_cost,
+        'opening_stock' => $product_detail->opening_stock,
         'status' => $product_detail->status,
         'created_at' => $product_detail->created_at,
         'updated_at' => $product_detail->updated_at,
@@ -644,31 +623,21 @@ public function store(Request $request)
         }
 
         $validatedData = $request->validate([
+            'thumbnail' => 'nullable',
             'product_name' => 'string|max:255',
             'sku' => 'string|max:255|unique:products,sku,' . $id,
-            'units' => 'string',
             'category_id' => 'string',
             'sub_category_id' => 'nullable|string',
             'manufacturer' => 'nullable|string',
             'vendor_id' => 'nullable|string',
             'model' => 'nullable|string',
-            'weight' => 'nullable|numeric',
-            'weight_unit' => 'nullable|string',
-            // 'location_id' => 'nullable|string',
-            'thumbnail' => 'nullable',
+            'unit_of_measurement_category' => 'string',
+        
             'description' => 'nullable|string',
             'returnable' => 'boolean',
-            'track_inventory' => 'boolean',
-            'opening_stock' => 'integer|min:0',
-            'selling_cost' => 'nullable|numeric',
-            'cost_price' => 'nullable|numeric',
             'commit_stock_check' => 'boolean',
-            'project_name' => 'nullable|string',
-            'length' => 'nullable|numeric',
-            'width' => 'nullable|numeric',
-            'depth' => 'nullable|numeric',
-            'measurement_unit' => 'nullable|string',
             'inventory_alert_threshold' => 'integer|min:0',
+            'opening_stock' => 'integer|min:0',
             'status' => ['nullable', Rule::in(['active', 'inactive'])],
         ]);
 
@@ -677,9 +646,7 @@ public function store(Request $request)
     if ($barcodeNumber) {
         $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
 
-        // $barcodeImage = DNS1D::getBarcodePNG($barcodeNumber, 'C39');
-        // $barcodeImage = $barcodeNumber. 'C39';
-    
+        
         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
         Storage::put($imagePath, base64_decode($barcodeImage));
     
@@ -699,12 +666,6 @@ public function store(Request $request)
         'stock' => $request->opening_stock
     ];
 
-    // $validatedData['generated_qrcode'] = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
-
-    // if ($validatedData['generated_qrcode']) {
-    //     $path = $validatedData['generated_qrcode']->store('public/qrcode');
-    //     // $validatedData['thumbnail'] = str_replace('public/', 'storage/', $path);
-    // }
 
     if ($productDetails) {
         
@@ -740,7 +701,19 @@ public function store(Request $request)
     }
 
         $validatedData['location_id'] = json_encode(
-            collect($request->storage_location)->pluck('location')->all()
+            collect($request->storage_location)->pluck('location_id')->all()
+        );
+        $validatedData['quantity'] = json_encode(
+            collect($request->storage_location)->pluck('quantity')->all()
+        );
+        $validatedData['unit_of_measure'] = json_encode(
+            collect($request->storage_location)->pluck('unit_of_measure')->all()
+        );
+        $validatedData['per_unit_cost'] = json_encode(
+            collect($request->storage_location)->pluck('per_unit_cost')->all()
+        );
+        $validatedData['total_cost'] = json_encode(
+            collect($request->storage_location)->pluck('total_cost')->all()
         );
 
         $product->update($validatedData);
@@ -750,7 +723,7 @@ public function store(Request $request)
         foreach ($multiLocation as $multiData) {
             // print_r($multiData['unit_cost']);die;
             $product_location = Stock::where('product_id', $product_id)
-                ->where('location_id', $multiData['location'])
+                ->where('location_id', $multiData['location_id'])
                 ->first();
 
             $quantity = $multiData['quantity'];
@@ -764,14 +737,15 @@ public function store(Request $request)
                 // print_r($multiData['unit_cost']);die;
                 $stockData = [
                     'current_stock' => $currentStock,
-                    'unit' => $multiData['unit'] ?? $product_location->unit,
-                    'unit_cost'=> $multiData['unit_cost'],
+                    'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
+                    'per_unit_cost'=> $multiData['per_unit_cost'],
                     'total_cost'=> $multiData['total_cost'],
                     'quantity' => $quantity,
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    'vendor_id'     => $request->vendor,
-                    'category_id'   => $request->category,
                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    'vendor_id'     => $request->vendor_id,
+                    'category_id'   => $request->category_id,
+                    'location_id'   => $multiData['location_id'],
                 ];
 
                 $product_location->update($stockData);
@@ -781,20 +755,21 @@ public function store(Request $request)
 
 
                 $stockData = [
-                    'product_id' => $product_id,
-                    'category_id' => $product->category,
-                    'current_stock' => $currentStock,
-                    'unit' => $multiData['unit'] ?? null,
-                    'unit_cost' => $multiData['unit_cost'],
-                    'total_cost' => $multiData['total_cost'],
-                    'location_id' => $multiData['location'],
+                    'product_id'    => $product->id,
+                    'vendor_id'     => $request->vendor_id,
+                    'category_id'   => $request->category_id,
+                    'location_id'   => $multiData['location_id'],
                     'quantity' => $quantity,
+                    'current_stock' => $currentStock,
+                   'unit_of_measure'=> $multiData['unit_of_measure'],
+                    'per_unit_cost'          => $multiData['per_unit_cost'],
+                    'total_cost'          => $multiData['total_cost'],
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    'vendor_id'     => $request->vendor,
-                    'category_id'   => $request->category,
+                    
                 ];
 
                 Stock::create($stockData);
+
             }
 
             // Update the product's opening stock
@@ -826,6 +801,7 @@ public function store(Request $request)
             return response()->json(['error' => 'Product not found'], 404);
         }
 
+        
         $validatedRequest = $request->validate([
             'stock_date' => 'nullable|string',
             'vendor_id' => 'nullable|string',
@@ -833,10 +809,10 @@ public function store(Request $request)
             'storage_location' => 'required|array',
             'storage_location.*.current_stock' => 'nullable|numeric',
             'storage_location.*.quantity' => 'required|numeric',
-            'storage_location.*.unit' => 'nullable|string',
-            'storage_location.*.unit_cost' => 'nullable|string',
+            'storage_location.*.unit_of_measure' => 'nullable|string',
+            'storage_location.*.per_unit_cost' => 'nullable|string',
             'storage_location.*.total_cost' => 'nullable|string',
-            'storage_location.*.location' => 'required|string',
+            'storage_location.*.location_id' => 'required|string',
             'storage_location.*.adjustment' => 'required|string|in:add,Subtract,Select',
         ]);
 
@@ -844,7 +820,7 @@ public function store(Request $request)
 
         foreach ($multiLocation as $multiData) {
             $product_location = Stock::where('product_id', $product_id)
-                ->where('location_id', $multiData['location'])
+                ->where('location_id', $multiData['location_id'])
                 ->first();
 
             $quantity = $multiData['quantity'];
@@ -866,8 +842,8 @@ public function store(Request $request)
                 $stockData = [
                     'current_stock' => $newStock,
                     'new_stock' => $newStock,
-                    'unit' => $multiData['unit'] ?? $product_location->unit,
-                    'unit_cost'          => $multiData['unit_cost'],
+                    'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
+                    'per_unit_cost'          => $multiData['per_unit_cost'],
                     'total_cost'          => $multiData['total_cost'],
                     'quantity' => $quantity,
                     'adjustment' => $adjustment,
@@ -877,6 +853,10 @@ public function store(Request $request)
                 ];
 
                 $product_location->update($stockData);
+
+                
+
+                
             } else {
                 // Create new stock record
                 $currentStock = $multiData['current_stock'] ?? 0;
@@ -890,14 +870,14 @@ public function store(Request $request)
                 }
 
                 $stockData = [
-                    'product_id' => $product_id,
-                    'category_id' => $product->category,
+                    'product_id' => $product->id,
+                    'category_id' => $product->category_id,
                     'current_stock' => $newStock,
                     'new_stock' => $newStock,
-                    'unit' => $multiData['unit'] ?? null,
-                    'unit_cost'          => $multiData['unit_cost'],
+                    'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+                    'per_unit_cost'          => $multiData['per_unit_cost'],
                     'total_cost'          => $multiData['total_cost'],
-                    'location_id' => $multiData['location'],
+                    'location_id' => $multiData['location_id'],
                     'quantity' => $quantity,
                     'adjustment' => $adjustment,
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
@@ -907,6 +887,9 @@ public function store(Request $request)
 
                 Stock::create($stockData);
             }
+
+            
+
 
 
             $product->update(['opening_stock' => $productOpeningStock]);
@@ -963,12 +946,12 @@ public function store(Request $request)
                     }
     
                     $stockData = [
-                        'product_id' => $product_id,
-                        'category_id' => $product->category,
+                        'product_id' => $product->id,
+                        'category_id' => $product->category_id,
                         'current_stock' => $currentStock,
                         'new_stock' => $newStock,
-                        'unit' => $multiData['unit'] ?? null,
-                        'location_id' => $multiData['location'],
+                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+                        'location_id' => $multiData['location_id'],
                         'quantity' => $quantity,
                         'adjustment' => $adjustment,
                         'stock_date' => $validatedRequest['stock_date'] ?? null,
@@ -1073,39 +1056,72 @@ public function store(Request $request)
     {
 
 
-        $stocks = InventoryAdjustmentReports::with([
-            'product.category', // Load category via product
-            'category:id,name','vendor:id,vendor_name','location:id,name'
-        ])->where('new_stock', '>', 0)->orderBy('id', 'desc')->get();
+        // $stocks = InventoryAdjustmentReports::with([
+        //     'product.category', // Load category via product
+        //     'category:id,name','vendor:id,vendor_name','location:id,name'
+        // ])->where('new_stock', '>', 0)->orderBy('id', 'desc')->get();
 
 
-        $adjustments = $stocks->map(function ($stock) {
-            $adjustmentSymbol = $stock->adjustment == 'Subtract' ? '-' : '+';
-            $newStock = $stock->adjustment == 'Subtract'
-                ? $stock->current_stock - $stock->quantity
-                : $stock->current_stock + $stock->quantity;
+        // $adjustments = $stocks->map(function ($stock) {
+        //     $adjustmentSymbol = $stock->adjustment == 'Subtract' ? '-' : '+';
+        //     $newStock = $stock->adjustment == 'Subtract'
+        //         ? $stock->current_stock - $stock->quantity
+        //         : $stock->current_stock + $stock->quantity;
 
-                // print_r($stock->product->category);die;
+        //         // print_r($stock->product->category);die;
+        //     return [
+        //         'id' => $stock->id,
+        //         'product_id' => $stock->product_id,
+        //         'product_name' => $stock->product->product_name ?? 'N/A',
+        //         'sku' => $stock->product->sku ?? 'N/A',
+        //         'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
+        //         'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+        //         'previous_stock' => $stock->current_stock,
+        //         'new_stock' => $newStock,
+        //         'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+        //         'reason' => $stock->reason_for_update ?? 'N/A',
+        //         'location' => optional($stock->location)->name, 
+        //         'stock_date' => $stock->stock_date,
+        //         'created_at' => $stock->created_at,
+        //         'updated_at' => $stock->updated_at,
+        //     ];
+        // });
+
+        $scanRecords = ScanInOutProduct::with([
+            'product:id,product_name,sku,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name','category:id,name','location:id,name'
+        ])->orderBy('id','desc')->get();
+
+        $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
-                'id' => $stock->id,
-                'product_id' => $stock->product_id,
-                'product_name' => $stock->product->product_name ?? 'N/A',
-                'sku' => $stock->product->sku ?? 'N/A',
-                'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
-                'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
-                'previous_stock' => $stock->current_stock,
-                'new_stock' => $newStock,
-                'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
-                'reason' => $stock->reason_for_update ?? 'N/A',
-                'location' => optional($stock->location)->name, 
-                'stock_date' => $stock->stock_date,
-                'created_at' => $stock->created_at,
-                'updated_at' => $stock->updated_at,
+                'id' => $scanRecords->id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'product_id' => $scanRecords->product_id,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
+                'category' => $scanRecords->category->name ?? null,
+                'location' => $scanRecords->location->name ?? null,
+                'quantity' => $scanRecords->product->opening_stock ?? null,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'issue_from_user_id' => $scanRecords->issue_from_user_id,
+                'employee_id' => $scanRecords->employee_id,
+                'in_quantity' => $scanRecords->in_quantity,
+                'out_quantity' => $scanRecords->out_quantity,
+                'previous_stock' => $scanRecords->previous_stock,
+                'total_current_stock' => $scanRecords->total_current_stock,
+                'threshold' => $scanRecords->threshold,
+                'type' => $scanRecords->type,
+                'purpose' => $scanRecords->purpose,
+                'comments' => $scanRecords->comments,
+                'created_at' => $scanRecords->created_at,
+                'updated_at' => $scanRecords->updated_at,
             ];
         });
 
         // print_r($adjustments);die;
-        return response()->json(['inventory_adjustments' => $adjustments], 200);
+        return response()->json(['inventory_adjustments' => $scanRecords], 200);
     }
 
     public function recentStockUpdate()

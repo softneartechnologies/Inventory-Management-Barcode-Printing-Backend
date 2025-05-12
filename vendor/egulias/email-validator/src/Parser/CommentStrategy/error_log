@@ -1,0 +1,16 @@
+[17-Apr-2025 21:47:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php on line 11
+[17-Apr-2025 21:47:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php on line 13
+[27-Apr-2025 04:34:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/DomainComment.php on line 11
+[27-Apr-2025 04:34:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Parser\CommentStrategy\CommentStrategy" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/CommentStrategy/LocalComment.php on line 13

@@ -1,0 +1,32 @@
+[14-Apr-2025 22:55:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/FilteringProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/FilteringProvider.php on line 22
+[14-Apr-2025 22:55:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProvider.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProvider.php on line 20
+[14-Apr-2025 22:55:05 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Provider\AbstractProviderFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProviderFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProviderFactory.php on line 19
+[14-Apr-2025 23:02:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/AbstractProviderFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/AbstractProviderFactory.php on line 16
+[24-Apr-2025 10:41:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/AbstractProviderFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/AbstractProviderFactory.php on line 16
+[24-Apr-2025 10:41:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/FilteringProvider.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/FilteringProvider.php on line 22
+[24-Apr-2025 10:41:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProvider.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProvider.php on line 20
+[24-Apr-2025 10:41:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Provider\AbstractProviderFactory" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProviderFactory.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Provider/NullProviderFactory.php on line 19

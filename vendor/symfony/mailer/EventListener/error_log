@@ -1,0 +1,32 @@
+[14-Apr-2025 20:59:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php on line 25
+[14-Apr-2025 20:59:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageListener.php on line 28
+[14-Apr-2025 20:59:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php on line 24
+[14-Apr-2025 20:59:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php on line 24
+[24-Apr-2025 13:02:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/EnvelopeListener.php on line 25
+[24-Apr-2025 13:02:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageListener.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageListener.php on line 28
+[24-Apr-2025 13:02:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessageLoggerListener.php on line 24
+[24-Apr-2025 13:02:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventSubscriberInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/EventListener/MessengerTransportListener.php on line 24

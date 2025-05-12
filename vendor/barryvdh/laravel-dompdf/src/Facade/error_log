@@ -1,0 +1,8 @@
+[16-Apr-2025 06:08:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php on line 34
+[26-Apr-2025 06:01:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Facade" not found in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/barryvdh/laravel-dompdf/src/Facade/Pdf.php on line 34

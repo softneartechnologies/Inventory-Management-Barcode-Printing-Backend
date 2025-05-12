@@ -1,0 +1,8 @@
+[17-Apr-2025 09:43:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Serializer\RulesInterface" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php on line 17
+[27-Apr-2025 08:57:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Masterminds\HTML5\Serializer\RulesInterface" not found in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/masterminds/html5/src/HTML5/Serializer/OutputRules.php on line 17

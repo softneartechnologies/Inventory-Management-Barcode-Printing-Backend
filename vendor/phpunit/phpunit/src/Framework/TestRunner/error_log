@@ -1,0 +1,8 @@
+[18-Apr-2025 04:55:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\IsolatedTestRunner" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestRunner/SeparateProcessTestRunner.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestRunner/SeparateProcessTestRunner.php on line 37
+[27-Apr-2025 12:53:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\IsolatedTestRunner" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestRunner/SeparateProcessTestRunner.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/TestRunner/SeparateProcessTestRunner.php on line 37

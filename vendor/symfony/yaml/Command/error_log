@@ -1,0 +1,8 @@
+[14-Apr-2025 22:59:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/yaml/Command/LintCommand.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/yaml/Command/LintCommand.php on line 37
+[24-Apr-2025 10:45:49 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/symfony/yaml/Command/LintCommand.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/yaml/Command/LintCommand.php on line 37

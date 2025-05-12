@@ -1,0 +1,10 @@
+[19-Apr-2025 03:05:33 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php on line 16
+[19-Apr-2025 03:05:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Middleware\ThrottleRequests" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php on line 10
+[29-Apr-2025 08:45:08 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php on line 16
+[29-Apr-2025 08:45:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Middleware\ThrottleRequests" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php on line 10

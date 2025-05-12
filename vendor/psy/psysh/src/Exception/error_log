@@ -1,0 +1,64 @@
+[16-Apr-2025 20:42:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/BreakException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/BreakException.php on line 17
+[16-Apr-2025 20:42:14 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/DeprecatedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/DeprecatedException.php on line 17
+[16-Apr-2025 20:42:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ErrorException.php on line 17
+[16-Apr-2025 20:42:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/FatalErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/FatalErrorException.php on line 17
+[16-Apr-2025 20:42:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Error" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ParseErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ParseErrorException.php on line 17
+[16-Apr-2025 20:42:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/RuntimeException.php on line 17
+[16-Apr-2025 20:42:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ThrowUpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ThrowUpException.php on line 17
+[17-Apr-2025 04:56:23 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php on line 14
+[25-Apr-2025 09:16:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/BreakException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/BreakException.php on line 17
+[25-Apr-2025 09:16:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/DeprecatedException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/DeprecatedException.php on line 17
+[25-Apr-2025 09:16:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ErrorException.php on line 17
+[25-Apr-2025 09:16:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/FatalErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/FatalErrorException.php on line 17
+[25-Apr-2025 09:16:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Error" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ParseErrorException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ParseErrorException.php on line 17
+[25-Apr-2025 09:17:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/RuntimeException.php on line 17
+[25-Apr-2025 09:17:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Exception\Exception" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ThrowUpException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/ThrowUpException.php on line 17
+[25-Apr-2025 09:17:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Exception/UnexpectedTargetException.php on line 14

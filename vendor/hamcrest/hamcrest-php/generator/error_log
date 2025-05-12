@@ -1,0 +1,26 @@
+[15-Apr-2025 12:05:45 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php on line 7
+[15-Apr-2025 12:05:47 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php on line 7
+[15-Apr-2025 12:05:49 UTC] PHP Warning:  require(/home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[15-Apr-2025 12:05:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[24-Apr-2025 19:33:50 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php on line 7
+[24-Apr-2025 19:33:51 UTC] PHP Fatal error:  Uncaught Error: Class "FactoryFile" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php on line 7
+[24-Apr-2025 19:33:53 UTC] PHP Warning:  require(/home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6
+[24-Apr-2025 19:33:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/generator/run.php on line 6

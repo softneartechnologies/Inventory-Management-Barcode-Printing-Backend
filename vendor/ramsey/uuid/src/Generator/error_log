@@ -1,0 +1,80 @@
+[17-Apr-2025 02:27:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php on line 60
+[17-Apr-2025 02:27:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\DceSecurityGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php on line 37
+[17-Apr-2025 02:27:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php on line 27
+[17-Apr-2025 02:27:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php on line 41
+[17-Apr-2025 02:27:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php on line 31
+[17-Apr-2025 02:27:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php on line 27
+[17-Apr-2025 02:27:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php on line 28
+[17-Apr-2025 02:27:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php on line 26
+[17-Apr-2025 02:27:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php on line 30
+[17-Apr-2025 04:55:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php on line 46
+[25-Apr-2025 09:21:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/CombGenerator.php on line 60
+[25-Apr-2025 09:21:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\DceSecurityGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DceSecurityGenerator.php on line 37
+[25-Apr-2025 09:21:46 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultNameGenerator.php on line 27
+[25-Apr-2025 09:21:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/DefaultTimeGenerator.php on line 41
+[25-Apr-2025 09:21:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\NameGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidNameGenerator.php on line 31
+[25-Apr-2025 09:21:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidRandomGenerator.php on line 27
+[25-Apr-2025 09:21:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/PeclUuidTimeGenerator.php on line 28
+[25-Apr-2025 09:21:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomBytesGenerator.php on line 26
+[25-Apr-2025 09:22:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\RandomGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/RandomLibAdapter.php on line 30
+[25-Apr-2025 09:22:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Generator\TimeGeneratorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Generator/UnixTimeGenerator.php on line 46

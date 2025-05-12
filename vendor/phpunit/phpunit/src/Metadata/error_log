@@ -1,0 +1,386 @@
+[16-Apr-2025 22:38:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/After.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/After.php on line 17
+[16-Apr-2025 22:38:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php on line 17
+[16-Apr-2025 22:38:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php on line 17
+[16-Apr-2025 22:38:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php on line 17
+[16-Apr-2025 22:38:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Before.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Before.php on line 17
+[16-Apr-2025 22:38:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php on line 17
+[16-Apr-2025 22:38:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Covers.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Covers.php on line 17
+[16-Apr-2025 22:38:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php on line 17
+[16-Apr-2025 22:38:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php on line 17
+[16-Apr-2025 22:38:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php on line 17
+[16-Apr-2025 22:38:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversMethod.php on line 17
+[16-Apr-2025 22:38:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php on line 17
+[16-Apr-2025 22:38:38 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversTrait.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversTrait.php on line 17
+[16-Apr-2025 22:38:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php on line 17
+[16-Apr-2025 22:38:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php on line 17
+[16-Apr-2025 22:38:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php on line 17
+[16-Apr-2025 22:38:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DisableReturnValueGenerationForTestDoubles.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DisableReturnValueGenerationForTestDoubles.php on line 17
+[16-Apr-2025 22:38:43 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php on line 17
+[16-Apr-2025 22:38:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php on line 17
+[16-Apr-2025 22:38:45 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php on line 17
+[16-Apr-2025 22:38:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Group.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Group.php on line 17
+[16-Apr-2025 22:38:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnoreDeprecations.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnoreDeprecations.php on line 17
+[16-Apr-2025 22:38:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnorePhpunitDeprecations.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnorePhpunitDeprecations.php on line 19
+[16-Apr-2025 22:38:50 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Metadata\MetadataCollection::getIterator(): PHPUnit\Metadata\MetadataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Metadata\MetadataCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/MetadataCollection.php on line 68
+[16-Apr-2025 22:38:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php on line 17
+[16-Apr-2025 22:38:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php on line 17
+[16-Apr-2025 22:38:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php on line 17
+[16-Apr-2025 22:38:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php on line 17
+[16-Apr-2025 22:38:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php on line 17
+[16-Apr-2025 22:38:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php on line 17
+[16-Apr-2025 22:38:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php on line 17
+[16-Apr-2025 22:38:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php on line 19
+[16-Apr-2025 22:39:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php on line 19
+[16-Apr-2025 22:39:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php on line 19
+[16-Apr-2025 22:39:02 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunitExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunitExtension.php on line 19
+[16-Apr-2025 22:39:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php on line 17
+[16-Apr-2025 22:39:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php on line 17
+[16-Apr-2025 22:39:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php on line 17
+[16-Apr-2025 22:39:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php on line 17
+[16-Apr-2025 22:39:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Test.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Test.php on line 17
+[16-Apr-2025 22:39:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php on line 17
+[16-Apr-2025 22:39:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php on line 17
+[16-Apr-2025 22:39:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Uses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Uses.php on line 17
+[16-Apr-2025 22:39:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php on line 17
+[16-Apr-2025 22:39:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php on line 17
+[16-Apr-2025 22:39:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php on line 17
+[16-Apr-2025 22:39:14 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesMethod.php on line 17
+[16-Apr-2025 22:39:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesTrait.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesTrait.php on line 17
+[16-Apr-2025 22:39:16 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/WithoutErrorHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/WithoutErrorHandler.php on line 17
+[25-Apr-2025 08:14:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/After.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/After.php on line 17
+[25-Apr-2025 08:14:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/AfterClass.php on line 17
+[25-Apr-2025 08:14:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupGlobals.php on line 17
+[25-Apr-2025 08:14:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BackupStaticProperties.php on line 17
+[25-Apr-2025 08:14:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Before.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Before.php on line 17
+[25-Apr-2025 08:14:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/BeforeClass.php on line 17
+[25-Apr-2025 08:14:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Covers.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Covers.php on line 17
+[25-Apr-2025 08:15:00 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversClass.php on line 17
+[25-Apr-2025 08:15:02 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversDefaultClass.php on line 17
+[25-Apr-2025 08:15:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversFunction.php on line 17
+[25-Apr-2025 08:15:05 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversMethod.php on line 17
+[25-Apr-2025 08:15:07 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversNothing.php on line 17
+[25-Apr-2025 08:15:09 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversTrait.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/CoversTrait.php on line 17
+[25-Apr-2025 08:15:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DataProvider.php on line 17
+[25-Apr-2025 08:15:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnClass.php on line 17
+[25-Apr-2025 08:15:14 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DependsOnMethod.php on line 17
+[25-Apr-2025 08:15:15 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DisableReturnValueGenerationForTestDoubles.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DisableReturnValueGenerationForTestDoubles.php on line 17
+[25-Apr-2025 08:15:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/DoesNotPerformAssertions.php on line 17
+[25-Apr-2025 08:15:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeGlobalVariableFromBackup.php on line 17
+[25-Apr-2025 08:15:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/ExcludeStaticPropertyFromBackup.php on line 17
+[25-Apr-2025 08:15:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Group.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Group.php on line 17
+[25-Apr-2025 08:15:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnoreDeprecations.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnoreDeprecations.php on line 17
+[25-Apr-2025 08:15:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnorePhpunitDeprecations.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/IgnorePhpunitDeprecations.php on line 19
+[25-Apr-2025 08:15:29 UTC] PHP Fatal error:  Could not check compatibility between PHPUnit\Metadata\MetadataCollection::getIterator(): PHPUnit\Metadata\MetadataCollectionIterator and IteratorAggregate::getIterator(): Traversable, because class PHPUnit\Metadata\MetadataCollectionIterator is not available in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/MetadataCollection.php on line 68
+[25-Apr-2025 08:15:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PostCondition.php on line 17
+[25-Apr-2025 08:15:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreCondition.php on line 17
+[25-Apr-2025 08:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/PreserveGlobalState.php on line 17
+[25-Apr-2025 08:15:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresFunction.php on line 17
+[25-Apr-2025 08:15:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresMethod.php on line 17
+[25-Apr-2025 08:15:41 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystem.php on line 17
+[25-Apr-2025 08:15:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresOperatingSystemFamily.php on line 17
+[25-Apr-2025 08:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhp.php on line 19
+[25-Apr-2025 08:15:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpExtension.php on line 19
+[25-Apr-2025 08:15:47 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunit.php on line 19
+[25-Apr-2025 08:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunitExtension.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresPhpunitExtension.php on line 19
+[25-Apr-2025 08:15:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RequiresSetting.php on line 17
+[25-Apr-2025 08:15:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunClassInSeparateProcess.php on line 17
+[25-Apr-2025 08:15:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunInSeparateProcess.php on line 17
+[25-Apr-2025 08:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/RunTestsInSeparateProcesses.php on line 17
+[25-Apr-2025 08:15:58 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Test.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Test.php on line 17
+[25-Apr-2025 08:15:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestDox.php on line 17
+[25-Apr-2025 08:16:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/TestWith.php on line 17
+[25-Apr-2025 08:16:03 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Uses.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/Uses.php on line 17
+[25-Apr-2025 08:16:04 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesClass.php on line 17
+[25-Apr-2025 08:16:06 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesDefaultClass.php on line 17
+[25-Apr-2025 08:16:08 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesFunction.php on line 17
+[25-Apr-2025 08:16:10 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesMethod.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesMethod.php on line 17
+[25-Apr-2025 08:16:11 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesTrait.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/UsesTrait.php on line 17
+[25-Apr-2025 08:16:13 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Metadata\Metadata" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/WithoutErrorHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Metadata/WithoutErrorHandler.php on line 17

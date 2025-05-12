@@ -1,0 +1,66 @@
+[18-Apr-2025 09:57:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Application.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Application.php on line 23
+[18-Apr-2025 09:57:18 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php on line 7
+[18-Apr-2025 09:57:20 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/CacheCommandMutex.php on line 11
+[18-Apr-2025 09:57:22 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Command.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Command.php on line 14
+[18-Apr-2025 09:57:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php on line 10
+[18-Apr-2025 09:57:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php on line 13
+[18-Apr-2025 09:57:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/MigrationGeneratorCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/MigrationGeneratorCommand.php on line 9
+[18-Apr-2025 09:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\SymfonyStyle" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php on line 11
+[18-Apr-2025 09:57:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php on line 14
+[27-Apr-2025 04:06:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Application" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Application.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Application.php on line 23
+[27-Apr-2025 04:06:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/BufferedConsoleOutput.php on line 7
+[27-Apr-2025 04:06:31 UTC] PHP Fatal error:  Trait "Illuminate\Support\InteractsWithTime" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/CacheCommandMutex.php on line 11
+[27-Apr-2025 04:06:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Command.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/Command.php on line 14
+[27-Apr-2025 04:07:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\CommandLoader\CommandLoaderInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/ContainerCommandLoader.php on line 10
+[27-Apr-2025 04:07:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php on line 13
+[27-Apr-2025 04:07:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/MigrationGeneratorCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/MigrationGeneratorCommand.php on line 9
+[27-Apr-2025 04:07:28 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Style\SymfonyStyle" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/OutputStyle.php on line 11
+[27-Apr-2025 04:07:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Helper\SymfonyQuestionHelper" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Console/QuestionHelper.php on line 14

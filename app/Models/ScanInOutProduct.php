@@ -13,6 +13,7 @@ class ScanInOutProduct extends Model
         'product_id',
         'issue_from_user_id',
         'employee_id',
+        'category_id',
         'in_out_date_time',
         'type',
         'purpose',
@@ -22,7 +23,12 @@ class ScanInOutProduct extends Model
         'comments',
         'in_quantity',
         'out_quantity',
-        'vendor_id'
+        'vendor_id',
+        'location_id',
+        'previous_stock',
+        'total_current_stock',
+        'threshold',
+        
         
     ];
 
@@ -56,6 +62,16 @@ class ScanInOutProduct extends Model
     public function workStation()
     {
         return $this->belongsTo(Workstation::class);
+    }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
     }
 }
 

@@ -1,0 +1,44 @@
+[24-Apr-2025 15:44:00 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/AuthorityInterface.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/AuthorityInterface.php on line 20
+[24-Apr-2025 15:44:02 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\PathInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/DataPathInterface.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/DataPathInterface.php on line 19
+[24-Apr-2025 15:44:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\HostInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/DomainHostInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/DomainHostInterface.php on line 25
+[24-Apr-2025 15:44:05 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/FragmentInterface.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/FragmentInterface.php on line 16
+[24-Apr-2025 15:44:07 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/HostInterface.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/HostInterface.php on line 16
+[24-Apr-2025 15:44:09 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\HostInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/IpHostInterface.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/IpHostInterface.php on line 16
+[24-Apr-2025 15:44:10 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/PathInterface.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/PathInterface.php on line 18
+[24-Apr-2025 15:44:12 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/PortInterface.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/PortInterface.php on line 16
+[24-Apr-2025 15:44:14 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/QueryInterface.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/QueryInterface.php on line 32
+[24-Apr-2025 15:44:16 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\PathInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/SegmentedPathInterface.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/SegmentedPathInterface.php on line 25
+[24-Apr-2025 15:44:24 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Uri\Contracts\UriComponentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/UserInfoInterface.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/uri-interfaces/Contracts/UserInfoInterface.php on line 18

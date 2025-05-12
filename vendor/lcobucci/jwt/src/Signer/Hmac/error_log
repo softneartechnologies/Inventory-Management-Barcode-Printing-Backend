@@ -1,0 +1,48 @@
+[18-Apr-2025 05:02:24 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php on line 8
+[18-Apr-2025 05:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php on line 8
+[18-Apr-2025 09:53:02 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php on line 8
+[18-Apr-2025 09:53:03 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha256.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha256.php on line 9
+[18-Apr-2025 09:53:05 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha384.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha384.php on line 9
+[18-Apr-2025 09:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha512.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha512.php on line 9
+[27-Apr-2025 04:05:53 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php on line 8
+[27-Apr-2025 04:05:55 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php on line 8
+[27-Apr-2025 04:05:57 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php on line 8
+[27-Apr-2025 04:05:58 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha256.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha256.php on line 9
+[27-Apr-2025 04:06:00 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha384.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha384.php on line 9
+[27-Apr-2025 04:06:02 UTC] PHP Fatal error:  Uncaught Error: Class "Lcobucci\JWT\Signer\Hmac" not found in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha512.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/lcobucci/jwt/src/Signer/Hmac/UnsafeSha512.php on line 9

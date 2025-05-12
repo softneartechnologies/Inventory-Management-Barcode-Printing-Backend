@@ -1,0 +1,32 @@
+[16-Apr-2025 22:37:21 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php on line 15
+[16-Apr-2025 22:37:22 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php on line 15
+[16-Apr-2025 22:37:23 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php on line 15
+[16-Apr-2025 22:37:25 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php on line 15
+[25-Apr-2025 22:30:41 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Failure.php on line 15
+[25-Apr-2025 22:30:43 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Known.php on line 15
+[25-Apr-2025 22:30:44 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\Known" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Success.php on line 15
+[25-Apr-2025 22:30:47 UTC] PHP Fatal error:  Uncaught Error: Class "SebastianBergmann\CodeCoverage\Test\TestStatus\TestStatus" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/php-code-coverage/src/TestStatus/Unknown.php on line 15

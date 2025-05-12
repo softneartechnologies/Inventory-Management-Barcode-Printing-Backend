@@ -1,0 +1,56 @@
+[16-Apr-2025 06:39:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Cron\FieldInterface" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/AbstractField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/AbstractField.php on line 12
+[16-Apr-2025 06:39:53 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php on line 28
+[16-Apr-2025 06:39:55 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfWeekField.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfWeekField.php on line 23
+[16-Apr-2025 06:39:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Cron\FieldFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php on line 14
+[16-Apr-2025 06:40:01 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/HoursField.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/HoursField.php on line 13
+[16-Apr-2025 06:40:03 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MinutesField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MinutesField.php on line 12
+[16-Apr-2025 06:40:05 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MonthField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MonthField.php on line 12
+[25-Apr-2025 20:15:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Cron\FieldInterface" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/AbstractField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/AbstractField.php on line 12
+[25-Apr-2025 20:15:48 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php on line 28
+[25-Apr-2025 20:15:50 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfWeekField.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/DayOfWeekField.php on line 23
+[25-Apr-2025 20:15:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Cron\FieldFactoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php on line 14
+[25-Apr-2025 20:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/HoursField.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/HoursField.php on line 13
+[25-Apr-2025 20:15:58 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MinutesField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MinutesField.php on line 12
+[25-Apr-2025 20:16:00 UTC] PHP Fatal error:  Uncaught Error: Class "Cron\AbstractField" not found in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MonthField.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dragonmantank/cron-expression/src/Cron/MonthField.php on line 12

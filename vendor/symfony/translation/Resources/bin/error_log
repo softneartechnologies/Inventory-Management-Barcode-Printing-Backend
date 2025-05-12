@@ -1,0 +1,8 @@
+[16-Apr-2025 11:26:37 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Resources/bin/translation-status.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Resources/bin/translation-status.php on line 13
+[24-Apr-2025 15:42:56 UTC] PHP Fatal error:  Uncaught Exception: This script must be run from the command line. in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Resources/bin/translation-status.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Resources/bin/translation-status.php on line 13

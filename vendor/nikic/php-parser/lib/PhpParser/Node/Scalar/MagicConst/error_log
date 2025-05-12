@@ -1,0 +1,72 @@
+[20-Apr-2025 08:14:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php on line 7
+[20-Apr-2025 08:14:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php on line 7
+[20-Apr-2025 08:14:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php on line 7
+[20-Apr-2025 08:14:58 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php on line 7
+[20-Apr-2025 08:15:00 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php on line 7
+[20-Apr-2025 08:15:02 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php on line 7
+[20-Apr-2025 08:15:03 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php on line 7
+[20-Apr-2025 08:15:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Property.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Property.php on line 7
+[20-Apr-2025 08:15:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php on line 7
+[01-May-2025 01:42:42 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Class_.php on line 7
+[01-May-2025 01:42:43 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Dir.php on line 7
+[01-May-2025 01:42:45 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/File.php on line 7
+[01-May-2025 01:42:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Function_.php on line 7
+[01-May-2025 01:42:49 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Line.php on line 7
+[01-May-2025 01:42:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Method.php on line 7
+[01-May-2025 01:42:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Namespace_.php on line 7
+[01-May-2025 01:42:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Property.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Property.php on line 7
+[01-May-2025 01:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Node\Scalar\MagicConst" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Node/Scalar/MagicConst/Trait_.php on line 7

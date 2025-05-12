@@ -1,0 +1,16 @@
+[19-Apr-2025 04:26:04 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/AnonymousFootnotesListener.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/AnonymousFootnotesListener.php on line 27
+[19-Apr-2025 04:26:08 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/GatherFootnotesListener.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/GatherFootnotesListener.php on line 27
+[29-Apr-2025 13:25:55 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/AnonymousFootnotesListener.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/AnonymousFootnotesListener.php on line 27
+[29-Apr-2025 13:25:58 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/GatherFootnotesListener.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Extension/Footnote/Event/GatherFootnotesListener.php on line 27

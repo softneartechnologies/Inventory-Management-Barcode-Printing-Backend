@@ -1,0 +1,96 @@
+[19-Apr-2025 12:54:20 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php on line 21
+[19-Apr-2025 12:54:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php on line 21
+[19-Apr-2025 12:54:23 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php on line 21
+[19-Apr-2025 12:54:25 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php on line 21
+[19-Apr-2025 12:54:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationFailedSubscriber.php on line 21
+[19-Apr-2025 12:54:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationStartedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationStartedSubscriber.php on line 21
+[19-Apr-2025 12:54:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php on line 21
+[19-Apr-2025 12:54:31 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPrintedUnexpectedOutputSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPrintedUnexpectedOutputSubscriber.php on line 20
+[19-Apr-2025 12:54:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 20
+[19-Apr-2025 12:54:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php on line 21
+[19-Apr-2025 12:54:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[19-Apr-2025 12:54:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php on line 20
+[29-Apr-2025 06:10:19 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestErroredSubscriber.php on line 21
+[29-Apr-2025 06:10:21 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFailedSubscriber.php on line 21
+[29-Apr-2025 06:10:22 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestFinishedSubscriber.php on line 21
+[29-Apr-2025 06:10:24 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestMarkedIncompleteSubscriber.php on line 21
+[29-Apr-2025 06:10:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationFailedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationFailedSubscriber.php on line 21
+[29-Apr-2025 06:10:27 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationStartedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparationStartedSubscriber.php on line 21
+[29-Apr-2025 06:10:29 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPreparedSubscriber.php on line 21
+[29-Apr-2025 06:10:30 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPrintedUnexpectedOutputSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestPrintedUnexpectedOutputSubscriber.php on line 20
+[29-Apr-2025 06:10:32 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestRunnerExecutionFinishedSubscriber.php on line 20
+[29-Apr-2025 06:10:34 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSkippedSubscriber.php on line 21
+[29-Apr-2025 06:10:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[29-Apr-2025 06:10:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Logging\JUnit\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/JUnit/Subscriber/TestSuiteStartedSubscriber.php on line 20

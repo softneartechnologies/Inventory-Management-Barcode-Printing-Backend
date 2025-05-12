@@ -1,0 +1,16 @@
+[16-Apr-2025 20:43:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\VarCloner" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Cloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Cloner.php on line 22
+[16-Apr-2025 20:43:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Dumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Dumper.php on line 21
+[25-Apr-2025 09:19:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Cloner\VarCloner" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Cloner.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Cloner.php on line 22
+[25-Apr-2025 09:19:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\VarDumper\Dumper\CliDumper" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Dumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/VarDumper/Dumper.php on line 21

@@ -13,18 +13,17 @@ return new class extends Migration
     {
         Schema::create('inventory_adjustment_reports', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('product_id');
+            $table->integer('product_id');
             $table->integer('current_stock')->default(0);
             $table->integer('new_stock')->default(0);
             $table->integer('quantity')->default(0);
-            $table->string('unit')->nullable();
+            $table->string('unit_of_measure')->nullable();
             $table->text('reason_for_update')->nullable();
             $table->string('location_id')->nullable();
             $table->date('stock_date')->nullable();
             $table->string('vendor_id')->nullable();
             $table->string('category_id')->nullable();
             $table->string('adjustment')->nullable(); // Remove the underscore (_) to avoid errors
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
     }

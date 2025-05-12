@@ -1,0 +1,16 @@
+[16-Apr-2025 06:43:12 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/BufferedConsoleOutput.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/BufferedConsoleOutput.php on line 5
+[16-Apr-2025 06:43:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/ConsoleOutput.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/ConsoleOutput.php on line 7
+[26-Apr-2025 06:07:57 UTC] PHP Fatal error:  Uncaught Error: Class "Laravel\Prompts\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/BufferedConsoleOutput.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/BufferedConsoleOutput.php on line 5
+[26-Apr-2025 06:07:59 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Output\ConsoleOutput" not found in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/ConsoleOutput.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/prompts/src/Output/ConsoleOutput.php on line 7

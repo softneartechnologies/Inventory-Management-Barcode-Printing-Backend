@@ -1,0 +1,80 @@
+[17-Apr-2025 19:13:03 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php on line 15
+[17-Apr-2025 19:13:06 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php on line 13
+[17-Apr-2025 19:13:07 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php on line 14
+[17-Apr-2025 19:13:09 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php on line 11
+[17-Apr-2025 19:13:11 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php on line 11
+[17-Apr-2025 19:13:12 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php on line 11
+[17-Apr-2025 19:13:14 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php on line 13
+[17-Apr-2025 19:13:15 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php on line 11
+[17-Apr-2025 19:13:17 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php on line 11
+[17-Apr-2025 21:49:46 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php on line 11
+[27-Apr-2025 06:19:21 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\BaseMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEmptyString.php on line 15
+[27-Apr-2025 06:19:23 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringCase.php on line 13
+[27-Apr-2025 06:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/IsEqualIgnoringWhiteSpace.php on line 14
+[27-Apr-2025 06:19:26 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/MatchesPattern.php on line 11
+[27-Apr-2025 06:19:28 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContains.php on line 11
+[27-Apr-2025 06:19:29 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsIgnoringCase.php on line 11
+[27-Apr-2025 06:19:31 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringContainsInOrder.php on line 13
+[27-Apr-2025 06:19:33 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringEndsWith.php on line 11
+[27-Apr-2025 06:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\Text\SubstringMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/StringStartsWith.php on line 11
+[27-Apr-2025 06:19:36 UTC] PHP Fatal error:  Uncaught Error: Class "Hamcrest\TypeSafeMatcher" not found in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Text/SubstringMatcher.php on line 11

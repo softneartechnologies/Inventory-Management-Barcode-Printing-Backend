@@ -1,0 +1,48 @@
+[19-Apr-2025 03:25:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php on line 16
+[19-Apr-2025 03:25:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Broadcasting\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php on line 19
+[19-Apr-2025 03:25:20 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php on line 7
+[19-Apr-2025 03:25:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php on line 5
+[19-Apr-2025 03:25:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php on line 12
+[19-Apr-2025 03:25:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php on line 12
+[28-Apr-2025 06:21:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/AblyBroadcaster.php on line 16
+[28-Apr-2025 06:21:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Broadcasting\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php on line 19
+[28-Apr-2025 06:21:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/LogBroadcaster.php on line 7
+[28-Apr-2025 06:21:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/NullBroadcaster.php on line 5
+[28-Apr-2025 06:21:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php on line 12
+[28-Apr-2025 06:21:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Broadcasting\Broadcasters\Broadcaster" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/RedisBroadcaster.php on line 12

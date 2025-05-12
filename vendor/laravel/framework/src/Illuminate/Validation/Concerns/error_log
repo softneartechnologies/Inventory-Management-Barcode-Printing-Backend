@@ -1,0 +1,10 @@
+[19-Apr-2025 03:07:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FilterEmailValidation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FilterEmailValidation.php on line 9
+[19-Apr-2025 03:07:55 UTC] PHP Fatal error:  Trait "Illuminate\Validation\Concerns\ReplacesAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FormatsMessages.php on line 11
+[28-Apr-2025 07:00:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Egulias\EmailValidator\Validation\EmailValidation" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FilterEmailValidation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FilterEmailValidation.php on line 9
+[28-Apr-2025 07:00:39 UTC] PHP Fatal error:  Trait "Illuminate\Validation\Concerns\ReplacesAttributes" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Concerns/FormatsMessages.php on line 11

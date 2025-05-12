@@ -1,0 +1,8 @@
+[14-Apr-2025 23:29:07 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Config\FileLocator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Config/FileLocator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Config/FileLocator.php on line 22
+[24-Apr-2025 12:45:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Config\FileLocator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Config/FileLocator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Config/FileLocator.php on line 22

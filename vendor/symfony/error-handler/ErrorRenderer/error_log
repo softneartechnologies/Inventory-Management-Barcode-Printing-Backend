@@ -1,0 +1,24 @@
+[14-Apr-2025 23:23:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/CliErrorRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/CliErrorRenderer.php on line 24
+[14-Apr-2025 23:23:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/HtmlErrorRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/HtmlErrorRenderer.php on line 25
+[14-Apr-2025 23:23:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/SerializerErrorRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/SerializerErrorRenderer.php on line 25
+[24-Apr-2025 10:58:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/CliErrorRenderer.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/CliErrorRenderer.php on line 24
+[24-Apr-2025 10:58:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/HtmlErrorRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/HtmlErrorRenderer.php on line 25
+[24-Apr-2025 10:58:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/SerializerErrorRenderer.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/error-handler/ErrorRenderer/SerializerErrorRenderer.php on line 25

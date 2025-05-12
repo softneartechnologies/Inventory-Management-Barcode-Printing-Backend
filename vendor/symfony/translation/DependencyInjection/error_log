@@ -1,0 +1,48 @@
+[14-Apr-2025 23:00:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/DataCollectorTranslatorPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/DataCollectorTranslatorPass.php on line 21
+[14-Apr-2025 23:00:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/LoggingTranslatorPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/LoggingTranslatorPass.php on line 23
+[14-Apr-2025 23:00:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationDumperPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationDumperPass.php on line 21
+[14-Apr-2025 23:00:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationExtractorPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationExtractorPass.php on line 22
+[14-Apr-2025 23:00:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPass.php on line 19
+[14-Apr-2025 23:00:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Compiler\AbstractRecursivePass" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPathsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPathsPass.php on line 24
+[24-Apr-2025 08:34:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/DataCollectorTranslatorPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/DataCollectorTranslatorPass.php on line 21
+[24-Apr-2025 08:34:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/LoggingTranslatorPass.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/LoggingTranslatorPass.php on line 23
+[24-Apr-2025 10:39:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationDumperPass.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationDumperPass.php on line 21
+[24-Apr-2025 10:39:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationExtractorPass.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslationExtractorPass.php on line 22
+[24-Apr-2025 10:39:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPass.php on line 19
+[24-Apr-2025 10:39:15 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Compiler\AbstractRecursivePass" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPathsPass.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/DependencyInjection/TranslatorPathsPass.php on line 24

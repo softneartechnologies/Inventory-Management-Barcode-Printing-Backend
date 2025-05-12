@@ -1,0 +1,48 @@
+[14-Apr-2025 22:58:03 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/CompiledUrlMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/CompiledUrlMatcher.php on line 22
+[14-Apr-2025 22:58:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/ExpressionLanguageProvider.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/ExpressionLanguageProvider.php on line 23
+[14-Apr-2025 22:58:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/RedirectableUrlMatcher.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/RedirectableUrlMatcher.php on line 20
+[14-Apr-2025 22:58:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/TraceableUrlMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/TraceableUrlMatcher.php on line 24
+[14-Apr-2025 22:58:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Matcher\UrlMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcher.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcher.php on line 29
+[14-Apr-2025 22:58:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RequestContextAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcherInterface.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcherInterface.php on line 24
+[24-Apr-2025 08:32:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/CompiledUrlMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/CompiledUrlMatcher.php on line 22
+[24-Apr-2025 08:32:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/ExpressionLanguageProvider.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/ExpressionLanguageProvider.php on line 23
+[24-Apr-2025 08:32:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/RedirectableUrlMatcher.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/RedirectableUrlMatcher.php on line 20
+[24-Apr-2025 08:32:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\UrlMatcher" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/TraceableUrlMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/TraceableUrlMatcher.php on line 24
+[24-Apr-2025 08:32:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Matcher\UrlMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcher.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcher.php on line 29
+[24-Apr-2025 08:32:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RequestContextAwareInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcherInterface.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/UrlMatcherInterface.php on line 24

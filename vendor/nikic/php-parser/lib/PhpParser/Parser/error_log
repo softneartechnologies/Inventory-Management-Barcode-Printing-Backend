@@ -1,0 +1,40 @@
+[17-Apr-2025 11:47:44 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 19
+[17-Apr-2025 11:47:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php on line 19
+[27-Apr-2025 08:28:50 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 19
+[27-Apr-2025 08:28:52 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php on line 19
+[27-Apr-2025 08:29:06 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 19
+[27-Apr-2025 08:29:08 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php on line 19
+[27-Apr-2025 08:29:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 19
+[27-Apr-2025 08:29:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php on line 19
+[27-Apr-2025 08:29:37 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php on line 19
+[27-Apr-2025 08:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\ParserAbstract" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Parser/Php8.php on line 19

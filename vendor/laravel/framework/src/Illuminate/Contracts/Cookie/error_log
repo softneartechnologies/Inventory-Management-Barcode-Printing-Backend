@@ -1,0 +1,8 @@
+[19-Apr-2025 03:33:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Cookie\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php on line 5
+[28-Apr-2025 06:52:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Cookie\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Contracts/Cookie/QueueingFactory.php on line 5

@@ -1,0 +1,64 @@
+[16-Apr-2025 06:40:12 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/Comment.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/Comment.php on line 14
+[16-Apr-2025 06:40:13 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php on line 24
+[16-Apr-2025 06:40:15 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainPart.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainPart.php on line 26
+[16-Apr-2025 06:40:16 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php on line 14
+[16-Apr-2025 06:40:17 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php on line 17
+[16-Apr-2025 06:40:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\LocalPart" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php on line 9
+[16-Apr-2025 06:40:21 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\DomainPart" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php on line 11
+[16-Apr-2025 06:40:22 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/LocalPart.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/LocalPart.php on line 16
+[25-Apr-2025 20:16:09 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/Comment.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/Comment.php on line 14
+[25-Apr-2025 20:16:10 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainLiteral.php on line 24
+[25-Apr-2025 20:16:12 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainPart.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DomainPart.php on line 26
+[25-Apr-2025 20:16:14 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/DoubleQuote.php on line 14
+[25-Apr-2025 20:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/FoldingWhiteSpace.php on line 17
+[25-Apr-2025 20:16:17 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\LocalPart" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDLeftPart.php on line 9
+[25-Apr-2025 20:16:19 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\DomainPart" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/IDRightPart.php on line 11
+[25-Apr-2025 20:16:21 UTC] PHP Fatal error:  Uncaught Error: Class "Egulias\EmailValidator\Parser\PartParser" not found in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/LocalPart.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/egulias/email-validator/src/Parser/LocalPart.php on line 16

@@ -1,0 +1,16 @@
+[14-Apr-2025 23:28:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php on line 21
+[14-Apr-2025 23:28:45 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php on line 19
+[24-Apr-2025 12:44:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/ChainCacheClearer.php on line 21
+[24-Apr-2025 12:44:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\CacheClearer\CacheClearerInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/CacheClearer/Psr6CacheClearer.php on line 19

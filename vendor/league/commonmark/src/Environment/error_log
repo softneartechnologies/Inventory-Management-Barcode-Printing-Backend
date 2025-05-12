@@ -1,0 +1,24 @@
+[16-Apr-2025 16:29:52 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Environment\EnvironmentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/Environment.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/Environment.php on line 47
+[16-Apr-2025 16:29:57 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php on line 28
+[16-Apr-2025 16:30:01 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php on line 26
+[25-Apr-2025 08:42:16 UTC] PHP Fatal error:  Uncaught Error: Interface "League\CommonMark\Environment\EnvironmentInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/Environment.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/Environment.php on line 47
+[25-Apr-2025 08:42:20 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentBuilderInterface.php on line 28
+[25-Apr-2025 08:42:21 UTC] PHP Fatal error:  Uncaught Error: Interface "League\Config\ConfigurationProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/league/commonmark/src/Environment/EnvironmentInterface.php on line 26

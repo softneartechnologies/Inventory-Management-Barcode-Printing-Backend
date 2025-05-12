@@ -1,0 +1,40 @@
+[19-Apr-2025 03:19:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php on line 12
+[19-Apr-2025 03:19:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php on line 13
+[19-Apr-2025 03:19:24 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ResendTransport.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ResendTransport.php on line 39
+[19-Apr-2025 03:19:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php on line 15
+[19-Apr-2025 03:19:29 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php on line 15
+[29-Apr-2025 08:40:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php on line 12
+[29-Apr-2025 08:40:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mailer\Transport\TransportInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php on line 13
+[29-Apr-2025 08:40:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ResendTransport.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/ResendTransport.php on line 39
+[29-Apr-2025 08:40:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php on line 15
+[29-Apr-2025 08:40:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mailer\Transport\AbstractTransport" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Mail/Transport/SesV2Transport.php on line 15

@@ -1,0 +1,16 @@
+[17-Apr-2025 21:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/DirectoryEntry.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/DirectoryEntry.php on line 18
+[17-Apr-2025 21:44:55 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Table.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Table.php on line 18
+[27-Apr-2025 04:32:58 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/DirectoryEntry.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/DirectoryEntry.php on line 18
+[27-Apr-2025 04:32:59 UTC] PHP Fatal error:  Uncaught Error: Class "FontLib\BinaryStream" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Table.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/php-font-lib/src/FontLib/Table/Table.php on line 18

@@ -1,0 +1,8 @@
+[18-Apr-2025 09:58:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\DceSecurityProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Dce/SystemDceSecurityProvider.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Dce/SystemDceSecurityProvider.php on line 35
+[27-Apr-2025 18:24:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Provider\DceSecurityProviderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Dce/SystemDceSecurityProvider.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Provider/Dce/SystemDceSecurityProvider.php on line 35

@@ -1,0 +1,8 @@
+[19-Apr-2025 00:49:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\Migrations\MigrationRepositoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php on line 7
+[29-Apr-2025 02:02:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Database\Migrations\MigrationRepositoryInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php on line 7

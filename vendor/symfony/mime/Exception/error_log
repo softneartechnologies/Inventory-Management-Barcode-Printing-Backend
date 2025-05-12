@@ -1,0 +1,40 @@
+[14-Apr-2025 21:02:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Exception\RfcComplianceException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/AddressEncoderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/AddressEncoderException.php on line 17
+[14-Apr-2025 21:02:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/InvalidArgumentException.php on line 17
+[14-Apr-2025 21:02:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/LogicException.php on line 17
+[14-Apr-2025 21:02:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RfcComplianceException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RfcComplianceException.php on line 17
+[14-Apr-2025 21:02:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RuntimeException.php on line 17
+[24-Apr-2025 13:05:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Exception\RfcComplianceException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/AddressEncoderException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/AddressEncoderException.php on line 17
+[24-Apr-2025 13:05:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/InvalidArgumentException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/InvalidArgumentException.php on line 17
+[24-Apr-2025 13:05:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/LogicException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/LogicException.php on line 17
+[24-Apr-2025 13:05:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RfcComplianceException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RfcComplianceException.php on line 17
+[24-Apr-2025 13:05:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Mime\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RuntimeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Exception/RuntimeException.php on line 17

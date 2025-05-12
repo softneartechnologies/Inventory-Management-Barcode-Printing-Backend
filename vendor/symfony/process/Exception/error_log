@@ -1,0 +1,64 @@
+[14-Apr-2025 22:56:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/InvalidArgumentException.php on line 19
+[14-Apr-2025 22:56:02 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/LogicException.php on line 19
+[14-Apr-2025 22:56:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessFailedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessFailedException.php on line 21
+[14-Apr-2025 22:56:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessSignaledException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessSignaledException.php on line 21
+[14-Apr-2025 22:56:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\ProcessFailedException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessStartFailedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessStartFailedException.php on line 19
+[14-Apr-2025 22:56:09 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessTimedOutException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessTimedOutException.php on line 21
+[14-Apr-2025 22:56:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RunProcessFailedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RunProcessFailedException.php on line 19
+[14-Apr-2025 22:56:12 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RuntimeException.php on line 19
+[24-Apr-2025 13:07:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/InvalidArgumentException.php on line 19
+[24-Apr-2025 13:07:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/LogicException.php on line 19
+[24-Apr-2025 13:07:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessFailedException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessFailedException.php on line 21
+[24-Apr-2025 13:07:46 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessSignaledException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessSignaledException.php on line 21
+[24-Apr-2025 13:07:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\ProcessFailedException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessStartFailedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessStartFailedException.php on line 19
+[24-Apr-2025 13:07:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessTimedOutException.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/ProcessTimedOutException.php on line 21
+[24-Apr-2025 13:07:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RunProcessFailedException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RunProcessFailedException.php on line 19
+[24-Apr-2025 13:07:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Process\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/process/Exception/RuntimeException.php on line 19

@@ -1,0 +1,16 @@
+[14-Apr-2025 22:58:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\String\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/InvalidArgumentException.php on line 14
+[14-Apr-2025 22:58:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\String\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/RuntimeException.php on line 14
+[24-Apr-2025 08:33:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\String\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/InvalidArgumentException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/InvalidArgumentException.php on line 14
+[24-Apr-2025 08:33:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\String\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/RuntimeException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Exception/RuntimeException.php on line 14

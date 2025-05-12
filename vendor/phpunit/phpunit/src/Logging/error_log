@@ -1,0 +1,8 @@
+[16-Apr-2025 22:38:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Tracer\Tracer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php on line 29
+[25-Apr-2025 08:14:40 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Event\Tracer\Tracer" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Logging/EventLogger.php on line 29

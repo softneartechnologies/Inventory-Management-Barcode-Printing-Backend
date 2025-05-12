@@ -1,0 +1,160 @@
+[16-Apr-2025 20:41:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ExitCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ExitCommand.php on line 23
+[16-Apr-2025 20:41:38 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HelpCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HelpCommand.php on line 24
+[16-Apr-2025 20:41:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HistoryCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HistoryCommand.php on line 27
+[16-Apr-2025 20:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand.php on line 36
+[16-Apr-2025 20:41:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ParseCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ParseCommand.php on line 30
+[16-Apr-2025 20:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php on line 20
+[16-Apr-2025 20:41:48 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ReflectingCommand.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ReflectingCommand.php on line 29
+[16-Apr-2025 20:41:50 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ShowCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ShowCommand.php on line 27
+[16-Apr-2025 20:41:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/SudoCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/SudoCommand.php on line 25
+[16-Apr-2025 20:41:56 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php on line 30
+[16-Apr-2025 20:41:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand.php on line 25
+[16-Apr-2025 20:42:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TraceCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TraceCommand.php on line 24
+[16-Apr-2025 20:42:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WhereamiCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WhereamiCommand.php on line 24
+[16-Apr-2025 20:42:04 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\TraceCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WtfCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WtfCommand.php on line 26
+[17-Apr-2025 04:56:07 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/BufferCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/BufferCommand.php on line 24
+[17-Apr-2025 04:56:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ClearCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ClearCommand.php on line 22
+[17-Apr-2025 04:56:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/Command.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/Command.php on line 24
+[17-Apr-2025 04:56:13 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DocCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DocCommand.php on line 27
+[17-Apr-2025 04:56:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DumpCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DumpCommand.php on line 28
+[17-Apr-2025 04:56:17 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/EditCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/EditCommand.php on line 22
+[25-Apr-2025 09:16:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/BufferCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/BufferCommand.php on line 24
+[25-Apr-2025 09:16:10 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ClearCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ClearCommand.php on line 22
+[25-Apr-2025 09:16:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/Command.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/Command.php on line 24
+[25-Apr-2025 09:16:15 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DocCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DocCommand.php on line 27
+[25-Apr-2025 09:16:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DumpCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/DumpCommand.php on line 28
+[25-Apr-2025 09:16:18 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/EditCommand.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/EditCommand.php on line 22
+[25-Apr-2025 09:16:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ExitCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ExitCommand.php on line 23
+[25-Apr-2025 09:16:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HelpCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HelpCommand.php on line 24
+[25-Apr-2025 09:16:23 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HistoryCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/HistoryCommand.php on line 27
+[25-Apr-2025 09:16:25 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ListCommand.php on line 36
+[25-Apr-2025 09:16:27 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ParseCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ParseCommand.php on line 30
+[25-Apr-2025 09:16:28 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/PsyVersionCommand.php on line 20
+[25-Apr-2025 09:16:30 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ReflectingCommand.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ReflectingCommand.php on line 29
+[25-Apr-2025 09:16:32 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\ReflectingCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ShowCommand.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ShowCommand.php on line 27
+[25-Apr-2025 09:16:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/SudoCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/SudoCommand.php on line 25
+[25-Apr-2025 09:16:35 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/ThrowUpCommand.php on line 30
+[25-Apr-2025 09:16:37 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TimeitCommand.php on line 25
+[25-Apr-2025 09:16:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TraceCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/TraceCommand.php on line 24
+[25-Apr-2025 09:16:40 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WhereamiCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WhereamiCommand.php on line 24
+[25-Apr-2025 09:16:42 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Command\TraceCommand" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WtfCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Command/WtfCommand.php on line 26

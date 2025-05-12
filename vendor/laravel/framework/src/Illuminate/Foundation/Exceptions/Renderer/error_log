@@ -1,0 +1,2 @@
+[20-Apr-2025 12:18:20 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Renderer/Frame.php on line 8
+[30-Apr-2025 21:06:11 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Concerns\ResolvesDumpSource" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Renderer/Frame.php on line 8

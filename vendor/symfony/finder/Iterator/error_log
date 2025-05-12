@@ -1,0 +1,26 @@
+[14-Apr-2025 23:25:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilecontentFilterIterator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilecontentFilterIterator.php on line 24
+[14-Apr-2025 23:25:42 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilenameFilterIterator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilenameFilterIterator.php on line 23
+[14-Apr-2025 23:25:47 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/PathFilterIterator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/PathFilterIterator.php on line 24
+[14-Apr-2025 23:25:50 UTC] PHP Fatal error:  Could not check compatibility between Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator::current(): Symfony\Component\Finder\SplFileInfo and FilesystemIterator::current(): SplFileInfo|FilesystemIterator|string, because class Symfony\Component\Finder\SplFileInfo is not available in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/RecursiveDirectoryIterator.php on line 54
+[24-Apr-2025 12:43:00 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilecontentFilterIterator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilecontentFilterIterator.php on line 24
+[24-Apr-2025 12:43:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilenameFilterIterator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/FilenameFilterIterator.php on line 23
+[24-Apr-2025 12:43:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Finder\Iterator\MultiplePcreFilterIterator" not found in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/PathFilterIterator.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/PathFilterIterator.php on line 24
+[24-Apr-2025 12:43:05 UTC] PHP Fatal error:  Could not check compatibility between Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator::current(): Symfony\Component\Finder\SplFileInfo and FilesystemIterator::current(): SplFileInfo|FilesystemIterator|string, because class Symfony\Component\Finder\SplFileInfo is not available in /home/softoroa/flight.softnear.com/vendor/symfony/finder/Iterator/RecursiveDirectoryIterator.php on line 54

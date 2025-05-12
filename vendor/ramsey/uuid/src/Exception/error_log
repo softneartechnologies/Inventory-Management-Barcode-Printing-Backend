@@ -1,0 +1,96 @@
+[16-Apr-2025 20:45:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/BuilderNotFoundException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/BuilderNotFoundException.php on line 22
+[16-Apr-2025 20:45:13 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DateTimeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DateTimeException.php on line 22
+[16-Apr-2025 20:45:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DceSecurityException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DceSecurityException.php on line 23
+[16-Apr-2025 20:45:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidArgumentException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidArgumentException.php on line 22
+[16-Apr-2025 20:45:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidBytesException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidBytesException.php on line 22
+[16-Apr-2025 20:45:21 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidUuidStringException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidUuidStringException.php on line 23
+[16-Apr-2025 20:45:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NameException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NameException.php on line 23
+[16-Apr-2025 20:45:24 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NodeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NodeException.php on line 22
+[16-Apr-2025 20:45:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/RandomSourceException.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/RandomSourceException.php on line 25
+[16-Apr-2025 20:45:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/TimeSourceException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/TimeSourceException.php on line 22
+[16-Apr-2025 20:45:30 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnableToBuildUuidException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnableToBuildUuidException.php on line 22
+[16-Apr-2025 20:45:32 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnsupportedOperationException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnsupportedOperationException.php on line 22
+[25-Apr-2025 09:21:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/BuilderNotFoundException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/BuilderNotFoundException.php on line 22
+[25-Apr-2025 09:21:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DateTimeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DateTimeException.php on line 22
+[25-Apr-2025 09:21:07 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DceSecurityException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/DceSecurityException.php on line 23
+[25-Apr-2025 09:21:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidArgumentException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidArgumentException.php on line 22
+[25-Apr-2025 09:21:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidBytesException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidBytesException.php on line 22
+[25-Apr-2025 09:21:13 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidUuidStringException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/InvalidUuidStringException.php on line 23
+[25-Apr-2025 09:21:14 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NameException.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NameException.php on line 23
+[25-Apr-2025 09:21:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NodeException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/NodeException.php on line 22
+[25-Apr-2025 09:21:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/RandomSourceException.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/RandomSourceException.php on line 25
+[25-Apr-2025 09:21:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/TimeSourceException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/TimeSourceException.php on line 22
+[25-Apr-2025 09:21:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnableToBuildUuidException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnableToBuildUuidException.php on line 22
+[25-Apr-2025 09:21:23 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Exception\UuidExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnsupportedOperationException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Exception/UnsupportedOperationException.php on line 22

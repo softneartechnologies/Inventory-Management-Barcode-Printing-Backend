@@ -1,0 +1,18 @@
+[16-Apr-2025 23:46:33 UTC] PHP Fatal error:  Trait "Ramsey\Uuid\Rfc4122\MaxTrait" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Fields.php on line 46
+[16-Apr-2025 23:46:35 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Guid.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Guid.php on line 51
+[16-Apr-2025 23:46:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/GuidBuilder.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/GuidBuilder.php on line 32
+[25-Apr-2025 09:22:17 UTC] PHP Fatal error:  Trait "Ramsey\Uuid\Rfc4122\MaxTrait" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Fields.php on line 46
+[25-Apr-2025 09:22:19 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Guid.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/Guid.php on line 51
+[25-Apr-2025 09:22:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/GuidBuilder.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Guid/GuidBuilder.php on line 32

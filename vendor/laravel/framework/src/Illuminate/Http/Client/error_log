@@ -1,0 +1,26 @@
+[19-Apr-2025 03:15:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php on line 5
+[19-Apr-2025 03:15:35 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php on line 21
+[19-Apr-2025 03:15:43 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php on line 32
+[19-Apr-2025 03:15:48 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Request.php on line 11
+[19-Apr-2025 03:15:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php on line 7
+[19-Apr-2025 03:15:54 UTC] PHP Fatal error:  Trait "Illuminate\Http\Client\Concerns\DeterminesStatusCode" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Response.php on line 16
+[19-Apr-2025 03:15:58 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ResponseSequence.php on line 9
+[29-Apr-2025 10:59:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ConnectionException.php on line 5
+[29-Apr-2025 10:59:53 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Factory.php on line 21
+[29-Apr-2025 10:59:57 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Conditionable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php on line 32
+[29-Apr-2025 11:00:01 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Request.php on line 11
+[29-Apr-2025 11:00:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Client\HttpClientException" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/RequestException.php on line 7
+[29-Apr-2025 11:00:06 UTC] PHP Fatal error:  Trait "Illuminate\Http\Client\Concerns\DeterminesStatusCode" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/Response.php on line 16
+[29-Apr-2025 11:00:08 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Client/ResponseSequence.php on line 9

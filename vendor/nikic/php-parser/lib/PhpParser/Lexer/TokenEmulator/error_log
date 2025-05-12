@@ -1,0 +1,88 @@
+[19-Apr-2025 04:41:22 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AsymmetricVisibilityTokenEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AsymmetricVisibilityTokenEmulator.php on line 8
+[19-Apr-2025 04:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php on line 8
+[19-Apr-2025 04:41:26 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php on line 7
+[19-Apr-2025 04:41:31 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php on line 8
+[19-Apr-2025 04:41:34 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php on line 7
+[19-Apr-2025 04:41:47 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php on line 7
+[19-Apr-2025 04:41:54 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php on line 8
+[19-Apr-2025 04:41:56 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PropertyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PropertyTokenEmulator.php on line 7
+[19-Apr-2025 04:41:57 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php on line 14
+[19-Apr-2025 04:41:59 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php on line 7
+[19-Apr-2025 04:42:13 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php on line 10
+[29-Apr-2025 06:04:04 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AsymmetricVisibilityTokenEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AsymmetricVisibilityTokenEmulator.php on line 8
+[29-Apr-2025 06:04:05 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/AttributeEmulator.php on line 8
+[29-Apr-2025 06:04:07 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/EnumTokenEmulator.php on line 7
+[29-Apr-2025 06:04:09 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ExplicitOctalEmulator.php on line 8
+[29-Apr-2025 06:04:10 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php on line 7
+[29-Apr-2025 06:04:12 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php on line 7
+[29-Apr-2025 06:04:14 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php on line 8
+[29-Apr-2025 06:04:15 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PropertyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PropertyTokenEmulator.php on line 7
+[29-Apr-2025 06:04:17 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php on line 14
+[29-Apr-2025 06:04:19 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\KeywordEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php on line 7
+[29-Apr-2025 06:04:20 UTC] PHP Fatal error:  Uncaught Error: Class "PhpParser\Lexer\TokenEmulator\TokenEmulator" not found in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php on line 10

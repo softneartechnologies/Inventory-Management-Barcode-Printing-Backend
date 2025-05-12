@@ -1,0 +1,40 @@
+[16-Apr-2025 20:44:46 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php on line 31
+[16-Apr-2025 20:44:48 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php on line 46
+[16-Apr-2025 20:44:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Codec\CodecInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/StringCodec.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/StringCodec.php on line 38
+[16-Apr-2025 20:44:51 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php on line 51
+[16-Apr-2025 20:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php on line 49
+[25-Apr-2025 09:20:40 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/GuidStringCodec.php on line 31
+[25-Apr-2025 09:20:42 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/OrderedTimeCodec.php on line 46
+[25-Apr-2025 09:20:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Codec\CodecInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/StringCodec.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/StringCodec.php on line 38
+[25-Apr-2025 09:20:45 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampFirstCombCodec.php on line 51
+[25-Apr-2025 09:20:47 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Codec\StringCodec" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Codec/TimestampLastCombCodec.php on line 49

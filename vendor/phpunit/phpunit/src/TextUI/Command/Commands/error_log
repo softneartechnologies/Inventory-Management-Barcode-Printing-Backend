@@ -1,0 +1,96 @@
+[19-Apr-2025 10:32:01 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/AtLeastVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/AtLeastVersionCommand.php on line 20
+[19-Apr-2025 10:32:04 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/GenerateConfigurationCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/GenerateConfigurationCommand.php on line 30
+[19-Apr-2025 10:32:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListGroupsCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListGroupsCommand.php on line 25
+[19-Apr-2025 10:32:08 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestFilesCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestFilesCommand.php on line 26
+[19-Apr-2025 10:32:10 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestSuitesCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestSuitesCommand.php on line 24
+[19-Apr-2025 10:32:12 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsTextCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsTextCommand.php on line 24
+[19-Apr-2025 10:32:14 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsXmlCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsXmlCommand.php on line 25
+[19-Apr-2025 10:32:16 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/MigrateConfigurationCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/MigrateConfigurationCommand.php on line 24
+[19-Apr-2025 10:32:18 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowHelpCommand.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowHelpCommand.php on line 19
+[19-Apr-2025 10:32:20 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowVersionCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowVersionCommand.php on line 17
+[19-Apr-2025 10:32:22 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/VersionCheckCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/VersionCheckCommand.php on line 23
+[19-Apr-2025 10:32:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/WarmCodeCoverageCacheCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/WarmCodeCoverageCacheCommand.php on line 28
+[29-Apr-2025 03:55:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/AtLeastVersionCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/AtLeastVersionCommand.php on line 20
+[29-Apr-2025 03:55:37 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/GenerateConfigurationCommand.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/GenerateConfigurationCommand.php on line 30
+[29-Apr-2025 03:55:42 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListGroupsCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListGroupsCommand.php on line 25
+[29-Apr-2025 10:16:23 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestFilesCommand.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestFilesCommand.php on line 26
+[29-Apr-2025 10:16:24 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestSuitesCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestSuitesCommand.php on line 24
+[29-Apr-2025 10:16:25 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsTextCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsTextCommand.php on line 24
+[29-Apr-2025 10:16:26 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsXmlCommand.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ListTestsAsXmlCommand.php on line 25
+[29-Apr-2025 10:16:27 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/MigrateConfigurationCommand.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/MigrateConfigurationCommand.php on line 24
+[29-Apr-2025 10:16:28 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowHelpCommand.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowHelpCommand.php on line 19
+[29-Apr-2025 10:16:29 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowVersionCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/ShowVersionCommand.php on line 17
+[29-Apr-2025 10:16:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/VersionCheckCommand.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/VersionCheckCommand.php on line 23
+[29-Apr-2025 10:16:31 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\TextUI\Command\Command" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/WarmCodeCoverageCacheCommand.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/TextUI/Command/Commands/WarmCodeCoverageCacheCommand.php on line 28

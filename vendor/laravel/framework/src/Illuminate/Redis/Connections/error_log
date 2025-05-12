@@ -1,0 +1,34 @@
+[19-Apr-2025 12:49:15 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/Connection.php on line 12
+[19-Apr-2025 17:01:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\PhpRedisConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisClusterConnection.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisClusterConnection.php on line 7
+[19-Apr-2025 17:01:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php on line 14
+[19-Apr-2025 17:01:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\PredisConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisClusterConnection.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisClusterConnection.php on line 8
+[19-Apr-2025 17:01:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisConnection.php on line 13
+[28-Apr-2025 06:55:38 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/Connection.php on line 12
+[28-Apr-2025 06:55:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\PhpRedisConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisClusterConnection.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisClusterConnection.php on line 7
+[28-Apr-2025 06:55:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php on line 14
+[28-Apr-2025 06:55:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\PredisConnection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisClusterConnection.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisClusterConnection.php on line 8
+[28-Apr-2025 06:55:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Redis\Connections\Connection" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisConnection.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisConnection.php on line 13

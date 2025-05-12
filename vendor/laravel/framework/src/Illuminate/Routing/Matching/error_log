@@ -1,0 +1,32 @@
+[19-Apr-2025 03:05:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php on line 8
+[19-Apr-2025 03:05:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php on line 8
+[19-Apr-2025 03:05:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php on line 8
+[19-Apr-2025 15:12:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php on line 8
+[29-Apr-2025 08:44:47 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/HostValidator.php on line 8
+[29-Apr-2025 08:44:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/MethodValidator.php on line 8
+[29-Apr-2025 08:44:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/SchemeValidator.php on line 8
+[29-Apr-2025 08:44:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Routing\Matching\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php on line 8

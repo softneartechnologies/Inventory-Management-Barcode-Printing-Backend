@@ -1,0 +1,16 @@
+[16-Apr-2025 11:23:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailCount.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailCount.php on line 17
+[16-Apr-2025 11:23:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailIsQueued.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailIsQueued.php on line 17
+[25-Apr-2025 06:05:36 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailCount.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailCount.php on line 17
+[25-Apr-2025 06:05:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\Constraint\Constraint" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailIsQueued.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mailer/Test/Constraint/EmailIsQueued.php on line 17

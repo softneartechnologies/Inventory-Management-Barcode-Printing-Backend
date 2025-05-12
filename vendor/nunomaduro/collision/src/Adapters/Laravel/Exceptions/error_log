@@ -1,0 +1,16 @@
+[19-Apr-2025 17:19:37 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php on line 14
+[19-Apr-2025 17:19:38 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php on line 14
+[29-Apr-2025 06:05:55 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/NotSupportedYetException.php on line 14
+[29-Apr-2025 06:05:57 UTC] PHP Fatal error:  Uncaught Error: Interface "NunoMaduro\Collision\Contracts\RenderlessEditor" not found in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php on line 14

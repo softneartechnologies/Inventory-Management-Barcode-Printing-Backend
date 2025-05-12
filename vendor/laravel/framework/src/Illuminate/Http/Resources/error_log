@@ -1,0 +1,10 @@
+[19-Apr-2025 03:17:31 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/DelegatesToResource.php on line 9
+[19-Apr-2025 03:17:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Http\Resources\PotentiallyMissing" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php on line 5
+[29-Apr-2025 08:38:49 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\ForwardsCalls" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/DelegatesToResource.php on line 9
+[29-Apr-2025 08:38:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Http\Resources\PotentiallyMissing" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Http/Resources/MissingValue.php on line 5

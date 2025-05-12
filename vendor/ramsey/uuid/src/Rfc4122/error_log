@@ -1,0 +1,171 @@
+[16-Apr-2025 01:38:50 UTC] PHP Fatal error:  Trait "Ramsey\Uuid\Rfc4122\MaxTrait" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Fields.php on line 41
+[16-Apr-2025 01:38:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Fields\FieldsInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php on line 40
+[16-Apr-2025 01:38:57 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php on line 25
+[16-Apr-2025 01:39:01 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php on line 25
+[16-Apr-2025 01:39:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php on line 35
+[16-Apr-2025 01:39:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\UuidInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php on line 27
+[16-Apr-2025 01:39:10 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php on line 30
+[16-Apr-2025 01:39:12 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php on line 53
+[16-Apr-2025 01:39:14 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php on line 30
+[16-Apr-2025 01:39:18 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php on line 30
+[16-Apr-2025 01:39:20 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php on line 30
+[16-Apr-2025 01:39:22 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Nonstandard\UuidV6" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php on line 27
+[16-Apr-2025 01:39:24 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php on line 32
+[16-Apr-2025 01:39:26 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php on line 37
+[16-Apr-2025 01:39:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Validator\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php on line 28
+[25-Apr-2025 08:08:24 UTC] PHP Fatal error:  Trait "Ramsey\Uuid\Rfc4122\MaxTrait" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Fields.php on line 41
+[25-Apr-2025 08:08:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Fields\FieldsInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php on line 40
+[25-Apr-2025 08:08:30 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php on line 25
+[25-Apr-2025 08:08:33 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php on line 25
+[25-Apr-2025 08:08:37 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php on line 35
+[25-Apr-2025 08:08:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\UuidInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php on line 27
+[25-Apr-2025 08:08:40 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php on line 30
+[25-Apr-2025 08:08:42 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php on line 53
+[25-Apr-2025 08:08:43 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php on line 30
+[25-Apr-2025 08:08:45 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php on line 30
+[25-Apr-2025 08:08:47 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php on line 30
+[25-Apr-2025 08:08:49 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Nonstandard\UuidV6" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php on line 27
+[25-Apr-2025 08:08:50 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php on line 32
+[25-Apr-2025 08:08:52 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php on line 37
+[25-Apr-2025 08:08:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Validator\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php on line 28
+[28-Apr-2025 10:13:43 UTC] PHP Fatal error:  Trait "Ramsey\Uuid\Rfc4122\MaxTrait" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Fields.php on line 41
+[28-Apr-2025 10:13:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Fields\FieldsInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/FieldsInterface.php on line 40
+[28-Apr-2025 10:13:46 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/MaxUuid.php on line 25
+[28-Apr-2025 10:13:48 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/NilUuid.php on line 25
+[28-Apr-2025 10:13:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidBuilder.php on line 35
+[28-Apr-2025 10:13:53 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\UuidInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php on line 27
+[28-Apr-2025 10:13:55 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV1.php on line 30
+[28-Apr-2025 10:13:56 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV2.php on line 53
+[28-Apr-2025 10:13:57 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV3.php on line 30
+[28-Apr-2025 10:13:58 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV4.php on line 30
+[28-Apr-2025 10:13:59 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV5.php on line 30
+[28-Apr-2025 10:14:00 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Nonstandard\UuidV6" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV6.php on line 27
+[28-Apr-2025 10:14:01 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV7.php on line 32
+[28-Apr-2025 10:14:02 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Uuid" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/UuidV8.php on line 37
+[28-Apr-2025 10:14:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Validator\ValidatorInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Rfc4122/Validator.php on line 28

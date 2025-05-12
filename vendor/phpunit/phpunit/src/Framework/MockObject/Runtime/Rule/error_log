@@ -1,0 +1,60 @@
+[20-Apr-2025 06:01:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyInvokedCount.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyInvokedCount.php on line 19
+[20-Apr-2025 06:01:50 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Rule\ParametersRule" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyParameters.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyParameters.php on line 19
+[20-Apr-2025 06:01:53 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\SelfDescribing" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvocationOrder.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvocationOrder.php on line 21
+[20-Apr-2025 06:01:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastCount.php on line 21
+[20-Apr-2025 06:01:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastOnce.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastOnce.php on line 20
+[20-Apr-2025 06:01:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtMostCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtMostCount.php on line 21
+[20-Apr-2025 06:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedCount.php on line 21
+[20-Apr-2025 06:02:06 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Rule\ParametersRule" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/Parameters.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/Parameters.php on line 28
+[01-May-2025 04:08:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyInvokedCount.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyInvokedCount.php on line 19
+[01-May-2025 04:08:30 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Rule\ParametersRule" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyParameters.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/AnyParameters.php on line 19
+[01-May-2025 04:08:59 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastCount.php on line 21
+[01-May-2025 04:09:17 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastOnce.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtLeastOnce.php on line 20
+[01-May-2025 04:09:26 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtMostCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedAtMostCount.php on line 21
+[01-May-2025 04:09:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\MockObject\Rule\InvocationOrder" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedCount.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/InvokedCount.php on line 21
+[01-May-2025 04:10:13 UTC] PHP Fatal error:  Uncaught Error: Interface "PHPUnit\Framework\MockObject\Rule\ParametersRule" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/Parameters.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Framework/MockObject/Runtime/Rule/Parameters.php on line 28

@@ -1,0 +1,12 @@
+[16-Apr-2025 01:41:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php on line 20
+[25-Apr-2025 08:10:42 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php on line 20
+[28-Apr-2025 10:12:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Sabberworm\CSS\Renderable" not found in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/sabberworm/php-css-parser/src/Rule/Rule.php on line 20

@@ -1,0 +1,80 @@
+[14-Apr-2025 23:00:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/IncompleteDsnException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/IncompleteDsnException.php on line 14
+[14-Apr-2025 23:01:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidArgumentException.php on line 19
+[14-Apr-2025 23:01:01 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidResourceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidResourceException.php on line 19
+[14-Apr-2025 23:01:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/LogicException.php on line 19
+[14-Apr-2025 23:01:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\IncompleteDsnException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/MissingRequiredOptionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/MissingRequiredOptionException.php on line 17
+[14-Apr-2025 23:01:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/NotFoundResourceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/NotFoundResourceException.php on line 19
+[14-Apr-2025 23:01:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderException.php on line 19
+[14-Apr-2025 23:01:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderExceptionInterface.php on line 17
+[14-Apr-2025 23:01:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/RuntimeException.php on line 19
+[14-Apr-2025 23:01:12 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/UnsupportedSchemeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/UnsupportedSchemeException.php on line 17
+[24-Apr-2025 10:39:51 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\InvalidArgumentException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/IncompleteDsnException.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/IncompleteDsnException.php on line 14
+[24-Apr-2025 10:39:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidArgumentException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidArgumentException.php on line 19
+[24-Apr-2025 10:39:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidResourceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/InvalidResourceException.php on line 19
+[24-Apr-2025 10:39:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/LogicException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/LogicException.php on line 19
+[24-Apr-2025 10:39:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\IncompleteDsnException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/MissingRequiredOptionException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/MissingRequiredOptionException.php on line 17
+[24-Apr-2025 10:39:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/NotFoundResourceException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/NotFoundResourceException.php on line 19
+[24-Apr-2025 10:40:01 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\RuntimeException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderException.php on line 19
+[24-Apr-2025 10:40:03 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderExceptionInterface.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/ProviderExceptionInterface.php on line 17
+[24-Apr-2025 10:40:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Exception\ExceptionInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/RuntimeException.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/RuntimeException.php on line 19
+[24-Apr-2025 10:40:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Translation\Exception\LogicException" not found in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/UnsupportedSchemeException.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/translation/Exception/UnsupportedSchemeException.php on line 17

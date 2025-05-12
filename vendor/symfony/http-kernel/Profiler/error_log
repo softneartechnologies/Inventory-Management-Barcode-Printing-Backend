@@ -1,0 +1,16 @@
+[14-Apr-2025 20:58:21 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php on line 19
+[14-Apr-2025 20:58:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/Profiler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/Profiler.php on line 27
+[24-Apr-2025 12:50:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Profiler\ProfilerStorageInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php on line 19
+[24-Apr-2025 12:50:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/Profiler.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Profiler/Profiler.php on line 27

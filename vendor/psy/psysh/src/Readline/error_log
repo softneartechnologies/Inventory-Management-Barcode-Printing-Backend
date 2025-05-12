@@ -1,0 +1,32 @@
+[17-Apr-2025 02:25:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Transient.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Transient.php on line 19
+[17-Apr-2025 02:25:18 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Userland.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Userland.php on line 26
+[17-Apr-2025 04:57:19 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/GNUReadline.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/GNUReadline.php on line 21
+[17-Apr-2025 04:57:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\GNUReadline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Libedit.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Libedit.php on line 26
+[25-Apr-2025 09:18:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/GNUReadline.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/GNUReadline.php on line 21
+[25-Apr-2025 09:18:11 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\Readline\GNUReadline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Libedit.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Libedit.php on line 26
+[25-Apr-2025 09:18:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Transient.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Transient.php on line 19
+[25-Apr-2025 09:18:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Psy\Readline\Readline" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Userland.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/Readline/Userland.php on line 26

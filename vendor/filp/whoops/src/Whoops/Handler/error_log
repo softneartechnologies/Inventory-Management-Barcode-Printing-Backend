@@ -1,0 +1,48 @@
+[17-Apr-2025 21:05:49 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php on line 16
+[17-Apr-2025 21:05:50 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php on line 15
+[17-Apr-2025 21:05:54 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php on line 16
+[17-Apr-2025 21:05:55 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php on line 20
+[17-Apr-2025 21:05:56 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php on line 18
+[17-Apr-2025 21:05:57 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php on line 17
+[27-Apr-2025 08:46:50 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/CallbackHandler.php on line 16
+[27-Apr-2025 08:46:51 UTC] PHP Fatal error:  Uncaught Error: Interface "Whoops\Handler\HandlerInterface" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/Handler.php on line 15
+[27-Apr-2025 08:46:54 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php on line 16
+[27-Apr-2025 08:46:56 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PlainTextHandler.php on line 20
+[27-Apr-2025 08:46:57 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php on line 18
+[27-Apr-2025 08:46:59 UTC] PHP Fatal error:  Uncaught Error: Class "Whoops\Handler\Handler" not found in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php on line 17

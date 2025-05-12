@@ -1,0 +1,24 @@
+[14-Apr-2025 23:28:27 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Bundle\Bundle" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/AbstractBundle.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/AbstractBundle.php on line 26
+[14-Apr-2025 23:28:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Bundle\BundleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/Bundle.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/Bundle.php on line 25
+[14-Apr-2025 23:28:31 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Extension\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/BundleExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/BundleExtension.php on line 28
+[24-Apr-2025 12:44:35 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Bundle\Bundle" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/AbstractBundle.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/AbstractBundle.php on line 26
+[24-Apr-2025 12:44:36 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\Bundle\BundleInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/Bundle.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/Bundle.php on line 25
+[24-Apr-2025 12:44:37 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\DependencyInjection\Extension\Extension" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/BundleExtension.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-kernel/Bundle/BundleExtension.php on line 28

@@ -26,6 +26,7 @@ use App\Http\Controllers\ReasonController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\WorkstationController;
 use App\Http\Controllers\MachineController;
+use App\Http\Controllers\UomCategoryController;
 
 
 Route::post('/register', [AuthController::class, 'register']);
@@ -246,7 +247,25 @@ Route::prefix('reason')->group(function () {
     Route::delete('/delete/{id}', [ReasonController::class, 'destroy']);
 });
 
-Route::get('/roles', [RolePermissionController::class, 'getRoles']);
+    Route::prefix('uom-categories')->group(function () {
+        Route::get('/', [UomCategoryController::class, 'index']); // List all
+        Route::post('/add/category', [UomCategoryController::class, 'store']); // Create
+        Route::get('/category/details/{id}', [UomCategoryController::class, 'categoryDetails']); // Show one
+        Route::get('/edit/{id}', [UomCategoryController::class, 'show']); // Show one
+        Route::post('/update/{id}', [UomCategoryController::class, 'update']); // Update
+        Route::delete('/delete/{id}', [UomCategoryController::class, 'destroy']); // Delete
+        
+    });
+
+    Route::prefix('uom-units')->group(function () {
+       
+        Route::post('/add', [UomCategoryController::class, 'storeUnits']);
+        Route::get('/edit/{id}', [UomCategoryController::class, 'showUnits']); // Show one
+        Route::post('/update/{id}', [UomCategoryController::class, 'updateUnits']); // Update
+        Route::delete('/delete/{id}', [UomCategoryController::class, 'destroyUnits']); // Delete
+    });
+
+    Route::get('/roles', [RolePermissionController::class, 'getRoles']);
     Route::post('/roles/add', [RolePermissionController::class, 'createRole']);
     Route::get('/roles/edit_permission/{roleId}', [RolePermissionController::class, 'getRoleDetails']);
     Route::post('/roles/update_permission/{roleId}', [RolePermissionController::class, 'updateRole']);

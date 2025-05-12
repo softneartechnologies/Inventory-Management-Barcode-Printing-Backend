@@ -1,0 +1,72 @@
+[19-Apr-2025 10:30:33 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestConsideredRiskySubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestConsideredRiskySubscriber.php on line 20
+[19-Apr-2025 10:30:35 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestErroredSubscriber.php on line 20
+[19-Apr-2025 10:30:37 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFailedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFailedSubscriber.php on line 20
+[19-Apr-2025 10:30:40 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFinishedSubscriber.php on line 21
+[19-Apr-2025 10:30:42 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestMarkedIncompleteSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestMarkedIncompleteSubscriber.php on line 20
+[19-Apr-2025 10:30:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestPreparedSubscriber.php on line 20
+[19-Apr-2025 10:30:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSkippedSubscriber.php on line 21
+[19-Apr-2025 10:30:48 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[19-Apr-2025 10:30:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteStartedSubscriber.php on line 20
+[29-Apr-2025 10:15:49 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestConsideredRiskySubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestConsideredRiskySubscriber.php on line 20
+[29-Apr-2025 10:15:50 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestErroredSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestErroredSubscriber.php on line 20
+[29-Apr-2025 10:15:51 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFailedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFailedSubscriber.php on line 20
+[29-Apr-2025 10:15:52 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFinishedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestFinishedSubscriber.php on line 21
+[29-Apr-2025 10:15:53 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestMarkedIncompleteSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestMarkedIncompleteSubscriber.php on line 20
+[29-Apr-2025 10:15:54 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestPreparedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestPreparedSubscriber.php on line 20
+[29-Apr-2025 10:15:55 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSkippedSubscriber.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSkippedSubscriber.php on line 21
+[29-Apr-2025 10:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteFinishedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteFinishedSubscriber.php on line 20
+[29-Apr-2025 10:15:57 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Runner\ResultCache\Subscriber" not found in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteStartedSubscriber.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/phpunit/phpunit/src/Runner/ResultCache/Subscriber/TestSuiteStartedSubscriber.php on line 20

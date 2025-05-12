@@ -1,0 +1,2 @@
+[20-Apr-2025 19:57:11 UTC] PHP Fatal error:  Trait "Webmozart\Assert\Mixin" not found in /home/softoroa/flight.softnear.com/vendor/webmozart/assert/src/Assert.php on line 33
+[25-Apr-2025 06:12:30 UTC] PHP Fatal error:  Trait "Webmozart\Assert\Mixin" not found in /home/softoroa/flight.softnear.com/vendor/webmozart/assert/src/Assert.php on line 33

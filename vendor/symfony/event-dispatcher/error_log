@@ -1,0 +1,32 @@
+[14-Apr-2025 17:00:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcher.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcher.php on line 32
+[14-Apr-2025 17:00:08 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcherInterface.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcherInterface.php on line 23
+[14-Apr-2025 17:00:10 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/GenericEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/GenericEvent.php on line 26
+[14-Apr-2025 17:00:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php on line 19
+[24-Apr-2025 04:56:57 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcher.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcher.php on line 32
+[24-Apr-2025 04:56:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcherInterface.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/EventDispatcherInterface.php on line 23
+[24-Apr-2025 04:57:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/GenericEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/GenericEvent.php on line 26
+[24-Apr-2025 04:57:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventDispatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php on line 19

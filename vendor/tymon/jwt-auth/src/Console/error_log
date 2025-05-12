@@ -1,0 +1,8 @@
+[20-Apr-2025 06:05:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Console/JWTGenerateSecretCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Console/JWTGenerateSecretCommand.php on line 17
+[24-Apr-2025 20:27:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Console/JWTGenerateSecretCommand.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/tymon/jwt-auth/src/Console/JWTGenerateSecretCommand.php on line 17

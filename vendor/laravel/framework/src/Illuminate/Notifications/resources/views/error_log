@@ -1,0 +1,2 @@
+[20-Apr-2025 12:19:12 UTC] PHP Warning:  Undefined variable $level in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/resources/views/email.blade.php on line 22
+[29-Apr-2025 23:05:13 UTC] PHP Warning:  Undefined variable $level in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Notifications/resources/views/email.blade.php on line 22

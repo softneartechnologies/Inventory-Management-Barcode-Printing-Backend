@@ -1,0 +1,108 @@
+[19-Apr-2025 00:49:36 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php on line 16
+[19-Apr-2025 00:49:41 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php on line 12
+[19-Apr-2025 00:49:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php on line 35
+[19-Apr-2025 00:49:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\ColumnDefinition" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php on line 7
+[19-Apr-2025 00:49:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php on line 15
+[19-Apr-2025 00:49:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php on line 14
+[19-Apr-2025 00:49:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\MySqlBuilder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbBuilder.php on line 5
+[19-Apr-2025 00:49:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\MySqlSchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbSchemaState.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbSchemaState.php on line 5
+[19-Apr-2025 00:49:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php on line 5
+[19-Apr-2025 00:49:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php on line 10
+[19-Apr-2025 00:50:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php on line 7
+[19-Apr-2025 00:50:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php on line 8
+[19-Apr-2025 00:50:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php on line 9
+[19-Apr-2025 00:50:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php on line 7
+[19-Apr-2025 00:50:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php on line 8
+[29-Apr-2025 02:03:23 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php on line 16
+[29-Apr-2025 02:03:29 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php on line 12
+[29-Apr-2025 02:03:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php on line 35
+[29-Apr-2025 02:03:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\ColumnDefinition" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignIdColumnDefinition.php on line 7
+[29-Apr-2025 02:03:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php on line 15
+[29-Apr-2025 02:03:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Fluent" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/IndexDefinition.php on line 14
+[29-Apr-2025 02:03:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\MySqlBuilder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbBuilder.php on line 5
+[29-Apr-2025 02:03:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\MySqlSchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbSchemaState.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MariaDbSchemaState.php on line 5
+[29-Apr-2025 02:03:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php on line 5
+[29-Apr-2025 02:03:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlSchemaState.php on line 10
+[29-Apr-2025 02:04:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresBuilder.php on line 7
+[29-Apr-2025 02:04:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/PostgresSchemaState.php on line 8
+[29-Apr-2025 02:04:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SQLiteBuilder.php on line 9
+[29-Apr-2025 02:04:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Builder" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqlServerBuilder.php on line 7
+[29-Apr-2025 02:04:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\SchemaState" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/SqliteSchemaState.php on line 8

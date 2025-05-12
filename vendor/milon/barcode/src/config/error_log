@@ -1,0 +1,8 @@
+[16-Apr-2025 16:33:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function public_path() in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/config/config.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/config/config.php on line 4
+[25-Apr-2025 08:11:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function public_path() in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/config/config.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/milon/barcode/src/config/config.php on line 4

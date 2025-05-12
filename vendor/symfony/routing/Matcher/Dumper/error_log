@@ -1,0 +1,16 @@
+[16-Apr-2025 11:25:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\Dumper\MatcherDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/CompiledUrlMatcherDumper.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/CompiledUrlMatcherDumper.php on line 27
+[16-Apr-2025 11:25:49 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Matcher\Dumper\MatcherDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/MatcherDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/MatcherDumper.php on line 21
+[25-Apr-2025 06:09:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Routing\Matcher\Dumper\MatcherDumper" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/CompiledUrlMatcherDumper.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/CompiledUrlMatcherDumper.php on line 27
+[25-Apr-2025 06:09:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Matcher\Dumper\MatcherDumperInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/MatcherDumper.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/routing/Matcher/Dumper/MatcherDumper.php on line 21

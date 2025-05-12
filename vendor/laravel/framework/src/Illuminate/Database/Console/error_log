@@ -1,0 +1,72 @@
+[19-Apr-2025 00:47:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DatabaseInspectionCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DatabaseInspectionCommand.php on line 9
+[19-Apr-2025 00:47:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DbCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DbCommand.php on line 13
+[19-Apr-2025 00:47:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DumpCommand.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DumpCommand.php on line 16
+[19-Apr-2025 00:47:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/MonitorCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/MonitorCommand.php on line 12
+[19-Apr-2025 00:47:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/PruneCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/PruneCommand.php on line 20
+[19-Apr-2025 00:47:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php on line 14
+[19-Apr-2025 00:47:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowModelCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowModelCommand.php on line 12
+[19-Apr-2025 00:47:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php on line 15
+[19-Apr-2025 00:47:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php on line 12
+[29-Apr-2025 01:58:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DatabaseInspectionCommand.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DatabaseInspectionCommand.php on line 9
+[29-Apr-2025 01:58:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DbCommand.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DbCommand.php on line 13
+[29-Apr-2025 01:58:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DumpCommand.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/DumpCommand.php on line 16
+[29-Apr-2025 01:58:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/MonitorCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/MonitorCommand.php on line 12
+[29-Apr-2025 01:58:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/PruneCommand.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/PruneCommand.php on line 20
+[29-Apr-2025 01:58:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowCommand.php on line 14
+[29-Apr-2025 01:58:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowModelCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/ShowModelCommand.php on line 12
+[29-Apr-2025 01:58:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Console\DatabaseInspectionCommand" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/TableCommand.php on line 15
+[29-Apr-2025 01:58:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php on line 12

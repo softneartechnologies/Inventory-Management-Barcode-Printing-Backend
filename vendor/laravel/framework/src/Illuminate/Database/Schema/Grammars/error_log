@@ -1,0 +1,48 @@
+[20-Apr-2025 08:12:13 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php on line 13
+[20-Apr-2025 08:12:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\MySqlGrammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MariaDbGrammar.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MariaDbGrammar.php on line 8
+[20-Apr-2025 08:12:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php on line 12
+[20-Apr-2025 08:12:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php on line 11
+[20-Apr-2025 08:12:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php on line 13
+[20-Apr-2025 08:12:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php on line 9
+[30-Apr-2025 21:04:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php on line 13
+[30-Apr-2025 21:04:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\MySqlGrammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MariaDbGrammar.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MariaDbGrammar.php on line 8
+[30-Apr-2025 21:04:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php on line 12
+[30-Apr-2025 21:04:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php on line 11
+[30-Apr-2025 21:04:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php on line 13
+[30-Apr-2025 21:04:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Schema\Grammars\Grammar" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php on line 9

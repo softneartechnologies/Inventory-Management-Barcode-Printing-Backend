@@ -1,0 +1,80 @@
+[14-Apr-2025 17:00:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26
+[14-Apr-2025 17:00:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ChainRequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ChainRequestMatcher.php on line 19
+[14-Apr-2025 17:00:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/FileBag.php on line 22
+[14-Apr-2025 17:00:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/InputBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/InputBag.php on line 22
+[14-Apr-2025 17:00:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[14-Apr-2025 17:00:48 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[14-Apr-2025 17:00:53 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[14-Apr-2025 17:00:54 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ServerBag.php on line 21
+[14-Apr-2025 17:00:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\StreamedResponse" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedJsonResponse.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedJsonResponse.php on line 45
+[14-Apr-2025 17:00:57 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedResponse.php on line 27
+[24-Apr-2025 04:57:40 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26
+[24-Apr-2025 04:57:43 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ChainRequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ChainRequestMatcher.php on line 19
+[24-Apr-2025 04:57:50 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/FileBag.php on line 22
+[24-Apr-2025 04:57:55 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/InputBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/InputBag.php on line 22
+[24-Apr-2025 04:57:58 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[24-Apr-2025 04:58:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[24-Apr-2025 04:58:14 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[24-Apr-2025 04:58:16 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/ServerBag.php on line 21
+[24-Apr-2025 04:58:19 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\StreamedResponse" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedJsonResponse.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedJsonResponse.php on line 45
+[24-Apr-2025 04:58:21 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/http-foundation/StreamedResponse.php on line 27

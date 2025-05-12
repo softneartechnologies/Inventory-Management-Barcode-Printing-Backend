@@ -1,0 +1,40 @@
+[16-Apr-2025 11:24:02 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/MixedPart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/MixedPart.php on line 19
+[16-Apr-2025 14:10:36 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php on line 19
+[16-Apr-2025 14:10:39 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/DigestPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/DigestPart.php on line 20
+[16-Apr-2025 14:10:41 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php on line 24
+[16-Apr-2025 14:10:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php on line 20
+[25-Apr-2025 06:06:04 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/AlternativePart.php on line 19
+[25-Apr-2025 06:06:06 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/DigestPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/DigestPart.php on line 20
+[25-Apr-2025 06:06:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/FormDataPart.php on line 24
+[25-Apr-2025 06:06:11 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/MixedPart.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/MixedPart.php on line 19
+[25-Apr-2025 06:06:13 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Mime\Part\AbstractMultipartPart" not found in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/mime/Part/Multipart/RelatedPart.php on line 20

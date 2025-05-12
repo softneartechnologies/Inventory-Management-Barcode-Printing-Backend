@@ -1,0 +1,24 @@
+[19-Apr-2025 03:14:05 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php on line 8
+[19-Apr-2025 03:14:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\DatabaseTransactionsManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php on line 7
+[19-Apr-2025 03:14:16 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTruncation.php on line 10
+[19-Apr-2025 03:14:19 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\RefreshDatabase" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/LazilyRefreshDatabase.php on line 5
+[19-Apr-2025 03:14:22 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php on line 8
+[19-Apr-2025 03:14:28 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php on line 9
+[29-Apr-2025 10:58:47 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php on line 8
+[29-Apr-2025 10:58:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\DatabaseTransactionsManager" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php on line 7
+[29-Apr-2025 10:58:53 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseTruncation.php on line 10
+[29-Apr-2025 10:58:55 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\RefreshDatabase" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/LazilyRefreshDatabase.php on line 5
+[29-Apr-2025 10:58:57 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Testing\Traits\CanConfigureMigrationCommands" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php on line 8
+[29-Apr-2025 10:59:01 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php on line 9

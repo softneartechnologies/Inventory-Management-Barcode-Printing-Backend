@@ -1,0 +1,96 @@
+[14-Apr-2025 05:26:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/app.php on line 16
+[14-Apr-2025 05:26:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/auth.php on line 17
+[14-Apr-2025 05:26:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/cache.php on line 18
+[14-Apr-2025 05:26:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/database.php on line 19
+[14-Apr-2025 05:26:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/filesystems.php on line 16
+[14-Apr-2025 05:26:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/jwt.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/jwt.php on line 28
+[14-Apr-2025 05:26:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/logging.php on line 21
+[14-Apr-2025 05:26:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/mail.php on line 17
+[14-Apr-2025 05:26:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/queue.php on line 16
+[14-Apr-2025 05:26:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/sanctum.php on line 18
+[14-Apr-2025 05:26:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/services.php on line 18
+[14-Apr-2025 05:26:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/session.php on line 21
+[23-Apr-2025 14:24:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/app.php on line 16
+[23-Apr-2025 14:24:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/auth.php on line 17
+[23-Apr-2025 14:24:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/cache.php on line 18
+[23-Apr-2025 14:24:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/database.php on line 19
+[23-Apr-2025 14:24:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/filesystems.php on line 16
+[23-Apr-2025 14:24:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/jwt.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/jwt.php on line 28
+[23-Apr-2025 14:24:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/logging.php on line 21
+[23-Apr-2025 14:24:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/mail.php on line 17
+[23-Apr-2025 14:24:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/queue.php on line 16
+[23-Apr-2025 14:24:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/sanctum.php on line 18
+[23-Apr-2025 14:24:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/services.php on line 18
+[23-Apr-2025 14:24:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/softoroa/flight.softnear.com/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/config/session.php on line 21

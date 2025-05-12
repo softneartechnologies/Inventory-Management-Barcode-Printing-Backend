@@ -1,0 +1,72 @@
+[17-Apr-2025 21:03:31 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Attr.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Attr.php on line 4
+[17-Apr-2025 21:03:32 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/CloseQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/CloseQuote.php on line 4
+[17-Apr-2025 21:03:36 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counter.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counter.php on line 4
+[17-Apr-2025 21:03:38 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counters.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counters.php on line 4
+[17-Apr-2025 21:03:40 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoCloseQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoCloseQuote.php on line 4
+[17-Apr-2025 21:03:41 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoOpenQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoOpenQuote.php on line 4
+[17-Apr-2025 21:03:42 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/OpenQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/OpenQuote.php on line 4
+[17-Apr-2025 21:03:43 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/StringPart.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/StringPart.php on line 4
+[17-Apr-2025 21:03:46 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Url.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Url.php on line 4
+[27-Apr-2025 04:32:02 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counters.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counters.php on line 4
+[27-Apr-2025 04:32:04 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoCloseQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoCloseQuote.php on line 4
+[27-Apr-2025 04:32:06 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoOpenQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/NoOpenQuote.php on line 4
+[27-Apr-2025 04:32:07 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/OpenQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/OpenQuote.php on line 4
+[27-Apr-2025 04:32:09 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/StringPart.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/StringPart.php on line 4
+[27-Apr-2025 04:32:10 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Url.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Url.php on line 4
+[27-Apr-2025 08:44:13 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Attr.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Attr.php on line 4
+[27-Apr-2025 08:44:14 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/CloseQuote.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/CloseQuote.php on line 4
+[27-Apr-2025 08:44:16 UTC] PHP Fatal error:  Uncaught Error: Class "Dompdf\Css\Content\ContentPart" not found in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counter.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/dompdf/dompdf/src/Css/Content/Counter.php on line 4

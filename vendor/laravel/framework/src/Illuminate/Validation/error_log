@@ -1,0 +1,56 @@
+[18-Apr-2025 00:07:21 UTC] PHP Fatal error:  Trait "Illuminate\Translation\CreatesPotentiallyTranslatedStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ClosureValidationRule.php on line 9
+[18-Apr-2025 00:07:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Validation\DatabasePresenceVerifierInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php on line 8
+[18-Apr-2025 00:07:26 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Validation\PresenceVerifierInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifierInterface.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifierInterface.php on line 5
+[18-Apr-2025 00:07:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Factory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Factory.php on line 11
+[18-Apr-2025 00:07:30 UTC] PHP Fatal error:  Trait "Illuminate\Translation\CreatesPotentiallyTranslatedStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/InvokableValidationRule.php on line 13
+[18-Apr-2025 00:07:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\CompilableRules" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NestedRules.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NestedRules.php on line 7
+[18-Apr-2025 00:07:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\UncompromisedVerifier" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NotPwnedVerifier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NotPwnedVerifier.php on line 9
+[18-Apr-2025 00:07:38 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Rule.php on line 25
+[18-Apr-2025 00:07:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php on line 10
+[18-Apr-2025 00:07:49 UTC] PHP Fatal error:  Trait "Illuminate\Validation\Concerns\FormatsMessages" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Validator.php on line 24
+[27-Apr-2025 04:03:00 UTC] PHP Fatal error:  Trait "Illuminate\Translation\CreatesPotentiallyTranslatedStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ClosureValidationRule.php on line 9
+[27-Apr-2025 04:03:05 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Validation\DatabasePresenceVerifierInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifier.php on line 8
+[27-Apr-2025 04:03:06 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Validation\PresenceVerifierInterface" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifierInterface.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/DatabasePresenceVerifierInterface.php on line 5
+[27-Apr-2025 04:24:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Factory" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Factory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Factory.php on line 11
+[27-Apr-2025 04:24:22 UTC] PHP Fatal error:  Trait "Illuminate\Translation\CreatesPotentiallyTranslatedStrings" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/InvokableValidationRule.php on line 13
+[27-Apr-2025 04:24:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\CompilableRules" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NestedRules.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NestedRules.php on line 7
+[27-Apr-2025 04:24:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\UncompromisedVerifier" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NotPwnedVerifier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/NotPwnedVerifier.php on line 9
+[27-Apr-2025 04:24:44 UTC] PHP Fatal error:  Trait "Illuminate\Support\Traits\Macroable" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Rule.php on line 25
+[27-Apr-2025 04:25:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/ValidationServiceProvider.php on line 10
+[27-Apr-2025 04:25:09 UTC] PHP Fatal error:  Trait "Illuminate\Validation\Concerns\FormatsMessages" not found in /home/softoroa/flight.softnear.com/vendor/laravel/framework/src/Illuminate/Validation/Validator.php on line 24

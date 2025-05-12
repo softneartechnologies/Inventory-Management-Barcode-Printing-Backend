@@ -1,0 +1,136 @@
+[18-Apr-2025 09:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php on line 25
+[18-Apr-2025 09:57:41 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php on line 14
+[18-Apr-2025 09:57:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php on line 22
+[18-Apr-2025 09:57:46 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php on line 14
+[18-Apr-2025 09:57:47 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php on line 22
+[18-Apr-2025 09:57:49 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php on line 21
+[18-Apr-2025 09:57:51 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php on line 24
+[18-Apr-2025 09:57:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php on line 21
+[18-Apr-2025 09:57:54 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php on line 14
+[18-Apr-2025 09:57:55 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php on line 21
+[18-Apr-2025 09:57:57 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php on line 21
+[18-Apr-2025 09:57:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php on line 21
+[18-Apr-2025 09:58:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php on line 21
+[18-Apr-2025 09:58:02 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php on line 24
+[18-Apr-2025 09:58:03 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php on line 14
+[18-Apr-2025 09:58:05 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php on line 24
+[18-Apr-2025 09:58:07 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php on line 21
+[27-Apr-2025 18:23:42 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectAttributesMatcher.php on line 24
+[27-Apr-2025 18:23:44 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php on line 14
+[27-Apr-2025 18:23:45 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ObjectMethodsMatcher.php on line 24
+[27-Apr-2025 18:23:47 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/VariablesMatcher.php on line 21
+[27-Apr-2025 20:46:52 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php on line 25
+[27-Apr-2025 20:46:53 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php on line 14
+[27-Apr-2025 20:46:57 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassAttributesMatcher.php on line 22
+[27-Apr-2025 20:46:58 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php on line 14
+[27-Apr-2025 20:47:00 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodsMatcher.php on line 22
+[28-Apr-2025 00:40:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ClassNamesMatcher.php on line 21
+[28-Apr-2025 00:40:16 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/CommandsMatcher.php on line 24
+[28-Apr-2025 00:40:18 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/ConstantsMatcher.php on line 21
+[28-Apr-2025 00:40:19 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php on line 14
+[28-Apr-2025 00:40:20 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/FunctionsMatcher.php on line 21
+[28-Apr-2025 00:40:21 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/KeywordsMatcher.php on line 21
+[28-Apr-2025 00:40:22 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoClientMatcher.php on line 21
+[28-Apr-2025 00:40:23 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractContextAwareMatcher" not found in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/psy/psysh/src/TabCompletion/Matcher/MongoDatabaseMatcher.php on line 21

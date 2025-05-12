@@ -1,0 +1,8 @@
+[14-Apr-2025 22:59:21 UTC] PHP Fatal error:  Uncaught LogicException: You cannot use the "Symfony\Component\String\Slugger\AsciiSlugger" as the "symfony/translation-contracts" package is not installed. Try running "composer require symfony/translation-contracts". in /home/softoroa/flight.softnear.com/vendor/symfony/string/Slugger/AsciiSlugger.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Slugger/AsciiSlugger.php on line 20
+[24-Apr-2025 08:33:48 UTC] PHP Fatal error:  Uncaught LogicException: You cannot use the "Symfony\Component\String\Slugger\AsciiSlugger" as the "symfony/translation-contracts" package is not installed. Try running "composer require symfony/translation-contracts". in /home/softoroa/flight.softnear.com/vendor/symfony/string/Slugger/AsciiSlugger.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/string/Slugger/AsciiSlugger.php on line 20

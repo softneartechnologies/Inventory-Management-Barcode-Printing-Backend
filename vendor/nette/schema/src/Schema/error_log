@@ -1,0 +1,10 @@
+[16-Apr-2025 20:38:15 UTC] PHP Fatal error:  Trait "Nette\StaticClass" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Helpers.php on line 19
+[16-Apr-2025 20:38:29 UTC] PHP Fatal error:  Uncaught Error: Class "Nette\InvalidStateException" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/ValidationException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/ValidationException.php on line 18
+[26-Apr-2025 05:38:46 UTC] PHP Fatal error:  Trait "Nette\StaticClass" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/Helpers.php on line 19
+[26-Apr-2025 05:38:50 UTC] PHP Fatal error:  Uncaught Error: Class "Nette\InvalidStateException" not found in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/ValidationException.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/nette/schema/src/Schema/ValidationException.php on line 18

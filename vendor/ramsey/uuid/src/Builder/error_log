@@ -1,0 +1,32 @@
+[16-Apr-2025 20:44:29 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/BuilderCollection.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/BuilderCollection.php on line 37
+[16-Apr-2025 20:44:31 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Rfc4122\UuidBuilder" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php on line 24
+[16-Apr-2025 20:44:33 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DegradedUuidBuilder.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DegradedUuidBuilder.php on line 31
+[16-Apr-2025 20:44:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/FallbackBuilder.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/FallbackBuilder.php on line 28
+[25-Apr-2025 09:20:24 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Collection\AbstractCollection" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/BuilderCollection.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/BuilderCollection.php on line 37
+[25-Apr-2025 09:20:25 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Rfc4122\UuidBuilder" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php on line 24
+[25-Apr-2025 09:20:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DegradedUuidBuilder.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/DegradedUuidBuilder.php on line 31
+[25-Apr-2025 09:20:29 UTC] PHP Fatal error:  Uncaught Error: Interface "Ramsey\Uuid\Builder\UuidBuilderInterface" not found in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/FallbackBuilder.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/ramsey/uuid/src/Builder/FallbackBuilder.php on line 28

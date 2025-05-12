@@ -1,0 +1,8 @@
+[15-Apr-2025 10:34:08 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\ArgvInput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Completion/CompletionInput.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Completion/CompletionInput.php on line 27
+[24-Apr-2025 17:41:25 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Input\ArgvInput" not found in /home/softoroa/flight.softnear.com/vendor/symfony/console/Completion/CompletionInput.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/softoroa/flight.softnear.com/vendor/symfony/console/Completion/CompletionInput.php on line 27
