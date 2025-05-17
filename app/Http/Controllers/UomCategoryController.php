@@ -73,11 +73,34 @@ public function categoryDetails($id)
         return response()->json($uomCategory);
     }
 
+    // public function destroy($id)
+    // {
+    //     $uomCategory = UomCategory::find($id);
+    //     $uomCategory->delete();
+
+    //     $uomUnitCategory = UomUnit::where('uom_category_id',$id);
+    //     $uomUnitCategory->delete();
+    //     return response()->json(['message'=>'Successfully'], 200);
+    // }
+
     public function destroy($id)
-    {
-        $uomCategory = UomCategory::find($id);
-        $uomCategory->delete();
-        return response()->json(['message'=>'Successfully'], 200);
+{
+    if (empty($id)) {
+        return response()->json(['message' => 'Invalid ID'], 400);
+    }
+
+    $uomCategory = UomCategory::find($id);
+
+    if (!$uomCategory) {
+        return response()->json(['message' => 'UOM Category not found'], 404);
+    }
+
+    $uomCategory->delete();
+
+    // Delete related UOM Units
+    UomUnit::where('uom_category_id', $id)->delete();
+
+    return response()->json(['message' => 'Successfully deleted'], 200);
     }
 
 
@@ -107,9 +130,15 @@ public function categoryDetails($id)
     public function updateUnits(Request $request, $id)
     {
          $uomCategory = UomUnit::find($id);
-        $validated = $request->validate([
-            'name' => 'required|string|unique:uom_categories,name,' . $uomCategory->id,
+         $validated = $request->validate([
+            'uom_category_id' => 'required',
+            'unit_name' => 'required|string',
+            'reference' => 'required',
+            'ratio' => 'required',
+            'rounding' => 'required',
+            'active' => 'required',
         ]);
+        $validated['abbreviation'] =$request->reference;
        
         $uomCategory->update($validated);
         return response()->json($uomCategory);

@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Location;
 use App\Models\Stock;
 use App\Models\ScanInOutProduct;
+use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
@@ -83,12 +84,46 @@ class DashboardController extends Controller
                     ]
                 ];
 
-        // return response()->json([
-        //     'monthly_counts' => $allMonths
-        // ]);
-        // print_r($returnableNonReturnableItems);die;
-        // return 
-        // print_r($returnableNonReturnableItems);die;
-        return response()->json(['total_product'=>$productCount,'total_employee_tools'=>$employeeUsingProduct,'low_stock_alert'=>$low_stock_alert, 'stock_movement' => $allMonths, 'returnableNonReturnableItems' =>$returnableNonReturnableItems], 200);
-    }
+               $categories_list = Category::orderBy('id', 'desc')->get();
+
+    $products = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')
+        ->orderBy('id', 'desc')
+        ->get();
+
+    $totalProducts = $products->count();
+
+    // Category-wise product count and percentage
+    $categoryStats = $totalProducts > 0
+        ? $products->groupBy('category.id')->map(function ($items, $categoryId) use ($totalProducts) {
+            $count = $items->count();
+            $percentage = round(($count / $totalProducts) * 100, 2);
+
+            return [
+                'category_id' => $categoryId,
+                'category_name' => optional($items->first()->category)->name,
+                'product_count' => $count,
+                'percentage' => $percentage, // percentage of total products
+            ];
+        })->values()
+        : collect(); // agar product hi nahi hai to empty collection
+
+    $uniqueCategoryCount = $categoryStats->toArray();
+
+    // Aapko yeh variables khud define karne honge
+    $productCount = $totalProducts;
+    $employeeUsingProduct = 0; // Define as needed
+    $low_stock_alert = []; // Define as needed
+    $allMonths = []; // Define as needed
+    $returnableNonReturnableItems = []; // Define as needed
+
+    return response()->json([
+        'total_product' => $productCount,
+        'total_employee_tools' => $employeeUsingProduct,
+        'low_stock_alert' => $low_stock_alert,
+        'stock_movement' => $allMonths,
+        'returnableNonReturnableItems' => $returnableNonReturnableItems,
+        'categories_list' => $categories_list,
+        'uniqueCategoryCount' => $uniqueCategoryCount,
+    ], 200);
+}
 }
