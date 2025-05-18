@@ -1715,7 +1715,7 @@ public function uploadCSV(Request $request)
         $totalStock = 0;
         foreach ($locationIds as $locationId) {
             // print_r($locationId);die;
-            $currentStock = (int)$row[3];
+            $currentStock = (int)$row[14];
             $totalStock += $currentStock;
     
             Stock::create([
