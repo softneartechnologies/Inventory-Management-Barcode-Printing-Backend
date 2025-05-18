@@ -1106,6 +1106,7 @@ public function store(Request $request)
                 'location_id' => $locationIds,
                 'location_name' => $locationNames,
                 'category_id' => $product->category_id,
+                'last_updated' => $product->updated_at,
                 'category_name' => optional($product->category)->name,
                 'status' => 'Warning',
             ];
