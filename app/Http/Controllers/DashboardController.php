@@ -116,6 +116,69 @@ class DashboardController extends Controller
     $allMonths = []; // Define as needed
     $returnableNonReturnableItems = []; // Define as needed
 
+     $scanRecords = ScanInOutProduct::with([
+            'product:id,product_name,sku,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name'
+        ])->get();
+
+        $scanRecords = $scanRecords->map(function ($scanRecords) {
+            return [
+                'id' => $scanRecords->id,
+                'product_id' => $scanRecords->product_id,
+                'issue_from_user_id' => $scanRecords->issue_from_user_id,
+                'employee_id' => $scanRecords->employee_id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'in_quantity' => $scanRecords->in_quantity,
+                'out_quantity' => $scanRecords->out_quantity,
+                'type' => $scanRecords->type,
+                'purpose' => $scanRecords->purpose,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
+                'quantity' => $scanRecords->product->opening_stock ?? null,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'created_at' => $scanRecords->created_at,
+                'updated_at' => $scanRecords->updated_at,
+            ];
+        });
+
+    //   $stock_update =  Stock::all();
+    //    $stock_update = Product::with(['stocks:*'])->get();
+
+//   $stock_update = Product::with(['stocks' => function ($query) {
+//     $query->select('stocks.*'); // change as per your columns
+// }])
+// ->select('id', 'product_name')
+// ->get();
+$stock_update = Stock::with(['product' => function ($query) {
+    $query->select('id', 'product_name'); // only fetch id and name from product
+}])->get();
+
+$mapped_stock_data = $stock_update->map(function ($stock) {
+    return [
+        'product_id'        => $stock->product_id,
+        'product_name'      => optional($stock->product)->product_name,
+        'stock_id'          => $stock->id,
+        'current_stock'     => $stock->current_stock,
+        'new_stock'         => $stock->new_stock,
+        'quantity'          => $stock->quantity,
+        'unit_of_measure'   => $stock->unit_of_measure,
+        'per_unit_cost'     => $stock->per_unit_cost,
+        'total_cost'        => $stock->total_cost,
+        'reason_for_update' => $stock->reason_for_update,
+        'stock_date'        => $stock->stock_date,
+        'adjustment'        => $stock->adjustment,
+        'comment'           => $stock->comment,
+        'created_at'        => $stock->created_at,
+        'updated_at'        => $stock->updated_at,
+    ];
+});
+
+return response()->json(['stock_update' => $mapped_stock_data], 200);
+
+
+
     return response()->json([
         'total_product' => $productCount,
         'total_employee_tools' => $employeeUsingProduct,
@@ -124,6 +187,8 @@ class DashboardController extends Controller
         'returnableNonReturnableItems' => $returnableNonReturnableItems,
         'categories_list' => $categories_list,
         'uniqueCategoryCount' => $uniqueCategoryCount,
+        'issuance_update' => $scanRecords,
+        'stock_update' => $stock_update,
     ], 200);
 }
 }

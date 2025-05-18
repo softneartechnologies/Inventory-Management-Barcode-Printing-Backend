@@ -36,36 +36,36 @@ class ScanInOutProductController extends Controller
     //     return response()->json($scanRecords, 200);
     // }
     public function index()
-{
-    $scanRecords = ScanInOutProduct::with([
-        'product:id,product_name,sku,opening_stock',
-        'employee:id,employee_name',
-        'user:id,name'
-    ])->get();
+    {
+        $scanRecords = ScanInOutProduct::with([
+            'product:id,product_name,sku,opening_stock',
+            'employee:id,employee_name',
+            'user:id,name'
+        ])->get();
 
-    $scanRecords = $scanRecords->map(function ($scanRecords) {
-        return [
-            'id' => $scanRecords->id,
-            'product_id' => $scanRecords->product_id,
-            'issue_from_user_id' => $scanRecords->issue_from_user_id,
-            'employee_id' => $scanRecords->employee_id,
-            'in_out_date_time' => $scanRecords->in_out_date_time,
-            'in_quantity' => $scanRecords->in_quantity,
-            'out_quantity' => $scanRecords->out_quantity,
-            'type' => $scanRecords->type,
-            'purpose' => $scanRecords->purpose,
-            'product_name' => $scanRecords->product->product_name ?? null,
-            'sku' => $scanRecords->product->sku ?? null,
-            'quantity' => $scanRecords->product->opening_stock ?? null,
-            'issue_from_name' => $scanRecords->user->name ?? null, 
-            'employee_name' => $scanRecords->employee->employee_name ?? null,
-            'created_at' => $scanRecords->created_at,
-            'updated_at' => $scanRecords->updated_at,
-        ];
-    });
+        $scanRecords = $scanRecords->map(function ($scanRecords) {
+            return [
+                'id' => $scanRecords->id,
+                'product_id' => $scanRecords->product_id,
+                'issue_from_user_id' => $scanRecords->issue_from_user_id,
+                'employee_id' => $scanRecords->employee_id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'in_quantity' => $scanRecords->in_quantity,
+                'out_quantity' => $scanRecords->out_quantity,
+                'type' => $scanRecords->type,
+                'purpose' => $scanRecords->purpose,
+                'product_name' => $scanRecords->product->product_name ?? null,
+                'sku' => $scanRecords->product->sku ?? null,
+                'quantity' => $scanRecords->product->opening_stock ?? null,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'created_at' => $scanRecords->created_at,
+                'updated_at' => $scanRecords->updated_at,
+            ];
+        });
 
-    return response()->json($scanRecords, 200);
-}
+        return response()->json($scanRecords, 200);
+    }
 
 
     // Store a new scan record

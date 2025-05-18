@@ -362,6 +362,7 @@ public function store(Request $request)
                 'category_id'   => $request->category_id,
                 'location_id'   => $multiData['location_id'],
                 'quantity' => $multiData['quantity'],
+                'current_stock' => $multiData['quantity'],
                 'unit_of_measure'=> $multiData['unit_of_measure'],
                 'per_unit_cost'          => $multiData['per_unit_cost'],
                 'total_cost'          => $multiData['total_cost'],
@@ -806,6 +807,7 @@ public function store(Request $request)
             'stock_date' => 'nullable|string',
             'vendor_id' => 'nullable|string',
             'reason_for_update' => 'nullable|string',
+            'comment' => 'nullable|string',
             'storage_location' => 'required|array',
             'storage_location.*.current_stock' => 'nullable|numeric',
             'storage_location.*.quantity' => 'required|numeric',
@@ -850,6 +852,7 @@ public function store(Request $request)
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
                     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    'comment' => $validatedRequest['comment'] ?? null,
                 ];
 
                 $product_location->update($stockData);
@@ -883,6 +886,7 @@ public function store(Request $request)
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
                     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    'comment' => $validatedRequest['comment'] ?? null,
                 ];
 
                 Stock::create($stockData);
@@ -1022,35 +1026,94 @@ public function store(Request $request)
     
 
 
+    // public function inventoryAlert()
+    // {
+        
+    //     // $products = Product::with('category:id,name','vendor:id,vendor_name',
+    //     // 'sub_category:id,name')->select('id', 'product_name', 'sku', 'opening_stock', 'location_id', 'inventory_alert_threshold', DB::raw("'Warning' as status"))
+    //     //     ->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))
+    //     //     ->get();
+
+    //     $products = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')
+    // ->select(
+    //     'id',
+    //     'product_name',
+    //     'sku',
+    //     'opening_stock',
+    //     'location_id',
+    //     'inventory_alert_threshold',
+    //     DB::raw("'Warning' as status")
+    // )
+    // ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')
+    // ->get();
+    
+    //     $inventory_alert = $products->map(function ($product) {
+    //         // Decode location IDs (JSON string to array)
+    //         $locationIds = json_decode($product->location_id, true);
+    
+    //         // Get location names from DB
+    //         $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+    
+    //         return [
+    //             'id' => $product->id,
+    //             'product_id'=>$product->id,
+    //             'product_name' => $product->product_name,
+    //             'sku' => $product->sku,
+    //             'opening_stock' => $product->opening_stock,
+    //             'inventory_alert_threshold' => $product->inventory_alert_threshold,
+    //             'location_id' => $locationIds,
+    //             'location_name' => $locationNames,
+    //             'category_name' => $product->category->name, // array of location names
+    //             'status' => 'Warning',
+    //         ];
+    //     });
+    
+    //     return response()->json(['inventory_alert' => $inventory_alert], 200);
+
+    // }
+  
     public function inventoryAlert()
     {
-        $products = Product::select('id', 'product_name', 'sku', 'opening_stock', 'location_id', 'inventory_alert_threshold', DB::raw("'Warning' as status"))
-            ->where('opening_stock', '<', DB::raw('inventory_alert_threshold'))
+        // with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name');
+
+        $products = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')->select(
+                'id',
+                'product_name',
+                'sku',
+                'opening_stock',
+                'location_id',
+                'category_id',
+                'inventory_alert_threshold',
+                DB::raw("'Warning' as status")
+            )
+            ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')
             ->get();
-    
+            // print_r($products);die;
         $inventory_alert = $products->map(function ($product) {
-            // Decode location IDs (JSON string to array)
+            // Decode location IDs from JSON
             $locationIds = json_decode($product->location_id, true);
-    
-            // Get location names from DB
+
+            // Fetch location names
             $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
-    
+            
             return [
                 'id' => $product->id,
-                'product_id'=>$product->id,
+                'product_id' => $product->id,
                 'product_name' => $product->product_name,
                 'sku' => $product->sku,
                 'opening_stock' => $product->opening_stock,
                 'inventory_alert_threshold' => $product->inventory_alert_threshold,
-                'location_id' => $locationIds, // optional: keep raw IDs
-                'location_name' => $locationNames, // array of location names
+                'location_id' => $locationIds,
+                'location_name' => $locationNames,
+                'category_id' => $product->category_id,
+                'category_name' => optional($product->category)->name,
                 'status' => 'Warning',
             ];
         });
-    
+
         return response()->json(['inventory_alert' => $inventory_alert], 200);
     }
-  
+
 
     public function inventoryAdjustmentsReport()
     {
