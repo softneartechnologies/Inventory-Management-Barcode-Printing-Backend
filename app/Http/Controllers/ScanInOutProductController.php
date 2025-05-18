@@ -73,7 +73,7 @@ class ScanInOutProductController extends Controller
     {
         $product = Product::find($request->product_id);
 
-        if($request->purpose =="Repairs"){
+        if($request->purpose =="Return"){
             
             $validated = $request->validate([
                 'product_id' => 'required|exists:products,id',
@@ -227,10 +227,11 @@ class ScanInOutProductController extends Controller
         $scanRecords = ScanInOutProduct::with([
             'product:id,product_name,sku,opening_stock',
             'employee:id,employee_name',
-            'user:id,name','category:id,name','location:id,name'
+            'user:id,name','category:id,name','location:id,name','product.orders:id,product_id,quantity,deleted',
         ])->orderBy('id','desc')->get();
 
         $scanRecords = $scanRecords->map(function ($scanRecords) {
+            $orderQuantity = $scanRecords->product->orders->sum('quantity') ?? 0; 
             return [
                 'id' => $scanRecords->id,
                 'in_out_date_time' => $scanRecords->in_out_date_time,
@@ -251,6 +252,7 @@ class ScanInOutProductController extends Controller
                 'threshold' => $scanRecords->threshold,
                 'type' => $scanRecords->type,
                 'purpose' => $scanRecords->purpose,
+                'order_quantity' => $orderQuantity,
                 'comments' => $scanRecords->comments,
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
