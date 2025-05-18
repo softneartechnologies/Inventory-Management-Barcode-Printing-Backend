@@ -175,7 +175,7 @@ $mapped_stock_data = $stock_update->map(function ($stock) {
     ];
 });
 
-return response()->json(['stock_update' => $mapped_stock_data], 200);
+// return response()->json(['stock_update' => $mapped_stock_data], 200);
 
 
 
@@ -188,7 +188,7 @@ return response()->json(['stock_update' => $mapped_stock_data], 200);
         'categories_list' => $categories_list,
         'uniqueCategoryCount' => $uniqueCategoryCount,
         'issuance_update' => $scanRecords,
-        'stock_update' => $stock_update,
+        'stock_update' => $stock_umapped_stock_datapdate,
     ], 200);
 }
 }
