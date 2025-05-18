@@ -188,7 +188,7 @@ $mapped_stock_data = $stock_update->map(function ($stock) {
         'categories_list' => $categories_list,
         'uniqueCategoryCount' => $uniqueCategoryCount,
         'issuance_update' => $scanRecords,
-        'stock_update' => $stock_umapped_stock_datapdate,
+        'stock_update' => $mapped_stock_data,
     ], 200);
 }
 }
