@@ -1084,6 +1084,7 @@ public function store(Request $request)
                 'location_id',
                 'category_id',
                 'inventory_alert_threshold',
+                'updated_at',
                 DB::raw("'Warning' as status")
             )
             ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')
