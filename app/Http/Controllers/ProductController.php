@@ -1594,7 +1594,7 @@ public function uploadCSV(Request $request)
     // ]);
 
     $expectedHeaders = array_map('trim',  [
-        "product_name", "sku", "category_id", "sub_category_id",
+        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
      ]);
@@ -1613,7 +1613,7 @@ public function uploadCSV(Request $request)
     
     while ($row = fgetcsv($handle)) {
         
-        $locationString = $row[12];
+        $locationString = $row[13];
         $locationNames = explode(",", $locationString);
     
     // print_r($locationNames);die;
@@ -1664,26 +1664,26 @@ public function uploadCSV(Request $request)
         Storage::put($qrCodePath, $qrCodeImage);
         $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
-        $uomCategory = UomCategory::firstOrCreate(['name' => $row[6]], ['name' => $row[6]]);
+        $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
         $category = Category::firstOrCreate(
-            ['name' => $row[6]],
-            ['name' => $row[6], 'description' => '']
+            ['name' => $row[2]],
+            ['name' => $row[2], 'description' => '']
         );
         $subcategory = Subcategory::firstOrCreate([
-            'name' => $row[7],
+            'name' => $row[3],
             'category_id' => $category->id
         ], [
-            'name' => $row[7],
+            'name' => $row[3],
             'category_id' => $category->id
         ]);
-        $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[9]], ['vendor_name' => $row[9]]);
+        $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
         
         
-        $expectedHeaders = array_map('trim',  [
-        "product_name", "sku", "category_id", "sub_category_id",
-        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
-        "unit_of_measure", "per_unit_cost", "total_cost", "status"
-     ]);
+    //     $expectedHeaders = array_map('trim',  [
+    //     "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+    //     "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+    //     "unit_of_measure", "per_unit_cost", "total_cost", "status"
+    //  ]);
 
         $product = Product::create([
             'product_name' => $row[0],
@@ -1692,20 +1692,21 @@ public function uploadCSV(Request $request)
             'generated_qrcode' => $qrCodeImage,
             'category_id' => $category->id,
             'sub_category_id' => $subcategory->id,
+            'manufacturer' => $row[4],
             'vendor_id' => $vendor->id,
-            'model' => $row[5],
+            'model' => $row[6],
             'unit_of_measurement_category' => $uomCategory->id,
-            'description' =>$row[7],
-            'returnable' => strtolower($row[8]) === 'yes' ? 1 : 0,
-            'commit_stock_check' => (float) $row[9],
-            'inventory_alert_threshold' => (int) $row[10],
-            'opening_stock' => (int) $row[11],
+            'description' =>$row[8],
+            'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+            'commit_stock_check' => (float) $row[10],
+            'inventory_alert_threshold' => (int) $row[11],
+            'opening_stock' => (int) $row[12],
             'location_id' => json_encode($locationIds),
-            'quantity' => (float) $row[13],
-            'unit_of_measure' => (float) $row[14],
-            'per_unit_cost' => $row[15],
-            'total_cost' => (float) $row[16],
-            'status' => $row[17],
+            'quantity' => (float) $row[14],
+            'unit_of_measure' => (float) $row[15],
+            'per_unit_cost' => $row[16],
+            'total_cost' => (float) $row[17],
+            'status' => $row[18],
             'barcode_number' => $row[1],
             'created_at' => now(),
             'updated_at' => now(),
@@ -1722,10 +1723,10 @@ public function uploadCSV(Request $request)
                 'vendor_id'     => $vendor->id,
                 'category_id'   => $category->id,
                 'current_stock' => $currentStock,
-                'quantity' => (float) $row[13],
-                'unit_of_measure' => (float) $row[14],
-                'per_unit_cost' => $row[15],
-                'total_cost' => (float) $row[16],
+                'quantity' => (float) $row[14],
+                'unit_of_measure' => (float) $row[15],
+                'per_unit_cost' => $row[16],
+                'total_cost' => (float) $row[17],
                 'location_id'   => $locationId,
                 'stock_date'    => now(),
             ]);
@@ -1800,7 +1801,7 @@ public function exportProductsToCSV()
     ];
 
     $columns = [
-        'id','product_name', 'sku', 'category_id', 'sub_category_id',
+        'id','product_name', 'sku', 'category_id', 'sub_category_id','manufacturer',
         'vendor_id', 'model', 'unit_of_measurement_category', 'description', 'returnable', 'commit_stock_check', 'inventory_alert_threshold', 'opening_stock', 'location_id', 'quantity',
         'unit_of_measure', 'per_unit_cost', 'total_cost', 'status'
     ];
@@ -1960,6 +1961,7 @@ if (!empty($settings)) {
             'sku' => $product->sku,
             'category_name' => optional($product->category)->name,
             'subcategory_name' => optional($product->sub_category)->name,
+            'manufacturer' => $product->manufacturer,
             'vendor_name' => optional($product->vendor)->vendor_name,
             'model' => $product->model,
             'unit_of_measurement_category' => $product->unit_of_measurement_category,
@@ -1994,7 +1996,7 @@ if (!empty($settings)) {
     // ];
 
     $columns = [
-        "product_name", "sku", "category_id", "sub_category_id",
+        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
     ];
@@ -2036,7 +2038,7 @@ public function generateTemplateCsvUrl()
     //     "depth", "measurement_unit", "returnable", "status"
     // ];
     $columns = [
-        "product_name", "sku", "category_id", "sub_category_id",
+        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
     ];
