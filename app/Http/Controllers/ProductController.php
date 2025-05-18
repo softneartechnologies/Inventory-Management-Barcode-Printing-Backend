@@ -7,6 +7,7 @@ use App\Models\Location;
 use App\Models\Stock;
 use App\Models\Category;
 use App\Models\Subcategory;
+use App\Models\UomCategory;
 use App\Models\Vendor;
 use App\Models\ScanInOutProduct;
 use App\Models\Unit;
