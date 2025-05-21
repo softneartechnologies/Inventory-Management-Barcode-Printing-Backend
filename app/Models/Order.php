@@ -14,14 +14,33 @@ class Order extends Model
         'sku',
         'current_stock',
         'threshold_count',
-        'location',
+        'location_id',
         'quantity',
         'current_date',
-        'deleted'
+        'deleted',
+        'category_id',
+        'total_current_stock',
+        'order_by',
+        'status'
     ];
 
     public function product()
 {
     return $this->belongsTo(Product::class);
 }
+
+ public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+     public function location()
+    {
+        return $this->belongsTo(Location::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'order_by');
+    }
 }

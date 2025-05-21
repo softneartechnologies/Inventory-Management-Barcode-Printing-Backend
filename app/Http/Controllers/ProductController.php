@@ -1101,15 +1101,15 @@ public function store(Request $request)
             return [
                 'id' => $product->id,
                 'product_id' => $product->id,
+                'date_time' => $product->updated_at->format('Y-m-d H:i:s'),
                 'product_name' => $product->product_name,
                 'sku' => $product->sku,
+                'category_name' => optional($product->category)->name,
                 'opening_stock' => $product->opening_stock,
                 'inventory_alert_threshold' => $product->inventory_alert_threshold,
-                'location_id' => $locationIds,
-                'location_name' => $locationNames,
+                // 'location_id' => $locationIds,
+                // 'location_name' => $locationNames,
                 'category_id' => $product->category_id,
-                'last_updated' => $product->updated_at,
-                'category_name' => optional($product->category)->name,
                 'status' => 'Warning',
             ];
         });

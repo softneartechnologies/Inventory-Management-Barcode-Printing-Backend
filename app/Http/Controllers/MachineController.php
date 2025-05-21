@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Machine;
 use App\Models\ScanInOutProduct;
+ use Carbon\Carbon;
 class MachineController extends Controller
 {
     //
@@ -60,18 +61,75 @@ class MachineController extends Controller
         return response()->json(['message' => 'Deleted Successfully']);
     }
 
-    public function machineHistory($id)
+    public function machineHistory($id, Request $request)
     {
-        $machine = Machine::with('department:id,name','workstation:id,name')->where('id',$id)->get();
-        $scanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,opening_stock',
-            'employee:id,employee_name',
-            'user:id,name','category:id,name','location:id,name'
-        ])->where('machine_id',$id)->orderBy('id','desc')->get();
+        //  $dateFilter = $request->query('date_filter');
+        
+        // if(!empty($dateFilter)){
+
+       
+        // $scanRecords = ScanInOutProduct::with([
+        //     'product:id,product_name,sku,opening_stock',
+        //     'employee:id,employee_name',
+        //     'user:id,name','category:id,name','location:id,name'
+        // ])->where('machine_id',$id)->where('in_out_date_time',$dateFilter)->orderBy('id','desc')->get();
+        // }else{
+        //      $scanRecords = ScanInOutProduct::with([
+        //     'product:id,product_name,sku,opening_stock',
+        //     'employee:id,employee_name',
+        //     'user:id,name','category:id,name','location:id,name'
+        // ])->where('machine_id',$id)->orderBy('id','desc')->get();
+        // }
+       
+
+$dateFilter = $request->query('date_filter');
+
+$scanQuery = ScanInOutProduct::with([
+    'product:id,product_name,sku,opening_stock',
+    'employee:id,employee_name',
+    'user:id,name',
+    'category:id,name',
+    'location:id,name'
+])->where('machine_id', $id);
+
+if (!empty($dateFilter)) {
+    try {
+        // Handle Year e.g., "2025"
+        if (preg_match('/^\d{4}$/', $dateFilter)) {
+            $scanQuery->whereYear('in_out_date_time', $dateFilter);
+        }
+
+        // Handle Year-Month e.g., "2025-05"
+        elseif (preg_match('/^\d{4}-\d{2}$/', $dateFilter)) {
+            [$year, $month] = explode('-', $dateFilter);
+            $scanQuery->whereYear('in_out_date_time', $year)
+                      ->whereMonth('in_out_date_time', $month);
+        }
+
+        // Handle ISO Week e.g., "2025-W21"
+        elseif (preg_match('/^\d{4}-W\d{2}$/', $dateFilter)) {
+            [$year, $week] = explode('-W', $dateFilter);
+            $startOfWeek = Carbon::now()->setISODate($year, $week)->startOfWeek();
+            $endOfWeek = Carbon::now()->setISODate($year, $week)->endOfWeek();
+            $scanQuery->whereBetween('in_out_date_time', [$startOfWeek, $endOfWeek]);
+        }
+
+        // Optional: fallback for exact date (e.g. "2025-05-20")
+        elseif (preg_match('/^\d{4}-\d{2}-\d{2}$/', $dateFilter)) {
+            $scanQuery->whereDate('in_out_date_time', $dateFilter);
+        }
+    } catch (\Exception $e) {
+        // Optional: log error or ignore invalid filter
+    }
+}
+
+$scanRecords = $scanQuery->orderBy('id', 'desc')->get();
+
 
         $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
                 'id' => $scanRecords->id,
+                'machine_id' => $scanRecords->machine_id,
                 'in_out_date_time' => $scanRecords->in_out_date_time,
                 'product_id' => $scanRecords->product_id,
                 'product_name' => $scanRecords->product->product_name ?? null,
@@ -96,26 +154,21 @@ class MachineController extends Controller
             ];
         });
 
+     $machine = Machine::with('department:id,name', 'workstation:id,name')->where('id', $id)->first();
 
-        $machine = $machine->map(function ($machine) {
-            return [
-                'id' => $machine->id,
-                'name' => $machine->name,
-                'description' => $machine->description,
-                // 'employee_id' => $machine->employee_id,
-                // 'in_out_date_time' => $machine->in_out_date_time,
-                // 'in_quantity' => $machine->in_quantity,
-                // 'out_quantity' => $machine->out_quantity,
-                // 'type' => $machine->type,
-                // 'purpose' => $machine->purpose,
-                // 'comments' => $machine->comments,
-                'department_name' => $machine->department->name ?? null,
-                'workstation_name' => $machine->workstation->name ?? null,
-                'part_utilisation_cost' => 'It will calculate based on date filters ' ?? null,
-                
-            ];
-        });
+if ($machine) {
+    $machine->part_utilisation_cost = count($scanRecords) ?? null;
 
+    $machine = [
+        'id' => $machine->id,
+        'name' => $machine->name,
+        'description' => $machine->description,
+        'department_name' => $machine->department->name ?? null,
+        'workstation_name' => $machine->workstation->name ?? null,
+        'part_utilisation_cost' => $machine->part_utilisation_cost,
+    ];
+}
+        
         $data = array('machine'=>$machine,
         'history'=>$scanRecords
     );

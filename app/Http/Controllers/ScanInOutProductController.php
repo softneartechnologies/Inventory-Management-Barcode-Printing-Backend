@@ -40,16 +40,22 @@ class ScanInOutProductController extends Controller
         $scanRecords = ScanInOutProduct::with([
             'product:id,product_name,sku,opening_stock',
             'employee:id,employee_name',
-            'user:id,name'
+            'user:id,name','machine:id,name','workStation:id,name','department:id,name','location:id,name'
         ])->get();
 
         $scanRecords = $scanRecords->map(function ($scanRecords) {
             return [
                 'id' => $scanRecords->id,
                 'product_id' => $scanRecords->product_id,
+                'in_out_date_time' => $scanRecords->in_out_date_time,
+                'machine_name' => optional($scanRecords->machine)->name,
+                'workStation_name' => optional($scanRecords->workStation)->name,
+                'department_name' => optional($scanRecords->department)->name,
+                'issue_from_name' => $scanRecords->user->name ?? null, 
+                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'location_name' => optional($scanRecords->location)->name,
                 'issue_from_user_id' => $scanRecords->issue_from_user_id,
                 'employee_id' => $scanRecords->employee_id,
-                'in_out_date_time' => $scanRecords->in_out_date_time,
                 'in_quantity' => $scanRecords->in_quantity,
                 'out_quantity' => $scanRecords->out_quantity,
                 'type' => $scanRecords->type,
@@ -57,8 +63,10 @@ class ScanInOutProductController extends Controller
                 'product_name' => $scanRecords->product->product_name ?? null,
                 'sku' => $scanRecords->product->sku ?? null,
                 'quantity' => $scanRecords->product->opening_stock ?? null,
-                'issue_from_name' => $scanRecords->user->name ?? null, 
-                'employee_name' => $scanRecords->employee->employee_name ?? null,
+                'previous_stock' => $scanRecords->previous_stock,
+                'total_current_stock' => $scanRecords->total_current_stock,
+                'threshold' => $scanRecords->threshold,
+                'comments' => $scanRecords->comments,
                 'created_at' => $scanRecords->created_at,
                 'updated_at' => $scanRecords->updated_at,
             ];
@@ -83,9 +91,9 @@ class ScanInOutProductController extends Controller
                 'in_out_date_time' => 'required|date',
                 'type' => 'required|in:in',
                 'purpose' => 'required',
-                'department_id' => 'required',
-                'work_station_id' => 'required',
-                'machine_id' => 'required',
+                // 'department_id' => 'required',
+                // 'work_station_id' => 'required',
+                // 'machine_id' => 'required',
                 'comments' => 'required',
                 'in_quantity' => 'required|integer|min:1',
                 'previous_stock' => 'required',
@@ -130,7 +138,7 @@ class ScanInOutProductController extends Controller
 
         $product = Product::find($request->product_id);
 
-        if($request->purpose =="Repairs"){
+        if($request->purpose =="Maintenance Use"){
             
             $validated = $request->validate([
                 'product_id' => 'required|exists:products,id',
@@ -269,8 +277,8 @@ class ScanInOutProductController extends Controller
             'product.category:id,name',
             'product.orders:id,product_id,quantity', // include orders
             'vendor:id,vendor_name',
-            'employee:id,employee_name','user:id,name'
-        ])->where('employee_id',$id)->get();
+            'employee:id,employee_name','user:id,name','location:id,name','machine:id,name','workStation:id,name','department:id,name'
+        ])->where('employee_id',$id)->orderBy('id','desc')->get();
         
         
     
@@ -281,18 +289,25 @@ class ScanInOutProductController extends Controller
                 
                 'id' => $scanRecord->id,
                 'in_out_date_time' => $scanRecord->in_out_date_time,
-                'in_quantity' => $scanRecord->in_quantity,
-                'out_quantity' => $scanRecord->out_quantity,
-                'type' => $scanRecord->type,
-                'purpose' => $scanRecord->purpose,
-                'product_id' => $scanRecord->product_id,
                 'product_name' => $scanRecord->product->product_name ?? null,
+                'sku' => $scanRecord->product->sku ?? null,
                 'category_name' => optional($scanRecord->product->category)->name ?? null,
-                'employee_id' => $scanRecord->employee_id,
+                'machine_name' => optional($scanRecord->machine)->name,
+                'workStation_name' => optional($scanRecord->workStation)->name,
+                'department_name' => optional($scanRecord->department)->name,
                 'employee_name' => optional($scanRecord->employee)->employee_name ?? null,
                 'issue_from_name' => $scanRecord->user->name ?? null,
-                'sku' => $scanRecord->product->sku ?? null,
-                'inventory_alert_threshold' => $scanRecord->product->inventory_alert_threshold ?? null,
+                'location' => $scanRecord->location->name ?? null,
+                'previous_stock' => $scanRecord->previous_stock,
+                'in_quantity' => $scanRecord->in_quantity,
+                'out_quantity' => $scanRecord->out_quantity,
+                'total_current_stock' => $scanRecord->total_current_stock,
+                'inventory_alert_threshold' => $scanRecord->threshold ?? null,
+                'purpose' => $scanRecord->purpose,
+                'comments' => $scanRecord->comments,
+                'type' => $scanRecord->type,
+                'product_id' => $scanRecord->product_id,
+                'employee_id' => $scanRecord->employee_id,
                 'commit_stock_check' => $scanRecord->product->commit_stock_check ?? null,
                 'opening_stock' => $scanRecord->product->opening_stock ?? null,
                 'vendor_name' => optional($scanRecord->vendor)->vendor_name ?? null,

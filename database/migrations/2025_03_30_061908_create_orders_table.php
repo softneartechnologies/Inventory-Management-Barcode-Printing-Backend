@@ -17,12 +17,17 @@ return new class extends Migration
             $table->string('sku');
             $table->integer('current_stock');
             $table->integer('threshold_count');
-            $table->string('location');
+            $table->string('location_id');
             $table->string('quantity');
+            $table->string('category_id');
+            $table->string('total_current_stock');
+            $table->string('order_by');
+            $table->string('status');
             $table->string('deleted')->default(0);
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.

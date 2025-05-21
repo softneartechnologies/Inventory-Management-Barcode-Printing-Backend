@@ -10,7 +10,7 @@ class OrderController extends Controller
 {
     public function index()
     {
-        $orders = Order::with('product:id,product_name')->where('deleted', '0')->orderBy('id', 'desc')->get();
+        $orders = Order::with('product:id,product_name','category:id,name','location:id,name','user:id,name')->where('deleted', '0')->orderBy('id', 'desc')->get();
     
         // Transform data to move product_name to the root level
         $orders = $orders->map(function ($order) {
@@ -22,8 +22,12 @@ class OrderController extends Controller
                 'sku' => $order->sku,
                 'current_stock' => $order->current_stock,
                 'threshold_count' => $order->threshold_count,
-                'location' => $order->location,
+                'location_name' => optional($order->location)->name,
                 'quantity'=>$order->quantity,
+                'category_name'=>optional($order->category)->name,
+                'total_current_stock'=>$order->total_current_stock,
+                'order_by'=>optional($order->user)->name,
+                'status'=>$order->status,
                 'created_at' => $order->created_at,
                 'updated_at' => $order->updated_at,
                 'product_name' => $order->product->product_name ?? null, // Move product_name outside
@@ -43,9 +47,13 @@ class OrderController extends Controller
             'sku' => 'required',
             'current_stock' => 'required|integer',
             'threshold_count' => 'required|integer',
-            'location' => 'required|integer',
+            'location_id' => 'required|integer',
             'quantity' => 'required|integer',
             'current_date' => 'required',
+            'category_id' => 'required',
+            'total_current_stock' => 'required',
+            'order_by' => 'required',
+            'status' => 'required',
         ]);
 
         $Order = Order::create($validated);
@@ -67,7 +75,10 @@ class OrderController extends Controller
             'sku' => 'required',
             'current_stock' => 'sometimes|required|integer',
             'threshold_count' => 'sometimes|required|integer',
-            'location' => 'sometimes|required|string',
+            'location_id' => 'sometimes|required|string',
+            'category_id' => 'required',
+            'total_current_stock' => 'required',
+            'order_by' => 'required',
         ]);
 
         $Order->update($validated);
