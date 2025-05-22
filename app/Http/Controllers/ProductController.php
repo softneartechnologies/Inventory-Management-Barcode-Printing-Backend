@@ -568,7 +568,7 @@ public function store(Request $request)
         $scanRecords = ScanInOutProduct::with([
             'product:id,product_name,opening_stock',
             'employee:id,employee_name',
-            'user:id,name','machine:id,name','department:id,name','workStation:id,name'
+            'user:id,name','machine:id,name','department:id,name','workStation:id,name','location:id,name'
         ])->where('product_id', $id)->get();
 
         // Map and transform scan records
@@ -581,9 +581,13 @@ public function store(Request $request)
                 'workStation_name' => $record->workStation->name ?? null,
                 'issue_from_name' => $record->user->name ?? null, 
                 'employee_name' => $record->employee->employee_name ?? null,
+                'location' => $record->location->name ?? null,
                 'product_name' => $record->product->product_name ?? null,
                 'in_quantity' => $record->in_quantity,
                 'out_quantity' => $record->out_quantity,
+                'previous_stock' => $record->previous_stock,
+                'total_current_stock' => $record->total_current_stock,
+                'inventory_alert_threshold' => $record->threshold ?? null,
                 'type' => $record->type,
                 'purpose' => $record->purpose,
                 'comments' => $record->comments,
