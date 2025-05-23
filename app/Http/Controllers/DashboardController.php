@@ -10,6 +10,7 @@ use App\Models\ScanInOutProduct;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 
 class DashboardController extends Controller
 {
@@ -143,14 +144,7 @@ class DashboardController extends Controller
             ];
         });
 
-    //   $stock_update =  Stock::all();
-    //    $stock_update = Product::with(['stocks:*'])->get();
-
-//   $stock_update = Product::with(['stocks' => function ($query) {
-//     $query->select('stocks.*'); // change as per your columns
-// }])
-// ->select('id', 'product_name')
-// ->get();
+  
 $stock_update = Stock::with(['product' => function ($query) {
     $query->select('id', 'product_name'); // only fetch id and name from product
 }])->get();
@@ -175,8 +169,63 @@ $mapped_stock_data = $stock_update->map(function ($stock) {
     ];
 });
 
-// return response()->json(['stock_update' => $mapped_stock_data], 200);
+                $issuedRecordsDepartment = ScanInOutProduct::with('department:id,name')->where('type','out')->get();
 
+            $totalIssues = $issuedRecordsDepartment->count();
+
+            $departmentWiseCount = $issuedRecordsDepartment
+                ->filter(function ($record) {
+                    return $record->department; // filter only those with department
+                })
+                ->groupBy(function ($item) {
+                    return $item->department->name;
+                })
+                ->map(function ($items, $departmentName) use ($totalIssues) {
+                    $count = $items->count();
+                    $percentage = ($totalIssues > 0) ? round(($count / $totalIssues) * 100, 2) : 0;
+
+                    return [
+                        'department_name' => $departmentName,
+                        'issue_count' => $count,
+                        'issue_percentage' => $percentage
+                    ];
+                })->values(); // Optional: Reset keys to 0-based index
+
+            $issuedRecordsDep = [
+                'total_issues' => $totalIssues,
+                'department_stats' => $departmentWiseCount
+            ];
+
+
+
+                $scanRecords = ScanInOutProduct::with([
+                'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+                'product.category:id,name',
+                'product.orders:id,product_id,quantity',
+                'vendor:id,vendor_name',
+                'employee:id,employee_name',
+                'user:id,name',
+                'location:id,name',
+                'machine:id,name',
+                'workStation:id,name',
+                'department:id,name'
+            ])
+            ->get();
+
+            // Group by product_id and count how many times each product appears
+            $topTenGrouped = $scanRecords
+                ->groupBy('product_id')
+                ->map(function ($items, $productId) {
+                    return [
+                        'product_id' => $productId,
+                        'product_name' => optional($items->first()->product)->product_name ?? null,
+                        'sku' => optional($items->first()->product)->sku ?? null,
+                        'issue_count' => $items->count()
+                    ];
+                })
+                ->sortByDesc('issue_count')
+                ->take(10)
+                ->values();
 
 
     return response()->json([
@@ -189,6 +238,8 @@ $mapped_stock_data = $stock_update->map(function ($stock) {
         'uniqueCategoryCount' => $uniqueCategoryCount,
         'issuance_update' => $scanRecords,
         'stock_update' => $mapped_stock_data,
+        'part_issued_department'=>$issuedRecordsDep,
+        'topTenIssuedProduct'=>$topTenGrouped,
     ], 200);
 }
 }
