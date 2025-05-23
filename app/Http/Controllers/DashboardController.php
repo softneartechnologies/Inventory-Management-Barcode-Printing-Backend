@@ -198,34 +198,39 @@ $mapped_stock_data = $stock_update->map(function ($stock) {
 
 
 
-                $scanRecords = ScanInOutProduct::with([
-                'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
-                'product.category:id,name',
-                'product.orders:id,product_id,quantity',
-                'vendor:id,vendor_name',
-                'employee:id,employee_name',
-                'user:id,name',
-                'location:id,name',
-                'machine:id,name',
-                'workStation:id,name',
-                'department:id,name'
-            ])
-            ->get();
+            $topscanRecords = ScanInOutProduct::with([
+    'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+    'product.category:id,name',
+    'product.orders:id,product_id,quantity',
+    'vendor:id,vendor_name',
+    'employee:id,employee_name',
+    'user:id,name',
+    'location:id,name',
+    'machine:id,name',
+    'workStation:id,name',
+    'department:id,name'
+])->get();
 
-            // Group by product_id and count how many times each product appears
-            $topTenGrouped = $scanRecords
-                ->groupBy('product_id')
-                ->map(function ($items, $productId) {
-                    return [
-                        'product_id' => $productId,
-                        'product_name' => optional($items->first()->product)->product_name ?? null,
-                        'sku' => optional($items->first()->product)->sku ?? null,
-                        'issue_count' => $items->count()
-                    ];
-                })
-                ->sortByDesc('issue_count')
-                ->take(10)
-                ->values();
+$totalIssues = $topscanRecords->count();
+
+$topTenGrouped = $topscanRecords
+    ->groupBy('product_id')
+    ->map(function ($items, $productId) use ($totalIssues) {
+        $count = $items->count();
+        $percentage = ($totalIssues > 0) ? round(($count / $totalIssues) * 100, 2) : 0;
+
+        return [
+            'product_id' => $productId,
+            'product_name' => optional($items->first()->product)->product_name ?? null,
+            'sku' => optional($items->first()->product)->sku ?? null,
+            'issue_count' => $count,
+            'issue_percentage' => $percentage
+        ];
+    })
+    ->sortByDesc('issue_count')
+    ->take(10)
+    ->values();
+
 
 
     return response()->json([
