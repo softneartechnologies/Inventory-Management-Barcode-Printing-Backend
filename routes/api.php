@@ -149,6 +149,7 @@ Route::prefix('employees')->group(function () {
     Route::get('/edit/{id}', [EmployeeController::class, 'show']); // Get single employee
     Route::put('/update/{id}', [EmployeeController::class, 'update']); // Update employee
     Route::delete('/delete/{id}', [EmployeeController::class, 'destroy']); // Delete employee
+    Route::post('/upload-csv', [EmployeeController::class, 'uploadEmployeeCSV']);
 });
 
 // currencies

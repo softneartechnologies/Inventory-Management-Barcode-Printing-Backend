@@ -1577,25 +1577,7 @@ public function uploadCSV(Request $request)
     $handle = fopen($file->getPathname(), "r");
 
     $header = fgetcsv($handle);
-    // $expectedHeaders = [
-    //     "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
-    //     "vendor_id", "model", "description", "location_id", "current_stock", "stock_unit", "unit_cost", "opening_stock_total_stock", "inventory_alert_threshold", "selling_cost",
-    //     "cost_price", "commit_stock_check", "project_name", "weight",
-    //     "weight_unit", "length", "width", "depth",
-    //     "measurement_unit", "returnable", "status"
-    // ];
-    // $expectedHeaders =["Part names","SKU","Stock location","Current stock","Stock unit","Unit cost","Category","Sub category","Manufacture","Vendor","Model","Description","Threshold","Weight","Weight unit","dim_Length","dim_Width","dim_Height","dim_Measurement_Unit","Status"];
-
-    // if ($header !== $expectedHeaders) {
-    //     return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
-    // }
-
-    // $expectedHeaders = array_map('trim', [
-    //     "Part names","SKU","Stock location","Current stock","Stock unit","Unit cost",
-    //     "Category","Sub category","Manufacture","Vendor","Model","Description",
-    //     "Threshold","Weight","Weight unit","dim_Length","dim_Width",
-    //     "dim_Height","dim_Measurement_Unit","Status"
-    // ]);
+   
 
     $expectedHeaders = array_map('trim',  [
         "product_name", "sku", "category_id", "sub_category_id","manufacturer",

@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Employee;
+use App\Models\Workstation;
+use App\Models\Department;
+use App\Models\Role;
 use Illuminate\Support\Facades\Validator;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Facades\JWTAuth;
-
+       
 class EmployeeController extends Controller
 {
     // ✅ Get All Employees
@@ -288,4 +291,184 @@ class EmployeeController extends Controller
         }
         return response()->json(['message' => 'Employee deleted successfully'], 200);
     }
+    //   public function uploadEmployeeCSV(Request $request)
+    //     {
+    //         $request->validate([
+    //             'file' => 'required|mimes:csv,txt|max:2048'
+    //         ]);
+
+    //         $file = $request->file('file');
+    //         $handle = fopen($file->getPathname(), "r");
+
+    //         $header = fgetcsv($handle);
+    //         $expectedHeaders = array_map('trim', [
+    //             "employee_name", "department", "work_station", "access_for_login",
+    //             "role_id", "email", "password"
+    //         ]);
+
+    //         $header = array_map('trim', $header);
+    //         if ($header !== $expectedHeaders) {
+    //             return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    //         }
+
+    //         $invalidRows = [];
+    //         $rowNumber = 2;
+
+    //         while ($row = fgetcsv($handle)) {
+    //             $row = array_map('trim', $row);
+
+    //             if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+    //                 $invalidRows[] = $rowNumber++;
+    //                 continue;
+    //             }
+
+    //             // Check for existing user by email (index 5)
+    //             if (User::where('email', $row[5])->exists()) {
+    //                 $rowNumber++;
+    //                 continue;
+    //             }
+
+    //             // Get or create Department and Workstation
+                
+    //             // $workstation = Workstation::where('name', $row[2])->first();
+    //             $department = Department::firstOrCreate(['name' => $row[1]], ['description' => 'HR Department']);
+    //             $workstation = Workstation::firstOrCreate(['name' => $row[2]], ['department_id '=>$department->id]);
+    //             // Get role
+    //         //    $role = Role::firstOrCreate(['name' => $row[4]], ['guard_name' => 'api']);
+    //             $role = Role::where('name', $row[4])->first();
+
+    //             if (!$role) {
+    //                 $invalidRows[] = $rowNumber++;
+    //                 continue;
+    //             }
+
+    //             // Create Employee
+    //             $employee = Employee::create([
+    //                 'employee_name' => $row[0],
+    //                 'department' => $department->name,
+    //                 'work_station' => $workstation->name,
+    //                 'access_for_login' => $row[3] === "1" ? true : false,
+    //             ]);
+
+    //             // If access_for_login is "true", create User
+    //             if (strtolower($row[3]) === "1" && $employee) {
+    //                 $user = User::create([
+    //                     'employee_id' => $employee->id,
+    //                     'role_id' => $role->id,
+    //                     'name' => $row[0],
+    //                     'email' => $row[5],
+    //                     'password' => Hash::make($row[6]),
+    //                 ]);
+
+    //                 // Optionally generate JWT token
+    //                 $token = JWTAuth::fromUser($user);
+    //             }
+
+    //             $rowNumber++;
+    //         }
+
+    //         fclose($handle);
+
+    //         return response()->json([
+    //             'message' => 'CSV uploaded successfully.',
+    //             'invalid_rows' => $invalidRows
+    //         ], 200);
+    //     }
+    public function uploadEmployeeCSV(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:csv,txt|max:2048'
+        ]);
+
+        $file = $request->file('file');
+        $handle = fopen($file->getPathname(), "r");
+
+        $header = fgetcsv($handle);
+        $expectedHeaders = array_map('trim', [
+            "employee_name", "department", "work_station", "access_for_login",
+            "role_id", "email", "password"
+        ]);
+
+        $header = array_map('trim', $header);
+        if ($header !== $expectedHeaders) {
+            return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+        }
+
+        $invalidRows = [];
+        $rowNumber = 2;
+
+        while ($row = fgetcsv($handle)) {
+            $row = array_map('trim', $row);
+
+            if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+                $invalidRows[] = $rowNumber++;
+                continue;
+            }
+
+            // Skip if user already exists
+            if (User::where('email', $row[5])->exists()) {
+                $rowNumber++;
+                continue;
+            }
+
+            // Get or create department
+            $department = Department::firstOrCreate(
+                ['name' => $row[1]],
+                ['description' => 'HR Department']
+            );
+
+            // Get or create workstation with department_id
+            $workstation = Workstation::firstOrCreate(
+                ['name' => $row[2], 'department_id' => $department->id],
+                ['name' => $row[2], 'department_id' => $department->id]
+            );
+
+            // Get role
+            $role = Role::where('name', $row[4])->first();
+            if (!$role) {
+                $invalidRows[] = $rowNumber++;
+                continue;
+            }
+
+            // Create employee
+            if ($row[3] == "1") {
+            $employee = Employee::create([
+                'employee_name'    => $row[0],
+                'department'       => $row[1],
+                'work_station'     => $row[2],
+                'access_for_login' => "true",
+            ]);
+
+            // If login access is allowed, create user
+            
+                $user = User::create([
+                    'employee_id' => $employee->id,
+                    'role_id'     => $role->id,
+                    'name'        => $row[0],
+                    'email'       => $row[5],
+                    'password'    => Hash::make($row[6]),
+                ]);
+
+                // Generate JWT token (optional)
+                $token = JWTAuth::fromUser($user);
+            }else{
+                $employee = Employee::create([
+                'employee_name'    => $row[0],
+                'department'       => $department->name,
+                'work_station'     => $workstation->name,
+                'access_for_login' => "false",
+            ]);
+            }
+
+            $rowNumber++;
+        }
+
+        fclose($handle);
+
+        return response()->json([
+            'message'       => 'CSV uploaded successfully.',
+            'invalid_rows'  => $invalidRows
+        ], 200);
+    }
+
 }
