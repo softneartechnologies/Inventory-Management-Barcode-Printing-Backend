@@ -471,4 +471,27 @@ class EmployeeController extends Controller
         ], 200);
     }
 
+
+    public function employeeTemplateCsvUrl()
+{
+    $filename = 'csv_tem/employee_template.csv';
+   
+    $columns = [
+        "employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+    ];
+    // Open file for writing in local storage
+    $filePath = storage_path("app/public/{$filename}");
+    $file = fopen($filePath, 'w');
+    fputcsv($file, $columns); // Write headers
+    fclose($file);
+
+    // Make sure the file is accessible (ensure 'public' disk is linked)
+    $url = asset("storage/{$filename}");
+
+    return response()->json([
+        'status' => 'success',
+        'url' => $url
+    ]);
+}
+
 }
