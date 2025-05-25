@@ -104,7 +104,7 @@ class EmployeeController extends Controller
     // $employee = User::with('employee:id,employee_name,department,work_station,access_for_login,status')
     //     ->where('employee:id', $id)
     //     ->first();
-    $employee = User::with('employee:id,employee_name,department,work_station,access_for_login,status')
+    $employee = User::with('employee:id,employee_name,employee_id,department,work_station,access_for_login,status')
     ->whereHas('employee', function ($query) use ($id) {
         $query->where('id', $id);
     })
@@ -117,7 +117,7 @@ class EmployeeController extends Controller
           if (!empty($employee)) {
         $employeeDetails = [
         'employee_id'       => $employee->id,
-        'company_employee_id' => $employee->employee_id,
+        'company_employee_id' =>$employee->employee_id,
         'employee_name'     => $employee->employee_name,
         'department'        => $employee->department,
         'work_station'      => $employee->work_station,
@@ -135,7 +135,7 @@ class EmployeeController extends Controller
 
     $employeeDetails = [
         'employee_id'       => $employee->employee->id,
-        'company_employee_id' => $employee->employee_id,
+        'company_employee_id' => $employee->employee->employee_id,
         'employee_name'     => $employee->employee->employee_name,
         'department'        => $employee->employee->department,
         'work_station'      => $employee->employee->work_station,
