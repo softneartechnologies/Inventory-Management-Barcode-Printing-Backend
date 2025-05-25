@@ -28,6 +28,7 @@ class EmployeeController extends Controller
         if($request->access_for_login =="true"){
             
             $validator = Validator::make($request->all(), [
+                'employee_id' => 'required|string|max:255',
                 'employee_name' => 'required|string|max:255',
                 'department' => 'required|string|max:255',
                 'work_station' => 'required|string|max:255',
@@ -44,6 +45,7 @@ class EmployeeController extends Controller
             }
         }else {
             $validator = Validator::make($request->all(), [
+                'employee_id' => 'required|string|max:255',
                 'employee_name' => 'required|string|max:255',
                 'department' => 'required|string|max:255',
                 'work_station' => 'required|string|max:255',
@@ -58,6 +60,7 @@ class EmployeeController extends Controller
         if($request->access_for_login==="true"){
             
             $employee = Employee::create([
+                'employee_id' => $request->employee_id,
                 'employee_name' => $request->employee_name,
                 'department' => $request->department,
                 'work_station' => $request->work_station,
@@ -114,6 +117,7 @@ class EmployeeController extends Controller
           if (!empty($employee)) {
         $employeeDetails = [
         'employee_id'       => $employee->id,
+        'company_employee_id' => $employee->employee_id,
         'employee_name'     => $employee->employee_name,
         'department'        => $employee->department,
         'work_station'      => $employee->work_station,
@@ -131,6 +135,7 @@ class EmployeeController extends Controller
 
     $employeeDetails = [
         'employee_id'       => $employee->employee->id,
+        'company_employee_id' => $employee->employee_id,
         'employee_name'     => $employee->employee->employee_name,
         'department'        => $employee->employee->department,
         'work_station'      => $employee->employee->work_station,
@@ -158,6 +163,7 @@ class EmployeeController extends Controller
         if($request->access_for_login =="true"){
             
             $validator = Validator::make($request->all(), [
+                'employee_id' => 'required|string|max:255',
                 'employee_name' => 'required|string|max:255',
                 'department' => 'required|string|max:255',
                 'work_station' => 'required|string|max:255',
@@ -174,6 +180,7 @@ class EmployeeController extends Controller
             }
         }else {
             $validator = Validator::make($request->all(), [
+                'employee_id' => 'required|string|max:255',
                 'employee_name' => 'required|string|max:255',
                 'department' => 'required|string|max:255',
                 'work_station' => 'required|string|max:255',
@@ -196,6 +203,7 @@ class EmployeeController extends Controller
             // ]);
 
             $employee->update([
+                'employee_id' => $request->employee_id,
                 'employee_name' => $request->employee_name,
                 'department' => $request->department,
                 'work_station' => $request->work_station,
@@ -385,8 +393,7 @@ class EmployeeController extends Controller
 
         $header = fgetcsv($handle);
         $expectedHeaders = array_map('trim', [
-            "employee_name", "department", "work_station", "access_for_login",
-            "role_id", "email", "password"
+            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
         ]);
 
         $header = array_map('trim', $header);
@@ -413,29 +420,30 @@ class EmployeeController extends Controller
 
             // Get or create department
             $department = Department::firstOrCreate(
-                ['name' => $row[1]],
+                ['name' => $row[2]],
                 ['description' => 'HR Department']
             );
 
             // Get or create workstation with department_id
             $workstation = Workstation::firstOrCreate(
-                ['name' => $row[2], 'department_id' => $department->id],
-                ['name' => $row[2], 'department_id' => $department->id]
+                ['name' => $row[3], 'department_id' => $department->id],
+                ['name' => $row[3], 'department_id' => $department->id]
             );
 
             // Get role
-            $role = Role::where('name', $row[4])->first();
+            $role = Role::where('name', $row[5])->first();
             if (!$role) {
                 $invalidRows[] = $rowNumber++;
                 continue;
             }
 
             // Create employee
-            if ($row[3] == "1") {
+            if ($row[4] == "1") {
             $employee = Employee::create([
-                'employee_name'    => $row[0],
-                'department'       => $row[1],
-                'work_station'     => $row[2],
+                'employee_id'    => $row[0],
+                'employee_name'    => $row[1],
+                'department'       => $row[2],
+                'work_station'     => $row[3],
                 'access_for_login' => "true",
             ]);
 
@@ -444,16 +452,17 @@ class EmployeeController extends Controller
                 $user = User::create([
                     'employee_id' => $employee->id,
                     'role_id'     => $role->id,
-                    'name'        => $row[0],
-                    'email'       => $row[5],
-                    'password'    => Hash::make($row[6]),
+                    'name'        => $row[1],
+                    'email'       => $row[6],
+                    'password'    => Hash::make($row[7]),
                 ]);
 
                 // Generate JWT token (optional)
                 $token = JWTAuth::fromUser($user);
             }else{
                 $employee = Employee::create([
-                'employee_name'    => $row[0],
+                'employee_id'    => $row[0],
+                'employee_name'    => $row[1],
                 'department'       => $department->name,
                 'work_station'     => $workstation->name,
                 'access_for_login' => "false",
@@ -477,7 +486,7 @@ class EmployeeController extends Controller
     $filename = 'csv_tem/employee_template.csv';
    
     $columns = [
-        "employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+        "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
     ];
     // Open file for writing in local storage
     $filePath = storage_path("app/public/{$filename}");
