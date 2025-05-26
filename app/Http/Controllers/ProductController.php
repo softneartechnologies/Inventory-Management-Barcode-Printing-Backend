@@ -813,6 +813,7 @@ public function store(Request $request)
             'vendor_id' => 'nullable|string',
             'reason_for_update' => 'nullable|string',
             'comment' => 'nullable|string',
+            'opening_stock' => 'required|string',
             'storage_location' => 'required|array',
             'storage_location.*.current_stock' => 'nullable|numeric',
             'storage_location.*.quantity' => 'required|numeric',
@@ -901,7 +902,8 @@ public function store(Request $request)
 
 
 
-            $product->update(['opening_stock' => $productOpeningStock]);
+            // $product->update(['opening_stock' => $productOpeningStock]);
+            $product->update(['opening_stock' => $validatedRequest['opening_stock']]);
         }
 
             foreach ($multiLocation as $multiData) {
