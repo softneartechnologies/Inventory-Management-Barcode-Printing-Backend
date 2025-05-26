@@ -1128,72 +1128,73 @@ public function store(Request $request)
     {
 
 
-        // $stocks = InventoryAdjustmentReports::with([
-        //     'product.category', // Load category via product
-        //     'category:id,name','vendor:id,vendor_name','location:id,name'
-        // ])->where('new_stock', '>', 0)->orderBy('id', 'desc')->get();
+        $stocks = InventoryAdjustmentReports::with([
+            'product.category', // Load category via product
+            'category:id,name','vendor:id,vendor_name','location:id,name'
+        ])->where('new_stock', '>', 0)->orderBy('id', 'desc')->get();
 
 
-        // $adjustments = $stocks->map(function ($stock) {
-        //     $adjustmentSymbol = $stock->adjustment == 'Subtract' ? '-' : '+';
-        //     $newStock = $stock->adjustment == 'Subtract'
-        //         ? $stock->current_stock - $stock->quantity
-        //         : $stock->current_stock + $stock->quantity;
+        $adjustments = $stocks->map(function ($stock) {
+            $adjustmentSymbol = $stock->adjustment == 'Subtract' ? '-' : '+';
+            $newStock = $stock->adjustment == 'Subtract'
+                ? $stock->current_stock - $stock->quantity
+                : $stock->current_stock + $stock->quantity;
 
-        //         // print_r($stock->product->category);die;
-        //     return [
-        //         'id' => $stock->id,
-        //         'product_id' => $stock->product_id,
-        //         'product_name' => $stock->product->product_name ?? 'N/A',
-        //         'sku' => $stock->product->sku ?? 'N/A',
-        //         'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
-        //         'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
-        //         'previous_stock' => $stock->current_stock,
-        //         'new_stock' => $newStock,
-        //         'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
-        //         'reason' => $stock->reason_for_update ?? 'N/A',
-        //         'location' => optional($stock->location)->name, 
-        //         'stock_date' => $stock->stock_date,
-        //         'created_at' => $stock->created_at,
-        //         'updated_at' => $stock->updated_at,
-        //     ];
-        // });
-
-        $scanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,opening_stock',
-            'employee:id,employee_name',
-            'user:id,name','category:id,name','location:id,name'
-        ])->orderBy('id','desc')->get();
-
-        $scanRecords = $scanRecords->map(function ($scanRecords) {
+                // print_r($stock->product->category);die;
             return [
-                'id' => $scanRecords->id,
-                'in_out_date_time' => $scanRecords->in_out_date_time,
-                'product_id' => $scanRecords->product_id,
-                'product_name' => $scanRecords->product->product_name ?? null,
-                'sku' => $scanRecords->product->sku ?? null,
-                'category' => $scanRecords->category->name ?? null,
-                'location' => $scanRecords->location->name ?? null,
-                'quantity' => $scanRecords->product->opening_stock ?? null,
-                'issue_from_name' => $scanRecords->user->name ?? null, 
-                'employee_name' => $scanRecords->employee->employee_name ?? null,
-                'issue_from_user_id' => $scanRecords->issue_from_user_id,
-                'employee_id' => $scanRecords->employee_id,
-                'in_quantity' => $scanRecords->in_quantity,
-                'out_quantity' => $scanRecords->out_quantity,
-                'previous_stock' => $scanRecords->previous_stock,
-                'total_current_stock' => $scanRecords->total_current_stock,
-                'threshold' => $scanRecords->threshold,
-                'type' => $scanRecords->type,
-                'purpose' => $scanRecords->purpose,
-                'comments' => $scanRecords->comments,
-                'created_at' => $scanRecords->created_at,
-                'updated_at' => $scanRecords->updated_at,
+                'id' => $stock->id,
+                'in_out_date_time' => $stock->stock_date,
+                'product_id' => $stock->product_id,
+                'product_name' => $stock->product->product_name ?? 'N/A',
+                'sku' => $stock->product->sku ?? 'N/A',
+                'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
+                'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+                'previous_stock' => $stock->current_stock,
+                'new_stock' => $newStock,
+                'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+                'reason' => $stock->reason_for_update ?? 'N/A',
+                'location' => optional($stock->location)->name, 
+                'stock_date' => $stock->stock_date,
+                'created_at' => $stock->created_at,
+                'updated_at' => $stock->updated_at,
             ];
         });
 
+        // $scanRecords = ScanInOutProduct::with([
+        //     'product:id,product_name,sku,opening_stock',
+        //     'employee:id,employee_name',
+        //     'user:id,name','category:id,name','location:id,name'
+        // ])->orderBy('id','desc')->get();
+
+        // $scanRecords = $scanRecords->map(function ($scanRecords) {
+        //     return [
+        //         'id' => $scanRecords->id,
+        //         'in_out_date_time' => $scanRecords->in_out_date_time,
+        //         'product_id' => $scanRecords->product_id,
+        //         'product_name' => $scanRecords->product->product_name ?? null,
+        //         'sku' => $scanRecords->product->sku ?? null,
+        //         'category' => $scanRecords->category->name ?? null,
+        //         'location' => $scanRecords->location->name ?? null,
+        //         'quantity' => $scanRecords->product->opening_stock ?? null,
+        //         'issue_from_name' => $scanRecords->user->name ?? null, 
+        //         'employee_name' => $scanRecords->employee->employee_name ?? null,
+        //         'issue_from_user_id' => $scanRecords->issue_from_user_id,
+        //         'employee_id' => $scanRecords->employee_id,
+        //         'in_quantity' => $scanRecords->in_quantity,
+        //         'out_quantity' => $scanRecords->out_quantity,
+        //         'previous_stock' => $scanRecords->previous_stock,
+        //         'total_current_stock' => $scanRecords->total_current_stock,
+        //         'threshold' => $scanRecords->threshold,
+        //         'type' => $scanRecords->type,
+        //         'purpose' => $scanRecords->purpose,
+        //         'comments' => $scanRecords->comments,
+        //         'created_at' => $scanRecords->created_at,
+        //         'updated_at' => $scanRecords->updated_at,
+        //     ];
+        // });
+
         // print_r($adjustments);die;
-        return response()->json(['inventory_adjustments' => $scanRecords], 200);
+        return response()->json(['inventory_adjustments' => $adjustments], 200);
     }
 
     public function recentStockUpdate()
