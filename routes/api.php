@@ -43,7 +43,7 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/employee', [UserController::class, 'index']);
     // Route::get('/superadmin_show', [SuperAdminController::class, 'superAdminProfileShow']);
     // Route::get('/superadmin/edit_profile', [SuperAdminController::class, 'superAdminEditProfile']);
-    // Route::post('/superadmin/update-profile/{id}', [SuperAdminController::class, 'profileUpdate']);
+    Route::post('/superadmin/update-profile', [UserController::class, 'updateUserProfile']);
     Route::post('change-password', [UserController::class, 'updatePassword']);
 
 

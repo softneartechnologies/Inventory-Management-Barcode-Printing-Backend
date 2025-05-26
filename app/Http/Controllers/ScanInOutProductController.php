@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ScanInOutProduct;
 use App\Models\Product;
 use App\Models\Employee;
+use App\Models\Stock;
 use Illuminate\Http\Request;
 
 class ScanInOutProductController extends Controller
@@ -130,6 +131,25 @@ class ScanInOutProductController extends Controller
 
         $product->update(['opening_stock' => $productOpeningStock]);
 
+
+
+           $product_location = Stock::where('product_id', $request->product_id)
+                ->where('location_id', $request->location_id)
+                ->first();
+
+           
+                $currentStock = $product_location->current_stock;
+               
+                $newStock = $currentStock + $quantity;
+                   
+                $stockData = [
+                    'current_stock' => $newStock,
+                    'new_stock' => $newStock,
+                ];
+
+                $product_location->update($stockData);
+                
+
         return response()->json($scanRecord, 200);
     }
 
@@ -186,6 +206,23 @@ class ScanInOutProductController extends Controller
         $productOpeningStock = $product->opening_stock - $quantity;
 
         $product->update(['opening_stock' => $productOpeningStock]);
+
+        $product_location = Stock::where('product_id', $request->product_id)
+                ->where('location_id', $request->location_id)
+                ->first();
+
+           
+                $currentStock = $product_location->current_stock;
+                
+                    $newStock = $currentStock - $quantity;
+                   
+
+                $stockData = [
+                    'current_stock' => $newStock,
+                    'new_stock' => $newStock,
+                ];
+
+                $product_location->update($stockData);
 
         return response()->json($scanRecord, 200);
     }

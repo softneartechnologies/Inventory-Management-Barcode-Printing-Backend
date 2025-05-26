@@ -125,55 +125,31 @@ class UserController extends BaseController
     //     }
     // }
 
-    public function updateUserProfile(Request $req)
+   public function updateUserProfile(Request $request)
 {
     try {
-        // Check if user is authenticated
         $user = Auth::guard('api')->user();
         if (!$user) {
             return response()->json(['error' => 'Unauthorized', 'status' => 401], 401);
         }
 
         $id = $user->id;
+        $profilePath = $user->profile; // Default to existing
 
-        // Ensure storage directory exists
-        $storagePath = storage_path('app/public/images');
-        if (!file_exists($storagePath)) {
-            mkdir($storagePath, 0777, true);
+        if ($request->hasFile('profile')) {
+            $image = $request->file('profile');
+            $filename = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('/user/profile'), $filename);
+            $profilePath = '/user/profile/' . $filename;
+
+            // Update user profile path in database
+            DB::table('users')->where('id', $id)->update(['profile' => $profilePath]);
         }
-
-        $path = null;
-        
-        if ($req->profile) {
-            if (Str::contains($req->profile, 'storage')) {
-                $path = $req->profile; // Keep existing image if already stored
-            } else {
-                // Generate a new file name
-                $time = Carbon::now()->timestamp;
-                $imageName = 'profile_' . $id . '_' . $time . '.png';
-                $path = 'images/' . $imageName;
-
-                // Delete old profile image
-                if ($user->profile) {
-                    File::delete(storage_path('app/public/' . str_replace('storage/', '', $user->profile)));
-                }
-
-                // Save the new profile image
-                Storage::disk('public')->put($path, base64_decode($req->profile));
-
-                // Convert to accessible URL
-                $path = Storage::url($path);
-
-            }
-        }
-
-        // Update user profile in database
-        DB::table('users')->where('id', '=', $id)->update(['profile' => $path]);
 
         return response()->json([
             'status' => 200,
-            "message" => "Profile updated successfully",
-            "profile_url" => $path
+            'message' => 'Profile updated successfully',
+            'profile_url' => $profilePath,
         ], 200);
 
     } catch (\Exception $e) {
@@ -184,7 +160,6 @@ class UserController extends BaseController
         ], 500);
     }
 }
-
 
 public function forgotPassword(Request $request)
 {

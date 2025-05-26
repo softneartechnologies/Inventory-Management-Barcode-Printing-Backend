@@ -42,6 +42,7 @@ class OrderController extends Controller
     // Store a newly created product in storage.
     public function store(Request $request)
     {
+        // print_r($request->all());die;
         $validated = $request->validate([
             'product_id' => 'required',
             'sku' => 'required',
