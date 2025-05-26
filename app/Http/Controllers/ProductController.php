@@ -821,7 +821,7 @@ public function store(Request $request)
             'storage_location.*.per_unit_cost' => 'nullable|string',
             'storage_location.*.total_cost' => 'nullable|string',
             'storage_location.*.location_id' => 'required|string',
-            'storage_location.*.adjustment' => 'required|string|in:add,Subtract,Select',
+            'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
         ]);
 
         $multiLocation = $validatedRequest['storage_location'];
