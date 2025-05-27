@@ -2173,7 +2173,7 @@ public function generateTemplateCsvUrl()
             'commit_stock_check' => '1',
             'inventory_alert_threshold' => 10,
             'opening_stock' => 100,
-            'location_id' => json_encode(["1", "2"]),
+            'location_id' => json_encode(["indore", "delhi"]),
             'quantity' => json_encode(["50", "50"]),
             'unit_of_measure' => 'pcs',
             'per_unit_cost' => 200,
