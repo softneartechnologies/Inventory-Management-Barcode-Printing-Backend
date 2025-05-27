@@ -869,6 +869,24 @@ public function store(Request $request)
 
                 $product_location->update($stockData);
 
+
+                 $stockData = [
+                        'product_id' => $product->id,
+                        'category_id' => $product->category_id,
+                        'current_stock' => $currentStock,
+                        'new_stock' => $newStock,
+                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+                        'location_id' => $multiData['location_id'],
+                        'quantity' => $quantity,
+                        'adjustment' => $adjustment,
+                        'stock_date' => $validatedRequest['stock_date'] ?? null,
+                        'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+                        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    ];
+    
+                    InventoryAdjustmentReports::create($stockData);
+
+
                 
         $quantity = $quantity;
              if ($adjustment === 'add') {
@@ -933,6 +951,23 @@ public function store(Request $request)
                 Stock::create($stockData);
            
 
+                 $stockData = [
+                        'product_id' => $product->id,
+                        'category_id' => $product->category_id,
+                        'current_stock' => $newStock,
+                        'new_stock' => $newStock,
+                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+                        'location_id' => $multiData['location_id'],
+                        'quantity' => $quantity,
+                        'adjustment' => $adjustment,
+                        'stock_date' => $validatedRequest['stock_date'] ?? null,
+                        'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+                        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    ];
+    
+                    InventoryAdjustmentReports::create($stockData);
+
+
             
 
         $quantity = $quantity;
@@ -974,7 +1009,8 @@ public function store(Request $request)
                   $product_location = Stock::where('product_id', $product_id)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
-               if($adjustment!='select'){
+                // print_r($product_location);die;
+               if($adjustment!=='select'){
                 $quantity = $multiData['quantity'];
                 $adjustment = $multiData['adjustment'];
 
@@ -988,21 +1024,21 @@ public function store(Request $request)
                         $productOpeningStock = $product->opening_stock - $quantity;
                     }
     
-                    $stockData = [
-                        'product_id' => $product->id,
-                        'category_id' => $product->category_id,
-                        'current_stock' => $currentStock,
-                        'new_stock' => $newStock,
-                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
-                        'location_id' => $multiData['location_id'],
-                        'quantity' => $quantity,
-                        'adjustment' => $adjustment,
-                        'stock_date' => $validatedRequest['stock_date'] ?? null,
-                        'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    ];
+                    // $stockData = [
+                    //     'product_id' => $product->id,
+                    //     'category_id' => $product->category_id,
+                    //     'current_stock' => $currentStock,
+                    //     'new_stock' => $newStock,
+                    //     'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+                    //     'location_id' => $multiData['location_id'],
+                    //     'quantity' => $quantity,
+                    //     'adjustment' => $adjustment,
+                    //     'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    //     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+                    //     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+                    // ];
     
-                    InventoryAdjustmentReports::create($stockData);
+                    // InventoryAdjustmentReports::create($stockData);
                     
                     }
                 // }
