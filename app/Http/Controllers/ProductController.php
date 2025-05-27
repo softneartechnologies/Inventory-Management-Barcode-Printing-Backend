@@ -1671,10 +1671,11 @@ public function uploadCSV(Request $request)
     
     while ($row = fgetcsv($handle)) {
         
+       
         $locationString = $row[13];
         $locationNames = explode(",", $locationString);
         $joinedString = implode(',', $locationNames);
-    $finalArray = json_decode($joinedString, true);
+        $finalArray = json_decode($joinedString, true);
     // print_r($finalArray);die;
     
         $locationIds = [];
@@ -1683,14 +1684,7 @@ public function uploadCSV(Request $request)
 
             foreach ($finalArray as $name) {
                 $name = trim($name);
-                // $joined = implode('', $name);
-
-// Step 2: Decode the JSON string to get the array
-// $cleanArray = json_decode($joined, true);
-
-// Step 3: Convert the final array to string
-// $finalString = implode(',', $cleanArray);
-        // print_r($name);die;
+             
                 $location = \App\Models\Location::firstOrCreate(
                     ['name' => $name],
                     ['name' => $name]
@@ -1752,7 +1746,7 @@ public function uploadCSV(Request $request)
     //     "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
     //     "unit_of_measure", "per_unit_cost", "total_cost", "status"
     //  ]);
-
+//  print_r($row[1]);die;
         $product = Product::create([
             'product_name' => $row[0],
             'sku' => $row[1],
@@ -1768,12 +1762,12 @@ public function uploadCSV(Request $request)
             'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
             'commit_stock_check' => (float) $row[10],
             'inventory_alert_threshold' => (int) $row[11],
-            'opening_stock' => $row[12],
+            'opening_stock' => (int) $row[12],
             'location_id' => json_encode($locationIds),
-            'quantity' => (float) $row[14],
-            'unit_of_measure' => (float) $row[15],
-            'per_unit_cost' => $row[16],
-            'total_cost' => (float) $row[17],
+            'quantity' => json_encode($row[14]),
+            'unit_of_measure' => json_encode($row[15]),
+            'per_unit_cost' =>json_encode($row[16]),
+            'total_cost' => json_encode($row[17]),
             'status' => $row[18],
             'barcode_number' => $row[1],
             'created_at' => now(),
@@ -2186,7 +2180,7 @@ public function generateTemplateCsvUrl()
             'opening_stock' => 100,
             'location_id' => json_encode(["indore", "delhi"]),
             'quantity' => json_encode(["50", "50"]),
-            'unit_of_measure' => 'pcs',
+            'unit_of_measure' => json_encode(["pcs","pcs"]),
             'per_unit_cost' => json_encode(["10", "20"]),
             'total_cost' => json_encode(["150", "150"]),
             'status' => 'active',
