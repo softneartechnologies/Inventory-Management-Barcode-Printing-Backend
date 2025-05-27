@@ -943,15 +943,15 @@ public function store(Request $request)
 
                 // } else {
                     // Create new stock record
-                    if($adjustment!='Select'){
+                    if($adjustment!='select'){
                         
                     
                     $currentStock = $multiData['current_stock'] ?? 0;
     
-                    if ($adjustment === 'add') {
+                    if ($adjustment == 'add') {
                         $newStock = $currentStock + $quantity;
                         $productOpeningStock = $product->opening_stock + $quantity;
-                    } else {
+                    } else if($adjustment == 'subtract') {
                         $newStock = $currentStock - $quantity;
                         $productOpeningStock = $product->opening_stock - $quantity;
                     }
