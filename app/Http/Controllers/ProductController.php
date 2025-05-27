@@ -969,50 +969,16 @@ public function store(Request $request)
         }
  }
             foreach ($multiLocation as $multiData) {
+
+                if($adjustment!='select'){
                   $product_location = Stock::where('product_id', $product_id)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
-                // $product_location = InventoryAdjustmentReports::where('product_id', $product_id)
-                //     ->where('location_id', $multiData['location'])
-                //     ->first();
-    
+               
                 $quantity = $multiData['quantity'];
                 $adjustment = $multiData['adjustment'];
-    
-                // if ($product_location) {
-                    // Update existing stock record
-                    // $currentStock = $product_location->current_stock;
-                    // $currentStock = $multiData['current_stock'];
-    
-                    // if ($adjustment === 'add') {
-                    //     $newStock = $currentStock + $quantity;
-                    //     $productOpeningStock = $product->opening_stock + $quantity;
-                    // } else {
-                    //     $newStock = $currentStock - $quantity;
-                    //     $productOpeningStock = $product->opening_stock - $quantity;
-                    // }
-    
-                    // $stockData = [
-                    //     'current_stock' => $currentStock,
-                    //     'new_stock' => $newStock,
-                    //     'unit' => $multiData['unit'] ?? $product_location->unit,
-                    //     'quantity' => $quantity,
-                    //     'adjustment' => $adjustment,
-                    //     'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    //     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                    //     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    // ];
-    
-                    // $product_location->update($stockData);
 
-
-                // } else {
-                    // Create new stock record
-                    if($adjustment!='select'){
-                        
-                    
-                    // $currentStock = $multiData['current_stock'] ?? 0;
-                         $currentStock = $product_location->current_stock;
+                $currentStock = $product_location->current_stock;
                 
                     if ($adjustment == 'add') {
                         $newStock = $currentStock + $quantity;
