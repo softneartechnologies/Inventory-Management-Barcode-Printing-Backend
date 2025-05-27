@@ -970,11 +970,11 @@ public function store(Request $request)
  }
             foreach ($multiLocation as $multiData) {
 
-                if($adjustment!='select'){
+                
                   $product_location = Stock::where('product_id', $product_id)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
-               
+               if($adjustment!='select'){
                 $quantity = $multiData['quantity'];
                 $adjustment = $multiData['adjustment'];
 
