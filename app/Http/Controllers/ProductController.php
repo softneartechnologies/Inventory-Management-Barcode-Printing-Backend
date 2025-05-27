@@ -1652,7 +1652,8 @@ public function uploadCSV(Request $request)
 
     $expectedHeaders = array_map('trim',  [
         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold",
+        "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
      ]);
     
@@ -1767,7 +1768,7 @@ public function uploadCSV(Request $request)
             'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
             'commit_stock_check' => (float) $row[10],
             'inventory_alert_threshold' => (int) $row[11],
-            'opening_stock' => (int) $row[12],
+            'opening_stock' => $row[12],
             'location_id' => json_encode($locationIds),
             'quantity' => (float) $row[14],
             'unit_of_measure' => (float) $row[15],
@@ -2186,8 +2187,8 @@ public function generateTemplateCsvUrl()
             'location_id' => json_encode(["indore", "delhi"]),
             'quantity' => json_encode(["50", "50"]),
             'unit_of_measure' => 'pcs',
-            'per_unit_cost' => 200,
-            'total_cost' => 20000,
+            'per_unit_cost' => json_encode(["10", "20"]),
+            'total_cost' => json_encode(["150", "150"]),
             'status' => 'active',
         ]
     ]);
