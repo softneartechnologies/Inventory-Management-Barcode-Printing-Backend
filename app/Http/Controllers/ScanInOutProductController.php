@@ -126,12 +126,29 @@ class ScanInOutProductController extends Controller
         $validated['category_id'] = $product->category_id;
         $scanRecord = ScanInOutProduct::create($validated);
 
+        // $quantity = $request->in_quantity;
+        // $productOpeningStock = $product->opening_stock + $quantity;
+
+        // $product->update(['opening_stock' => $productOpeningStock]);
+
         $quantity = $request->in_quantity;
         $productOpeningStock = $product->opening_stock + $quantity;
+        $locationIds = json_decode($product->location_id); 
+        $quantities = json_decode($product->quantity); 
+        $pdate = array_combine($locationIds, $quantities);
+        $rlocationId = $request->location_id;
+        $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+        $updatedQuantities = [];
+        foreach ($locationIds as $lid) {
+            $updatedQuantities[] = $pdate[$lid];
+        }
 
-        $product->update(['opening_stock' => $productOpeningStock]);
-
-
+        $totalQuantity = array_sum($updatedQuantities);
+        // Step 6: Update the product
+        $product->update([
+            'opening_stock' => $productOpeningStock,
+            'quantity' => json_encode($updatedQuantities)
+        ]);
 
            $product_location = Stock::where('product_id', $request->product_id)
                 ->where('location_id', $request->location_id)
@@ -204,17 +221,30 @@ class ScanInOutProductController extends Controller
 
         $quantity = $request->out_quantity;
         $productOpeningStock = $product->opening_stock - $quantity;
+        $locationIds = json_decode($product->location_id); 
+        $quantities = json_decode($product->quantity); 
+        $pdate = array_combine($locationIds, $quantities);
+        $rlocationId = $request->location_id;
+        $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+        $updatedQuantities = [];
+        foreach ($locationIds as $lid) {
+            $updatedQuantities[] = $pdate[$lid];
+        }
 
-        $product->update(['opening_stock' => $productOpeningStock]);
+        $totalQuantity = array_sum($updatedQuantities);
+        // Step 6: Update the product
+        $product->update([
+            'opening_stock' => $productOpeningStock,
+            'quantity' => json_encode($updatedQuantities)
+        ]);
+
 
         $product_location = Stock::where('product_id', $request->product_id)
                 ->where('location_id', $request->location_id)
                 ->first();
 
-           
                 $currentStock = $product_location->current_stock;
-                
-                    $newStock = $currentStock - $quantity;
+                $newStock = $currentStock - $quantity;
                    
 
                 $stockData = [
