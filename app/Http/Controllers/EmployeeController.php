@@ -431,11 +431,16 @@ class EmployeeController extends Controller
             );
 
             // Get role
-            $role = Role::where('name', $row[5])->first();
-            if (!$role) {
-                $invalidRows[] = $rowNumber++;
-                continue;
-            }
+            // $role = Role::where('name', $row[5])->first();
+            // if (!$role) {
+            //     $invalidRows[] = $rowNumber++;
+            //     continue;
+            // }
+
+             $role = Role::firstOrCreate(
+                ['name' => $row[5], 'guard_name' => 'api'],
+                ['name' => $row[5], 'guard_name' =>'api']
+            );
 
             // Create employee
             if ($row[4] == "1") {
@@ -481,20 +486,88 @@ class EmployeeController extends Controller
     }
 
 
+    // public function employeeTemplateCsvUrl()
+    // {
+    //     $filename = 'csv_tem/employee_template.csv';
+    
+    //     $columns = [
+    //         "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+    //     ];
+    //     // Open file for writing in local storage
+    //     $filePath = storage_path("app/public/{$filename}");
+    //     $file = fopen($filePath, 'w');
+    //     fputcsv($file, $columns); // Write headers
+    //     fclose($file);
+
+    //     // Make sure the file is accessible (ensure 'public' disk is linked)
+    //     $url = asset("storage/{$filename}");
+
+    //     return response()->json([
+    //         'status' => 'success',
+    //         'url' => $url
+    //     ]);
+    // }
+
     public function employeeTemplateCsvUrl()
 {
     $filename = 'csv_tem/employee_template.csv';
-   
-    $columns = [
-        "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
-    ];
-    // Open file for writing in local storage
+
+    // Dummy data (array of stdClass or arrays)
+    $products = collect([
+        (object)[
+            'employee_id' => 'EMP01',
+            'employee_name' => 'Employee',
+            'department' => (object)['name' => 'HR'],
+            'work_station' => (object)['name' => 'Document management'],
+            'access_for_login' => '1',
+            'role_id' => (object)['role_name' => 'Employee'],
+            'email' => 'demo@gmail.com',
+            'password' => 'Demo@123456',
+           
+        ]
+    ]);
+
+    // Map products to desired format
+    $products = $products->map(function ($product) {
+        return [
+            'employee_id' => $product->employee_id,
+            'employee_name' => $product->employee_name,
+            'department' => optional($product->department)->name,
+            'work_station' => optional($product->work_station)->name,
+            'access_for_login' => $product->access_for_login,
+            'role_id' => optional($product->role_id)->role_name,
+            'email' => $product->email,
+            'password' => $product->password,
+        ];
+    });
+
+    // CSV column headers
+   $columns = [
+            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+        ];
+
+    //     $columns = [
+//         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+//         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+//         "unit_of_measure", "per_unit_cost", "total_cost", "status"
+//     ];
+
+    // Create CSV file
     $filePath = storage_path("app/public/{$filename}");
+    if (!file_exists(dirname($filePath))) {
+        mkdir(dirname($filePath), 0755, true);
+    }
+
     $file = fopen($filePath, 'w');
-    fputcsv($file, $columns); // Write headers
+    fputcsv($file, $columns); // Headers
+
+    foreach ($products as $product) {
+        fputcsv($file, $product);
+    }
+
     fclose($file);
 
-    // Make sure the file is accessible (ensure 'public' disk is linked)
+    // Return download URL
     $url = asset("storage/{$filename}");
 
     return response()->json([
