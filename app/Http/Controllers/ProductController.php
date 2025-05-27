@@ -1199,7 +1199,7 @@ public function store(Request $request)
         $stocks = InventoryAdjustmentReports::with([
             'product.category', // Load category via product
             'category:id,name','vendor:id,vendor_name','location:id,name'
-        ])->where('new_stock', '>', 0)->orderBy('id', 'desc')->get();
+        ])->where('new_stock', '>', 0)->where('quantity', '>', 0)->orderBy('id', 'desc')->get();
 
 
         $adjustments = $stocks->map(function ($stock) {
@@ -2011,15 +2011,39 @@ if (!empty($settings)) {
         'sub_category:id,name'
     ])->orderBy('id', 'desc')->get();
 
-    $products = $products->map(function ($product) {
+    // $products = $products->map(function ($product) {
+    //     return [
+    //         'id' => $product->id,
+    //         'product_name' => $product->product_name,
+    //         'sku' => $product->sku,
+    //         'category_name' => optional($product->category)->name,
+    //         'subcategory_name' => optional($product->sub_category)->name,
+    //         'manufacturer' => $product->manufacturer,
+    //         'vendor_name' => optional($product->vendor)->vendor_name,
+    //         'model' => $product->model,
+    //         'unit_of_measurement_category' => $product->unit_of_measurement_category,
+    //         'description' => $product->description,
+    //         'returnable' => $product->returnable,
+    //         'commit_stock_check' => $product->commit_stock_check,
+    //         'inventory_alert_threshold' => $product->inventory_alert_threshold,
+    //         'opening_stock' => $product->opening_stock,
+    //         'location_id' => $product->location_id,
+    //         'quantity' => $product->quantity,
+    //         'unit_of_measure' => $product->unit_of_measure,
+    //         'per_unit_cost' => $product->per_unit_cost,
+    //         'total_cost' => $product->total_cost,
+    //         'status' => $product->status,
+    //     ];
+    // });
+
+     $products = $products->map(function ($product) {
         return [
-            'id' => $product->id,
             'product_name' => $product->product_name,
             'sku' => $product->sku,
-            'category_name' => optional($product->category)->name,
-            'subcategory_name' => optional($product->sub_category)->name,
+            'category_id' => optional($product->category)->name,
+            'sub_category_id' => optional($product->sub_category)->name,
             'manufacturer' => $product->manufacturer,
-            'vendor_name' => optional($product->vendor)->vendor_name,
+            'vendor_id' => optional($product->vendor)->vendor_name,
             'model' => $product->model,
             'unit_of_measurement_category' => $product->unit_of_measurement_category,
             'description' => $product->description,
@@ -2052,12 +2076,18 @@ if (!empty($settings)) {
     //     'width', 'depth', 'measurement_unit', 'inventory_alert_threshold', 'status'
     // ];
 
-    $columns = [
-        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+    // $columns = [
+    //     "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+    //     "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+    //     "unit_of_measure", "per_unit_cost", "total_cost", "status"
+    // ];
+
+      $columns = [
+        "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
+        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable",
+        "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
     ];
-
 
     $callback = function () use ($products, $columns) {
         $file = fopen('php://output', 'w');
@@ -2075,45 +2105,138 @@ if (!empty($settings)) {
 
 
 
+// public function generateTemplateCsvUrl()
+// {
+//     $filename = 'csv_tem/product_template.csv';
+
+//    $products = $products->map(function ($product) {
+//         return [
+//             'id' => '1',
+//             'product_name' => $product->product_name,
+//             'sku' => $product->sku,
+//             'category_name' => optional($product->category)->name,
+//             'subcategory_name' => optional($product->sub_category)->name,
+//             'manufacturer' => $product->manufacturer,
+//             'vendor_name' => optional($product->vendor)->vendor_name,
+//             'model' => $product->model,
+//             'unit_of_measurement_category' => $product->unit_of_measurement_category,
+//             'description' => $product->description,
+//             'returnable' => $product->returnable,
+//             'commit_stock_check' => $product->commit_stock_check,
+//             'inventory_alert_threshold' => $product->inventory_alert_threshold,
+//             'opening_stock' => $product->opening_stock,
+//             'location_id' => $product->location_id,
+//             'quantity' => $product->quantity,
+//             'unit_of_measure' => $product->unit_of_measure,
+//             'per_unit_cost' => $product->per_unit_cost,
+//             'total_cost' => $product->total_cost,
+//             'status' => $product->status,
+//         ];
+//     });
+
+//     $columns = [
+//         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+//         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+//         "unit_of_measure", "per_unit_cost", "total_cost", "status"
+//     ];
+
+//     $filePath = storage_path("app/public/{$filename}");
+//     $file = fopen($filePath, 'w');
+//     fputcsv($file, $columns); // Write headers
+//     fclose($file);
+//     $url = asset("storage/{$filename}");
+
+//     return response()->json([
+//         'status' => 'success',
+//         'url' => $url
+//     ]);
+// }
+
+
 public function generateTemplateCsvUrl()
 {
     $filename = 'csv_tem/product_template.csv';
 
-    // CSV header columns
-    // $columns = [
-    //     "product_name", "sku", "units", "category_id", "sub_category_id", "manufacturer",
-    //     "vendor_id", "model", "location_id", "description","returnable", "track_inventory", "opening_stock",
-    //     "selling_cost", "cost_price", "commit_stock_check","project_name",
-    //     "weight", "weight_unit", "length", "width",
-    //     "depth", "measurement_unit","inventory_alert_threshold","status" 
-    // ];
-    // $columns = [
-    //     "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
-    //     "vendor_id", "model", "description", "location_id", "current_stock", "units","opening_stock_total_stock", "inventory_alert_threshold",
-    //     "selling_cost", "cost_price", "commit_stock_check", "project_name",
-    //     "weight", "weight_unit", "length", "width",
-    //     "depth", "measurement_unit", "returnable", "status"
-    // ];
+    // Dummy data (array of stdClass or arrays)
+    $products = collect([
+        (object)[
+            'product_name' => 'Sample Product',
+            'sku' => 'SKU123',
+            'category' => (object)['name' => 'Electronics'],
+            'sub_category' => (object)['name' => 'Mobile'],
+            'manufacturer' => 'Samsung',
+            'vendor' => (object)['vendor_name' => 'ABC Vendor'],
+            'model' => 'ModelX',
+            'unit_of_measurement_category' => 'Pieces',
+            'description' => 'A sample product',
+            'returnable' => '1',
+            'commit_stock_check' => '1',
+            'inventory_alert_threshold' => 10,
+            'opening_stock' => 100,
+            'location_id' => json_encode(["1", "2"]),
+            'quantity' => json_encode(["50", "50"]),
+            'unit_of_measure' => 'pcs',
+            'per_unit_cost' => 200,
+            'total_cost' => 20000,
+            'status' => 'active',
+        ]
+    ]);
+
+    // Map products to desired format
+    $products = $products->map(function ($product) {
+        return [
+            'product_name' => $product->product_name,
+            'sku' => $product->sku,
+            'category_id' => optional($product->category)->name,
+            'sub_category_id' => optional($product->sub_category)->name,
+            'manufacturer' => $product->manufacturer,
+            'vendor_id' => optional($product->vendor)->vendor_name,
+            'model' => $product->model,
+            'unit_of_measurement_category' => $product->unit_of_measurement_category,
+            'description' => $product->description,
+            'returnable' => $product->returnable,
+            'commit_stock_check' => $product->commit_stock_check,
+            'inventory_alert_threshold' => $product->inventory_alert_threshold,
+            'opening_stock' => $product->opening_stock,
+            'location_id' => $product->location_id,
+            'quantity' => $product->quantity,
+            'unit_of_measure' => $product->unit_of_measure,
+            'per_unit_cost' => $product->per_unit_cost,
+            'total_cost' => $product->total_cost,
+            'status' => $product->status,
+        ];
+    });
+
+    // CSV column headers
     $columns = [
-        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+        "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
+        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable",
+        "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
         "unit_of_measure", "per_unit_cost", "total_cost", "status"
     ];
 
-    // $columns = array_map('trim', [
-    //     "Part names","SKU","Stock location","Current stock","Stock unit","Unit cost",
-    //     "Category","Sub category","Manufacture","Vendor","Model","Description",
-    //     "Threshold","Weight","Weight unit","dim_Length","dim_Width",
-    //     "dim_Height","dim_Measurement_Unit","Status"
-    // ]);
+    //     $columns = [
+//         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+//         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
+//         "unit_of_measure", "per_unit_cost", "total_cost", "status"
+//     ];
 
-    // Open file for writing in local storage
+    // Create CSV file
     $filePath = storage_path("app/public/{$filename}");
+    if (!file_exists(dirname($filePath))) {
+        mkdir(dirname($filePath), 0755, true);
+    }
+
     $file = fopen($filePath, 'w');
-    fputcsv($file, $columns); // Write headers
+    fputcsv($file, $columns); // Headers
+
+    foreach ($products as $product) {
+        fputcsv($file, $product);
+    }
+
     fclose($file);
 
-    // Make sure the file is accessible (ensure 'public' disk is linked)
+    // Return download URL
     $url = asset("storage/{$filename}");
 
     return response()->json([
@@ -2121,6 +2244,7 @@ public function generateTemplateCsvUrl()
         'url' => $url
     ]);
 }
+
 
 }
 
