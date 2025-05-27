@@ -1167,8 +1167,8 @@ public function store(Request $request)
 
 
         $adjustments = $stocks->map(function ($stock) {
-            $adjustmentSymbol = $stock->adjustment == 'Subtract' ? '-' : '+';
-            $newStock = $stock->adjustment == 'Subtract'
+            $adjustmentSymbol = $stock->adjustment == 'subtract' ? '-' : '+';
+            $newStock = $stock->adjustment == 'subtract'
                 ? $stock->current_stock - $stock->quantity
                 : $stock->current_stock + $stock->quantity;
 
