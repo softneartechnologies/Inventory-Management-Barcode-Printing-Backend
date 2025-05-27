@@ -1775,24 +1775,35 @@ public function uploadCSV(Request $request)
         ]);
      
         $totalStock = 0;
-        foreach ($locationIds as $locationId) {
-            // print_r($locationId);die;
-            $currentStock = (int)$row[14];
-            $totalStock += $currentStock;
-    
-            Stock::create([
-                'product_id'    => $product->id,
-                'vendor_id'     => $vendor->id,
-                'category_id'   => $category->id,
-                'current_stock' => $currentStock,
-                'quantity' => (float) $row[14],
-                'unit_of_measure' => (float) $row[15],
-                'per_unit_cost' => $row[16],
-                'total_cost' => (float) $row[17],
-                'location_id'   => $locationId,
-                'stock_date'    => now(),
-            ]);
-        }
+       // Decode JSON string fields (only once)
+$quantities = json_decode($row[14], true);         // e.g. ["50", "60"]
+$unitMeasures = json_decode($row[15], true);       // e.g. ["pcs", "box"]
+$perUnitCosts = json_decode($row[16], true);       // e.g. ["10", "12"]
+$totalCosts = json_decode($row[17], true);         // e.g. ["500", "720"]
+
+foreach ($locationIds as $index => $locationId) {
+    $quantity = isset($quantities[$index]) ? (float)$quantities[$index] : 0;
+    $unit_of_measure = isset($unitMeasures[$index]) ? $unitMeasures[$index] : '';
+    $perUnitCost = isset($perUnitCosts[$index]) ? (float)$perUnitCosts[$index] : 0;
+    $total_cost = isset($totalCosts[$index]) ? (float)$totalCosts[$index] : 0;
+
+    $currentStock = $quantity;
+    $totalStock += $currentStock;
+
+    Stock::create([
+        'product_id'       => $product->id,
+        'vendor_id'        => $vendor->id,
+        'category_id'      => $category->id,
+        'current_stock'    => $currentStock,
+        'quantity'         => $quantity,
+        'unit_of_measure'  => $unit_of_measure,
+        'per_unit_cost'    => $perUnitCost,
+        'total_cost'       => $total_cost,
+        'location_id'      => $locationId,
+        'stock_date'       => now(),
+    ]);
+}
+
         $product->opening_stock = $totalStock;
         $product->opening_stock = $totalStock;
         $product->save();
