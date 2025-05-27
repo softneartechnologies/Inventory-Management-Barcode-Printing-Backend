@@ -113,8 +113,8 @@ class DashboardController extends Controller
     // Aapko yeh variables khud define karne honge
     $productCount = $totalProducts;
     $employeeUsingProduct = 0; // Define as needed
-    $low_stock_alert = []; // Define as needed
-    $allMonths = []; // Define as needed
+    // $low_stock_alert = []; // Define as needed
+    // $allMonths = []; // Define as needed
     $returnableNonReturnableItems = []; // Define as needed
 
      $scanRecords = ScanInOutProduct::with([
