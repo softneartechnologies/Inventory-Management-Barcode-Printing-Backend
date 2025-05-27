@@ -831,15 +831,21 @@ public function store(Request $request)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
 
+                $currentStock = $product_location->current_stock;
+               
+                
+
+
             $quantity = $multiData['quantity'];
             $adjustment = $multiData['adjustment'];
 
             if ($product_location) {
                 // Update existing stock record
-                // $currentStock = $product_location->current_stock;
-                $currentStock = $multiData['current_stock'];
+                $currentStock = $product_location->current_stock;
+                // $currentStock = $multiData['current_stock'];
 
                 if ($adjustment === 'add') {
+                    
                     $newStock = $currentStock + $quantity;
                     $productOpeningStock = $product->opening_stock + $quantity;
                 } else {
@@ -864,12 +870,41 @@ public function store(Request $request)
                 $product_location->update($stockData);
 
                 
+        $quantity = $quantity;
+             if ($adjustment === 'add') {
+                 $productOpeningStock = $product->opening_stock + $quantity;
+             }else{
+                $productOpeningStock = $product->opening_stock - $quantity;
+             }
+        $locationIds = json_decode($product->location_id); 
+        $quantities = json_decode($product->quantity); 
+        $pdate = array_combine($locationIds, $quantities);
+        $rlocationId = $multiData['location_id'];
+         if ($adjustment === 'add') {
+                 $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+             }else{
+                $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+             }
+
+        
+        $updatedQuantities = [];
+        foreach ($locationIds as $lid) {
+            $updatedQuantities[] = $pdate[$lid];
+        }
+
+        $totalQuantity = array_sum($updatedQuantities);
+        // Step 6: Update the product
+        $product->update([
+            'opening_stock' => $productOpeningStock,
+            'quantity' => json_encode($updatedQuantities)
+        ]);
 
                 
             } else {
                 // Create new stock record
-                $currentStock = $multiData['current_stock'] ?? 0;
-
+                // $currentStock = $multiData['current_stock'] ?? 0;
+                 $currentStock = $product_location->current_stock;
+                
                 if ($adjustment === 'add') {
                     $newStock = $currentStock + $quantity;
                     $productOpeningStock = $product->opening_stock + $quantity;
@@ -896,17 +931,47 @@ public function store(Request $request)
                 ];
 
                 Stock::create($stockData);
-            }
+           
 
             
 
+        $quantity = $quantity;
+             if ($adjustment === 'add') {
+                 $productOpeningStock = $product->opening_stock + $quantity;
+             }else{
+                $productOpeningStock = $product->opening_stock - $quantity;
+             }
+        $locationIds = json_decode($product->location_id); 
+        $quantities = json_decode($product->quantity); 
+        $pdate = array_combine($locationIds, $quantities);
+        $rlocationId = $multiData['location_id'];
+         if ($adjustment === 'add') {
+                 $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+             }else{
+                $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+             }
 
-
-            // $product->update(['opening_stock' => $productOpeningStock]);
-            $product->update(['opening_stock' => $validatedRequest['opening_stock']]);
+        
+        $updatedQuantities = [];
+        foreach ($locationIds as $lid) {
+            $updatedQuantities[] = $pdate[$lid];
         }
 
+        $totalQuantity = array_sum($updatedQuantities);
+        // Step 6: Update the product
+        $product->update([
+            'opening_stock' => $productOpeningStock,
+            'quantity' => json_encode($updatedQuantities)
+        ]);
+
+            // $product->update(['opening_stock' => $productOpeningStock]);
+            // $product->update(['opening_stock' => $validatedRequest['opening_stock']]);
+        }
+ }
             foreach ($multiLocation as $multiData) {
+                  $product_location = Stock::where('product_id', $product_id)
+                ->where('location_id', $multiData['location_id'])
+                ->first();
                 // $product_location = InventoryAdjustmentReports::where('product_id', $product_id)
                 //     ->where('location_id', $multiData['location'])
                 //     ->first();
@@ -946,8 +1011,9 @@ public function store(Request $request)
                     if($adjustment!='select'){
                         
                     
-                    $currentStock = $multiData['current_stock'] ?? 0;
-    
+                    // $currentStock = $multiData['current_stock'] ?? 0;
+                         $currentStock = $product_location->current_stock;
+                
                     if ($adjustment == 'add') {
                         $newStock = $currentStock + $quantity;
                         $productOpeningStock = $product->opening_stock + $quantity;
