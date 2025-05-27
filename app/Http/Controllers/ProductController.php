@@ -1672,14 +1672,24 @@ public function uploadCSV(Request $request)
         
         $locationString = $row[13];
         $locationNames = explode(",", $locationString);
+        $joinedString = implode(',', $locationNames);
+    $finalArray = json_decode($joinedString, true);
+    // print_r($finalArray);die;
     
-    // print_r($locationNames);die;
         $locationIds = [];
         
-        if (is_array($locationNames)) {
-            foreach ($locationNames as $name) {
+        if (is_array($finalArray)) {
+
+            foreach ($finalArray as $name) {
                 $name = trim($name);
-        
+                // $joined = implode('', $name);
+
+// Step 2: Decode the JSON string to get the array
+// $cleanArray = json_decode($joined, true);
+
+// Step 3: Convert the final array to string
+// $finalString = implode(',', $cleanArray);
+        // print_r($name);die;
                 $location = \App\Models\Location::firstOrCreate(
                     ['name' => $name],
                     ['name' => $name]
