@@ -509,66 +509,64 @@ class EmployeeController extends Controller
     // }
 
     public function employeeTemplateCsvUrl()
-{
-    $filename = 'csv_tem/employee_template.csv';
+    {
+        $filename = 'csv_tem/employee_template.csv';
+        $employees = collect([
+            (object)[
+                'employee_id' => 'EMP01',
+                'employee_name' => 'Employee',
+                'department' => (object)['name' => 'HR'],
+                'work_station' => (object)['name' => 'Document management'],
+                'access_for_login' => '1',
+                'role_id' => (object)['role_name' => 'Employee'],
+                'email' => 'demo@gmail.com',
+                'password' => 'Demo@123456',
+            
+            ]
+        ]);
 
-    // Dummy data (array of stdClass or arrays)
-    $products = collect([
-        (object)[
-            'employee_id' => 'EMP01',
-            'employee_name' => 'Employee',
-            'department' => (object)['name' => 'HR'],
-            'work_station' => (object)['name' => 'Document management'],
-            'access_for_login' => '1',
-            'role_id' => (object)['role_name' => 'Employee'],
-            'email' => 'demo@gmail.com',
-            'password' => 'Demo@123456',
-           
-        ]
-    ]);
+        // Map employee to desired format
+        $employees = $employees->map(function ($employee) {
+            return [
+                'employee_id' => $employee->employee_id,
+                'employee_name' => $employee->employee_name,
+                'department' => optional($employee->department)->name,
+                'work_station' => optional($employee->work_station)->name,
+                'access_for_login' => $employee->access_for_login,
+                'role_id' => optional($employee->role_id)->role_name,
+                'email' => $employee->email,
+                'password' => $employee->password,
+            ];
+        });
 
-    // Map products to desired format
-    $products = $products->map(function ($product) {
-        return [
-            'employee_id' => $product->employee_id,
-            'employee_name' => $product->employee_name,
-            'department' => optional($product->department)->name,
-            'work_station' => optional($product->work_station)->name,
-            'access_for_login' => $product->access_for_login,
-            'role_id' => optional($product->role_id)->role_name,
-            'email' => $product->email,
-            'password' => $product->password,
-        ];
-    });
-
-    // CSV column headers
-   $columns = [
-            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
-        ];
+        // CSV column headers
+        $columns = [
+                "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+            ];
 
 
-    // Create CSV file
-    $filePath = storage_path("app/public/{$filename}");
-    if (!file_exists(dirname($filePath))) {
-        mkdir(dirname($filePath), 0755, true);
+        // Create CSV file
+        $filePath = storage_path("app/public/{$filename}");
+        if (!file_exists(dirname($filePath))) {
+            mkdir(dirname($filePath), 0755, true);
+        }
+
+        $file = fopen($filePath, 'w');
+        fputcsv($file, $columns); // Headers
+
+        foreach ($employees as $employee) {
+            fputcsv($file, $employee);
+        }
+
+        fclose($file);
+
+        // Return download URL
+        $url = asset("storage/{$filename}");
+
+        return response()->json([
+            'status' => 'success',
+            'url' => $url
+        ]);
     }
-
-    $file = fopen($filePath, 'w');
-    fputcsv($file, $columns); // Headers
-
-    foreach ($products as $product) {
-        fputcsv($file, $product);
-    }
-
-    fclose($file);
-
-    // Return download URL
-    $url = asset("storage/{$filename}");
-
-    return response()->json([
-        'status' => 'success',
-        'url' => $url
-    ]);
-}
 
 }

@@ -8,6 +8,8 @@ use App\Models\Stock;
 use App\Models\Category;
 use App\Models\Subcategory;
 use App\Models\UomCategory;
+use App\Models\Manufacturer;
+use App\Models\UomUnit;
 use App\Models\Vendor;
 use App\Models\ScanInOutProduct;
 use App\Models\Unit;
@@ -1727,6 +1729,47 @@ public function uploadCSV(Request $request)
                 $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
                 $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
+                // $uomUnit = UomUnit::firstOrCreate(['name' => $row[15]], ['name' => $row[15]]);
+
+                // $uomUnit = UomUnit::firstOrCreate(
+                //     ['unit_name' => $row[15]],
+                //     ['unit_name' => $row[15], 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
+                // );
+
+
+
+                $uomUnitString = $row[15];
+            $uomNames = explode(",", $uomUnitString);
+            $joinedUomString = implode(',', $uomNames);
+            $finalUomArray = json_decode($joinedUomString, true);
+        // print_r($finalArray);die;
+        
+            $uomUnitsNames = [];
+            
+            if (is_array($finalUomArray)) {
+
+                foreach ($finalUomArray as $name) {
+                    $name = trim($name);
+                
+                    $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
+                         ['unit_name' => $name],
+                    ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
+                );
+            
+                    $uomUnitsNames[] = $uomUnitsName->unit_name;
+                }
+                } else {
+                    // Handle invalid JSON
+                    Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
+                }
+                // print_r($locationIds);die;
+
+
+                $manufacturer = Manufacturer::firstOrCreate(
+                    ['name' => $row[4]],
+                    ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
+                );
+
                 $category = Category::firstOrCreate(
                     ['name' => $row[2]],
                     ['name' => $row[2], 'description' => '']
@@ -1748,7 +1791,7 @@ public function uploadCSV(Request $request)
                     'generated_qrcode' => $qrCodeImage,
                     'category_id' => $category->id,
                     'sub_category_id' => $subcategory->id,
-                    'manufacturer' => $row[4],
+                    'manufacturer' => $manufacturer->name,
                     'vendor_id' => $vendor->id,
                     'model' => $row[6],
                     'unit_of_measurement_category' => $uomCategory->id,
@@ -1759,7 +1802,7 @@ public function uploadCSV(Request $request)
                     'opening_stock' => (int) $row[12],
                     'location_id' => json_encode($locationIds),
                     'quantity' => $row[14],
-                    'unit_of_measure' => $row[15],
+                    'unit_of_measure' => json_encode($uomUnitsNames),
                     'per_unit_cost' =>$row[16],
                     'total_cost' => $row[17],
                     'status' => $row[18],
