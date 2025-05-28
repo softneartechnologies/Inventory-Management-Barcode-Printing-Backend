@@ -2082,6 +2082,7 @@ if (!empty($settings)) {
     //     return response()->stream($callback, 200, $headers);
     // }
 
+
     public function downloadCsv()
 {
     $fileName = 'products.csv';
@@ -2167,6 +2168,7 @@ if (!empty($settings)) {
 
     return response()->stream($callback, 200, $headers);
 }
+
 
 
 
