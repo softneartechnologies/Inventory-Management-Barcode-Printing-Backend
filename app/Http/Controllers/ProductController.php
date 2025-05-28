@@ -1953,281 +1953,88 @@ if (!empty($settings)) {
 }
 
 
-    
-    // public function downloadCsv()
-    // {
-    //     $fileName = 'products.csv';
-    //     $products = Product::all();
-    
-    //     $headers = [
-    //         "Content-type" => "text/csv",
-    //         "Content-Disposition" => "attachment; filename=$fileName",
-    //         "Pragma" => "no-cache",
-    //         "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
-    //         "Expires" => "0"
-    //     ];
-    
-    //     $columns = ['id','product_name','sku','units','category_id','sub_category_id','manufacturer','vendor_id','model','location_id','description','returnable','track_inventory','opening_stock','selling_cost','cost_price','commit_stock_check','project_name','weight','weight_unit','length','width','depth','measurement_unit','inventory_alert_threshold','status'
-    // ];
-    
-    //     $callback = function() use ($products, $columns) {
-    //         $file = fopen('php://output', 'w');
-    //         fputcsv($file, $columns);
-    
-    //         foreach ($products as $product) {
-    //             fputcsv($file, [
-    //                 $product->id,
-    //                 $product->product_name,
-    //                 $product->sku,
-    //                 $product->units,
-    //                 $product->category_id,
-    //                 $product->sub_category_id,
-    //                 $product->manufacturer,
-    //                 $product->vendor_id,
-    //                 $product->model,
-    //                 $product->location_id,
-    //                 $product->description,
-    //                 $product->returnable,
-    //                 $product->track_inventory,
-    //                 $product->opening_stock,
-    //                 $product->selling_cost,
-    //                 $product->cost_price,
-    //                 $product->commit_stock_check,
-    //                 $product->project_name,
-    //                 $product->weight,
-    //                 $product->weight_unit,
-    //                 $product->length,
-    //                 $product->width,
-    //                 $product->depth,
-    //                 $product->measurement_unit,
-    //                 $product->inventory_alert_threshold,
-    //                 $product->status,
-    //             ]);
-    //         }
-    
-    //         fclose($file);
-    //     };
-    
-    //     return response()->stream($callback, 200, $headers);
-    // }
-    
-    // public function downloadCsv()
-    // {
-    //     $fileName = 'products.csv';
-
-    //     $products = Product::with([
-    //         'category:id,name',
-    //         'vendor:id,vendor_name',
-    //         'sub_category:id,name'
-    //     ])->orderBy('id', 'desc')->get();
 
 
-    //     $products = $products->map(function ($product) {
-    //         return [
-    //             'product_name' => $product->product_name,
-    //             'sku' => $product->sku,
-    //             'category_id' => optional($product->category)->name,
-    //             'sub_category_id' => optional($product->sub_category)->name,
-    //             'manufacturer' => $product->manufacturer,
-    //             'vendor_id' => optional($product->vendor)->vendor_name,
-    //             'model' => $product->model,
-    //             'unit_of_measurement_category' => $product->unit_of_measurement_category,
-    //             'description' => $product->description,
-    //             'returnable' => $product->returnable,
-    //             'commit_stock_check' => $product->commit_stock_check,
-    //             'inventory_alert_threshold' => $product->inventory_alert_threshold,
-    //             'opening_stock' => $product->opening_stock,
-    //             'location_id' => $product->location_id,
-    //             'quantity' => $product->quantity,
-    //             'unit_of_measure' => $product->unit_of_measure,
-    //             'per_unit_cost' => $product->per_unit_cost,
-    //             'total_cost' => $product->total_cost,
-    //             'status' => $product->status,
-    //         ];
-    //     });
+    public function downloadCsv()
+    {
+        $fileName = 'products.csv';
 
-    //     $headers = [
-    //         "Content-type" => "text/csv",
-    //         "Content-Disposition" => "attachment; filename=$fileName",
-    //         "Pragma" => "no-cache",
-    //         "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
-    //         "Expires" => "0"
-    //     ];
+        $products = Product::with([
+            'category:id,name',
+            'vendor:id,vendor_name',
+            'sub_category:id,name'
+        ])->orderBy('id', 'desc')->get();
 
-    
-    //     $columns = [
-    //         "product_name", "sku", "category_id", "sub_category_id", "manufacturer",
-    //         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable",
-    //         "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
-    //         "unit_of_measure", "per_unit_cost", "total_cost", "status"
-    //     ];
-
-    //     $callback = function () use ($products, $columns) {
-    //         $file = fopen('php://output', 'w');
-    //         fputcsv($file, $columns);
-
-    //         foreach ($products as $product) {
-    //             fputcsv($file, array_values($product));
-    //         }
-
-    //         fclose($file);
-    //     };
-
-    //     return response()->stream($callback, 200, $headers);
-    // }
-
-    // public function downloadCsv()
-    // {
-    //     $fileName = 'products.csv';
-
-    //     $products = Product::with([
-    //         'category:id,name',
-    //         'vendor:id,vendor_name',
-    //         'sub_category:id,name'
-    //     ])->orderBy('id', 'desc')->get();
-
-    //     $products = $products->map(function ($product) {
-    //         // Decode location IDs
-    //         $locationNames = '';
-    //         if (!empty($product->location_id)) {
-    //             $locationIds = json_decode($product->location_id, true);
-    //             if (is_array($locationIds)) {
-    //                 $names = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
-    //                 $locationNames = implode(', ', $names);
-    //             }
-    //         }
-
-    //         return [
-    //             'Product Name' => $product->product_name,
-    //             'SKU' => $product->sku,
-    //             'Category' => optional($product->category)->name,
-    //             'Sub Category' => optional($product->sub_category)->name,
-    //             'Manufacturer' => $product->manufacturer,
-    //             'Vendor' => optional($product->vendor)->vendor_name,
-    //             'Model' => $product->model,
-    //             'Unit of Measurement Category' => $product->unit_of_measurement_category,
-    //             'Description' => $product->description,
-    //             'Returnable' => $product->returnable ? 'Yes' : 'No',
-    //             'Commit Stock Check' => $product->commit_stock_check,
-    //             'Inventory Alert Threshold' => $product->inventory_alert_threshold,
-    //             'Opening Stock' => $product->opening_stock,
-    //             'Location' => $locationNames,
-    //             'Quantity' => $product->quantity,
-    //             'Unit of Measure' => $product->unit_of_measure,
-    //             'Per Unit Cost' => $product->per_unit_cost,
-    //             'Total Cost' => $product->total_cost,
-    //             'Status' => $product->status,
-    //         ];
-    //     });
-
-    //     $headers = [
-    //         "Content-type" => "text/csv",
-    //         "Content-Disposition" => "attachment; filename=$fileName",
-    //         "Pragma" => "no-cache",
-    //         "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
-    //         "Expires" => "0"
-    //     ];
-
-    //     $columns = [
-    //         'Product Name', 'SKU', 'Category', 'Sub Category', 'Manufacturer',
-    //         'Vendor', 'Model', 'Unit of Measurement Category', 'Description', 'Returnable',
-    //         'Commit Stock Check', 'Inventory Alert Threshold', 'Opening Stock', 'Location',
-    //         'Quantity', 'Unit of Measure', 'Per Unit Cost', 'Total Cost', 'Status'
-    //     ];
-
-    //     $callback = function () use ($products, $columns) {
-    //         $file = fopen('php://output', 'w');
-    //         fputcsv($file, $columns); // write headers
-
-    //         foreach ($products as $product) {
-    //             $row = [];
-    //             foreach ($columns as $col) {
-    //                 $row[] = $product[$col] ?? '';
-    //             }
-    //             fputcsv($file, $row);
-    //         }
-
-    //         fclose($file);
-    //     };
-
-    //     return response()->stream($callback, 200, $headers);
-    // }
-
-        public function downloadCsv()
-{
-    $fileName = 'products.csv';
-
-    $products = Product::with([
-        'category:id,name',
-        'vendor:id,vendor_name',
-        'sub_category:id,name'
-    ])->orderBy('id', 'desc')->get();
-
-    $products = $products->map(function ($product) {
-        $locationNames = '';
-        if (!empty($product->location_id)) {
-            $locationIds = json_decode($product->location_id, true);
-            if (is_array($locationIds)) {
-                $names = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
-                $locationNames = implode(', ', $names);
+        $uomCategories = \App\Models\UomCategory::pluck('name', 'id');
+            $products = $products->map(function ($product) use ($uomCategories) {
+        // $products = $products->map(function ($product) {
+            $locationNames = '';
+            if (!empty($product->location_id)) {
+                $locationIds = json_decode($product->location_id, true);
+                if (is_array($locationIds)) {
+                    $names = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+                    $locationNames = implode(', ', $names);
+                }
             }
-        }
 
-        return [
-            'Product Name' => $product->product_name,
-            'SKU' => $product->sku,
-            'Category' => optional($product->category)->name,
-            'Sub Category' => optional($product->sub_category)->name,
-            'Manufacturer' => $product->manufacturer,
-            'Vendor' => optional($product->vendor)->vendor_name,
-            'Model' => $product->model,
-            'Unit of Measurement Category' => $product->unit_of_measurement_category,
-            'Description' => $product->description,
-            'Returnable' => $product->returnable ? 'Yes' : 'No',
-            'Commit Stock Check' => $product->commit_stock_check,
-            'Inventory Alert Threshold' => $product->inventory_alert_threshold,
-            'Opening Stock' => $product->opening_stock,
-            'Location' => $locationNames,
-            'Quantity' => $product->quantity,
-            'Unit of Measure' => $product->unit_of_measure,
-            'Per Unit Cost' => $product->per_unit_cost,
-            'Total Cost' => $product->total_cost,
-            'Status' => $product->status,
+
+            
+
+            return [
+                'Product Name' => $product->product_name,
+                'SKU' => $product->sku,
+                'Category' => optional($product->category)->name,
+                'Sub Category' => optional($product->sub_category)->name,
+                'Manufacturer' => $product->manufacturer,
+                'Vendor' => optional($product->vendor)->vendor_name,
+                'Model' => $product->model,
+                'Unit of Measurement Category' => $uomCategories[$product->unit_of_measurement_category] ?? '', 
+                'Description' => $product->description,
+                'Returnable' => $product->returnable ? 'Yes' : 'No',
+                'Commit Stock Check' => $product->commit_stock_check,
+                'Inventory Alert Threshold' => $product->inventory_alert_threshold,
+                'Opening Stock' => $product->opening_stock,
+                'Location' => $locationNames,
+                'Quantity' => $product->quantity,
+                'Unit of Measure' => $product->unit_of_measure,
+                'Per Unit Cost' => $product->per_unit_cost,
+                'Total Cost' => $product->total_cost,
+                'Status' => $product->status,
+            ];
+        });
+
+        $headers = [
+            "Content-type" => "text/csv",
+            "Content-Disposition" => "attachment; filename=$fileName",
+            "Pragma" => "no-cache",
+            "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
+            "Expires" => "0"
         ];
-    });
 
-    $headers = [
-        "Content-type" => "text/csv",
-        "Content-Disposition" => "attachment; filename=$fileName",
-        "Pragma" => "no-cache",
-        "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
-        "Expires" => "0"
-    ];
+        $columns = [
+            'Product Name', 'SKU', 'Category', 'Sub Category', 'Manufacturer',
+            'Vendor', 'Model', 'Unit of Measurement Category', 'Description', 'Returnable',
+            'Commit Stock Check', 'Inventory Alert Threshold', 'Opening Stock', 'Location',
+            'Quantity', 'Unit of Measure', 'Per Unit Cost', 'Total Cost', 'Status'
+        ];
 
-    $columns = [
-        'Product Name', 'SKU', 'Category', 'Sub Category', 'Manufacturer',
-        'Vendor', 'Model', 'Unit of Measurement Category', 'Description', 'Returnable',
-        'Commit Stock Check', 'Inventory Alert Threshold', 'Opening Stock', 'Location',
-        'Quantity', 'Unit of Measure', 'Per Unit Cost', 'Total Cost', 'Status'
-    ];
+        $callback = function () use ($products, $columns) {
+            $file = fopen('php://output', 'w');
+            fputcsv($file, $columns); // headers
 
-    $callback = function () use ($products, $columns) {
-        $file = fopen('php://output', 'w');
-        fputcsv($file, $columns); // headers
-
-        foreach ($products as $product) {
-            $row = [];
-            foreach ($columns as $col) {
-                $row[] = $product[$col] ?? '';
+            foreach ($products as $product) {
+                $row = [];
+                foreach ($columns as $col) {
+                    $row[] = $product[$col] ?? '';
+                }
+                fputcsv($file, $row);
             }
-            fputcsv($file, $row);
-        }
 
-        fclose($file);
-    };
+            fclose($file);
+        };
 
-    return response()->stream($callback, 200, $headers);
-}
+        return response()->stream($callback, 200, $headers);
+    }
 
 
 
