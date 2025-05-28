@@ -546,11 +546,6 @@ class EmployeeController extends Controller
             "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
         ];
 
-    //     $columns = [
-//         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-//         "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id", "quantity",
-//         "unit_of_measure", "per_unit_cost", "total_cost", "status"
-//     ];
 
     // Create CSV file
     $filePath = storage_path("app/public/{$filename}");
