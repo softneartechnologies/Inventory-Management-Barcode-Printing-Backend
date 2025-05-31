@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Machine;
+use App\Models\UomUnit;
 use App\Models\ScanInOutProduct;
  use Carbon\Carbon;
 class MachineController extends Controller
@@ -63,29 +64,13 @@ class MachineController extends Controller
 
     public function machineHistory($id, Request $request)
     {
-        //  $dateFilter = $request->query('date_filter');
-        
-        // if(!empty($dateFilter)){
-
        
-        // $scanRecords = ScanInOutProduct::with([
-        //     'product:id,product_name,sku,opening_stock',
-        //     'employee:id,employee_name',
-        //     'user:id,name','category:id,name','location:id,name'
-        // ])->where('machine_id',$id)->where('in_out_date_time',$dateFilter)->orderBy('id','desc')->get();
-        // }else{
-        //      $scanRecords = ScanInOutProduct::with([
-        //     'product:id,product_name,sku,opening_stock',
-        //     'employee:id,employee_name',
-        //     'user:id,name','category:id,name','location:id,name'
-        // ])->where('machine_id',$id)->orderBy('id','desc')->get();
-        // }
        
 
 $dateFilter = $request->query('date_filter');
 
 $scanQuery = ScanInOutProduct::with([
-    'product:id,product_name,sku,opening_stock',
+    'product:id,product_name,sku,opening_stock,per_unit_cost,unit_of_measure,unit_of_measurement_category,location_id',
     'employee:id,employee_name',
     'user:id,name',
     'category:id,name',
@@ -126,7 +111,29 @@ if (!empty($dateFilter)) {
 $scanRecords = $scanQuery->orderBy('id', 'desc')->get();
 
 
+
+
+         
         $scanRecords = $scanRecords->map(function ($scanRecords) {
+            $locationIds = json_decode($scanRecords->product->location_id); 
+            $per_unit_cost = json_decode($scanRecords->product->per_unit_cost); 
+            
+            $unit_of_measure = json_decode($scanRecords->product->unit_of_measure); 
+            $pdate = array_combine($locationIds, $per_unit_cost);
+            $udate = array_combine($locationIds, $unit_of_measure);
+
+            $per_unit_costvalue = isset($pdate[$scanRecords->location_id]) ? $pdate[$scanRecords->location_id] : null;
+            $unit_of_measurevalue = isset($udate[$scanRecords->location_id]) ? $udate[$scanRecords->location_id] : null;
+
+            // $measure_of_unit_ratio = UomUnit::where('uom_category_id', $scanRecords->product->unit_of_measurement_category)
+            //     ->where('unit_name', $unit_of_measurevalue)
+            //     ->first();
+            $measure_of_unit_ratio = UomUnit::where('unit_name', $unit_of_measurevalue)
+                ->first();
+
+// echo $value;
+// print_r($measure_of_unit_ratio->ratio);die;
+
             return [
                 'id' => $scanRecords->id,
                 'machine_id' => $scanRecords->machine_id,
@@ -143,6 +150,8 @@ $scanRecords = $scanQuery->orderBy('id', 'desc')->get();
                 'employee_id' => $scanRecords->employee_id,
                 'in_quantity' => $scanRecords->in_quantity,
                 'out_quantity' => $scanRecords->out_quantity,
+                'per_unit_cost' => $per_unit_costvalue,
+                'ratio'=>$measure_of_unit_ratio->ratio ?? null,
                 'previous_stock' => $scanRecords->previous_stock,
                 'total_current_stock' => $scanRecords->total_current_stock,
                 'threshold' => $scanRecords->threshold,
