@@ -413,10 +413,10 @@ class EmployeeController extends Controller
             }
 
             // Skip if user already exists
-            if (User::where('email', $row[5])->exists()) {
-                $rowNumber++;
-                continue;
-            }
+            // if (User::where('email', $row[5])->exists()) {
+            //     $rowNumber++;
+            //     continue;
+            // }
 
             // Get or create department
             $department = Department::firstOrCreate(
