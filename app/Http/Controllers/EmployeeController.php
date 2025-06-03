@@ -431,10 +431,14 @@ class EmployeeController extends Controller
             );
 
 
-             $role = Role::firstOrCreate(
-                ['name' => $row[5], 'guard_name' => 'api'],
-                ['name' => $row[5], 'guard_name' =>'api']
-            );
+            //  $role = Role::firstOrCreate(
+            //     ['name' => $row[5], 'guard_name' => 'api'],
+            //     ['name' => $row[5], 'guard_name' =>'api']
+            // );
+            $role = Role::firstOrCreate(
+    ['name' => $row[5], 'guard_name' => 'api'],
+    ['created_at' => now(), 'updated_at' => now()] // Optional
+);
 
             // Create employee
             if ($row[4] == "1") {
