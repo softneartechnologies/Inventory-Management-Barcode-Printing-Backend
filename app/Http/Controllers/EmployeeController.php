@@ -435,11 +435,7 @@ class EmployeeController extends Controller
             //     ['name' => $row[5], 'guard_name' => 'api'],
             //     ['name' => $row[5], 'guard_name' =>'api']
             // );
-            $role = Role::firstOrCreate(
-    ['name' => $row[5], 'guard_name' => 'api'],
-    ['created_at' => now(), 'updated_at' => now()] // Optional
-);
-
+            
             // Create employee
             if ($row[4] == "1") {
 
@@ -450,6 +446,11 @@ class EmployeeController extends Controller
                 'work_station'     => $row[3],
                 'access_for_login' => "true",
             ]);
+
+            $role = Role::firstOrCreate(
+    ['name' => $row[5], 'guard_name' => 'api'],
+    ['created_at' => now(), 'updated_at' => now()] // Optional
+);
 
                 $user = User::create([
                     'employee_id' => $employee->id,
