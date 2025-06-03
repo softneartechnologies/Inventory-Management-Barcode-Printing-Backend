@@ -385,7 +385,7 @@ class EmployeeController extends Controller
     public function uploadEmployeeCSV(Request $request)
     {
         $request->validate([
-            'file' => 'required|mimes:csv,txt|max:2048'
+            'file' => 'required'
         ]);
 
         $file = $request->file('file');
@@ -402,7 +402,7 @@ class EmployeeController extends Controller
         }
 
         $invalidRows = [];
-        $rowNumber = 2;
+        $rowNumber = 1;
 
         while ($row = fgetcsv($handle)) {
             $row = array_map('trim', $row);
@@ -430,12 +430,6 @@ class EmployeeController extends Controller
                 ['name' => $row[3], 'department_id' => $department->id]
             );
 
-            // Get role
-            // $role = Role::where('name', $row[5])->first();
-            // if (!$role) {
-            //     $invalidRows[] = $rowNumber++;
-            //     continue;
-            // }
 
              $role = Role::firstOrCreate(
                 ['name' => $row[5], 'guard_name' => 'api'],
@@ -444,6 +438,7 @@ class EmployeeController extends Controller
 
             // Create employee
             if ($row[4] == "1") {
+
             $employee = Employee::create([
                 'employee_id'    => $row[0],
                 'employee_name'    => $row[1],
@@ -452,8 +447,6 @@ class EmployeeController extends Controller
                 'access_for_login' => "true",
             ]);
 
-            // If login access is allowed, create user
-            
                 $user = User::create([
                     'employee_id' => $employee->id,
                     'role_id'     => $role->id,
