@@ -295,30 +295,19 @@ class EmployeeController extends Controller
     // ✅ Delete Employee
     public function destroy($id)
     {
-        // $employee = Employee::find($id);
-        // if (!$employee) {
-        //     return response()->json(['error' => 'Employee not found'], 404);
-        // }
-
-        // $employee->delete();
-        // $usersdata = User::where('employee_id',$id)->first();
-        // if(!empty($usersdata)){
-
-        //     $usersdata->delete();
-        // }
-
         $employee = Employee::find($id);
-        if ($employee) {
-            $employee->status = 'inactive';
-            $employee->save();
+        if (!$employee) {
+            return response()->json(['error' => 'Employee not found'], 404);
         }
 
-        // $usersdata = User::where('employee_id', $id)->first();
-        // if ($usersdata) {
-        //     $usersdata->status = 'inactive';
-        //     $usersdata->save();
-        // }
+        $employee->delete();
+        $usersdata = User::where('employee_id',$id)->first();
+        if(!empty($usersdata)){
 
+            $usersdata->delete();
+        }
+
+    
 
         return response()->json(['message' => 'Employee deleted successfully'], 200);
     }
@@ -583,6 +572,32 @@ class EmployeeController extends Controller
     //     ], 200);
     // }
 
+    public function updateStatus(Request $request, $id)
+    {
+        $employee = Employee::find($id);
+
+        if (!$employee) {
+            return response()->json([
+                'message' => 'Employee not found',
+                'status' => 404
+            ], 404);
+        }
+
+        // Optional: validate status from request
+        $request->validate([
+            'status' => 'required|in:active,inactive'
+        ]);
+
+        $employee->status = $request->status;
+        $employee->save();
+
+        return response()->json([
+            'message' => 'Employee status updated successfully',
+            'data' => $employee,
+            'status' => 200
+        ], 200);
+    }
+    
     public function uploadEmployeeCSV(Request $request)
 {
     $request->validate([

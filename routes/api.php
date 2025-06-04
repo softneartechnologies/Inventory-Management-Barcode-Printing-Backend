@@ -152,6 +152,7 @@ Route::prefix('employees')->group(function () {
     Route::delete('/delete/{id}', [EmployeeController::class, 'destroy']); // Delete employee
     Route::post('/upload-csv', [EmployeeController::class, 'uploadEmployeeCSV']);
     Route::get('/download-templateCsvUrl', [EmployeeController::class, 'employeeTemplateCsvUrl']);
+    Route::put('/update-status/{id}', [EmployeeController::class, 'updateStatus']);
 });
 
 // currencies
