@@ -405,154 +405,266 @@ class EmployeeController extends Controller
     //             'invalid_rows' => $invalidRows
     //         ], 200);
     //     }
+    // public function uploadEmployeeCSV(Request $request)
+    // {
+    //     $request->validate([
+    //         'file' => 'required'
+    //     ]);
+
+    //     $file = $request->file('file');
+    //     $handle = fopen($file->getPathname(), "r");
+
+    //     $header = fgetcsv($handle);
+    //     $expectedHeaders = array_map('trim', [
+    //         "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password","status"
+    //     ]);
+
+    //     $header = array_map('trim', $header);
+    //     if ($header !== $expectedHeaders) {
+    //         return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    //     }
+
+    //     $invalidRows = [];
+    //     $rowNumber = 1;
+
+    //     while ($row = fgetcsv($handle)) {
+    //         $row = array_map('trim', $row);
+
+    //         if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+    //             $invalidRows[] = $rowNumber++;
+    //             continue;
+    //         }
+
+    //         // Skip if user already exists
+    //         // if (User::where('email', $row[5])->exists()) {
+    //         //     $rowNumber++;
+    //         //     continue;
+    //         // }
+
+    //         // Get or create department
+    //         $department = Department::firstOrCreate(
+    //             ['name' => $row[2]],
+    //             ['description' => 'HR Department']
+    //         );
+
+    //         // Get or create workstation with department_id
+    //         $workstation = Workstation::firstOrCreate(
+    //             ['name' => $row[3], 'department_id' => $department->id],
+    //             ['name' => $row[3], 'department_id' => $department->id]
+    //         );
+
+
+    //         //  $role = Role::firstOrCreate(
+    //         //     ['name' => $row[5], 'guard_name' => 'api'],
+    //         //     ['name' => $row[5], 'guard_name' =>'api']
+    //         // );
+            
+    //         // Create employee
+    //         if ($row[4] == "1") {
+
+    //         // $employee = Employee::create([
+    //         //     'employee_id'    => $row[0],
+    //         //     'employee_name'    => $row[1],
+    //         //     'department'       => $row[2],
+    //         //     'work_station'     => $row[3],
+    //         //     'access_for_login' => "true",
+    //         // ]);
+    //         $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
+
+    //     if ($employee->exists) {
+    //         // Only update specific fields if record exists
+    //         $employee->department       = $row[2];
+    //         $employee->work_station     = $row[3];
+    //         $employee->access_for_login = "true";
+    //         $employee->status = $row[8];
+    //     } else {
+    //         // Create new record with all fields
+            
+    //         $employee->employee_id    = $row[0];
+    //         $employee->employee_name    = $row[1];
+    //         $employee->department       = $row[2];
+    //         $employee->work_station     = $row[3];
+    //         $employee->access_for_login = "true";
+    //         $employee->status = $row[8];
+    //     }
+
+    //     $employee->save();
+
+
+    //             $role = Role::where('name', $row[5])->first();
+
+    //             if (empty($role)) {
+    //                 $role = Role::create([
+    //                     'name' => $row[5],
+    //                     'guard_name' => 'api',
+    //                     'created_at' => now(),
+    //                     'updated_at' => now()
+    //                 ]);
+    //             }
+
+                
+    //         $existingUser = User::where('employee_id', $employee->id)->first();
+
+    //         if ($existingUser) {
+    //             // Check if email already taken by another user
+    //             $emailExists = User::where('email', $row[6])
+    //                             ->where('id', '!=', $existingUser->id)
+    //                             ->exists();
+
+    //             if (!$emailExists) {
+    //                $user =  $existingUser->update([
+    //                     'role_id'  => $role->id,
+    //                     'name'     => $row[1],
+    //                     'email'    => $row[6], // Safe to update
+    //                     'password' => Hash::make($row[7]),
+    //                 ]);
+    //                 $token = JWTAuth::fromUser($user);
+    //             } 
+    //             // else {
+    //             //     // Handle duplicate email case
+    //             //     // Example: Skip update or log error
+    //             //     // $token = JWTAuth::fromUser($user);
+    //             // }
+    //         } else {
+    //             // New user creation
+    //             $user = User::create([
+    //                 'employee_id' => $employee->id,
+    //                 'role_id'     => $role->id,
+    //                 'name'        => $row[1],
+    //                 'email'       => $row[6],
+    //                 'password'    => Hash::make($row[7]),
+    //             ]);
+    //             $token = JWTAuth::fromUser($user);
+    //         }
+
+
+    //             // Generate JWT token (optional)
+                
+    //         }else{
+    //         //     $employee = Employee::create([
+    //         //     'employee_id'    => $row[0],
+    //         //     'employee_name'    => $row[1],
+    //         //     'department'       => $department->name,
+    //         //     'work_station'     => $workstation->name,
+    //         //     'access_for_login' => "false",
+    //         // ]);
+
+    //         $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
+
+    //     if ($employee->exists) {
+    //         // Only update specific fields if record exists
+    //         $employee->department       = $row[2];
+    //         $employee->work_station     = $row[3];
+    //         $employee->access_for_login = "false";
+    //         $employee->status = $row[8];
+    //     } else {
+    //         // Create new record with all fields
+            
+    //         $employee->employee_id    = $row[0];
+    //         $employee->employee_name    = $row[1];
+    //         $employee->department       = $department->name;
+    //         $employee->work_station     = $workstation->name;
+    //         $employee->access_for_login = "false";
+    //         $employee->status = $row[8];
+    //     }
+
+    //     $employee->save();
+
+    //         }
+
+    //         $rowNumber++;
+    //     }
+
+    //     fclose($handle);
+
+    //     return response()->json([
+    //         'message'       => 'CSV uploaded successfully.',
+    //         'invalid_rows'  => $invalidRows
+    //     ], 200);
+    // }
+
     public function uploadEmployeeCSV(Request $request)
-    {
-        $request->validate([
-            'file' => 'required'
-        ]);
+{
+    $request->validate([
+        'file' => 'required|file|mimes:csv,txt'
+    ]);
 
-        $file = $request->file('file');
-        $handle = fopen($file->getPathname(), "r");
+    $file = $request->file('file');
+    $handle = fopen($file->getPathname(), "r");
 
-        $header = fgetcsv($handle);
-        $expectedHeaders = array_map('trim', [
-            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password","status"
-        ]);
+    $header = fgetcsv($handle);
+    $expectedHeaders = [
+        "employee_id", "employee_name", "department", "work_station",
+        "access_for_login", "role_id", "email", "password", "status"
+    ];
 
-        $header = array_map('trim', $header);
-        if ($header !== $expectedHeaders) {
-            return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    // Trim and compare headers
+    $header = array_map('trim', $header);
+    $expectedHeaders = array_map('trim', $expectedHeaders);
+
+    if ($header !== $expectedHeaders) {
+        return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    }
+
+    $invalidRows = [];
+    $rowNumber = 2; // start from 2 because 1 is header
+
+    while ($row = fgetcsv($handle)) {
+        $row = array_map('trim', $row);
+
+        // Basic validation: count and essential fields
+        if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+            $invalidRows[] = $rowNumber++;
+            continue;
         }
 
-        $invalidRows = [];
-        $rowNumber = 1;
+        // Create or fetch department
+        $department = Department::firstOrCreate(
+            ['name' => $row[2]],
+            ['description' => 'HR Department']
+        );
 
-        while ($row = fgetcsv($handle)) {
-            $row = array_map('trim', $row);
+        // Create or fetch workstation
+        $workstation = Workstation::firstOrCreate(
+            ['name' => $row[3], 'department_id' => $department->id]
+        );
 
-            if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
-                $invalidRows[] = $rowNumber++;
-                continue;
-            }
-
-            // Skip if user already exists
-            // if (User::where('email', $row[5])->exists()) {
-            //     $rowNumber++;
-            //     continue;
-            // }
-
-            // Get or create department
-            $department = Department::firstOrCreate(
-                ['name' => $row[2]],
-                ['description' => 'HR Department']
-            );
-
-            // Get or create workstation with department_id
-            $workstation = Workstation::firstOrCreate(
-                ['name' => $row[3], 'department_id' => $department->id],
-                ['name' => $row[3], 'department_id' => $department->id]
-            );
-
-
-            //  $role = Role::firstOrCreate(
-            //     ['name' => $row[5], 'guard_name' => 'api'],
-            //     ['name' => $row[5], 'guard_name' =>'api']
-            // );
-            
-            // Create employee
-            if ($row[4] == "1") {
-
-            // $employee = Employee::create([
-            //     'employee_id'    => $row[0],
-            //     'employee_name'    => $row[1],
-            //     'department'       => $row[2],
-            //     'work_station'     => $row[3],
-            //     'access_for_login' => "true",
-            // ]);
-            $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
-
-        if ($employee->exists) {
-            // Only update specific fields if record exists
-            $employee->department       = $row[2];
-            $employee->work_station     = $row[3];
-            $employee->access_for_login = "true";
-            $employee->status = $row[8];
-        } else {
-            // Create new record with all fields
-            
-            $employee->employee_id    = $row[0];
-            $employee->employee_name    = $row[1];
-            $employee->department       = $row[2];
-            $employee->work_station     = $row[3];
-            $employee->access_for_login = "true";
-            $employee->status = $row[8];
-        }
-
+        // Handle Employee (create or update)
+        $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
+        $employee->employee_name = $row[1];
+        $employee->department = $department->name;
+        $employee->work_station = $workstation->name;
+        $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+        $employee->status = $row[8];
         $employee->save();
 
+        // If access_for_login = 1, create/update user account
+        if ($row[4] == "1") {
+            // Handle Role
+            $role = Role::firstOrCreate(
+                ['name' => $row[5], 'guard_name' => 'api']
+            );
 
-                // $role = Role::firstOrCreate(
-                //     ['name' => $row[5], 'guard_name' => 'api'],
-                //     ['created_at' => now(), 'updated_at' => now()] // Optional
-                // );
-
-            //    $role = Role::updateOrCreate(
-            //         ['name' => $row[5], 'guard_name' => 'api'],
-            //         ['updated_at' => now()]
-            //     );
-
-                $role = Role::where('name', $row[5])->first();
-
-                if (empty($role)) {
-                    $role = Role::create([
-                        'name' => $row[5],
-                        'guard_name' => 'api',
-                        'created_at' => now(),
-                        'updated_at' => now()
-                    ]);
-                }
-
-                // $user = User::create([
-                //     'employee_id' => $employee->id,
-                //     'role_id'     => $role->id,
-                //     'name'        => $row[1],
-                //     'email'       => $row[6],
-                //     'password'    => Hash::make($row[7]),
-                // ]);
-
-            //     $user = User::updateOrCreate(
-            //     ['employee_id' => $employee->id], // Condition to check existing user
-            //     [
-            //         'role_id'  => $role->id,
-            //         'name'     => $row[1],
-            //         'email'    => $row[6],
-            //         'password' => Hash::make($row[7]),
-            //     ]
-            // );
+            // Handle User (create or update)
             $existingUser = User::where('employee_id', $employee->id)->first();
 
             if ($existingUser) {
-                // Check if email already taken by another user
-                $emailExists = User::where('email', $row[6])
-                                ->where('id', '!=', $existingUser->id)
-                                ->exists();
+                // Check for duplicate email
+                $emailTaken = User::where('email', $row[6])
+                    ->where('id', '!=', $existingUser->id)
+                    ->exists();
 
-                if (!$emailExists) {
-                   $user =  $existingUser->update([
+                if (!$emailTaken) {
+                    $existingUser->update([
                         'role_id'  => $role->id,
                         'name'     => $row[1],
-                        'email'    => $row[6], // Safe to update
+                        'email'    => $row[6],
                         'password' => Hash::make($row[7]),
                     ]);
-                    $token = JWTAuth::fromUser($user);
-                } 
-                // else {
-                //     // Handle duplicate email case
-                //     // Example: Skip update or log error
-                //     // $token = JWTAuth::fromUser($user);
-                // }
+                    // Optional: Generate token
+                    // $token = JWTAuth::fromUser($existingUser);
+                }
             } else {
-                // New user creation
                 $user = User::create([
                     'employee_id' => $employee->id,
                     'role_id'     => $role->id,
@@ -560,54 +672,21 @@ class EmployeeController extends Controller
                     'email'       => $row[6],
                     'password'    => Hash::make($row[7]),
                 ]);
-                $token = JWTAuth::fromUser($user);
+                // Optional: Generate token
+                // $token = JWTAuth::fromUser($user);
             }
-
-
-                // Generate JWT token (optional)
-                
-            }else{
-            //     $employee = Employee::create([
-            //     'employee_id'    => $row[0],
-            //     'employee_name'    => $row[1],
-            //     'department'       => $department->name,
-            //     'work_station'     => $workstation->name,
-            //     'access_for_login' => "false",
-            // ]);
-
-            $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
-
-        if ($employee->exists) {
-            // Only update specific fields if record exists
-            $employee->department       = $row[2];
-            $employee->work_station     = $row[3];
-            $employee->access_for_login = "false";
-            $employee->status = $row[8];
-        } else {
-            // Create new record with all fields
-            
-            $employee->employee_id    = $row[0];
-            $employee->employee_name    = $row[1];
-            $employee->department       = $department->name;
-            $employee->work_station     = $workstation->name;
-            $employee->access_for_login = "false";
-            $employee->status = $row[8];
         }
 
-        $employee->save();
-
-            }
-
-            $rowNumber++;
-        }
-
-        fclose($handle);
-
-        return response()->json([
-            'message'       => 'CSV uploaded successfully.',
-            'invalid_rows'  => $invalidRows
-        ], 200);
+        $rowNumber++;
     }
+
+    fclose($handle);
+
+    return response()->json([
+        'message'      => 'CSV uploaded successfully.',
+        'invalid_rows' => $invalidRows
+    ], 200);
+}
 
 
     // public function employeeTemplateCsvUrl()
