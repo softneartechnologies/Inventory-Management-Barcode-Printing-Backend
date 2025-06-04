@@ -622,16 +622,16 @@ class EmployeeController extends Controller
         $employee = Employee::firstOrNew(['employee_id' => $row[0]])->exists();
         if (!empty($employee)) {
             // Employee exists – DO NOT update name or ID
-            $employee->department       = $department->id;
-            $employee->work_station     = $workstation->id;
+            $employee->department       = $department->name;
+            $employee->work_station     = $workstation->name;
             $employee->access_for_login = $row[4] == "1" ? "true" : "false";
             $employee->status           = $row[8];
         } else {
             // New employee
             $employee->employee_id      = $row[0];
             $employee->employee_name    = $row[1];
-            $employee->department       = $department->id;
-            $employee->work_station     = $workstation->id;
+            $employee->department       = $department->name;
+            $employee->work_station     = $workstation->name;
             $employee->access_for_login = $row[4] == "1" ? "true" : "false";
             $employee->status           = $row[8];
         }
@@ -668,7 +668,7 @@ class EmployeeController extends Controller
                     'password' => Hash::make($row[7]),
                 ]);
 
-                
+
             } else {
                 // Email already exists? skip to avoid crash
                 if (User::where('email', $row[6])->exists()) {
