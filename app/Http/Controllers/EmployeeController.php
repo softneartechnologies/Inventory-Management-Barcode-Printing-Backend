@@ -631,18 +631,7 @@ class EmployeeController extends Controller
                 $employee->status           = $row[8];
             } else {
 
-                // Department
-                    $department = Department::firstOrCreate(
-                    ['name' => $row[2]],
-                    ['description' => 'HR Department']
-                );
-
-                // Get or create workstation with department_id
-                $workstation = Workstation::firstOrCreate(
-                    ['name' => $row[3], 'department_id' => $department->id],
-                    ['name' => $row[3], 'department_id' => $department->id]
-                );
-
+                
                 // New employee
                 $employee->employee_id      = $row[0];
                 $employee->employee_name    = $row[1];
