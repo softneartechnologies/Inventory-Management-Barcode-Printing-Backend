@@ -573,154 +573,154 @@ class EmployeeController extends Controller
     // }
 
     public function uploadEmployeeCSV(Request $request)
-{
-    $request->validate([
-        'file' => 'required|file|mimes:csv,txt'
-    ]);
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:csv,txt'
+        ]);
 
-    $file = $request->file('file');
-    $handle = fopen($file->getPathname(), "r");
+        $file = $request->file('file');
+        $handle = fopen($file->getPathname(), "r");
 
-    $header = fgetcsv($handle);
-    $expectedHeaders = array_map('trim', [
-        "employee_id", "employee_name", "department", "work_station",
-        "access_for_login", "role_id", "email", "password", "status"
-    ]);
+        $header = fgetcsv($handle);
+        $expectedHeaders = array_map('trim', [
+            "employee_id", "employee_name", "department", "work_station",
+            "access_for_login", "role_id", "email", "password", "status"
+        ]);
 
-    $header = array_map('trim', $header);
-    if ($header !== $expectedHeaders) {
-        return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
-    }
-
-    $invalidRows = [];
-    $rowNumber = 2; // CSV starts from line 2 after header
-
-    while (($row = fgetcsv($handle)) !== false) {
-        $row = array_map('trim', $row);
-
-        if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
-            $invalidRows[] = $rowNumber++;
-            continue;
+        $header = array_map('trim', $header);
+        if ($header !== $expectedHeaders) {
+            return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
         }
 
-       
-        // Role
+        $invalidRows = [];
+        $rowNumber = 2; // CSV starts from line 2 after header
+
+        while (($row = fgetcsv($handle)) !== false) {
+            $row = array_map('trim', $row);
+
+            if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+                $invalidRows[] = $rowNumber++;
+                continue;
+            }
+
         
+            // Role
+            
 
-        // Employee
-        $employee = Employee::firstOrNew(['employee_id' => $row[0]])->exists();
-        if (!empty($employee)) {
+            // Employee
+            $employee = Employee::firstOrNew(['employee_id' => $row[0]])->first();
+            if (!empty($employee)) {
 
-             // Department
-                 $department = Department::firstOrCreate(
-                ['name' => $row[2]],
-                ['description' => 'HR Department']
-            );
+                // Department
+                    $department = Department::firstOrCreate(
+                    ['name' => $row[2]],
+                    ['description' => 'HR Department']
+                );
 
-            // Get or create workstation with department_id
-            $workstation = Workstation::firstOrCreate(
-                ['name' => $row[3], 'department_id' => $department->id],
-                ['name' => $row[3], 'department_id' => $department->id]
-            );
+                // Get or create workstation with department_id
+                $workstation = Workstation::firstOrCreate(
+                    ['name' => $row[3], 'department_id' => $department->id],
+                    ['name' => $row[3], 'department_id' => $department->id]
+                );
 
 
-            // Employee exists – DO NOT update name or ID
-            $employee->department       = $department->name;
-            $employee->work_station     = $workstation->name;
-            $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-            $employee->status           = $row[8];
-        } else {
+                // Employee exists – DO NOT update name or ID
+                $employee->department       = $department->name;
+                $employee->work_station     = $workstation->name;
+                $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+                $employee->status           = $row[8];
+            } else {
 
-             // Department
-                 $department = Department::firstOrCreate(
-                ['name' => $row[2]],
-                ['description' => 'HR Department']
-            );
+                // Department
+                    $department = Department::firstOrCreate(
+                    ['name' => $row[2]],
+                    ['description' => 'HR Department']
+                );
 
-            // Get or create workstation with department_id
-            $workstation = Workstation::firstOrCreate(
-                ['name' => $row[3], 'department_id' => $department->id],
-                ['name' => $row[3], 'department_id' => $department->id]
-            );
+                // Get or create workstation with department_id
+                $workstation = Workstation::firstOrCreate(
+                    ['name' => $row[3], 'department_id' => $department->id],
+                    ['name' => $row[3], 'department_id' => $department->id]
+                );
 
-            // New employee
-            $employee->employee_id      = $row[0];
-            $employee->employee_name    = $row[1];
-            $employee->department       = $department->name;
-            $employee->work_station     = $workstation->name;
-            $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-            $employee->status           = $row[8];
-        }
-        $employee->save();
+                // New employee
+                $employee->employee_id      = $row[0];
+                $employee->employee_name    = $row[1];
+                $employee->department       = $department->name;
+                $employee->work_station     = $workstation->name;
+                $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+                $employee->status           = $row[8];
+            }
+            $employee->save();
 
-        // If login access allowed
-        if ($row[4] == "1") {
-       
-          
+            // If login access allowed
+            if ($row[4] == "1") {
+        
+            
 
-            $existingUser = User::where('employee_id', $employee->id)->first();
+                $existingUser = User::where('employee_id', $employee->id)->first();
 
-            if ($existingUser) {
-                // Check for email conflict with other users
-                $emailConflict = User::where('email', $row[6])
-                    ->where('id', '!=', $existingUser->id)
-                    ->exists();
+                if ($existingUser) {
+                    // Check for email conflict with other users
+                    $emailConflict = User::where('email', $row[6])
+                        ->where('id', '!=', $existingUser->id)
+                        ->exists();
 
-                if ($emailConflict) {
-                    $invalidRows[] = $rowNumber++;
-                    continue;
-                }
+                    if ($emailConflict) {
+                        $invalidRows[] = $rowNumber++;
+                        continue;
+                    }
 
-                 $role = Role::firstOrCreate(
+                    $role = Role::firstOrCreate(
+                            ['name' => trim($row[5]), 'guard_name' => 'api']
+                        );
+
+                        $roleId = $role->id;
+
+                    $existingUser->update([
+                        'role_id'  => $role->id,
+                        'name'     => $row[1],
+                        'email'    => $row[6],
+                        'password' => Hash::make($row[7]),
+                    ]);
+
+
+                } else {
+                    // Email already exists? skip to avoid crash
+                    if (User::where('email', $row[6])->exists()) {
+                        $invalidRows[] = $rowNumber++;
+                        continue;
+                    }
+                    $role = Role::firstOrCreate(
                         ['name' => trim($row[5]), 'guard_name' => 'api']
                     );
 
                     $roleId = $role->id;
-
-                $existingUser->update([
-                    'role_id'  => $role->id,
-                    'name'     => $row[1],
-                    'email'    => $row[6],
-                    'password' => Hash::make($row[7]),
-                ]);
-
-
-            } else {
-                // Email already exists? skip to avoid crash
-                if (User::where('email', $row[6])->exists()) {
-                    $invalidRows[] = $rowNumber++;
-                    continue;
-                }
-                $role = Role::firstOrCreate(
-                    ['name' => trim($row[5]), 'guard_name' => 'api']
-                );
-
-                $roleId = $role->id;
-                try {
-                    User::create([
-                        'employee_id' => $employee->id,
-                        'role_id'     => $role->id,
-                        'name'        => $row[1],
-                        'email'       => $row[6],
-                        'password'    => Hash::make($row[7]),
-                    ]);
-                } catch (\Exception $e) {
-                    $invalidRows[] = $rowNumber++;
-                    continue;
+                    try {
+                        User::create([
+                            'employee_id' => $employee->id,
+                            'role_id'     => $role->id,
+                            'name'        => $row[1],
+                            'email'       => $row[6],
+                            'password'    => Hash::make($row[7]),
+                        ]);
+                    } catch (\Exception $e) {
+                        $invalidRows[] = $rowNumber++;
+                        continue;
+                    }
                 }
             }
+
+            $rowNumber++;
         }
 
-        $rowNumber++;
+        fclose($handle);
+
+        return response()->json([
+            'message' => 'CSV uploaded successfully.',
+            'invalid_rows' => $invalidRows
+        ], 200);
     }
-
-    fclose($handle);
-
-    return response()->json([
-        'message' => 'CSV uploaded successfully.',
-        'invalid_rows' => $invalidRows
-    ], 200);
-}
 
 
     // public function updateStatus(Request $request, $id)
