@@ -615,7 +615,7 @@ class EmployeeController extends Controller
                     ['name' => $row[3], 'department_id' => $department->id],
                     ['name' => $row[3], 'department_id' => $department->id]
                 );
-
+// print_r($row[2]);die;
             // Employee
             $employee = Employee::firstOrNew(['employee_id' => $row[0]])->first();
             if (!empty($employee)) {
