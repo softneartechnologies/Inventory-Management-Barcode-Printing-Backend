@@ -145,6 +145,7 @@ Route::prefix('measurement-units')->group(function () {
 
 Route::prefix('employees')->group(function () {
     Route::get('/', [EmployeeController::class, 'index']); // Get all employees
+    Route::get('/inactiveEmployee', [EmployeeController::class, 'inactiveEmployee']); // Get all employees
     Route::post('/add', [EmployeeController::class, 'store']); // Create employee
     Route::get('/edit/{id}', [EmployeeController::class, 'show']); // Get single employee
     Route::put('/update/{id}', [EmployeeController::class, 'update']); // Update employee
