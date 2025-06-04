@@ -604,16 +604,16 @@ class EmployeeController extends Controller
         }
 
         // Department
-        $department = Department::firstOrCreate(
-            ['name' => $row[2]],
-            ['description' => 'HR Department']
-        );
+                 $department = Department::firstOrCreate(
+                ['name' => $row[2]],
+                ['description' => 'HR Department']
+            );
 
-        // Workstation
-        $workstation = Workstation::firstOrCreate(
-            ['name' => $row[3], 'department_id' => $department->id],
-            ['name' => $row[3], 'department_id' => $department->id]
-        );
+            // Get or create workstation with department_id
+            $workstation = Workstation::firstOrCreate(
+                ['name' => $row[3], 'department_id' => $department->id],
+                ['name' => $row[3], 'department_id' => $department->id]
+            );
 
         // Role
         
