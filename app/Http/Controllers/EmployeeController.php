@@ -14,13 +14,22 @@ use Tymon\JWTAuth\Facades\JWTAuth;
        
 class EmployeeController extends Controller
 {
-    // ✅ Get All Employees
+
     public function index()
     {
-        $employees = Employee::all();
+        // $employees = Employee::all();
+        $employees = Employee::where('status', 'active')->get();
+
         return response()->json($employees, 200);
     }
 
+    public function inactiveEmployee()
+    {
+        // $employees = Employee::all();
+        $employees = Employee::where('status', 'inactive')->get();
+
+        return response()->json($employees, 200);
+    }
     // ✅ Create a New Employee
     public function store(Request $request)
     {
@@ -286,17 +295,31 @@ class EmployeeController extends Controller
     // ✅ Delete Employee
     public function destroy($id)
     {
+        // $employee = Employee::find($id);
+        // if (!$employee) {
+        //     return response()->json(['error' => 'Employee not found'], 404);
+        // }
+
+        // $employee->delete();
+        // $usersdata = User::where('employee_id',$id)->first();
+        // if(!empty($usersdata)){
+
+        //     $usersdata->delete();
+        // }
+
         $employee = Employee::find($id);
-        if (!$employee) {
-            return response()->json(['error' => 'Employee not found'], 404);
+        if ($employee) {
+            $employee->status = 'inactive';
+            $employee->save();
         }
 
-        $employee->delete();
-        $usersdata = User::where('employee_id',$id)->first();
-        if(!empty($usersdata)){
+        // $usersdata = User::where('employee_id', $id)->first();
+        // if ($usersdata) {
+        //     $usersdata->status = 'inactive';
+        //     $usersdata->save();
+        // }
 
-            $usersdata->delete();
-        }
+
         return response()->json(['message' => 'Employee deleted successfully'], 200);
     }
     //   public function uploadEmployeeCSV(Request $request)
@@ -393,7 +416,7 @@ class EmployeeController extends Controller
 
         $header = fgetcsv($handle);
         $expectedHeaders = array_map('trim', [
-            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+            "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password","status"
         ]);
 
         $header = array_map('trim', $header);
@@ -439,19 +462,97 @@ class EmployeeController extends Controller
             // Create employee
             if ($row[4] == "1") {
 
-            $employee = Employee::create([
-                'employee_id'    => $row[0],
-                'employee_name'    => $row[1],
-                'department'       => $row[2],
-                'work_station'     => $row[3],
-                'access_for_login' => "true",
-            ]);
+            // $employee = Employee::create([
+            //     'employee_id'    => $row[0],
+            //     'employee_name'    => $row[1],
+            //     'department'       => $row[2],
+            //     'work_station'     => $row[3],
+            //     'access_for_login' => "true",
+            // ]);
+            $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
 
-            $role = Role::firstOrCreate(
-    ['name' => $row[5], 'guard_name' => 'api'],
-    ['created_at' => now(), 'updated_at' => now()] // Optional
-);
+        if ($employee->exists) {
+            // Only update specific fields if record exists
+            $employee->department       = $row[2];
+            $employee->work_station     = $row[3];
+            $employee->access_for_login = "true";
+            $employee->status = $row[8];
+        } else {
+            // Create new record with all fields
+            
+            $employee->employee_id    = $row[0];
+            $employee->employee_name    = $row[1];
+            $employee->department       = $row[2];
+            $employee->work_station     = $row[3];
+            $employee->access_for_login = "true";
+            $employee->status = $row[8];
+        }
 
+        $employee->save();
+
+
+                // $role = Role::firstOrCreate(
+                //     ['name' => $row[5], 'guard_name' => 'api'],
+                //     ['created_at' => now(), 'updated_at' => now()] // Optional
+                // );
+
+            //    $role = Role::updateOrCreate(
+            //         ['name' => $row[5], 'guard_name' => 'api'],
+            //         ['updated_at' => now()]
+            //     );
+
+                $role = Role::where('name', $row[5])->first();
+
+                if (empty($role)) {
+                    $role = Role::create([
+                        'name' => $row[5],
+                        'guard_name' => 'api',
+                        'created_at' => now(),
+                        'updated_at' => now()
+                    ]);
+                }
+
+                // $user = User::create([
+                //     'employee_id' => $employee->id,
+                //     'role_id'     => $role->id,
+                //     'name'        => $row[1],
+                //     'email'       => $row[6],
+                //     'password'    => Hash::make($row[7]),
+                // ]);
+
+            //     $user = User::updateOrCreate(
+            //     ['employee_id' => $employee->id], // Condition to check existing user
+            //     [
+            //         'role_id'  => $role->id,
+            //         'name'     => $row[1],
+            //         'email'    => $row[6],
+            //         'password' => Hash::make($row[7]),
+            //     ]
+            // );
+            $existingUser = User::where('employee_id', $employee->id)->first();
+
+            if ($existingUser) {
+                // Check if email already taken by another user
+                $emailExists = User::where('email', $row[6])
+                                ->where('id', '!=', $existingUser->id)
+                                ->exists();
+
+                if (!$emailExists) {
+                   $user =  $existingUser->update([
+                        'role_id'  => $role->id,
+                        'name'     => $row[1],
+                        'email'    => $row[6], // Safe to update
+                        'password' => Hash::make($row[7]),
+                    ]);
+                    $token = JWTAuth::fromUser($user);
+                } 
+                // else {
+                //     // Handle duplicate email case
+                //     // Example: Skip update or log error
+                //     // $token = JWTAuth::fromUser($user);
+                // }
+            } else {
+                // New user creation
                 $user = User::create([
                     'employee_id' => $employee->id,
                     'role_id'     => $role->id,
@@ -459,17 +560,42 @@ class EmployeeController extends Controller
                     'email'       => $row[6],
                     'password'    => Hash::make($row[7]),
                 ]);
+                $token = JWTAuth::fromUser($user);
+            }
+
 
                 // Generate JWT token (optional)
-                $token = JWTAuth::fromUser($user);
+                
             }else{
-                $employee = Employee::create([
-                'employee_id'    => $row[0],
-                'employee_name'    => $row[1],
-                'department'       => $department->name,
-                'work_station'     => $workstation->name,
-                'access_for_login' => "false",
-            ]);
+            //     $employee = Employee::create([
+            //     'employee_id'    => $row[0],
+            //     'employee_name'    => $row[1],
+            //     'department'       => $department->name,
+            //     'work_station'     => $workstation->name,
+            //     'access_for_login' => "false",
+            // ]);
+
+            $employee = Employee::firstOrNew(['employee_id' => $row[0]]);
+
+        if ($employee->exists) {
+            // Only update specific fields if record exists
+            $employee->department       = $row[2];
+            $employee->work_station     = $row[3];
+            $employee->access_for_login = "false";
+            $employee->status = $row[8];
+        } else {
+            // Create new record with all fields
+            
+            $employee->employee_id    = $row[0];
+            $employee->employee_name    = $row[1];
+            $employee->department       = $department->name;
+            $employee->work_station     = $workstation->name;
+            $employee->access_for_login = "false";
+            $employee->status = $row[8];
+        }
+
+        $employee->save();
+
             }
 
             $rowNumber++;
@@ -519,6 +645,7 @@ class EmployeeController extends Controller
                 'role_id' => (object)['role_name' => 'Employee'],
                 'email' => 'demo@gmail.com',
                 'password' => 'Demo@123456',
+                'status' => 'active',
             
             ]
         ]);
@@ -534,12 +661,13 @@ class EmployeeController extends Controller
                 'role_id' => optional($employee->role_id)->role_name,
                 'email' => $employee->email,
                 'password' => $employee->password,
+                'status' => $employee->status,
             ];
         });
 
         // CSV column headers
         $columns = [
-                "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password"
+                "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
             ];
 
 
