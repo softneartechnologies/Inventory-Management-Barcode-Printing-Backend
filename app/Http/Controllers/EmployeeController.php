@@ -668,6 +668,7 @@ class EmployeeController extends Controller
                     'password' => Hash::make($row[7]),
                 ]);
 
+                
             } else {
                 // Email already exists? skip to avoid crash
                 if (User::where('email', $row[6])->exists()) {
