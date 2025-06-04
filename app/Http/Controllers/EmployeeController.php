@@ -605,14 +605,7 @@ class EmployeeController extends Controller
 
         
             // Role
-            
-
-            // Employee
-            $employee = Employee::firstOrNew(['employee_id' => $row[0]])->first();
-            if (!empty($employee)) {
-
-                // Department
-                    $department = Department::firstOrCreate(
+            $department = Department::firstOrCreate(
                     ['name' => $row[2]],
                     ['description' => 'HR Department']
                 );
@@ -622,6 +615,13 @@ class EmployeeController extends Controller
                     ['name' => $row[3], 'department_id' => $department->id],
                     ['name' => $row[3], 'department_id' => $department->id]
                 );
+
+            // Employee
+            $employee = Employee::firstOrNew(['employee_id' => $row[0]])->first();
+            if (!empty($employee)) {
+
+                // Department
+                    
 
 
                 // Employee exists – DO NOT update name or ID
