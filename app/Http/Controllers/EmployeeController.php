@@ -629,7 +629,7 @@ class EmployeeController extends Controller
                     return response()->json([
                                 'message' => 'CSV not updated name is diffenent.'.$row[1],
                                 'invalid_rows' => $invalidRows
-                            ], 200);
+                            ], 404);
                 }
                 $employee->department       = $department->name;
                 $employee->work_station     = $workstation->name;
@@ -668,7 +668,7 @@ class EmployeeController extends Controller
                     return response()->json([
                                 'message' => 'CSV not updated email is exists .'.$row[6],
                                 'invalid_rows' => $invalidRows
-                            ], 200);
+                            ], 404);
                 }
                     }
 
