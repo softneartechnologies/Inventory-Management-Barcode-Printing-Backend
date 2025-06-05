@@ -630,11 +630,14 @@ class EmployeeController extends Controller
                                 'message' => 'CSV not updated name is diffenent.'.$row[1],
                                 'invalid_rows' => $invalidRows
                             ], 404);
-                }
+                }else{
+
+                
                 $employee->department       = $department->name;
                 $employee->work_station     = $workstation->name;
                 $employee->access_for_login = $row[4] == "1" ? "true" : "false";
                 $employee->status           = $row[8];
+                }
             } else {
 
                 
@@ -669,7 +672,7 @@ class EmployeeController extends Controller
                                 'message' => 'CSV not updated email is exists .'.$row[6],
                                 'invalid_rows' => $invalidRows
                             ], 404);
-                }
+                    }
                     }
 
                     $role = Role::firstOrCreate(
