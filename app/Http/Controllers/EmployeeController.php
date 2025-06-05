@@ -625,6 +625,12 @@ class EmployeeController extends Controller
 
 
                 // Employee exists – DO NOT update name or ID
+                if($employee->name != $row[1]){
+                    return response()->json([
+                                'message' => 'CSV not updated name is diffenent.'.$row[1],
+                                'invalid_rows' => $invalidRows
+                            ], 200);
+                }
                 $employee->department       = $department->name;
                 $employee->work_station     = $workstation->name;
                 $employee->access_for_login = $row[4] == "1" ? "true" : "false";
@@ -657,7 +663,13 @@ class EmployeeController extends Controller
 
                     if ($emailConflict) {
                         $invalidRows[] = $rowNumber++;
-                        continue;
+                        // continue;
+                        if($employee->name != $row[1]){
+                    return response()->json([
+                                'message' => 'CSV not updated email is exists .'.$row[6],
+                                'invalid_rows' => $invalidRows
+                            ], 200);
+                }
                     }
 
                     $role = Role::firstOrCreate(
