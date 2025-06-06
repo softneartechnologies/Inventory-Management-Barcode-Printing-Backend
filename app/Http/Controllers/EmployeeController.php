@@ -617,7 +617,7 @@ class EmployeeController extends Controller
                 );
 // print_r($row[2]);die;
             // Employee
-            $employee = Employee::firstOrNew(['employee_id' => $row[0]])->first();
+            $employee = Employee::where(['employee_id' => $row[0]])->first();
             if (!empty($employee)) {
 
                 // Department
@@ -625,7 +625,8 @@ class EmployeeController extends Controller
 
 
                 // Employee exists – DO NOT update name or ID
-                if($employee->name != $row[1]){
+                // print_r($employee->employee_name);die;
+                if($employee->employee_name != $row[1]){
                     return response()->json([
                                 'message' => 'CSV not updated name is diffenent.'.$row[1],
                                 'invalid_rows' => $invalidRows
@@ -654,7 +655,17 @@ class EmployeeController extends Controller
             // If login access allowed
             if ($row[4] == "1") {
         
-            
+                $role = Role::where(['name' => trim($row[5])])->first();
+                if(!empty($role)){
+                    $roleId = $role->id;
+                }else{
+                    $role = Role::Create(
+                            ['name' => trim($row[5]), 'guard_name' => 'api']
+                        );
+
+                        $roleId = $role->id;
+                }
+             
 
                 $existingUser = User::where('employee_id', $employee->id)->first();
 
@@ -675,11 +686,7 @@ class EmployeeController extends Controller
                     }
                     }
 
-                    $role = Role::firstOrCreate(
-                            ['name' => trim($row[5]), 'guard_name' => 'api']
-                        );
-
-                        $roleId = $role->id;
+                   
 
                     $existingUser->update([
                         'role_id'  => $role->id,
@@ -690,16 +697,22 @@ class EmployeeController extends Controller
 
 
                 } else {
+                     $role = Role::where(['name' => trim($row[5])])->first();
+                if(!empty($role)){
+                    $roleId = $role->id;
+                }else{
+                    $role = Role::Create(
+                            ['name' => trim($row[5]), 'guard_name' => 'api']
+                        );
+
+                        $roleId = $role->id;
+                }
                     // Email already exists? skip to avoid crash
                     if (User::where('email', $row[6])->exists()) {
                         $invalidRows[] = $rowNumber++;
                         continue;
                     }
-                    $role = Role::firstOrCreate(
-                        ['name' => trim($row[5]), 'guard_name' => 'api']
-                    );
-
-                    $roleId = $role->id;
+                   
                     try {
                         User::create([
                             'employee_id' => $employee->id,
