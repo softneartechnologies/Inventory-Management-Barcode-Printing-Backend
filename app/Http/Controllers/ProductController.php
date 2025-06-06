@@ -1908,15 +1908,15 @@ if ($product) {
                 $totalStock += $currentStock;
 
                 Stock::create([
-                    'product_id'       => $product->id,
-                    'vendor_id'        => $vendor->id,
-                    'category_id'      => $category->id,
-                    'current_stock'    => $currentStock,
-                    'quantity'         => $quantity,
-                    'unit_of_measure'  => $unit_of_measure,
-                    'per_unit_cost'    => $perUnitCost,
-                    'total_cost'       => $total_cost,
-                    'location_id'      => $locationId,
+                    'product_id'       => $product->id?? null,
+                    'vendor_id'        => $vendor->id?? null,
+                    'category_id'      => $category->id?? null,
+                    'current_stock'    => $currentStock?? null,
+                    'quantity'         => $quantity?? null,
+                    'unit_of_measure'  => $unit_of_measure?? null,
+                    'per_unit_cost'    => $perUnitCost?? null,
+                    'total_cost'       => $total_cost?? null,
+                    'location_id'      => $locationId?? null,
                     'stock_date'       => now(),
                 ]);
                 }
@@ -1929,7 +1929,7 @@ if ($product) {
                  }else{
                 
 
-                    $barcodeNumber = $row[1];
+                $barcodeNumber = $row[1];
                 $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
                 $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
                 Storage::put($barcodePath, $barcodeImage);
@@ -2104,14 +2104,14 @@ if ($product) {
 
                 Stock::create([
                     'product_id'       => $product->id,
-                    'vendor_id'        => $vendor->id,
-                    'category_id'      => $category->id,
-                    'current_stock'    => $currentStock,
-                    'quantity'         => $quantity,
-                    'unit_of_measure'  => $unit_of_measure,
-                    'per_unit_cost'    => $perUnitCost,
-                    'total_cost'       => $total_cost,
-                    'location_id'      => $locationId,
+                    'vendor_id'        => $vendor->id ?? null,
+                    'category_id'      => $category->id?? null,
+                    'current_stock'    => $currentStock?? null,
+                    'quantity'         => $quantity?? null,
+                    'unit_of_measure'  => $unit_of_measure?? null,
+                    'per_unit_cost'    => $perUnitCost?? null,
+                    'total_cost'       => $total_cost?? null,
+                    'location_id'      => $locationId?? null,
                     'stock_date'       => now(),
                 ]);
                 }
