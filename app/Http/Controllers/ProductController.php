@@ -396,62 +396,66 @@ public function store(Request $request)
         ])->where('product_id', $product_id)->get();
     
         // Check if stock records exist
-        if ($stocks->isEmpty()) {
-            return response()->json(['error' => 'Stock not found for this product'], 404);
-        }
+        // if ($stocks->isEmpty()) {
+        //     return response()->json(['error' => 'Stock not found for this product'], 404);
+        // }
     
         // Get product info from the first stock record
-        $product = $stocks->first()->product;
+         if (!empty($stocks) && $stocks->isNotEmpty() && $stocks->first()->product) {
+    $product = $stocks->first()->product;
     
         // Map each stock record
         $stockDetails = $stocks->map(function ($stock) {
             return [
                 'stock_id' => $stock->id,
                 'location_d' => $stock->location_id,
-                'location' => optional($stock->location)->name, // Safely get location name
+                'location' => optional($stock->location)->name?? null, // Safely get location name
                 'vendor_id' => $stock->vendor_id,
-                'vendor_name' => optional($stock->vendor)->vendor_name,
-                'category' => optional($stock->category)->name,
-                'current_stock' => $stock->current_stock,
-                'new_stock' => $stock->new_stock,
-                'quantity' => $stock->quantity,
-                'unit_of_measure' => $stock->unit_of_measure,
-                'per_unit_cost'=> $stock->per_unit_cost,
-                'total_cost'=> $stock->total_cost,
-                'adjustment' => $stock->adjustment,
-                'stock_date' => $stock->stock_date,
+                'vendor_name' => optional($stock->vendor)->vendor_name ?? null,
+                'category' => optional($stock->category)->name?? null,
+                'current_stock' => $stock->current_stock?? null,
+                'new_stock' => $stock->new_stock?? null,
+                'quantity' => $stock->quantity?? null,
+                'unit_of_measure' => $stock->unit_of_measure?? null,
+                'per_unit_cost'=> $stock->per_unit_cost?? null,
+                'total_cost'=> $stock->total_cost?? null,
+                'adjustment' => $stock->adjustment?? null,
+                'stock_date' => $stock->stock_date?? null,
                 
                 // 'reason_for_update' => $stock->reason_for_update,
             ];
         });
+    }else{
+    $stockDetails = [];
+    }
     
         $productsss= array(['id' => $product_detail->id,
         'thumbnail'=>$product_detail->thumbnail,
-        'product_name' => $product_detail->product_name,
+        'product_name' => $product_detail->product_name?? null,
         'sku' => $product_detail->sku,
         'generated_barcode'=>$product_detail->generated_barcode,
         'generated_qrcode'=>$product_detail->generated_qrcode,
-        'barcode_number' => $product_detail->barcode_number,
+        'barcode_number' => $product_detail->barcode_number?? null,
         'category_id'=>$product_detail->category_id,
         'category_name' => $product_detail->category->name ?? null,
-        'sub_category_id'=>$product_detail->sub_category_id,
+        'sub_category_id'=>$product_detail->sub_category_id?? null,
         'subcategory_name' => $product_detail->sub_category->name ?? null,
-        'manufacturer'=>$product_detail->manufacturer,
-        'vendor_name'=>$product_detail->vendor->vendor_name,
-        'vendor_id'=>$product_detail->vendor_id,
-        'model'=>$product_detail->model,
-        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category,
-        'description'=>$product_detail->description,
-        'returnable'=>$product_detail->returnable,
-        'commit_stock_check' => $product_detail->commit_stock_check,
-        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
-        'location_id'=>$product_detail->location_id,
-        'quantity'=>$product_detail->quantity,
-        'unit_of_measure'=>$product_detail->unit_of_measure,
-        'per_unit_cost'=>$product_detail->per_unit_cost,
+        'manufacturer'=>$product_detail->manufacturer?? null,
+        'vendor_name'=>$product_detail->vendor->vendor_name?? null,
+        'vendor_id'=>$product_detail->vendor_id?? null,
+        'model'=>$product_detail->model?? null,
+        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category?? null,
+        'description'=>$product_detail->description?? null,
+        'returnable'=>$product_detail->returnable?? null,
+        'commit_stock_check' => $product_detail->commit_stock_check?? null,
+        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold?? null,
+        'location_id'=>$product_detail->location_id?? null,
+        'quantity'=>$product_detail->quantity?? null,
+        'unit_of_measure'=>$product_detail->unit_of_measure?? null,
+        'per_unit_cost'=>$product_detail->per_unit_cost?? null,
         'total_cost' => $product_detail->total_cost,
-        'opening_stock' => $product_detail->opening_stock,
-        'status' => $product_detail->status,
+        'opening_stock' => $product_detail->opening_stock?? null,
+        'status' => $product_detail->status?? null,
         'created_at' => $product_detail->created_at,
         'updated_at' => $product_detail->updated_at,
     ]);
@@ -483,12 +487,19 @@ public function store(Request $request)
         ])->where('product_id', $product_id)->get();
     
         // Check if stock records exist
-        if ($stocks->isEmpty()) {
-            return response()->json(['error' => 'Stock not found for this product'], 404);
-        }
+        // if ($stocks->isEmpty()) {
+        //     return response()->json(['error' => 'Stock not found for this product'], 404);
+        // }
     
         // Get product info from the first stock record
-        $product = $stocks->first()->product;
+        // if(!empty($stocks)){
+
+        
+        // $product = $stocks->first()->product;
+
+        if (!empty($stocks) && $stocks->isNotEmpty() && $stocks->first()->product) {
+    $product = $stocks->first()->product;
+
     
         // Map each stock record
         $stockDetails = $stocks->map(function ($stock) {
@@ -512,6 +523,9 @@ public function store(Request $request)
             ];
         });
     
+        }else{
+            $stockDetails =[];
+        }
         $productsss= array(['id' => $product_detail->id,
         'thumbnail'=>$product_detail->thumbnail,
         'product_name' => $product_detail->product_name,
@@ -519,26 +533,26 @@ public function store(Request $request)
         'generated_barcode'=>$product_detail->generated_barcode,
         'generated_qrcode'=>$product_detail->generated_qrcode,
         'barcode_number' => $product_detail->barcode_number,
-        'category_id'=>$product_detail->category_id,
+        'category_id'=>$product_detail->category_id?? null,
         'category_name' => $product_detail->category->name ?? null,
         'sub_category_id'=>$product_detail->sub_category_id,
         'subcategory_name' => $product_detail->sub_category->name ?? null,
-        'manufacturer'=>$product_detail->manufacturer,
-        'vendor_name'=>$product_detail->vendor->vendor_name,
-        'vendor_id'=>$product_detail->vendor_id,
-        'model'=>$product_detail->model,
-        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category,
-        'description'=>$product_detail->description,
-        'returnable'=>$product_detail->returnable,
-        'commit_stock_check' => $product_detail->commit_stock_check,
-        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold,
-        'location_id'=>$product_detail->location_id,
-        'quantity'=>$product_detail->quantity,
-        'unit_of_measure'=>$product_detail->unit_of_measure,
-        'per_unit_cost'=>$product_detail->per_unit_cost,
-        'total_cost' => $product_detail->total_cost,
-        'opening_stock' => $product_detail->opening_stock,
-        'status' => $product_detail->status,
+        'manufacturer'=>$product_detail->manufacturer?? null,
+        'vendor_name'=>$product_detail->vendor->vendor_name ?? null,
+        'vendor_id'=>$product_detail->vendor_id?? null,
+        'model'=>$product_detail->model?? null,
+        'unit_of_measurement_category'=>$product_detail->unit_of_measurement_category?? null,
+        'description'=>$product_detail->description?? null,
+        'returnable'=>$product_detail->returnable?? null,
+        'commit_stock_check' => $product_detail->commit_stock_check?? null,
+        'inventory_alert_threshold' => $product_detail->inventory_alert_threshold?? null,
+        'location_id'=>$product_detail->location_id?? null,
+        'quantity'=>$product_detail->quantity?? null,
+        'unit_of_measure'=>$product_detail->unit_of_measure?? null,
+        'per_unit_cost'=>$product_detail->per_unit_cost?? null,
+        'total_cost' => $product_detail->total_cost?? null,
+        'opening_stock' => $product_detail->opening_stock?? null,
+        'status' => $product_detail->status?? null,
         'created_at' => $product_detail->created_at,
         'updated_at' => $product_detail->updated_at,
     ]);
