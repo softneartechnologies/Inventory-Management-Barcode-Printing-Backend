@@ -1673,7 +1673,21 @@ public function uploadCSV(Request $request)
             
             while ($row = fgetcsv($handle)) {
                 
-        
+        $productName = $row[0] ?? null;
+        $sku = $row[1] ?? null;
+
+                if (empty($productName)) {
+                    return response()->json([
+                'message' => "Row $rowNumber: 'product_name are required."
+            ], 422);
+                }
+
+                if (empty($sku)) {
+                    return response()->json([
+                'message' => "Row $rowNumber: sku are required."
+            ], 422);
+                }
+
             $locationString = $row[13];
             $locationNames = explode(",", $locationString);
             $joinedString = implode(',', $locationNames);
@@ -1710,9 +1724,20 @@ public function uploadCSV(Request $request)
                     continue;
                 }
 
-                if (Product::where('sku', $row[1])->exists()) {
-                    continue;
-                }
+            //     if (Product::where('sku', $row[1])->exists()) {
+            //         // continue;
+            //         if (empty($sku)) {
+            //         return response()->json([
+            //     'message' => "Row $rowNumber: sku are required."
+            // ], 422);
+            //     }
+            //     }
+
+            if (Product::where('sku', $sku)->exists()) {
+                return response()->json([
+                    'message' => "Row $rowNumber: 'sku' already exists."
+                ], 422);
+            }
         
 
                 $barcodeNumber = $row[1];
