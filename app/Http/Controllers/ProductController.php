@@ -1756,18 +1756,23 @@ public function uploadCSV(Request $request)
 
 if ($product) {
 
-                // $barcodeNumber = $row[1];
-                // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
-                // $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
-                // Storage::put($barcodePath, $barcodeImage);
-                // $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+                    if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $row[1])) {
+                    return response()->json([
+                        'message' => "Invalid SKU Format value: {$row[1]}"
+                    ], 422);
+                }
+                $barcodeNumber = $row[1];
+                $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+                $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+                Storage::put($barcodePath, $barcodeImage);
+                $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
 
-                // $productDetails = ['sku' => $row[1]];
-                // $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
-                // $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                // $qrCodePath = 'public/qrcode/' . $qrCodeFile;
-                // Storage::put($qrCodePath, $qrCodeImage);
-                // $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+                $productDetails = ['sku' => $row[1]];
+                $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+                $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+                $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+                Storage::put($qrCodePath, $qrCodeImage);
+                $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
                 $uomCategory = null;
                 $uomUnitsNames = null;
@@ -1929,18 +1934,41 @@ if ($product) {
                  }else{
                 
 
-                $barcodeNumber = $row[1];
-                $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
-                $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
-                Storage::put($barcodePath, $barcodeImage);
-                $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+                // $barcodeNumber = $row[1];
+                // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+                // $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+                // Storage::put($barcodePath, $barcodeImage);
+                // $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
 
-                $productDetails = ['sku' => $row[1]];
-                $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
-                $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                $qrCodePath = 'public/qrcode/' . $qrCodeFile;
-                Storage::put($qrCodePath, $qrCodeImage);
-                $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+                // $productDetails = ['sku' => $row[1]];
+                // $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+                // $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+                // $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+                // Storage::put($qrCodePath, $qrCodeImage);
+                // $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
+
+                $barcodeNumber = strtoupper(trim($row[1]));
+
+if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
+    return response()->json([
+        'message' => "Invalid SKU Format value: {$sku}"
+    ], 422);
+}
+// print_r($barcodeNumber);die;
+
+                    $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+                    $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+                    Storage::put($barcodePath, $barcodeImage);
+                    $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+
+                    $productDetails = ['sku' => $row[1]];
+                    $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+                    $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+                    $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+                    Storage::put($qrCodePath, $qrCodeImage);
+                    $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
 
             //     $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
                 
