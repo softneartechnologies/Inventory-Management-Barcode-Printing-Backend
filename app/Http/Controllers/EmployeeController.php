@@ -615,42 +615,34 @@ class EmployeeController extends Controller
                     ['name' => $row[3], 'department_id' => $department->id],
                     ['name' => $row[3], 'department_id' => $department->id]
                 );
-// print_r($row[2]);die;
+// print_r($row[0]);die;
             // Employee
-            $employee = Employee::where(['employee_id' => $row[0]])->first();
-            if (!empty($employee)) {
+          $employee = Employee::where('employee_id', $row[0])->first();
 
-                // Department
-                    
+if (!empty($employee)) {
+    if ($employee->employee_name != $row[1]) {
+        return response()->json([
+            'message' => 'CSV not updated, name is different: ' . $row[1],
+            'invalid_rows' => $invalidRows
+        ], 404);
+    } else {
+        $employee->department       = $department->name;
+        $employee->work_station     = $workstation->name;
+        $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+        $employee->status           = $row[8];
+    }
+} else {
+    $employee = new Employee(); // ✅ Fix here
+    $employee->employee_id      = $row[0];
+    $employee->employee_name    = $row[1];
+    $employee->department       = $department->name;
+    $employee->work_station     = $workstation->name;
+    $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+    $employee->status           = $row[8];
+}
 
+$employee->save();
 
-                // Employee exists – DO NOT update name or ID
-                // print_r($employee->employee_name);die;
-                if($employee->employee_name != $row[1]){
-                    return response()->json([
-                                'message' => 'CSV not updated name is diffenent.'.$row[1],
-                                'invalid_rows' => $invalidRows
-                            ], 404);
-                }else{
-
-                
-                $employee->department       = $department->name;
-                $employee->work_station     = $workstation->name;
-                $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-                $employee->status           = $row[8];
-                }
-            } else {
-
-                
-                // New employee
-                $employee->employee_id      = $row[0];
-                $employee->employee_name    = $row[1];
-                $employee->department       = $department->name;
-                $employee->work_station     = $workstation->name;
-                $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-                $employee->status           = $row[8];
-            }
-            $employee->save();
 
             // If login access allowed
             if ($row[4] == "1") {
