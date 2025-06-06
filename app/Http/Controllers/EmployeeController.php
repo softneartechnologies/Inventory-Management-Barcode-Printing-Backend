@@ -26,7 +26,7 @@ class EmployeeController extends Controller
     public function inactiveEmployee()
     {
         // $employees = Employee::all();
-        $employees = Employee::where('status', 'inactive')->get();
+        $employees = Employee::get();
 
         return response()->json($employees, 200);
     }
