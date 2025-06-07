@@ -26,7 +26,10 @@
             border: 1px dashed #aaa;
             padding: 10px;
             /* width: {{ $orientation === 'horizontal' ? '30%' : '45%' }}; */
-            width: {{ $orientation === 'horizontal' ? '98%' : '85%' }};
+            /* width: {{ $orientation === 'horizontal' ? '98%' : '85%' }};
+            width: {{ $orientation === 'vertical' ? '98%' : '85%' }}; */
+            width: '98%' : '85%';
+            /* width: {{ $orientation === 'vertical' ? '98%' : '85%' }}; */
             box-sizing: border-box;
             page-break-inside: avoid;
             text-align: center;
