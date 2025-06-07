@@ -233,7 +233,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         // 'email' => $request->email,
-                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
+                        'password' => !empty($request->password) ? Hash::make($request->password) : $usersdata->password,
                     ]);
                     }else{
                         
@@ -243,7 +243,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         'email' => $request->email,
-                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
+                        'password' => !empty($request->password) ? Hash::make($request->password) : $usersdata->password,
                     ]);
                     }
                 }else{
@@ -252,7 +252,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         'email' => $request->email,
-                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
+                        'password' => !empty($request->password) ? Hash::make($request->password) : '12345678',
                     ]);
     
                 }
