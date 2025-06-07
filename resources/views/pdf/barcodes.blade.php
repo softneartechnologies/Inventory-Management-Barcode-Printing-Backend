@@ -34,12 +34,12 @@
         }
 
         .label-box h4 {
-            margin: 0 0 8px;
+            /* margin: 0 0 8px; */
             font-size: 12px;
         }
 
         .barcode-image {
-            margin: 5px 0;
+            margin: 5px 5px;
         }
 
         .small {
