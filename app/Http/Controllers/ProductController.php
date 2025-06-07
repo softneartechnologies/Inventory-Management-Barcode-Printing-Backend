@@ -2272,14 +2272,16 @@ public function printBarcode(Request $request)
 
 // Retrieve the setting where key is 'sku' and value is 1
 $settings = BarcodeSetting::where('value', 1)->pluck('key')->toArray();
+ 
 $productDetail = [];
 if (!empty($settings)) {
     // Dynamically select only the keys that are enabled in settings
-    $product = Product::select($settings,'product_name')
+    
+    $product = Product::select('product_name')
         ->where('sku', $request->data)
         ->first();
 
-    
+//    print_r($product);die;
         // Return only selected values
        $productDetail = $product->toArray();
    

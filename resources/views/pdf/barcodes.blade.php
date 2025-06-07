@@ -25,7 +25,8 @@
         .label-box {
             border: 1px dashed #aaa;
             padding: 10px;
-            width: {{ $orientation === 'horizontal' ? '30%' : '45%' }};
+            /* width: {{ $orientation === 'horizontal' ? '30%' : '45%' }}; */
+            width: {{ $orientation === 'horizontal' ? '98%' : '85%' }};
             box-sizing: border-box;
             page-break-inside: avoid;
             text-align: center;
@@ -42,15 +43,15 @@
         }
 
         .small {
-            width: 105px;
+            width: 70%;
             height: 40px;
         }
         .medium {
-            width: 140px;
+            width: 80%;
             height: 45px;
         }
         .large {
-            width: 180px;
+            width: 95%;
             height: 50px;
         }
 
