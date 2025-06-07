@@ -46,12 +46,16 @@
         }
 
         .small {
-            width: 70%;
-            height: 40px;
+            /* width: 70%; */
+            /* height: 40px; */
+            width: 50mm;
+             height: 25mm;
         }
         .medium {
-            width: 80%;
-            height: 45px;
+            /* width: 80%; */
+            width: 50mm;
+            /* height: 45px; */
+            height: 30mm;
         }
         .large {
             width: 95%;
