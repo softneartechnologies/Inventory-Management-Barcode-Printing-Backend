@@ -244,26 +244,26 @@ public function store(Request $request)
 
         
     $validatedData = $request->validate([
-        'thumbnail' => 'required',
+        // 'thumbnail' => 'required',
         'product_name' => 'required|string|max:255',
         'sku' => 'required|string|max:255|unique:products',
-        'category_id' => 'required|string',
-        'sub_category_id' => 'required|string',
-        'manufacturer' => 'required|string',
-        'vendor_id' => 'required|string',
-        'model' => 'required|string',
-        'unit_of_measurement_category' => 'required|numeric',
-        'description' => 'required|string',
-        'returnable' => 'boolean',
-        'commit_stock_check' => 'boolean',
-        'inventory_alert_threshold' => 'integer|min:0',
-        'location_id' => 'array',
-        'quantity' => 'nullable|numeric',
-        'unit_of_measure' => 'nullable|string',
-        'per_unit_cost' => 'nullable|numeric',
-        'total_cost' => 'nullable|string',
-        'opening_stock' => 'integer|min:0',
-        'status' => ['required', Rule::in(['active', 'inactive'])],
+        // 'category_id' => 'required|string',
+        // 'sub_category_id' => 'required|string',
+        // 'manufacturer' => 'required|string',
+        // 'vendor_id' => 'required|string',
+        // 'model' => 'required|string',
+        // 'unit_of_measurement_category' => 'required|numeric',
+        // 'description' => 'required|string',
+        // 'returnable' => 'boolean',
+        // 'commit_stock_check' => 'boolean',
+        // 'inventory_alert_threshold' => 'integer|min:0',
+        // 'location_id' => 'array',
+        // 'quantity' => 'nullable|numeric',
+        // 'unit_of_measure' => 'nullable|string',
+        // 'per_unit_cost' => 'nullable|numeric',
+        // 'total_cost' => 'nullable|string',
+        // 'opening_stock' => 'integer|min:0',
+        // 'status' => ['required', Rule::in(['active', 'inactive'])],
     ]);
 
  
@@ -357,22 +357,23 @@ public function store(Request $request)
         // $validatedData['location_id'] = json_encode($request->storage_location->location);
 
         $product = Product::create($validatedData);
-
+        if (!empty($request->storage_location) && is_array($request->storage_location)) {
         foreach ($request->storage_location as $multiData) {
             Stock::create([
                 'product_id'    => $product->id,
-                'vendor_id'     => $request->vendor_id,
-                'category_id'   => $request->category_id,
-                'location_id'   => $multiData['location_id'],
-                'quantity' => $multiData['quantity'],
-                'current_stock' => $multiData['quantity'],
-                'unit_of_measure'=> $multiData['unit_of_measure'],
-                'per_unit_cost'          => $multiData['per_unit_cost'],
-                'total_cost'          => $multiData['total_cost'],
+                'vendor_id'     => $request->vendor_id?? null,
+                'category_id'   => $request->category_id?? null,
+                'location_id'   => $multiData['location_id']?? null,
+                'quantity' => $multiData['quantity']?? null,
+                'current_stock' => $multiData['quantity']?? null,
+                'unit_of_measure'=> $multiData['unit_of_measure']?? null,
+                'per_unit_cost'          => $multiData['per_unit_cost']?? null,
+                'total_cost'          => $multiData['total_cost']?? null,
                 // 'adjustment' => $multiData['adjustment'],
                 'stock_date'    => now(),
             ]);
         }
+    }
 
     return response()->json([
         'message' => 'Product created successfully',
@@ -1950,11 +1951,11 @@ if ($product) {
 
                 $barcodeNumber = strtoupper(trim($row[1]));
 
-if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
-    return response()->json([
-        'message' => "Invalid SKU Format value: {$sku}"
-    ], 422);
-}
+                if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
+                    return response()->json([
+                        'message' => "Invalid SKU Format value: {$sku}"
+                    ], 422);
+                }
 // print_r($barcodeNumber);die;
 
                     $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
