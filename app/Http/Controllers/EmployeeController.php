@@ -180,7 +180,7 @@ class EmployeeController extends Controller
                 'access_for_login' =>'required|in:true,false',
                 'role_id'=>'required',
                 'email' => 'required',
-                'password' => 'required|min:6',
+                // 'password' => 'required|min:6',
 
             ]);
 
@@ -233,7 +233,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         // 'email' => $request->email,
-                        'password' => Hash::make($request->password),
+                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
                     ]);
                     }else{
                         
@@ -243,7 +243,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         'email' => $request->email,
-                        'password' => Hash::make($request->password),
+                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
                     ]);
                     }
                 }else{
@@ -252,7 +252,7 @@ class EmployeeController extends Controller
                         'role_id' => $request->role_id,
                         'name' => $request->employee_name,
                         'email' => $request->email,
-                        'password' => Hash::make($request->password),
+                        'password' => !empty($request->password) ? Hash::make($request->password) : null,
                     ]);
     
                 }
