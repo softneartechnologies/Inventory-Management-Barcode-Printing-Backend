@@ -998,9 +998,9 @@ public function store(Request $request)
         $pdate = array_combine($locationIds, $quantities);
         $rlocationId = $multiData['location_id'];
          if ($adjustment === 'add') {
-                 $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+                 $pdate[$rlocationId] = $pdate[$rlocationId?? 0] + $quantity;
              }else{
-                $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+                $pdate[$rlocationId] = $pdate[$rlocationId?? 0] - $quantity;
              }
 
         
