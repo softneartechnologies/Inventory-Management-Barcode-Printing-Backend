@@ -913,15 +913,31 @@ public function store(Request $request)
              }
         $locationIds = json_decode($product->location_id); 
         $quantities = json_decode($product->quantity); 
-        $pdate = array_combine($locationIds, $quantities);
-        $rlocationId = $multiData['location_id']?? '0';
-         if ($adjustment === 'add') {
-                 $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
-             }else{
-                $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
-             }
+        // $pdate = array_combine($locationIds, $quantities);
+        // $rlocationId = $multiData['location_id']?? '0';
+        //  if ($adjustment === 'add') {
+        //          $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+        //      }else{
+        //         $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+        //      }
 
-        
+        // Combine arrays only if they are both arrays and same length
+            if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
+                $pdate = array_combine($locationIds, $quantities);
+            } else {
+                $pdate = [];
+            }
+
+            $rlocationId = $multiData['location_id'] ?? '0';
+
+            // Safely add or subtract quantity
+            if ($adjustment === 'add') {
+                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+            } else {
+                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+            }
+
+
         $updatedQuantities = [];
         foreach ($locationIds as $lid) {
             $updatedQuantities[] = $pdate[$lid];
