@@ -914,11 +914,11 @@ public function store(Request $request)
         $locationIds = json_decode($product->location_id); 
         $quantities = json_decode($product->quantity); 
         $pdate = array_combine($locationIds, $quantities);
-        $rlocationId = $multiData['location_id'];
+        $rlocationId = $multiData['location_id']?? '0';
          if ($adjustment === 'add') {
-                 $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] + $quantity;
+                 $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
              }else{
-                $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] - $quantity;
+                $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
              }
 
         
