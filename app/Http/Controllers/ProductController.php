@@ -46,7 +46,7 @@ class ProductController extends Controller
         'sub_category:id,name'
     ])
     ->orderBy('id', 'desc')
-    ->paginate(20);
+    ->get();
     
         $products = $products->map(function ($product) {
             // Get all product attributes + add category name
