@@ -848,7 +848,7 @@ public function store(Request $request)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
 
-                $currentStock = $product_location->current_stock;
+                $currentStock = $product_location->current_stock ?? null;
                
                 
 
