@@ -848,7 +848,7 @@ public function store(Request $request)
                 ->where('location_id', $multiData['location_id'])
                 ->first();
 
-                $currentStock = $product_location->current_stock ?? null;
+                $currentStock = $product_location->current_stock ?? '0';
                
                 
 
@@ -938,7 +938,7 @@ public function store(Request $request)
             } else {
                 // Create new stock record
                 // $currentStock = $multiData['current_stock'] ?? 0;
-                 $currentStock = $product_location->current_stock;
+                 $currentStock = $product_location->current_stock ?? '0';
                 
                 if ($adjustment === 'add') {
                     $newStock = $currentStock + $quantity;
