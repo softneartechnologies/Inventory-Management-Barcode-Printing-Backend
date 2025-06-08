@@ -35,8 +35,10 @@ class ProductController extends Controller
 {
     public function index()
     {
+        // $products = Product::with('category:id,name','vendor:id,vendor_name',
+        // 'sub_category:id,name')->orderBy('id', 'desc')->get();
         $products = Product::with('category:id,name','vendor:id,vendor_name',
-        'sub_category:id,name')->orderBy('id', 'desc')->get();
+        'sub_category:id,name')->orderBy('id', 'desc')->paginate(20);
     
         $products = $products->map(function ($product) {
             // Get all product attributes + add category name
