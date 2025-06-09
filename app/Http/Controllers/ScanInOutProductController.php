@@ -300,7 +300,7 @@ class ScanInOutProductController extends Controller
         // });
 
         $scanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,opening_stock',
+            'product:id,product_name,sku,opening_stock,model,manufacturer',
             'employee:id,employee_name',
             'user:id,name','category:id,name','location:id,name','product.orders:id,product_id,quantity,deleted',
         ])->orderBy('id','desc')->get();
@@ -313,6 +313,8 @@ class ScanInOutProductController extends Controller
                 'product_id' => $scanRecords->product_id,
                 'product_name' => $scanRecords->product->product_name ?? null,
                 'sku' => $scanRecords->product->sku ?? null,
+                'model' => $scanRecords->product->model?? null,
+                'manufacturer' => $scanRecords->product->manufacturer?? null,
                 'category' => $scanRecords->category->name ?? null,
                 'location' => $scanRecords->location->name ?? null,
                 'quantity' => $scanRecords->product->opening_stock ?? null,
