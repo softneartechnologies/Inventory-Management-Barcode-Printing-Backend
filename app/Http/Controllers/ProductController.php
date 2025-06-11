@@ -874,6 +874,37 @@ public function store(Request $request)
             'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
         ]);
 
+        $existingLocations = json_decode($product->location_id, true) ?? [];
+
+        // New incoming location data
+        $reqproduct_location = [];
+        $reqproduct_unit_of_measure = [];
+        $reqproduct_per_unit_cost = [];
+        $reqproduct_total_cost = [];
+        // $newLocations = $validatedRequest['storage_location']['location_id']; // Should be array: [location_id => quantity]
+
+        // Merge or update existing with new
+ $multiLocationss = $validatedRequest['storage_location'];
+         foreach ($multiLocationss as $multiData) {
+
+                
+                  $reqproduct_location[] = $multiData['location_id'];
+                  $reqproduct_unit_of_measure[] = $multiData['unit_of_measure'];
+                  $reqproduct_per_unit_cost[] = $multiData['per_unit_cost'];
+                  $reqproduct_total_cost[] = $multiData['total_cost'];
+
+         }
+        // $updatedLocations = array_merge($existingLocations, $reqproduct_location);
+
+        // // Save updated JSON
+        $product->location_id = json_encode($reqproduct_location);
+        $product->unit_of_measure = json_encode($reqproduct_unit_of_measure);
+        $product->per_unit_cost = json_encode($reqproduct_per_unit_cost);
+        $product->total_cost = json_encode($reqproduct_total_cost);
+        // print_r($product->location_id);die;
+        $product->save();
+
+
         $multiLocation = $validatedRequest['storage_location'];
 
         foreach ($multiLocation as $multiData) {
@@ -883,7 +914,7 @@ public function store(Request $request)
 
                 $currentStock = $product_location->current_stock ?? '0';
                
-                
+               $requestAllLocation[] = $multiData['location_id'];
 
 
             $quantity = $multiData['quantity'];
@@ -968,16 +999,24 @@ public function store(Request $request)
                 $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
             } else {
                 $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+                // $pdate[$rlocationId] = '';
             }
 
 
         $updatedQuantities = [];
-        foreach ($locationIds as $lid) {
-            $updatedQuantities[] = $pdate[$lid];
-        }
+       foreach ($locationIds as $id) {
+    if (isset($pdate[$id])) {
+        $updatedQuantities[] = $pdate[$id];
+    } else {
+        $updatedQuantities[] = 0; // or handle error/skip
+    }
+}
 
         $totalQuantity = array_sum($updatedQuantities);
         // Step 6: Update the product
+
+        // $locationIds = json_decode($product->location_id); 
+
         $product->update([
             'opening_stock' => $productOpeningStock,
             'quantity' => json_encode($updatedQuantities)
@@ -1051,7 +1090,7 @@ public function store(Request $request)
         //      }else{
         //         $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] - $quantity;
         //      }
- if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
+        if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
                 $pdate = array_combine($locationIds, $quantities);
             } else {
                 $pdate = [];
@@ -1073,9 +1112,11 @@ public function store(Request $request)
 
         $totalQuantity = array_sum($updatedQuantities);
         // Step 6: Update the product
+
         $product->update([
             'opening_stock' => $productOpeningStock,
             'quantity' => json_encode($updatedQuantities)
+           
         ]);
 
             // $product->update(['opening_stock' => $productOpeningStock]);
