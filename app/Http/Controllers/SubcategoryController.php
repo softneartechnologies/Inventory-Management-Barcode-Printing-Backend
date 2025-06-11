@@ -12,7 +12,7 @@ class SubcategoryController extends Controller
     // ✅ Get All Subcategories
     public function index()
     {
-        $subcategories = Subcategory::with('category')->get();
+        $subcategories = Subcategory::with('category')->orderBy('id', 'desc')->get();
         return response()->json($subcategories, 200);
     }
 

@@ -11,7 +11,7 @@ class ManufacturerController extends Controller
     // ✅ Get All Manufacturers
     public function index()
     {
-        $manufacturers = Manufacturer::all();
+        $manufacturers = Manufacturer::orderBy('id', 'desc')->get();
         return response()->json($manufacturers, 200);
     }
 
