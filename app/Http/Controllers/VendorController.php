@@ -19,7 +19,7 @@ class VendorController extends Controller
         $validatedData = $request->validate([
             'vendor_name' => 'required|string|max:255',
             'company_name' => 'required|string|max:255',
-            'phone_number' => 'required|string|max:15',
+            'phone_number' => 'required|numeric',
             'email' => 'required|string|email|max:255|unique:vendors',
             'billing_address' => 'required|string',
             'shipping_address' => 'required|string',
@@ -50,12 +50,12 @@ class VendorController extends Controller
         }
 
         $request->validate([
-            'vendor_name' => 'string|max:255',
-            'company_name' => 'string|max:255',
-            'phone_number' => 'string|max:20',
-            'email' => 'email|unique:vendors,email,' . $id,
-            'billing_address' => 'string',
-            'shipping_address' => 'string',
+            'vendor_name' => 'required|string|max:255',
+            'company_name' => 'required|string|max:255',
+            'phone_number' => 'required|string|max:20',
+            'email' => 'required|email|unique:vendors,email,' . $id,
+            'billing_address' => 'required|string',
+            'shipping_address' => 'required|string',
         ]);
 
         $vendor->update($request->all());
