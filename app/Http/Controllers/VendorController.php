@@ -10,7 +10,7 @@ class VendorController extends Controller
     // Display a listing of vendors
     public function index()
     {
-        return Vendor::all();
+        return Vendor::orderBy('id', 'desc')->get();
     }
 
     // Store a newly created vendor
