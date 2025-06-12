@@ -122,8 +122,8 @@ class ScanInOutProductController extends Controller
            
         }
 
-        $validated['vendor_id'] = $product->vendor_id;
-        $validated['category_id'] = $product->category_id;
+        $validated['vendor_id'] = $product->vendor_id?? null;
+        $validated['category_id'] = $product->category_id?? null;
         $scanRecord = ScanInOutProduct::create($validated);
 
         // $quantity = $request->in_quantity;
@@ -215,8 +215,8 @@ class ScanInOutProductController extends Controller
             
         }
 
-        $validated['vendor_id'] = $product->vendor_id;
-        $validated['category_id'] = $product->category_id;
+        $validated['vendor_id'] = $product->vendor_id?? null;
+        $validated['category_id'] = $product->category_id?? null;
         $scanRecord = ScanInOutProduct::create($validated);
 
         $quantity = $request->out_quantity;
