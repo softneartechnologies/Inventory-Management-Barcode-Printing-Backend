@@ -27,12 +27,12 @@ class VendorController extends Controller
 
 
         $validatedData = Validator::make($request->all(), [
-                'vendor_name' => 'required|string|max:255',
-            'company_name' => 'required|string|max:255',
-            'phone_number' => 'required|numeric',
-            'email' => 'required|string|email|max:255|unique:vendors',
-            'billing_address' => 'required|string',
-            'shipping_address' => 'required|string',
+            'vendor_name' => 'required|string|max:255',
+            // 'company_name' => 'required|string|max:255',
+            // 'phone_number' => 'required|numeric',
+            // 'email' => 'required|string|email|max:255|unique:vendors',
+            // 'billing_address' => 'required|string',
+            // 'shipping_address' => 'required|string',
             ]);
 
             if ($validatedData->fails()) {
