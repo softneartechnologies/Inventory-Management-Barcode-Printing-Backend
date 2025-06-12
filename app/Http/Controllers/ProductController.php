@@ -693,7 +693,7 @@ public function store(Request $request)
             'returnable' => 'boolean',
             'commit_stock_check' => 'boolean',
             'inventory_alert_threshold' => 'integer|min:0',
-            'opening_stock' => 'integer|min:0',
+            'opening_stock' => 'integer',
             'status' => ['nullable', Rule::in(['active', 'inactive'])],
         ]);
 
