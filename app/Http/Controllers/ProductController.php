@@ -672,7 +672,8 @@ public function store(Request $request)
 
         public function update(Request $request, $id)
     {
-        $product = Product::with(['stocks:*'])->find($id);
+        $product = Product::with('stocksData')->find($id);
+        // $product = Product::with(['stocksData:*'])->find($id);
     
         if (!$product) {
             return response()->json(['error' => 'Product not found'], 404);
@@ -776,63 +777,106 @@ public function store(Request $request)
 
         $multiLocation = $request->storage_location;
         $product_id=$id;
-        foreach ($multiLocation as $multiData) {
-            // print_r($multiData['unit_cost']);die;
-            $product_location = Stock::where('product_id', $product_id)
-                ->where('location_id', $multiData['location_id'])
-                ->first();
 
-            $quantity = $multiData['quantity'];
-            // $adjustment = $multiData['adjustment'];
 
-            if ($product_location) {
-                // Update existing stock record
-                // $currentStock = $product_location->current_stock;
-                $currentStock = $multiData['quantity'];
 
-                // print_r($multiData['unit_cost']);die;
+        // foreach ($multiLocation as $multiData) {
+            
+        //     $product_location = Stock::where('product_id', $product_id)
+        //         ->where('location_id', $multiData['location_id'])
+        //         ->first();
+        //     $quantity = $multiData['quantity'];
+            
+        //     if ($product_location) {
+                
+        //         $currentStock = $multiData['quantity'];
+        //         $stockData = [
+        //             'current_stock' => $currentStock,
+        //             'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
+        //             'per_unit_cost'=> $multiData['per_unit_cost'],
+        //             'total_cost'=> $multiData['total_cost'],
+        //             'quantity' => $quantity,
+        //             'stock_date' => $validatedRequest['stock_date'] ?? null,
+        //             'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+        //             'vendor_id'     => $request->vendor_id,
+        //             'category_id'   => $request->category_id,
+        //             'location_id'   => $multiData['location_id'],
+        //         ];
+
+        //         $product_location->update($stockData);
+        //     } else {
+               
+        //         $currentStock = $multiData['quantity'] ?? 0;
+
+
+        //         $stockData = [
+        //             'product_id'    => $product->id,
+        //             'vendor_id'     => $request->vendor_id,
+        //             'category_id'   => $request->category_id,
+        //             'location_id'   => $multiData['location_id'],
+        //             'quantity' => $quantity,
+        //             'current_stock' => $currentStock,
+        //            'unit_of_measure'=> $multiData['unit_of_measure'],
+        //             'per_unit_cost'          => $multiData['per_unit_cost'],
+        //             'total_cost'          => $multiData['total_cost'],
+        //             'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    
+        //         ];
+
+        //         Stock::create($stockData);
+
+        //     }
+
+        // }
+
+
+                // 1. Get all old stock records for this product
+            $product_locationDel = Stock::where('product_id', $product_id)->get();
+
+            // 2. Index by location_id for fast lookup
+            $existingStocks = $product_locationDel->keyBy('location_id');
+
+            // 3. Track new location_ids to compare later for deletion
+            $newLocationIds = [];
+
+            foreach ($multiLocation as $multiData) {
+                $locationId = $multiData['location_id'];
+                $newLocationIds[] = $locationId; // collect all new location ids
+
+                $quantity = $multiData['quantity'] ?? 0;
+
                 $stockData = [
-                    'current_stock' => $currentStock,
-                    'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
-                    'per_unit_cost'=> $multiData['per_unit_cost'],
-                    'total_cost'=> $multiData['total_cost'],
+                    'vendor_id' => $request->vendor_id,
+                    'category_id' => $request->category_id,
+                    'location_id' => $locationId,
                     'quantity' => $quantity,
+                    'current_stock' => $quantity,
+                    'unit_of_measure' => $multiData['unit_of_measure'],
+                    'per_unit_cost' => $multiData['per_unit_cost'],
+                    'total_cost' => $multiData['total_cost'],
                     'stock_date' => $validatedRequest['stock_date'] ?? null,
                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    'vendor_id'     => $request->vendor_id,
-                    'category_id'   => $request->category_id,
-                    'location_id'   => $multiData['location_id'],
                 ];
 
-                $product_location->update($stockData);
-            } else {
-                // Create new stock record
-                $currentStock = $multiData['quantity'] ?? 0;
-
-
-                $stockData = [
-                    'product_id'    => $product->id,
-                    'vendor_id'     => $request->vendor_id,
-                    'category_id'   => $request->category_id,
-                    'location_id'   => $multiData['location_id'],
-                    'quantity' => $quantity,
-                    'current_stock' => $currentStock,
-                   'unit_of_measure'=> $multiData['unit_of_measure'],
-                    'per_unit_cost'          => $multiData['per_unit_cost'],
-                    'total_cost'          => $multiData['total_cost'],
-                    'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    
-                ];
-
-                Stock::create($stockData);
-
+                if (isset($existingStocks[$locationId])) {
+                    // Update existing record
+                    $existingStocks[$locationId]->update($stockData);
+                } else {
+                    // Create new record
+                    $stockData['product_id'] = $product_id;
+                    Stock::create($stockData);
+                }
             }
 
-            // Update the product's opening stock
-            // $product->update(['opening_stock' => $productOpeningStock]);
-        }
+            // 4. Delete records whose location_id was not in new list
+            $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+            foreach ($toDelete as $oldStock) {
+                $oldStock->delete();
+            }
 
-    return response()->json(['message' => 'Product updated successfully', 'product' => $product], 200);
+            $productUpdate = Product::with('stocksData')->find($id);
+       
+    return response()->json(['message' => 'Product updated successfully', 'product' => $productUpdate], 200);
 
     }
 
