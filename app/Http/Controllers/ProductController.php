@@ -513,6 +513,11 @@ public function store(Request $request)
         ])->where('product_id', $product_id)->get();
 
         //  $uomCategory = UomCategory::where('id', $product_detail->unit_of_measurement_category)->first();
+        
+
+        if (!empty($stocks) && $stocks->isNotEmpty() && $stocks->first()->product) {
+        $product = $stocks->first()->product;
+          
         $categoryValue = $product_detail->unit_of_measurement_category;
         $uomCategory = is_numeric($categoryValue)
     ? UomCategory::where('id', $categoryValue)->first()
@@ -527,13 +532,8 @@ $unitofmeasur = (!empty($product_detail->unit_of_measure) && $product_detail->un
     ? $product_detail->unit_of_measure
     : $defaultunit;
 
-        if (!empty($stocks) && $stocks->isNotEmpty() && $stocks->first()->product) {
-        $product = $stocks->first()->product;
-          
-        
-
     
-        $stockDetails = $stocks->map(function ($stock) {
+        $stockDetails = $stocks->map(function ($stock) use ($defaultunit){
 
             
             return [
