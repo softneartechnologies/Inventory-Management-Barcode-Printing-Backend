@@ -49,13 +49,14 @@
             /* width: 70%; */
             /* height: 40px; */
             width: 50mm;
-             height: 25mm;
+            /* height: 25mm; */
+            height: 20mm;
         }
         .medium {
             /* width: 80%; */
             width: 50mm;
-            /* height: 45px; */
-            height: 30mm;
+            /* height: 30mm; */
+            height: 25mm;
         }
         .large {
             width: 95%;
