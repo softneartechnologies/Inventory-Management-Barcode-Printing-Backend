@@ -512,11 +512,11 @@ public function store(Request $request)
             'location:id,name'
         ])->where('product_id', $product_id)->get();
 
-        //  $uomCategory = UomCategory::where('name', $product_detail->unit_of_measurement_category)->first();
-        $categoryValue = $product_detail->unit_of_measurement_category;
-        $uomCategory = is_numeric($categoryValue)
-    ? UomCategory::where('id', $categoryValue)->first()
-    : UomCategory::where('name', $categoryValue)->first();
+         $uomCategory = UomCategory::where('id', $product_detail->unit_of_measurement_category)->first();
+    //     $categoryValue = $product_detail->unit_of_measurement_category;
+    //     $uomCategory = is_numeric($categoryValue)
+    // ? UomCategory::where('id', $categoryValue)->first()
+    // : UomCategory::where('name', $categoryValue)->first();
 
          
 $defaultunit = optional(
