@@ -38,16 +38,8 @@ class ProductController extends Controller
         
         $products = Product::with('category:id,name','vendor:id,vendor_name',
         'sub_category:id,name')->orderBy('id', 'desc')->get();
-
-    //     $products = Product::select('id', 'product_name','sku', 'category_id', 'sub_category_id','manufacturer','model','opening_stock', 'status','vendor_id', 'thumbnail','created_at')
-    // ->with([
-    //     'category:id,name',
-    //     'vendor:id,vendor_name',
-    //     'sub_category:id,name'
-    // ])
-    // ->orderBy('id', 'desc')
-    // ->get();
     
+        
         $products = $products->map(function ($product) {
             // Get all product attributes + add category name
             $data = $product->toArray();
@@ -519,24 +511,25 @@ public function store(Request $request)
             'vendor:id,vendor_name',
             'location:id,name'
         ])->where('product_id', $product_id)->get();
-    
-        // Check if stock records exist
-        // if ($stocks->isEmpty()) {
-        //     return response()->json(['error' => 'Stock not found for this product'], 404);
-        // }
-    
-        // Get product info from the first stock record
-        // if(!empty($stocks)){
 
-        
-        // $product = $stocks->first()->product;
+         $uomCategory = UomCategory::where('name', $product_detail->unit_of_measurement_category)->first();
+$defaultunit = optional(
+    UomUnit::where('uom_category_id', optional($uomCategory)->id)->first()
+)->unit_name;
+
+$unitofmeasur = (!empty($product_detail->unit_of_measure) && $product_detail->unit_of_measure != '[]')
+    ? $product_detail->unit_of_measure
+    : $defaultunit;
 
         if (!empty($stocks) && $stocks->isNotEmpty() && $stocks->first()->product) {
-    $product = $stocks->first()->product;
+        $product = $stocks->first()->product;
+          
+        
 
     
-        // Map each stock record
         $stockDetails = $stocks->map(function ($stock) {
+
+            
             return [
                 'stock_id' => $stock->id,
                 'location_d' => $stock->location_id,
@@ -547,19 +540,29 @@ public function store(Request $request)
                 'current_stock' => $stock->current_stock,
                 'new_stock' => $stock->new_stock,
                 'quantity' => $stock->quantity,
-                'unit_of_measure' => $stock->unit_of_measure,
+                'unit_of_measure' => $stock->unit_of_measure ?? $defaultunit,
                 'per_unit_cost'=> $stock->per_unit_cost,
                 'total_cost'=> $stock->total_cost,
                 'adjustment' => $stock->adjustment,
                 'stock_date' => $stock->stock_date,
-                
-                // 'reason_for_update' => $stock->reason_for_update,
             ];
         });
     
         }else{
             $stockDetails =[];
         }
+
+      $uomCategory = UomCategory::where('name', $product_detail->unit_of_measurement_category)->first();
+$defaultunit = optional(
+    UomUnit::where('uom_category_id', optional($uomCategory)->id)->first()
+)->unit_name;
+
+$unitofmeasur = (!empty($product_detail->unit_of_measure) && $product_detail->unit_of_measure != '[]')
+    ? $product_detail->unit_of_measure
+    : $defaultunit;
+
+// print_r($unitofmeasur); die;
+
         $productsss= array(['id' => $product_detail->id,
         'thumbnail'=>$product_detail->thumbnail,
         'product_name' => $product_detail->product_name,
@@ -582,7 +585,7 @@ public function store(Request $request)
         'inventory_alert_threshold' => $product_detail->inventory_alert_threshold?? null,
         'location_id'=>$product_detail->location_id?? null,
         'quantity'=>$product_detail->quantity?? null,
-        'unit_of_measure'=>$product_detail->unit_of_measure?? null,
+        'unit_of_measure'=>$unitofmeasur,
         'per_unit_cost'=>$product_detail->per_unit_cost?? null,
         'total_cost' => $product_detail->total_cost?? null,
         'opening_stock' => $product_detail->opening_stock?? null,
@@ -591,11 +594,7 @@ public function store(Request $request)
         'updated_at' => $product_detail->updated_at,
     ]);
         return response()->json([
-            // 'product_data'=>$product_detail,
-            // 'product_id' => $product->id,
-            // 'product_name' => $product->product_name,
-            // 'opening_stock' => $product->opening_stock,
-
+           
                 'product_data'=>$productsss,
 
             'stock_details' => $stockDetails
@@ -830,49 +829,88 @@ public function store(Request $request)
         // }
 
 
-                // 1. Get all old stock records for this product
-            $product_locationDel = Stock::where('product_id', $product_id)->get();
+            // $product_locationDel = Stock::where('product_id', $product_id)->get();
+            // $existingStocks = $product_locationDel->keyBy('location_id');
+            // $newLocationIds = [];
 
-            // 2. Index by location_id for fast lookup
-            $existingStocks = $product_locationDel->keyBy('location_id');
+            // foreach ($multiLocation as $multiData) {
+            //     $locationId = $multiData['location_id'];
+            //     $newLocationIds[] = $locationId;
 
-            // 3. Track new location_ids to compare later for deletion
-            $newLocationIds = [];
+            //     $quantity = $multiData['quantity'] ?? 0;
 
-            foreach ($multiLocation as $multiData) {
-                $locationId = $multiData['location_id'];
-                $newLocationIds[] = $locationId; // collect all new location ids
+            //     $stockData = [
+            //         'vendor_id' => $request->vendor_id,
+            //         'category_id' => $request->category_id,
+            //         'location_id' => $locationId,
+            //         'quantity' => $quantity,
+            //         'current_stock' => $quantity,
+            //         'unit_of_measure' => $multiData['unit_of_measure'],
+            //         'per_unit_cost' => $multiData['per_unit_cost'],
+            //         'total_cost' => $multiData['total_cost'],
+            //         'stock_date' => $validatedRequest['stock_date'] ?? null,
+            //         'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+            //     ];
 
-                $quantity = $multiData['quantity'] ?? 0;
+            //     if (isset($existingStocks[$locationId])) {
+                    
+            //         $existingStocks[$locationId]->update($stockData);
+            //     } else {
+                    
+            //         $stockData['product_id'] = $product_id;
+            //         Stock::create($stockData);
+            //     }
+            // }
 
-                $stockData = [
-                    'vendor_id' => $request->vendor_id,
-                    'category_id' => $request->category_id,
-                    'location_id' => $locationId,
-                    'quantity' => $quantity,
-                    'current_stock' => $quantity,
-                    'unit_of_measure' => $multiData['unit_of_measure'],
-                    'per_unit_cost' => $multiData['per_unit_cost'],
-                    'total_cost' => $multiData['total_cost'],
-                    'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                ];
+            
+            // $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+            // foreach ($toDelete as $oldStock) {
+            //     $oldStock->delete();
+            // }
 
-                if (isset($existingStocks[$locationId])) {
-                    // Update existing record
-                    $existingStocks[$locationId]->update($stockData);
-                } else {
-                    // Create new record
-                    $stockData['product_id'] = $product_id;
-                    Stock::create($stockData);
-                }
-            }
+            // STEP 1: Set multiLocation from request
+$multiLocation = is_array($request->storage_location) ? $request->storage_location : [];
 
-            // 4. Delete records whose location_id was not in new list
-            $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
-            foreach ($toDelete as $oldStock) {
-                $oldStock->delete();
-            }
+// STEP 2: Existing stocks
+$product_locationDel = Stock::where('product_id', $product_id)->get();
+$existingStocks = $product_locationDel->keyBy('location_id');
+
+// STEP 3: Loop through locations
+$newLocationIds = [];
+
+foreach ($multiLocation as $multiData) {
+    $locationId = $multiData['location_id'];
+    $newLocationIds[] = $locationId;
+
+    $quantity = $multiData['quantity'] ?? 0;
+
+    $stockData = [
+        'vendor_id' => $request->vendor_id,
+        'category_id' => $request->category_id,
+        'location_id' => $locationId,
+        'quantity' => $quantity,
+        'current_stock' => $quantity,
+        'unit_of_measure' => $multiData['unit_of_measure'],
+        'per_unit_cost' => $multiData['per_unit_cost'],
+        'total_cost' => $multiData['total_cost'],
+        'stock_date' => $validatedRequest['stock_date'] ?? null,
+        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    ];
+
+    if (isset($existingStocks[$locationId])) {
+        $existingStocks[$locationId]->update($stockData);
+    } else {
+        $stockData['product_id'] = $product_id;
+        Stock::create($stockData);
+    }
+}
+
+// STEP 4: Delete removed locations
+$toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+foreach ($toDelete as $oldStock) {
+    $oldStock->delete();
+}
+
 
             $productUpdate = Product::with('stocksData')->find($id);
        
