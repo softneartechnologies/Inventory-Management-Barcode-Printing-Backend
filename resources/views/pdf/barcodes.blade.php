@@ -124,11 +124,12 @@
         <div class="label-box">
             {{-- Header with logo and print time --}}
             <div class="header">
-                 @if($type === 'barcode')
+                 <!-- @if($type === 'barcode')
                 <div class="print-time">Barcode No: {{ $i+1 }}</div>
                  @elseif($type === 'qrcode')
                  <div class="print-time">QR No: {{ $i+1 }}</div>
-                 @endif
+                 @endif -->
+                 <br>
             </div>
             <!-- <div class="title">{{ $sku }}</div> -->
             <!--<div class="subtitle">Hayathnagar, Hyd-70, 8247524795</div>-->
