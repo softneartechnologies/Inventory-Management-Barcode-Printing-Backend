@@ -1,197 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product Codes</title>
+    <title>Barcode Labels</title>
     <style>
-        body { font-family: sans-serif; }
-        .code-container {
-            /*display: flex;*/
-            /*flex-wrap: wrap;*/
-            /*gap: 20px;*/
-        }
-        .code-box {
-            text-align: center;
-            width: 200px;
-            display: flex;
-        }
-        .code-box img {
-            /*max-width: 100%;*/
-        }
-    </style>
-    
-</head>
-<body>
-<?php 
-use Milon\Barcode\Facades\DNS1D;
-use Milon\Barcode\Facades\DNS2D;
-
-
-?>
-    <h2>Generated Codes</h2>
-   
-    
-<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-        }
-        .container {
-            /*display: flex;*/
-            flex-wrap: wrap;
-            justify-content: {{ $orientation === 'horizontal' ? 'space-between' : 'flex-start' }};
-        }
-        .headerSubTitle {
-          font-family: 'Equestria', 'Permanent Marker', cursive;
-          text-align: center;
-          font-size: 12pt;
+            padding: 10px;
+            background: #fff;
         }
 
-        .pdf-border {
-            border: 1px solid #000;
-            padding: 15px;
-            margin: 10px;
+        @page {
+            size: {{ $orientation === 'horizontal' ? 'A4 landscape' : 'A4 portrait' }};
+            margin: 15mm;
         }
-        .barcode-item {
-            /* margin: 10px;
+
+        .sheet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .label-box {
+            border: 1px dashed #aaa;
             padding: 10px;
-            border: 1px solid #ddd;
-            display: inline-block;
-            text-align: center;
-            page-break-inside: avoid; */
-            margin: 10px;
-            padding: 10px;
-            /* border: 1px solid #ddd; */
-            display: inline-block;
-            align-items: center;
-            justify-content: space-between;
-            background: #fff;
+            /* width: {{ $orientation === 'horizontal' ? '30%' : '45%' }}; */
+            /* width: {{ $orientation === 'horizontal' ? '98%' : '85%' }};
+            width: {{ $orientation === 'vertical' ? '98%' : '85%' }}; */
+            width: '98%' : '85%';
+            /* width: {{ $orientation === 'vertical' ? '98%' : '85%' }}; */
+            box-sizing: border-box;
             page-break-inside: avoid;
+            text-align: center;
+            background: #fff;
         }
-        .barcode-item.vertical {
-            width: 180px;
+
+        .label-box h4 {
+            /* margin: 0 0 8px; */
+            font-size: 12px;
         }
-        .barcode-item.horizontal {
-            width: 550px;
+
+        .barcode-image {
+            margin: 5px 5px;
         }
+
+        .small {
+            /* width: 70%; */
+            /* height: 40px; */
+            width: 50mm;
+            height: 25mm;
+            /* height: 20mm; */
+        }
+        .medium {
+            /* width: 80%; */
+            width: 50mm;
+            height: 30mm;
+            /* height: 25mm; */
+        }
+        .large {
+            width: 50mm;
+            height: 30mm;
+        }
+
+        .qr-small {
+            width: 60px;
+            height: 60px;
+        }
+        .qr-medium {
+            width: 90px;
+            height: 90px;
+        }
+        .qr-large {
+            width: 120px;
+            height: 120px;
+        }
+
         .product-info {
-            margin-top: 5px;
-            font-size: {{ $orientation === 'horizontal' ? '14px' : '12px' }};
+            font-size: 11px;
             text-align: left;
-            padding: 5px;
+            margin-top: 5px;
         }
+
         .product-info p {
-            margin: 3px 0;
-            line-height: 1.3;
+            margin: 2px 0;
         }
-        .product-info p strong {
-            color: #333;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header img {
+            height: 30px;
+        }
+
+        .print-time {
+            font-size: 10px;
+            color: #555;
+        }
+
+        .title {
+            font-size: 14px;
             font-weight: bold;
         }
-        img {
-            /*max-width: 100%;*/
-            height: auto;
-        }
-        @page {
-            margin: {{ $orientation === 'horizontal' ? '15px' : '10px' }};
-            size: {{ $orientation === 'horizontal' ? 'A4 landscape' : 'A4 portrait' }};
-        }
-        
-        .small { width: 105px; height: 40px; }
-        .medium { width: 145px; height: 45px; }
-        .large { width: 180px; height: 50px; }
 
-        .qr-small { width: 60px; height: 60px; }
-        .qr-medium { width: 90px; height: 90px; }
-        .qr-large { width: 120px; height: 120px; }
-        
+        .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
     </style>
-    
+</head>
+<body>
 
-<!--<div class="pdf-wrapper">-->
-<div class="pdf-border">
-    <div class="container">
-        <div class="row">
-        @for($i = 0; $i < $count; $i++)
-        <br>
-         <br>
-    
-           <div class="under-line"></div>
+@php
+    $printDate = now()->format('l, F d Y h:i A');
+@endphp
 
-                @if($format === 'with_details')
-                  @php
-                        
-                        $dataArray = json_decode($data, true);
-                        
-                    @endphp
-                
+<div class="sheet">
+    @for($i = 0; $i < $count; $i++)
+        <div class="label-box">
+            {{-- Header with logo and print time --}}
+            <div class="header">
+                 <!-- @if($type === 'barcode')
+                <div class="print-time">Barcode No: {{ $i+1 }}</div>
+                 @elseif($type === 'qrcode')
+                 <div class="print-time">QR No: {{ $i+1 }}</div>
+                 @endif -->
+                 <!-- <br> -->
+            </div>
+            <!-- <div class="title">{{ $sku }}</div> -->
+            <!--<div class="subtitle">Hayathnagar, Hyd-70, 8247524795</div>-->
+            <!-- <div class="print-time">In Time: {{ $printDate }}</div> -->
+            {{-- Print product data --}}
+            @if($format === 'with_details')
+                @php $dataArray = json_decode($data, true); @endphp
                 @if(is_array($dataArray))
-                    @foreach($dataArray as $key => $value)
-                        @if(!is_null($value))
-                        @if($key =='product_name')
-                        <div class="headerSubTitle">
-                            <p><strong>{{ ucwords(str_replace('_', ' ', $key)) }}:</strong> {{ $value }}</p>
-                            </div>
-                        @else
-                        
-                           <p><strong>{{ ucwords(str_replace('_', ' ', $key)) }}:</strong> {{ $value }}</p>
-                           @endif
-                        @endif
-                    @endforeach
+                    <div class="product-info">
+                        @foreach($dataArray as $key => $value)
+                            @if(!is_null($value))
+                                <p>
+                                    <strong>{{ ucwords(str_replace('_', ' ', $key)) }}:</strong> {{ $value }}
+                                </p>
+                            @endif
+                        @endforeach
+                    </div>
                 @endif
+            @else
+                <!--<h4>SKU: {{ $sku }}</h4>-->
+            @endif
 
-                       <!--<p><strong>{{ ucfirst($data) }}:</strong></p>-->
-
-                   @else
-                   
-                   <p><strong>SKU: {{ ucfirst($sku) }}</strong></p>
-                @endif
-                
-                
+            {{-- Render barcode or QR --}}
+            <div class="barcode-image">
                 @if($type === 'barcode')
-                
-               
-                    @if($size == 'small')
-                   
-                    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS1D::getBarcodePNG($data, 'C128') }}" alt="Barcode" style="object-fit: contain;" class="small">
-                   <br>
-
-                    @elseif($size === 'medium')
-                        
-                        
-                    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS1D::getBarcodePNG($data, 'C128') }}" alt="Barcode" style="object-fit: contain;" class="medium">
-                   <br>
-                    
-                    
-                    @elseif($size === 'large')
-                    
-                   
-                    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS1D::getBarcodePNG($data, 'C128') }}" alt="Barcode" style="object-fit: contain;" class="large">
-                   <br>
-                   
-                    @endif
-                    
-                    
+                    @php
+                        $barcodeBase64 = Milon\Barcode\Facades\DNS1D::getBarcodePNG($sku, 'C128');
+                    @endphp
+                    <img src="data:image/png;base64,{{ $barcodeBase64 }}" class="{{ $size }}" alt="Barcode">
                 @elseif($type === 'qrcode')
-                    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS2D::getBarcodePNG($data, 'QRCODE') }}" alt="QR Code" style="width: 100px; height: 100px; object-fit: contain;">
-                     <br>
+                    @php
+                        $qrBase64 = Milon\Barcode\Facades\DNS2D::getBarcodePNG($sku, 'QRCODE');
+                        $qrClass = 'qr-' . $size;
+                    @endphp
+                    <br>
+                    
+                        <h4>SKU: {{ $sku }}</h4>
+                    
+                    <img src="data:image/png;base64,{{ $qrBase64 }}" class="{{ $qrClass }}" alt="QR Code">
                 @endif
-
-
-                <!--@if($type === 'barcode')-->
-                <!--    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS1D::getBarcodePNG($data, 'C128') }}" alt="Barcode">-->
-                <!--@elseif($type === 'qrcode')-->
-                <!--    <img src="data:image/png;base64,{{ Milon\Barcode\Facades\DNS2D::getBarcodePNG($data, 'QRCODE') }}" alt="QR Code">-->
-                <!--@endif-->
-
-                
-           
-
-        @endfor
+                <div class="title">{{ $sku }}</div>
+            </div>
         </div>
-    </div>
+    @endfor
 </div>
-
 
 </body>
 </html>
