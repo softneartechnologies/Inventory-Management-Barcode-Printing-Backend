@@ -130,9 +130,9 @@
                  <div class="print-time">QR No: {{ $i+1 }}</div>
                  @endif
             </div>
-            <div class="title">{{ $sku }}</div>
+            <!-- <div class="title">{{ $sku }}</div> -->
             <!--<div class="subtitle">Hayathnagar, Hyd-70, 8247524795</div>-->
-            <div class="print-time">In Time: {{ $printDate }}</div>
+            <!-- <div class="print-time">In Time: {{ $printDate }}</div> -->
             {{-- Print product data --}}
             @if($format === 'with_details')
                 @php $dataArray = json_decode($data, true); @endphp
@@ -169,6 +169,7 @@
                     
                     <img src="data:image/png;base64,{{ $qrBase64 }}" class="{{ $qrClass }}" alt="QR Code">
                 @endif
+                <div class="title">{{ $sku }}</div>
             </div>
         </div>
     @endfor
