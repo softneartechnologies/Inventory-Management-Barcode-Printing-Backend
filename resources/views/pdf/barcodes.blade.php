@@ -5,7 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermal Label Print Styles</title>
     <style>
-        body {
+
+        /* html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* Page size override for print */
+@media print {
+  @page {
+    size: 4in 6in;
+    margin: 0;
+  }
+
+  /* Ensure each label occupies full page */
+  .label-box {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    box-sizing: border-box;
+    page-break-after: always;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide unwanted elements on print */
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Barcode container centering */
+/* .barcode-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+
+       html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -17,7 +61,7 @@
 /* Page setup for thermal printing */
 @page {
     /* For thermal printer - use exact label dimensions */
-    size: 4in 6in; /* Adjust based on your label roll size */
+    size: 4in 6in; 
     margin: 0;
     padding: 0;
 }
@@ -38,6 +82,33 @@
     size: {{ $orientation === 'horizontal' ? 'A4 landscape' : 'A4 portrait' }};
     margin: 15mm;
 }
+.label-box {
+    /* height: 50.8mm; */
+}
+
+.label-box.thermal-4x2 {
+    height: 2in;
+}
+
+
+@media print {
+    @page {
+        size: 4in 2in; /* or whatever size you're using */
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .label-box {
+        page-break-after: always;
+        /* height: 100vh;  */
+    }
+}
+
+
 
 /* Sheet container - modified for thermal printing */
 .sheet {
@@ -58,25 +129,32 @@
 }
 
 /* Label box - optimized for thermal printing */
-.label-box {
-    border: 1px solid #000; /* Solid border for better thermal printing */
-    padding: 2mm; /* Reduced padding for thermal */
-    width: 98mm; /* Fixed width for 4" thermal printer (4" = ~101.6mm) */
+/* .label-box {
+    border: 1px solid #000;
+    padding: 2mm; 
+    width: 98mm; 
     max-width: 98mm;
-    min-height: 40mm; /* Minimum height for readability */
+    min-height: 40mm; 
     box-sizing: border-box;
     page-break-inside: avoid;
-    page-break-after: always; /* Force new label for each item */
+    page-break-after: always; 
     text-align: center;
     background: #fff;
     margin: 0 auto;
     
-    /* Thermal printer optimizations */
     color: #000 !important;
     -webkit-font-smoothing: none;
     font-smoothing: none;
-}
+} */
 
+.label-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 52%; 
+    /* margin-bottom: 50%;  */
+
+}
 /* A4 preview mode styling */
 .label-box.a4-mode {
     width: {{ $orientation === 'horizontal' ? '30%' : '45%' }};
@@ -91,7 +169,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3mm;
-    font-size: 8pt; /* Smaller for thermal printing */
+    font-size: 8pt;
 }
 
 .header img {
@@ -126,21 +204,31 @@
 
 /* Barcode image container */
 .barcode-image {
-    margin: 2mm auto;
-    display: block;
+    /* margin: 2mm auto; */
+    /* display: block; */
     text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;   */
+    margin-top: 52%; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    border: 1px solid #000; 
+    margin: 0 auto;  */
 }
 
 /* Barcode sizes - optimized for thermal printing */
 .small {
-    width: 35mm; /* Reduced for thermal */
-    height: 15mm;
+    width: 50mm; /* Reduced for thermal */
+    height: 25mm;
     max-width: 90%; /* Ensure it fits in label */
 }
 
 .medium {
-    width: 70mm; /* Adjusted for 4" thermal printer */
-    height: 20mm;
+     width: 50mm; /* Adjusted for 4" thermal printer */
+    height: 30mm;
     max-width: 90%;
 }
 
@@ -208,10 +296,10 @@
     page-break-after: always;
 }
 
-.a4-mode .label-box {
+/* .a4-mode .label-box {
     width: {{ $orientation === 'horizontal' ? '30%' : '45%' }};
     page-break-after: auto;
-}
+} */
 
 /* Utility classes for different thermal label sizes */
 .thermal-2x1 { /* 2" x 1" labels */
@@ -247,6 +335,12 @@
 
 .thermal-4x6 .title { font-size: 14pt; }
 .thermal-4x6 .product-info { font-size: 9pt; }
+
+
+    </style>
+
+    <style>
+        /* Base print styling */
 
 
     </style>
