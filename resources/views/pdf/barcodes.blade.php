@@ -9,10 +9,10 @@
 
  <style>
     html, body {
-      margin: 1;
-      padding: 1;
+      margin: 2;
+      /* padding: 1; */
       width: 52mm;
-      height: 45mm;
+      height: 40mm;
       font-family: Arial, sans-serif;
       background: #fff;
       -webkit-print-color-adjust: exact;
@@ -21,14 +21,15 @@
     }
 
     @page {
-      size: 52mm 45mm;
-      margin: 0;
+      size: 52mm 48mm;
+      margin: 2;
+      margin-bottom: 1;
     }
 
     @media print {
       body {
         margin: 1;
-        padding: 0;
+        padding: 1;
       }
 
       .label-box {
@@ -45,10 +46,12 @@
       justify-content: center;
       align-items: center;
       width: 52mm;
-      height: 45mm;
-      padding: 0;
-      margin: 0 auto;
+      height: 40mm;
+      /* padding-bottom: 1px; */
+      margin: auto;
       box-sizing: border-box;
+
+      /* margin-right: 1px; */
     }
 
     .label-box {
@@ -64,18 +67,21 @@
       width: 95%;
       height: 80%;
       text-align: center;
+      margin-right: 1px;
     }
 
     .barcode-image img.medium {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      justify-content: center;
     }
 
     .barcode-image img.small {
       width: 90%;
       height: 80%;
       object-fit: contain;
+      justify-content: center;
     }
 
     .medium {
@@ -95,7 +101,7 @@
     .title {
       font-size: 8pt;
       font-weight: bold;
-      margin-bottom: 1mm;
+      /* margin-bottom: 1mm; */
     }
 
     .product-info {
@@ -105,7 +111,7 @@
     }
 
     .product-info p {
-      margin: 1mm 0;
+      /* margin: 1mm 0; */
     }
   </style>
 </head>
