@@ -23,7 +23,7 @@
     @page {
       size: 52mm 48mm;
       margin: 2;
-      margin-bottom: 1;
+      margin-bottom: 2mm;
     }
 
     @media print {
@@ -65,7 +65,7 @@
 
     .barcode-image {
       width: 95%;
-      height: 80%;
+      height: 90%;
       text-align: center;
       margin-right: 1px;
     }
@@ -78,8 +78,8 @@
     }
 
     .barcode-image img.small {
-      width: 90%;
-      height: 80%;
+      width: 95%;
+      height: 100%;
       object-fit: contain;
       justify-content: center;
     }
@@ -87,11 +87,13 @@
     .medium {
       width: 50mm;
       height: 30mm;
+      border: 2px solid;
     }
 
     .small {
       width: 50mm;
       height: 25mm;
+      border: 2px solid;
     }
 
     .qr-small { width: 15mm; height: 15mm; }
