@@ -64,11 +64,11 @@
     }
 
     .barcode-image {
-      width: 94%;
-      height: 90%;
+      width: 93.5%;
+      height: 90.3%;
       text-align: center;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: 1px;
+      margin-left: 1px;
     }
 
 
@@ -77,8 +77,8 @@
       height: 100%;
       object-fit: contain;
       justify-content: center;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: 1px;
+      margin-left: 1px;
     }
 
     .barcode-image img.small {
