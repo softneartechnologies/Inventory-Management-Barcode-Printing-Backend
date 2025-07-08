@@ -71,12 +71,14 @@
       margin-left: 0px;
     }
 
-    
+
     .barcode-image img.medium {
       width: 100%;
       height: 100%;
       object-fit: contain;
       justify-content: center;
+      margin-right: 0px;
+      margin-left: 0px;
     }
 
     .barcode-image img.small {
