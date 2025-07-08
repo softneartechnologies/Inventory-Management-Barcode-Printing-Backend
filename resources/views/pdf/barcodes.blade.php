@@ -68,6 +68,7 @@
       height: 90%;
       text-align: center;
       margin-right: 0px;
+      margin-left: 0px;
     }
 
     .barcode-image img.medium {
