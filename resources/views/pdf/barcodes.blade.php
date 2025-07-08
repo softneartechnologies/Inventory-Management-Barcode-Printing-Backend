@@ -71,6 +71,7 @@
       margin-left: 0px;
     }
 
+    
     .barcode-image img.medium {
       width: 100%;
       height: 100%;
