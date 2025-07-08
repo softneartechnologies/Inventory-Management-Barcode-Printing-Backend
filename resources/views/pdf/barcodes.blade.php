@@ -69,6 +69,8 @@
       text-align: center;
       margin-right: 1px;
       margin-left: 1px;
+      /* margin-top: -4px; */
+      padding-top: -4px;
     }
 
 
@@ -77,8 +79,8 @@
       height: 100%;
       object-fit: contain;
       justify-content: center;
-      margin-right: 1px;
-      margin-left: 1px;
+      /* margin-right: 1px;
+      margin-left: 1px; */
     }
 
     .barcode-image img.small {
