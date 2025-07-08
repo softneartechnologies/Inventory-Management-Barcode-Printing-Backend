@@ -9,10 +9,10 @@
 
  <style>
     html, body {
-      margin: 2;
+      margin: 1;
       /* padding: 1; */
       width: 52mm;
-      height: 40mm;
+      height: 30mm;
       font-family: Arial, sans-serif;
       background: #fff;
       -webkit-print-color-adjust: exact;
@@ -21,15 +21,16 @@
     }
 
     @page {
-      size: 52mm 48mm;
-      margin: 2;
-      margin-bottom: 2mm;
+      size: 52mm 35.8mm;
+      margin: 1;
+      /* margin-bottom: 2mm; */
     }
 
     @media print {
       body {
-        margin: 1;
-        padding: 1;
+        /* margin: 0.5;
+        padding: 0.5; */
+        
       }
 
       .label-box {
@@ -55,8 +56,10 @@
     }
 
     .label-box {
-      width: 52mm;
-      height: 45mm;
+      /* width: 52mm; */
+      /* height: 45mm; */
+      /* width: 100%; */
+      /* height: 50%; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -64,19 +67,22 @@
     }
 
     .barcode-image {
-      width: 93.5%;
-      height: 90.3%;
+      width: 96.5%;
+      /* height: 100%; */
       text-align: center;
-      margin-right: 1px;
-      margin-left: 1px;
-      /* margin-top: -4px; */
-      padding-top: -4px;
+      margin-right: 0.3px;
+      margin-left: 0.3px;
+      /* margin-top: -5px; */
+      /* padding-top: -2px; */
     }
 
 
     .barcode-image img.medium {
-      width: 100%;
-      height: 100%;
+      /* width: 100%; */
+      /* width: 50mm; */
+      /* height: 30mm; */
+      /* height: 100%; */
+      /* height: 30mm; */
       object-fit: contain;
       justify-content: center;
       /* margin-right: 1px;
@@ -94,6 +100,10 @@
       width: 50mm;
       height: 30mm;
       border: 2px solid;
+       text-align: center;
+      margin-right: 0.3px;
+      margin-left: 0.3px;
+      margin-top: -1px;
     }
 
     .small {
