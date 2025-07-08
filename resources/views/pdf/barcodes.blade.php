@@ -70,8 +70,8 @@
       width: 96.5%;
       /* height: 100%; */
       text-align: center;
-      margin-right: 0.3px;
-      margin-left: 0.3px;
+      /* margin-right: 0.3px;
+      margin-left: 0.3px; */
       /* margin-top: -5px; */
       /* padding-top: -2px; */
     }
@@ -101,9 +101,9 @@
       height: 30mm;
       border: 2px solid;
        text-align: center;
-      margin-right: 0.3px;
-      margin-left: 0.3px;
-      margin-top: -1px;
+      margin-right: -2px;
+      /* margin-left: 0.3px; */
+      margin-top: -2px;
     }
 
     .small {
