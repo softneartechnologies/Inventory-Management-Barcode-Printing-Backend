@@ -102,8 +102,8 @@
       border: 2px solid;
        text-align: center;
       margin-right: -2px;
-      /* margin-left: 0.3px; */
-      margin-top: -2px;
+      margin-left: -1px;
+      margin-top: -1.5px;
     }
 
     .small {
