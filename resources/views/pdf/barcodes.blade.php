@@ -64,10 +64,10 @@
     }
 
     .barcode-image {
-      width: 95%;
+      width: 94%;
       height: 90%;
       text-align: center;
-      margin-right: 1px;
+      margin-right: 0px;
     }
 
     .barcode-image img.medium {
