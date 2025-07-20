@@ -2474,21 +2474,27 @@ public function printBarcode(Request $request)
     }
 
 // Retrieve the setting where key is 'sku' and value is 1
+
+// $settings = BarcodeSetting::where('value', 1)->pluck('key')->toArray();
 $settings = BarcodeSetting::where('value', 1)->pluck('key')->toArray();
- 
+//  print_r($settings);die;
 $productDetail = [];
 if (!empty($settings)) {
     // Dynamically select only the keys that are enabled in settings
     
-    $product = Product::select('product_name')
+    
+
+    $product = Product::select($settings)
         ->where('sku', $request->data)
         ->first();
-
 //    print_r($product);die;
         // Return only selected values
        $productDetail = $product->toArray();
    
 }
+$productName = Product::select('product_name')
+        ->where('sku', $request->data)
+        ->first();
 
 
     $pdf = PDF::loadView('pdf.barcodes', [
@@ -2498,6 +2504,7 @@ if (!empty($settings)) {
         'size' => $request->size,
         'sku' => $request->data,
         'data' => json_encode($product),
+        'productName' => json_encode($productName),
         'type' => $request->type,
         'count' => $request->count,
         
