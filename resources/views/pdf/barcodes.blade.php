@@ -12,6 +12,7 @@
       margin: 1;
       /* padding: 1; */
       width: 52mm;
+      /* height: 30mm; */
       height: 30mm;
       font-family: Arial, sans-serif;
       background: #fff;
@@ -21,7 +22,10 @@
     }
 
     @page {
-      size: 52mm 35.8mm;
+       size: {{ $format === 'with_details' ? '52mm 40.8mm' : '52mm 35.8mm' }};
+        
+      /* size: 52mm 35.8mm; */
+      /* size: 52mm 42.8mm; */
       margin: 1;
       /* margin-bottom: 2mm; */
     }
@@ -103,7 +107,8 @@
        text-align: center;
       margin-right: -2px;
       margin-left: -1px;
-      margin-top: -1.5px;
+      /* margin-top: -1.5px; */
+      /* margin-top: -2px; */
     }
 
     .small {
@@ -123,13 +128,17 @@
     }
 
     .product-info {
-      font-size: 7pt;
+      font-size: 6pt;
       text-align: center;
       color: #000;
     }
 
     .product-info p {
       /* margin: 1mm 0; */
+      margin-top: 1px;
+      text-align:left;
+      font-size:7px;
+      margin-bottom: -2px;
     }
   </style>
 </head>
@@ -156,7 +165,7 @@
             <!--<div class="subtitle">Hayathnagar, Hyd-70, 8247524795</div>-->
             <!-- <div class="print-time">In Time: {{ $printDate }}</div> -->
             {{-- Print product data --}}
-            @if($format === 'with_details')
+            <!-- @if($format === 'with_details')
                 @php $dataArray = json_decode($data, true); @endphp
                 @if(is_array($dataArray))
                     <div class="product-info">
@@ -169,30 +178,59 @@
                         @endforeach
                     </div>
                 @endif
-            @else
+            @else -->
                 <!--<h4>SKU: {{ $sku }}</h4>-->
-            @endif
+            <!-- @endif -->
 
             {{-- Render barcode or QR --}}
+             @php $dataArray = json_decode($productName, true); @endphp
+                    
+                    <div class="title" style="font-size:5px;padding-top:-1px; text-align:center;">Product name: {{ $dataArray['product_name']}}</div>
+                   
+
             <div class="barcode-image">
                 @if($type === 'barcode')
                     @php
                         $barcodeBase64 = Milon\Barcode\Facades\DNS1D::getBarcodePNG($sku, 'C128');
                     @endphp
                     <img src="data:image/png;base64,{{ $barcodeBase64 }}" class="{{ $size }}" alt="Barcode">
+
+                    
+
+
                 @elseif($type === 'qrcode')
                     @php
                         $qrBase64 = Milon\Barcode\Facades\DNS2D::getBarcodePNG($sku, 'QRCODE');
                         $qrClass = 'qr-' . $size;
                     @endphp
-                    <br>
+                    <!-- <br> -->
                     
                         <h4>SKU: {{ $sku }}</h4>
                     
                     <img src="data:image/png;base64,{{ $qrBase64 }}" class="{{ $qrClass }}" alt="QR Code">
                 @endif
-                <div class="title">{{ $sku }}</div>
+
+                
             </div>
+                
+                    @if($format === 'with_details')
+                       @php $dataArray = json_decode($data, true); @endphp
+                            @if(is_array($dataArray))
+                                <div class="product-info">
+                                    @foreach($dataArray as $key => $value)
+                                        @if(!is_null($value))
+                                            <p>
+                                                <b>{{ ucwords(str_replace('_', ' ', $key)) }}:</b> {{ $value }}
+                                            </p>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            @endif
+                    @else
+                        @if($format === 'only_barcode')
+                        <div class="title" style="font-size:5px; text-align:center;">{{ $sku }}</div>
+                        @endif
+                    @endif
         </div>
     @endfor
 </div>
