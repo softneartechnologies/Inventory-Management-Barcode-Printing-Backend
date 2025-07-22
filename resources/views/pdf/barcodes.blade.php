@@ -21,14 +21,23 @@
       box-sizing: border-box;
     }
 
-    @page {
+    /* @page {
        size: {{ $format === 'with_details' ? '52mm 40.8mm' : '52mm 35.8mm' }};
-        
-      /* size: 52mm 35.8mm; */
-      /* size: 52mm 42.8mm; */
       margin: 1;
-      /* margin-bottom: 2mm; */
+      
+    } */
+
+
+    @page {
+        @if ($type === 'barcode')
+           size: {{ $format === 'with_details' ? '52mm 40.8mm' : '52mm 35.8mm' }};
+        @elseif ($type === 'qrcode')
+            size: {{ $format === 'with_details' ? '52mm 29.8mm' : '52mm 25.8mm' }};
+        @endif
+        margin: 0mm;
     }
+
+    
 
     @media print {
       body {
@@ -140,6 +149,51 @@
       font-size:7px;
       margin-bottom: -2px;
     }
+
+.product-infoqr {
+      font-size: 6pt;
+      text-align: center;
+      color: #000;
+    }
+    .product-infoqr p {
+      /* margin: 1mm 0; */
+      margin-top: 1px;
+      text-align:center;
+      font-size:7px;
+      margin-bottom: -2px;
+    }
+
+    .product-name {
+            font-size: 10pt;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2mm;
+        }
+
+        .sku {
+            font-size: 9pt;
+            margin-bottom: 2mm;
+            text-align: center;
+        }
+    .qr-sm {
+            width: 80px;
+            height: 80px;
+        }
+
+        .qr-md {
+            width: 100px;
+            height: 100px;
+        }
+
+        .qr-lg {
+            width: 120px;
+            height: 120px;
+        }
+        .label-key {
+  display: inline-block;
+  text-align: left;
+  
+}
   </style>
 </head>
 <body>
@@ -201,17 +255,16 @@
                 @elseif($type === 'qrcode')
                     @php
                         $qrBase64 = Milon\Barcode\Facades\DNS2D::getBarcodePNG($sku, 'QRCODE');
-                        $qrClass = 'qr-' . $size;
+                       
+                          $qrClass = 'qr-' . ($size ?? 'md');
                     @endphp
-                    <!-- <br> -->
-                    
-                        <h4>SKU: {{ $sku }}</h4>
-                    
+                   
                     <img src="data:image/png;base64,{{ $qrBase64 }}" class="{{ $qrClass }}" alt="QR Code">
                 @endif
 
                 
             </div>
+                 @if($type === 'barcode')
                 
                     @if($format === 'with_details')
                        @php $dataArray = json_decode($data, true); @endphp
@@ -220,7 +273,8 @@
                                     @foreach($dataArray as $key => $value)
                                         @if(!is_null($value))
                                             <p>
-                                                <b>{{ ucwords(str_replace('_', ' ', $key)) }}:</b> {{ $value }}
+        
+                                                <b style="text-aligh: left">{{ ucwords(str_replace('_', ' ', $key)) }}:</b> {{ $value }}
                                             </p>
                                         @endif
                                     @endforeach
@@ -231,6 +285,31 @@
                         <div class="title" style="font-size:5px; text-align:center;">{{ $sku }}</div>
                         @endif
                     @endif
+
+                @else
+
+
+                     @if($format === 'with_details')
+                       @php $dataArray = json_decode($data, true); @endphp
+                            @if(is_array($dataArray))
+                                <div class="product-infoqr">
+                                    @foreach($dataArray as $key => $value)
+                                        @if(!is_null($value))
+                                            <p>
+                                                <b class="label-key">{{ ucwords(str_replace('_', ' ', $key)) }}:</b>
+{{ $value }}
+                                                <!-- <b>{{ ucwords(str_replace('_', ' ', $key)) }}:</b> {{ $value }} -->
+                                            </p>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            @endif
+                    @else
+                        @if($format === 'only_barcode')
+                        <div class="title" style="font-size:5px; text-align:center;">{{ $sku }}</div>
+                        @endif
+                    @endif
+                @endif
         </div>
     @endfor
 </div>
