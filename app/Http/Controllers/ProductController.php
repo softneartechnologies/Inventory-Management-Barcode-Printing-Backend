@@ -33,13 +33,56 @@ use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
-    public function index()
-    {
+    // public function index()
+    // {
         
-        $products = Product::with('category:id,name','vendor:id,vendor_name',
-        'sub_category:id,name')->orderBy('id', 'desc')->get();
+    //     $products = Product::with('category:id,name','vendor:id,vendor_name',
+    //     'sub_category:id,name')->orderBy('id', 'desc')->get();
     
         
+    //         $products = $products->map(function ($product) {
+    //         // Get all product attributes + add category name
+    //         $data = $product->toArray();
+    //         $data['category_name'] = optional($product->category)->name;
+    //         $data['subcategory_name'] = optional($product->subcategory)->name;
+    //         $data['vendor_name'] = optional($product->vendor)->vendor_name;
+            
+    //         if(!empty($product->thumbnail)){
+    //         $data['product_images'] = url($product->thumbnail); 
+    //         }else{
+    //              $data['product_images'] = url('/storage/default_image/default_imagess.jpg'); 
+    //         }
+    
+    //         return $data;
+    //     });
+    
+    //     return response()->json(['products' => $products], 200);
+    // }
+    
+
+    public function index(Request $request)
+    {
+        $query = Product::with(['category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name']);
+
+        // ✅ Search functionality
+        if ($request->has('search') && !empty($request->search)) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->where('product_name', 'like', "%$search%")
+                ->orWhere('description', 'like', "%$search%");
+                // Add more searchable fields if needed
+            });
+        }
+
+        // ✅ Sorting functionality
+        $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
+        $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
+        $query->orderBy($sortBy, $sortOrder);
+
+        // ✅ Pagination
+        $perPage = $request->get('per_page', 10); // default 10 items per page
+        $products = $query->paginate($perPage);
+
         $products = $products->map(function ($product) {
             // Get all product attributes + add category name
             $data = $product->toArray();
@@ -58,7 +101,7 @@ class ProductController extends Controller
     
         return response()->json(['products' => $products], 200);
     }
-    
+
 
     // public function store(Request $request)
     // {
