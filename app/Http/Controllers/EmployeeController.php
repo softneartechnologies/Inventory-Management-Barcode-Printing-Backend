@@ -47,12 +47,32 @@ class EmployeeController extends Controller
         return response()->json($employees, 200);
     }
     
-    public function inactiveEmployee()
+    public function inactiveEmployee(Request $request)
     {
-        // $employees = Employee::all();
-        $employees = Employee::get();
+        $query = Employee::where('status', 'active');
+        if ($request->has('search') && !empty($request->search)) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->where('employee_name', 'like', "%$search%")
+                ->orWhere('work_station', 'like', "%$search%");
+                // Add more searchable fields if needed
+            });
+        }
+
+        // ✅ Sorting functionality
+        $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
+        $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
+        $query->orderBy($sortBy, $sortOrder);
+
+        // ✅ Pagination
+        $perPage = $request->get('per_page', 10); // default 10 items per page
+        $employees = $query->paginate($perPage);
 
         return response()->json($employees, 200);
+        // $employees = Employee::all();
+        // $employees = Employee::get();
+
+        // return response()->json($employees, 200);
     }
     // ✅ Create a New Employee
     public function store(Request $request)
