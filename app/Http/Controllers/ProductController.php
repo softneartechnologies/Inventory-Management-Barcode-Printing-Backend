@@ -62,6 +62,9 @@ class ProductController extends Controller
 
     public function index(Request $request)
     {
+        $totalcount =$countproducts = Product::with('category:id,name','vendor:id,vendor_name',
+        'sub_category:id,name')->orderBy('id', 'desc')->count();
+
         $query = Product::with(['category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name']);
 
         // ✅ Search functionality
@@ -83,7 +86,7 @@ class ProductController extends Controller
         $perPage = $request->get('per_page', 10); // default 10 items per page
         $products = $query->paginate($perPage);
 
-        $products = $products->map(function ($product) {
+        $products_data = $products->map(function ($product) {
             // Get all product attributes + add category name
             $data = $product->toArray();
             $data['category_name'] = optional($product->category)->name;
@@ -99,7 +102,7 @@ class ProductController extends Controller
             return $data;
         });
     
-        return response()->json(['products' => $products], 200);
+        return response()->json(['total_count' =>$totalcount,'products' => $products_data], 200);
     }
 
 

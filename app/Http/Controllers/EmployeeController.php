@@ -49,6 +49,7 @@ class EmployeeController extends Controller
     
     public function inactiveEmployee(Request $request)
     {
+        $totalcount = Employee::where('status', 'active')->count();
         $query = Employee::where('status', 'active');
         if ($request->has('search') && !empty($request->search)) {
             $search = $request->search;
@@ -68,7 +69,8 @@ class EmployeeController extends Controller
         $perPage = $request->get('per_page', 10); // default 10 items per page
         $employees = $query->paginate($perPage);
 
-        return response()->json($employees, 200);
+        return response()->json(['total_count' =>$totalcount,'enmployee' => $employees], 200);
+        // return response()->json(['totalcount'=>$totalcount,'enmployee'=>$employees], 200);
         // $employees = Employee::all();
         // $employees = Employee::get();
 
