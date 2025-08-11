@@ -186,6 +186,7 @@ Route::prefix('barcode-settings')->group(function () {
 // product 
    Route::prefix('products')->group(function () {
     Route::get('/', [ProductController::class, 'index']); // Get all currencies
+    Route::get('/search-product', [ProductController::class, 'searchProduct']); // Get all currencies
     Route::post('/add', [ProductController::class, 'store']); // Create currency
     Route::get('/edit/{id}', [ProductController::class, 'show']); // Get single currency
     Route::get('/view/{id}', [ProductController::class, 'view']); // Get single currency
@@ -204,6 +205,7 @@ Route::prefix('barcode-settings')->group(function () {
     
     Route::get('/download-csv', [ProductController::class, 'downloadCsv']);
     Route::get('/download-template', [ProductController::class, 'generateTemplateCsvUrl']);
+
 });
 
 Route::prefix('reports')->group(function () {
