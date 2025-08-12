@@ -103,10 +103,28 @@
     }
 
     .barcode-image img.small {
-      width: 95%;
-      height: 100%;
+      /* width: 95%;
+      height: 100%; */
       object-fit: contain;
       justify-content: center;
+    }
+
+    .barcode-image img.large {
+      /* width: 95%;
+      height: 100%; */
+      object-fit: contain;
+      justify-content: center;
+    }
+
+    .large {
+      width: 50mm;
+      height: 30mm;
+      border: 2px solid;
+       text-align: center;
+      margin-right: -2px;
+      margin-left: -1px;
+      /* margin-top: -1.5px; */
+      /* margin-top: -2px; */
     }
 
     .medium {
@@ -122,8 +140,12 @@
 
     .small {
       width: 50mm;
-      height: 25mm;
-      border: 2px solid;
+      height: 30mm;
+       border: 2px solid;
+       text-align: center;
+      margin-right: -2px;
+      margin-left: -1px;
+      /* border: 2px solid; */
     }
 
     .qr-small { width: 15mm; height: 15mm; }
