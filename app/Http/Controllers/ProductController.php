@@ -72,15 +72,31 @@ class ProductController extends Controller
             $search = $request->search;
             $query->where(function ($q) use ($search) {
                 $q->where('product_name', 'like', "%$search%")
-                ->orWhere('description', 'like', "%$search%");
-                // Add more searchable fields if needed
+                ->orWhere('description', 'like', "%$search%")
+                 ->orWhereHas('category', function ($catQuery) use ($search) {
+              $catQuery->where('name', 'like', "%{$search}%");
+          });
             });
         }
 
         // ✅ Sorting functionality
-        $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
-        $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
-        $query->orderBy($sortBy, $sortOrder);
+        // $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
+        // $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
+        // $query->orderBy($sortBy, $sortOrder);
+
+        // $sortBy = $request->get('sort_by', 'products.id'); // default
+        $sortBy = $request->get('sort_by', 'id'); // default column
+$sortOrder = $request->get('sort_order', 'desc'); // default order
+
+if ($sortBy === 'category_name') {
+    $query->orderBy(
+        Category::select('name')
+            ->whereColumn('categories.id', 'products.category_id'),
+        $sortOrder
+    );
+} else {
+    $query->orderBy($sortBy, $sortOrder);
+}
 
         // ✅ Pagination
         $perPage = $request->get('per_page', 10); // default 10 items per page
