@@ -60,66 +60,121 @@ class ProductController extends Controller
     // }
     
 
-    public function index(Request $request)
-    {
-        $totalcount =$countproducts = Product::with('category:id,name','vendor:id,vendor_name',
-        'sub_category:id,name')->orderBy('id', 'desc')->count();
+    // public function index(Request $request)
+    // {
+    //     $totalcount =$countproducts = Product::with('category:id,name','vendor:id,vendor_name',
+    //     'sub_category:id,name')->orderBy('id', 'desc')->count();
 
-        $query = Product::with(['category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name']);
+    //     $query = Product::with(['category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name']);
 
-        // ✅ Search functionality
-        if ($request->has('search') && !empty($request->search)) {
-            $search = $request->search;
-            $query->where(function ($q) use ($search) {
-                $q->where('product_name', 'like', "%$search%")
-                ->orWhere('description', 'like', "%$search%")
-                 ->orWhereHas('category', function ($catQuery) use ($search) {
-              $catQuery->where('name', 'like', "%{$search}%");
-          });
-            });
-        }
+    //     // ✅ Search functionality
+    //     if ($request->has('search') && !empty($request->search)) {
+    //         $search = $request->search;
+    //         $query->where(function ($q) use ($search) {
+    //             $q->where('product_name', 'like', "%$search%")
+    //             ->orWhere('description', 'like', "%$search%")
+    //              ->orWhereHas('category', function ($catQuery) use ($search) {
+    //           $catQuery->where('name', 'like', "%{$search}%");
+    //       });
+    //         });
+    //     }
 
-        // ✅ Sorting functionality
-        // $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
-        // $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
-        // $query->orderBy($sortBy, $sortOrder);
+    
+    //     $sortBy = $request->get('sort_by', 'id'); // default column
+    //     $sortOrder = $request->get('sort_order', 'desc'); // default order
 
-        // $sortBy = $request->get('sort_by', 'products.id'); // default
-        $sortBy = $request->get('sort_by', 'id'); // default column
-$sortOrder = $request->get('sort_order', 'desc'); // default order
+    //     if ($sortBy === 'category_name') {
+    //         $query->orderBy(
+    //             Category::select('name')
+    //                 ->whereColumn('categories.id', 'products.category_id'),
+    //             $sortOrder
+    //         );
+    //     } else {
+    //         $query->orderBy($sortBy, $sortOrder);
+    //     }
 
-if ($sortBy === 'category_name') {
-    $query->orderBy(
-        Category::select('name')
-            ->whereColumn('categories.id', 'products.category_id'),
-        $sortOrder
-    );
-} else {
-    $query->orderBy($sortBy, $sortOrder);
-}
+    //     // ✅ Pagination
+    //     $perPage = $request->get('per_page', 10); // default 10 items per page
+    //     $products = $query->paginate($perPage);
 
-        // ✅ Pagination
-        $perPage = $request->get('per_page', 10); // default 10 items per page
-        $products = $query->paginate($perPage);
-
-        $products_data = $products->map(function ($product) {
-            // Get all product attributes + add category name
-            $data = $product->toArray();
-            $data['category_name'] = optional($product->category)->name;
-            $data['subcategory_name'] = optional($product->subcategory)->name;
-            $data['vendor_name'] = optional($product->vendor)->vendor_name;
+    //     $products_data = $products->map(function ($product) {
+    //         // Get all product attributes + add category name
+    //         $data = $product->toArray();
+    //         $data['category_name'] = optional($product->category)->name;
+    //         $data['subcategory_name'] = optional($product->subcategory)->name;
+    //         $data['vendor_name'] = optional($product->vendor)->vendor_name;
             
-            if(!empty($product->thumbnail)){
-            $data['product_images'] = url($product->thumbnail); 
-            }else{
-                 $data['product_images'] = url('/storage/default_image/default_imagess.jpg'); 
-            }
+    //         if(!empty($product->thumbnail)){
+    //         $data['product_images'] = url($product->thumbnail); 
+    //         }else{
+    //              $data['product_images'] = url('/storage/default_image/default_imagess.jpg'); 
+    //         }
     
-            return $data;
+    //         return $data;
+    //     });
+    
+    //     return response()->json(['total_count' =>$totalcount,'products' => $products_data], 200);
+    // }
+
+    public function index(Request $request)
+{
+    $totalcount = Product::count();
+
+    $query = Product::with([
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'sub_category:id,name'
+    ]);
+
+    // ✅ Search
+    if ($request->filled('search')) {
+        $search = $request->search;
+        $query->where(function ($q) use ($search) {
+            $q->where('product_name', 'like', "%{$search}%")
+              ->orWhere('description', 'like', "%{$search}%")
+              ->orWhereHas('category', function ($catQuery) use ($search) {
+                  $catQuery->where('name', 'like', "%{$search}%");
+              });
         });
-    
-        return response()->json(['total_count' =>$totalcount,'products' => $products_data], 200);
     }
+
+    // ✅ Sorting - default recent first
+    $sortBy = $request->get('sort_by');
+    $sortOrder = $request->get('sort_order', 'desc');
+
+    if ($sortBy === 'category_name') {
+        $query->orderBy(
+            Category::select('name')
+                ->whereColumn('categories.id', 'products.category_id'),
+            $sortOrder
+        );
+    } elseif ($sortBy) {
+        $query->orderBy($sortBy, $sortOrder);
+    } else {
+        // Default recent
+        $query->latest(); // orders by created_at DESC by default
+    }
+
+    // ✅ Pagination
+    $perPage = $request->get('per_page', 10);
+    $products = $query->paginate($perPage);
+
+    $products_data = $products->map(function ($product) {
+        $data = $product->toArray();
+        $data['category_name'] = optional($product->category)->name;
+        $data['subcategory_name'] = optional($product->sub_category)->name;
+        $data['vendor_name'] = optional($product->vendor)->vendor_name;
+        $data['product_images'] = !empty($product->thumbnail) 
+            ? url($product->thumbnail) 
+            : url('/storage/default_image/default_imagess.jpg');
+        return $data;
+    });
+
+    return response()->json([
+        'total_count' => $totalcount,
+        'products' => $products_data
+    ], 200);
+}
 
 
      public function searchProduct(Request $request)
@@ -1472,127 +1527,281 @@ foreach ($toDelete as $oldStock) {
 
     // }
   
-    public function inventoryAlert()
-    {
-        // with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name');
+    // public function inventoryAlert()
+    // {
+    //     // with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name');
 
-        $products = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')->select(
-                'id',
-                'product_name',
-                'sku',
-                'opening_stock',
-                'model',
-                'manufacturer',
-                'location_id',
-                'category_id',
-                'inventory_alert_threshold',
-                'updated_at',
-                DB::raw("'Warning' as status")
-            )
-            ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')
-            ->get();
-            // print_r($products);die;
-        $inventory_alert = $products->map(function ($product) {
-            // Decode location IDs from JSON
-            $locationIds = json_decode($product->location_id, true);
+    //     $products = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')->select(
+    //             'id',
+    //             'product_name',
+    //             'sku',
+    //             'opening_stock',
+    //             'model',
+    //             'manufacturer',
+    //             'location_id',
+    //             'category_id',
+    //             'inventory_alert_threshold',
+    //             'updated_at',
+    //             DB::raw("'Warning' as status")
+    //         )
+    //         ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')
+    //         ->get();
+    //         // print_r($products);die;
+    //     $inventory_alert = $products->map(function ($product) {
+    //         // Decode location IDs from JSON
+    //         $locationIds = json_decode($product->location_id, true);
 
-            // Fetch location names
-            $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+    //         // Fetch location names
+    //         $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
             
-            return [
-                'id' => $product->id,
-                'product_id' => $product->id,
-                'date_time' => $product->updated_at->format('Y-m-d H:i:s'),
-                'product_name' => $product->product_name,
-                'sku' => $product->sku,
-                'model' => $product->model,
-                'manufacturer' => $product->manufacturer,
-                'category_name' => optional($product->category)->name,
-                'opening_stock' => $product->opening_stock,
-                'inventory_alert_threshold' => $product->inventory_alert_threshold,
-                // 'location_id' => $locationIds,
-                // 'location_name' => $locationNames,
-                'category_id' => $product->category_id,
-                'status' => 'Warning',
-            ];
-        });
+    //         return [
+    //             'id' => $product->id,
+    //             'product_id' => $product->id,
+    //             'date_time' => $product->updated_at->format('Y-m-d H:i:s'),
+    //             'product_name' => $product->product_name,
+    //             'sku' => $product->sku,
+    //             'model' => $product->model,
+    //             'manufacturer' => $product->manufacturer,
+    //             'category_name' => optional($product->category)->name,
+    //             'opening_stock' => $product->opening_stock,
+    //             'inventory_alert_threshold' => $product->inventory_alert_threshold,
+    //             // 'location_id' => $locationIds,
+    //             // 'location_name' => $locationNames,
+    //             'category_id' => $product->category_id,
+    //             'status' => 'Warning',
+    //         ];
+    //     });
 
-        return response()->json(['inventory_alert' => $inventory_alert], 200);
+    //     return response()->json(['inventory_alert' => $inventory_alert], 200);
+    // }
+        public function inventoryAlert(Request $request)
+        {
+
+            $querycount = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')
+                ->select(
+                    'id',
+                    'product_name',
+                    'sku',
+                    'opening_stock',
+                    'model',
+                    'manufacturer',
+                    'location_id',
+                    'category_id',
+                    'inventory_alert_threshold',
+                    'updated_at',
+                    DB::raw("'Warning' as status")
+                )
+                ->whereColumn('opening_stock', '<', 'inventory_alert_threshold')->count();
+
+            
+            // ✅ Base query
+            $query = Product::with('category:id,name', 'vendor:id,vendor_name', 'sub_category:id,name')
+                ->select(
+                    'id',
+                    'product_name',
+                    'sku',
+                    'opening_stock',
+                    'model',
+                    'manufacturer',
+                    'location_id',
+                    'category_id',
+                    'inventory_alert_threshold',
+                    'updated_at',
+                    DB::raw("'Warning' as status")
+                )
+                ->whereColumn('opening_stock', '<', 'inventory_alert_threshold');
+
+            // ✅ Search functionality
+            if ($request->has('search') && !empty($request->search)) {
+                $search = $request->search;
+                $query->where(function ($q) use ($search) {
+                    $q->where('product_name', 'like', "%{$search}%")
+                    ->orWhere('sku', 'like', "%{$search}%")
+                    ->orWhere('model', 'like', "%{$search}%")
+                    ->orWhere('manufacturer', 'like', "%{$search}%")
+                    ->orWhereHas('category', function ($c) use ($search) {
+                        $c->where('name', 'like', "%{$search}%");
+                    });
+                });
+            }
+
+            // ✅ Sorting (default latest updated products)
+            $sortBy = $request->get('sort_by', 'updated_at');
+            $sortOrder = $request->get('sort_order', 'desc');
+
+            $allowedSorts = ['id', 'product_name', 'sku', 'model', 'manufacturer', 'opening_stock', 'inventory_alert_threshold', 'updated_at'];
+            if (!in_array($sortBy, $allowedSorts)) {
+                $sortBy = 'updated_at';
+            }
+
+            $query->orderBy($sortBy, $sortOrder);
+
+            // ✅ Pagination
+            $perPage = $request->get('per_page', 10);
+            $products = $query->paginate($perPage);
+
+            // ✅ Map data
+            $inventory_alert = $products->getCollection()->map(function ($product) {
+                $locationIds = json_decode($product->location_id, true) ?? [];
+                $locationNames = \App\Models\Location::whereIn('id', $locationIds)->pluck('name')->toArray();
+
+                return [
+                    'id' => $product->id,
+                    'product_id' => $product->id,
+                    'date_time' => $product->updated_at->format('Y-m-d H:i:s'),
+                    'product_name' => $product->product_name,
+                    'sku' => $product->sku,
+                    'model' => $product->model,
+                    'manufacturer' => $product->manufacturer,
+                    'category_name' => optional($product->category)->name,
+                    'opening_stock' => $product->opening_stock,
+                    'inventory_alert_threshold' => $product->inventory_alert_threshold,
+                    'location_name' => $locationNames,
+                    'category_id' => $product->category_id,
+                    'status' => 'Warning',
+                ];
+            });
+
+            // ✅ Replace collection with mapped data
+            $products->setCollection($inventory_alert);
+
+            return response()->json([
+                'total_count' => $querycount,
+                'inventory_alert' => $products
+            ], 200);
+        }
+
+
+    // public function inventoryAdjustmentsReport()
+    // {
+
+
+    //     $stocks = InventoryAdjustmentReports::with([
+    //         'product.category', // Load category via product
+    //         'category:id,name','vendor:id,vendor_name','location:id,name'
+    //     ])->where('new_stock', '>', 0)->where('quantity', '>', 0)->orderBy('id', 'desc')->get();
+
+
+    //     $adjustments = $stocks->map(function ($stock) {
+    //         $adjustmentSymbol = $stock->adjustment == 'subtract' ? '-' : '+';
+    //         $newStock = $stock->adjustment == 'subtract'
+    //             ? $stock->current_stock - $stock->quantity
+    //             : $stock->current_stock + $stock->quantity;
+
+    //             // print_r($stock->product->category);die;
+    //         return [
+    //             'id' => $stock->id,
+    //             'in_out_date_time' => $stock->stock_date,
+    //             'product_id' => $stock->product_id,
+    //             'product_name' => $stock->product->product_name ?? 'N/A',
+    //             'sku' => $stock->product->sku ?? 'N/A',
+    //             'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
+    //             'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
+    //             'previous_stock' => $stock->current_stock,
+    //             'new_stock' => $newStock,
+    //             'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+    //             'reason' => $stock->reason_for_update ?? 'N/A',
+    //             'location' => optional($stock->location)->name, 
+    //             'stock_date' => $stock->stock_date,
+    //             'created_at' => $stock->created_at,
+    //             'updated_at' => $stock->updated_at,
+    //         ];
+    //     });
+
+    //     return response()->json(['inventory_adjustments' => $adjustments], 200);
+    // }
+
+  public function inventoryAdjustmentsReport(Request $request)
+{
+    // ✅ Base query with relationships
+
+     $querycount = InventoryAdjustmentReports::with([
+        'product.category',
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'location:id,name'
+    ])->where('new_stock', '>', 0)
+      ->where('quantity', '>', 0)->count();
+
+    $query = InventoryAdjustmentReports::with([
+        'product.category',
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'location:id,name'
+    ])->where('new_stock', '>', 0)
+      ->where('quantity', '>', 0);
+
+    // ✅ Search functionality
+    if ($request->has('search') && !empty($request->search)) {
+        $search = $request->search;
+        $query->where(function ($q) use ($search) {
+            $q->whereHas('product', function ($p) use ($search) {
+                $p->where('product_name', 'like', "%{$search}%")
+                  ->orWhere('sku', 'like', "%{$search}%");
+            })
+            ->orWhereHas('vendor', function ($v) use ($search) {
+                $v->where('vendor_name', 'like', "%{$search}%");
+            })
+            ->orWhereHas('category', function ($c) use ($search) {
+                $c->where('name', 'like', "%{$search}%");
+            })
+            ->orWhere('reason_for_update', 'like', "%{$search}%")
+            ->orWhere('stock_date', 'like', "%{$search}%");
+        });
     }
 
+    // ✅ Sorting
+    $sortBy = $request->get('sort_by', 'id'); // default id
+    $sortOrder = $request->get('sort_order', 'desc'); // default desc
 
-    public function inventoryAdjustmentsReport()
-    {
-
-
-        $stocks = InventoryAdjustmentReports::with([
-            'product.category', // Load category via product
-            'category:id,name','vendor:id,vendor_name','location:id,name'
-        ])->where('new_stock', '>', 0)->where('quantity', '>', 0)->orderBy('id', 'desc')->get();
-
-
-        $adjustments = $stocks->map(function ($stock) {
-            $adjustmentSymbol = $stock->adjustment == 'subtract' ? '-' : '+';
-            $newStock = $stock->adjustment == 'subtract'
-                ? $stock->current_stock - $stock->quantity
-                : $stock->current_stock + $stock->quantity;
-
-                // print_r($stock->product->category);die;
-            return [
-                'id' => $stock->id,
-                'in_out_date_time' => $stock->stock_date,
-                'product_id' => $stock->product_id,
-                'product_name' => $stock->product->product_name ?? 'N/A',
-                'sku' => $stock->product->sku ?? 'N/A',
-                'category_name' => $stock->product->category->name ?? 'N/A',  // Ensure category is not null
-                'vendor_name' => $stock->vendor->vendor_name ?? 'N/A', // Ensure vendor is not null
-                'previous_stock' => $stock->current_stock,
-                'new_stock' => $newStock,
-                'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
-                'reason' => $stock->reason_for_update ?? 'N/A',
-                'location' => optional($stock->location)->name, 
-                'stock_date' => $stock->stock_date,
-                'created_at' => $stock->created_at,
-                'updated_at' => $stock->updated_at,
-            ];
-        });
-
-        // $scanRecords = ScanInOutProduct::with([
-        //     'product:id,product_name,sku,opening_stock',
-        //     'employee:id,employee_name',
-        //     'user:id,name','category:id,name','location:id,name'
-        // ])->orderBy('id','desc')->get();
-
-        // $scanRecords = $scanRecords->map(function ($scanRecords) {
-        //     return [
-        //         'id' => $scanRecords->id,
-        //         'in_out_date_time' => $scanRecords->in_out_date_time,
-        //         'product_id' => $scanRecords->product_id,
-        //         'product_name' => $scanRecords->product->product_name ?? null,
-        //         'sku' => $scanRecords->product->sku ?? null,
-        //         'category' => $scanRecords->category->name ?? null,
-        //         'location' => $scanRecords->location->name ?? null,
-        //         'quantity' => $scanRecords->product->opening_stock ?? null,
-        //         'issue_from_name' => $scanRecords->user->name ?? null, 
-        //         'employee_name' => $scanRecords->employee->employee_name ?? null,
-        //         'issue_from_user_id' => $scanRecords->issue_from_user_id,
-        //         'employee_id' => $scanRecords->employee_id,
-        //         'in_quantity' => $scanRecords->in_quantity,
-        //         'out_quantity' => $scanRecords->out_quantity,
-        //         'previous_stock' => $scanRecords->previous_stock,
-        //         'total_current_stock' => $scanRecords->total_current_stock,
-        //         'threshold' => $scanRecords->threshold,
-        //         'type' => $scanRecords->type,
-        //         'purpose' => $scanRecords->purpose,
-        //         'comments' => $scanRecords->comments,
-        //         'created_at' => $scanRecords->created_at,
-        //         'updated_at' => $scanRecords->updated_at,
-        //     ];
-        // });
-
-        // print_r($adjustments);die;
-        return response()->json(['inventory_adjustments' => $adjustments], 200);
+    // Prevent sorting by unknown columns directly to avoid SQL injection
+    $allowedSorts = ['id', 'stock_date', 'created_at', 'updated_at'];
+    if (!in_array($sortBy, $allowedSorts)) {
+        $sortBy = 'id';
     }
+
+    $query->orderBy($sortBy, $sortOrder);
+
+    // ✅ Pagination
+    $perPage = $request->get('per_page', 10);
+    $stocks = $query->paginate($perPage);
+
+    // ✅ Map data
+    $adjustments = $stocks->getCollection()->map(function ($stock) {
+        $adjustmentSymbol = $stock->adjustment == 'subtract' ? '-' : '+';
+        $newStock = $stock->adjustment == 'subtract'
+            ? $stock->current_stock - $stock->quantity
+            : $stock->current_stock + $stock->quantity;
+
+        return [
+            'id' => $stock->id,
+            'in_out_date_time' => $stock->stock_date,
+            'product_id' => $stock->product_id,
+            'product_name' => $stock->product->product_name ?? 'N/A',
+            'sku' => $stock->product->sku ?? 'N/A',
+            'category_name' => $stock->product->category->name ?? 'N/A',
+            'vendor_name' => $stock->vendor->vendor_name ?? 'N/A',
+            'previous_stock' => $stock->current_stock,
+            'new_stock' => $newStock,
+            'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+            'reason' => $stock->reason_for_update ?? 'N/A',
+            'location' => optional($stock->location)->name,
+            'stock_date' => $stock->stock_date,
+            'created_at' => $stock->created_at,
+            'updated_at' => $stock->updated_at,
+        ];
+    });
+
+    // Replace original collection with mapped one
+    $stocks->setCollection($adjustments);
+
+    return response()->json([
+        'total_count' => $querycount,
+        'inventory_adjustments' => $stocks
+    ], 200);
+}
+
+
 
     public function recentStockUpdate()
     {
