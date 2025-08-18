@@ -11,9 +11,46 @@ use App\Models\ScanInOutProduct;
 class MachineController extends Controller
 {
     //
-    public function index()
+    // public function index()
+    // {
+    //     return response()->json(Machine::all());
+    // }
+
+      public function index(Request $request)
     {
-        return response()->json(Machine::all());
+        // Default values
+        
+        $sortBy = $request->get('sort_by', 'id'); // default column
+        $sortOrder = $request->get('sort_order', 'desc'); // default order
+        $limit = $request->get('per_page', null); // default null = all records
+        $search = $request->get('search', null);
+
+            $totalcount = Machine::count();
+        $query = Machine::query();
+
+        // Searching
+        if (!empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Sorting
+        $query->orderBy($sortBy, $sortOrder);
+
+        // If limit is given, apply pagination
+        if (!empty($limit) && is_numeric($limit)) {
+            $machine = $query->paginate($limit);
+            return response()->json(['total' =>$totalcount, 'machine'=>$machine], 200);
+            
+        } else {
+            // Default get all data
+            $machine = $query->orderBy('id','desc')->get();
+            return response()->json($machine, 200);
+        }
+
+        
     }
 
     public function store(Request $request)

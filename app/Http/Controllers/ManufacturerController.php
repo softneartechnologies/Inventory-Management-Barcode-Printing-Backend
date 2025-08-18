@@ -9,12 +9,48 @@ use Illuminate\Support\Facades\Validator;
 class ManufacturerController extends Controller
 {
     // ✅ Get All Manufacturers
-    public function index()
-    {
-        $manufacturers = Manufacturer::orderBy('id', 'desc')->get();
-        return response()->json($manufacturers, 200);
-    }
+    // public function index()
+    // {
+    //     $manufacturers = Manufacturer::orderBy('id', 'desc')->get();
+    //     return response()->json($manufacturers, 200);
+    // }
 
+      public function index(Request $request)
+    {
+        // Default values
+        
+        $sortBy = $request->get('sort_by', 'id'); // default column
+        $sortOrder = $request->get('sort_order', 'desc'); // default order
+        $limit = $request->get('per_page', null); // default null = all records
+        $search = $request->get('search', null);
+
+            $totalcount = Manufacturer::count();
+        $query = Manufacturer::query();
+
+        // Searching
+        if (!empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Sorting
+        $query->orderBy($sortBy, $sortOrder);
+
+        // If limit is given, apply pagination
+        if (!empty($limit) && is_numeric($limit)) {
+            $manufacturer = $query->paginate($limit);
+            return response()->json(['total' =>$totalcount, 'manufacturer'=>$manufacturer], 200);
+            
+        } else {
+            // Default get all data
+            $manufacturer = $query->orderBy('id','desc')->get();
+            return response()->json($manufacturer, 200);
+        }
+
+        
+    }
     // ✅ Create a New Manufacturer
     public function store(Request $request)
     {

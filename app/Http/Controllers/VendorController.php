@@ -8,11 +8,47 @@ use Illuminate\Support\Facades\Validator;
 class VendorController extends Controller
 {
     // Display a listing of vendors
-    public function index()
-    {
-        return Vendor::orderBy('id', 'desc')->get();
-    }
+    // public function index()
+    // {
+    //     return Vendor::orderBy('id', 'desc')->get();
+    // }
 
+    public function index(Request $request)
+    {
+        // Default values
+        
+        $sortBy = $request->get('sort_by', 'id'); // default column
+        $sortOrder = $request->get('sort_order', 'desc'); // default order
+        $limit = $request->get('per_page', null); // default null = all records
+        $search = $request->get('search', null);
+
+            $totalcount = Vendor::count();
+        $query = Vendor::query();
+
+        // Searching
+        if (!empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Sorting
+        $query->orderBy($sortBy, $sortOrder);
+
+        // If limit is given, apply pagination
+        if (!empty($limit) && is_numeric($limit)) {
+            $vendor = $query->paginate($limit);
+            return response()->json(['total' =>$totalcount, 'vendor'=>$vendor], 200);
+            
+        } else {
+            // Default get all data
+            $vendor = $query->orderBy('id','desc')->get();
+            return response()->json($vendor, 200);
+        }
+
+        
+    }
     // Store a newly created vendor
     public function store(Request $request)
     {

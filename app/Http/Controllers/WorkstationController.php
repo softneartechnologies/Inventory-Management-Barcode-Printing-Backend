@@ -9,9 +9,71 @@ use Illuminate\Http\Request;
 class WorkstationController extends Controller
 {
     //
-    public function index()
+    // public function index()
+    // {
+    //     return response()->json(Workstation::all());
+    // }
+    //   public function index(Request $request)
+    // {
+    //     $totalcount = Workstation::count();
+    //     $query = Workstation::query();
+    //     if ($request->has('search') && !empty($request->search)) {
+    //         $search = $request->search;
+    //         $query->where(function ($q) use ($search) {
+    //             $q->where('name', 'like', "%$search%")
+    //             ->orWhere('description', 'like', "%$search%");
+    //             // Add more searchable fields if needed
+    //         });
+    //     }
+
+    //     // ✅ Sorting functionality
+    //     $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
+    //     $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
+    //     $query->orderBy($sortBy, $sortOrder);
+
+    //     // ✅ Pagination
+    //     $perPage = $request->get('per_page', 10); // default 10 items per page
+    //     $workstation = $query->paginate($perPage);
+
+    //     return response()->json(['total_count' =>$totalcount,'workstation' => $workstation], 200);
+    
+    // }
+
+     public function index(Request $request)
     {
-        return response()->json(Workstation::all());
+        // Default values
+        
+        $sortBy = $request->get('sort_by', 'id'); // default column
+        $sortOrder = $request->get('sort_order', 'desc'); // default order
+        $limit = $request->get('per_page', null); // default null = all records
+        $search = $request->get('search', null);
+
+            $totalcount = Workstation::count();
+        $query = Workstation::query();
+
+        // Searching
+        if (!empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Sorting
+        $query->orderBy($sortBy, $sortOrder);
+
+        // If limit is given, apply pagination
+        if (!empty($limit) && is_numeric($limit)) {
+            $workstation = $query->paginate($limit);
+            return response()->json(['total' =>$totalcount, 'workstation'=>$workstation], 200);
+            
+        } else {
+            // Default get all data
+            $workstation = $query->orderBy('id','desc')->get();
+            return response()->json($workstation, 200);
+        }
+
+        
     }
 
     public function store(Request $request)

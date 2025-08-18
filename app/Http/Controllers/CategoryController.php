@@ -9,12 +9,48 @@ use Illuminate\Support\Facades\Validator;
 class CategoryController extends Controller
 {
     // ✅ Get All Categories
-    public function index()
+    // public function index()
+    // {
+    //     $categories = Category::orderBy('id', 'desc')->get();
+    //     return response()->json($categories, 200);
+    // }
+
+    public function index(Request $request)
     {
-        // $categories = Category::all();
-        $categories = Category::orderBy('id', 'desc')->get();
-        return response()->json($categories, 200);
+        // Default values
+        $total_count = Category::count();
+        $sortBy = $request->get('sort_by', 'id'); // default column
+        $sortOrder = $request->get('sort_order', 'desc'); // default order
+        $limit = $request->get('per_page', null); // default null = all records
+        $search = $request->get('search', null);
+
+        $query = Category::query();
+
+        // Searching
+        if (!empty($search)) {
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                ->orWhere('description', 'like', "%{$search}%");
+            });
+        }
+
+        // Sorting
+        $query->orderBy($sortBy, $sortOrder);
+
+        // If limit is given, apply pagination
+        if (!empty($limit) && is_numeric($limit)) {
+            $categories = $query->paginate($limit);
+            return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
+            
+        } else {
+            // Default get all data
+            $categories = $query->get();
+            return response()->json($categories, 200);
+        }
+
+        // return response()->json($categories, 200);
     }
+
 
     // ✅ Create a New Category
     public function store(Request $request)

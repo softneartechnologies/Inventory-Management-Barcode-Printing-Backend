@@ -10,12 +10,47 @@ use Illuminate\Support\Facades\Validator;
 class SubcategoryController extends Controller
 {
     // ✅ Get All Subcategories
-    public function index()
-    {
-        $subcategories = Subcategory::with('category')->orderBy('id', 'desc')->get();
-        return response()->json($subcategories, 200);
+    // public function index()
+    // {
+    //     $subcategories = Subcategory::with('category')->orderBy('id', 'desc')->get();
+    //     return response()->json($subcategories, 200);
+    // }
+
+        public function index(Request $request)
+{
+    // Default values
+    $total_count = Subcategory::with('category')->count();
+    $sortBy = $request->get('sort_by', 'id'); // default column
+    $sortOrder = $request->get('sort_order', 'desc'); // default order
+    $limit = $request->get('per_page', null); // default null = all records
+    $search = $request->get('search', null);
+
+    $query = Subcategory::with('category');
+
+
+    // Searching
+    if (!empty($search)) {
+        $query->where(function ($q) use ($search) {
+            $q->where('name', 'like', "%{$search}%")
+              ->orWhere('description', 'like', "%{$search}%");
+        });
     }
 
+    // Sorting
+    $query->orderBy($sortBy, $sortOrder);
+
+    // If limit is given, apply pagination
+    if (!empty($limit) && is_numeric($limit)) {
+        $categories = $query->paginate($limit);
+        return response()->json(['total_count'=> $total_count,'categories'=>$categories], 200);
+    } else {
+        // Default get all data
+        $categories = $query->get();
+        return response()->json($categories, 200);
+    }
+
+    // return response()->json(['total_count'=> $total_count,'categories'=>$categories], 200);
+}
     // ✅ Create a New Subcategory
     public function store(Request $request)
     {
