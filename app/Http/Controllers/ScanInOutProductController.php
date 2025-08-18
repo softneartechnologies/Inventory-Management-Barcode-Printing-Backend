@@ -428,65 +428,245 @@ class ScanInOutProductController extends Controller
         return response()->json(null, 204);
     }
 
-    public function employeeIssuanceHistory(){
+    // public function employeeIssuanceHistory(){
         
-        // $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->orderBy('id','desc')->get();
+    //     // $scanRecords = ScanInOutProduct::with(['product:id,product_name', 'employee:id,employee_name','user:id,name'])->orderBy('id','desc')->get();
 
-        // $scanRecords = $scanRecords->map(function ($scanRecords) {
-        //     return [
-        //         'id' => $scanRecords->id,
-        //         'in_out_date_time' => $scanRecords->in_out_date_time,
-        //         'employee_id' => $scanRecords->employee_id,
-        //         'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
-        //         'issue_from_name' => $scanRecords->user->name ?? null,
-        //         'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
-        //         'in_quantity' => $scanRecords->in_quantity,
-        //         'out_quantity' => $scanRecords->out_quantity,
-        //         'type' => $scanRecords->type,
-        //         'purpose' => $scanRecords->purpose,
-        //         'comments' => $scanRecords->comments,
-        //         'product_id' => $scanRecords->product_id,
-        //         'created_at' => $scanRecords->created_at,
-        //         'updated_at' => $scanRecords->updated_at,
-        //     ];
-        // });
+    //     // $scanRecords = $scanRecords->map(function ($scanRecords) {
+    //     //     return [
+    //     //         'id' => $scanRecords->id,
+    //     //         'in_out_date_time' => $scanRecords->in_out_date_time,
+    //     //         'employee_id' => $scanRecords->employee_id,
+    //     //         'employee_name' => $scanRecords->employee->employee_name ?? null, // Ensure category exists
+    //     //         'issue_from_name' => $scanRecords->user->name ?? null,
+    //     //         'product_name' => $scanRecords->product->product_name ?? null, // Move product_name outside
+    //     //         'in_quantity' => $scanRecords->in_quantity,
+    //     //         'out_quantity' => $scanRecords->out_quantity,
+    //     //         'type' => $scanRecords->type,
+    //     //         'purpose' => $scanRecords->purpose,
+    //     //         'comments' => $scanRecords->comments,
+    //     //         'product_id' => $scanRecords->product_id,
+    //     //         'created_at' => $scanRecords->created_at,
+    //     //         'updated_at' => $scanRecords->updated_at,
+    //     //     ];
+    //     // });
 
-        $scanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,opening_stock',
-            'employee:id,employee_name',
-            'user:id,name','category:id,name','location:id,name'
-        ])->orderBy('id','desc')->get();
+    //     $scanRecords = ScanInOutProduct::with([
+    //         'product:id,product_name,sku,opening_stock',
+    //         'employee:id,employee_name',
+    //         'user:id,name','category:id,name','location:id,name'
+    //     ])->orderBy('id','desc')->get();
 
-        $scanRecords = $scanRecords->map(function ($scanRecords) {
-            return [
-                'id' => $scanRecords->id,
-                'in_out_date_time' => $scanRecords->in_out_date_time,
-                'product_id' => $scanRecords->product_id,
-                'product_name' => $scanRecords->product->product_name ?? null,
-                'sku' => $scanRecords->product->sku ?? null,
-                'category' => $scanRecords->category->name ?? null,
-                'location' => $scanRecords->location->name ?? null,
-                'quantity' => $scanRecords->product->opening_stock ?? null,
-                'issue_from_name' => $scanRecords->user->name ?? null, 
-                'employee_name' => $scanRecords->employee->employee_name ?? null,
-                'issue_from_user_id' => $scanRecords->issue_from_user_id,
-                'employee_id' => $scanRecords->employee_id,
-                'in_quantity' => $scanRecords->in_quantity,
-                'out_quantity' => $scanRecords->out_quantity,
-                'previous_stock' => $scanRecords->previous_stock,
-                'total_current_stock' => $scanRecords->total_current_stock,
-                'threshold' => $scanRecords->threshold,
-                'type' => $scanRecords->type,
-                'purpose' => $scanRecords->purpose,
-                'comments' => $scanRecords->comments,
-                'created_at' => $scanRecords->created_at,
-                'updated_at' => $scanRecords->updated_at,
-            ];
+    //     $scanRecords = $scanRecords->map(function ($scanRecords) {
+    //         return [
+    //             'id' => $scanRecords->id,
+    //             'in_out_date_time' => $scanRecords->in_out_date_time,
+    //             'product_id' => $scanRecords->product_id,
+    //             'product_name' => $scanRecords->product->product_name ?? null,
+    //             'sku' => $scanRecords->product->sku ?? null,
+    //             'category' => $scanRecords->category->name ?? null,
+    //             'location' => $scanRecords->location->name ?? null,
+    //             'quantity' => $scanRecords->product->opening_stock ?? null,
+    //             'issue_from_name' => $scanRecords->user->name ?? null, 
+    //             'employee_name' => $scanRecords->employee->employee_name ?? null,
+    //             'issue_from_user_id' => $scanRecords->issue_from_user_id,
+    //             'employee_id' => $scanRecords->employee_id,
+    //             'in_quantity' => $scanRecords->in_quantity,
+    //             'out_quantity' => $scanRecords->out_quantity,
+    //             'previous_stock' => $scanRecords->previous_stock,
+    //             'total_current_stock' => $scanRecords->total_current_stock,
+    //             'threshold' => $scanRecords->threshold,
+    //             'type' => $scanRecords->type,
+    //             'purpose' => $scanRecords->purpose,
+    //             'comments' => $scanRecords->comments,
+    //             'created_at' => $scanRecords->created_at,
+    //             'updated_at' => $scanRecords->updated_at,
+    //         ];
+    //     });
+
+    //     return response()->json($scanRecords, 200);
+    // }
+
+//     public function employeeIssuanceHistory(Request $request)
+// {
+//     // Default values
+//     $sortBy = $request->get('sort_by', 'id');       // Default sort column
+//     $sortOrder = $request->get('sort_order', 'desc'); // Default sort order
+//     $limit = $request->get('limit', null);          // Default = all records
+//     $search = $request->get('search', null);
+
+//     $query = ScanInOutProduct::with([
+//         'product:id,product_name,sku,opening_stock',
+//         'employee:id,employee_name',
+//         'user:id,name',
+//         'category:id,name',
+//         'location:id,name'
+//     ]);
+
+//     // Searching
+//     if (!empty($search)) {
+//         $query->where(function ($q) use ($search) {
+//             $q->whereHas('product', function ($q2) use ($search) {
+//                 $q2->where('product_name', 'like', "%{$search}%")
+//                    ->orWhere('sku', 'like', "%{$search}%");
+//             })
+//             ->orWhereHas('employee', function ($q2) use ($search) {
+//                 $q2->where('employee_name', 'like', "%{$search}%");
+//             })
+//             ->orWhereHas('user', function ($q2) use ($search) {
+//                 $q2->where('name', 'like', "%{$search}%");
+//             })
+//             ->orWhereHas('category', function ($q2) use ($search) {
+//                 $q2->where('name', 'like', "%{$search}%");
+//             })
+//             ->orWhereHas('location', function ($q2) use ($search) {
+//                 $q2->where('name', 'like', "%{$search}%");
+//             })
+//             ->orWhere('purpose', 'like', "%{$search}%")
+//             ->orWhere('comments', 'like', "%{$search}%");
+//         });
+//     }
+
+//     // Sorting
+//     $query->orderBy($sortBy, $sortOrder);
+
+//     // Pagination / All
+//     if (!empty($limit) && is_numeric($limit)) {
+//         $scanRecords = $query->paginate($limit);
+//     } else {
+//         $scanRecords = $query->get();
+//     }
+
+//     // Map the data
+//     $scanRecords->transform(function ($scanRecords) {
+//         return [
+//             'id' => $scanRecords->id,
+//             'in_out_date_time' => $scanRecords->in_out_date_time,
+//             'product_id' => $scanRecords->product_id,
+//             'product_name' => $scanRecords->product->product_name ?? null,
+//             'sku' => $scanRecords->product->sku ?? null,
+//             'category' => $scanRecords->category->name ?? null,
+//             'location' => $scanRecords->location->name ?? null,
+//             'quantity' => $scanRecords->product->opening_stock ?? null,
+//             'issue_from_name' => $scanRecords->user->name ?? null,
+//             'employee_name' => $scanRecords->employee->employee_name ?? null,
+//             'issue_from_user_id' => $scanRecords->issue_from_user_id,
+//             'employee_id' => $scanRecords->employee_id,
+//             'in_quantity' => $scanRecords->in_quantity,
+//             'out_quantity' => $scanRecords->out_quantity,
+//             'previous_stock' => $scanRecords->previous_stock,
+//             'total_current_stock' => $scanRecords->total_current_stock,
+//             'threshold' => $scanRecords->threshold,
+//             'type' => $scanRecords->type,
+//             'purpose' => $scanRecords->purpose,
+//             'comments' => $scanRecords->comments,
+//             'created_at' => $scanRecords->created_at,
+//             'updated_at' => $scanRecords->updated_at,
+//         ];
+//     });
+
+//     return response()->json($scanRecords, 200);
+// }
+
+public function employeeIssuanceHistory(Request $request)
+{
+    // Default values
+    $sortBy = $request->get('sort_by', 'id');      
+    $sortOrder = $request->get('sort_order', 'desc'); 
+    $limit = $request->get('per_page', null);          
+    $search = $request->get('search', null);
+
+    $query = ScanInOutProduct::with([
+        'product:id,product_name,sku,opening_stock',
+        'employee:id,employee_name',
+        'user:id,name',
+        'category:id,name',
+        'location:id,name'
+    ]);
+
+    // Searching
+    if (!empty($search)) {
+        $query->where(function ($q) use ($search) {
+            $q->whereHas('product', function ($q2) use ($search) {
+                $q2->where('product_name', 'like', "%{$search}%")
+                   ->orWhere('sku', 'like', "%{$search}%");
+            })
+            ->orWhereHas('employee', function ($q2) use ($search) {
+                $q2->where('employee_name', 'like', "%{$search}%");
+            })
+            ->orWhereHas('user', function ($q2) use ($search) {
+                $q2->where('name', 'like', "%{$search}%");
+            })
+            ->orWhereHas('category', function ($q2) use ($search) {
+                $q2->where('name', 'like', "%{$search}%");
+            })
+            ->orWhereHas('location', function ($q2) use ($search) {
+                $q2->where('name', 'like', "%{$search}%");
+            })
+            ->orWhere('purpose', 'like', "%{$search}%")
+            ->orWhere('comments', 'like', "%{$search}%");
         });
-
-        return response()->json($scanRecords, 200);
     }
 
+    // ✅ Handle Sorting (only allow safe columns)
+    $allowedSorts = ['id', 'in_out_date_time', 'product_id', 'employee_id', 'issue_from_user_id', 'created_at'];
+
+    if (in_array($sortBy, $allowedSorts)) {
+        $query->orderBy($sortBy, $sortOrder);
+    } elseif ($sortBy === 'product_name') {
+        $query->orderBy(
+            \App\Models\Product::select('product_name')
+                ->whereColumn('products.id', 'scan_in_out_products.product_id'),
+            $sortOrder
+        );
+    } elseif ($sortBy === 'employee_name') {
+        $query->orderBy(
+            \App\Models\Employee::select('employee_name')
+                ->whereColumn('employees.id', 'scan_in_out_products.employee_id'),
+            $sortOrder
+        );
+    } else {
+        // Default fallback
+        $query->orderBy('id', 'desc');
+    }
+
+    // Pagination / All
+    if (!empty($limit) && is_numeric($limit)) {
+        $scanRecords = $query->paginate($limit);
+    } else {
+        $scanRecords = $query->get();
+    }
+
+    // Map the data
+    $scanRecords->transform(function ($scanRecords) {
+        return [
+            'id' => $scanRecords->id,
+            'in_out_date_time' => $scanRecords->in_out_date_time,
+            'product_id' => $scanRecords->product_id,
+            'product_name' => $scanRecords->product->product_name ?? null,
+            'sku' => $scanRecords->product->sku ?? null,
+            'category' => $scanRecords->category->name ?? null,
+            'location' => $scanRecords->location->name ?? null,
+            'quantity' => $scanRecords->product->opening_stock ?? null,
+            'issue_from_name' => $scanRecords->user->name ?? null,
+            'employee_name' => $scanRecords->employee->employee_name ?? null,
+            'issue_from_user_id' => $scanRecords->issue_from_user_id,
+            'employee_id' => $scanRecords->employee_id,
+            'in_quantity' => $scanRecords->in_quantity,
+            'out_quantity' => $scanRecords->out_quantity,
+            'previous_stock' => $scanRecords->previous_stock,
+            'total_current_stock' => $scanRecords->total_current_stock,
+            'threshold' => $scanRecords->threshold,
+            'type' => $scanRecords->type,
+            'purpose' => $scanRecords->purpose,
+            'comments' => $scanRecords->comments,
+            'created_at' => $scanRecords->created_at,
+            'updated_at' => $scanRecords->updated_at,
+        ];
+    });
+
+    return response()->json($scanRecords, 200);
+}
 
     public function productScaned($sku){
         
