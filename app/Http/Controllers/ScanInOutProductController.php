@@ -608,6 +608,25 @@ public function employeeIssuanceHistory(Request $request)
         });
     }
 
+      // ✅ Filter
+    // ✅ Filter
+if ($request->filled('start_date') || $request->filled('end_date')) {
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($start_date, $end_date) {
+
+        // ✅ Date range filter
+        if (!empty($start_date) && !empty($end_date)) {
+            $q->whereBetween('created_at', [$start_date, $end_date]);
+        } elseif (!empty($start_date)) {
+            $q->whereDate('created_at', '>=', $start_date);
+        } elseif (!empty($end_date)) {
+            $q->whereDate('created_at', '<=', $end_date);
+        }
+    });
+}
+
     // ✅ Handle Sorting (only allow safe columns)
     $allowedSorts = ['id', 'in_out_date_time', 'product_id', 'employee_id', 'issue_from_user_id', 'created_at'];
 

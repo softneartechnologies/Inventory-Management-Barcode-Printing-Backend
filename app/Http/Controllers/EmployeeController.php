@@ -60,6 +60,33 @@ class EmployeeController extends Controller
             });
         }
 
+         // ✅ Filter
+if ($request->filled('employee_name') || $request->filled('work_station') || $request->filled('department')) {
+    $employee_name    = $request->employee_name;
+    $work_station = $request->work_station;
+    $department  = $request->department;
+   
+
+    $query->where(function ($q) use ($employee_name, $work_station, $department) {
+        
+        // ✅ Category filter
+        if (!empty($employee_name)) {
+            $q->where('employee_name', 'like', "%{$employee_name}%");
+        }
+
+        // ✅ Work Station filter
+        if (!empty($work_station)) {
+            $q->where('work_station', 'like', "%{$work_station}%");
+        }
+
+        // ✅ Department filter
+        if (!empty($department)) {
+            $q->where('department', 'like', "%{$department}%");
+        }
+
+             });
+        }
+
         // ✅ Sorting functionality
         $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
         $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'

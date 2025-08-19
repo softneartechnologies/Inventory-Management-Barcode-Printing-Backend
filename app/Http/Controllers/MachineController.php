@@ -26,7 +26,7 @@ class MachineController extends Controller
         $search = $request->get('search', null);
 
             $totalcount = Machine::count();
-        $query = Machine::query();
+        $query = Machine::with('department:id,name','workstation:id,name');
 
         // Searching
         if (!empty($search)) {
@@ -36,17 +36,50 @@ class MachineController extends Controller
             });
         }
 
+                 // ✅ Filter
+    
+                if ($request->filled('workstation')) {
+                    $workstation = $request->work_station;
+
+                    $query->whereHas('workstation', function ($q) use ($workstation) {
+                        $q->where('name', 'like', "%{$workstation}%");
+                    });
+                }
+
+               if ($request->filled('department')) {
+                    $department = $request->department;
+
+                    $query->whereHas('department', function ($q) use ($department) {
+                        $q->where('name', 'like', "%{$department}%");
+                    });
+                }
+
+                
+         
         // Sorting
         $query->orderBy($sortBy, $sortOrder);
+
+      
 
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {
             $machine = $query->paginate($limit);
+
+               $machine->map(function ($ws) {
+                    $ws->department_name = $ws->department?->name; 
+                    $ws->workstation_name = $ws->workstation?->name; 
+                    return $ws;
+                });
             return response()->json(['total' =>$totalcount, 'machine'=>$machine], 200);
             
         } else {
             // Default get all data
             $machine = $query->orderBy('id','desc')->get();
+                    $machine->map(function ($ws) {
+                    $ws->department_name = $ws->department?->name; 
+                    $ws->workstation_name = $ws->workstation?->name; 
+                    return $ws;
+                });
             return response()->json($machine, 200);
         }
 

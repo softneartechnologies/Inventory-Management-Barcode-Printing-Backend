@@ -138,6 +138,37 @@ class ProductController extends Controller
         });
     }
 
+       // ✅ Filter
+    // ✅ Filter
+if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
+    $category    = $request->category;
+    $type_filter = $request->type_filter;
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($category, $start_date, $end_date) {
+        
+        // ✅ Category filter
+        if (!empty($category)) {
+            $q->whereHas('category', function ($catQuery) use ($category) {
+                $catQuery->where('name', 'like', "%{$category}%");
+            });
+        }
+
+        // ✅ Date range filter
+        if (!empty($start_date) && !empty($end_date)) {
+            $q->whereBetween('created_at', [$start_date, $end_date]);
+        } elseif (!empty($start_date)) {
+            $q->whereDate('created_at', '>=', $start_date);
+        } elseif (!empty($end_date)) {
+            $q->whereDate('created_at', '<=', $end_date);
+        }
+    });
+}
+
+
+
+
     // ✅ Sorting - default recent first
     $sortBy = $request->get('sort_by');
     $sortOrder = $request->get('sort_order', 'desc');
@@ -1624,6 +1655,32 @@ foreach ($toDelete as $oldStock) {
                     });
                 });
             }
+             // ✅ Filter
+if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
+    $category    = $request->category;
+    $type_filter = $request->type_filter;
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($category, $start_date, $end_date) {
+        
+        // ✅ Category filter
+        if (!empty($category)) {
+            $q->whereHas('category', function ($catQuery) use ($category) {
+                $catQuery->where('name', 'like', "%{$category}%");
+            });
+        }
+
+                // ✅ Date range filter
+                if (!empty($start_date) && !empty($end_date)) {
+                    $q->whereBetween('created_at', [$start_date, $end_date]);
+                } elseif (!empty($start_date)) {
+                    $q->whereDate('created_at', '>=', $start_date);
+                } elseif (!empty($end_date)) {
+                    $q->whereDate('created_at', '<=', $end_date);
+                }
+            });
+        }
 
             // ✅ Sorting (default latest updated products)
             $sortBy = $request->get('sort_by', 'updated_at');
@@ -1749,6 +1806,34 @@ foreach ($toDelete as $oldStock) {
             ->orWhere('stock_date', 'like', "%{$search}%");
         });
     }
+
+    // ✅ Filter
+if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
+    $category    = $request->category;
+    $type_filter = $request->type_filter;
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($category, $start_date, $end_date) {
+        
+        // ✅ Category filter
+        if (!empty($category)) {
+            $q->whereHas('category', function ($catQuery) use ($category) {
+                $catQuery->where('name', 'like', "%{$category}%");
+            });
+        }
+
+        // ✅ Date range filter
+        if (!empty($start_date) && !empty($end_date)) {
+            $q->whereBetween('created_at', [$start_date, $end_date]);
+        } elseif (!empty($start_date)) {
+            $q->whereDate('created_at', '>=', $start_date);
+        } elseif (!empty($end_date)) {
+            $q->whereDate('created_at', '<=', $end_date);
+        }
+    });
+}
+
 
     // ✅ Sorting
     $sortBy = $request->get('sort_by', 'id'); // default id

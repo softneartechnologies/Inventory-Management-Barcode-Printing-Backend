@@ -73,6 +73,23 @@ class OrderController extends Controller
         });
     }
 
+      // ✅ Filter
+if ($request->filled('start_date') || $request->filled('end_date')) {
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($start_date, $end_date) {
+
+        // ✅ Date range filter
+        if (!empty($start_date) && !empty($end_date)) {
+            $q->whereBetween('created_at', [$start_date, $end_date]);
+        } elseif (!empty($start_date)) {
+            $q->whereDate('created_at', '>=', $start_date);
+        } elseif (!empty($end_date)) {
+            $q->whereDate('created_at', '<=', $end_date);
+        }
+    });
+}
     // ✅ Sorting (safe handling for related columns)
     $allowedSorts = ['id', 'sku', 'quantity', 'status', 'current_stock', 'threshold_count', 'total_current_stock', 'created_at'];
 
