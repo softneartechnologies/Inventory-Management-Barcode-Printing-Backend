@@ -25,7 +25,7 @@ class MachineController extends Controller
         $limit = $request->get('per_page', null); // default null = all records
         $search = $request->get('search', null);
 
-            $totalcount = Machine::count();
+        $totalcount = Machine::count();
         $query = Machine::with('department:id,name','workstation:id,name');
 
         // Searching

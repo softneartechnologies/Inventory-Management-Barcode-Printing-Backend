@@ -28,12 +28,15 @@ class VendorController extends Controller
         // Searching
         if (!empty($search)) {
             $query->where(function ($q) use ($search) {
-                $q->where('name', 'like', "%{$search}%")
-                ->orWhere('description', 'like', "%{$search}%");
+                $q->where('vendor_name', 'like', "%{$search}%")
+                ->orWhere('company_name', 'like', "%{$search}%");
             });
         }
 
         // Sorting
+        if($sortOrder){
+
+        }
         $query->orderBy($sortBy, $sortOrder);
 
         // If limit is given, apply pagination
