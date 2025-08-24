@@ -206,10 +206,20 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         return $data;
     });
 
+    if ($request->filled('category') ||$request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
+
+    return response()->json([
+        'total_count' => $query->count(),
+        'products' => $products_data
+    ], 200);
+
+    }else{
+
     return response()->json([
         'total_count' => $totalcount,
         'products' => $products_data
     ], 200);
+    }
 }
 
 
