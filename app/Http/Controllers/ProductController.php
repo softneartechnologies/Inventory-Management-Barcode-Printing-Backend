@@ -1827,6 +1827,7 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
             $q->where('reason_for_update', 'like', "%{$reason}%");
             
         }
+        
         // ✅ Date range filter
         if (!empty($start_date) && !empty($end_date)) {
             $q->whereBetween('created_at', [$start_date, $end_date]);
