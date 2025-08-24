@@ -143,16 +143,21 @@ class ProductController extends Controller
 if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
     $category    = $request->category;
     $type_filter = $request->type_filter;
+    $status_filter = $request->status_filter;
     $start_date  = $request->start_date;
     $end_date    = $request->end_date;
 
-    $query->where(function ($q) use ($category, $start_date, $end_date) {
+    $query->where(function ($q) use ($category,$status_filter, $start_date, $end_date) {
         
         // ✅ Category filter
         if (!empty($category)) {
             $q->whereHas('category', function ($catQuery) use ($category) {
                 $catQuery->where('name', 'like', "%{$category}%");
             });
+        }
+        if (!empty($status_filter)) {
+           
+                $q->where('status', 'like', "%{$status_filter}%");
         }
 
         // ✅ Date range filter
