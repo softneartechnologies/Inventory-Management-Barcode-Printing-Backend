@@ -39,7 +39,7 @@ class MachineController extends Controller
                  // ✅ Filter
     
                 if ($request->filled('workstation')) {
-                    $workstation = $request->work_station;
+                    $workstation = $request->workstation;
 
                     $query->whereHas('workstation', function ($q) use ($workstation) {
                         $q->where('name', 'like', "%{$workstation}%");
