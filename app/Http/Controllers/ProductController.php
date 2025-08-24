@@ -157,7 +157,8 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         }
         if (!empty($status_filter)) {
            
-                $q->where('status', 'like', "%{$status_filter}%");
+            $q->where('status', "{$status_filter}");
+                // $q->where('status', 'like', "%{$status_filter}%");
         }
 
         // ✅ Date range filter
