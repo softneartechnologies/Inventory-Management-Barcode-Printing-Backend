@@ -1397,6 +1397,7 @@ foreach ($toDelete as $oldStock) {
         //      }else{
         //         $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] - $quantity;
         //      }
+
         if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
                 $pdate = array_combine($locationIds, $quantities);
             } else {
@@ -1406,11 +1407,21 @@ foreach ($toDelete as $oldStock) {
             $rlocationId = $multiData['location_id'] ?? '0';
 
             // Safely add or subtract quantity
+            // if ($adjustment === 'add') {
+            //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+            // } else {
+            //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+            // }
+
             if ($adjustment === 'add') {
                 $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-            } else {
+            } elseif($adjustment === 'subtract') {
                 $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
             }
+              else {
+                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+            }
+
         
         $updatedQuantities = [];
         foreach ($locationIds as $lid) {
