@@ -1810,11 +1810,11 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
     // ✅ Filter
 if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
     $category    = $request->category;
-    $type_filter = $request->type_filter;
+    $reason = $request->reason;
     $start_date  = $request->start_date;
     $end_date    = $request->end_date;
 
-    $query->where(function ($q) use ($category, $start_date, $end_date) {
+    $query->where(function ($q) use ($category,$reason, $start_date, $end_date) {
         
         // ✅ Category filter
         if (!empty($category)) {
@@ -1823,6 +1823,10 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
             });
         }
 
+        if(!empty($reason)){
+            $q->where('reason_for_update', 'like', "%{$reason}%");
+            
+        }
         // ✅ Date range filter
         if (!empty($start_date) && !empty($end_date)) {
             $q->whereBetween('created_at', [$start_date, $end_date]);
