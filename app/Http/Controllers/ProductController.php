@@ -1157,337 +1157,471 @@ foreach ($toDelete as $oldStock) {
 
  
 
-    public function updateStock(Request $request, $product_id)
-    {
-        $product = Product::find($product_id);
-        if (!$product) {
-            return response()->json(['error' => 'Product not found'], 404);
-        }
+    // public function updateStock(Request $request, $product_id)
+    // {
+    //     $product = Product::find($product_id);
+    //     if (!$product) {
+    //         return response()->json(['error' => 'Product not found'], 404);
+    //     }
 
         
-        $validatedRequest = $request->validate([
-            'stock_date' => 'nullable|string',
-            'vendor_id' => 'nullable|string',
-            'reason_for_update' => 'nullable|string',
-            'comment' => 'nullable|string',
-            'opening_stock' => 'required|string',
-            'storage_location' => 'required|array',
-            'storage_location.*.current_stock' => 'nullable|numeric',
-            'storage_location.*.quantity' => 'required|numeric',
-            'storage_location.*.unit_of_measure' => 'nullable|string',
-            'storage_location.*.per_unit_cost' => 'nullable|string',
-            'storage_location.*.total_cost' => 'nullable|string',
-            'storage_location.*.location_id' => 'required|string',
-            'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
+    //     $validatedRequest = $request->validate([
+    //         'stock_date' => 'nullable|string',
+    //         'vendor_id' => 'nullable|string',
+    //         'reason_for_update' => 'nullable|string',
+    //         'comment' => 'nullable|string',
+    //         'opening_stock' => 'required|string',
+    //         'storage_location' => 'required|array',
+    //         'storage_location.*.current_stock' => 'nullable|numeric',
+    //         'storage_location.*.quantity' => 'required|numeric',
+    //         'storage_location.*.unit_of_measure' => 'nullable|string',
+    //         'storage_location.*.per_unit_cost' => 'nullable|string',
+    //         'storage_location.*.total_cost' => 'nullable|string',
+    //         'storage_location.*.location_id' => 'required|string',
+    //         'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
+    //     ]);
+
+    //     $existingLocations = json_decode($product->location_id, true) ?? [];
+
+    //     // New incoming location data
+    //     $reqproduct_location = [];
+    //     $reqproduct_unit_of_measure = [];
+    //     $reqproduct_per_unit_cost = [];
+    //     $reqproduct_total_cost = [];
+    //     // $newLocations = $validatedRequest['storage_location']['location_id']; // Should be array: [location_id => quantity]
+
+    //     // Merge or update existing with new
+    //     $multiLocationss = $validatedRequest['storage_location'];
+    //      foreach ($multiLocationss as $multiData) {
+
+                
+    //               $reqproduct_location[] = $multiData['location_id'];
+    //               $reqproduct_unit_of_measure[] = $multiData['unit_of_measure'];
+    //               $reqproduct_per_unit_cost[] = $multiData['per_unit_cost'];
+    //               $reqproduct_total_cost[] = $multiData['total_cost'];
+
+    //      }
+    //     // $updatedLocations = array_merge($existingLocations, $reqproduct_location);
+
+    //     // // Save updated JSON
+    //     $product->location_id = json_encode($reqproduct_location);
+    //     $product->unit_of_measure = json_encode($reqproduct_unit_of_measure);
+    //     $product->per_unit_cost = json_encode($reqproduct_per_unit_cost);
+    //     $product->total_cost = json_encode($reqproduct_total_cost);
+    //     // print_r($product->location_id);die;
+    //     $product->save();
+
+
+    //     $multiLocation = $validatedRequest['storage_location'];
+
+    //     foreach ($multiLocation as $multiData) {
+    //         $product_location = Stock::where('product_id', $product_id)
+    //             ->where('location_id', $multiData['location_id'])
+    //             ->first();
+
+    //             $currentStock = $product_location->current_stock ?? '0';
+               
+    //            $requestAllLocation[] = $multiData['location_id'];
+
+
+    //         $quantity = $multiData['quantity'];
+    //         $adjustment = $multiData['adjustment'];
+    //         $currentStockData = $multiData['current_stock'];
+    //         if ($product_location) {
+    //             // Update existing stock record
+    //             $currentStock = $product_location->current_stock;
+    //             // $currentStockData = $multiData['current_stock'];
+
+    //             if ($adjustment === 'add') {
+                    
+    //                 $newStock = $currentStock + $quantity;
+    //                 $productOpeningStock = $product->opening_stock + $quantity;
+    //             } else {
+    //                 $newStock = $currentStock - $quantity;
+    //                 $productOpeningStock = $product->opening_stock - $quantity;
+    //             }
+
+    //             $stockData = [
+    //                 'current_stock' => $newStock,
+    //                 'new_stock' => $newStock,
+    //                 'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
+    //                 'per_unit_cost'          => $multiData['per_unit_cost'],
+    //                 'total_cost'          => $multiData['total_cost'],
+    //                 'quantity' => $quantity,
+    //                 'adjustment' => $adjustment,
+    //                 'stock_date' => $validatedRequest['stock_date'] ?? null,
+    //                 'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+    //                 'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    //                 'comment' => $validatedRequest['comment'] ?? null,
+    //             ];
+
+    //             $product_location->update($stockData);
+
+
+    //              $stockData = [
+    //                     'product_id' => $product->id,
+    //                     'category_id' => $product->category_id,
+    //                     'current_stock' => $currentStock,
+    //                     'new_stock' => $newStock,
+    //                     'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+    //                     'location_id' => $multiData['location_id'],
+    //                     'quantity' => $quantity,
+    //                     'adjustment' => $adjustment,
+    //                     'stock_date' => $validatedRequest['stock_date'] ?? null,
+    //                     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+    //                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    //                 ];
+    
+    //                 InventoryAdjustmentReports::create($stockData);
+
+
+                
+    //         $quantity = $quantity;
+    //          if ($adjustment === 'add') {
+    //              $productOpeningStock = $product->opening_stock + $quantity;
+    //          }else{
+    //             $productOpeningStock = $product->opening_stock - $quantity;
+    //          }
+    //         $locationIds = json_decode($product->location_id); 
+    //         $quantities = json_decode($product->quantity); 
+    //     // $pdate = array_combine($locationIds, $quantities);
+    //     // $rlocationId = $multiData['location_id']?? '0';
+    //     //  if ($adjustment === 'add') {
+    //     //          $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+    //     //      }else{
+    //     //         $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
+    //     //      }
+
+    //     // Combine arrays only if they are both arrays and same length
+    //         if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
+    //             $pdate = array_combine($locationIds, $quantities);
+    //         } else {
+    //             $pdate = [];
+    //         }
+
+    //         $rlocationId = $multiData['location_id'] ?? '0';
+
+    //         // Safely add or subtract quantity
+    //         if ($adjustment === 'add') {
+    //             $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+    //         } else {
+    //             $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+    //             // $pdate[$rlocationId] = '';
+    //         }
+
+
+    //             $updatedQuantities = [];
+    //         foreach ($locationIds as $id) {
+    //             if (isset($pdate[$id])) {
+    //                 $updatedQuantities[] = $pdate[$id];
+    //             } else {
+    //                 $updatedQuantities[] = 0; // or handle error/skip
+    //             }
+    //             }
+
+    //             $totalQuantity = array_sum($updatedQuantities);
+    //     // Step 6: Update the product
+
+    //     // $locationIds = json_decode($product->location_id); 
+
+    //         $product->update([
+    //             'opening_stock' => $productOpeningStock,
+    //             'quantity' => json_encode($updatedQuantities)
+    //         ]);
+
+                
+    //         } else {
+    //             // Create new stock record
+    //             // $currentStock = $multiData['current_stock'] ?? 0;
+    //              $currentStock = $product_location->current_stock ?? '0';
+                
+    //             if ($adjustment === 'add') {
+    //                 $newStock = $currentStock + $quantity;
+    //                 $productOpeningStock = $product->opening_stock + $quantity;
+    //             } else {
+    //                 $newStock = $currentStock - $quantity;
+    //                 $productOpeningStock = $product->opening_stock - $quantity;
+    //             }
+
+    //             $stockData = [
+    //                 'product_id' => $product->id,
+    //                 'category_id' => $product->category_id,
+    //                 'current_stock' => $newStock,
+    //                 'new_stock' => $newStock,
+    //                 'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+    //                 'per_unit_cost'          => $multiData['per_unit_cost'],
+    //                 'total_cost'          => $multiData['total_cost'],
+    //                 'location_id' => $multiData['location_id'],
+    //                 'quantity' => $quantity,
+    //                 'adjustment' => $adjustment,
+    //                 'stock_date' => $validatedRequest['stock_date'] ?? null,
+    //                 'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+    //                 'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    //                 'comment' => $validatedRequest['comment'] ?? null,
+    //             ];
+
+    //             Stock::create($stockData);
+           
+
+    //              $stockData = [
+    //                     'product_id' => $product->id,
+    //                     'category_id' => $product->category_id,
+    //                     'current_stock' => $newStock,
+    //                     'new_stock' => $newStock,
+    //                     'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+    //                     'location_id' => $multiData['location_id'],
+    //                     'quantity' => $quantity,
+    //                     'adjustment' => $adjustment,
+    //                     'stock_date' => $validatedRequest['stock_date'] ?? null,
+    //                     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+    //                     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    //                 ];
+    
+    //                 InventoryAdjustmentReports::create($stockData);
+
+
+            
+
+    //     $quantity = $quantity;
+    //          if ($adjustment === 'add') {
+    //              $productOpeningStock = $product->opening_stock + $quantity;
+    //          }else{
+    //             $productOpeningStock = $product->opening_stock - $quantity;
+    //          }
+    //     $locationIds = json_decode($product->location_id); 
+    //     $quantities = json_decode($product->quantity); 
+    //     // $pdate = array_combine($locationIds, $quantities);
+    //     // $rlocationId = $multiData['location_id'];
+    //     //  if ($adjustment === 'add') {
+    //     //          $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] + $quantity;
+    //     //      }else{
+    //     //         $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] - $quantity;
+    //     //      }
+
+    //         if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
+    //             $pdate = array_combine($locationIds, $quantities);
+    //         } else {
+    //             $pdate = [];
+    //         }
+
+    //         $rlocationId = $multiData['location_id'] ?? '0';
+
+    //         // Safely add or subtract quantity
+    //         // if ($adjustment === 'add') {
+    //         //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+    //         // } else {
+    //         //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+    //         // }
+
+    //         if ($adjustment === 'add') {
+    //             $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
+    //         } elseif($adjustment === 'subtract') {
+    //             $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
+    //         }
+    //           else if($adjustment === 'select') {
+    //             $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $currentStockData;
+    //         }
+
+        
+    //     $updatedQuantities = [];
+    //     foreach ($locationIds as $lid) {
+    //         $updatedQuantities[] = $pdate[$lid];
+    //     }
+
+    //     $totalQuantity = array_sum($updatedQuantities);
+    //     // Step 6: Update the product
+
+    //     $product->update([
+    //         'opening_stock' => $productOpeningStock,
+    //         'quantity' => json_encode($updatedQuantities)
+           
+    //     ]);
+
+    //         // $product->update(['opening_stock' => $productOpeningStock]);
+    //         // $product->update(['opening_stock' => $validatedRequest['opening_stock']]);
+    //     }
+    //      }
+    //         foreach ($multiLocation as $multiData) {
+
+                
+    //               $product_location = Stock::where('product_id', $product_id)
+    //             ->where('location_id', $multiData['location_id'])
+    //             ->first();
+    //             // print_r($product_location);die;
+    //            if($adjustment!=='select'){
+    //             $quantity = $multiData['quantity'];
+    //             $adjustment = $multiData['adjustment'];
+
+    //             $currentStock = $product_location->current_stock;
+                
+    //                 if ($adjustment == 'add') {
+    //                     $newStock = $currentStock + $quantity;
+    //                     $productOpeningStock = $product->opening_stock + $quantity;
+    //                 } else if($adjustment == 'subtract') {
+    //                     $newStock = $currentStock - $quantity;
+    //                     $productOpeningStock = $product->opening_stock - $quantity;
+    //                 }
+    
+    //                 // $stockData = [
+    //                 //     'product_id' => $product->id,
+    //                 //     'category_id' => $product->category_id,
+    //                 //     'current_stock' => $currentStock,
+    //                 //     'new_stock' => $newStock,
+    //                 //     'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
+    //                 //     'location_id' => $multiData['location_id'],
+    //                 //     'quantity' => $quantity,
+    //                 //     'adjustment' => $adjustment,
+    //                 //     'stock_date' => $validatedRequest['stock_date'] ?? null,
+    //                 //     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
+    //                 //     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+    //                 // ];
+    
+    //                 // InventoryAdjustmentReports::create($stockData);
+                    
+    //                 }
+    //             // }
+
+    //         // Update the product's opening stock
+            
+    //     }
+
+    //     return response()->json(['message' => 'Stock updated successfully'], 200);
+    // }
+ 
+    public function updateStock(Request $request, $product_id)
+{
+    $product = Product::find($product_id);
+    if (!$product) {
+        return response()->json(['error' => 'Product not found'], 404);
+    }
+
+    $validated = $request->validate([
+        'stock_date' => 'nullable|string',
+        'vendor_id' => 'nullable|string',
+        'reason_for_update' => 'nullable|string',
+        'comment' => 'nullable|string',
+        'opening_stock' => 'required|numeric',
+        'storage_location' => 'required|array',
+        'storage_location.*.current_stock' => 'nullable|numeric',
+        'storage_location.*.quantity' => 'required|numeric',
+        'storage_location.*.unit_of_measure' => 'nullable|string',
+        'storage_location.*.per_unit_cost' => 'nullable|string',
+        'storage_location.*.total_cost' => 'nullable|string',
+        'storage_location.*.location_id' => 'required|string',
+        'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
+    ]);
+
+    $reqLocations = $validated['storage_location'];
+
+    $productLocations = [];
+    $unitMeasures = [];
+    $perUnitCosts = [];
+    $totalCosts = [];
+
+    foreach ($reqLocations as $loc) {
+        $productLocations[] = $loc['location_id'];
+        $unitMeasures[] = $loc['unit_of_measure'] ?? null;
+        $perUnitCosts[] = $loc['per_unit_cost'] ?? null;
+        $totalCosts[] = $loc['total_cost'] ?? null;
+    }
+
+    // Update product-level JSON fields
+    $product->location_id = json_encode($productLocations);
+    $product->unit_of_measure = json_encode($unitMeasures);
+    $product->per_unit_cost = json_encode($perUnitCosts);
+    $product->total_cost = json_encode($totalCosts);
+    $product->save();
+
+    $locationQuantities = [];
+    $totalProductStock = 0;
+
+    foreach ($reqLocations as $loc) {
+        $quantity = (float) $loc['quantity'];
+        $currentStock = (float) ($loc['current_stock'] ?? 0);
+        $adjustment = $loc['adjustment'];
+        $locationId = $loc['location_id'];
+
+        $stock = Stock::where('product_id', $product_id)
+            ->where('location_id', $locationId)
+            ->first();
+
+        if ($stock) {
+            $oldStock = $stock->current_stock;
+        } else {
+            $oldStock = 0;
+        }
+
+        // Calculate new stock
+        if ($adjustment === 'add') {
+            $newStock = $oldStock + $quantity;
+        } elseif ($adjustment === 'subtract') {
+            $newStock = $oldStock - $quantity;
+        } else { // select
+            $newStock = $currentStock;
+        }
+
+        // Update or create Stock
+        if ($stock) {
+            $stock->update([
+                'current_stock' => $newStock,
+                'new_stock' => $newStock,
+                'unit_of_measure' => $loc['unit_of_measure'] ?? $stock->unit_of_measure,
+                'per_unit_cost' => $loc['per_unit_cost'] ?? $stock->per_unit_cost,
+                'total_cost' => $loc['total_cost'] ?? $stock->total_cost,
+                'quantity' => $quantity,
+                'adjustment' => $adjustment,
+                'stock_date' => $validated['stock_date'] ?? null,
+                'vendor_id' => $validated['vendor_id'] ?? null,
+                'reason_for_update' => $validated['reason_for_update'] ?? null,
+                'comment' => $validated['comment'] ?? null,
+            ]);
+        } else {
+            Stock::create([
+                'product_id' => $product->id,
+                'category_id' => $product->category_id,
+                'current_stock' => $newStock,
+                'new_stock' => $newStock,
+                'unit_of_measure' => $loc['unit_of_measure'] ?? null,
+                'per_unit_cost' => $loc['per_unit_cost'] ?? null,
+                'total_cost' => $loc['total_cost'] ?? null,
+                'location_id' => $locationId,
+                'quantity' => $quantity,
+                'adjustment' => $adjustment,
+                'stock_date' => $validated['stock_date'] ?? null,
+                'vendor_id' => $validated['vendor_id'] ?? null,
+                'reason_for_update' => $validated['reason_for_update'] ?? null,
+                'comment' => $validated['comment'] ?? null,
+            ]);
+        }
+
+        // Log adjustment
+        InventoryAdjustmentReports::create([
+            'product_id' => $product->id,
+            'category_id' => $product->category_id,
+            'current_stock' => $oldStock,
+            'new_stock' => $newStock,
+            'unit_of_measure' => $loc['unit_of_measure'] ?? null,
+            'location_id' => $locationId,
+            'quantity' => $quantity,
+            'adjustment' => $adjustment,
+            'stock_date' => $validated['stock_date'] ?? null,
+            'vendor_id' => $validated['vendor_id'] ?? null,
+            'reason_for_update' => $validated['reason_for_update'] ?? null,
         ]);
 
-        $existingLocations = json_decode($product->location_id, true) ?? [];
-
-        // New incoming location data
-        $reqproduct_location = [];
-        $reqproduct_unit_of_measure = [];
-        $reqproduct_per_unit_cost = [];
-        $reqproduct_total_cost = [];
-        // $newLocations = $validatedRequest['storage_location']['location_id']; // Should be array: [location_id => quantity]
-
-        // Merge or update existing with new
- $multiLocationss = $validatedRequest['storage_location'];
-         foreach ($multiLocationss as $multiData) {
-
-                
-                  $reqproduct_location[] = $multiData['location_id'];
-                  $reqproduct_unit_of_measure[] = $multiData['unit_of_measure'];
-                  $reqproduct_per_unit_cost[] = $multiData['per_unit_cost'];
-                  $reqproduct_total_cost[] = $multiData['total_cost'];
-
-         }
-        // $updatedLocations = array_merge($existingLocations, $reqproduct_location);
-
-        // // Save updated JSON
-        $product->location_id = json_encode($reqproduct_location);
-        $product->unit_of_measure = json_encode($reqproduct_unit_of_measure);
-        $product->per_unit_cost = json_encode($reqproduct_per_unit_cost);
-        $product->total_cost = json_encode($reqproduct_total_cost);
-        // print_r($product->location_id);die;
-        $product->save();
-
-
-        $multiLocation = $validatedRequest['storage_location'];
-
-        foreach ($multiLocation as $multiData) {
-            $product_location = Stock::where('product_id', $product_id)
-                ->where('location_id', $multiData['location_id'])
-                ->first();
-
-                $currentStock = $product_location->current_stock ?? '0';
-               
-               $requestAllLocation[] = $multiData['location_id'];
-
-
-            $quantity = $multiData['quantity'];
-            $adjustment = $multiData['adjustment'];
-
-            if ($product_location) {
-                // Update existing stock record
-                $currentStock = $product_location->current_stock;
-                // $currentStock = $multiData['current_stock'];
-
-                if ($adjustment === 'add') {
-                    
-                    $newStock = $currentStock + $quantity;
-                    $productOpeningStock = $product->opening_stock + $quantity;
-                } else {
-                    $newStock = $currentStock - $quantity;
-                    $productOpeningStock = $product->opening_stock - $quantity;
-                }
-
-                $stockData = [
-                    'current_stock' => $newStock,
-                    'new_stock' => $newStock,
-                    'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
-                    'per_unit_cost'          => $multiData['per_unit_cost'],
-                    'total_cost'          => $multiData['total_cost'],
-                    'quantity' => $quantity,
-                    'adjustment' => $adjustment,
-                    'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    'comment' => $validatedRequest['comment'] ?? null,
-                ];
-
-                $product_location->update($stockData);
-
-
-                 $stockData = [
-                        'product_id' => $product->id,
-                        'category_id' => $product->category_id,
-                        'current_stock' => $currentStock,
-                        'new_stock' => $newStock,
-                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
-                        'location_id' => $multiData['location_id'],
-                        'quantity' => $quantity,
-                        'adjustment' => $adjustment,
-                        'stock_date' => $validatedRequest['stock_date'] ?? null,
-                        'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    ];
-    
-                    InventoryAdjustmentReports::create($stockData);
-
-
-                
-        $quantity = $quantity;
-             if ($adjustment === 'add') {
-                 $productOpeningStock = $product->opening_stock + $quantity;
-             }else{
-                $productOpeningStock = $product->opening_stock - $quantity;
-             }
-        $locationIds = json_decode($product->location_id); 
-        $quantities = json_decode($product->quantity); 
-        // $pdate = array_combine($locationIds, $quantities);
-        // $rlocationId = $multiData['location_id']?? '0';
-        //  if ($adjustment === 'add') {
-        //          $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
-        //      }else{
-        //         $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
-        //      }
-
-        // Combine arrays only if they are both arrays and same length
-            if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
-                $pdate = array_combine($locationIds, $quantities);
-            } else {
-                $pdate = [];
-            }
-
-            $rlocationId = $multiData['location_id'] ?? '0';
-
-            // Safely add or subtract quantity
-            if ($adjustment === 'add') {
-                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-            } else {
-                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
-                // $pdate[$rlocationId] = '';
-            }
-
-
-        $updatedQuantities = [];
-       foreach ($locationIds as $id) {
-    if (isset($pdate[$id])) {
-        $updatedQuantities[] = $pdate[$id];
-    } else {
-        $updatedQuantities[] = 0; // or handle error/skip
+        $locationQuantities[$locationId] = $newStock;
+        $totalProductStock += $newStock;
     }
+
+    // Update product stock totals
+    $product->update([
+        'opening_stock' => $totalProductStock,
+        'quantity' => json_encode(array_values($locationQuantities)),
+    ]);
+
+    return response()->json(['message' => 'Stock updated successfully'], 200);
 }
 
-        $totalQuantity = array_sum($updatedQuantities);
-        // Step 6: Update the product
-
-        // $locationIds = json_decode($product->location_id); 
-
-        $product->update([
-            'opening_stock' => $productOpeningStock,
-            'quantity' => json_encode($updatedQuantities)
-        ]);
-
-                
-            } else {
-                // Create new stock record
-                // $currentStock = $multiData['current_stock'] ?? 0;
-                 $currentStock = $product_location->current_stock ?? '0';
-                
-                if ($adjustment === 'add') {
-                    $newStock = $currentStock + $quantity;
-                    $productOpeningStock = $product->opening_stock + $quantity;
-                } else {
-                    $newStock = $currentStock - $quantity;
-                    $productOpeningStock = $product->opening_stock - $quantity;
-                }
-
-                $stockData = [
-                    'product_id' => $product->id,
-                    'category_id' => $product->category_id,
-                    'current_stock' => $newStock,
-                    'new_stock' => $newStock,
-                    'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
-                    'per_unit_cost'          => $multiData['per_unit_cost'],
-                    'total_cost'          => $multiData['total_cost'],
-                    'location_id' => $multiData['location_id'],
-                    'quantity' => $quantity,
-                    'adjustment' => $adjustment,
-                    'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                    'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    'comment' => $validatedRequest['comment'] ?? null,
-                ];
-
-                Stock::create($stockData);
-           
-
-                 $stockData = [
-                        'product_id' => $product->id,
-                        'category_id' => $product->category_id,
-                        'current_stock' => $newStock,
-                        'new_stock' => $newStock,
-                        'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
-                        'location_id' => $multiData['location_id'],
-                        'quantity' => $quantity,
-                        'adjustment' => $adjustment,
-                        'stock_date' => $validatedRequest['stock_date'] ?? null,
-                        'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    ];
-    
-                    InventoryAdjustmentReports::create($stockData);
-
-
-            
-
-        $quantity = $quantity;
-             if ($adjustment === 'add') {
-                 $productOpeningStock = $product->opening_stock + $quantity;
-             }else{
-                $productOpeningStock = $product->opening_stock - $quantity;
-             }
-        $locationIds = json_decode($product->location_id); 
-        $quantities = json_decode($product->quantity); 
-        // $pdate = array_combine($locationIds, $quantities);
-        // $rlocationId = $multiData['location_id'];
-        //  if ($adjustment === 'add') {
-        //          $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] + $quantity;
-        //      }else{
-        //         $pdate[$rlocationId] = $pdate[$rlocationId ?? '0'] - $quantity;
-        //      }
-
-        if (is_array($locationIds) && is_array($quantities) && count($locationIds) === count($quantities)) {
-                $pdate = array_combine($locationIds, $quantities);
-            } else {
-                $pdate = [];
-            }
-
-            $rlocationId = $multiData['location_id'] ?? '0';
-
-            // Safely add or subtract quantity
-            // if ($adjustment === 'add') {
-            //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-            // } else {
-            //     $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
-            // }
-
-            if ($adjustment === 'add') {
-                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-            } elseif($adjustment === 'subtract') {
-                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) - $quantity;
-            }
-              else {
-                $pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-            }
-
-        
-        $updatedQuantities = [];
-        foreach ($locationIds as $lid) {
-            $updatedQuantities[] = $pdate[$lid];
-        }
-
-        $totalQuantity = array_sum($updatedQuantities);
-        // Step 6: Update the product
-
-        $product->update([
-            'opening_stock' => $productOpeningStock,
-            'quantity' => json_encode($updatedQuantities)
-           
-        ]);
-
-            // $product->update(['opening_stock' => $productOpeningStock]);
-            // $product->update(['opening_stock' => $validatedRequest['opening_stock']]);
-        }
- }
-            foreach ($multiLocation as $multiData) {
-
-                
-                  $product_location = Stock::where('product_id', $product_id)
-                ->where('location_id', $multiData['location_id'])
-                ->first();
-                // print_r($product_location);die;
-               if($adjustment!=='select'){
-                $quantity = $multiData['quantity'];
-                $adjustment = $multiData['adjustment'];
-
-                $currentStock = $product_location->current_stock;
-                
-                    if ($adjustment == 'add') {
-                        $newStock = $currentStock + $quantity;
-                        $productOpeningStock = $product->opening_stock + $quantity;
-                    } else if($adjustment == 'subtract') {
-                        $newStock = $currentStock - $quantity;
-                        $productOpeningStock = $product->opening_stock - $quantity;
-                    }
-    
-                    // $stockData = [
-                    //     'product_id' => $product->id,
-                    //     'category_id' => $product->category_id,
-                    //     'current_stock' => $currentStock,
-                    //     'new_stock' => $newStock,
-                    //     'unit_of_measure' => $multiData['unit_of_measure'] ?? null,
-                    //     'location_id' => $multiData['location_id'],
-                    //     'quantity' => $quantity,
-                    //     'adjustment' => $adjustment,
-                    //     'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    //     'vendor_id' => $validatedRequest['vendor_id'] ?? null,
-                    //     'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-                    // ];
-    
-                    // InventoryAdjustmentReports::create($stockData);
-                    
-                    }
-                // }
-
-            // Update the product's opening stock
-            
-        }
-
-        return response()->json(['message' => 'Stock updated successfully'], 200);
-    }
- 
     
     public function editStock($product_id)
 {
