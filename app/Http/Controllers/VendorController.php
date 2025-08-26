@@ -22,7 +22,7 @@ class VendorController extends Controller
         $limit = $request->get('per_page', null); // default null = all records
         $search = $request->get('search', null);
 
-            $totalcount = Vendor::count();
+           
         $query = Vendor::query();
 
         // Searching
@@ -40,11 +40,27 @@ class VendorController extends Controller
         $query->orderBy($sortBy, $sortOrder);
 
         // If limit is given, apply pagination
-        if (!empty($limit) && is_numeric($limit)) {
-            $vendor = $query->paginate($limit);
-            return response()->json(['total' =>$totalcount, 'vendor'=>$vendor], 200);
+        // if (!empty($limit) && is_numeric($limit)) {
+        //     $vendor = $query->paginate($limit);
+        //     return response()->json(['total' =>$totalcount, 'vendor'=>$vendor], 200);
             
-        } else {
+        // }
+        if (!empty($limit) && is_numeric($limit)) {
+            if(!empty($search)){
+                $total_count = $query->count();
+                $vendor = $query->paginate($limit);
+            return response()->json(['total' =>$total_count, 'vendor'=>$vendor], 200);
+            
+            }else{
+                $total_count =  $totalcount = Vendor::count();
+            $vendor = $query->paginate($limit);
+            return response()->json(['total' =>$total_count, 'vendor'=>$vendor], 200);
+            
+            }
+            
+        }
+
+         else {
             // Default get all data
             $vendor = $query->orderBy('id','desc')->get();
             return response()->json($vendor, 200);

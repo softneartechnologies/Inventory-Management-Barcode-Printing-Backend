@@ -47,7 +47,7 @@ class SubcategoryController extends Controller
             return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
             
             }else{
-                $total_count = Subcategory::with('category')->count();;
+                $total_count = Subcategory::with('category')->count();
             $categories = $query->paginate($limit);
             return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
             
