@@ -15,6 +15,50 @@ class CategoryController extends Controller
     //     return response()->json($categories, 200);
     // }
 
+    // public function index(Request $request)
+    // {
+    //     // Default values
+    //     $total_count = Category::count();
+    //     $sortBy = $request->get('sort_by', 'id'); // default column
+    //     $sortOrder = $request->get('sort_order', 'desc'); // default order
+    //     $limit = $request->get('per_page', null); // default null = all records
+    //     $search = $request->get('search', null);
+
+    //     $query = Category::query();
+
+    //     // Searching
+    //     if (!empty($search)) {
+    //         $query->where(function ($q) use ($search) {
+    //             $q->where('name', 'like', "%{$search}%")
+    //             ->orWhere('description', 'like', "%{$search}%");
+    //         });
+    //     }
+
+    //     // Sorting
+    //     $query->orderBy($sortBy, $sortOrder);
+
+    //     // If limit is given, apply pagination
+    //     if (!empty($limit) && is_numeric($limit)) {
+    //         if(!empty($search)){
+    //             print_r($search);die;
+    //             $categories = $query->paginate($limit);
+    //         return response()->json(['total' =>$query->count(), 'categories'=>$categories], 200);
+            
+    //         }else{
+    //         $categories = $query->paginate($limit);
+    //         return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
+            
+    //         }
+            
+    //     } else {
+    //         // Default get all data
+    //         $categories = $query->get();
+    //         return response()->json($categories, 200);
+    //     }
+
+    //     // return response()->json($categories, 200);
+    // }
+
     public function index(Request $request)
     {
         // Default values
@@ -40,11 +84,12 @@ class CategoryController extends Controller
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {
             if(!empty($search)){
-                
+                $total_count = $query->count();
                 $categories = $query->paginate($limit);
-            return response()->json(['total' =>$query->count(), 'categories'=>$categories], 200);
+            return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
             
             }else{
+                $total_count = Category::count();
             $categories = $query->paginate($limit);
             return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
             
@@ -58,7 +103,6 @@ class CategoryController extends Controller
 
         // return response()->json($categories, 200);
     }
-
 
     // ✅ Create a New Category
     public function store(Request $request)
