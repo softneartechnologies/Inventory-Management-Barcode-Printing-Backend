@@ -140,7 +140,7 @@ class ProductController extends Controller
 
        // ✅ Filter
     // ✅ Filter
-if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
+if ($request->filled('category')  || $request->filled('type_filter') || $request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
     $category    = $request->category;
     $type_filter = $request->type_filter;
     $status_filter = $request->status_filter;
@@ -207,8 +207,9 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         return $data;
     });
 
-    if ($request->filled('category') ||$request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
-
+    // if ($request->filled('category') ||$request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
+    if ($request->filled('category')  || $request->filled('type_filter') || $request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
+ 
     return response()->json([
         'total_count' => $query->count(),
         'products' => $products_data
