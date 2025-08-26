@@ -39,8 +39,16 @@ class CategoryController extends Controller
 
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {
+            if(!empty($search)){
+                
+                $categories = $query->paginate($limit);
+            return response()->json(['total' =>$query->count(), 'categories'=>$categories], 200);
+            
+            }else{
             $categories = $query->paginate($limit);
             return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
+            
+            }
             
         } else {
             // Default get all data
