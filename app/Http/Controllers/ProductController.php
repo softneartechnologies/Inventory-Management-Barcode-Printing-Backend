@@ -3068,6 +3068,8 @@ public function uploadCSV(Request $request)
         Storage::put($qrCodePath, $qrCodeImage);
         $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
+        $locationIdsAsString = array_map('strval', $locationIds);
+        // print_r(json_encode($locationIdsAsString));die;
         // ---- Insert / Update Product
         if ($product) {
             $product->update([
@@ -3083,7 +3085,7 @@ public function uploadCSV(Request $request)
                 'commit_stock_check' => (float) $row[10],
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
-                'location_id' => json_encode($locationIds),
+                'location_id' => json_encode($locationIdsAsString),
                 'quantity' => $row[14],
                 'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
                 'per_unit_cost' => $row[16],
@@ -3109,7 +3111,7 @@ public function uploadCSV(Request $request)
                 'commit_stock_check' => (float) $row[10],
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
-                'location_id' => json_encode($locationIds),
+                'location_id' => json_encode($locationIdsAsString),
                 'quantity' => $row[14],
                 'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
                 'per_unit_cost' => $row[16],
