@@ -25,7 +25,7 @@ class MachineController extends Controller
         $limit = $request->get('per_page', null); // default null = all records
         $search = $request->get('search', null);
 
-        $totalcount = Machine::count();
+        
         $query = Machine::with('department:id,name','workstation:id,name');
 
         // Searching
@@ -59,7 +59,11 @@ class MachineController extends Controller
         // Sorting
         $query->orderBy($sortBy, $sortOrder);
 
-      
+      if(!empty($search)){
+                $totalcount = $query->count();
+            }else{
+                $totalcount = Machine::count();
+            }
 
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {

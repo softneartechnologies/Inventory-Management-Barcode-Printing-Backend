@@ -52,7 +52,7 @@ class DepartmentController extends Controller
             $limit = $request->get('per_page', null); // default null = all records
             $search = $request->get('search', null);
 
-             $totalcount = Department::count();
+             
             $query = Department::query();
 
             // Searching
@@ -65,7 +65,11 @@ class DepartmentController extends Controller
 
             // Sorting
             $query->orderBy($sortBy, $sortOrder);
-
+            if(!empty($search)){
+                $totalcount = $query->count();
+            }else{
+                 $totalcount = Department::count();
+            }
             // If limit is given, apply pagination
             if (!empty($limit) && is_numeric($limit)) {
                 $department = $query->paginate($limit);

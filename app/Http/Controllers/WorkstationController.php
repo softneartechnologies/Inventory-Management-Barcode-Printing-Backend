@@ -74,7 +74,7 @@ class WorkstationController extends Controller
     $limit     = $request->get('per_page', null); // default null = all records
     $search    = $request->get('search', null);
 
-    $totalcount = Workstation::count();
+   
     $query = Workstation::with('department');
 
     // 🔍 Searching
@@ -109,6 +109,11 @@ class WorkstationController extends Controller
         $ws->department_name = $ws->department?->name; 
         return $ws;
     });
+     if(!empty($search)){
+                $totalcount = $query->count();
+            }else{
+                 $totalcount = Workstation::count();
+            }
 
     if (!empty($limit) && is_numeric($limit)) {
         return response()->json([
