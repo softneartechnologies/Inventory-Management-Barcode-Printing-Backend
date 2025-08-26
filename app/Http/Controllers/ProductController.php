@@ -2955,9 +2955,10 @@ public function uploadCSV(Request $request)
     $header = fgetcsv($handle);
     $expectedHeaders = [
         "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable",
-        "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id",
-        "quantity", "unit_of_measure", "per_unit_cost", "total_cost", "status"
+        "vendor_id", "model", "unit_of_measurement_category", "description",
+        "returnable", "commit_stock_check", "inventory_alert_threshold",
+        "opening_stock", "location_id", "quantity", "unit_of_measure",
+        "per_unit_cost", "total_cost", "status"
     ];
 
     $header = array_map('trim', $header);
@@ -2965,8 +2966,8 @@ public function uploadCSV(Request $request)
         return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
     }
 
-    $rowNumber   = 2;
     $invalidRows = [];
+    $rowNumber   = 2;
 
     while ($row = fgetcsv($handle)) {
         $row = array_map('trim', $row);
@@ -2979,6 +2980,18 @@ public function uploadCSV(Request $request)
             continue;
         }
 
+        // ---- Location handling (comma separated names)
+        $locationString = $row[13] ?? '';
+        $locationNames  = array_map('trim', explode(",", $locationString));
+        $locationIds    = [];
+
+        foreach ($locationNames as $name) {
+            if (!empty($name)) {
+                $location = \App\Models\Location::firstOrCreate(['name' => $name], ['name' => $name]);
+                $locationIds[] = $location->id;
+            }
+        }
+
         // ---- Manufacturer
         $manufacturer = Manufacturer::firstOrCreate(
             ['name' => $row[4]],
@@ -2988,10 +3001,7 @@ public function uploadCSV(Request $request)
         // ---- Category
         $category = null;
         if (!empty($row[2])) {
-            $category = Category::firstOrCreate(
-                ['name' => $row[2]],
-                ['name' => $row[2],'description' => '']
-            );
+            $category = Category::firstOrCreate(['name' => $row[2]], ['name' => $row[2]]);
         }
 
         // ---- SubCategory
@@ -3006,17 +3016,60 @@ public function uploadCSV(Request $request)
         // ---- Vendor
         $vendor = null;
         if (!empty($row[5])) {
-            $vendor = Vendor::firstOrCreate(
-                ['vendor_name' => $row[5]],
-                ['vendor_name' => $row[5]]
-            );
+            $vendor = Vendor::firstOrCreate(['vendor_name' => $row[5]], ['vendor_name' => $row[5]]);
         }
 
-        // ---- Product Check
+        // ---- UOM Category + Units
+        $uomCategory  = null;
+        $uomUnitsNames = null;
+        if (!empty($row[7])) {
+            $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
+            $uomUnitsNames = [];
+
+            $uomUnitString = $row[15] ?? '';
+            $uomNames = array_map('trim', explode(",", $uomUnitString));
+
+            foreach ($uomNames as $name) {
+                if (!empty($name)) {
+                    $uomUnit = UomUnit::firstOrCreate(
+                        ['unit_name' => $name],
+                        [
+                            'unit_name' => $name,
+                            'uom_category_id' => $uomCategory->id,
+                            'abbreviation' => $name,
+                            'reference' => 1,
+                            'ratio' => 1,
+                            'rounding' => 0.01,
+                            'active' => 1
+                        ]
+                    );
+                    $uomUnitsNames[] = $uomUnit->unit_name;
+                }
+            }
+        }
+
+        // ---- Product check
         $product = Product::where('sku', $sku)->first();
 
+        // --- Generate Barcode & QR only for valid SKU
+        $sku = strtoupper($sku);
+        if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
+            return response()->json(['message' => "Invalid SKU format: {$sku}"], 422);
+        }
+
+        $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
+        $barcodePath  = 'public/barcodes/' . $sku . '.png';
+        Storage::put($barcodePath, $barcodeImage);
+        $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+
+        $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku], JSON_UNESCAPED_UNICODE), 'QRCODE');
+        $qrCodeFile  = 'qrcode_' . time() . '_' . uniqid() . '.png';
+        $qrCodePath  = 'public/qrcode/' . $qrCodeFile;
+        Storage::put($qrCodePath, $qrCodeImage);
+        $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
+        // ---- Insert / Update Product
         if ($product) {
-            // Update Existing Product
             $product->update([
                 'product_name' => $productName,
                 'category_id' => $category?->id,
@@ -3024,21 +3077,24 @@ public function uploadCSV(Request $request)
                 'manufacturer' => $manufacturer->name,
                 'vendor_id' => $vendor?->id,
                 'model' => $row[6],
-                'unit_of_measurement_category' => $row[7] ?? null,
+                'unit_of_measurement_category' => $uomCategory?->id,
                 'description' => $row[8],
                 'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
                 'commit_stock_check' => (float) $row[10],
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
-                'location_id' => $row[13],
+                'location_id' => json_encode($locationIds),
                 'quantity' => $row[14],
-                'unit_of_measure' => $row[15],
+                'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
                 'per_unit_cost' => $row[16],
                 'total_cost' => $row[17],
                 'status' => $row[18] ?: 'inactive',
+                'barcode_number' => $sku,
+                'generated_barcode' => $savedBarcodePath,
+                'generated_qrcode' => $savedQRCodePath,
+                'updated_at' => now(),
             ]);
         } else {
-            // Create New Product
             $product = Product::create([
                 'product_name' => $productName,
                 'sku' => $sku,
@@ -3047,20 +3103,57 @@ public function uploadCSV(Request $request)
                 'manufacturer' => $manufacturer->name,
                 'vendor_id' => $vendor?->id,
                 'model' => $row[6],
-                'unit_of_measurement_category' => $row[7] ?? null,
+                'unit_of_measurement_category' => $uomCategory?->id,
                 'description' => $row[8],
                 'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
                 'commit_stock_check' => (float) $row[10],
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
-                'location_id' => $row[13],
+                'location_id' => json_encode($locationIds),
                 'quantity' => $row[14],
-                'unit_of_measure' => $row[15],
+                'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
                 'per_unit_cost' => $row[16],
                 'total_cost' => $row[17],
                 'status' => $row[18] ?: 'inactive',
+                'barcode_number' => $sku,
+                'generated_barcode' => $savedBarcodePath,
+                'generated_qrcode' => $savedQRCodePath,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]);
         }
+
+        // ---- Stock entries
+        $totalStock = 0;
+        $quantities   = json_decode($row[14], true) ?: [$row[14]];
+        $unitMeasures = json_decode($row[15], true) ?: [$row[15]];
+        $perUnitCosts = json_decode($row[16], true) ?: [$row[16]];
+        $totalCosts   = json_decode($row[17], true) ?: [$row[17]];
+
+        foreach ($locationIds as $index => $locationId) {
+            $quantity       = $quantities[$index]   ?? 0;
+            $unit_of_measure= $unitMeasures[$index] ?? '';
+            $perUnitCost    = $perUnitCosts[$index] ?? 0;
+            $total_cost     = $totalCosts[$index]   ?? 0;
+
+            $totalStock += $quantity;
+
+            Stock::create([
+                'product_id'      => $product->id,
+                'vendor_id'       => $vendor?->id,
+                'category_id'     => $category?->id,
+                'current_stock'   => $quantity,
+                'quantity'        => $quantity,
+                'unit_of_measure' => $unit_of_measure,
+                'per_unit_cost'   => $perUnitCost,
+                'total_cost'      => $total_cost,
+                'location_id'     => $locationId,
+                'stock_date'      => now(),
+            ]);
+        }
+
+        $product->opening_stock = $totalStock;
+        $product->save();
 
         $rowNumber++;
     }
@@ -3072,6 +3165,7 @@ public function uploadCSV(Request $request)
         'invalid_rows' => $invalidRows
     ], 200);
 }
+
 
 public function locationList()
 {
