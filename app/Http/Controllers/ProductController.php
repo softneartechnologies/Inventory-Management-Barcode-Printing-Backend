@@ -2434,513 +2434,644 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
 //     ], 200);
 // }
 
-public function uploadCSV(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|mimes:csv,txt|max:2048'
-        ]);
+// public function uploadCSV(Request $request)
+//     {
+//         $request->validate([
+//             'file' => 'required|mimes:csv,txt|max:2048'
+//         ]);
 
-        $file = $request->file('file');
-        // print_r($file);die;
-        $handle = fopen($file->getPathname(), "r");
+//         $file = $request->file('file');
+//         // print_r($file);die;
+//         $handle = fopen($file->getPathname(), "r");
 
-        $header = fgetcsv($handle);
+//         $header = fgetcsv($handle);
     
 
-            $expectedHeaders = array_map('trim',  [
-                "product_name", "sku", "category_id", "sub_category_id","manufacturer",
-                "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold",
-                "opening_stock", "location_id", "quantity",
-                "unit_of_measure", "per_unit_cost", "total_cost", "status"
-            ]);
+//             $expectedHeaders = array_map('trim',  [
+//                 "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+//                 "vendor_id", "model", "unit_of_measurement_category", "description", "returnable", "commit_stock_check", "inventory_alert_threshold",
+//                 "opening_stock", "location_id", "quantity",
+//                 "unit_of_measure", "per_unit_cost", "total_cost", "status"
+//             ]);
             
-            $header = array_map('trim', $header);
+//             $header = array_map('trim', $header);
             
-            if ($header !== $expectedHeaders) {
-                return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
-            }
+//             if ($header !== $expectedHeaders) {
+//                 return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+//             }
         
 
-            $products = [];
-            $invalidRows = [];
-            $rowNumber = 2;
-            // $locationNames = json_decode(); 
+//             $products = [];
+//             $invalidRows = [];
+//             $rowNumber = 2;
+//             // $locationNames = json_decode(); 
             
-            while ($row = fgetcsv($handle)) {
+//             while ($row = fgetcsv($handle)) {
                 
-        $productName = $row[0] ?? null;
-        $sku = $row[1] ?? null;
+//         $productName = $row[0] ?? null;
+//         $sku = $row[1] ?? null;
 
-                if (empty($productName)) {
-                    return response()->json([
-                'message' => "Row $rowNumber: 'product_name are required."
-            ], 422);
-                }
+//                 if (empty($productName)) {
+//                     return response()->json([
+//                 'message' => "Row $rowNumber: 'product_name are required."
+//             ], 422);
+//                 }
 
-                if (empty($sku)) {
-                    return response()->json([
-                'message' => "Row $rowNumber: sku are required."
-            ], 422);
-                }
+//                 if (empty($sku)) {
+//                     return response()->json([
+//                 'message' => "Row $rowNumber: sku are required."
+//             ], 422);
+//                 }
 
-            $locationString = $row[13];
-            $locationNames = explode(",", $locationString);
-            $joinedString = implode(',', $locationNames);
-            $finalArray = json_decode($joinedString, true);
-        // print_r($finalArray);die;
+//             $locationString = $row[13];
+//             $locationNames = explode(",", $locationString);
+//             $joinedString = implode(',', $locationNames);
+//             $finalArray = json_decode($joinedString, true);
+//             // print_r($finalArray);die;
         
-            $locationIds = [];
+//             $locationIds = [];
             
-            if (is_array($finalArray)) {
+//             if (is_array($finalArray)) {
 
-                foreach ($finalArray as $name) {
-                    $name = trim($name);
+//                 foreach ($finalArray as $name) {
+//                     $name = trim($name);
                 
-                    $location = \App\Models\Location::firstOrCreate(
-                        ['name' => $name],
-                        ['name' => $name]
-                    );
+//                     $location = \App\Models\Location::firstOrCreate(
+//                         ['name' => $name],
+//                         ['name' => $name]
+//                     );
             
-                    $locationIds[] = $location->id;
-                }
-                } else {
-                    // Handle invalid JSON
-                    Log::error('Invalid JSON in location column:', ['value' => $row[8]]);
-                }
-                // print_r($locationIds);die;
+//                     $locationIds[] = $location->id;
+//                 }
+//                 } else {
+//                     // Handle invalid JSON
+//                     Log::error('Invalid JSON in location column:', ['value' => $row[8]]);
+//                 }
+//                 // print_r($locationIds);die;
 
-                if (count($row) !== count($expectedHeaders)) {
-                    $invalidRows[] = $rowNumber;
-                    continue;
-                }
+//                 if (count($row) !== count($expectedHeaders)) {
+//                     $invalidRows[] = $rowNumber;
+//                     continue;
+//                 }
 
-                if (empty($row[0]) || empty($row[1])) {
-                    $invalidRows[] = $rowNumber;
-                    continue;
-                }
+//                 if (empty($row[0]) || empty($row[1])) {
+//                     $invalidRows[] = $rowNumber;
+//                     continue;
+//                 }
 
-            //     if (Product::where('sku', $row[1])->exists()) {
-            //         // continue;
-            //         if (empty($sku)) {
-            //         return response()->json([
-            //     'message' => "Row $rowNumber: sku are required."
-            // ], 422);
-            //     }
-            //     }
+//             //     if (Product::where('sku', $row[1])->exists()) {
+//             //         // continue;
+//             //         if (empty($sku)) {
+//             //         return response()->json([
+//             //     'message' => "Row $rowNumber: sku are required."
+//             // ], 422);
+//             //     }
+//             //     }
 
-            // if (Product::where('sku', $sku)->exists()) {
-                // return response()->json([
-                //     'message' => "Row $rowNumber: 'sku' already exists."
-                // ], 422);
+//             // if (Product::where('sku', $sku)->exists()) {
+//                 // return response()->json([
+//                 //     'message' => "Row $rowNumber: 'sku' already exists."
+//                 // ], 422);
            
-        $product = Product::where('sku', $row[1])->first();
+//             $product = Product::where('sku', $row[1])->first();
 
-if ($product) {
+//             if ($product) {
 
-                    if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $row[1])) {
-                    return response()->json([
-                        'message' => "Invalid SKU Format value: {$row[1]}"
-                    ], 422);
-                }
-                $barcodeNumber = $row[1];
-                $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
-                $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
-                Storage::put($barcodePath, $barcodeImage);
-                $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+//                     if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $row[1])) {
+//                     return response()->json([
+//                         'message' => "Invalid SKU Format value: {$row[1]}"
+//                     ], 422);
+//                 }
+//                 $barcodeNumber = $row[1];
+//                 $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+//                 $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+//                 Storage::put($barcodePath, $barcodeImage);
+//                 $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
 
-                $productDetails = ['sku' => $row[1]];
-                $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
-                $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                $qrCodePath = 'public/qrcode/' . $qrCodeFile;
-                Storage::put($qrCodePath, $qrCodeImage);
-                $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+//                 $productDetails = ['sku' => $row[1]];
+//                 $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+//                 $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+//                 $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+//                 Storage::put($qrCodePath, $qrCodeImage);
+//                 $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
 
-                $uomCategory = null;
-                $uomUnitsNames = null;
-                if (!empty($row[7])) {
+//                 $uomCategory = null;
+//                 $uomUnitsNames = null;
+//                 if (!empty($row[7])) {
 
-                $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
+//                 $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
                 
-                $uomUnitString = $row[15];
-                $uomNames = explode(",", $uomUnitString);
-                $joinedUomString = implode(',', $uomNames);
-                $finalUomArray = json_decode($joinedUomString, true);
+//                 $uomUnitString = $row[15];
+//                 $uomNames = explode(",", $uomUnitString);
+//                 $joinedUomString = implode(',', $uomNames);
+//                 $finalUomArray = json_decode($joinedUomString, true);
         
-            $uomUnitsNames = [];
+//             $uomUnitsNames = [];
                 
 
-            if (is_array($finalUomArray)) {
+//             if (is_array($finalUomArray)) {
 
-                foreach ($finalUomArray as $name) {
-                    $name = trim($name);
+//                 foreach ($finalUomArray as $name) {
+//                     $name = trim($name);
                 
-                    $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
-                         ['unit_name' => $name],
-                    ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
-                );
+//                     $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
+//                          ['unit_name' => $name],
+//                     ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
+//                 );
             
-                    $uomUnitsNames[] = $uomUnitsName->unit_name;
-                }
-                } else {
-                    // Handle invalid JSON
-                    Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
-                }
-                }
-                // print_r($locationIds);die;
+//                     $uomUnitsNames[] = $uomUnitsName->unit_name;
+//                 }
+//                 } else {
+//                     // Handle invalid JSON
+//                     Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
+//                 }
+//                 }
+//                 // print_r($locationIds);die;
 
 
-                $manufacturer = Manufacturer::firstOrCreate(
-                    ['name' => $row[4]],
-                    ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
-                );
+//                 $manufacturer = Manufacturer::firstOrCreate(
+//                     ['name' => $row[4]],
+//                     ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
+//                 );
 
-                // $category = Category::firstOrCreate(
-                //     ['name' => $row[2]],
-                //     ['name' => $row[2], 'description' => '']
-                // );
-                $category = null;
+//                 // $category = Category::firstOrCreate(
+//                 //     ['name' => $row[2]],
+//                 //     ['name' => $row[2], 'description' => '']
+//                 // );
+//                 $category = null;
 
-                if (!empty($row[2])) {
-                    $category = Category::firstOrCreate(
-                        ['name' => $row[2]],
-                        ['name' => $row[2], 'description' => '']
-                    );
-                }
+//                 if (!empty($row[2])) {
+//                     $category = Category::firstOrCreate(
+//                         ['name' => $row[2]],
+//                         ['name' => $row[2], 'description' => '']
+//                     );
+//                 }
 
-                $subcategory = null;
+//                 $subcategory = null;
 
-                if (!empty($row[3])) {
-                $subcategory = Subcategory::firstOrCreate([
-                    'name' => $row[3],
-                    'category_id' => $category->id
-                ], [
-                    'name' => $row[3],
-                    'category_id' => $category->id
-                ]);
-            }
+//                 if (!empty($row[3])) {
+//                 $subcategory = Subcategory::firstOrCreate([
+//                     'name' => $row[3],
+//                     'category_id' => $category->id
+//                 ], [
+//                     'name' => $row[3],
+//                     'category_id' => $category->id
+//                 ]);
+//                 }
 
-            $vendor = null;
+//                 $vendor = null;
 
-                if (!empty($row[5])) {
+//                 if (!empty($row[5])) {
 
-                $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
-                }
-                $product->update([
-        // 'product_name' => $row[0],
-        // 'generated_barcode' => $barcodeImage,
-        // 'generated_qrcode' => $qrCodeImage,
-        'category_id' => $category?->id,
-        'sub_category_id' => $subcategory?->id,
-        'manufacturer' => $manufacturer->name,
-        'vendor_id' => $vendor?->id,
-        'model' => $row[6],
-        'unit_of_measurement_category' => $uomCategory?->id,
-        'description' => $row[8],
-        'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
-        'commit_stock_check' => (float) $row[10],
-        'inventory_alert_threshold' => (int) $row[11],
-        'opening_stock' => (int) $row[12],
-        'location_id' => json_encode($locationIds),
-        'quantity' => $row[14],
-        'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
-        'per_unit_cost' => $row[16],
-        'total_cost' => $row[17],
-        'status' => $row[18],
-        'barcode_number' => $row[1],
-        'updated_at' => now(),
+//                 $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
+//                 }
+//                 $product->update([
+//             // 'product_name' => $row[0],
+//             // 'generated_barcode' => $barcodeImage,
+//             // 'generated_qrcode' => $qrCodeImage,
+//                     'category_id' => $category?->id,
+//                     'sub_category_id' => $subcategory?->id,
+//                     'manufacturer' => $manufacturer->name,
+//                     'vendor_id' => $vendor?->id,
+//                     'model' => $row[6],
+//                     'unit_of_measurement_category' => $uomCategory?->id,
+//                     'description' => $row[8],
+//                     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+//                     'commit_stock_check' => (float) $row[10],
+//                     'inventory_alert_threshold' => (int) $row[11],
+//                     'opening_stock' => (int) $row[12],
+//                     'location_id' => json_encode($locationIds),
+//                     'quantity' => $row[14],
+//                     'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
+//                     'per_unit_cost' => $row[16],
+//                     'total_cost' => $row[17],
+//                     'status' => $row[18],
+//                     'barcode_number' => $row[1],
+//                     'updated_at' => now(),
+//                 ]);
+            
+//                 // $product = Product::create([
+//                 //     'product_name' => $row[0],
+//                 //     'sku' => $row[1],
+//                 //     'generated_barcode' => $barcodeImage,
+//                 //     'generated_qrcode' => $qrCodeImage,
+//                 //     'category_id' => $category->id,
+//                 //     'sub_category_id' => $subcategory->id,
+//                 //     'manufacturer' => $manufacturer->name,
+//                 //     'vendor_id' => $vendor->id,
+//                 //     'model' => $row[6],
+//                 //     'unit_of_measurement_category' => $uomCategory->id,
+//                 //     'description' =>$row[8],
+//                 //     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+//                 //     'commit_stock_check' => (float) $row[10],
+//                 //     'inventory_alert_threshold' => (int) $row[11],
+//                 //     'opening_stock' => (int) $row[12],
+//                 //     'location_id' => json_encode($locationIds),
+//                 //     'quantity' => $row[14],
+//                 //     'unit_of_measure' => json_encode($uomUnitsNames),
+//                 //     'per_unit_cost' =>$row[16],
+//                 //     'total_cost' => $row[17],
+//                 //     'status' => $row[18],
+//                 //     'barcode_number' => $row[1],
+//                 //     'created_at' => now(),
+//                 //     'updated_at' => now(),
+//                 // ]);
+            
+//             $totalStock = 0;
+//             // Decode JSON string fields (only once)
+//             $quantities = json_decode($row[14], true);         // e.g. ["50", "60"]
+//             $unitMeasures = json_decode($row[15], true);       // e.g. ["pcs", "box"]
+//             $perUnitCosts = json_decode($row[16], true);       // e.g. ["10", "12"]
+//             $totalCosts = json_decode($row[17], true);         // e.g. ["500", "720"]
+
+//             foreach ($locationIds as $index => $locationId) {
+//                 $quantity = isset($quantities[$index]) ? (float)$quantities[$index] : 0;
+//                 $unit_of_measure = isset($unitMeasures[$index]) ? $unitMeasures[$index] : '';
+//                 $perUnitCost = isset($perUnitCosts[$index]) ? (float)$perUnitCosts[$index] : 0;
+//                 $total_cost = isset($totalCosts[$index]) ? (float)$totalCosts[$index] : 0;
+
+//                 $currentStock = $quantity;
+//                 $totalStock += $currentStock;
+
+//                 Stock::create([
+//                     'product_id'       => $product->id?? null,
+//                     'vendor_id'        => $vendor->id?? null,
+//                     'category_id'      => $category->id?? null,
+//                     'current_stock'    => $currentStock?? null,
+//                     'quantity'         => $quantity?? null,
+//                     'unit_of_measure'  => $unit_of_measure?? null,
+//                     'per_unit_cost'    => $perUnitCost?? null,
+//                     'total_cost'       => $total_cost?? null,
+//                     'location_id'      => $locationId?? null,
+//                     'stock_date'       => now(),
+//                 ]);
+//                 }
+
+//                 $product->opening_stock = $totalStock;
+//                 $product->opening_stock = $totalStock;
+//                 $product->save();
+
+
+//                  }else{
+                
+
+//                 // $barcodeNumber = $row[1];
+//                 // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+//                 // $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+//                 // Storage::put($barcodePath, $barcodeImage);
+//                 // $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+
+//                 // $productDetails = ['sku' => $row[1]];
+//                 // $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+//                 // $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+//                 // $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+//                 // Storage::put($qrCodePath, $qrCodeImage);
+//                 // $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
+
+//                 $barcodeNumber = strtoupper(trim($row[1]));
+
+//                 if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
+//                     return response()->json([
+//                         'message' => "Invalid SKU Format value: {$sku}"
+//                     ], 422);
+//                 }
+//             // print_r($barcodeNumber);die;
+
+//                     $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+//                     $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
+//                     Storage::put($barcodePath, $barcodeImage);
+//                     $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
+
+//                     $productDetails = ['sku' => $row[1]];
+//                     $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
+//                     $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+//                     $qrCodePath = 'public/qrcode/' . $qrCodeFile;
+//                     Storage::put($qrCodePath, $qrCodeImage);
+//                     $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
+
+
+//             //     $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
+                
+//             //     $uomUnitString = $row[15];
+//             //     $uomNames = explode(",", $uomUnitString);
+//             //     $joinedUomString = implode(',', $uomNames);
+//             //     $finalUomArray = json_decode($joinedUomString, true);
+        
+//             // $uomUnitsNames = [];
+            
+//             // if (is_array($finalUomArray)) {
+
+//             //     foreach ($finalUomArray as $name) {
+//             //         $name = trim($name);
+                
+//             //         $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
+//             //              ['unit_name' => $name],
+//             //         ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
+//             //     );
+            
+//             //         $uomUnitsNames[] = $uomUnitsName->unit_name;
+//             //     }
+//             //     } else {
+//             //         // Handle invalid JSON
+//             //         Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
+//             //     }
+//             //     // print_r($locationIds);die;
+
+
+//             //     $manufacturer = Manufacturer::firstOrCreate(
+//             //         ['name' => $row[4]],
+//             //         ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
+//             //     );
+
+//             //     $category = Category::firstOrCreate(
+//             //         ['name' => $row[2]],
+//             //         ['name' => $row[2], 'description' => '']
+//             //     );
+//             //     $subcategory = Subcategory::firstOrCreate([
+//             //         'name' => $row[3],
+//             //         'category_id' => $category->id
+//             //     ], [
+//             //         'name' => $row[3],
+//             //         'category_id' => $category->id
+//             //     ]);
+//             //     $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
+                
+            
+//                  $uomCategory = null;
+//                 $uomUnitsNames = null;
+//                 if (!empty($row[7])) {
+
+//                 $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
+                
+//                 $uomUnitString = $row[15];
+//                 $uomNames = explode(",", $uomUnitString);
+//                 $joinedUomString = implode(',', $uomNames);
+//                 $finalUomArray = json_decode($joinedUomString, true);
+        
+//             $uomUnitsNames = [];
+                
+
+//             if (is_array($finalUomArray)) {
+
+//                 foreach ($finalUomArray as $name) {
+//                     $name = trim($name);
+                
+//                     $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
+//                          ['unit_name' => $name],
+//                     ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
+//                 );
+            
+//                     $uomUnitsNames[] = $uomUnitsName->unit_name;
+//                 }
+//                 } else {
+//                     // Handle invalid JSON
+//                     Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
+//                 }
+//                 }
+//                 // print_r($locationIds);die;
+
+
+//                 $manufacturer = Manufacturer::firstOrCreate(
+//                     ['name' => $row[4]],
+//                     ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
+//                 );
+
+//                 // $category = Category::firstOrCreate(
+//                 //     ['name' => $row[2]],
+//                 //     ['name' => $row[2], 'description' => '']
+//                 // );
+//                 $category = null;
+
+//                 if (!empty($row[2])) {
+//                     $category = Category::firstOrCreate(
+//                         ['name' => $row[2]],
+//                         ['name' => $row[2], 'description' => '']
+//                     );
+//                 }
+
+//                 $subcategory = null;
+
+//                 if (!empty($row[3])) {
+//                 $subcategory = Subcategory::firstOrCreate([
+//                     'name' => $row[3],
+//                     'category_id' => $category->id
+//                 ], [
+//                     'name' => $row[3],
+//                     'category_id' => $category->id
+//                 ]);
+//             }
+
+//             $vendor = null;
+
+//                 if (!empty($row[5])) {
+
+//                 $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
+//                 }
+//                 $product = Product::create([
+//                     'product_name' => $row[0],
+//                     'sku' => $row[1],
+//                     'generated_barcode' => $barcodeImage,
+//                     'generated_qrcode' => $qrCodeImage,
+//                     'category_id' => $category?->id,
+//                     'sub_category_id' => $subcategory?->id,
+//                     'manufacturer' => $manufacturer->name,
+//                     'vendor_id' => $vendor?->id,
+//                     'model' => $row[6],
+//                     'unit_of_measurement_category' => $uomCategory?->id,
+//                     'description' =>$row[8],
+//                     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+//                     'commit_stock_check' => (float) $row[10],
+//                     'inventory_alert_threshold' => (int) $row[11],
+//                     'opening_stock' => (int) $row[12],
+//                     'location_id' => json_encode($locationIds),
+//                     'quantity' => $row[14],
+//                     'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
+//                     'per_unit_cost' =>$row[16],
+//                     'total_cost' => $row[17],
+//                     'status' => $row[18],
+//                     'barcode_number' => $row[1],
+//                     'created_at' => now(),
+//                     'updated_at' => now(),
+//                 ]);
+            
+//             $totalStock = 0;
+//              // Decode JSON string fields (only once)
+//             $quantities = json_decode($row[14], true);         // e.g. ["50", "60"]
+//             $unitMeasures = json_decode($row[15], true);       // e.g. ["pcs", "box"]
+//             $perUnitCosts = json_decode($row[16], true);       // e.g. ["10", "12"]
+//             $totalCosts = json_decode($row[17], true);         // e.g. ["500", "720"]
+
+//             foreach ($locationIds as $index => $locationId) {
+//                 $quantity = isset($quantities[$index]) ? (float)$quantities[$index] : 0;
+//                 $unit_of_measure = isset($unitMeasures[$index]) ? $unitMeasures[$index] : '';
+//                 $perUnitCost = isset($perUnitCosts[$index]) ? (float)$perUnitCosts[$index] : 0;
+//                 $total_cost = isset($totalCosts[$index]) ? (float)$totalCosts[$index] : 0;
+
+//                 $currentStock = $quantity;
+//                 $totalStock += $currentStock;
+
+//                 Stock::create([
+//                     'product_id'       => $product->id,
+//                     'vendor_id'        => $vendor->id ?? null,
+//                     'category_id'      => $category->id?? null,
+//                     'current_stock'    => $currentStock?? null,
+//                     'quantity'         => $quantity?? null,
+//                     'unit_of_measure'  => $unit_of_measure?? null,
+//                     'per_unit_cost'    => $perUnitCost?? null,
+//                     'total_cost'       => $total_cost?? null,
+//                     'location_id'      => $locationId?? null,
+//                     'stock_date'       => now(),
+//                 ]);
+//                 }
+
+//                 $product->opening_stock = $totalStock;
+//                 $product->opening_stock = $totalStock;
+//                 $product->save();
+//             }
+
+//                 $rowNumber++;
+//             }
+
+
+//             fclose($handle);
+
+//             return response()->json([
+//                 'message' => 'CSV uploaded successfully.',
+//                 'total_rows' => $invalidRows
+//             ], 200);
+//     }
+
+public function uploadCSV(Request $request)
+{
+    $request->validate([
+        'file' => 'required|mimes:csv,txt|max:2048'
     ]);
-            
-                // $product = Product::create([
-                //     'product_name' => $row[0],
-                //     'sku' => $row[1],
-                //     'generated_barcode' => $barcodeImage,
-                //     'generated_qrcode' => $qrCodeImage,
-                //     'category_id' => $category->id,
-                //     'sub_category_id' => $subcategory->id,
-                //     'manufacturer' => $manufacturer->name,
-                //     'vendor_id' => $vendor->id,
-                //     'model' => $row[6],
-                //     'unit_of_measurement_category' => $uomCategory->id,
-                //     'description' =>$row[8],
-                //     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
-                //     'commit_stock_check' => (float) $row[10],
-                //     'inventory_alert_threshold' => (int) $row[11],
-                //     'opening_stock' => (int) $row[12],
-                //     'location_id' => json_encode($locationIds),
-                //     'quantity' => $row[14],
-                //     'unit_of_measure' => json_encode($uomUnitsNames),
-                //     'per_unit_cost' =>$row[16],
-                //     'total_cost' => $row[17],
-                //     'status' => $row[18],
-                //     'barcode_number' => $row[1],
-                //     'created_at' => now(),
-                //     'updated_at' => now(),
-                // ]);
-            
-            $totalStock = 0;
-        // Decode JSON string fields (only once)
-            $quantities = json_decode($row[14], true);         // e.g. ["50", "60"]
-            $unitMeasures = json_decode($row[15], true);       // e.g. ["pcs", "box"]
-            $perUnitCosts = json_decode($row[16], true);       // e.g. ["10", "12"]
-            $totalCosts = json_decode($row[17], true);         // e.g. ["500", "720"]
 
-            foreach ($locationIds as $index => $locationId) {
-                $quantity = isset($quantities[$index]) ? (float)$quantities[$index] : 0;
-                $unit_of_measure = isset($unitMeasures[$index]) ? $unitMeasures[$index] : '';
-                $perUnitCost = isset($perUnitCosts[$index]) ? (float)$perUnitCosts[$index] : 0;
-                $total_cost = isset($totalCosts[$index]) ? (float)$totalCosts[$index] : 0;
+    $file = $request->file('file');
+    $handle = fopen($file->getPathname(), "r");
 
-                $currentStock = $quantity;
-                $totalStock += $currentStock;
+    // --- Header check
+    $header = fgetcsv($handle);
+    $expectedHeaders = [
+        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+        "vendor_id", "model", "unit_of_measurement_category", "description", "returnable",
+        "commit_stock_check", "inventory_alert_threshold", "opening_stock", "location_id",
+        "quantity", "unit_of_measure", "per_unit_cost", "total_cost", "status"
+    ];
 
-                Stock::create([
-                    'product_id'       => $product->id?? null,
-                    'vendor_id'        => $vendor->id?? null,
-                    'category_id'      => $category->id?? null,
-                    'current_stock'    => $currentStock?? null,
-                    'quantity'         => $quantity?? null,
-                    'unit_of_measure'  => $unit_of_measure?? null,
-                    'per_unit_cost'    => $perUnitCost?? null,
-                    'total_cost'       => $total_cost?? null,
-                    'location_id'      => $locationId?? null,
-                    'stock_date'       => now(),
-                ]);
-                }
-
-                $product->opening_stock = $totalStock;
-                $product->opening_stock = $totalStock;
-                $product->save();
-
-
-                 }else{
-                
-
-                // $barcodeNumber = $row[1];
-                // $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
-                // $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
-                // Storage::put($barcodePath, $barcodeImage);
-                // $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
-
-                // $productDetails = ['sku' => $row[1]];
-                // $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
-                // $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                // $qrCodePath = 'public/qrcode/' . $qrCodeFile;
-                // Storage::put($qrCodePath, $qrCodeImage);
-                // $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
-
-
-                $barcodeNumber = strtoupper(trim($row[1]));
-
-                if (!preg_match('/^[A-Z0-9 \-.\$\/\+\%]+$/', $sku)) {
-                    return response()->json([
-                        'message' => "Invalid SKU Format value: {$sku}"
-                    ], 422);
-                }
-// print_r($barcodeNumber);die;
-
-                    $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
-                    $barcodePath = 'public/barcodes/' . $barcodeNumber . '.png';
-                    Storage::put($barcodePath, $barcodeImage);
-                    $savedBarcodePath = str_replace('public/', 'storage/', $barcodePath);
-
-                    $productDetails = ['sku' => $row[1]];
-                    $qrCodeImage = (new DNS2D)->getBarcodePNG(json_encode($productDetails, JSON_UNESCAPED_UNICODE), 'QRCODE');
-                    $qrCodeFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                    $qrCodePath = 'public/qrcode/' . $qrCodeFile;
-                    Storage::put($qrCodePath, $qrCodeImage);
-                    $savedQRCodePath = str_replace('public/', 'storage/', $qrCodePath);
-
-
-            //     $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
-                
-            //     $uomUnitString = $row[15];
-            //     $uomNames = explode(",", $uomUnitString);
-            //     $joinedUomString = implode(',', $uomNames);
-            //     $finalUomArray = json_decode($joinedUomString, true);
-        
-            // $uomUnitsNames = [];
-            
-            // if (is_array($finalUomArray)) {
-
-            //     foreach ($finalUomArray as $name) {
-            //         $name = trim($name);
-                
-            //         $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
-            //              ['unit_name' => $name],
-            //         ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
-            //     );
-            
-            //         $uomUnitsNames[] = $uomUnitsName->unit_name;
-            //     }
-            //     } else {
-            //         // Handle invalid JSON
-            //         Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
-            //     }
-            //     // print_r($locationIds);die;
-
-
-            //     $manufacturer = Manufacturer::firstOrCreate(
-            //         ['name' => $row[4]],
-            //         ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
-            //     );
-
-            //     $category = Category::firstOrCreate(
-            //         ['name' => $row[2]],
-            //         ['name' => $row[2], 'description' => '']
-            //     );
-            //     $subcategory = Subcategory::firstOrCreate([
-            //         'name' => $row[3],
-            //         'category_id' => $category->id
-            //     ], [
-            //         'name' => $row[3],
-            //         'category_id' => $category->id
-            //     ]);
-            //     $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
-                
-            
-                 $uomCategory = null;
-                $uomUnitsNames = null;
-                if (!empty($row[7])) {
-
-                $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]], ['name' => $row[7]]);
-                
-                $uomUnitString = $row[15];
-                $uomNames = explode(",", $uomUnitString);
-                $joinedUomString = implode(',', $uomNames);
-                $finalUomArray = json_decode($joinedUomString, true);
-        
-            $uomUnitsNames = [];
-                
-
-            if (is_array($finalUomArray)) {
-
-                foreach ($finalUomArray as $name) {
-                    $name = trim($name);
-                
-                    $uomUnitsName = \App\Models\UomUnit::firstOrCreate(
-                         ['unit_name' => $name],
-                    ['unit_name' => $name, 'uom_category_id' => $uomCategory->id,'abbreviation' => '1','reference' => '1','ratio' => '0.2','rounding'=>'00.5','active'=>'1']
-                );
-            
-                    $uomUnitsNames[] = $uomUnitsName->unit_name;
-                }
-                } else {
-                    // Handle invalid JSON
-                    Log::error('Invalid JSON in Uom Unit column:', ['value' => $row[15]]);
-                }
-                }
-                // print_r($locationIds);die;
-
-
-                $manufacturer = Manufacturer::firstOrCreate(
-                    ['name' => $row[4]],
-                    ['name' => $row[4], 'description' => 'Description for box','status'=>'active']
-                );
-
-                // $category = Category::firstOrCreate(
-                //     ['name' => $row[2]],
-                //     ['name' => $row[2], 'description' => '']
-                // );
-                $category = null;
-
-                if (!empty($row[2])) {
-                    $category = Category::firstOrCreate(
-                        ['name' => $row[2]],
-                        ['name' => $row[2], 'description' => '']
-                    );
-                }
-
-                $subcategory = null;
-
-                if (!empty($row[3])) {
-                $subcategory = Subcategory::firstOrCreate([
-                    'name' => $row[3],
-                    'category_id' => $category->id
-                ], [
-                    'name' => $row[3],
-                    'category_id' => $category->id
-                ]);
-            }
-
-            $vendor = null;
-
-                if (!empty($row[5])) {
-
-                $vendor = Vendor::firstOrCreate(['vendor_name' =>$row[5]], ['vendor_name' => $row[5]]);
-                }
-                $product = Product::create([
-                    'product_name' => $row[0],
-                    'sku' => $row[1],
-                    'generated_barcode' => $barcodeImage,
-                    'generated_qrcode' => $qrCodeImage,
-                    'category_id' => $category?->id,
-                    'sub_category_id' => $subcategory?->id,
-                    'manufacturer' => $manufacturer->name,
-                    'vendor_id' => $vendor?->id,
-                    'model' => $row[6],
-                    'unit_of_measurement_category' => $uomCategory?->id,
-                    'description' =>$row[8],
-                    'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
-                    'commit_stock_check' => (float) $row[10],
-                    'inventory_alert_threshold' => (int) $row[11],
-                    'opening_stock' => (int) $row[12],
-                    'location_id' => json_encode($locationIds),
-                    'quantity' => $row[14],
-                    'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
-                    'per_unit_cost' =>$row[16],
-                    'total_cost' => $row[17],
-                    'status' => $row[18],
-                    'barcode_number' => $row[1],
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ]);
-            
-            $totalStock = 0;
-        // Decode JSON string fields (only once)
-            $quantities = json_decode($row[14], true);         // e.g. ["50", "60"]
-            $unitMeasures = json_decode($row[15], true);       // e.g. ["pcs", "box"]
-            $perUnitCosts = json_decode($row[16], true);       // e.g. ["10", "12"]
-            $totalCosts = json_decode($row[17], true);         // e.g. ["500", "720"]
-
-            foreach ($locationIds as $index => $locationId) {
-                $quantity = isset($quantities[$index]) ? (float)$quantities[$index] : 0;
-                $unit_of_measure = isset($unitMeasures[$index]) ? $unitMeasures[$index] : '';
-                $perUnitCost = isset($perUnitCosts[$index]) ? (float)$perUnitCosts[$index] : 0;
-                $total_cost = isset($totalCosts[$index]) ? (float)$totalCosts[$index] : 0;
-
-                $currentStock = $quantity;
-                $totalStock += $currentStock;
-
-                Stock::create([
-                    'product_id'       => $product->id,
-                    'vendor_id'        => $vendor->id ?? null,
-                    'category_id'      => $category->id?? null,
-                    'current_stock'    => $currentStock?? null,
-                    'quantity'         => $quantity?? null,
-                    'unit_of_measure'  => $unit_of_measure?? null,
-                    'per_unit_cost'    => $perUnitCost?? null,
-                    'total_cost'       => $total_cost?? null,
-                    'location_id'      => $locationId?? null,
-                    'stock_date'       => now(),
-                ]);
-                }
-
-                $product->opening_stock = $totalStock;
-                $product->opening_stock = $totalStock;
-                $product->save();
-            }
-
-                $rowNumber++;
-            }
-
-
-            fclose($handle);
-
-            return response()->json([
-                'message' => 'CSV uploaded successfully.',
-                'total_rows' => $invalidRows
-            ], 200);
+    $header = array_map('trim', $header);
+    if ($header !== $expectedHeaders) {
+        return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
     }
+
+    $rowNumber   = 2;
+    $invalidRows = [];
+
+    while ($row = fgetcsv($handle)) {
+        $row = array_map('trim', $row);
+
+        $productName = $row[0] ?? null;
+        $sku         = $row[1] ?? null;
+
+        if (empty($productName) || empty($sku)) {
+            $invalidRows[] = $rowNumber++;
+            continue;
+        }
+
+        // ---- Manufacturer
+        $manufacturer = Manufacturer::firstOrCreate(
+            ['name' => $row[4]],
+            ['name' => $row[4], 'status' => 'active']
+        );
+
+        // ---- Category
+        $category = null;
+        if (!empty($row[2])) {
+            $category = Category::firstOrCreate(
+                ['name' => $row[2]],
+                ['name' => $row[2],'description' => '']
+            );
+        }
+
+        // ---- SubCategory
+        $subcategory = null;
+        if (!empty($row[3]) && $category) {
+            $subcategory = Subcategory::firstOrCreate(
+                ['name' => $row[3], 'category_id' => $category->id],
+                ['name' => $row[3], 'category_id' => $category->id]
+            );
+        }
+
+        // ---- Vendor
+        $vendor = null;
+        if (!empty($row[5])) {
+            $vendor = Vendor::firstOrCreate(
+                ['vendor_name' => $row[5]],
+                ['vendor_name' => $row[5]]
+            );
+        }
+
+        // ---- Product Check
+        $product = Product::where('sku', $sku)->first();
+
+        if ($product) {
+            // Update Existing Product
+            $product->update([
+                'product_name' => $productName,
+                'category_id' => $category?->id,
+                'sub_category_id' => $subcategory?->id,
+                'manufacturer' => $manufacturer->name,
+                'vendor_id' => $vendor?->id,
+                'model' => $row[6],
+                'unit_of_measurement_category' => $row[7] ?? null,
+                'description' => $row[8],
+                'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+                'commit_stock_check' => (float) $row[10],
+                'inventory_alert_threshold' => (int) $row[11],
+                'opening_stock' => (int) $row[12],
+                'location_id' => $row[13],
+                'quantity' => $row[14],
+                'unit_of_measure' => $row[15],
+                'per_unit_cost' => $row[16],
+                'total_cost' => $row[17],
+                'status' => $row[18] ?: 'inactive',
+            ]);
+        } else {
+            // Create New Product
+            $product = Product::create([
+                'product_name' => $productName,
+                'sku' => $sku,
+                'category_id' => $category?->id,
+                'sub_category_id' => $subcategory?->id,
+                'manufacturer' => $manufacturer->name,
+                'vendor_id' => $vendor?->id,
+                'model' => $row[6],
+                'unit_of_measurement_category' => $row[7] ?? null,
+                'description' => $row[8],
+                'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+                'commit_stock_check' => (float) $row[10],
+                'inventory_alert_threshold' => (int) $row[11],
+                'opening_stock' => (int) $row[12],
+                'location_id' => $row[13],
+                'quantity' => $row[14],
+                'unit_of_measure' => $row[15],
+                'per_unit_cost' => $row[16],
+                'total_cost' => $row[17],
+                'status' => $row[18] ?: 'inactive',
+            ]);
+        }
+
+        $rowNumber++;
+    }
+
+    fclose($handle);
+
+    return response()->json([
+        'message' => 'CSV uploaded successfully.',
+        'invalid_rows' => $invalidRows
+    ], 200);
+}
 
 public function locationList()
 {
