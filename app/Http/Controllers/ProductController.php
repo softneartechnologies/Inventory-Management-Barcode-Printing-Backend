@@ -214,6 +214,14 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         'products' => $products_data
     ], 200);
 
+    }elseif ($request->filled('search')) {
+
+    return response()->json([
+        'total_count' => $query->count(),
+        'products' => $products_data
+    ], 200);
+
+    
     }else{
 
     return response()->json([
