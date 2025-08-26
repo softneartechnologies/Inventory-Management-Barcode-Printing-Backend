@@ -19,7 +19,7 @@ class SubcategoryController extends Controller
         public function index(Request $request)
 {
     // Default values
-    $total_count = Subcategory::with('category')->count();
+    // $total_count = Subcategory::with('category')->count();
     $sortBy = $request->get('sort_by', 'id'); // default column
     $sortOrder = $request->get('sort_order', 'desc'); // default order
     $limit = $request->get('per_page', null); // default null = all records
@@ -41,9 +41,19 @@ class SubcategoryController extends Controller
 
     // If limit is given, apply pagination
     if (!empty($limit) && is_numeric($limit)) {
-        $categories = $query->paginate($limit);
-        return response()->json(['total_count'=> $total_count,'categories'=>$categories], 200);
-    } else {
+            if(!empty($search)){
+                $total_count = $query->count();
+                $categories = $query->paginate($limit);
+            return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
+            
+            }else{
+                $total_count = Subcategory::with('category')->count();;
+            $categories = $query->paginate($limit);
+            return response()->json(['total' =>$total_count, 'categories'=>$categories], 200);
+            
+            }
+            
+        } else {
         // Default get all data
         $categories = $query->get();
         return response()->json($categories, 200);
