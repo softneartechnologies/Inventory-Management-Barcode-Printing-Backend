@@ -3406,7 +3406,7 @@ $productName = Product::select('product_name')
 
 public function generateTemplateCsvUrl()
 {
-    $filename = 'csv_tem/product_template.csv';
+    $filename = 'csv_tem/product_templates.csv';
 
     // Dummy data (array of stdClass or arrays)
     $products = collect([
