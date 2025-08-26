@@ -24,7 +24,7 @@ class ManufacturerController extends Controller
         $limit = $request->get('per_page', null); // default null = all records
         $search = $request->get('search', null);
 
-            $totalcount = Manufacturer::count();
+            
         $query = Manufacturer::query();
 
         // Searching
@@ -37,7 +37,11 @@ class ManufacturerController extends Controller
 
         // Sorting
         $query->orderBy($sortBy, $sortOrder);
-
+            if(!empty($search)){
+                $totalcount = $query->count();
+            }else{
+                $totalcount = Manufacturer::count();
+            }
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {
             $manufacturer = $query->paginate($limit);
