@@ -3424,7 +3424,7 @@ public function generateTemplateCsvUrl()
             'commit_stock_check' => '1',
             'inventory_alert_threshold' => 10,
             'opening_stock' => 100,
-            'location_id' => json_encode(["indore", "delhi"]),
+            'location_id' => json_encode(['indore', 'delhi']),
             'quantity' => json_encode(["50", "50"]),
             'unit_of_measure' => json_encode(["pcs","pcs"]),
             'per_unit_cost' => json_encode(["10", "20"]),
