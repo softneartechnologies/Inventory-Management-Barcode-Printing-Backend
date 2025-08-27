@@ -87,6 +87,7 @@ if ($request->filled('employee_name') || $request->filled('work_station') || $re
              });
         }
 
+        $total_count = $query->count();
         // ✅ Sorting functionality
         $sortBy = $request->get('sort_by', 'id'); // Default to 'id'
         $sortOrder = $request->get('sort_order', 'desc'); // Default to 'desc'
@@ -95,8 +96,11 @@ if ($request->filled('employee_name') || $request->filled('work_station') || $re
         // ✅ Pagination
         $perPage = $request->get('per_page', 10); // default 10 items per page
         $employees = $query->paginate($perPage);
+        if ($employees->currentPage() > $employees->lastPage() && $employees->lastPage() > 0) {
+            $employees = $query->paginate($perPage, ['*'], 'page', $employees->lastPage());
+        }
 
-        return response()->json(['total_count' =>$totalcount,'enmployee' => $employees], 200);
+        return response()->json(['total_count' =>$total_count,'enmployee' => $employees], 200);
         // return response()->json(['totalcount'=>$totalcount,'enmployee'=>$employees], 200);
         // $employees = Employee::all();
         // $employees = Employee::get();
