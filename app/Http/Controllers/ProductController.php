@@ -795,6 +795,16 @@ $unitofmeasur = (!empty($product_detail->unit_of_measure) && $product_detail->un
     ? $product_detail->unit_of_measure
     : $defaultunit;
 
+$unitofmeasurUnit = (!empty($product_detail->unit_of_measure) && $product_detail->unit_of_measure != '[]')
+    ? json_decode($product_detail->unit_of_measure, true)   // array में convert किया
+    : [$defaultunit];
+
+$units = UomUnit::whereIn('unit_name', $unitofmeasurUnit)->get();
+$maxUnit = $units->sortByDesc('conversion_factor')->first();
+
+
+
+
 // print_r($unitofmeasur); die;
 
         $productsss= array(['id' => $product_detail->id,
@@ -820,7 +830,9 @@ $unitofmeasur = (!empty($product_detail->unit_of_measure) && $product_detail->un
         'location_id'=>$product_detail->location_id?? null,
         'quantity'=>$product_detail->quantity?? null,
         'unit_of_measure'=>$product_detail->unit_of_measure ?? null,
-        'reference_unit'=>$unitofmeasur,
+        // 'reference_unit'=>$unitofmeasur,
+        'reference_unit'=>optional($maxUnit)->unit_name,
+        'max_reference_unit' => optional($maxUnit)->unit_name,
         'per_unit_cost'=>$product_detail->per_unit_cost?? null,
         'total_cost' => $product_detail->total_cost?? null,
         'opening_stock' => $product_detail->opening_stock?? null,
