@@ -1991,7 +1991,7 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
     }
 
     // ✅ Filter
-if ($request->filled('category') || $request->filled('start_date') || $request->filled('end_date')) {
+if ($request->filled('category') || $request->filled('reason') || $request->filled('start_date') || $request->filled('end_date')) {
     $category    = $request->category;
     $reason = $request->reason;
     $start_date  = $request->start_date;
