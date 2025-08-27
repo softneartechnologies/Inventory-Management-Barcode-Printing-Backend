@@ -68,6 +68,9 @@ class MachineController extends Controller
         // If limit is given, apply pagination
         if (!empty($limit) && is_numeric($limit)) {
             $machine = $query->paginate($limit);
+                if ($machine->currentPage() > $machine->lastPage() && $machine->lastPage() > 0) {
+            $machine = $query->paginate($limit, ['*'], 'page', $machine->lastPage());
+        }
 
                $machine->map(function ($ws) {
                     $ws->department_name = $ws->department?->name; 
