@@ -94,12 +94,21 @@ class WorkstationController extends Controller
         });
     }
 
+    if(!empty($search)){
+                $totalcount = $query->count();
+            }else{
+                 $totalcount = Workstation::count();
+            }
     // ✅ Sorting
     $query->orderBy($sortBy, $sortOrder);
 
     // ✅ Apply pagination or get all
     if (!empty($limit) && is_numeric($limit)) {
         $workstations = $query->paginate($limit);
+
+         if ($workstations->currentPage() > $workstations->lastPage() && $workstations->lastPage() > 0) {
+            $workstations = $query->paginate($limit, ['*'], 'page', $workstations->lastPage());
+        }
     } else {
         $workstations = $query->orderBy('id', 'desc')->get();
     }
@@ -109,11 +118,7 @@ class WorkstationController extends Controller
         $ws->department_name = $ws->department?->name; 
         return $ws;
     });
-     if(!empty($search)){
-                $totalcount = $query->count();
-            }else{
-                 $totalcount = Workstation::count();
-            }
+     
 
     if (!empty($limit) && is_numeric($limit)) {
         return response()->json([
