@@ -192,6 +192,7 @@ if ($request->filled('category')  || $request->filled('type_filter') || $request
         $query->latest(); // orders by created_at DESC by default
     }
 
+    $products_datacount = $query->count();
     // ✅ Pagination
     $perPage = $request->get('per_page', 10);
     $products = $query->paginate($perPage);
@@ -209,9 +210,9 @@ if ($request->filled('category')  || $request->filled('type_filter') || $request
 
     // if ($request->filled('category') ||$request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
     if ($request->filled('category')  || $request->filled('type_filter') || $request->filled('status_filter') || $request->filled('start_date') || $request->filled('end_date')) {
- 
+       
     return response()->json([
-        'total_count' => $query->count(),
+        'total_count' => $products_datacount,
         'products' => $products_data
     ], 200);
 
