@@ -94,7 +94,7 @@ class VendorController extends Controller
         //         return response()->json(['error' => $validatedData->errors()], 400);
         //     }
 
-        $vendor = Vendor::create($validatedData);
+        $vendor = Vendor::create($request->all());
 
         return response()->json($vendor, 200);
     }
