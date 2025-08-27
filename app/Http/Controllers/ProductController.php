@@ -2002,12 +2002,12 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         // ✅ Category filter
         if (!empty($category)) {
             $q->whereHas('category', function ($catQuery) use ($category) {
-                $catQuery->where('name', 'like', "%{$category}%");
+                $catQuery->where('name', "{$category}");
             });
         }
 
         if(!empty($reason)){
-            $q->where('reason_for_update', 'like', "%{$reason}%");
+            $q->where('reason_for_update',"{$reason}");
             
         }
         
@@ -2033,11 +2033,16 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
         $sortBy = 'id';
     }
 
+    $total_count = $query->count();
     $query->orderBy($sortBy, $sortOrder);
 
     // ✅ Pagination
     $perPage = $request->get('per_page', 10);
     $stocks = $query->paginate($perPage);
+
+    if ($stocks->currentPage() > $stocks->lastPage() && $stocks->lastPage() > 0) {
+            $stocks = $query->paginate($perPage, ['*'], 'page', $stocks->lastPage());
+        }
 
     // ✅ Map data
     $adjustments = $stocks->getCollection()->map(function ($stock) {
@@ -2069,7 +2074,7 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
     $stocks->setCollection($adjustments);
 
     return response()->json([
-        'total_count' => $querycount,
+        'total_count' => $total_count,
         'inventory_adjustments' => $stocks
     ], 200);
 }
