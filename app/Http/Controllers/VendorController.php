@@ -13,61 +13,110 @@ class VendorController extends Controller
     //     return Vendor::orderBy('id', 'desc')->get();
     // }
 
-    public function index(Request $request)
-    {
-        // Default values
+    // public function index(Request $request)
+    // {
+    //     // Default values
         
-        $sortBy = $request->get('sort_by', 'id'); // default column
-        $sortOrder = $request->get('sort_order', 'desc'); // default order
-        $limit = $request->get('per_page', null); // default null = all records
-        $search = $request->get('search', null);
+    //     $sortBy = $request->get('sort_by', 'id'); // default column
+    //     $sortOrder = $request->get('sort_order', 'desc'); // default order
+    //     $limit = $request->get('per_page', null); // default null = all records
+    //     $search = $request->get('search', null);
 
            
-        $query = Vendor::query();
+    //     $query = Vendor::query();
 
-        // Searching
-        if (!empty($search)) {
-            $query->where(function ($q) use ($search) {
-                $q->where('vendor_name', 'like', "%{$search}%")
-                ->orWhere('company_name', 'like', "%{$search}%");
-            });
-        }
+    //     // Searching
+    //     if (!empty($search)) {
+    //         $query->where(function ($q) use ($search) {
+    //             $q->where('vendor_name', 'like', "%{$search}%")
+    //             ->orWhere('company_name', 'like', "%{$search}%");
+    //         });
+    //     }
 
-        // Sorting
-        if($sortOrder){
+    //     if(!empty($search)){
+    //             $total_count = $query->count();
+                
+    //         }else{
+    //             $total_count = Vendor::count();
+           
+    //         }
+    //     // Sorting
+    //     if($sortOrder){
 
-        }
-        $query->orderBy($sortBy, $sortOrder);
+    //     }
+    //     $query->orderBy($sortBy, $sortOrder);
 
-        // If limit is given, apply pagination
-        // if (!empty($limit) && is_numeric($limit)) {
-        //     $vendor = $query->paginate($limit);
-        //     return response()->json(['total' =>$totalcount, 'vendor'=>$vendor], 200);
+    //     // If limit is given, apply pagination
+    //     // if (!empty($limit) && is_numeric($limit)) {
+    //     //     $vendor = $query->paginate($limit);
+    //     //     return response()->json(['total' =>$totalcount, 'vendor'=>$vendor], 200);
             
-        // }
-        if (!empty($limit) && is_numeric($limit)) {
-            if(!empty($search)){
-                $total_count = $query->count();
-                $vendor = $query->paginate($limit);
-            return response()->json(['total' =>$total_count, 'vendor'=>$vendor], 200);
-            
-            }else{
-                $total_count =  $totalcount = Vendor::count();
-            $vendor = $query->paginate($limit);
-            return response()->json(['total' =>$total_count, 'vendor'=>$vendor], 200);
-            
-            }
-            
-        }
+    //     // }
 
-         else {
-            // Default get all data
-            $vendor = $query->orderBy('id','desc')->get();
-            return response()->json($vendor, 200);
-        }
+         
+
+    //     if (!empty($limit) && is_numeric($limit)) {
+            
+               
+    //         $vendor = $query->paginate($limit);
+    //         return response()->json(['total' =>$total_count, 'vendor'=>$vendor], 200);
+        
+            
+    //     }
+
+    //      else {
+    //         // Default get all data
+    //         $vendor = $query->orderBy('id','desc')->get();
+    //         return response()->json($vendor, 200);
+    //     }
 
         
+    // }
+
+public function index(Request $request)
+{
+    // Default values
+    $sortBy    = $request->get('sort_by', 'id');       // default column
+    $sortOrder = $request->get('sort_order', 'desc');  // default order
+    $limit     = $request->get('per_page', null);      // per page limit
+    $search    = $request->get('search', null);
+
+    $query = Vendor::query();
+
+    // Searching
+    if (!empty($search)) {
+        $query->where(function ($q) use ($search) {
+            $q->where('vendor_name', 'like', "%{$search}%")
+              ->orWhere('company_name', 'like', "%{$search}%");
+        });
     }
+
+    // Total count (with search filter if applied)
+    $total_count = $query->count();
+
+    // Sorting
+    $query->orderBy($sortBy, $sortOrder);
+
+    // Pagination or Get All
+    if (!empty($limit) && is_numeric($limit)) {
+        $vendor = $query->paginate($limit);
+
+        // 🔥 Fix: If requested page is greater than last page → return last page data
+        if ($vendor->currentPage() > $vendor->lastPage() && $vendor->lastPage() > 0) {
+            $vendor = $query->paginate($limit, ['*'], 'page', $vendor->lastPage());
+        }
+
+    } else {
+        $vendor = $query->get();
+    }
+
+    return response()->json([
+        'total'  => $total_count,
+        'vendor' => $vendor
+    ], 200);
+}
+
+
     // Store a newly created vendor
     public function store(Request $request)
     {
@@ -80,19 +129,6 @@ class VendorController extends Controller
             // 'shipping_address' => 'required|string',
         ]);
 
-
-        // $validatedData = Validator::make($request->all(), [
-        //     'vendor_name' => 'required|string|max:255',
-        //     // 'company_name' => 'required|string|max:255',
-        //     // 'phone_number' => 'required|numeric',
-        //     // 'email' => 'required|string|email|max:255|unique:vendors',
-        //     // 'billing_address' => 'required|string',
-        //     // 'shipping_address' => 'required|string',
-        //     ]);
-
-        //     if ($validatedData->fails()) {
-        //         return response()->json(['error' => $validatedData->errors()], 400);
-        //     }
 
         $vendor = Vendor::create($request->all());
 
