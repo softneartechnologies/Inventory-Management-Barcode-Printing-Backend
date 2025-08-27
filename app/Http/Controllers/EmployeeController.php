@@ -71,17 +71,17 @@ if ($request->filled('employee_name') || $request->filled('work_station') || $re
         
         // ✅ Category filter
         if (!empty($employee_name)) {
-            $q->where('employee_name', 'like', "%{$employee_name}%");
+            $q->where('employee_name', "{$employee_name}");
         }
 
         // ✅ Work Station filter
         if (!empty($work_station)) {
-            $q->where('work_station', 'like', "%{$work_station}%");
+            $q->where('work_station', "{$work_station}");
         }
 
         // ✅ Department filter
         if (!empty($department)) {
-            $q->where('department', 'like', "%{$department}%");
+            $q->where('department', "{$department}");
         }
 
              });
