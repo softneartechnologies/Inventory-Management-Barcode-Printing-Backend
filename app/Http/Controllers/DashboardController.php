@@ -8,6 +8,8 @@ use App\Models\Location;
 use App\Models\Stock;
 use App\Models\ScanInOutProduct;
 use App\Models\Category;
+use App\Models\CurrencySetting;
+use App\Models\WorkStation;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -216,55 +218,76 @@ class DashboardController extends Controller
 
 
         //      // Fetch raw data
-            $monthlyCountsRawItemTrend = ScanInOutProduct::select(
-                DB::raw("DATE_FORMAT(created_at, '%Y-%M') as month"),
-                'type',
-                DB::raw("COUNT(*) as total")
-            )
-            ->whereBetween('created_at', [$startDate, $endDate])
-            ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%M')"), 'type')
-            ->orderBy('month')
-            ->get();
+
+    $startDate = Carbon::now()->subMonths(5)->startOfMonth(); 
+    $endDate   = Carbon::now()->endOfMonth();
+
+    // Query with product relation and sum of quantities
+    $monthlyCountsRawItemTrend = ScanInOutProduct::with([
+            'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock'
+        ])
+        ->select(
+            DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
+            'type',
+            'product_id',
+            DB::raw("SUM(out_quantity) as total")
+        )
+        ->whereBetween('created_at', [$startDate, $endDate])
+        ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'type', 'product_id')
+        ->orderBy('month')
+        ->get();
+
+    // Initialize all months with default values
+    $current = $startDate->copy();
+    $allMonthsItemtrend = collect();
+    while ($current <= $endDate) {
+        $allMonthsItemtrend->put($current->format('Y-M'), [
+            // 'in' => 0,
+            // 'out' => 0,
+            'total_quantity' => 0,
+            'item_name' => '',
+            'product_name_quantity' => '',
+        ]);
+        $current->addMonth();
+    }
+
+    // Fill data month by month
+    foreach ($monthlyCountsRawItemTrend as $row) {
+        $month = Carbon::parse($row->month)->format('Y-M');
+        $type  = strtolower($row->type);
+        $total = (int) $row->total;
+        $productName = $row->product->product_name ?? 'N/A';
+
+        $data = $allMonthsItemtrend->get($month, [
+            // 'in' => 0,
+            // 'out' => 0,
+            'total_quantity' => 0,
+            'item_name' => '',
+            'product_name_quantity' => '',
+           
+        ]);
+
+        // update totals
+        $data[$type] = ($data[$type] ?? 0) + $total;
+        $data['item_name'] = $productName;
+        $data['total_quantity'] = ($data['in'] ?? 0) + ($data['out'] ?? 0);
+        $data['product_name_quantity'] = $productName . ' + '.($data['in'] ?? 0) + ($data['out'] ?? 0);
         
-        
-      
-                $startDate = Carbon::now()->subMonths(5)->startOfMonth(); 
-                $endDate   = Carbon::now()->endOfMonth();
 
-                $current = $startDate->copy();
-                $allMonthsItemtrend = collect();
-                while ($current <= $endDate) {
-                    $allMonthsItemtrend->put($current->format('Y-M'), [
-                        'in' => 0,
-                        'out' => 0,
-                        'total_quantity' => 0
-                    ]);
-                    $current->addMonth();
-                }
+        // push product info
+        // $data['products'][] = [
+        //     'name' => $productName,
+        //     'quantity' => $total,
+        //     'type' => $type
+        // ];
 
-                foreach ($monthlyCountsRawItemTrend as $row) {
-                    $month = Carbon::parse($row->month)->format('Y-M');
-                    $type  = strtolower($row->type);
-                    $total = (int) $row->total;
+        $allMonthsItemtrend->put($month, $data);
+    }
 
-                    $data = $allMonthsItemtrend->get($month, [
-                        'in' => 0,
-                        'out' => 0,
-                        'total_quantity' => 0
-                    ]);
-
-                    $data[$type] = ($data[$type] ?? 0) + $total;
-                    $data['total_quantity'] = ($data['in'] ?? 0) + ($data['out'] ?? 0);
-
-                    $allMonthsItemtrend->put($month, $data);
-                }
-
-                $allMonthsItemtrend = $allMonthsItemtrend->sortKeys();
-
-                $allMonthsItemtrend = $allMonthsItemtrend->sortBy(function ($value, $key) {
-                    return Carbon::createFromFormat('Y-M', $key)->timestamp;
-                });
-
+    // sort months properly
+    $allMonthsItemtrend = $allMonthsItemtrend->sortBy(function ($value, $key) {
+        return Carbon::createFromFormat('Y-M', $key)->timestamp;
+    });
 
             //         $stock_value_by_category = DB::table('items')
             // ->join('categories', 'items.category_id', '=', 'categories.id')
@@ -272,73 +295,141 @@ class DashboardController extends Controller
             // ->groupBy('categories.name')
             // ->get();
 
-            $stockValueByCategoryproducts = Product::with(
-                    'category:id,name',
-                    'stocksData:id,product_id,total_cost', // ensure product_id for relation
-                    'vendor:id,vendor_name',
-                    'sub_category:id,name'
-                )
-                ->orderBy('id', 'desc')
-                ->get();
+            // $stockValueByCategoryproducts = Product::with(
+            //         'category:id,name',
+            //         'stocksData:id,product_id,total_cost',
+            //         'vendor:id,vendor_name',
+            //         'sub_category:id,name'
+            //     )
+            //     ->orderBy('id', 'desc')
+            //     ->get();
 
-            $totalProductsStock = $stockValueByCategoryproducts->count();
+            // $totalProductsStock = $stockValueByCategoryproducts->count();
 
-            $categoryStatsStock = $totalProductsStock > 0
-                ? $stockValueByCategoryproducts->groupBy('category.id')->map(function ($items, $categoryId) use ($totalProductsStock) {
-                    $count = $items->count();
-                    $percentages = round(($count / $totalProductsStock) * 100, 2);
+            // $categoryStatsStock = $totalProductsStock > 0
+            //     ? $stockValueByCategoryproducts->groupBy('category.id')->map(function ($items, $categoryId) use ($totalProductsStock) {
+            //         $count = $items->count();
+            //         $percentages = round(($count / $totalProductsStock) * 100, 2);
 
-                    // stock total_cost sum by category
-                    $totalStockValue = $items->sum(function ($product) {
-                        // agar relation one-to-one hai
-                        return optional($product->stocksData)->total_cost ?? 0;
+            //         // stock total_cost sum by category
+            //         $totalStockValue = $items->sum(function ($product) {
+            //             // agar relation one-to-one hai
+            //             return optional($product->stocksData)->total_cost ?? 0;
+            //         });
 
-                        // agar one-to-many hai to use this instead:
-                        // return $product->stocksData->sum('total_cost');
-                    });
+            //         return [
+            //             'category_id'        => $categoryId,
+            //             'category_name'      => optional($items->first()->category)->name,
+            //             'product_count'      => $count,
+            //             'percentage'         => $percentages,
+            //             'total_stock_value'  => $totalStockValue,
+            //         ];
+            //     })->values()
+            //     : collect();
 
-                    return [
-                        'category_id'        => $categoryId,
-                        'category_name'      => optional($items->first()->category)->name,
-                        'product_count'      => $count,
-                        'percentage'         => $percentages,
-                        'total_stock_value'  => $totalStockValue,
-                    ];
-                })->values()
-                : collect();
+            // $stockValueByCategory = $categoryStatsStock->toArray();
 
-            $stockValueByCategory = $categoryStatsStock->toArray();
+
+//             $stockValueByCategoryproducts = Product::with(
+//     'category:id,name',
+//     'stocksData:id,product_id,total_cost'
+// )
+// ->orderBy('id', 'desc')
+// ->get();
+
+
+            
+            $stockRecords = Stock::with(
+                'product:id,category_id,product_name',
+                'Category:id,name'
+            )->get();
+               
+            // Group by category_id
+            $categoryStatsStock = $stockRecords->groupBy(function ($stock) {
+                return optional($stock->Category)->id;
+            });
+
+            $totalStockCost = $stockRecords->sum(function ($stock) {
+                return $stock->total_cost ?? 0;
+            });
+
+            $categoryStockSummary = $categoryStatsStock->map(function ($stocks, $categoryId) use ($totalStockCost) {
+                $totalStockValue = $stocks->sum(function ($stock) {
+                    return $stock->total_cost ?? 0;
+                });
+
+                $percentage = $totalStockCost > 0 
+                    ? round(($totalStockValue / $totalStockCost) * 100, 2) 
+                    : 0;
+                $currencySetting =  CurrencySetting::where('default_status','yes')->first();
+                return [
+                    'category_id'        => $categoryId,
+                    'category_name'      => optional($stocks->first()->Category)->name,
+                    'total_stock_value'  => $currencySetting->symbol.''. $totalStockValue,
+                    'percentage'         => $percentage,
+                    'product_count'      => $stocks->groupBy('product_id')->count(), // unique products in this category
+                ];
+            })->values();
+
+            $stockValueByCategory = $categoryStockSummary->toArray();
+
+
+
                 
 
-            $issuedRecordsWorkstation = ScanInOutProduct::with('workStation:id,name')->where('type','out')->get();
+$allWorkstations = WorkStation::select('id', 'name')->get();
 
-            $totalIssues = $issuedRecordsWorkstation->count();
+// Fetch all issued records at once
+$issuedRecords = ScanInOutProduct::where('type', 'out')->get();
 
-            $workstationWiseCount = $issuedRecordsWorkstation
-                ->filter(function ($record) {
-                    return $record->workStation; // filter only those with department
-                })
-                ->groupBy(function ($item) {
-                    return $item->workStation->name;
-                })
-                ->map(function ($items, $workstationName) use ($totalIssues) {
-                    $count = $items->count();
-                    $percentage = ($totalIssues > 0) ? round(($count / $totalIssues) * 100, 2) : 0;
-
-                    return [
-                        'workstation_name' => $workstationName,
-                        'issue_count' => $count,
-                        'issue_percentage' => $percentage
-                    ];
-                })->values(); // Optional: Reset keys to 0-based index
-
-            $issuedRecordsWorkstation = [
-                'total_issues' => $totalIssues,
-                'workstation_stats' => $workstationWiseCount
-            ];
+$issuedRecordsSum = ScanInOutProduct::select('work_station_id')
+    ->where('type', 'out')
+    ->whereNotNull('out_quantity')
+    ->whereNotNull('work_station_id')
+    ->groupBy('work_station_id')
+    ->selectRaw('SUM(out_quantity) as total_out_quantity')
+    ->get();
 
 
-                        $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
+
+$totalOutQuantity = $issuedRecordsSum->sum('total_out_quantity');
+
+$groupedByWorkstation = $issuedRecords
+    ->groupBy('work_station_id');
+
+$workstationStats = $allWorkstations->map(function ($workstation) use ($groupedByWorkstation, $totalOutQuantity) {
+    $records = $groupedByWorkstation->get($workstation->id, collect());
+
+    $workstationTotalQuantity = $records->sum('out_quantity');
+
+    $percentage = ($totalOutQuantity > 0)
+        ? round(($workstationTotalQuantity / $totalOutQuantity) * 100, 2)
+        : 0;
+
+    return [
+        'workstation_id'       => $workstation->id,
+        'workstation_name'     => $workstation->name,
+        'total_out_quantity'   => $workstationTotalQuantity,
+        'percentage'            => $percentage,
+    ];
+});
+
+// Sort by highest total_out_quantity
+$sortedWorkstationStats = $workstationStats
+    ->sortByDesc('total_out_quantity')
+    ->values()
+    ->toArray();
+
+$issuedRecordsWorkstation = [
+    'total_out_quantity' => $totalOutQuantity,
+    'workstation_stats'  => $sortedWorkstationStats,
+];
+
+
+
+
+
+                $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
                     'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
                     'product.category:id,name',
                     'product.orders:id,product_id,quantity',
@@ -366,12 +457,10 @@ class DashboardController extends Controller
                    
                     $stock_update = Stock::where('product_id',$product->id)->get();
 
-                    // $total = $stock_update->sum('total_cost');
-   $total = $stock_update->sum(function ($item) {
-    return (float) $item->total_cost;
-});
-// print_r($total);die;
-                    // agar orders relation hai
+                    $total = $stock_update->sum(function ($item) {
+                        return (float) $item->total_cost;
+                    });
+
                     $totalQty = $product->orders->sum('quantity') ?? 0;
 
                     // maan lete hain product me price field hai
