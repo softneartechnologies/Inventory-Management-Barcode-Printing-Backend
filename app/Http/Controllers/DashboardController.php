@@ -1028,7 +1028,7 @@ $low_stock_alert = $inventory_alert->count();
             //     ];
             // })->values();
 
-$startDate = $request->input('start_date');
+    $startDate = $request->input('start_date');
     $endDate   = $request->input('end_date');
 
     $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
@@ -1102,6 +1102,56 @@ $startDate = $request->input('start_date');
     // ]);
 
 
+$startDate = $request->input('start_date');
+$endDate   = $request->input('end_date');
+
+// ✅ PPE category find (case-insensitive)
+$category = Category::whereRaw('LOWER(name) = ?', ['ppe'])
+    ->orderBy('id', 'desc')
+    ->select('id', 'name')
+    ->first();
+
+$categoryId = $category?->id;
+
+// ✅ Build query
+$stock_updateppe = Stock::with(['product' => function ($query) {
+        $query->select('id', 'product_name', 'category_id');
+    }])
+    ->whereHas('product', function ($q) use ($categoryId) {
+        $q->where('category_id', $categoryId);
+    })
+    ->when($startDate && $endDate, function ($query) use ($startDate, $endDate) {
+        $query->whereBetween('stock_date', [
+            Carbon::parse($startDate)->startOfDay(),
+            Carbon::parse($endDate)->endOfDay(),
+        ]);
+    })
+    ->get();
+
+// ✅ Group by product_id and calculate sum
+$groupedData = $stock_updateppe->groupBy('product_id');
+
+// ✅ Calculate total quantity (all products)
+$totalQuantity = $stock_updateppe->sum('quantity');
+
+$ppe_product_data_category = $groupedData->map(function ($stocks, $productId) use ($totalQuantity) {
+    $productName   = optional($stocks->first()->product)->product_name;
+    $totalQuantityPerProduct = $stocks->sum('quantity');
+
+    $percentage = ($totalQuantity > 0) 
+        ? round(($totalQuantityPerProduct / $totalQuantity) * 100, 2) 
+        : 0;
+
+    return [
+        'product_id'    => $productId,
+        'product_name'  => $productName,
+        'total_quantity'=> $totalQuantityPerProduct,
+        'percentage'    => $percentage,
+    ];
+})->values();
+
+
+
 
             return response()->json([
                 'total_product' => $totalproductCount,
@@ -1119,6 +1169,7 @@ $startDate = $request->input('start_date');
                 'itemtrend'=>$allMonthsItemtrend,
                 'stockValueByCategory'=>$stockValueByCategory,
                 'issuedRecordsWorkstation'=>$issuedRecordsWorkstation,
+                'ppe_product_data_category'=>$ppe_product_data_category,
             ], 200);
 
     }
