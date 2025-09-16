@@ -3132,10 +3132,11 @@ public function uploadCSV(Request $request)
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
                 'location_id' => json_encode($locationIdsAsString),
-                'quantity' => $row[14],
+                'quantity' => $row[14] ? json_encode([$row[14]]) : null,
                 'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
-                'per_unit_cost' => $row[16],
-                'total_cost' => $row[17],
+                // 'per_unit_cost' => $row[16],
+                'per_unit_cost' =>$row[16] ? json_encode([$row[16]]) : null,
+                'total_cost' => $row[17] ? json_encode([$row[17]]) : null,
                 'status' => $row[18] ?: 'inactive',
                 'barcode_number' => $sku,
                 'generated_barcode' => $savedBarcodePath,
@@ -3147,10 +3148,17 @@ public function uploadCSV(Request $request)
 
         // ---- Stock entries
         $totalStock = 0;
-        $quantities   = json_decode($row[14], true) ?: [$row[14]];
-        $unitMeasures = json_decode($row[15], true) ?: [$row[15]];
-        $perUnitCosts = json_decode($row[16], true) ?: [$row[16]];
-        $totalCosts   = json_decode($row[17], true) ?: [$row[17]];
+        $quantitiess   = json_decode($row[14], true) ?: [$row[14]];
+        $unitMeasuress = json_decode($row[15], true) ?: [$row[15]];
+        $perUnitCostss = json_decode($row[16], true) ?: [$row[16]];
+        $totalCostss   = json_decode($row[17], true) ?: [$row[17]];
+
+        $perUnitCosts = array_map('trim', explode(',', $perUnitCostss[0]));
+        $totalCosts = array_map('trim', explode(',', $totalCostss[0]));
+         $unitMeasures = array_map('trim', explode(',', $unitMeasuress[0]));
+         $quantities = array_map('trim', explode(',', $quantitiess[0]));
+        // print_r($perUnitCosts);die;
+
 
         foreach ($locationIds as $index => $locationId) {
             $quantity       = $quantities[$index]   ?? 0;
@@ -3160,6 +3168,8 @@ public function uploadCSV(Request $request)
 
             $totalStock += $quantity;
 
+            // $totalStock =20;
+            // $quantity =20;
             Stock::create([
                 'product_id'      => $product->id,
                 'vendor_id'       => $vendor?->id,
