@@ -236,6 +236,7 @@ class ScanInOutProductController extends Controller
     foreach ($locationIds as $lid) {
         $updatedQuantities[] = $pdate[$lid];
     }
+// print_r(json_encode($updatedQuantities));die;
 
     $totalQuantity = array_sum($updatedQuantities);
 
