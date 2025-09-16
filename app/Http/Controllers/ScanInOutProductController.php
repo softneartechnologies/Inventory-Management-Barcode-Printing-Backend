@@ -180,13 +180,13 @@ class ScanInOutProductController extends Controller
             'issue_from_user_id' => 'required',
             'employee_id' => 'required|exists:employees,id',
             'location_id' => 'required',
-            'in_out_date_time' => 'required|date',
+            // 'in_out_date_time' => 'required|date',
             'type' => 'required|in:in',
             'purpose' => 'required',
             'comments' => 'required',
             'in_quantity' => 'required|integer|min:1',
             'previous_stock' => 'required',
-            'total_current_stock' => 'required',
+            // 'total_current_stock' => 'required',
             'threshold' => 'required',
         ]);
     } else {
@@ -195,13 +195,13 @@ class ScanInOutProductController extends Controller
             'issue_from_user_id' => 'required',
             'employee_id' => 'required|exists:employees,id',
             'location_id' => 'required',
-            'in_out_date_time' => 'required|date',
+            // 'in_out_date_time' => 'required|date',
             'type' => 'required|in:in',
             'purpose' => 'required',
             'comments' => 'required',
             'in_quantity' => 'required|integer|min:1',
-            'previous_stock' => 'required',
-            'total_current_stock' => 'required',
+            // 'previous_stock' => 'required',
+            // 'total_current_stock' => 'required',
             'threshold' => 'required',
         ]);
     }
