@@ -131,101 +131,40 @@ class ScanInOutProductController extends Controller
 
         // $product->update(['opening_stock' => $productOpeningStock]);
 
-        // $quantity = $request->in_quantity;
-        // $productOpeningStock = $product->opening_stock + $quantity;
-        // $locationIds = json_decode($product->location_id); 
-        // $quantities = json_decode($product->quantity); 
-        // $pdate = array_combine($locationIds, $quantities);
-        // $rlocationId = $request->location_id;
-        // $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
-        // $updatedQuantities = [];
-        // foreach ($locationIds as $lid) {
-        //     $updatedQuantities[] = $pdate[$lid];
-        // }
-
-        // $totalQuantity = array_sum($updatedQuantities);
-
         $quantity = $request->in_quantity;
-$productOpeningStock = $product->opening_stock + $quantity;
+        $productOpeningStock = $product->opening_stock + $quantity;
+        $locationIds = json_decode($product->location_id); 
+        $quantities = json_decode($product->quantity); 
+        $pdate = array_combine($locationIds, $quantities);
+        $rlocationId = $request->location_id;
+        $pdate[$rlocationId] = $pdate[$rlocationId] + $quantity;
+        $updatedQuantities = [];
+        foreach ($locationIds as $lid) {
+            $updatedQuantities[] = $pdate[$lid];
+        }
 
-// Decode location and quantities safely
-$locationIds = json_decode($product->location_id, true) ?: [];
-$quantities  = json_decode($product->quantity, true) ?: [];
-
-// Ensure both are arrays of equal length
-if (!empty($locationIds) && !empty($quantities) && count($locationIds) === count($quantities)) {
-    $pdate = array_combine($locationIds, $quantities);
-} else {
-    // Initialize with zeros if quantities missing
-    $pdate = array_fill_keys($locationIds, 0);
-}
-
-$rlocationId = $request->location_id;
-
-// Safely add stock to the right location
-$pdate[$rlocationId] = ($pdate[$rlocationId] ?? 0) + $quantity;
-
-// Build updated quantities
-$updatedQuantities = [];
-foreach ($locationIds as $lid) {
-    $updatedQuantities[] = $pdate[$lid];
-}
-
-$totalQuantity = array_sum($updatedQuantities);
-
-
+        $totalQuantity = array_sum($updatedQuantities);
         // Step 6: Update the product
         $product->update([
             'opening_stock' => $productOpeningStock,
             'quantity' => json_encode($updatedQuantities)
         ]);
 
-        //    $product_location = Stock::where('product_id', $request->product_id)
-        //         ->where('location_id', $request->location_id)
-        //         ->first();
+           $product_location = Stock::where('product_id', $request->product_id)
+                ->where('location_id', $request->location_id)
+                ->first();
 
            
-        //         $currentStock = $product_location->current_stock;
+                $currentStock = $product_location->current_stock;
                
-        //         $newStock = $currentStock + $quantity;
+                $newStock = $currentStock + $quantity;
                    
-        //         $stockData = [
-        //             'current_stock' => $newStock,
-        //             'new_stock' => $newStock,
-        //         ];
+                $stockData = [
+                    'current_stock' => $newStock,
+                    'new_stock' => $newStock,
+                ];
 
-        //         $product_location->update($stockData);
-
-        $product_location = Stock::where('product_id', $request->product_id)
-    ->where('location_id', $request->location_id)
-    ->first();
-
-if ($product_location) {
-    $currentStock = $product_location->current_stock;
-    $quantityold = $product_location->quantity;
-    $newStock = $currentStock + $quantity;
-   $requestQuentity = $request->in_quantity;
-    $quantitynew = $quantityold + $requestQuentity;
-
-    $stockData = [
-        'current_stock' => $newStock,
-        'new_stock'     => $newStock,
-        'quantity'     => $quantitynew,
-    ];
-
-    $product_location->update($stockData);
-} else {
-    // If no record exists, create it
-    $stockData = [
-        'product_id'    => $request->product_id,
-        'location_id'   => $request->location_id,
-        'current_stock' => $quantity,
-        'new_stock'     => $quantity,
-    ];
-
-    Stock::create($stockData);
-}
-
+                $product_location->update($stockData);
                 
 
         return response()->json($scanRecord, 200);
