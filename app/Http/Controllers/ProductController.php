@@ -1535,6 +1535,28 @@ foreach ($toDelete as $oldStock) {
 
     $reqLocations = $validated['storage_location'];
 
+     foreach ($reqLocations as $loc) {
+             $quantity = (float) $loc['quantity'];
+        
+        $adjustment = $loc['adjustment'];
+        $locationId = $loc['location_id'];
+
+        $stock = Stock::where('product_id', $product_id)
+            ->where('location_id', $locationId)
+            ->first();
+
+            $oldStockProduct = $stock->current_stock;
+
+        if ($adjustment === 'subtract') {
+             if ($quantity > $oldStockProduct) {
+                return response()->json([
+                    'error' => "Cannot subtract {$quantity} from location {$locationId}. Available stock: {$oldStockProduct}."
+                ], 422);
+            }
+
+        }
+    }
+
     $productLocations = [];
     $unitMeasures = [];
     $perUnitCosts = [];
