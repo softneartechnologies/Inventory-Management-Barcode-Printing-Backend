@@ -91,6 +91,11 @@ class DepartmentController extends Controller
             'description' => 'nullable|string',
         ]);
 
+        $exists = Department::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Department with this name already exists.'], 409);
+        }
+
         $department = Department::create($request->all());
 
         return response()->json($department, 200);
@@ -116,6 +121,11 @@ class DepartmentController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
         ]);
+        
+        $exists = Department::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Department with this name already exists.'], 409);
+        }
 
         $department->update($request->all());
 

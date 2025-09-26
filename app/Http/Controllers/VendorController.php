@@ -129,6 +129,10 @@ public function index(Request $request)
             // 'shipping_address' => 'required|string',
         ]);
 
+        $exists = Vendor::where('vendor_name', $request->vendor_name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Vendor with this name already exists.'], 409);
+        }
 
         $vendor = Vendor::create($request->all());
 
@@ -176,6 +180,10 @@ public function index(Request $request)
         //     }
 
 
+        $exists = Vendor::where('vendor_name', $request->vendor_name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Vendor with this name already exists.'], 409);
+        }
 
         $vendor->update($request->all());
         return response()->json($vendor, 200);

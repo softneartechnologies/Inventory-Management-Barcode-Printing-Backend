@@ -101,6 +101,10 @@ class MachineController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string'
         ]);
+        $exists = Machine::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Machine with this name already exists.'], 409);
+        }
 
         $machine = Machine::create($validated);
         return response()->json($machine, 201);
@@ -123,6 +127,11 @@ class MachineController extends Controller
 
         $machine = Machine::find($id);
 
+        $exists = Machine::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Machine with this name already exists.'], 409);
+        }
+        
         $machine->update($validated);
         return response()->json($machine);
     }

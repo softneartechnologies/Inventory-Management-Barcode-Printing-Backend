@@ -28,6 +28,10 @@ class MeasurementUnitController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
+        $exists = MeasurementUnit::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'MeasurementUnit with this name already exists.'], 409);
+        }
 
         $unit = MeasurementUnit::create($request->all());
 
@@ -63,7 +67,10 @@ class MeasurementUnitController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
-
+         $exists = MeasurementUnit::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'MeasurementUnit with this name already exists.'], 409);
+        }
         $unit->update($request->all());
 
         return response()->json(['message' => 'Measurement unit updated successfully', 'unit' => $unit], 200);

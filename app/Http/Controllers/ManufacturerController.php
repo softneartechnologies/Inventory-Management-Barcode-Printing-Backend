@@ -69,6 +69,11 @@ class ManufacturerController extends Controller
             return response()->json(['error' => $validator->errors()], 400);
         }
 
+        $exists = Manufacturer::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Manufacturer with this name already exists.'], 409);
+        }
+
         $manufacturer = Manufacturer::create($request->all());
 
         return response()->json(['message' => 'Manufacturer created successfully', 'manufacturer' => $manufacturer], 201);
@@ -104,6 +109,11 @@ class ManufacturerController extends Controller
             return response()->json(['error' => $validator->errors()], 400);
         }
 
+        $exists = Manufacturer::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Manufacturer with this name already exists.'], 409);
+        }
+        
         $manufacturer->update($request->all());
 
         return response()->json(['message' => 'Manufacturer updated successfully', 'manufacturer' => $manufacturer], 200);

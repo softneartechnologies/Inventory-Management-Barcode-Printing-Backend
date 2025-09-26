@@ -139,6 +139,11 @@ class WorkstationController extends Controller
             'description' => 'nullable|string'
         ]);
 
+         $exists = Workstation::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Workstation with this name already exists.'], 409);
+        }
+
         $workstation = Workstation::create($validated);
 
         return response()->json($workstation, 200);
@@ -166,7 +171,10 @@ class WorkstationController extends Controller
             'name' => 'sometimes|string|max:255',
             'description' => 'nullable|string'
         ]);
-
+        $exists = Workstation::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Workstation with this name already exists.'], 409);
+        }
         $workstation->update($validated);
 
         // $department->update($request->all());

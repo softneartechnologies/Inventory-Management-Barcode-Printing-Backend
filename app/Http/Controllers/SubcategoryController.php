@@ -74,7 +74,10 @@ class SubcategoryController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
-
+        $exists = Subcategory::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Subcategory with this name already exists.'], 409);
+        }
         $subcategory = Subcategory::create($request->all());
 
         return response()->json(['message' => 'Subcategory created successfully', 'subcategory' => $subcategory], 201);
@@ -109,7 +112,10 @@ class SubcategoryController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
-
+         $exists = Subcategory::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Subcategory with this name already exists.'], 409);
+        }
         $subcategory->update($request->all());
 
         return response()->json(['message' => 'Subcategory updated successfully', 'subcategory' => $subcategory], 200);

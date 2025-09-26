@@ -49,6 +49,10 @@ public function categoryDetails($id)
         $validated = $request->validate([
             'name' => 'required|string|unique:uom_categories,name',
         ]);
+         $exists = UomCategory::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Sub Unit Category with this name already exists.'], 409);
+        }
 
         $category = UomCategory::create($validated);
         return response()->json(['category'=>$category], 200);
@@ -68,7 +72,12 @@ public function categoryDetails($id)
         $validated = $request->validate([
             'name' => 'required|string|unique:uom_categories,name,' . $uomCategory->id,
         ]);
-       
+        
+        $exists = UomCategory::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Sub Unit Category with this name already exists.'], 409);
+        }
+
         $uomCategory->update($validated);
         return response()->json($uomCategory);
     }

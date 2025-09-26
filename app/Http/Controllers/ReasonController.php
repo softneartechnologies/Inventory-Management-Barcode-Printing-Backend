@@ -25,7 +25,10 @@ class ReasonController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
-
+         $exists = Reason::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Reason with this name already exists.'], 409);
+        }
         $reason = Reason::create($request->all());
 
         return response()->json(['message' => 'Reason created successfully', 'reason' => $reason], 201);

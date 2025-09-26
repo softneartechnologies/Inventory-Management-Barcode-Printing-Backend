@@ -28,6 +28,10 @@ class UnitController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
+         $exists = Unit::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Unit with this name already exists.'], 409);
+        }
 
         $unit = Unit::create($request->all());
 
@@ -63,7 +67,10 @@ class UnitController extends Controller
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
         }
-
+         $exists = Unit::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Unit with this name already exists.'], 409);
+        }
         $unit->update($request->all());
 
         return response()->json(['message' => 'Unit updated successfully', 'unit' => $unit], 200);

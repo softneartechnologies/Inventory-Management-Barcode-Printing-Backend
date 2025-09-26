@@ -22,6 +22,10 @@ class RoleController extends Controller
             'description' => 'nullable|string',
         ]);
 
+         $exists = Role::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Role with this name already exists.'], 409);
+        }
         $role = Role::create($request->all());
 
         return response()->json($role, 200);
@@ -42,6 +46,10 @@ class RoleController extends Controller
             'name' => 'required|unique:roles,name,' . $role->id,
             'description' => 'nullable|string',
         ]);
+         $exists = Role::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Role with this name already exists.'], 409);
+        }
         
         $role->update($request->all());
 

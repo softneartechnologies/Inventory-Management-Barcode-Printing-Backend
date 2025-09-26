@@ -117,6 +117,12 @@ class CategoryController extends Controller
             return response()->json(['error' => $validator->errors()], 400);
         }
 
+        $exists = Category::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Category with this name already exists.'], 409);
+        }
+
+
         $category = Category::create($request->all());
 
         return response()->json(['message' => 'Category created successfully', 'category' => $category], 201);
@@ -149,6 +155,10 @@ class CategoryController extends Controller
 
         if ($validator->fails()) {
             return response()->json(['error' => $validator->errors()], 400);
+        }
+        $exists = Category::where('name', $request->name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Category with this name already exists.'], 409);
         }
 
         $category->update($request->all());

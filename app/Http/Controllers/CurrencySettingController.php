@@ -34,7 +34,10 @@ class CurrencySettingController extends Controller
         if ($request->default_status === 'yes') {
             CurrencySetting::where('default_status', 'yes')->update(['default_status' => 'no']);
         }
-
+         $exists = CurrencySetting::where('currency_name', $request->currency_name)->exists();
+        if ($exists) {
+            return response()->json(['error' => 'Currency name already exists.'], 409);
+        }
         $currency = CurrencySetting::create($request->all());
 
         return response()->json(['message' => 'Currency created successfully', 'currency' => $currency], 201);
@@ -75,7 +78,7 @@ class CurrencySettingController extends Controller
         if ($request->default_status === 'yes') {
             CurrencySetting::where('default_status', 'yes')->update(['default_status' => 'no']);
         }
-
+        
         $currency->update($request->all());
 
         return response()->json(['message' => 'Currency updated successfully', 'currency' => $currency], 200);
