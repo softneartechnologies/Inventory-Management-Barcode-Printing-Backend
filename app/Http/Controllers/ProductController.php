@@ -1546,11 +1546,12 @@ foreach ($toDelete as $oldStock) {
             ->first();
 
             $oldStockProduct = $stock->current_stock;
-
+          $locationname =  Location::where('id',$locationId)->first();
+         $locaName = $locationname->name;
         if ($adjustment === 'subtract') {
              if ($quantity > $oldStockProduct) {
                 return response()->json([
-                    'error' => "Cannot subtract {$quantity} from location {$locationId}. Available stock: {$oldStockProduct}."
+                    'error' => "Cannot subtract {$quantity} from location {$locaName}. Available stock: {$oldStockProduct}."
                 ], 422);
             }
 
