@@ -1018,7 +1018,7 @@ $maxUnit = $units->sortByDesc('conversion_factor')->first();
         $validatedData['total_cost'] = json_encode(
             collect($request->storage_location)->pluck('total_cost')->all()
         );
-
+        $validatedData['opening_stock'] = $request->opening_stock;
         $product->update($validatedData);
 
         $multiLocation = $request->storage_location;
