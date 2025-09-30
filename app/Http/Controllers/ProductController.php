@@ -2997,7 +2997,7 @@ public function uploadCSV(Request $request)
     // --- Header check
     $header = fgetcsv($handle);
     $expectedHeaders = [
-        "product_name", "sku", "category_id", "sub_category_id","manufacturer",
+        "product_name", "sku*", "category_id", "sub_category_id","manufacturer",
         "vendor_id", "model", "unit_of_measurement_category", "description",
         "returnable", "commit_stock_check", "inventory_alert_threshold",
         "opening_stock", "location_id", "quantity", "unit_of_measure",
