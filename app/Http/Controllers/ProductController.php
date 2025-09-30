@@ -3118,7 +3118,7 @@ public function uploadCSV(Request $request)
 
             if (Product::where('sku', $sku)->exists()) {
                 return response()->json([
-                    'error' => 'Duplicate SKU! This product already exists.'
+                    'error' => 'Duplicate SKU = '.$sku.' This product already exists.'
                 ], 422); // 422 = Unprocessable Entity
             }
 
