@@ -3115,30 +3115,37 @@ public function uploadCSV(Request $request)
         // print_r(json_encode($locationIdsAsString));die;
         // ---- Insert / Update Product
         if ($product) {
-            $product->update([
-                'product_name' => $productName,
-                'category_id' => $category?->id,
-                'sub_category_id' => $subcategory?->id,
-                'manufacturer' => $manufacturer->name,
-                'vendor_id' => $vendor?->id,
-                'model' => $row[6],
-                'unit_of_measurement_category' => $uomCategory?->id,
-                'description' => $row[8],
-                'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
-                'commit_stock_check' => (float) $row[10],
-                'inventory_alert_threshold' => (int) $row[11],
-                'opening_stock' => (int) $row[12],
-                'location_id' => json_encode($locationIdsAsString),
-                'quantity' => $row[14],
-                'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
-                'per_unit_cost' => $row[16],
-                'total_cost' => $row[17],
-                'status' => $row[18] ?: 'inactive',
-                'barcode_number' => $sku,
-                'generated_barcode' => $savedBarcodePath,
-                'generated_qrcode' => $savedQRCodePath,
-                'updated_at' => now(),
-            ]);
+
+            if (Product::where('sku', $sku)->exists()) {
+                return response()->json([
+                    'error' => 'Duplicate SKU! This product already exists.'
+                ], 422); // 422 = Unprocessable Entity
+            }
+
+            // $product->update([
+            //     'product_name' => $productName,
+            //     'category_id' => $category?->id,
+            //     'sub_category_id' => $subcategory?->id,
+            //     'manufacturer' => $manufacturer->name,
+            //     'vendor_id' => $vendor?->id,
+            //     'model' => $row[6],
+            //     'unit_of_measurement_category' => $uomCategory?->id,
+            //     'description' => $row[8],
+            //     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+            //     'commit_stock_check' => (float) $row[10],
+            //     'inventory_alert_threshold' => (int) $row[11],
+            //     'opening_stock' => (int) $row[12],
+            //     'location_id' => json_encode($locationIdsAsString),
+            //     'quantity' => $row[14],
+            //     'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
+            //     'per_unit_cost' => $row[16],
+            //     'total_cost' => $row[17],
+            //     'status' => $row[18] ?: 'inactive',
+            //     'barcode_number' => $sku,
+            //     'generated_barcode' => $savedBarcodePath,
+            //     'generated_qrcode' => $savedQRCodePath,
+            //     'updated_at' => now(),
+            // ]);
         } else {
             $product = Product::create([
                 'product_name' => $productName,
