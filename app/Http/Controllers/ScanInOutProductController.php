@@ -219,12 +219,37 @@ class ScanInOutProductController extends Controller
     // Decode location & quantities safely
     $locationIds = json_decode($product->location_id, true) ?: [];
     $quantities  = json_decode($product->quantity, true) ?: [];
+    $per_unit_cost  = json_decode($product->per_unit_cost, true) ?: [];
+    // $total_cost  = json_decode($product->total_cost, true) ?: [];
+
+    if (is_array($per_unit_cost) && isset($per_unit_cost[0]) && is_string($per_unit_cost[0])) {
+    $per_unit_cost = explode(',', $per_unit_cost[0]);
+}
+
+// अब key => value वाला array बना दो
+$per_unit_cost = array_values($per_unit_cost); // reindex just in case
 
     if (!empty($locationIds) && !empty($quantities) && count($locationIds) === count($quantities)) {
         $pdate = array_combine($locationIds, $quantities);
     } else {
         $pdate = array_fill_keys($locationIds, 0);
     }
+
+
+    if (!empty($quantities) && !empty($per_unit_cost) && count($quantities) === count($per_unit_cost)) {
+        $pudate = array_combine($quantities, $per_unit_cost);
+    } else {
+        $pudate = array_fill_keys($quantities, 0);
+    }
+
+   $result = [];
+    foreach ($pudate as $key => $value) {
+        $result[$key] = $key * $value;
+    }
+
+// ✅ values को string में convert करके फिर JSON encode करें
+
+    $string = json_encode(array_map('strval', array_values($result)));
 
     $rlocationId = $request->location_id;
 
@@ -244,6 +269,7 @@ class ScanInOutProductController extends Controller
     $product->update([
         'opening_stock' => $productOpeningStock,
         'quantity'      => json_encode($updatedQuantities),
+        'total_cost'    => $string,
     ]);
 
     // ========== UPDATE STOCKS TABLE ==========
@@ -255,11 +281,14 @@ class ScanInOutProductController extends Controller
         // Update existing stock
         $newStock = $product_location->current_stock + $quantity;
         $quantitys = $product_location->quantity + $quantity;
-
+        $per_unit_cost = $product_location->per_unit_cost;
+        $total_cost = $per_unit_cost * $quantitys;
+        
         $product_location->update([
             'current_stock' => $newStock,
             'new_stock'     => $newStock,
             'quantity'     => $quantitys,
+            'total_cost'     => $total_cost,
         ]);
     } else {
         // Create new stock record if not exists
@@ -328,6 +357,32 @@ class ScanInOutProductController extends Controller
         $productOpeningStock = $product->opening_stock - $quantity;
         $locationIds = json_decode($product->location_id); 
         $quantities = json_decode($product->quantity); 
+
+         $per_unit_cost  = json_decode($product->per_unit_cost, true) ?: [];
+    // $total_cost  = json_decode($product->total_cost, true) ?: [];
+
+    if (is_array($per_unit_cost) && isset($per_unit_cost[0]) && is_string($per_unit_cost[0])) {
+    $per_unit_cost = explode(',', $per_unit_cost[0]);
+        }
+        $per_unit_cost = array_values($per_unit_cost); 
+
+        if (!empty($quantities) && !empty($per_unit_cost) && count($quantities) === count($per_unit_cost)) {
+        $pudate = array_combine($quantities, $per_unit_cost);
+    } else {
+        $pudate = array_fill_keys($quantities, 0);
+    }
+
+   $result = [];
+    foreach ($pudate as $key => $value) {
+        $result[$key] = $key * $value;
+    }
+
+// ✅ values को string में convert करके फिर JSON encode करें
+
+    $string = json_encode(array_map('strval', array_values($result)));
+
+
+
         $pdate = array_combine($locationIds, $quantities);
         $rlocationId = $request->location_id;
         $pdate[$rlocationId] = $pdate[$rlocationId] - $quantity;
@@ -340,7 +395,8 @@ class ScanInOutProductController extends Controller
         // Step 6: Update the product
         $product->update([
             'opening_stock' => $productOpeningStock,
-            'quantity' => json_encode($updatedQuantities)
+            'quantity' => json_encode($updatedQuantities),
+             'total_cost'    => $string,
         ]);
 
 
@@ -350,12 +406,14 @@ class ScanInOutProductController extends Controller
 
                 $currentStock = $product_location->current_stock;
                 $newStock = $currentStock - $quantity;
-                   
+                   $per_unit_cost = $product_location->per_unit_cost;
+                    $total_cost = $per_unit_cost * $newStock;
 
                 $stockData = [
                     'current_stock' => $newStock,
                     'new_stock' => $newStock,
                     'quantity'     => $newStock,
+                    'total_cost'     => $total_cost,
                 ];
 
                 $product_location->update($stockData);
