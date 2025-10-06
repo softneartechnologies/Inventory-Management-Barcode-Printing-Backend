@@ -355,6 +355,7 @@ class ScanInOutProductController extends Controller
                 $stockData = [
                     'current_stock' => $newStock,
                     'new_stock' => $newStock,
+                    'quantity'     => $newStock,
                 ];
 
                 $product_location->update($stockData);
