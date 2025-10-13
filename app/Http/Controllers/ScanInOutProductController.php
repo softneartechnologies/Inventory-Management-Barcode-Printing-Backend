@@ -186,7 +186,7 @@ class ScanInOutProductController extends Controller
             'comments' => 'required',
             'in_quantity' => 'required|integer|min:1',
             'previous_stock' => 'required',
-            // 'total_current_stock' => 'required',
+            'total_current_stock' => 'required',
             'threshold' => 'required',
         ]);
     } else {
@@ -200,8 +200,8 @@ class ScanInOutProductController extends Controller
             'purpose' => 'required',
             'comments' => 'required',
             'in_quantity' => 'required|integer|min:1',
-            // 'previous_stock' => 'required',
-            // 'total_current_stock' => 'required',
+            'previous_stock' => 'required',
+            'total_current_stock' => 'required',
             'threshold' => 'required',
         ]);
     }

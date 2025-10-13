@@ -104,10 +104,13 @@ class MachineController extends Controller
         $exists = Machine::where('name', $request->name)->exists();
         if ($exists) {
             return response()->json(['error' => 'Machine with this name already exists.'], 409);
-        }
+        }else {
+
+        
 
         $machine = Machine::create($validated);
         return response()->json($machine, 201);
+        }
     }
 
     public function show($id)

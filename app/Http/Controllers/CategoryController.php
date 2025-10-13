@@ -120,12 +120,13 @@ class CategoryController extends Controller
         $exists = Category::where('name', $request->name)->exists();
         if ($exists) {
             return response()->json(['error' => 'Category with this name already exists.'], 409);
-        }
+        }else{
 
-
+    
         $category = Category::create($request->all());
 
         return response()->json(['message' => 'Category created successfully', 'category' => $category], 201);
+        }
     }
 
     // ✅ Get Single Category
