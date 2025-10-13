@@ -681,7 +681,15 @@ class EmployeeController extends Controller
                 $invalidRows[] = $rowNumber++;
                 continue;
             }
-
+              $emailConflict = User::where('email', $row[6])
+                        ->exists();
+                        if($emailConflict){
+                            return response()->json([
+                                'error' => 'CSV not updated email is exists .'.$row[6],
+                                'message' => 'CSV not updated email is exists .'.$row[6],
+                                'invalid_rows' => $invalidRows
+                            ], 404);
+                    }
         
             // Role
             $department = Department::firstOrCreate(
