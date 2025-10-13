@@ -751,6 +751,7 @@ $employee->save();
                         // continue;
                         if($employee->name != $row[1]){
                     return response()->json([
+                                'error' => 'CSV not updated email is exists .'.$row[6],
                                 'message' => 'CSV not updated email is exists .'.$row[6],
                                 'invalid_rows' => $invalidRows
                             ], 404);
