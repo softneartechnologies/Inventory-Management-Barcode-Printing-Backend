@@ -11,6 +11,7 @@ use App\Models\Category;
 use App\Models\CurrencySetting;
 // use App\Models\WorkStation;
 use App\Models\Workstation;
+use App\Models\Employee;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -91,7 +92,7 @@ if ($request->filled('start_date') || $request->filled('end_date')) {
     });
 }
 
-// अगर category/status product relation से चाहिए
+
 if ($request->filled('category') || $request->filled('status')) {
     $employeeQuery->whereHas('product', function ($q) use ($request) {
         if ($request->filled('category')) {
@@ -104,7 +105,8 @@ if ($request->filled('category') || $request->filled('status')) {
 }
 
 // 👉 Final employee count
-$employeeUsingProduct = $employeeQuery->count();
+// $employeeUsingProduct = $employeeQuery->count();
+$employeeUsingProduct = Employee::count();
 
 
 // ===============================
