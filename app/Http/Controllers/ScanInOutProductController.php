@@ -236,16 +236,31 @@ $per_unit_cost = array_values($per_unit_cost); // reindex just in case
     }
 
 
-    if (!empty($quantities) && !empty($per_unit_cost) && count($quantities) === count($per_unit_cost)) {
-        $pudate = array_combine($quantities, $per_unit_cost);
-    } else {
-        $pudate = array_fill_keys($quantities, 0);
-    }
+//     if (!empty($quantities) && !empty($per_unit_cost) && count($quantities) === count($per_unit_cost)) {
+//         $pudate = array_combine($quantities, $per_unit_cost);
+//     } else {
+//         $pudate = array_fill_keys($quantities, 0);
+//     }
 
-   $result = [];
-    foreach ($pudate as $key => $value) {
-        $result[$key] = $key * $value;
-    }
+//    $result = [];
+//     foreach ($pudate as $key => $value) {
+//         $result[$key] = $key * $value;
+//     }
+
+if (!empty($quantities) && !empty($per_unit_cost) && count($quantities) === count($per_unit_cost)) {
+    $pudate = array_combine($quantities, $per_unit_cost);
+} else {
+    $pudate = array_fill_keys($quantities, 0);
+}
+
+$result = [];
+foreach ($pudate as $key => $value) {
+    // Ensure both are numeric before multiplication
+    $qty = floatval($key);
+    $cost = floatval($value);
+
+    $result[$key] = $qty * $cost;
+}
 
 // ✅ values को string में convert करके फिर JSON encode करें
 
