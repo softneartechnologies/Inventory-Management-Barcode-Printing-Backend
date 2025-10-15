@@ -3114,6 +3114,11 @@ public function uploadCSV(Request $request)
         $locationIdsAsString = array_map('strval', $locationIds);
         // print_r(json_encode($locationIdsAsString));die;
         // ---- Insert / Update Product
+
+        $qunatitytsss =$row[14] ? array_map('intval', explode(',', $row[14])) : null;
+        $qunatitytssss = json_encode($qunatitytsss);
+        // print_r($qunatitytssss);die;
+
         if ($product) {
 
             if (Product::where('sku', $sku)->exists()) {
@@ -3162,7 +3167,8 @@ public function uploadCSV(Request $request)
                 'inventory_alert_threshold' => (int) $row[11],
                 'opening_stock' => (int) $row[12],
                 'location_id' => json_encode($locationIdsAsString),
-                'quantity' => $row[14] ? json_encode([$row[14]]) : null,
+                // 'quantity' => $row[14] ? json_encode([$row[14]]) : null,
+                'quantity' => $qunatitytssss,
                 'unit_of_measure' => $uomUnitsNames ? json_encode($uomUnitsNames) : null,
                 // 'per_unit_cost' => $row[16],
                 'per_unit_cost' =>$row[16] ? json_encode([$row[16]]) : null,
