@@ -1573,11 +1573,11 @@ foreach ($toDelete as $oldStock) {
     $locaName = $location->name ?? 'Unknown';
 
     // 🧩 Check if stock exists
-    if (!$stock) {
-        return response()->json([
-            'error' => "No stock record found for product ID {$product_id} at location {$locaName}."
-        ], 422);
-    }
+    // if (!$stock) {
+    //     return response()->json([
+    //         'error' => "No stock record found for product ID {$product_id} at location {$locaName}."
+    //     ], 422);
+    // }
 
     $oldStockProduct = (float) $stock->current_stock;
 
