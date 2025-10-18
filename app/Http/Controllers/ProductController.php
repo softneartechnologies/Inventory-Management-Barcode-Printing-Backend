@@ -916,50 +916,296 @@ $maxUnit = $units->sortByDesc('conversion_factor')->first();
     }
 
 
-        public function update(Request $request, $id)
-    {
-        $product = Product::with('stocksData')->find($id);
-        // $product = Product::with(['stocksData:*'])->find($id);
+//         public function update(Request $request, $id)
+//     {
+//         $product = Product::with('stocksData')->find($id);
+//         // $product = Product::with(['stocksData:*'])->find($id);
     
-        if (!$product) {
-            return response()->json(['error' => 'Product not found'], 404);
-        }
+//         if (!$product) {
+//             return response()->json(['error' => 'Product not found'], 404);
+//         }
 
-        $validatedData = $request->validate([
-            'thumbnail' => 'nullable',
-            'product_name' => 'string|max:255',
-            'sku' => 'string|max:255|unique:products,sku,' . $id,
-            'category_id' => 'string',
-            'sub_category_id' => 'nullable|string',
-            'manufacturer' => 'nullable|string',
-            'vendor_id' => 'nullable|string',
-            'model' => 'nullable|string',
-            'unit_of_measurement_category' => 'string',
+//         $validatedData = $request->validate([
+//             'thumbnail' => 'nullable',
+//             'product_name' => 'string|max:255',
+//             'sku' => 'string|max:255|unique:products,sku,' . $id,
+//             'category_id' => 'string',
+//             'sub_category_id' => 'nullable|string',
+//             'manufacturer' => 'nullable|string',
+//             'vendor_id' => 'nullable|string',
+//             'model' => 'nullable|string',
+//             'unit_of_measurement_category' => 'string',
         
-            'description' => 'nullable|string',
-            'returnable' => 'boolean',
-            'commit_stock_check' => 'boolean',
-            'inventory_alert_threshold' => 'integer|min:0',
-            'opening_stock' => 'integer',
-            'status' => ['nullable', Rule::in(['active', 'inactive'])],
-        ]);
+//             'description' => 'nullable|string',
+//             'returnable' => 'boolean',
+//             'commit_stock_check' => 'boolean',
+//             'inventory_alert_threshold' => 'integer|min:0',
+//             'opening_stock' => 'integer',
+//             'status' => ['nullable', Rule::in(['active', 'inactive'])],
+//         ]);
 
 
-        $barcodeNumber = $request->sku; // Unique barcode
-    if ($barcodeNumber) {
-        $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+//         $barcodeNumber = $request->sku; // Unique barcode
+//     if ($barcodeNumber) {
+//         $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
 
         
-        $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
-        Storage::put($imagePath, base64_decode($barcodeImage));
+//         $imagePath = 'public/barcodes/' . $barcodeNumber . '.png'; 
+//         Storage::put($imagePath, base64_decode($barcodeImage));
     
-        $savedBarcodePath = str_replace('public/', 'storage/', $imagePath);
+//         $savedBarcodePath = str_replace('public/', 'storage/', $imagePath);
+//     }
+
+//     // Add barcode data
+//     $validatedData['barcode_number'] = $barcodeNumber;
+//     $validatedData['generated_barcode'] = $barcodeImage;
+
+//     $productDetails = [
+//         'barcode_number' => $barcodeNumber,
+//         'name' => $request->product_name,
+//         'sku' => $request->sku,
+//         'description' => $request->description,
+//         'price' => number_format($request->selling_cost, 2),
+//         'stock' => $request->opening_stock
+//     ];
+
+
+//     if ($productDetails) {
+        
+//         $fileName = 'qrcode_' . time() . '.png';
+
+//         $productString = json_encode($productDetails, JSON_UNESCAPED_UNICODE);
+    
+//         // Generate QR code
+//         $qrcodeBase64 = (new DNS2D)->getBarcodePNG($productString, 'QRCODE');
+    
+    
+//         // $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
+//         // $qrcodeBase64 = (new DNS2D)->getBarcodePNG($productDetails, 'QRCODE');
+    
+    
+
+//         // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
+    
+//         $imagePath = 'public/qrcode/' . $fileName; 
+//         Storage::put($imagePath, base64_decode($qrcodeBase64));
+    
+//         $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
+    
+//         $validatedData['generated_qrcode'] = $qrcodeBase64;
+//     }
+
+
+//     if ($request->hasFile('thumbnail')) {
+//         $image = $request->file('thumbnail');
+//         $filename = time() . '_' . $image->getClientOriginalName();
+//         $image->move(public_path('product/thumbnails'), $filename);
+//         $validatedData['thumbnail']  = 'product/thumbnails/' . $filename;
+//     }
+
+//         $validatedData['location_id'] = json_encode(
+//             collect($request->storage_location)->pluck('location_id')->all()
+//         );
+//         $validatedData['quantity'] = json_encode(
+//             collect($request->storage_location)->pluck('quantity')->all()
+//         );
+//         $validatedData['unit_of_measure'] = json_encode(
+//             collect($request->storage_location)->pluck('unit_of_measure')->all()
+//         );
+//         $validatedData['per_unit_cost'] = json_encode(
+//             collect($request->storage_location)->pluck('per_unit_cost')->all()
+//         );
+//         $validatedData['total_cost'] = json_encode(
+//             collect($request->storage_location)->pluck('total_cost')->all()
+//         );
+//         $validatedData['opening_stock'] = $request->opening_stock;
+//         $product->update($validatedData);
+
+//         $multiLocation = $request->storage_location;
+//         $product_id=$id;
+
+
+
+//         // foreach ($multiLocation as $multiData) {
+            
+//         //     $product_location = Stock::where('product_id', $product_id)
+//         //         ->where('location_id', $multiData['location_id'])
+//         //         ->first();
+//         //     $quantity = $multiData['quantity'];
+            
+//         //     if ($product_location) {
+                
+//         //         $currentStock = $multiData['quantity'];
+//         //         $stockData = [
+//         //             'current_stock' => $currentStock,
+//         //             'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
+//         //             'per_unit_cost'=> $multiData['per_unit_cost'],
+//         //             'total_cost'=> $multiData['total_cost'],
+//         //             'quantity' => $quantity,
+//         //             'stock_date' => $validatedRequest['stock_date'] ?? null,
+//         //             'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+//         //             'vendor_id'     => $request->vendor_id,
+//         //             'category_id'   => $request->category_id,
+//         //             'location_id'   => $multiData['location_id'],
+//         //         ];
+
+//         //         $product_location->update($stockData);
+//         //     } else {
+               
+//         //         $currentStock = $multiData['quantity'] ?? 0;
+
+
+//         //         $stockData = [
+//         //             'product_id'    => $product->id,
+//         //             'vendor_id'     => $request->vendor_id,
+//         //             'category_id'   => $request->category_id,
+//         //             'location_id'   => $multiData['location_id'],
+//         //             'quantity' => $quantity,
+//         //             'current_stock' => $currentStock,
+//         //            'unit_of_measure'=> $multiData['unit_of_measure'],
+//         //             'per_unit_cost'          => $multiData['per_unit_cost'],
+//         //             'total_cost'          => $multiData['total_cost'],
+//         //             'stock_date' => $validatedRequest['stock_date'] ?? null,
+                    
+//         //         ];
+
+//         //         Stock::create($stockData);
+
+//         //     }
+
+//         // }
+
+
+//             // $product_locationDel = Stock::where('product_id', $product_id)->get();
+//             // $existingStocks = $product_locationDel->keyBy('location_id');
+//             // $newLocationIds = [];
+
+//             // foreach ($multiLocation as $multiData) {
+//             //     $locationId = $multiData['location_id'];
+//             //     $newLocationIds[] = $locationId;
+
+//             //     $quantity = $multiData['quantity'] ?? 0;
+
+//             //     $stockData = [
+//             //         'vendor_id' => $request->vendor_id,
+//             //         'category_id' => $request->category_id,
+//             //         'location_id' => $locationId,
+//             //         'quantity' => $quantity,
+//             //         'current_stock' => $quantity,
+//             //         'unit_of_measure' => $multiData['unit_of_measure'],
+//             //         'per_unit_cost' => $multiData['per_unit_cost'],
+//             //         'total_cost' => $multiData['total_cost'],
+//             //         'stock_date' => $validatedRequest['stock_date'] ?? null,
+//             //         'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+//             //     ];
+
+//             //     if (isset($existingStocks[$locationId])) {
+                    
+//             //         $existingStocks[$locationId]->update($stockData);
+//             //     } else {
+                    
+//             //         $stockData['product_id'] = $product_id;
+//             //         Stock::create($stockData);
+//             //     }
+//             // }
+
+            
+//             // $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+//             // foreach ($toDelete as $oldStock) {
+//             //     $oldStock->delete();
+//             // }
+
+//             // STEP 1: Set multiLocation from request
+// $multiLocation = is_array($request->storage_location) ? $request->storage_location : [];
+
+// // STEP 2: Existing stocks
+// $product_locationDel = Stock::where('product_id', $product_id)->get();
+// $existingStocks = $product_locationDel->keyBy('location_id');
+
+// // STEP 3: Loop through locations
+// $newLocationIds = [];
+
+// foreach ($multiLocation as $multiData) {
+//     $locationId = $multiData['location_id'];
+//     $newLocationIds[] = $locationId;
+
+//     $quantity = $multiData['quantity'] ?? 0;
+
+//     $stockData = [
+//         'vendor_id' => $request->vendor_id,
+//         'category_id' => $request->category_id,
+//         'location_id' => $locationId,
+//         'quantity' => $quantity,
+//         'current_stock' => $quantity,
+//         'unit_of_measure' => $multiData['unit_of_measure'],
+//         'per_unit_cost' => $multiData['per_unit_cost'],
+//         'total_cost' => $multiData['total_cost'],
+//         'stock_date' => $validatedRequest['stock_date'] ?? null,
+//         'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
+//     ];
+
+//     if (isset($existingStocks[$locationId])) {
+//         $existingStocks[$locationId]->update($stockData);
+//     } else {
+//         $stockData['product_id'] = $product_id;
+//         Stock::create($stockData);
+//     }
+// }
+
+// // STEP 4: Delete removed locations
+//             $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+//             foreach ($toDelete as $oldStock) {
+//                 $oldStock->delete();
+//             }
+
+
+//         $productUpdate = Product::with('stocksData')->find($id);
+       
+        
+//     return response()->json(['message' => 'Product updated successfully', 'product' => $productUpdate], 200);
+
+//     }
+
+
+public function update(Request $request, $id)
+{
+    $product = Product::with('stocksData')->find($id);
+
+    if (!$product) {
+        return response()->json(['error' => 'Product not found'], 404);
     }
 
-    // Add barcode data
-    $validatedData['barcode_number'] = $barcodeNumber;
-    $validatedData['generated_barcode'] = $barcodeImage;
+    $validatedData = $request->validate([
+        'thumbnail' => 'nullable',
+        'product_name' => 'string|max:255',
+        'sku' => 'string|max:255|unique:products,sku,' . $id,
+        'category_id' => 'string',
+        'sub_category_id' => 'nullable|string',
+        'manufacturer' => 'nullable|string',
+        'vendor_id' => 'nullable|string',
+        'model' => 'nullable|string',
+        'unit_of_measurement_category' => 'string',
+        'description' => 'nullable|string',
+        'returnable' => 'boolean',
+        'commit_stock_check' => 'boolean',
+        'inventory_alert_threshold' => 'integer|min:0',
+        'opening_stock' => 'integer',
+        'status' => ['nullable', Rule::in(['active', 'inactive'])],
+    ]);
 
+    // ✅ Generate Barcode
+    $barcodeNumber = $request->sku;
+    $barcodeImage = null;
+
+    if ($barcodeNumber) {
+        $barcodeImage = (new DNS1D)->getBarcodePNG($barcodeNumber, 'C39');
+        $imagePath = 'public/barcodes/' . $barcodeNumber . '.png';
+        Storage::put($imagePath, base64_decode($barcodeImage));
+        $validatedData['barcode_number'] = $barcodeNumber;
+        $validatedData['generated_barcode'] = $barcodeImage;
+    }
+
+    // ✅ Generate QR Code
     $productDetails = [
         'barcode_number' => $barcodeNumber,
         'name' => $request->product_name,
@@ -969,201 +1215,106 @@ $maxUnit = $units->sortByDesc('conversion_factor')->first();
         'stock' => $request->opening_stock
     ];
 
-
     if ($productDetails) {
-        
         $fileName = 'qrcode_' . time() . '.png';
-
         $productString = json_encode($productDetails, JSON_UNESCAPED_UNICODE);
-    
-        // Generate QR code
         $qrcodeBase64 = (new DNS2D)->getBarcodePNG($productString, 'QRCODE');
-    
-    
-        // $qrcodeBase64 = DNS2D::getBarcodePNG(json_encode($productDetails), 'QRCODE');
-        // $qrcodeBase64 = (new DNS2D)->getBarcodePNG($productDetails, 'QRCODE');
-    
-    
-
-        // $qrcodeBase64 = json_encode($productDetails).'QRCODE';
-    
-        $imagePath = 'public/qrcode/' . $fileName; 
+        $imagePath = 'public/qrcode/' . $fileName;
         Storage::put($imagePath, base64_decode($qrcodeBase64));
-    
-        $savedQRCodePath = str_replace('public/', 'storage/', $imagePath);
-    
         $validatedData['generated_qrcode'] = $qrcodeBase64;
     }
 
-
+    // ✅ Handle Thumbnail Upload
     if ($request->hasFile('thumbnail')) {
         $image = $request->file('thumbnail');
         $filename = time() . '_' . $image->getClientOriginalName();
         $image->move(public_path('product/thumbnails'), $filename);
-        $validatedData['thumbnail']  = 'product/thumbnails/' . $filename;
+        $validatedData['thumbnail'] = 'product/thumbnails/' . $filename;
     }
 
-        $validatedData['location_id'] = json_encode(
-            collect($request->storage_location)->pluck('location_id')->all()
-        );
-        $validatedData['quantity'] = json_encode(
-            collect($request->storage_location)->pluck('quantity')->all()
-        );
-        $validatedData['unit_of_measure'] = json_encode(
-            collect($request->storage_location)->pluck('unit_of_measure')->all()
-        );
-        $validatedData['per_unit_cost'] = json_encode(
-            collect($request->storage_location)->pluck('per_unit_cost')->all()
-        );
-        $validatedData['total_cost'] = json_encode(
-            collect($request->storage_location)->pluck('total_cost')->all()
-        );
-        $validatedData['opening_stock'] = $request->opening_stock;
-        $product->update($validatedData);
+    // ✅ Encode multi-location fields
+    $validatedData['location_id'] = json_encode(collect($request->storage_location)->pluck('location_id')->all());
+    $validatedData['quantity'] = json_encode(collect($request->storage_location)->pluck('quantity')->all());
+    $validatedData['unit_of_measure'] = json_encode(collect($request->storage_location)->pluck('unit_of_measure')->all());
+    $validatedData['per_unit_cost'] = json_encode(collect($request->storage_location)->pluck('per_unit_cost')->all());
+    $validatedData['total_cost'] = json_encode(collect($request->storage_location)->pluck('total_cost')->all());
 
-        $multiLocation = $request->storage_location;
-        $product_id=$id;
+    $product->update($validatedData);
 
+    // ✅ Update Stock per Location
+    $product_id = $id;
+    $multiLocation = is_array($request->storage_location) ? $request->storage_location : [];
 
+    $product_locationDel = Stock::where('product_id', $product_id)->get();
+    $existingStocks = $product_locationDel->keyBy('location_id');
+    $newLocationIds = [];
 
-        // foreach ($multiLocation as $multiData) {
-            
-        //     $product_location = Stock::where('product_id', $product_id)
-        //         ->where('location_id', $multiData['location_id'])
-        //         ->first();
-        //     $quantity = $multiData['quantity'];
-            
-        //     if ($product_location) {
-                
-        //         $currentStock = $multiData['quantity'];
-        //         $stockData = [
-        //             'current_stock' => $currentStock,
-        //             'unit_of_measure' => $multiData['unit_of_measure'] ?? $product_location->unit_of_measure,
-        //             'per_unit_cost'=> $multiData['per_unit_cost'],
-        //             'total_cost'=> $multiData['total_cost'],
-        //             'quantity' => $quantity,
-        //             'stock_date' => $validatedRequest['stock_date'] ?? null,
-        //             'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-        //             'vendor_id'     => $request->vendor_id,
-        //             'category_id'   => $request->category_id,
-        //             'location_id'   => $multiData['location_id'],
-        //         ];
+    foreach ($multiLocation as $multiData) {
+        $locationId = $multiData['location_id'];
+        $newLocationIds[] = $locationId;
+        $quantity = $multiData['quantity'] ?? 0;
 
-        //         $product_location->update($stockData);
-        //     } else {
-               
-        //         $currentStock = $multiData['quantity'] ?? 0;
+        $stockData = [
+            'vendor_id' => $request->vendor_id,
+            'category_id' => $request->category_id,
+            'location_id' => $locationId,
+            'quantity' => $quantity,
+            'current_stock' => $quantity,
+            'unit_of_measure' => $multiData['unit_of_measure'],
+            'per_unit_cost' => $multiData['per_unit_cost'],
+            'total_cost' => $multiData['total_cost'],
+            'stock_date' => $request->stock_date ?? null,
+            'reason_for_update' => $request->reason_for_update ?? null,
+        ];
 
-
-        //         $stockData = [
-        //             'product_id'    => $product->id,
-        //             'vendor_id'     => $request->vendor_id,
-        //             'category_id'   => $request->category_id,
-        //             'location_id'   => $multiData['location_id'],
-        //             'quantity' => $quantity,
-        //             'current_stock' => $currentStock,
-        //            'unit_of_measure'=> $multiData['unit_of_measure'],
-        //             'per_unit_cost'          => $multiData['per_unit_cost'],
-        //             'total_cost'          => $multiData['total_cost'],
-        //             'stock_date' => $validatedRequest['stock_date'] ?? null,
-                    
-        //         ];
-
-        //         Stock::create($stockData);
-
-        //     }
-
-        // }
-
-
-            // $product_locationDel = Stock::where('product_id', $product_id)->get();
-            // $existingStocks = $product_locationDel->keyBy('location_id');
-            // $newLocationIds = [];
-
-            // foreach ($multiLocation as $multiData) {
-            //     $locationId = $multiData['location_id'];
-            //     $newLocationIds[] = $locationId;
-
-            //     $quantity = $multiData['quantity'] ?? 0;
-
-            //     $stockData = [
-            //         'vendor_id' => $request->vendor_id,
-            //         'category_id' => $request->category_id,
-            //         'location_id' => $locationId,
-            //         'quantity' => $quantity,
-            //         'current_stock' => $quantity,
-            //         'unit_of_measure' => $multiData['unit_of_measure'],
-            //         'per_unit_cost' => $multiData['per_unit_cost'],
-            //         'total_cost' => $multiData['total_cost'],
-            //         'stock_date' => $validatedRequest['stock_date'] ?? null,
-            //         'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-            //     ];
-
-            //     if (isset($existingStocks[$locationId])) {
-                    
-            //         $existingStocks[$locationId]->update($stockData);
-            //     } else {
-                    
-            //         $stockData['product_id'] = $product_id;
-            //         Stock::create($stockData);
-            //     }
-            // }
-
-            
-            // $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
-            // foreach ($toDelete as $oldStock) {
-            //     $oldStock->delete();
-            // }
-
-            // STEP 1: Set multiLocation from request
-$multiLocation = is_array($request->storage_location) ? $request->storage_location : [];
-
-// STEP 2: Existing stocks
-$product_locationDel = Stock::where('product_id', $product_id)->get();
-$existingStocks = $product_locationDel->keyBy('location_id');
-
-// STEP 3: Loop through locations
-$newLocationIds = [];
-
-foreach ($multiLocation as $multiData) {
-    $locationId = $multiData['location_id'];
-    $newLocationIds[] = $locationId;
-
-    $quantity = $multiData['quantity'] ?? 0;
-
-    $stockData = [
-        'vendor_id' => $request->vendor_id,
-        'category_id' => $request->category_id,
-        'location_id' => $locationId,
-        'quantity' => $quantity,
-        'current_stock' => $quantity,
-        'unit_of_measure' => $multiData['unit_of_measure'],
-        'per_unit_cost' => $multiData['per_unit_cost'],
-        'total_cost' => $multiData['total_cost'],
-        'stock_date' => $validatedRequest['stock_date'] ?? null,
-        'reason_for_update' => $validatedRequest['reason_for_update'] ?? null,
-    ];
-
-    if (isset($existingStocks[$locationId])) {
-        $existingStocks[$locationId]->update($stockData);
-    } else {
-        $stockData['product_id'] = $product_id;
-        Stock::create($stockData);
+        if (isset($existingStocks[$locationId])) {
+            $existingStocks[$locationId]->update($stockData);
+        } else {
+            $stockData['product_id'] = $product_id;
+            Stock::create($stockData);
+        }
     }
+
+    // ✅ Delete removed locations
+    $toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
+    foreach ($toDelete as $oldStock) {
+        $oldStock->delete();
+    }
+
+    // ✅ Recalculate Opening Stock & Total Cost
+    $product = Product::find($id);
+    $locationIds = json_decode($product->location_id, true) ?: [];
+    $quantities = json_decode($product->quantity, true) ?: [];
+    $perUnitCosts = json_decode($product->per_unit_cost, true) ?: [];
+    $totalCosts = json_decode($product->total_cost, true) ?: [];
+
+    // Normalize data
+    if (is_array($perUnitCosts) && isset($perUnitCosts[0]) && is_string($perUnitCosts[0])) {
+        $perUnitCosts = explode(',', $perUnitCosts[0]);
+    }
+    if (is_array($totalCosts) && isset($totalCosts[0]) && is_string($totalCosts[0])) {
+        $totalCosts = explode(',', $totalCosts[0]);
+    }
+
+    // ✅ Calculate new opening stock (sum of quantities)
+    $productOpeningStock = array_sum(array_map('floatval', $quantities));
+
+    // ✅ Calculate new total cost (sum of all total_cost)
+    $totalCostSum = array_sum(array_map('floatval', $totalCosts));
+
+    // ✅ Update product record with recalculated values
+    $product->update([
+        'opening_stock' => $productOpeningStock,
+        'total_cost' => $totalCostSum,
+    ]);
+
+    // ✅ Return response with updated product and stocks
+    return response()->json([
+        'message' => 'Product updated successfully',
+        'product' => Product::with('stocksData')->find($id)
+    ], 200);
 }
 
-// STEP 4: Delete removed locations
-$toDelete = $product_locationDel->whereNotIn('location_id', $newLocationIds);
-foreach ($toDelete as $oldStock) {
-    $oldStock->delete();
-}
-
-
-            $productUpdate = Product::with('stocksData')->find($id);
-       
-    return response()->json(['message' => 'Product updated successfully', 'product' => $productUpdate], 200);
-
-    }
 
     public function destroy($id)
     {
