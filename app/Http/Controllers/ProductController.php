@@ -1524,7 +1524,7 @@ foreach ($toDelete as $oldStock) {
         'comment' => 'nullable|string',
         'opening_stock' => 'required|numeric',
         'storage_location' => 'required|array',
-        'storage_location.*.current_stock' => 'nullable|numeric',
+        'storage_location.*.current_stock' => '',
         'storage_location.*.quantity' => 'required|numeric',
         'storage_location.*.unit_of_measure' => 'nullable|string',
         'storage_location.*.per_unit_cost' => 'nullable|string',
@@ -1535,28 +1535,64 @@ foreach ($toDelete as $oldStock) {
 
     $reqLocations = $validated['storage_location'];
 
-     foreach ($reqLocations as $loc) {
-             $quantity = (float) $loc['quantity'];
+    //  foreach ($reqLocations as $loc) {
+    //          $quantity = (float) $loc['quantity'];
         
-        $adjustment = $loc['adjustment'];
-        $locationId = $loc['location_id'];
+    //     $adjustment = $loc['adjustment'];
+    //     $locationId = $loc['location_id'];
 
-        $stock = Stock::where('product_id', $product_id)
-            ->where('location_id', $locationId)
-            ->first();
+    //     $stock = Stock::where('product_id', $product_id)
+    //         ->where('location_id', $locationId)
+    //         ->first();
 
-            $oldStockProduct = $stock->current_stock;
-          $locationname =  Location::where('id',$locationId)->first();
-         $locaName = $locationname->name;
-        if ($adjustment === 'subtract') {
-             if ($quantity > $oldStockProduct) {
-                return response()->json([
-                    'error' => "Cannot subtract {$quantity} from location {$locaName}. Available stock: {$oldStockProduct}."
-                ], 422);
-            }
+    //         $oldStockProduct = $stock->current_stock;
+    //       $locationname =  Location::where('id',$locationId)->first();
+    //      $locaName = $locationname->name;
+    //     if ($adjustment === 'subtract') {
+    //          if ($quantity > $oldStockProduct) {
+    //             return response()->json([
+    //                 'error' => "Cannot subtract {$quantity} from location {$locaName}. Available stock: {$oldStockProduct}."
+    //             ], 422);
+    //         }
 
+    //     }
+    // }
+
+
+    foreach ($reqLocations as $loc) {
+    $quantity = (float) $loc['quantity'];
+    $adjustment = $loc['adjustment'];
+    $locationId = $loc['location_id'];
+
+    $stock = Stock::where('product_id', $product_id)
+        ->where('location_id', $locationId)
+        ->first();
+
+    // 🧩 Get location name safely
+    $location = Location::find($locationId);
+    $locaName = $location->name ?? 'Unknown';
+
+    // 🧩 Check if stock exists
+    if (!$stock) {
+        return response()->json([
+            'error' => "No stock record found for product ID {$product_id} at location {$locaName}."
+        ], 422);
+    }
+
+    $oldStockProduct = (float) $stock->current_stock;
+
+    // 🧩 If adjustment is subtract, validate stock availability
+    if ($adjustment === 'subtract') {
+        if ($quantity > $oldStockProduct) {
+            return response()->json([
+                'error' => "Cannot subtract {$quantity} from location {$locaName}. Available stock: {$oldStockProduct}."
+            ], 422);
         }
     }
+
+    // ✅ You can safely continue further logic here
+}
+
 
     $productLocations = [];
     $unitMeasures = [];
