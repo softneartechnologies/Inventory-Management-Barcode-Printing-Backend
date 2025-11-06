@@ -1982,11 +1982,18 @@ public function updateStock(Request $request, $product_id)
     }
 
     // ✅ Update product totals and JSON fields
+    // $product->update([
+    //     'opening_stock' => $totalProductStock,
+    //     'quantity' => json_encode(array_values($locationQuantities)),
+    //     'location_id' => json_encode(array_keys($locationQuantities)),
+    // ]);
+
     $product->update([
-        'opening_stock' => $totalProductStock,
+        'opening_stock' => $request->opening_stock,
         'quantity' => json_encode(array_values($locationQuantities)),
         'location_id' => json_encode(array_keys($locationQuantities)),
     ]);
+
 
     return response()->json(['message' => 'Stock added/updated successfully'], 200);
 }
