@@ -1326,11 +1326,15 @@ public function update(Request $request, $id)
     $totalCostSum = array_sum(array_map('floatval', $totalCosts));
 
     // ✅ Update product record with recalculated values
+    // $product->update([
+    //     'opening_stock' => $productOpeningStock,
+    //     'total_cost' => $totalCostSum,
+    // ]);
+
     $product->update([
-        'opening_stock' => $productOpeningStock,
+        'opening_stock' =>$request->opening_stock,
         'total_cost' => $totalCostSum,
     ]);
-
     // ✅ Return response with updated product and stocks
     return response()->json([
         'message' => 'Product updated successfully',
