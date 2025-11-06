@@ -489,6 +489,29 @@ public function store(Request $request)
     //     // 'status' => ['required', Rule::in(['active', 'inactive'])],
     // ]);
 
+    //  $validatedData = $request->validate([
+    //     'thumbnail' => '',
+    //     'product_name' => 'required|string|max:255',
+    //     'sku' => 'required|string|max:255|unique:products',
+    //     'category_id' => 'nullable|string',
+    //     'sub_category_id' => 'nullable|string',
+    //     'manufacturer' => 'nullable|string',
+    //     'vendor_id' => 'nullable|string',
+    //     'model' => 'nullable|string',
+    //     'unit_of_measurement_category' => 'nullable|numeric',
+    //     'description' => 'nullable|string',
+    //     'returnable' => 'boolean',
+    //     'commit_stock_check' => 'boolean',
+    //     'inventory_alert_threshold' => 'integer|min:0',
+    //     'location_id' => 'array',
+    //     'quantity' => 'nullable|numeric',
+    //     'unit_of_measure' => 'nullable|string',
+    //     'per_unit_cost' => 'nullable|numeric',
+    //     'total_cost' => 'nullable|string',
+    //     'opening_stock' => 'integer|min:0',
+    //     'status' => ['nullable', Rule::in(['active', 'inactive'])],
+    // ]);
+
      $validatedData = $request->validate([
         'thumbnail' => '',
         'product_name' => 'required|string|max:255',
@@ -508,7 +531,7 @@ public function store(Request $request)
         'unit_of_measure' => 'nullable|string',
         'per_unit_cost' => 'nullable|numeric',
         'total_cost' => 'nullable|string',
-        'opening_stock' => 'integer|min:0',
+        'opening_stock' => 'numeric|min:0',
         'status' => ['nullable', Rule::in(['active', 'inactive'])],
     ]);
 
@@ -1189,7 +1212,7 @@ public function update(Request $request, $id)
         'returnable' => 'boolean',
         'commit_stock_check' => 'boolean',
         'inventory_alert_threshold' => 'integer|min:0',
-        'opening_stock' => 'integer',
+        'opening_stock' => 'numeric|min:0',
         'status' => ['nullable', Rule::in(['active', 'inactive'])],
     ]);
 
