@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Subcategory;
 use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
@@ -168,15 +169,44 @@ class CategoryController extends Controller
     }
 
     // ✅ Delete Category
+    // public function destroy($id)
+    // {
+    //     $category = Category::find($id);
+    //     if (!$category) {
+    //         return response()->json(['error' => 'Category not found'], 404);
+    //     }
+
+
+    //     $category->delete();
+
+    //     $subcategory = Subcategory::where('category_id ',$id);
+    //     if (!$subcategory) {
+    //         return response()->json(['error' => 'Subcategory not found'], 404);
+    //     }
+
+    //     $subcategory->delete();
+
+
+    //     return response()->json(['message' => 'Category deleted successfully'], 200);
+    // }
     public function destroy($id)
-    {
-        $category = Category::find($id);
-        if (!$category) {
-            return response()->json(['error' => 'Category not found'], 404);
-        }
+{
+    $category = Category::find($id);
 
-        $category->delete();
-
-        return response()->json(['message' => 'Category deleted successfully'], 200);
+    if (!$category) {
+        return response()->json(['error' => 'Category not found'], 404);
     }
+
+    // Delete all related subcategories first
+    $deletedSubcategories = Subcategory::where('category_id', $id)->delete();
+
+    // Then delete the category
+    $category->delete();
+
+    return response()->json([
+        'message' => 'Category and related subcategories deleted successfully',
+        'deleted_subcategories' => $deletedSubcategories
+    ], 200);
+}
+
 }
