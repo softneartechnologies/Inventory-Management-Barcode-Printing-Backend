@@ -4091,6 +4091,274 @@ if ($request->filled('category') || $request->filled('reason') || $request->fill
 //     }
 // }
 
+// public function uploadCSV(Request $request)
+// {
+//     $request->validate([
+//         'file' => 'required|mimes:csv,txt|max:2048'
+//     ]);
+
+//     try {
+
+//         $file = $request->file('file');
+//         $handle = fopen($file->getPathname(), "r");
+
+//         // Read Header
+//         $header = fgetcsv($handle);
+//         $header = array_map('trim', $header);
+
+//         $expectedHeaders = [
+//             "product_name", "sku*", "category_id", "sub_category_id", "manufacturer",
+//             "vendor_id", "model", "unit_of_measurement_category", "description",
+//             "returnable", "commit_stock_check", "inventory_alert_threshold",
+//             "opening_stock", "location_id", "quantity", "unit_of_measure",
+//             "per_unit_cost", "total_cost", "status"
+//         ];
+
+//         if ($header !== $expectedHeaders) {
+//             return response()->json(['error' => 'Invalid CSV format.'], 400);
+//         }
+
+//         $invalidRows = [];
+//         $rowNumber   = 2;
+
+//         while ($row = fgetcsv($handle)) {
+
+//             if ($row === false) continue;
+
+//             $row = array_map('trim', $row);
+
+//             $productName = $row[0] ?? null;
+//             $sku = $row[1] ?? null;
+
+//             if (empty($productName) || empty($sku)) {
+//                 $invalidRows[] = $rowNumber++;
+//                 continue;
+//             }
+
+//             $sku = strtoupper(trim($sku)); // NO VALIDATION REQUIRED
+
+//             // ----------------------------------------------------
+//             // CHECK IF PRODUCT EXISTS (Duplicate SKU)
+//             // ----------------------------------------------------
+//             $existingProduct = Product::where('sku', $sku)->first();
+
+//             if ($existingProduct && $existingProduct->product_name !== $productName) {
+//                 return response()->json([
+//                     'error' => "Duplicate SKU found = {$sku}"
+//                 ], 422);
+//             }
+
+//             // ----------------------------------------------------
+//             // CREATE / GET RELATED CATEGORY, SUBCATEGORY ETC
+//             // ----------------------------------------------------
+
+//             $locationNames = array_map('trim', explode(",", $row[13] ?? ''));
+//             $locationIds = [];
+
+//             foreach ($locationNames as $name) {
+//                 if (!empty($name)) {
+//                     $location = \App\Models\Location::firstOrCreate(['name' => $name]);
+//                     $locationIds[] = $location->id;
+//                 }
+//             }
+
+//             $manufacturer = Manufacturer::firstOrCreate(
+//                 ['name' => $row[4]],
+//                 ['status' => 'active']
+//             );
+
+//             $category = !empty($row[2]) ? Category::firstOrCreate(['name' => $row[2]]) : null;
+//             $subcategory = (!empty($row[3]) && $category)
+//                 ? Subcategory::firstOrCreate(['name' => $row[3], 'category_id' => $category->id])
+//                 : null;
+
+//             $vendor = !empty($row[5])
+//                 ? Vendor::firstOrCreate(['vendor_name' => $row[5]])
+//                 : null;
+
+//             // UOM
+//             $uomUnitsNames = [];
+//             $uomCategory = null;
+
+//             if (!empty($row[7])) {
+
+//                 $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]]);
+
+//                 $unitNames = array_map('trim', explode(",", $row[15] ?? ''));
+
+//                 foreach ($unitNames as $u) {
+//                     if (!empty($u)) {
+//                         $uomUnit = UomUnit::firstOrCreate(
+//                             ['unit_name' => $u],
+//                             [
+//                                 'uom_category_id' => $uomCategory->id,
+//                                 'abbreviation' => $u,
+//                                 'reference' => 1,
+//                                 'ratio' => 1,
+//                                 'rounding' => 0.01,
+//                                 'active' => 1
+//                             ]
+//                         );
+//                         $uomUnitsNames[] = $uomUnit->unit_name;
+//                     }
+//                 }
+//             }
+
+//             // ----------------------------------------------------
+//             // SAFE NUMERIC PROCESSING
+//             // ----------------------------------------------------
+
+//             $quantities = array_map('intval', explode(',', $row[14] ?? '0'));
+//             $unitMeasures = explode(',', $row[15] ?? '');
+//             $perUnitCosts = array_map('floatval', explode(',', $row[16] ?? '0'));
+//             $totalCosts = array_map('floatval', explode(',', $row[17] ?? '0'));
+
+//             $max = max(
+//                 count($locationIds),
+//                 count($quantities),
+//                 count($unitMeasures),
+//                 count($perUnitCosts),
+//                 count($totalCosts)
+//             );
+
+//             $locationIds  = array_pad($locationIds, $max, null);
+//             $quantities   = array_pad($quantities, $max, 0);
+//             $unitMeasures = array_pad($unitMeasures, $max, '');
+//             $perUnitCosts = array_pad($perUnitCosts, $max, 0);
+//             $totalCosts   = array_pad($totalCosts, $max, 0);
+
+//             // ----------------------------------------------------
+//             // BARCODE GENERATION (NO VALIDATION)
+//             // ----------------------------------------------------
+//             try {
+//                 $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
+//                 $barcodePath = "public/barcodes/{$sku}.png";
+//                 Storage::put($barcodePath, $barcodeImage);
+//                 $savedBarcodePath = str_replace("public/", "storage/", $barcodePath);
+//             } catch (\Throwable $e) {
+//                 $savedBarcodePath = null;
+//             }
+
+//             // ----------------------------------------------------
+//             // QR CODE GENERATION
+//             // ----------------------------------------------------
+//             try {
+//                 $qrImage = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
+//                 $qrFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+//                 $qrPath = "public/qrcode/{$qrFile}";
+//                 Storage::put($qrPath, $qrImage);
+//                 $savedQRCodePath = str_replace("public/", "storage/", $qrPath);
+//             } catch (\Throwable $e) {
+//                 $savedQRCodePath = null;
+//             }
+
+//             // ----------------------------------------------------
+//             // CREATE OR UPDATE PRODUCT
+//             // ----------------------------------------------------
+
+//             if ($existingProduct) {
+//                 // UPDATE PRODUCT
+//                 $existingProduct->update([
+//                     'product_name' => $productName,
+//                     'category_id'  => $category?->id,
+//                     'sub_category_id' => $subcategory?->id,
+//                     'manufacturer' => $manufacturer->name,
+//                     'vendor_id' => $vendor?->id,
+//                     'model' => $row[6],
+//                     'unit_of_measurement_category' => $uomCategory?->id,
+//                     'description' => $row[8],
+//                     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+//                     'commit_stock_check' => (float)($row[10] ?? 0),
+//                     'inventory_alert_threshold' => (int)($row[11] ?? 0),
+//                     'location_id' => json_encode($locationIds),
+//                     'quantity' => json_encode($quantities),
+//                     'unit_of_measure' => json_encode($uomUnitsNames),
+//                     'per_unit_cost' => json_encode($perUnitCosts),
+//                     'total_cost' => json_encode($totalCosts),
+//                     'status' => $row[18] ?? 'inactive',
+//                     'generated_barcode' => $savedBarcodePath ?? $existingProduct->generated_barcode,
+//                     'generated_qrcode' => $savedQRCodePath ?? $existingProduct->generated_qrcode,
+//                 ]);
+
+//                 $product = $existingProduct;
+
+//             } else {
+//                 // CREATE NEW PRODUCT
+//                 $product = Product::create([
+//                     'product_name' => $productName,
+//                     'sku' => $sku,
+//                     'category_id'  => $category?->id,
+//                     'sub_category_id' => $subcategory?->id,
+//                     'manufacturer' => $manufacturer->name,
+//                     'vendor_id' => $vendor?->id,
+//                     'model' => $row[6],
+//                     'unit_of_measurement_category' => $uomCategory?->id,
+//                     'description' => $row[8],
+//                     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
+//                     'commit_stock_check' => (float)($row[10] ?? 0),
+//                     'inventory_alert_threshold' => (int)($row[11] ?? 0),
+//                     'opening_stock' => (int)($row[12] ?? 0),
+//                     'location_id' => json_encode($locationIds),
+//                     'quantity' => json_encode($quantities),
+//                     'unit_of_measure' => json_encode($uomUnitsNames),
+//                     'per_unit_cost' => json_encode($perUnitCosts),
+//                     'total_cost' => json_encode($totalCosts),
+//                     'status' => $row[18] ?? 'inactive',
+//                     'barcode_number' => $sku,
+//                     'generated_barcode' => $savedBarcodePath,
+//                     'generated_qrcode' => $savedQRCodePath,
+//                 ]);
+//             }
+
+//             // ----------------------------------------------------
+//             // STOCK ENTRY
+//             // ----------------------------------------------------
+
+//             $totalStock = 0;
+
+//             foreach ($locationIds as $i => $locId) {
+
+//                 if (!$locId) continue;
+
+//                 $qty = $quantities[$i] ?? 0;
+//                 $totalStock += $qty;
+
+//                 Stock::updateOrCreate(
+//                     [
+//                         'product_id' => $product->id,
+//                         'location_id' => $locId
+//                     ],
+//                     [
+//                         'vendor_id' => $vendor?->id,
+//                         'category_id' => $category?->id,
+//                         'current_stock' => $qty,
+//                         'quantity' => $qty,
+//                         'unit_of_measure' => $unitMeasures[$i] ?? '',
+//                         'per_unit_cost' => $perUnitCosts[$i] ?? 0,
+//                         'total_cost' => $totalCosts[$i] ?? 0,
+//                         'stock_date' => now()
+//                     ]
+//                 );
+//             }
+
+//             $product->opening_stock = $totalStock;
+//             $product->save();
+
+//             $rowNumber++;
+//         }
+
+//         fclose($handle);
+
+//         return response()->json([
+//             'message' => 'CSV uploaded successfully.',
+//             'invalid_rows' => $invalidRows
+//         ]);
+
+//     } catch (\Exception $e) {
+//         return response()->json(['error' => $e->getMessage()], 500);
+//     }
+// }
+
 public function uploadCSV(Request $request)
 {
     $request->validate([
@@ -4133,6 +4401,17 @@ public function uploadCSV(Request $request)
             if (empty($productName) || empty($sku)) {
                 $invalidRows[] = $rowNumber++;
                 continue;
+            }
+
+            // ⭐ NEW VALIDATION (Opening Stock vs Quantity)
+            $openingStock = $row[12] ?? null;   // opening_stock column
+            $quantityValue = trim($row[14] ?? '');  // quantity column
+
+            // If opening_stock has value, quantity cannot be empty
+            if (!empty($openingStock) && (empty($quantityValue) || $quantityValue === "")) {
+                return response()->json([
+                    'error' => "Row {$rowNumber}: Quantity cannot be empty when opening_stock has a value."
+                ], 422);
             }
 
             $sku = strtoupper(trim($sku)); // NO VALIDATION REQUIRED
@@ -4228,7 +4507,7 @@ public function uploadCSV(Request $request)
             $totalCosts   = array_pad($totalCosts, $max, 0);
 
             // ----------------------------------------------------
-            // BARCODE GENERATION (NO VALIDATION)
+            // BARCODE GENERATION
             // ----------------------------------------------------
             try {
                 $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
@@ -4257,7 +4536,6 @@ public function uploadCSV(Request $request)
             // ----------------------------------------------------
 
             if ($existingProduct) {
-                // UPDATE PRODUCT
                 $existingProduct->update([
                     'product_name' => $productName,
                     'category_id'  => $category?->id,
@@ -4283,7 +4561,6 @@ public function uploadCSV(Request $request)
                 $product = $existingProduct;
 
             } else {
-                // CREATE NEW PRODUCT
                 $product = Product::create([
                     'product_name' => $productName,
                     'sku' => $sku,

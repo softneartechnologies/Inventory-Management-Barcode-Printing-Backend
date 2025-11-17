@@ -1033,70 +1033,177 @@ $low_stock_alert = $inventory_alert->count();
     $startDate = $request->input('start_date');
     $endDate   = $request->input('end_date');
 
-    $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
-            'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
-            'product.category:id,name',
-            'product.orders:id,product_id,quantity',
-            'vendor:id,vendor_name',
-            'employee:id,employee_name',
-            'user:id,name',
-            'location:id,name',
-            'machine:id,name',
-            'workStation:id,name',
-            'department:id,name'
-        ])
-        ->when($startDate && $endDate, function ($query) use ($startDate, $endDate) {
-            $query->whereBetween('created_at', [
-                Carbon::parse($startDate)->startOfDay(),
-                Carbon::parse($endDate)->endOfDay(),
-            ]);
-        })
-        ->when($startDate && !$endDate, function ($query) use ($startDate) {
-            $query->whereDate('created_at', '>=', Carbon::parse($startDate)->startOfDay());
-        })
-        ->when(!$startDate && $endDate, function ($query) use ($endDate) {
-            $query->whereDate('created_at', '<=', Carbon::parse($endDate)->endOfDay());
-        })
-        ->get();
+    // $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
+    //         'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+    //         'product.category:id,name',
+    //         'product.orders:id,product_id,quantity',
+    //         'vendor:id,vendor_name',
+    //         'employee:id,employee_name',
+    //         'user:id,name',
+    //         'location:id,name',
+    //         'machine:id,name',
+    //         'workStation:id,name',
+    //         'department:id,name'
+    //     ])
+    //     ->when($startDate && $endDate, function ($query) use ($startDate, $endDate) {
+    //         $query->whereBetween('created_at', [
+    //             Carbon::parse($startDate)->startOfDay(),
+    //             Carbon::parse($endDate)->endOfDay(),
+    //         ]);
+    //     })
+    //     ->when($startDate && !$endDate, function ($query) use ($startDate) {
+    //         $query->whereDate('created_at', '>=', Carbon::parse($startDate)->startOfDay());
+    //     })
+    //     ->when(!$startDate && $endDate, function ($query) use ($endDate) {
+    //         $query->whereDate('created_at', '<=', Carbon::parse($endDate)->endOfDay());
+    //     })
+    //     ->get();
 
-    $totalIssuesItemValue = $topscanRecordsIssuesItemValue->count();
+    // $totalIssuesItemValue = $topscanRecordsIssuesItemValue->count();
 
-    $topTenIssuesItemValue = $topscanRecordsIssuesItemValue
-        ->groupBy('product_id')
-        ->map(function ($items, $productId) use ($totalIssuesItemValue) {
-            $counts = $items->count();
-            $percentage = ($totalIssuesItemValue > 0) ? round(($counts / $totalIssuesItemValue) * 100, 2) : 0;
+    // $topTenIssuesItemValue = $topscanRecordsIssuesItemValue
+    //     ->groupBy('product_id')
+    //     ->map(function ($items, $productId) use ($totalIssuesItemValue) {
+    //         $counts = $items->count();
+    //         $percentage = ($totalIssuesItemValue > 0) ? round(($counts / $totalIssuesItemValue) * 100, 2) : 0;
+    //         $issueValue = $items->sum(function ($scan) {
+    //             $product = $scan->product;
+    //             if (!$product) {
+    //                 return 0;
+    //             }
 
-            // Issues product value (example: orders quantity × product cost)
-            $issueValue = $items->sum(function ($scan) {
-                $product = $scan->product;
-                if (!$product) {
-                    return 0;
-                }
+    //             $stock_update = Stock::where('product_id', $product->id)->get();
 
-                $stock_update = Stock::where('product_id', $product->id)->get();
+    //             $total = $stock_update->sum(function ($item) {
+    //                 return (float) $item->total_cost;
+    //             });
 
-                $total = $stock_update->sum(function ($item) {
-                    return (float) $item->total_cost;
-                });
+    //             $totalQty = $product->orders->sum('quantity') ?? 0;
 
-                $totalQty = $product->orders->sum('quantity') ?? 0;
+    //             return $totalQty * ($total ?? 0);
+    //         });
 
-                return $totalQty * ($total ?? 0);
-            });
+    //         return [
+    //             'product_id'   => $productId,
+    //             'product_name' => optional($items->first()->product)->product_name,
+    //             'category'     => optional(optional($items->first()->product)->category)->name,
+    //             'issues_count' => $counts,
+    //             'percentage'   => $percentage,
+    //             'issue_value'  => $issueValue,
+    //         ];
+    //     })->sortByDesc('issue_value')->take(10)->values();
 
-            return [
-                'product_id'   => $productId,
-                'product_name' => optional($items->first()->product)->product_name,
-                'category'     => optional(optional($items->first()->product)->category)->name,
-                'issues_count' => $counts,
-                'percentage'   => $percentage,
-                'issue_value'  => $issueValue,
-            ];
-        })
-        ->sortByDesc('issue_value')
-        ->take(10) // top 10 items
-        ->values();
+
+
+     // Step 1: Get all scan records with product relation
+
+    // $topscanRecordsIssuesItemValue = ScanRecord::with(['product', 'product.category', 'product.orders'])->get();
+
+    // Step 2: Total issues count
+    // $totalIssuesItemValue = $topscanRecordsIssuesItemValue->count();
+
+    // Step 3: Group, calculate and transform data
+
+ 
+    // $startDate = $request->start_date;
+    // $endDate   = $request->end_date;
+
+    // Fetch records with relations
+$topscanRecordsIssuesItemValue = ScanInOutProduct::with([
+    'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+    'product.category:id,name',
+    'product.orders:id,product_id,quantity',
+    'vendor:id,vendor_name',
+    'employee:id,employee_name',
+    'user:id,name',
+    'location:id,name',
+    'machine:id,name',
+    'workStation:id,name',
+    'department:id,name'
+])
+->when($startDate && $endDate, function ($q) use ($startDate, $endDate) {
+    $q->whereBetween('created_at', [
+        Carbon::parse($startDate)->startOfDay(),
+        Carbon::parse($endDate)->endOfDay(),
+    ]);
+})
+->when($startDate && !$endDate, function ($q) use ($startDate) {
+    $q->whereDate('created_at', '>=', Carbon::parse($startDate)->startOfDay());
+})
+->when(!$startDate && $endDate, function ($q) use ($endDate) {
+    $q->whereDate('created_at', '<=', Carbon::parse($endDate)->endOfDay());
+})
+->get();
+
+// STEP 1: Group & calculate issue value
+$itemsCollection = $topscanRecordsIssuesItemValue
+    ->groupBy('product_id')
+    ->map(function ($items, $productId) {
+
+        $product = $items->first()->product;
+        if (!$product) return null;
+
+        // Fetch stock cost
+        $totalCost = Stock::where('product_id', $product->id)->sum('total_cost');
+
+        // Total issued quantity
+        $totalQty = $product->orders->sum('quantity') ?? 0;
+
+        // Final issued value
+        $issueValue = $totalQty * $totalCost;
+
+        return [
+            'product_id'   => $productId,
+            'product_name' => $product->product_name,
+            'category'     => optional($product->category)->name,
+            'issues_count' => $items->count(),
+            'issue_value'  => $issueValue,
+        ];
+    })
+    ->filter();
+
+// STEP 2: Total issue VALUE (percentage base)
+$totalIssueValue = $itemsCollection->sum('issue_value');
+
+// STEP 3: Add percentage using VALUE logic
+$topTenIssuesItemValue = $itemsCollection
+    ->map(function ($item) use ($totalIssueValue) {
+
+        $item['percentage'] = $totalIssueValue > 0
+            ? round(($item['issue_value'] / $totalIssueValue) * 100, 2)
+            : 0;
+
+        return $item;
+    })
+    ->sortByDesc('issue_value')
+    ->take(10)
+    ->values();
+
+
+    // Prepare chart-ready response
+    // return response()->json([
+    //     'title'  => "Top 10 Issued Items by Value (₹)",
+    //     'labels' => $topTen->pluck('product_name'),
+    //     'values' => $topTen->pluck('issue_value')->map(function($val){
+    //         // Format numbers: 45K, 1.2M etc.
+    //         if ($val >= 10000000) return round($val/10000000, 1).'Cr';
+    //         if ($val >= 100000) return round($val/100000, 1).'L';
+    //         if ($val >= 1000) return round($val/1000, 1).'K';
+    //         return $val;
+    //     }),
+    //     'raw_values' => $topTen->pluck('issue_value'), // actual values for chart scale
+    //     'items'  => $topTen
+    // ]);
+
+
+
+    // Step 4: Format for chart
+    // return response()->json([
+    //     'labels' => $topTenIssuesItemValue->pluck('product_name'),
+    //     'values' => $topTenIssuesItemValue->pluck('issue_value'),
+    //     'items'  => $topTenIssuesItemValue, // full data if needed
+    // ]);
+
 
     // return response()->json([
     //     'total_issues' => $totalIssuesItemValue,
