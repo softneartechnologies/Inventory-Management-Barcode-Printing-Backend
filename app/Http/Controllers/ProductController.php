@@ -4374,11 +4374,17 @@ public function uploadCSV(Request $request)
         $header = fgetcsv($handle);
         $header = array_map('trim', $header);
 
+        // $expectedHeaders = [
+        //     "product_name", "sku*", "category_id", "sub_category_id", "manufacturer",
+        //     "vendor_id", "model", "unit_of_measurement_category", "description",
+        //     "returnable", "commit_stock_check", "inventory_alert_threshold",
+        //     "opening_stock", "location_id", "quantity", "unit_of_measure",
+        //     "per_unit_cost", "total_cost", "status"
+        // ];
         $expectedHeaders = [
             "product_name", "sku*", "category_id", "sub_category_id", "manufacturer",
             "vendor_id", "model", "unit_of_measurement_category", "description",
-            "returnable", "commit_stock_check", "inventory_alert_threshold",
-            "opening_stock", "location_id", "quantity", "unit_of_measure",
+            "returnable", "commit_stock_check", "inventory_alert_threshold", "location_id", "quantity", "unit_of_measure",
             "per_unit_cost", "total_cost", "status"
         ];
 
@@ -4404,15 +4410,15 @@ public function uploadCSV(Request $request)
             }
 
             // ⭐ NEW VALIDATION (Opening Stock vs Quantity)
-            $openingStock = $row[12] ?? null;   // opening_stock column
-            $quantityValue = trim($row[14] ?? '');  // quantity column
+            // $openingStock = $row[12] ?? null;   // opening_stock column
+            $quantityValue = trim($row[13] ?? '');  // quantity column
 
             // If opening_stock has value, quantity cannot be empty
-            if (!empty($openingStock) && (empty($quantityValue) || $quantityValue === "")) {
-                return response()->json([
-                    'error' => "Row {$rowNumber}: Quantity cannot be empty when opening_stock has a value."
-                ], 422);
-            }
+            // if (!empty($openingStock) && (empty($quantityValue) || $quantityValue === "")) {
+            //     return response()->json([
+            //         'error' => "Row {$rowNumber}: Quantity cannot be empty when opening_stock has a value."
+            //     ], 422);
+            // }
 
             $sku = strtoupper(trim($sku)); // NO VALIDATION REQUIRED
 
@@ -4431,7 +4437,7 @@ public function uploadCSV(Request $request)
             // CREATE / GET RELATED CATEGORY, SUBCATEGORY ETC
             // ----------------------------------------------------
 
-            $locationNames = array_map('trim', explode(",", $row[13] ?? ''));
+            $locationNames = array_map('trim', explode(",", $row[12] ?? ''));
             $locationIds = [];
 
             foreach ($locationNames as $name) {
@@ -4463,7 +4469,7 @@ public function uploadCSV(Request $request)
 
                 $uomCategory = UomCategory::firstOrCreate(['name' => $row[7]]);
 
-                $unitNames = array_map('trim', explode(",", $row[15] ?? ''));
+                $unitNames = array_map('trim', explode(",", $row[14] ?? ''));
 
                 foreach ($unitNames as $u) {
                     if (!empty($u)) {
@@ -4487,10 +4493,10 @@ public function uploadCSV(Request $request)
             // SAFE NUMERIC PROCESSING
             // ----------------------------------------------------
 
-            $quantities = array_map('intval', explode(',', $row[14] ?? '0'));
-            $unitMeasures = explode(',', $row[15] ?? '');
-            $perUnitCosts = array_map('floatval', explode(',', $row[16] ?? '0'));
-            $totalCosts = array_map('floatval', explode(',', $row[17] ?? '0'));
+            $quantities = array_map('intval', explode(',', $row[13] ?? '0'));
+            $unitMeasures = explode(',', $row[14] ?? '');
+            $perUnitCosts = array_map('floatval', explode(',', $row[15] ?? '0'));
+            $totalCosts = array_map('floatval', explode(',', $row[16] ?? '0'));
 
             $max = max(
                 count($locationIds),
@@ -4535,6 +4541,10 @@ public function uploadCSV(Request $request)
             // CREATE OR UPDATE PRODUCT
             // ----------------------------------------------------
 
+            $totalQuantity = array_sum($quantities); 
+            $jsonQuantities = json_encode($quantities);
+
+
             if ($existingProduct) {
                 $existingProduct->update([
                     'product_name' => $productName,
@@ -4549,11 +4559,12 @@ public function uploadCSV(Request $request)
                     'commit_stock_check' => (float)($row[10] ?? 0),
                     'inventory_alert_threshold' => (int)($row[11] ?? 0),
                     'location_id' => json_encode($locationIds),
+                    'opening_stock' => $totalQuantity ?? 0,
                     'quantity' => json_encode($quantities),
                     'unit_of_measure' => json_encode($uomUnitsNames),
                     'per_unit_cost' => json_encode($perUnitCosts),
                     'total_cost' => json_encode($totalCosts),
-                    'status' => $row[18] ?? 'inactive',
+                    'status' => $row[17] ?? 'active',
                     'generated_barcode' => $savedBarcodePath ?? $existingProduct->generated_barcode,
                     'generated_qrcode' => $savedQRCodePath ?? $existingProduct->generated_qrcode,
                 ]);
@@ -4574,13 +4585,14 @@ public function uploadCSV(Request $request)
                     'returnable' => strtolower($row[9]) === 'yes' ? 1 : 0,
                     'commit_stock_check' => (float)($row[10] ?? 0),
                     'inventory_alert_threshold' => (int)($row[11] ?? 0),
-                    'opening_stock' => (int)($row[12] ?? 0),
+                    // 'opening_stock' => (int)($row[12] ?? 0),
+                    'opening_stock' => $totalQuantity ?? 0,
                     'location_id' => json_encode($locationIds),
                     'quantity' => json_encode($quantities),
                     'unit_of_measure' => json_encode($uomUnitsNames),
                     'per_unit_cost' => json_encode($perUnitCosts),
                     'total_cost' => json_encode($totalCosts),
-                    'status' => $row[18] ?? 'inactive',
+                    'status' => $row[18] ?? 'active',
                     'barcode_number' => $sku,
                     'generated_barcode' => $savedBarcodePath,
                     'generated_qrcode' => $savedQRCodePath,
