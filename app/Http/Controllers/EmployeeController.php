@@ -651,173 +651,448 @@ class EmployeeController extends Controller
     //     ], 200);
     // }
 
-    public function uploadEmployeeCSV(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|file|mimes:csv,txt'
-        ]);
+    // public function uploadEmployeeCSV(Request $request)
+    // {
+    //     $request->validate([
+    //         'file' => 'required|file|mimes:csv,txt'
+    //     ]);
 
-        $file = $request->file('file');
-        $handle = fopen($file->getPathname(), "r");
+    //     $file = $request->file('file');
+    //     $handle = fopen($file->getPathname(), "r");
 
-        $header = fgetcsv($handle);
-        $expectedHeaders = array_map('trim', [
-            "employee_id", "employee_name", "department", "work_station",
-            "access_for_login", "role_id", "email", "password", "status"
-        ]);
+    //     $header = fgetcsv($handle);
+    //     $expectedHeaders = array_map('trim', [
+    //         "employee_id", "employee_name", "department", "work_station",
+    //         "access_for_login", "role_id", "email", "password", "status"
+    //     ]);
 
-        $header = array_map('trim', $header);
-        if ($header !== $expectedHeaders) {
-            return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
-        }
+    //     $header = array_map('trim', $header);
+    //     if ($header !== $expectedHeaders) {
+    //         return response()->json(['error' => 'Invalid CSV format. Please use the correct template.'], 400);
+    //     }
 
-        $invalidRows = [];
-        $rowNumber = 2; // CSV starts from line 2 after header
+    //     $invalidRows = [];
+    //     $rowNumber = 2; // CSV starts from line 2 after header
 
-        while (($row = fgetcsv($handle)) !== false) {
-            $row = array_map('trim', $row);
+    //     while (($row = fgetcsv($handle)) !== false) {
+    //         $row = array_map('trim', $row);
 
-            if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
-                $invalidRows[] = $rowNumber++;
-                continue;
-            }
-              $emailConflict = User::where('email', $row[6])
-                        ->exists();
-                        if($emailConflict){
-                            return response()->json([
-                                'error' => 'CSV not updated email is exists .'.$row[6],
-                                'message' => 'CSV not updated email is exists .'.$row[6],
-                                'invalid_rows' => $invalidRows
-                            ], 404);
-                    }
+    //         if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+    //             $invalidRows[] = $rowNumber++;
+    //             continue;
+    //         }
+    //           $emailConflict = User::where('email', $row[6])
+    //                     ->exists();
+    //                     if($emailConflict){
+    //                         return response()->json([
+    //                             'error' => 'CSV not updated email is exists .'.$row[6],
+    //                             'message' => 'CSV not updated email is exists .'.$row[6],
+    //                             'invalid_rows' => $invalidRows
+    //                         ], 404);
+    //                 }
         
-            // Role
-            $department = Department::firstOrCreate(
-                    ['name' => $row[2]],
-                    ['description' => 'HR Department']
-                );
+    //         // Role
+    //         $department = Department::firstOrCreate(
+    //                 ['name' => $row[2]],
+    //                 ['description' => 'HR Department']
+    //             );
 
-                // Get or create workstation with department_id
-                $workstation = Workstation::firstOrCreate(
-                    ['name' => $row[3], 'department_id' => $department->id],
-                    ['name' => $row[3], 'department_id' => $department->id]
-                );
-// print_r($row[0]);die;
-            // Employee
-          $employee = Employee::where('employee_id', $row[0])->first();
+    //             // Get or create workstation with department_id
+    //             $workstation = Workstation::firstOrCreate(
+    //                 ['name' => $row[3], 'department_id' => $department->id],
+    //                 ['name' => $row[3], 'department_id' => $department->id]
+    //             );
+    //         // print_r($row[0]);die;
+    //         // Employee
+    //       $employee = Employee::where('employee_id', $row[0])->first();
 
-if (!empty($employee)) {
-    if ($employee->employee_name != $row[1]) {
-        return response()->json([
-            'message' => 'CSV not updated, name is different: ' . $row[1],
-            'invalid_rows' => $invalidRows
-        ], 404);
-    } else {
-        $employee->department       = $department->name;
-        $employee->work_station     = $workstation->name;
-        $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-        $employee->status           = $row[8];
-    }
-} else {
-    $employee = new Employee(); // ✅ Fix here
-    $employee->employee_id      = $row[0];
-    $employee->employee_name    = $row[1];
-    $employee->department       = $department->name;
-    $employee->work_station     = $workstation->name;
-    $employee->access_for_login = $row[4] == "1" ? "true" : "false";
-    $employee->status           = $row[8];
-}
+    //     if (!empty($employee)) {
+    //         if ($employee->employee_name != $row[1]) {
+    //             return response()->json([
+    //                 'message' => 'CSV not updated, name is different: ' . $row[1],
+    //                 'invalid_rows' => $invalidRows
+    //             ], 404);
+    //         } else {
+    //             $employee->department       = $department->name;
+    //             $employee->work_station     = $workstation->name;
+    //             $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+    //             $employee->status           = $row[8];
+    //         }
+    //     } else {
+    //         $employee = new Employee(); // ✅ Fix here
+    //         $employee->employee_id      = $row[0];
+    //         $employee->employee_name    = $row[1];
+    //         $employee->department       = $department->name;
+    //         $employee->work_station     = $workstation->name;
+    //         $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+    //         $employee->status           = $row[8];
+    //     }
 
-$employee->save();
+    //     $employee->save();
 
 
-            // If login access allowed
-            if ($row[4] == "1") {
+    //         // If login access allowed
+    //         if ($row[4] == "1") {
         
-                $role = Role::where(['name' => trim($row[5])])->first();
-                if(!empty($role)){
-                    $roleId = $role->id;
-                }else{
-                    $role = Role::Create(
-                            ['name' => trim($row[5]), 'guard_name' => 'api']
-                        );
+    //             $role = Role::where(['name' => trim($row[5])])->first();
+    //             if(!empty($role)){
+    //                 $roleId = $role->id;
+    //             }else{
+    //                 $role = Role::Create(
+    //                         ['name' => trim($row[5]), 'guard_name' => 'api']
+    //                     );
 
-                        $roleId = $role->id;
-                }
+    //                     $roleId = $role->id;
+    //             }
              
 
-                $existingUser = User::where('employee_id', $employee->id)->first();
+    //             $existingUser = User::where('employee_id', $employee->id)->first();
 
-                if ($existingUser) {
-                    // Check for email conflict with other users
-                    $emailConflict = User::where('email', $row[6])
-                        ->where('id', '!=', $existingUser->id)
-                        ->exists();
+    //             if ($existingUser) {
+    //                 // Check for email conflict with other users
+    //                 $emailConflict = User::where('email', $row[6])
+    //                     ->where('id', '!=', $existingUser->id)
+    //                     ->exists();
 
-                    if ($emailConflict) {
-                        $invalidRows[] = $rowNumber++;
-                        // continue;
-                        if($employee->name != $row[1]){
-                    return response()->json([
-                                'error' => 'CSV not updated email is exists .'.$row[6],
-                                'message' => 'CSV not updated email is exists .'.$row[6],
-                                'invalid_rows' => $invalidRows
-                            ], 404);
-                    }
-                    }
+    //                 if ($emailConflict) {
+    //                     $invalidRows[] = $rowNumber++;
+    //                     // continue;
+    //                     if($employee->name != $row[1]){
+    //                 return response()->json([
+                               
+    //                             'message' => 'CSV not updated email is exists .'.$row[6],
+    //                             'invalid_rows' => $invalidRows
+    //                         ], 404);
+    //                 }
+    //                 }
 
                    
 
-                    $existingUser->update([
-                        'role_id'  => $role->id,
-                        'name'     => $row[1],
-                        'email'    => $row[6],
-                        'password' => Hash::make($row[7]),
-                    ]);
+    //                 $existingUser->update([
+    //                     'role_id'  => $role->id,
+    //                     'name'     => $row[1],
+    //                     'email'    => $row[6],
+    //                     'password' => Hash::make($row[7]),
+    //                 ]);
 
 
-                } else {
-                     $role = Role::where(['name' => trim($row[5])])->first();
-                if(!empty($role)){
-                    $roleId = $role->id;
-                }else{
-                    $role = Role::Create(
-                            ['name' => trim($row[5]), 'guard_name' => 'api']
-                        );
+    //             } else {
+    //                  $role = Role::where(['name' => trim($row[5])])->first();
+    //             if(!empty($role)){
+    //                 $roleId = $role->id;
+    //             }else{
+    //                 $role = Role::Create(
+    //                         ['name' => trim($row[5]), 'guard_name' => 'api']
+    //                     );
 
-                        $roleId = $role->id;
-                }
-                    // Email already exists? skip to avoid crash
-                    if (User::where('email', $row[6])->exists()) {
-                        $invalidRows[] = $rowNumber++;
-                        continue;
-                    }
+    //                     $roleId = $role->id;
+    //             }
+    //                 // Email already exists? skip to avoid crash
+    //                 if (User::where('email', $row[6])->exists()) {
+    //                     $invalidRows[] = $rowNumber++;
+    //                     continue;
+    //                 }
                    
-                    try {
-                        User::create([
-                            'employee_id' => $employee->id,
-                            'role_id'     => $role->id,
-                            'name'        => $row[1],
-                            'email'       => $row[6],
-                            'password'    => Hash::make($row[7]),
-                        ]);
-                    } catch (\Exception $e) {
-                        $invalidRows[] = $rowNumber++;
-                        continue;
-                    }
-                }
-            }
+    //                 try {
+    //                     User::create([
+    //                         'employee_id' => $employee->id,
+    //                         'role_id'     => $role->id,
+    //                         'name'        => $row[1],
+    //                         'email'       => $row[6],
+    //                         'password'    => Hash::make($row[7]),
+    //                     ]);
+    //                 } catch (\Exception $e) {
+    //                     $invalidRows[] = $rowNumber++;
+    //                     continue;
+    //                 }
+    //             }
+    //         }
 
-            $rowNumber++;
+    //         $rowNumber++;
+    //     }
+
+    //     fclose($handle);
+
+    //     return response()->json([
+    //         'message' => 'CSV uploaded successfully.',
+    //         'invalid_rows' => $invalidRows
+    //     ], 200);
+    // }
+
+//     public function uploadEmployeeCSV(Request $request)
+// {
+//     $request->validate([
+//         'file' => 'required|file|mimes:csv,txt'
+//     ]);
+
+//     $file = $request->file('file');
+//     $handle = fopen($file->getPathname(), "r");
+
+//     // Expected Header
+//     $expectedHeaders = [
+//         "employee_id", "employee_name", "department", "work_station",
+//         "access_for_login", "role_id", "email", "password", "status"
+//     ];
+
+//     $header = array_map('trim', fgetcsv($handle));
+
+//     if ($header !== $expectedHeaders) {
+//         return response()->json(['error' => 'Invalid CSV format. Please use correct template'], 400);
+//     }
+
+//     $invalidRows = [];
+//     $rowNumber = 2;
+
+//     while (($row = fgetcsv($handle)) !== false) {
+
+//         $row = array_map('trim', $row);
+
+//         if (count($row) !== count($expectedHeaders) || empty($row[0]) || empty($row[1])) {
+//             $invalidRows[] = $rowNumber++;
+//             continue;
+//         }
+
+//         $employeeId = $row[0];
+//         $employeeName = $row[1];
+//         $email = $row[6];
+//         $roleName = trim($row[5]);
+
+
+//         /*-----------------------------------------
+//          | 1️⃣  EMPLOYEE ID UNIQUE VALIDATION
+//          ------------------------------------------*/
+//         $existingEmployee = Employee::where('employee_id', $employeeId)->first();
+
+//         if (!$existingEmployee) {
+//             // New employee: check employee_id duplicate in CSV or DB
+//             if (Employee::where('employee_id', $employeeId)->exists()) {
+//                 return response()->json([
+//                     'error' => 'Duplicate employee_id found: ' . $employeeId,
+//                     'row' => $rowNumber
+//                 ], 400);
+//             }
+//         } else {
+//             // Employee exists → Name must match
+//             if ($existingEmployee->employee_name !== $employeeName) {
+//                 return response()->json([
+//                     'error' => 'Name mismatch for employee_id: ' . $employeeId,
+//                     'row' => $rowNumber
+//                 ], 400);
+//             }
+//         }
+
+
+//         /*-----------------------------------------
+//          | 2️⃣  EMAIL UNIQUE VALIDATION
+//          ------------------------------------------*/
+//         $emailExists = User::where('email', $email)
+//             ->when($existingEmployee, function ($q) use ($existingEmployee) {
+//                 return $q->where('employee_id', '!=', $existingEmployee->id);
+//             })
+//             ->exists();
+
+//         if ($emailExists) {
+//             return response()->json([
+//                 'error' => 'Duplicate email found: ' . $email,
+//                 'row' => $rowNumber
+//             ], 400);
+//         }
+
+
+//         /*-----------------------------------------
+//          | 3️⃣  CREATE OR UPDATE DEPARTMENT & WORKSTATION
+//          ------------------------------------------*/
+//         $department = Department::firstOrCreate(
+//             ['name' => $row[2]],
+//             ['description' => 'Auto-created department']
+//         );
+
+//         $workstation = Workstation::firstOrCreate(
+//             ['name' => $row[3], 'department_id' => $department->id],
+//             ['name' => $row[3], 'department_id' => $department->id]
+//         );
+
+
+//         /*-----------------------------------------
+//          | 4️⃣  CREATE OR UPDATE EMPLOYEE
+//          ------------------------------------------*/
+//         if ($existingEmployee) {
+//             $employee = $existingEmployee;
+//         } else {
+//             $employee = new Employee();
+//             $employee->employee_id = $employeeId;
+//             $employee->employee_name = $employeeName;
+//         }
+
+//         $employee->department = $department->name;
+//         $employee->work_station = $workstation->name;
+//         $employee->access_for_login = $row[4] == "1" ? "true" : "false";
+//         $employee->status = $row[8];
+//         $employee->save();
+
+
+//         /*-----------------------------------------
+//          | 5️⃣  CREATE/UPDATE USER IF LOGIN ALLOWED
+//          ------------------------------------------*/
+//         if ($row[4] == "1") {
+
+//             // Role
+//             $role = Role::firstOrCreate(
+//                 ['name' => $roleName],
+//                 ['guard_name' => 'api']
+//             );
+
+//             $existingUser = User::where('employee_id', $employee->id)->first();
+
+//             if ($existingUser) {
+//                 // Updating user
+//                 $existingUser->update([
+//                     'role_id' => $role->id,
+//                     'name' => $employeeName,
+//                     'email' => $email,
+//                     'password' => Hash::make($row[7]),
+//                 ]);
+//             } else {
+//                 // Creating new user
+//                 User::create([
+//                     'employee_id' => $employee->id,
+//                     'role_id' => $role->id,
+//                     'name' => $employeeName,
+//                     'email' => $email,
+//                     'password' => Hash::make($row[7]),
+//                 ]);
+//             }
+//         }
+
+//         $rowNumber++;
+//     }
+
+//     fclose($handle);
+
+//     return response()->json([
+//         'message' => 'CSV uploaded successfully.',
+//         'invalid_rows' => $invalidRows
+//     ], 200);
+// }
+
+
+public function uploadEmployeeCSV(Request $request)
+{
+    $request->validate([
+        'file' => 'required|file|mimes:csv,txt'
+    ]);
+
+    $file = $request->file('file');
+    $handle = fopen($file->getPathname(), "r");
+
+    // Updated Header (employee_id हटा दिया)
+    $expectedHeaders = [
+        "employee_name", "department", "work_station",
+        "access_for_login", "role_id", "email", "password", "status"
+    ];
+
+    $header = array_map('trim', fgetcsv($handle));
+
+    if ($header !== $expectedHeaders) {
+        return response()->json(['error' => 'Invalid CSV format. Use correct template'], 400);
+    }
+
+    $invalidRows = [];
+    $rowNumber = 2;
+
+    while (($row = fgetcsv($handle)) !== false) {
+
+        $row = array_map('trim', $row);
+
+        if (count($row) !== count($expectedHeaders)) {
+            $invalidRows[] = $rowNumber++;
+            continue;
         }
 
-        fclose($handle);
+        $employeeName = $row[0];
+        $email = $row[5];
+        $roleName = trim($row[4]);
 
-        return response()->json([
-            'message' => 'CSV uploaded successfully.',
-            'invalid_rows' => $invalidRows
-        ], 200);
+        /*-----------------------------------------
+         |  EMAIL UNIQUE CHECK
+         ------------------------------------------*/
+        if (User::where('email', $email)->exists()) {
+            return response()->json([
+                'error' => 'Duplicate email found: ' . $email,
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        /*-----------------------------------------
+         | CREATE OR UPDATE DEPARTMENT
+         ------------------------------------------*/
+        $department = Department::firstOrCreate(
+            ['name' => $row[1]],
+            ['description' => 'Auto-created department']
+        );
+
+        $workstation = Workstation::firstOrCreate(
+            ['name' => $row[2], 'department_id' => $department->id],
+            ['name' => $row[2], 'department_id' => $department->id]
+        );
+
+        /*-----------------------------------------
+         | CREATE EMPLOYEE (AUTO employee_id)
+         ------------------------------------------*/
+        $employee = new Employee();
+        $employee->employee_id = $this->generateEmployeeId();  // ⭐ AUTO ID HERE
+        $employee->employee_name = $employeeName;
+        $employee->department = $department->name;
+        $employee->work_station = $workstation->name;
+        $employee->access_for_login = $row[3] == "1" ? "true" : "false";
+        $employee->status = $row[7];
+        $employee->save();
+
+        /*-----------------------------------------
+         | CREATE/UPDATE USER IF LOGIN ALLOWED
+         ------------------------------------------*/
+        if ($row[3] == "1") {
+
+            $role = Role::firstOrCreate(
+                ['name' => $roleName],
+                ['guard_name' => 'api']
+            );
+
+            User::create([
+                'employee_id' => $employee->id,
+                'role_id' => $role->id,
+                'name' => $employeeName,
+                'email' => $email,
+                'password' => Hash::make($row[6]),
+            ]);
+        }
+
+        $rowNumber++;
     }
+
+    fclose($handle);
+
+    return response()->json([
+        'message' => 'CSV uploaded successfully',
+        'invalid_rows' => $invalidRows
+    ], 200);
+}
+
+
+private function generateEmployeeId()
+{
+    $lastEmployee = Employee::orderBy('id', 'desc')->first();
+
+    if (!$lastEmployee || empty($lastEmployee->employee_id)) {
+        return 'EMP_0001';
+    }
+
+    $lastNumber = (int) str_replace('EMP_', '', $lastEmployee->employee_id);
+    $newNumber = $lastNumber + 1;
+
+    return 'EMP_' . str_pad($newNumber, 4, '0', STR_PAD_LEFT);
+}
+
 
 
     // public function updateStatus(Request $request, $id)
