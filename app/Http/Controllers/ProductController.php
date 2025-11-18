@@ -4401,6 +4401,25 @@ public function uploadCSV(Request $request)
 
             $row = array_map('trim', $row);
 
+             // ⭐ REQUIRED FIELDS VALIDATION
+            $requiredFields = [
+                'product_name'   => $row[0] ?? null,
+                'sku'            => $row[1] ?? null,
+                'category_id'    => $row[2] ?? null,
+                'location_id'    => $row[12] ?? null,
+                'quantity'       => $row[13] ?? null,
+                'unit_of_measure'=> $row[14] ?? null,
+            ];
+
+            foreach ($requiredFields as $field => $value) {
+                if (empty($value) || trim($value) === '') {
+                    return response()->json([
+                        'error' => "Row {$rowNumber}: '{$field}' is required but missing."
+                    ], 422);
+                }
+            }
+            
+
             $productName = $row[0] ?? null;
             $sku = $row[1] ?? null;
 
