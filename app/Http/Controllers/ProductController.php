@@ -4405,10 +4405,10 @@ public function uploadCSV(Request $request)
             $requiredFields = [
                 'product_name'   => $row[0] ?? null,
                 'sku'            => $row[1] ?? null,
-                'category_id'    => $row[2] ?? null,
-                'location_id'    => $row[12] ?? null,
-                'quantity'       => $row[13] ?? null,
-                'unit_of_measure'=> $row[14] ?? null,
+                // 'category_id'    => $row[2] ?? null,
+                // 'location_id'    => $row[12] ?? null,
+                // 'quantity'       => $row[13] ?? null,
+                // 'unit_of_measure'=> $row[14] ?? null,
             ];
 
             foreach ($requiredFields as $field => $value) {
@@ -4418,7 +4418,7 @@ public function uploadCSV(Request $request)
                     ], 422);
                 }
             }
-            
+
 
             $productName = $row[0] ?? null;
             $sku = $row[1] ?? null;
