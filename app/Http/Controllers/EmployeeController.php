@@ -1249,12 +1249,75 @@ private function generateEmployeeId()
     //     ]);
     // }
 
+    // public function employeeTemplateCsvUrl()
+    // {
+    //     $filename = 'csv_tem/employee_template.csv';
+    //     $employees = collect([
+    //         (object)[
+    //             'employee_id' => 'EMP01',
+    //             'employee_name' => 'Employee',
+    //             'department' => (object)['name' => 'HR'],
+    //             'work_station' => (object)['name' => 'Document management'],
+    //             'access_for_login' => '1',
+    //             'role_id' => (object)['role_name' => 'Employee'],
+    //             'email' => 'demo@gmail.com',
+    //             'password' => 'Demo@123456',
+    //             'status' => 'active',
+            
+    //         ]
+    //     ]);
+
+    //     // Map employee to desired format
+    //     $employees = $employees->map(function ($employee) {
+    //         return [
+    //             'employee_id' => $employee->employee_id,
+    //             'employee_name' => $employee->employee_name,
+    //             'department' => optional($employee->department)->name,
+    //             'work_station' => optional($employee->work_station)->name,
+    //             'access_for_login' => $employee->access_for_login,
+    //             'role_id' => optional($employee->role_id)->role_name,
+    //             'email' => $employee->email,
+    //             'password' => $employee->password,
+    //             'status' => $employee->status,
+    //         ];
+    //     });
+
+    //     // CSV column headers
+    //     $columns = [
+    //             "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
+    //         ];
+
+
+    //     // Create CSV file
+    //     $filePath = storage_path("app/public/{$filename}");
+    //     if (!file_exists(dirname($filePath))) {
+    //         mkdir(dirname($filePath), 0755, true);
+    //     }
+
+    //     $file = fopen($filePath, 'w');
+    //     fputcsv($file, $columns); // Headers
+
+    //     foreach ($employees as $employee) {
+    //         fputcsv($file, $employee);
+    //     }
+
+    //     fclose($file);
+
+    //     // Return download URL
+    //     $url = asset("storage/{$filename}");
+
+    //     return response()->json([
+    //         'status' => 'success',
+    //         'url' => $url
+    //     ]);
+    // }
+
+
     public function employeeTemplateCsvUrl()
     {
         $filename = 'csv_tem/employee_template.csv';
         $employees = collect([
             (object)[
-                'employee_id' => 'EMP01',
                 'employee_name' => 'Employee',
                 'department' => (object)['name' => 'HR'],
                 'work_station' => (object)['name' => 'Document management'],
@@ -1270,7 +1333,7 @@ private function generateEmployeeId()
         // Map employee to desired format
         $employees = $employees->map(function ($employee) {
             return [
-                'employee_id' => $employee->employee_id,
+                // 'employee_id' => $employee->employee_id,
                 'employee_name' => $employee->employee_name,
                 'department' => optional($employee->department)->name,
                 'work_station' => optional($employee->work_station)->name,
@@ -1284,7 +1347,7 @@ private function generateEmployeeId()
 
         // CSV column headers
         $columns = [
-                "employee_id","employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
+               "employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
             ];
 
 
@@ -1311,5 +1374,4 @@ private function generateEmployeeId()
             'url' => $url
         ]);
     }
-
 }
