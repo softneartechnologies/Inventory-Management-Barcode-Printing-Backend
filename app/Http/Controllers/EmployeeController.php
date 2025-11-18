@@ -1276,19 +1276,19 @@ public function uploadEmployeeCSV(Request $request)
             ], 400);
         }
 
-        if (empty($departmentName)) {
-            return response()->json([
-                'error' => "department is required",
-                'row' => $rowNumber
-            ], 400);
-        }
+        // if (empty($departmentName)) {
+        //     return response()->json([
+        //         'error' => "department is required",
+        //         'row' => $rowNumber
+        //     ], 400);
+        // }
 
-        if (empty($workstationName)) {
-            return response()->json([
-                'error' => "work_station is required",
-                'row' => $rowNumber
-            ], 400);
-        }
+        // if (empty($workstationName)) {
+        //     return response()->json([
+        //         'error' => "work_station is required",
+        //         'row' => $rowNumber
+        //     ], 400);
+        // }
 
         if (empty($roleName)) {
             return response()->json([
