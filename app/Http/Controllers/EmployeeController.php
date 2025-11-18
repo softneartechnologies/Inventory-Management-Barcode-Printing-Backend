@@ -976,6 +976,243 @@ class EmployeeController extends Controller
 // }
 
 
+// public function uploadEmployeeCSV(Request $request)
+// {
+//     $request->validate([
+//         'file' => 'required|file|mimes:csv,txt'
+//     ]);
+
+//     $file = $request->file('file');
+//     $handle = fopen($file->getPathname(), "r");
+
+    
+//     $expectedHeaders = [
+//         "employee_name", "department", "work_station",
+//         "access_for_login", "role_id", "email", "password", "status"
+//     ];
+
+//     $header = array_map('trim', fgetcsv($handle));
+
+//     if ($header !== $expectedHeaders) {
+//         return response()->json(['error' => 'Invalid CSV format. Use correct template'], 400);
+//     }
+
+//     $invalidRows = [];
+//     $rowNumber = 2;
+
+//     while (($row = fgetcsv($handle)) !== false) {
+
+//         $row = array_map('trim', $row);
+
+//         if (count($row) !== count($expectedHeaders)) {
+//             $invalidRows[] = $rowNumber++;
+//             continue;
+//         }
+
+//         $employeeName = $row[0];
+//         $email = $row[5];
+//         $roleName = trim($row[4]);
+
+//         /*-----------------------------------------
+//          |  EMAIL UNIQUE CHECK
+//          ------------------------------------------*/
+//         if (User::where('email', $email)->exists()) {
+//             return response()->json([
+//                 'error' => 'Duplicate email found: ' . $email,
+//                 'row' => $rowNumber
+//             ], 400);
+//         }
+
+//         /*-----------------------------------------
+//          | CREATE OR UPDATE DEPARTMENT
+//          ------------------------------------------*/
+//         $department = Department::firstOrCreate(
+//             ['name' => $row[1]],
+//             ['description' => 'Auto-created department']
+//         );
+
+//         $workstation = Workstation::firstOrCreate(
+//             ['name' => $row[2], 'department_id' => $department->id],
+//             ['name' => $row[2], 'department_id' => $department->id]
+//         );
+
+//         /*-----------------------------------------
+//          | CREATE EMPLOYEE (AUTO employee_id)
+//          ------------------------------------------*/
+//         $employee = new Employee();
+//         $employee->employee_id = $this->generateEmployeeId();  // ⭐ AUTO ID HERE
+//         $employee->employee_name = $employeeName;
+//         $employee->department = $department->name;
+//         $employee->work_station = $workstation->name;
+//         $employee->access_for_login = $row[3] == "1" ? "true" : "false";
+//         $employee->status = $row[7];
+//         $employee->save();
+
+//         /*-----------------------------------------
+//          | CREATE/UPDATE USER IF LOGIN ALLOWED
+//          ------------------------------------------*/
+//         if ($row[3] == "1") {
+
+//             $role = Role::firstOrCreate(
+//                 ['name' => $roleName],
+//                 ['guard_name' => 'api']
+//             );
+
+//             User::create([
+//                 'employee_id' => $employee->id,
+//                 'role_id' => $role->id,
+//                 'name' => $employeeName,
+//                 'email' => $email,
+//                 'password' => Hash::make($row[6]),
+//             ]);
+//         }
+
+//         $rowNumber++;
+//     }
+
+//     fclose($handle);
+
+//     return response()->json([
+//         'message' => 'CSV uploaded successfully',
+//         'invalid_rows' => $invalidRows
+//     ], 200);
+// }
+
+// public function uploadEmployeeCSV(Request $request)
+// {
+//     $request->validate([
+//         'file' => 'required|file|mimes:csv,txt'
+//     ]);
+
+//     $file = $request->file('file');
+//     $handle = fopen($file->getPathname(), "r");
+
+//     $expectedHeaders = [
+//         "employee_name", "department", "work_station",
+//         "access_for_login", "role_id", "email", "password", "status"
+//     ];
+
+//     $header = array_map('trim', fgetcsv($handle));
+
+//     if ($header !== $expectedHeaders) {
+//         return response()->json(['error' => 'Invalid CSV format. Use correct template'], 400);
+//     }
+
+//     $invalidRows = [];
+//     $rowNumber = 2;
+
+//     while (($row = fgetcsv($handle)) !== false) {
+
+//         $row = array_map('trim', $row);
+
+//         if (count($row) !== count($expectedHeaders)) {
+//             $invalidRows[] = "Invalid column count at row " . $rowNumber++;
+//             continue;
+//         }
+
+//         $employeeName = $row[0];
+//         $departmentName = $row[1];
+//         $workstationName = $row[2];
+//         $access = $row[3];
+//         $roleName = $row[4];
+//         $email = $row[5];
+//         $password = $row[6];
+
+//         /*-----------------------------------------
+//          | ROW VALIDATION
+//          ------------------------------------------*/
+//         $errors = [];
+
+//         if (empty($employeeName)) $errors[] = "employee_name required";
+//         if (empty($departmentName)) $errors[] = "department required";
+//         if (empty($workstationName)) $errors[] = "work_station required";
+//         if (empty($roleName)) $errors[] = "role_id required";
+
+//         // email → password required
+//         if (!empty($email) && empty($password)) {
+//             $errors[] = "password required when email exists";
+//         }
+
+//         // If any validation fails → skip row
+//         if (!empty($errors)) {
+//             $invalidRows[] = [
+//                 "row" => $rowNumber,
+//                 "errors" => $errors,
+//                 "data" => $row
+//             ];
+//             $rowNumber++;
+//             continue;
+//         }
+
+//         /*-----------------------------------------
+//          |  EMAIL UNIQUE CHECK
+//          ------------------------------------------*/
+//         if (!empty($email) && User::where('email', $email)->exists()) {
+//             $invalidRows[] = [
+//                 "row" => $rowNumber,
+//                 "errors" => ["Duplicate email found: $email"],
+//                 "data" => $row
+//             ];
+//             $rowNumber++;
+//             continue;
+//         }
+
+//         /*-----------------------------------------
+//          | CREATE OR UPDATE DEPARTMENT
+//          ------------------------------------------*/
+//         $department = Department::firstOrCreate(
+//             ['name' => $departmentName],
+//             ['description' => 'Auto-created department']
+//         );
+
+//         $workstation = Workstation::firstOrCreate(
+//             ['name' => $workstationName, 'department_id' => $department->id],
+//             ['name' => $workstationName, 'department_id' => $department->id]
+//         );
+
+//         /*-----------------------------------------
+//          | CREATE EMPLOYEE
+//          ------------------------------------------*/
+//         $employee = new Employee();
+//         $employee->employee_id = $this->generateEmployeeId();
+//         $employee->employee_name = $employeeName;
+//         $employee->department = $department->name;
+//         $employee->work_station = $workstation->name;
+//         $employee->access_for_login = $access == "1" ? "true" : "false";
+//         $employee->status = $row[7];
+//         $employee->save();
+
+//         /*-----------------------------------------
+//          | CREATE/UPDATE USER IF LOGIN ALLOWED
+//          ------------------------------------------*/
+//         if ($access == "1" && !empty($email)) {
+
+//             $role = Role::firstOrCreate(
+//                 ['name' => $roleName],
+//                 ['guard_name' => 'api']
+//             );
+
+//             User::create([
+//                 'employee_id' => $employee->id,
+//                 'role_id' => $role->id,
+//                 'name' => $employeeName,
+//                 'email' => $email,
+//                 'password' => Hash::make($password),
+//             ]);
+//         }
+
+//         $rowNumber++;
+//     }
+
+//     fclose($handle);
+
+//     return response()->json([
+//         'message' => 'CSV processed',
+//         'invalid_rows' => $invalidRows
+//     ], 200);
+// }
+
+
 public function uploadEmployeeCSV(Request $request)
 {
     $request->validate([
@@ -985,7 +1222,7 @@ public function uploadEmployeeCSV(Request $request)
     $file = $request->file('file');
     $handle = fopen($file->getPathname(), "r");
 
-    
+    // Expected Header
     $expectedHeaders = [
         "employee_name", "department", "work_station",
         "access_for_login", "role_id", "email", "password", "status"
@@ -997,61 +1234,116 @@ public function uploadEmployeeCSV(Request $request)
         return response()->json(['error' => 'Invalid CSV format. Use correct template'], 400);
     }
 
-    $invalidRows = [];
     $rowNumber = 2;
-
+// print_r($handle);die;
     while (($row = fgetcsv($handle)) !== false) {
 
         $row = array_map('trim', $row);
 
-        if (count($row) !== count($expectedHeaders)) {
-            $invalidRows[] = $rowNumber++;
-            continue;
+        // EMPTY ROW CHECK (full row all empty)
+        if (empty(array_filter($row))) {
+            return response()->json([
+                'error' => "All fields are required. Empty row found.",
+                'row' => $rowNumber
+            ], 400);
         }
 
+        // Column mismatch check
+        if (count($row) !== count($expectedHeaders)) {
+            return response()->json([
+                'error' => "Invalid column count at row $rowNumber. Please use correct CSV format."
+            ], 400);
+        }
+
+        // Assigning CSV values
         $employeeName = $row[0];
+        $departmentName = $row[1];
+        $workstationName = $row[2];
+        $access = $row[3];
+        $roleName = $row[4];
         $email = $row[5];
-        $roleName = trim($row[4]);
+        $password = $row[6];
+        $status = $row[7];
 
         /*-----------------------------------------
-         |  EMAIL UNIQUE CHECK
+         | REQUIRED FIELDS VALIDATION
          ------------------------------------------*/
-        if (User::where('email', $email)->exists()) {
+
+        if (empty($employeeName)) {
             return response()->json([
-                'error' => 'Duplicate email found: ' . $email,
+                'error' => "employee_name is required",
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        if (empty($departmentName)) {
+            return response()->json([
+                'error' => "department is required",
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        if (empty($workstationName)) {
+            return response()->json([
+                'error' => "work_station is required",
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        if (empty($roleName)) {
+            return response()->json([
+                'error' => "role_id is required",
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        // If email exists → password required
+        if (!empty($email) && empty($password)) {
+            return response()->json([
+                'error' => "password is required when email is provided",
                 'row' => $rowNumber
             ], 400);
         }
 
         /*-----------------------------------------
-         | CREATE OR UPDATE DEPARTMENT
+         | EMAIL UNIQUE CHECK
+         ------------------------------------------*/
+        if (!empty($email) && User::where('email', $email)->exists()) {
+            return response()->json([
+                'error' => "Duplicate email found: $email",
+                'row' => $rowNumber
+            ], 400);
+        }
+
+        /*-----------------------------------------
+         | CREATE / UPDATE MASTER TABLES
          ------------------------------------------*/
         $department = Department::firstOrCreate(
-            ['name' => $row[1]],
+            ['name' => $departmentName],
             ['description' => 'Auto-created department']
         );
 
         $workstation = Workstation::firstOrCreate(
-            ['name' => $row[2], 'department_id' => $department->id],
-            ['name' => $row[2], 'department_id' => $department->id]
+            ['name' => $workstationName, 'department_id' => $department->id],
+            ['name' => $workstationName, 'department_id' => $department->id]
         );
 
         /*-----------------------------------------
-         | CREATE EMPLOYEE (AUTO employee_id)
+         | CREATE EMPLOYEE
          ------------------------------------------*/
         $employee = new Employee();
-        $employee->employee_id = $this->generateEmployeeId();  // ⭐ AUTO ID HERE
+        $employee->employee_id = $this->generateEmployeeId();
         $employee->employee_name = $employeeName;
         $employee->department = $department->name;
         $employee->work_station = $workstation->name;
-        $employee->access_for_login = $row[3] == "1" ? "true" : "false";
-        $employee->status = $row[7];
+        $employee->access_for_login = $access == "1" ? "true" : "false";
+        $employee->status = $status;
         $employee->save();
 
         /*-----------------------------------------
-         | CREATE/UPDATE USER IF LOGIN ALLOWED
+         | CREATE USER IF LOGIN ENABLED
          ------------------------------------------*/
-        if ($row[3] == "1") {
+        if ($access == "1" && !empty($email)) {
 
             $role = Role::firstOrCreate(
                 ['name' => $roleName],
@@ -1063,7 +1355,7 @@ public function uploadEmployeeCSV(Request $request)
                 'role_id' => $role->id,
                 'name' => $employeeName,
                 'email' => $email,
-                'password' => Hash::make($row[6]),
+                'password' => Hash::make($password),
             ]);
         }
 
@@ -1073,10 +1365,10 @@ public function uploadEmployeeCSV(Request $request)
     fclose($handle);
 
     return response()->json([
-        'message' => 'CSV uploaded successfully',
-        'invalid_rows' => $invalidRows
+        'message' => 'CSV uploaded successfully'
     ], 200);
 }
+
 
 
 private function generateEmployeeId()
@@ -1313,69 +1605,64 @@ private function generateEmployeeId()
     // }
 
 
-    // public function employeeTemplateCsvUrl()
-    // {
-    //     $filename = 'csv_tem/employee_template.csv';
-    //     $employees = collect([
-    //         (object)[
-    //             'employee_name' => 'Employee',
-    //             'department' => (object)['name' => 'HR'],
-    //             'work_station' => (object)['name' => 'Document management'],
-    //             'access_for_login' => '1',
-    //             'role_id' => (object)['role_name' => 'Employee'],
-    //             'email' => 'demo@gmail.com',
-    //             'password' => 'Demo@123456',
-    //             'status' => 'active',
-            
-    //         ]
-    //     ]);
-
-    //     // Map employee to desired format
-    //     $employees = $employees->map(function ($employee) {
-    //         return [
-    //             'employee_name' => $employee->employee_name,
-    //             'department' => optional($employee->department)->name,
-    //             'work_station' => optional($employee->work_station)->name,
-    //             'access_for_login' => $employee->access_for_login,
-    //             'role_id' => optional($employee->role_id)->role_name,
-    //             'email' => $employee->email,
-    //             'password' => $employee->password,
-    //             'status' => $employee->status,
-    //         ];
-    //     });
-
-    //     // CSV column headers
-    //     $columns = [
-    //            "employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
-    //         ];
-
-
-    //     // Create CSV file
-    //     $filePath = storage_path("app/public/{$filename}");
-    //     if (!file_exists(dirname($filePath))) {
-    //         mkdir(dirname($filePath), 0755, true);
-    //     }
-
-    //     $file = fopen($filePath, 'w');
-    //     fputcsv($file, $columns); // Headers
-
-    //     foreach ($employees as $employee) {
-    //         fputcsv($file, $employee);
-    //     }
-
-    //     fclose($file);
-
-    //     // Return download URL
-    //     $url = asset("storage/{$filename}");
-
-    //     return response()->json([
-    //         'status' => 'success',
-    //         'url' => $url
-    //     ]);
-    // }
-
     public function employeeTemplateCsvUrl()
     {
-        
+        $filename = 'csv_tem/employee_template.csv';
+        $employees = collect([
+            (object)[
+                'employee_name' => 'Employee',
+                'department' => (object)['name' => 'HR'],
+                'work_station' => (object)['name' => 'Document management'],
+                'access_for_login' => '1',
+                'role_id' => (object)['role_name' => 'Employee'],
+                'email' => 'demo@gmail.com',
+                'password' => 'Demo@123456',
+                'status' => 'active',
+            
+            ]
+        ]);
+
+        // Map employee to desired format
+        $employees = $employees->map(function ($employee) {
+            return [
+                'employee_name' => $employee->employee_name,
+                'department' => optional($employee->department)->name,
+                'work_station' => optional($employee->work_station)->name,
+                'access_for_login' => $employee->access_for_login,
+                'role_id' => optional($employee->role_id)->role_name,
+                'email' => $employee->email,
+                'password' => $employee->password,
+                'status' => $employee->status,
+            ];
+        });
+
+        // CSV column headers
+        $columns = [
+               "employee_name", "department", "work_station", "access_for_login", "role_id", "email", "password", "status"
+            ];
+
+
+        // Create CSV file
+        $filePath = storage_path("app/public/{$filename}");
+        if (!file_exists(dirname($filePath))) {
+            mkdir(dirname($filePath), 0755, true);
+        }
+
+        $file = fopen($filePath, 'w');
+        fputcsv($file, $columns); // Headers
+
+        foreach ($employees as $employee) {
+            fputcsv($file, $employee);
+        }
+
+        fclose($file);
+
+        // Return download URL
+        $url = asset("storage/{$filename}");
+
+        return response()->json([
+            'status' => 'success',
+            'url' => $url
+        ]);
     }
 }
