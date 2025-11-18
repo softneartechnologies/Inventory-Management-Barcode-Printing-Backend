@@ -1337,7 +1337,8 @@ public function uploadEmployeeCSV(Request $request)
         $employee->department = $department->name;
         $employee->work_station = $workstation->name;
         $employee->access_for_login = $access == "1" ? "true" : "false";
-        $employee->status = $status;
+        // $employee->status = $status;
+        $employee->status = !empty($status) ? $status : "active";
         $employee->save();
 
         /*-----------------------------------------
