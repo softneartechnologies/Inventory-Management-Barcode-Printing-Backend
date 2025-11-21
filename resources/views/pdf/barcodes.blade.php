@@ -151,7 +151,7 @@
     /* .qr-small { width: 15mm; height: 15mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; } */
-    .qr-small { width: 26mm; height: 26mm; }
+    .qr-small { width: 26mm; height: 25mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; }
 
