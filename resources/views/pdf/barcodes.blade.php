@@ -261,7 +261,7 @@
             {{-- Render barcode or QR --}}
              @php $dataArray = json_decode($productName, true); @endphp
                      <!-- @if($format === 'only_barcode') -->
-                    <div class="title" style="font-size:5px;padding-top:-1px; text-align:center;">Product name: {{ $dataArray['product_name']}}</div>
+                    <div class="title" style="font-size:5px;padding-top:1px; text-align:center;">Product name: {{ $dataArray['product_name']}}</div>
                     <!-- @else
                         <div class="title" style="font-size:5px;padding-top:1px; text-align:center;"></div>
                      @endif -->
