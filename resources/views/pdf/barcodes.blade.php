@@ -148,11 +148,11 @@
       /* border: 2px solid; */
     }
 
-    .qr-small { width: 15mm; height: 15mm; } 
-    .qr-medium { width: 20mm; height: 20mm; }
-    /* .qr-large { width: 25mm; height: 25mm; } */ */
-    /* .qr-small { width: 25mm; height: 25mm; } */
-    /* .qr-medium { width: 25mm; height: 25mm; } */
+    /* .qr-small { width: 15mm; height: 15mm; } 
+    .qr-medium { width: 20mm; height: 20mm; } */
+    /* .qr-large { width: 25mm; height: 25mm; } */ 
+    .qr-small { width: 25mm; height: 25mm; }
+    .qr-medium { width: 25mm; height: 25mm; }
     .qr-large { width: 25mm; height: 25mm; }
 
     .title {
