@@ -32,7 +32,7 @@
         @if ($type === 'barcode')
            size: {{ $format === 'with_details' ? '52mm 40.8mm' : '52mm 35.8mm' }};
         @elseif ($type === 'qrcode')
-            size: {{ $format === 'with_details' ? '52mm 29.8mm' : '52mm 35.8mm' }};
+            size: {{ $format === 'with_details' ? '52mm 29.8mm' : '52mm 25.8mm' }};
         @endif
         margin: 0mm;
     }
