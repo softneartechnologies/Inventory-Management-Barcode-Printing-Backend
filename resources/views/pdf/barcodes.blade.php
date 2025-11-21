@@ -212,20 +212,6 @@
             height: 120px;
         }
 
-            /* .qr-sm {
-            width: 3cm;
-            height: 5cm;
-        }
-
-        .qr-md {
-            width: 3cm;
-            height: 5cm;
-        }
-
-        .qr-lg {
-            width: 3cm;
-            height: 5cm;
-        } */
         .label-key {
   display: inline-block;
   text-align: left;
@@ -276,7 +262,7 @@
             {{-- Render barcode or QR --}}
              @php $dataArray = json_decode($productName, true); @endphp
                      
-                    <div class="title" style="font-size:5px;padding-top:1px; text-align:center;">Product name: {{ $dataArray['product_name']}}</div>
+                    <div class="title" style="font-size:5px;padding-top:0px; text-align:center;">Product name: {{ $dataArray['product_name']}}</div>
                     
 
             <div class="barcode-image">
