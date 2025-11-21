@@ -32,7 +32,7 @@
         @if ($type === 'barcode')
            size: {{ $format === 'with_details' ? '52mm 40.8mm' : '52mm 35.8mm' }};
         @elseif ($type === 'qrcode')
-            size: {{ $format === 'with_details' ? '52mm 29.8mm' : '26mm 26mm' }};
+            size: {{ $format === 'with_details' ? '52mm 29.8mm' : '50mm 30mm' }};
         @endif
         margin: 0mm;
     }
@@ -151,7 +151,7 @@
     /* .qr-small { width: 15mm; height: 15mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; } */
-    .qr-small { width: 26mm; height: 26mm; }
+    .qr-small { width: 30mm; height: 50mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; }
 
@@ -201,8 +201,10 @@
             text-align: center;
         }
     .qr-sm {
-            width: 80px;
-            height: 80px;
+            /* width: 80px;
+            height: 80px; */
+            width: 30mm;
+            height: 50mm;
         }
 
         .qr-md {
