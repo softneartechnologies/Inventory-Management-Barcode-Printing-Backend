@@ -197,7 +197,7 @@
             margin-bottom: 2mm;
             text-align: center;
         }
-    .qr-sm {
+    /* .qr-sm {
             width: 80px;
             height: 80px;
         }
@@ -210,6 +210,21 @@
         .qr-lg {
             width: 120px;
             height: 120px;
+        } */
+
+            .qr-sm {
+            width: 3cm;
+            height: 5cm;
+        }
+
+        .qr-md {
+            width: 3cm;
+            height: 5cm;
+        }
+
+        .qr-lg {
+            width: 3cm;
+            height: 5cm;
         }
         .label-key {
   display: inline-block;
