@@ -151,7 +151,7 @@
     /* .qr-small { width: 15mm; height: 15mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; } */
-    .qr-small { width: 30mm; height: 50mm; }
+    .qr-small { width: 26mm; height: 26mm; }
     .qr-medium { width: 20mm; height: 20mm; }
     .qr-large { width: 25mm; height: 25mm; }
 
@@ -203,8 +203,8 @@
     .qr-sm {
             /* width: 80px;
             height: 80px; */
-            width: 30mm;
-            height: 50mm;
+            width: 26mm;
+            height: 26mm;
         }
 
         .qr-md {
