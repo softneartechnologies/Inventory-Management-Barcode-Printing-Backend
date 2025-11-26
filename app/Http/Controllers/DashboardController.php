@@ -164,7 +164,7 @@ $low_stock_alert = $inventory_alert->count();
         // }
 
 
-        // अगर request से date आई है तो उसे लो, वरना default last 6 months
+        
     $startDate = $request->filled('start_date') 
         ? Carbon::parse($request->start_date)->startOfMonth()
         : Carbon::now()->subMonths(5)->startOfMonth();
@@ -1262,11 +1262,85 @@ $ppe_product_data_category = $groupedData->map(function ($stocks, $productId) us
 
 
 
+
+// stock movement by values
+
+$startDate = $request->filled('start_date') 
+    ? Carbon::parse($request->start_date)->startOfWeek()
+    : Carbon::now()->subWeeks(8)->startOfWeek(); // last 8 weeks
+
+$endDate = $request->filled('end_date') 
+    ? Carbon::parse($request->end_date)->endOfWeek()
+    : Carbon::now()->endOfWeek();
+
+// Fetch weekly raw values
+$weeklyRaw = ScanInOutProduct::select(
+        DB::raw("YEARWEEK(created_at, 1) as week_number"),
+        'type',
+        DB::raw("SUM(in_quantity) as total_value"),
+        DB::raw("SUM(out_quantity) as total_value"),
+        DB::raw("COUNT(*) as total_count")
+    )
+    ->whereIn('type', ['in', 'out'])
+    ->whereBetween('created_at', [$startDate, $endDate])
+    ->groupBy(DB::raw("YEARWEEK(created_at, 1)"), 'type')
+    ->orderBy('week_number')
+    ->get();
+
+// Build base structure (missing weeks = 0)
+$allWeeks = collect();
+$current = $startDate->copy();
+
+while ($current <= $endDate) {
+    $weekKey = $current->format("oW"); // 2024-05 → 202405
+
+    $allWeeks->put($weekKey, [
+        'week_label' => $current->startOfWeek()->format('d M') . ' - ' . $current->endOfWeek()->format('d M'),
+        'in_quantity'  => 0,
+        'out_quantity' => 0,
+        'in_count'  => 0,
+        'out_count' => 0,
+    ]);
+
+    $current->addWeek();
+}
+
+// Fill values from raw data
+foreach ($weeklyRaw as $row) {
+    $weekKey = $row->week_number;
+
+    if ($allWeeks->has($weekKey)) {
+        $data = $allWeeks->get($weekKey);
+
+        if ($row->type === 'in') {
+            $data['in_quantity']  = $row->total_value;
+            $data['in_count']  = $row->total_count;
+        }
+
+        if ($row->type === 'out') {
+            $data['out_quantity'] = $row->total_value;
+            $data['out_count'] = $row->total_count;
+        }
+
+        $allWeeks->put($weekKey, $data);
+    }
+}
+$stock_movement_by_value =$allWeeks->values();
+
+// return response()->json([
+//     'weekly_stock' => $allWeeks->values()
+// ]);
+
+
+
+
+
             return response()->json([
                 'total_product' => $totalproductCount,
                 'total_employee_tools' => $employeeUsingProduct,
                 'low_stock_alert' => $low_stock_alert,
                 'stock_movement' => $allMonths,
+                'stock_movement_by_value' => $stock_movement_by_value,
                 'returnableNonReturnableItems' => $returnableNonReturnableItems,
                 'categories_list' => $categories_list,
                 'uniqueCategoryCount' => $uniqueCategoryCount,

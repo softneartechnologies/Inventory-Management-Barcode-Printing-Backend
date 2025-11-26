@@ -38,6 +38,7 @@ Route::post('reset', [UserController::class, 'reset']);
 
 Route::middleware('auth:api')->group(function () {
     Route::post('logout', [UserController::class, 'logout']);
+    // Route::get('dashboard', [DashboardController::class, 'index']);
     Route::get('dashboard', [DashboardController::class, 'index']);
 
     Route::get('/employee', [UserController::class, 'index']);
@@ -212,6 +213,8 @@ Route::prefix('reports')->group(function () {
 
     Route::get('inventoryAdjustments', [ProductController::class, 'inventoryAdjustmentsReport']); // Get all currencies
     
+    Route::post('/inventory/approve/{id}', [ProductController::class, 'approveInventory']);
+
 });
 Route::get('recentStockUpdate', [ProductController::class, 'recentStockUpdate']); // Get all currencies
     

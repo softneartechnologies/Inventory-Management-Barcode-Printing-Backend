@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class InventoryAdjustmentReports extends Model
 {
     use HasFactory;
-    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit_of_measure', 'reason_for_update', 'location_id', 'stock_date', 'vendor_id','category_id', 'adjustment'];
+    protected $fillable = ['product_id', 'current_stock', 'new_stock', 'quantity', 'unit_of_measure', 'reason_for_update', 'location_id', 'stock_date', 'vendor_id','category_id', 'adjustment','status', 'approval_date'];
 
     public function product()
     {

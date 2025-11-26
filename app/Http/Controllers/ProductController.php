@@ -247,7 +247,8 @@ if ($request->filled('category')  || $request->filled('type_filter') || $request
             $query->where(function ($q) use ($search) {
                 $q->where('sku', 'like', "%$search%")
                 ->orWhere('model', 'like', "%$search%")
-                ->orWhere('manufacturer', 'like', "%$search%");
+                ->orWhere('manufacturer', 'like', "%$search%")
+                ->orWhere('product_name', 'like', "%$search%");
                 // Add more searchable fields if needed
             });
         }
@@ -4383,7 +4384,7 @@ public function uploadCSV(Request $request)
         // ];
         $expectedHeaders = [
             "product_name", "sku*", "category_id", "sub_category_id", "manufacturer",
-            "vendor_id", "model", "unit_of_measurement_category", "description",
+            "vendor_id", "specification", "unit_of_measurement_category", "description",
             "returnable", "commit_stock_check", "inventory_alert_threshold", "location_id", "quantity", "unit_of_measure",
             "per_unit_cost", "total_cost", "status"
         ];
@@ -4996,6 +4997,244 @@ public function generateTemplateCsvUrl()
         'status' => 'success',
         'url' => $url
     ]);
+}
+
+
+// public function approveInventory($id)
+// {
+//     try {
+//         // Step 1: Fetch Inventory Adjustment Report
+//         $report = InventoryAdjustmentReport::find($id);
+
+//         if (!$report) {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Report not found'
+//             ], 404);
+//         }
+
+//         // Prevent double approval
+//         if ($report->status === 'approved') {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Already approved'
+//             ], 400);
+//         }
+
+//         // Step 2: Fetch product
+//         $product = Product::find($report->product_id);
+
+//         if (!$product) {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Product not found'
+//             ], 404);
+//         }
+
+//         // Step 3: Update stock
+//         $product->opening_stock = $report->new_stock; // new_stock column must exist in report table
+//         $product->save();
+
+//         // Step 4: Update report status
+//         $report->status = 'Approved';
+//         $report->approval_date = now();
+//         $report->save();
+
+//         return response()->json([
+//             'status' => true,
+//             'message' => 'Stock approved successfully',
+//             'data' => [
+//                 'product_id' => $product->id,
+//                 'opening_stock' => $product->opening_stock
+//             ]
+//         ]);
+
+//     } catch (\Exception $e) {
+//         return response()->json([
+//             'status' => false,
+//             'message' => $e->getMessage()
+//         ], 500);
+//     }
+// }
+
+
+// public function approveInventory($id)
+// {
+//     try {
+//         // 1. Fetch report
+//         $report = InventoryAdjustmentReport::find($id);
+
+//         if (!$report) {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Report not found'
+//             ], 404);
+//         }
+
+//         // Prevent double approval
+//         if ($report->status === 'Approved') {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Already approved'
+//             ], 400);
+//         }
+
+//         // 2. Fetch stock record from stocks table
+//         $stock = Stock::where('product_id', $report->product_id)
+//                       ->where('location_id', $report->location_id)
+//                       ->first();
+
+//         if (!$stock) {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Stock record not found for this product & location'
+//             ], 404);
+//         }
+
+//         // 3. Stock calculation
+//         $currentStock = $stock->current_stock;           // existing stock
+//         $adjustment   = $report->adjustment;             // + or -
+//         $newStock     = $currentStock + $adjustment;     // add/subtract
+
+//         // 4. Update stocks table
+//         $stock->current_stock = $newStock;
+//         $stock->new_stock     = $newStock;
+//         $stock->quantity      = $adjustment; // changed amount only
+//         $stock->save();
+
+//         // 5. Mark report as approved
+//         $report->status = 'Approved';
+//         $report->approval_date = now();
+//         $report->save();
+
+//         // Step 2: Fetch product
+//         $product = Product::find($report->product_id);
+
+//         if (!$product) {
+//             return response()->json([
+//                 'status' => false,
+//                 'message' => 'Product not found'
+//             ], 404);
+//         }
+
+//         // Step 3: Update stock
+//         $product->opening_stock = $report->new_stock; // new_stock column must exist in report table
+//         $product->save();
+
+//         return response()->json([
+//             'status' => true,
+//             'message' => 'Stock approved and updated successfully',
+//             'data' => [
+//                 'product_id' => $report->product_id,
+//                 'location_id' => $report->location_id,
+//                 'previous_stock' => $currentStock,
+//                 'adjustment' => $adjustment,
+//                 'updated_stock' => $newStock
+//             ]
+//         ]);
+
+//     } catch (\Exception $e) {
+//         return response()->json([
+//             'status' => false,
+//             'message' => $e->getMessage()
+//         ], 500);
+//     }
+// }
+
+public function approveInventory($id)
+{
+    try {
+        // 1. Fetch report
+        $report = InventoryAdjustmentReports::find($id);
+
+        if (!$report) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Report not found'
+            ], 404);
+        }
+
+        // Prevent double approval
+        if ($report->status === 'Approved') {
+            return response()->json([
+                'status' => false,
+                'message' => 'Already approved'
+            ], 400);
+        }
+
+        // 2. Fetch stock record
+        $stock = Stock::where('product_id', $report->product_id)
+                      ->where('location_id', $report->location_id)
+                      ->first();
+
+        if (!$stock) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Stock record not found for this product & location'
+            ], 404);
+        }
+        // print_r($report);die;
+        // 3. Stock calculation
+
+        if($stock->adjustment == 'add'){
+
+       
+        $currentStock = $stock->current_stock;
+        $adjustment   = $report->quantity;  // +20 or -5
+        $newStock     = $currentStock + $adjustment;
+        }elseif($stock->adjustment == 'subtract'){
+
+            $currentStock = $stock->current_stock;
+        $adjustment   = $report->quantity;  // +20 or -5
+        $newStock     = $currentStock - $adjustment;
+
+        }else{
+        $currentStock = $stock->current_stock;
+        $adjustment   = $report->quantity;  // +20 or -5
+        $newStock     = $currentStock;
+        }
+        // 4. Update stocks table
+        $stock->current_stock = $newStock;
+        $stock->new_stock     = $newStock;
+        $stock->quantity      = $adjustment;
+        $stock->save();
+
+        // 5. Update Product opening stock (same logic)
+        $product = Product::find($report->product_id);
+
+        if ($product) {
+            $previousOpening = $product->opening_stock;
+            $newOpening = $previousOpening + $adjustment;
+
+            $product->opening_stock = $newOpening;
+            $product->save();
+        }
+
+        // 6. Mark report approved
+        $report->status = 'Approved';
+        $report->approval_date = now();
+        $report->save();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Stock & opening stock updated successfully',
+            'data' => [
+                'product_id' => $report->product_id,
+                'location_id' => $report->location_id,
+                'previous_stock' => $currentStock,
+                'previous_opening_stock' => $previousOpening ?? null,
+                'adjustment' => $adjustment,
+                'updated_stock' => $newStock,
+                'updated_opening_stock' => $newOpening ?? null,
+            ]
+        ]);
+
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => false,
+            'message' => $e->getMessage()
+        ], 500);
+    }
 }
 
 
