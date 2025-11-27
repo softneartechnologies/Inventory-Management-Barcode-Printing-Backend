@@ -1882,6 +1882,129 @@ public function update(Request $request, $id)
 //     return response()->json(['message' => 'Stock updated successfully'], 200);
 // }
 
+
+
+
+// new modification function 
+
+// public function updateStock(Request $request, $product_id)
+// {
+//     $product = Product::find($product_id);
+
+//     if (!$product) {
+//         return response()->json(['error' => 'Product not found'], 404);
+//     }
+
+//     // ✅ Validate request
+//     $validated = $request->validate([
+//         'stock_date' => 'nullable|string',
+//         'vendor_id' => 'nullable|string',
+//         'reason_for_update' => 'nullable|string',
+//         'comment' => 'nullable|string',
+//         'opening_stock' => 'required|numeric',
+//         'storage_location' => 'required|array',
+//         'storage_location.*.current_stock' => 'nullable|numeric',
+//         'storage_location.*.quantity' => 'required|numeric',
+//         'storage_location.*.unit_of_measure' => 'nullable|string',
+//         'storage_location.*.per_unit_cost' => 'nullable|string',
+//         'storage_location.*.total_cost' => 'nullable|string',
+//         'storage_location.*.location_id' => 'required|string',
+//         'storage_location.*.adjustment' => 'required|string|in:add,subtract,select',
+//     ]);
+
+//     $reqLocations = $validated['storage_location'];
+
+//     $totalProductStock = 0;
+//     $locationQuantities = [];
+
+//     foreach ($reqLocations as $loc) {
+//         $quantity = (float) $loc['quantity'];
+//         $currentStock = (float) ($loc['current_stock'] ?? 0);
+//         $adjustment = $loc['adjustment'];
+//         $locationId = $loc['location_id'];
+
+//         // ✅ Check for existing stock for this product-location
+//         $stock = Stock::where('product_id', $product_id)
+//             ->where('location_id', $locationId)
+//             ->first();
+
+//         $oldStock = (float) ($stock->current_stock ?? 0);
+//         $locationName = Location::where('id', $locationId)->value('name') ?? 'Unknown';
+
+//         // ✅ Calculate new stock based on adjustment type
+//         if ($adjustment === 'add') {
+//             $newStock = $oldStock + $quantity;
+//         } elseif ($adjustment === 'subtract') {
+//             if ($quantity > $oldStock) {
+//                 return response()->json([
+//                     'error' => "Cannot subtract {$quantity} from location {$locationName}. Available stock: {$oldStock}."
+//                 ], 422);
+//             }
+//             $newStock = $oldStock - $quantity;
+//         } else { // select
+//             $newStock = $currentStock;
+//         }
+
+//         // ✅ Create or update the stock record
+//         $stock = Stock::updateOrCreate(
+//             [
+//                 'product_id' => $product_id,
+//                 'location_id' => $locationId,
+//             ],
+//             [
+//                 'category_id' => $product->category_id,
+//                 'current_stock' => $newStock,
+//                 'new_stock' => $newStock,
+//                 'unit_of_measure' => $loc['unit_of_measure'] ?? null,
+//                 'per_unit_cost' => $loc['per_unit_cost'] ?? null,
+//                 'total_cost' => $loc['total_cost'] ?? null,
+//                 'quantity' => $newStock,
+//                 'adjustment' => $adjustment,
+//                 'stock_date' => $validated['stock_date'] ?? null,
+//                 'vendor_id' => $validated['vendor_id'] ?? null,
+//                 'reason_for_update' => $validated['reason_for_update'] ?? null,
+//                 'comment' => $validated['comment'] ?? null,
+//             ]
+//         );
+
+//         // ✅ Log adjustment in history
+//         InventoryAdjustmentReports::create([
+//             'product_id' => $product_id,
+//             'category_id' => $product->category_id,
+//             'current_stock' => $oldStock,
+//             'new_stock' => $newStock,
+//             'unit_of_measure' => $loc['unit_of_measure'] ?? null,
+//             'location_id' => $locationId,
+//             'quantity' => $quantity,
+//             'adjustment' => $adjustment,
+//             'stock_date' => $validated['stock_date'] ?? null,
+//             'vendor_id' => $validated['vendor_id'] ?? null,
+//             'reason_for_update' => $validated['reason_for_update'] ?? null,
+//         ]);
+
+//         // Track totals for product
+//         $locationQuantities[$locationId] = $newStock;
+//         $totalProductStock += $newStock;
+//     }
+
+//     // ✅ Update product totals and JSON fields
+//     // $product->update([
+//     //     'opening_stock' => $totalProductStock,
+//     //     'quantity' => json_encode(array_values($locationQuantities)),
+//     //     'location_id' => json_encode(array_keys($locationQuantities)),
+//     // ]);
+
+//     $product->update([
+//         'opening_stock' => $request->opening_stock,
+//         'quantity' => json_encode(array_values($locationQuantities)),
+//         'location_id' => json_encode(array_keys($locationQuantities)),
+//     ]);
+
+
+//     return response()->json(['message' => 'Stock added/updated successfully'], 200);
+// }
+
+
 public function updateStock(Request $request, $product_id)
 {
     $product = Product::find($product_id);
@@ -1936,11 +2059,11 @@ public function updateStock(Request $request, $product_id)
                 ], 422);
             }
             $newStock = $oldStock - $quantity;
-        } else { // select
+        } else { 
             $newStock = $currentStock;
         }
 
-        // ✅ Create or update the stock record
+        
         $stock = Stock::updateOrCreate(
             [
                 'product_id' => $product_id,
@@ -1998,8 +2121,6 @@ public function updateStock(Request $request, $product_id)
 
     return response()->json(['message' => 'Stock added/updated successfully'], 200);
 }
-
-
 
     
     public function editStock($product_id)
@@ -2422,6 +2543,8 @@ if ($request->filled('category') || $request->filled('reason') || $request->fill
             'reason' => $stock->reason_for_update ?? 'N/A',
             'location' => optional($stock->location)->name,
             'stock_date' => $stock->stock_date,
+            'approval_status' => $stock->status,
+            'approval_date' => $stock->approval_date,
             'created_at' => $stock->created_at,
             'updated_at' => $stock->updated_at,
         ];
