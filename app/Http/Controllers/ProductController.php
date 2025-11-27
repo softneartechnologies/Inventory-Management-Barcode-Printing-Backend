@@ -2064,33 +2064,37 @@ public function updateStock(Request $request, $product_id)
         }
 
         
-        $stock = Stock::updateOrCreate(
-            [
-                'product_id' => $product_id,
-                'location_id' => $locationId,
-            ],
-            [
-                'category_id' => $product->category_id,
-                'current_stock' => $newStock,
-                'new_stock' => $newStock,
-                'unit_of_measure' => $loc['unit_of_measure'] ?? null,
-                'per_unit_cost' => $loc['per_unit_cost'] ?? null,
-                'total_cost' => $loc['total_cost'] ?? null,
-                'quantity' => $newStock,
-                'adjustment' => $adjustment,
-                'stock_date' => $validated['stock_date'] ?? null,
-                'vendor_id' => $validated['vendor_id'] ?? null,
-                'reason_for_update' => $validated['reason_for_update'] ?? null,
-                'comment' => $validated['comment'] ?? null,
-            ]
-        );
+        // $stock = Stock::updateOrCreate(
+        //     [
+        //         'product_id' => $product_id,
+        //         'location_id' => $locationId,
+        //     ],
+        //     [
+        //         'category_id' => $product->category_id,
+        //         'current_stock' => $newStock,
+        //         'new_stock' => $newStock,
+        //         'unit_of_measure' => $loc['unit_of_measure'] ?? null,
+        //         'per_unit_cost' => $loc['per_unit_cost'] ?? null,
+        //         'total_cost' => $loc['total_cost'] ?? null,
+        //         'quantity' => $newStock,
+        //         'adjustment' => $adjustment,
+        //         'stock_date' => $validated['stock_date'] ?? null,
+        //         'vendor_id' => $validated['vendor_id'] ?? null,
+        //         'reason_for_update' => $validated['reason_for_update'] ?? null,
+        //         'comment' => $validated['comment'] ?? null,
+        //     ]
+        // );
 
         // ✅ Log adjustment in history
         InventoryAdjustmentReports::create([
             'product_id' => $product_id,
             'category_id' => $product->category_id,
-            'current_stock' => $oldStock,
-            'new_stock' => $newStock,
+            'current_stock' => $quantity,
+            'new_stock' => $quantity,
+            // 'current_stock' => $oldStock,
+            // 'new_stock' => $newStock,
+            'per_unit_cost' => $loc['per_unit_cost'] ?? null,
+            'total_cost' => $loc['total_cost'] ?? null,
             'unit_of_measure' => $loc['unit_of_measure'] ?? null,
             'location_id' => $locationId,
             'quantity' => $quantity,
@@ -5291,10 +5295,31 @@ public function approveInventory($id)
                       ->first();
 
         if (!$stock) {
-            return response()->json([
-                'status' => false,
-                'message' => 'Stock record not found for this product & location'
-            ], 404);
+            // return response()->json([
+            //     'status' => false,
+            //     'message' => 'Stock record not found for this product & location'
+            // ], 404);
+
+           
+        
+        $stock = Stock::Create(
+        [        'product_id' =>  $report->product_id,
+                'location_id' => $report->location_id,
+                'category_id' => $report->category_id,
+                'current_stock' => $report->current_stock,
+                'new_stock' => $report->new_stock,
+                'unit_of_measure' => $report->unit_of_measure ?? null,
+                'per_unit_cost' => $report->per_unit_cost ?? null,
+                'total_cost' => $report->total_cost ?? null,
+                'quantity' => $report->quantity,
+                'adjustment' => $report->adjustment,
+                'stock_date' => $report->stock_date ?? null,
+                'vendor_id' => $report->vendor_id ?? null,
+                'reason_for_update' => $report->reason_for_update ?? null,
+                'comment' => $report->reason_for_update ?? null,
+            ]
+        );
+
         }
         // print_r($report);die;
         // 3. Stock calculation
