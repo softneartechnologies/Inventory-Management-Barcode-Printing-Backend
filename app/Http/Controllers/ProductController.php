@@ -2473,14 +2473,22 @@ if ($request->filled('category') || $request->filled('start_date') || $request->
     }
 
     // ✅ Filter
-if ($request->filled('category') || $request->filled('reason') || $request->filled('start_date') || $request->filled('end_date')) {
+if ($request->filled('status') || $request->filled('category') || $request->filled('reason') || $request->filled('start_date') || $request->filled('end_date')) {
+    $status    = $request->status;
     $category    = $request->category;
     $reason = $request->reason;
     $start_date  = $request->start_date;
     $end_date    = $request->end_date;
 
-    $query->where(function ($q) use ($category,$reason, $start_date, $end_date) {
+    $query->where(function ($q) use ($status, $category,$reason, $start_date, $end_date) {
         
+       
+         if(!empty($status)){
+            $q->where('status',"{$status}");
+            
+        }
+
+
         // ✅ Category filter
         if (!empty($category)) {
             $q->whereHas('category', function ($catQuery) use ($category) {
