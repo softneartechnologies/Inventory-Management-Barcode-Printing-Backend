@@ -5489,7 +5489,7 @@ public function approveInventory($id)
         // 4. Update stocks table
         $stock->current_stock = $newStock;
         $stock->new_stock     = $newStock;
-        // $stock->quantity      = $adjustment;
+        $stock->total_cost      = $report->total_cost;
         $stock->quantity      = $newStock;
         $stock->save();
 
