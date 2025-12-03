@@ -5469,13 +5469,13 @@ public function approveInventory($id)
         // print_r($report);die;
         // 3. Stock calculation
 
-        if($stock->adjustment == 'add'){
+        if($report->adjustment == 'add'){
 
        
         $currentStock = $stock->current_stock;
         $adjustment   = $report->quantity;  // +20 or -5
         $newStock     = $currentStock + $adjustment;
-        }elseif($stock->adjustment == 'subtract'){
+        }elseif($report->adjustment == 'subtract'){
 
             $currentStock = $stock->current_stock;
         $adjustment   = $report->quantity;  // +20 or -5
