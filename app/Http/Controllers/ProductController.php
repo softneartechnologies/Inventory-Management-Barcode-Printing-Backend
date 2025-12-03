@@ -2116,11 +2116,11 @@ public function updateStock(Request $request, $product_id)
     //     'location_id' => json_encode(array_keys($locationQuantities)),
     // ]);
 
-    $product->update([
-        'opening_stock' => $request->opening_stock,
-        'quantity' => json_encode(array_values($locationQuantities)),
-        'location_id' => json_encode(array_keys($locationQuantities)),
-    ]);
+    // $product->update([
+        // 'opening_stock' => $request->opening_stock,
+        // 'quantity' => json_encode(array_values($locationQuantities)),
+        // 'location_id' => json_encode(array_keys($locationQuantities)),
+    // ]);
 
 
     return response()->json(['message' => 'Stock added/updated successfully'], 200);
@@ -5489,7 +5489,8 @@ public function approveInventory($id)
         // 4. Update stocks table
         $stock->current_stock = $newStock;
         $stock->new_stock     = $newStock;
-        $stock->quantity      = $adjustment;
+        // $stock->quantity      = $adjustment;
+        $stock->quantity      = $newStock;
         $stock->save();
 
         // 5. Update Product opening stock (same logic)
