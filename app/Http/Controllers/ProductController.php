@@ -2572,6 +2572,143 @@ if ($request->filled('status') || $request->filled('category') || $request->fill
 }
 
 
+public function inventoryAdjustmentsProductReport(Request $request, $id)
+{
+    // ✅ Base query with relationships
+
+     $querycount = InventoryAdjustmentReports::with([
+        'product.category',
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'location:id,name'
+    ])->where('new_stock', '>', 0)->where('product_id', $id)
+      ->where('quantity', '>', 0)->count();
+
+    $query = InventoryAdjustmentReports::with([
+        'product.category',
+        'category:id,name',
+        'vendor:id,vendor_name',
+        'location:id,name'
+    ])->where('new_stock', '>', 0)->where('product_id', $id)
+      ->where('quantity', '>', 0);
+
+    // ✅ Search functionality
+    if ($request->has('search') && !empty($request->search)) {
+        $search = $request->search;
+        $query->where(function ($q) use ($search) {
+            $q->whereHas('product', function ($p) use ($search) {
+                $p->where('product_name', 'like', "%{$search}%")
+                  ->orWhere('sku', 'like', "%{$search}%");
+            })
+            ->orWhereHas('vendor', function ($v) use ($search) {
+                $v->where('vendor_name', 'like', "%{$search}%");
+            })
+            ->orWhereHas('category', function ($c) use ($search) {
+                $c->where('name', 'like', "%{$search}%");
+            })
+            ->orWhere('reason_for_update', 'like', "%{$search}%")
+            ->orWhere('stock_date', 'like', "%{$search}%");
+        });
+    }
+
+    // ✅ Filter
+if ($request->filled('status') || $request->filled('category') || $request->filled('reason') || $request->filled('start_date') || $request->filled('end_date')) {
+    $status    = $request->status;
+    $category    = $request->category;
+    $reason = $request->reason;
+    $start_date  = $request->start_date;
+    $end_date    = $request->end_date;
+
+    $query->where(function ($q) use ($status, $category,$reason, $start_date, $end_date) {
+        
+       
+         if(!empty($status)){
+            $q->where('status',"{$status}");
+            
+        }
+
+
+        // ✅ Category filter
+        if (!empty($category)) {
+            $q->whereHas('category', function ($catQuery) use ($category) {
+                $catQuery->where('name', "{$category}");
+            });
+        }
+
+        if(!empty($reason)){
+            $q->where('reason_for_update',"{$reason}");
+            
+        }
+        
+        // ✅ Date range filter
+        if (!empty($start_date) && !empty($end_date)) {
+            $q->whereBetween('created_at', [$start_date, $end_date]);
+        } elseif (!empty($start_date)) {
+            $q->whereDate('created_at', '>=', $start_date);
+        } elseif (!empty($end_date)) {
+            $q->whereDate('created_at', '<=', $end_date);
+        }
+    });
+}
+
+
+    // ✅ Sorting
+    $sortBy = $request->get('sort_by', 'id'); // default id
+    $sortOrder = $request->get('sort_order', 'desc'); // default desc
+
+    // Prevent sorting by unknown columns directly to avoid SQL injection
+    $allowedSorts = ['id', 'stock_date', 'created_at', 'updated_at'];
+    if (!in_array($sortBy, $allowedSorts)) {
+        $sortBy = 'id';
+    }
+
+    $total_count = $query->count();
+    $query->orderBy($sortBy, $sortOrder);
+
+    // ✅ Pagination
+    $perPage = $request->get('per_page', 10);
+    $stocks = $query->paginate($perPage);
+
+    if ($stocks->currentPage() > $stocks->lastPage() && $stocks->lastPage() > 0) {
+            $stocks = $query->paginate($perPage, ['*'], 'page', $stocks->lastPage());
+        }
+
+    // ✅ Map data
+    $adjustments = $stocks->getCollection()->map(function ($stock) {
+        $adjustmentSymbol = $stock->adjustment == 'subtract' ? '-' : '+';
+        $newStock = $stock->adjustment == 'subtract'
+            ? $stock->current_stock - $stock->quantity
+            : $stock->current_stock + $stock->quantity;
+
+        return [
+            'id' => $stock->id,
+            'in_out_date_time' => $stock->stock_date,
+            'product_id' => $stock->product_id,
+            'product_name' => $stock->product->product_name ?? 'N/A',
+            'sku' => $stock->product->sku ?? 'N/A',
+            'category_name' => $stock->product->category->name ?? 'N/A',
+            'vendor_name' => $stock->vendor->vendor_name ?? 'N/A',
+            'previous_stock' => $stock->current_stock,
+            'new_stock' => $newStock,
+            'adjustment' => "{$adjustmentSymbol} {$stock->quantity}",
+            'reason' => $stock->reason_for_update ?? 'N/A',
+            'location' => optional($stock->location)->name,
+            'stock_date' => $stock->stock_date,
+            'approval_status' => $stock->status,
+            'approval_date' => $stock->approval_date,
+            'created_at' => $stock->created_at,
+            'updated_at' => $stock->updated_at,
+        ];
+    });
+
+    // Replace original collection with mapped one
+    $stocks->setCollection($adjustments);
+
+    return response()->json([
+        'total_count' => $total_count,
+        'inventory_adjustments' => $stocks
+    ], 200);
+}
 
     public function recentStockUpdate()
     {
