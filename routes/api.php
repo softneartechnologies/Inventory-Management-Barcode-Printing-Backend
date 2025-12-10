@@ -214,6 +214,7 @@ Route::prefix('reports')->group(function () {
     Route::get('inventoryAdjustments', [ProductController::class, 'inventoryAdjustmentsReport']); // Get all currencies
     
     Route::post('/inventory/approve/{id}', [ProductController::class, 'approveInventory']);
+    Route::post('/inventory/declined/{id}', [ProductController::class, 'declinedInventory']);
     Route::get('/inventory/movement_product/{id}', [ProductController::class, 'inventoryAdjustmentsProductReport']);
 
 });
