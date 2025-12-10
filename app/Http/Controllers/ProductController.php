@@ -5654,7 +5654,7 @@ public function declinedInventory($id)
 
         return response()->json([
             'status' => true,
-            'message' => 'Stock & opening stock updated successfully',
+            'message' => 'Stock & opening stock Declined successfully',
             'data' => [
                 'product_id' => $report->product_id,
                 // 'location_id' => $report->location_id,
