@@ -572,7 +572,7 @@ $low_stock_alert = $inventory_alert->count();
     $endDate   = $request->input('end_date');
 
     $topscanRecords = ScanInOutProduct::with([
-            'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+            'product:id,product_name,model,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
             'product.category:id,name',
             'product.orders:id,product_id,quantity',
             'vendor:id,vendor_name',
@@ -602,6 +602,7 @@ $low_stock_alert = $inventory_alert->count();
             return [
                 'product_id'       => $productId,
                 'product_name'     => optional($items->first()->product)->product_name ?? null,
+                'product_model'     => optional($items->first()->product)->model ?? null,
                 'sku'              => optional($items->first()->product)->sku ?? null,
                 'issue_count'      => $count,
                 'issue_percentage' => $percentage,
@@ -1190,7 +1191,7 @@ $low_stock_alert = $inventory_alert->count();
 
     // Fetch records with relations
 $topscanRecordsIssuesItemValue = ScanInOutProduct::with([
-    'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
+    'product:id,product_name,model,sku,inventory_alert_threshold,commit_stock_check,opening_stock,category_id',
     'product.category:id,name',
     'product.orders:id,product_id,quantity',
     'vendor:id,vendor_name',
@@ -1235,6 +1236,7 @@ $itemsCollection = $topscanRecordsIssuesItemValue
         return [
             'product_id'   => $productId,
             'product_name' => $product->product_name,
+            'product_model' => $product->model,
             'category'     => optional($product->category)->name,
             'issues_count' => $items->count(),
             'issue_value'  => $issueValue,
