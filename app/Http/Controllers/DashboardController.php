@@ -690,7 +690,75 @@ $low_stock_alert = $inventory_alert->count();
 
 
     // ✅ Get filters (default = last 5 months)
-    $startDate = $request->input('start_date') 
+    // $startDate = $request->input('start_date') 
+    //     ? Carbon::parse($request->input('start_date'))->startOfDay()
+    //     : Carbon::now()->subMonths(5)->startOfMonth();
+
+    // $endDate = $request->input('end_date') 
+    //     ? Carbon::parse($request->input('end_date'))->endOfDay()
+    //     : Carbon::now()->endOfMonth();
+
+    // // 🔎 Query data with filters
+    // $monthlyCountsRawItemTrend = ScanInOutProduct::with([
+    //         'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock,total_cost'
+    //     ])
+    //     ->select(
+    //         DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
+    //         'type',
+    //         'product_id',
+    //         DB::raw("SUM(out_quantity) as total"),
+    //         DB::raw("SUM(total_cost) as total_cost")
+            
+    //     )
+    //     ->whereBetween('created_at', [$startDate, $endDate])
+    //     ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'type', 'product_id')
+    //     ->orderBy('month')
+    //     ->get();
+
+    // // 🔧 Initialize months with default values
+    // $current = $startDate->copy();
+    // $allMonthsItemtrend = collect();
+    // while ($current <= $endDate) {
+    //     $allMonthsItemtrend->put($current->format('Y-M'), [
+    //         'total_quantity'       => 0,
+    //         'total_value'       => 0,
+    //         'item_name'            => '',
+    //         'product_name_quantity'=> '',
+    //     ]);
+    //     $current->addMonth();
+    // }
+
+    // // 📝 Fill month data
+    // foreach ($monthlyCountsRawItemTrend as $row) {
+    //     $month       = Carbon::parse($row->month)->format('Y-M');
+    //     $type        = strtolower($row->type);
+    //     $total       = (int) $row->total;
+    //     $productName = $row->product->product_name ?? 'N/A';
+
+    //     $data = $allMonthsItemtrend->get($month, [
+    //         'total_quantity'       => 0,
+    //         'total_value'       => 0,
+    //         'item_name'            => '',
+    //         'product_name_quantity'=> '',
+    //     ]);
+
+    //     $data[$type] = ($data[$type] ?? 0) + $total;
+    //     $data['item_name'] = $productName;
+    //     $data['total_quantity'] = ($data['in'] ?? 0) + ($data['out'] ?? 0);
+    //     $data['product_name_quantity'] = $productName . ' + ' . $data['total_quantity'];
+
+    //     $allMonthsItemtrend->put($month, $data);
+    // }
+
+    // // 📅 Sort months correctly
+    // $allMonthsItemtrend = $allMonthsItemtrend->sortBy(function ($value, $key) {
+    //     return Carbon::createFromFormat('Y-M', $key)->timestamp;
+    // });
+
+
+
+
+     $startDate = $request->input('start_date') 
         ? Carbon::parse($request->input('start_date'))->startOfDay()
         : Carbon::now()->subMonths(5)->startOfMonth();
 
@@ -698,59 +766,71 @@ $low_stock_alert = $inventory_alert->count();
         ? Carbon::parse($request->input('end_date'))->endOfDay()
         : Carbon::now()->endOfMonth();
 
-    // 🔎 Query data with filters
+    /* 🔎 Fetch data (NO total_cost from scan table) */
     $monthlyCountsRawItemTrend = ScanInOutProduct::with([
-            'product:id,product_name,sku,inventory_alert_threshold,commit_stock_check,opening_stock'
+            'product:id,product_name,total_cost'
         ])
         ->select(
             DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
             'type',
             'product_id',
-            DB::raw("SUM(out_quantity) as total")
+            DB::raw("SUM(out_quantity) as total_quantity")
         )
         ->whereBetween('created_at', [$startDate, $endDate])
-        ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'type', 'product_id')
-        ->orderBy('month')
+        ->groupBy(
+            DB::raw("DATE_FORMAT(created_at, '%Y-%m')"),
+            'type',
+            'product_id'
+        )
+        ->orderBy('month', 'asc')
         ->get();
 
-    // 🔧 Initialize months with default values
+    /* 🔧 Initialize all months */
     $current = $startDate->copy();
     $allMonthsItemtrend = collect();
+
     while ($current <= $endDate) {
         $allMonthsItemtrend->put($current->format('Y-M'), [
-            'total_quantity'       => 0,
-            'item_name'            => '',
-            'product_name_quantity'=> '',
+            'in'                     => 0,
+            'out'                    => 0,
+            'total_quantity'         => 0,
+            'total_cost'             => 0,
+            'item_name'              => '',
+            'product_name_quantity'  => '',
         ]);
         $current->addMonth();
     }
 
-    // 📝 Fill month data
+    /* 🧮 Process data */
     foreach ($monthlyCountsRawItemTrend as $row) {
+
         $month       = Carbon::parse($row->month)->format('Y-M');
-        $type        = strtolower($row->type);
-        $total       = (int) $row->total;
+        $type        = strtolower($row->type); // in / out
+        $quantity    = (int) $row->total_quantity;
+        $unitCost    = (float) ($row->product->total_cost ?? 0);
         $productName = $row->product->product_name ?? 'N/A';
 
-        $data = $allMonthsItemtrend->get($month, [
-            'total_quantity'       => 0,
-            'item_name'            => '',
-            'product_name_quantity'=> '',
-        ]);
+        $data = $allMonthsItemtrend->get($month);
 
-        $data[$type] = ($data[$type] ?? 0) + $total;
+        // Quantity
+        $data[$type] += $quantity;
+        $data['total_quantity'] = $data['in'] + $data['out'];
+
+        // 💰 Cost calculation
+        $data['total_cost'] += ($quantity * $unitCost);
+
+        // Product info
         $data['item_name'] = $productName;
-        $data['total_quantity'] = ($data['in'] ?? 0) + ($data['out'] ?? 0);
         $data['product_name_quantity'] = $productName . ' + ' . $data['total_quantity'];
 
         $allMonthsItemtrend->put($month, $data);
     }
 
-    // 📅 Sort months correctly
+    /* 📅 Sort months */
     $allMonthsItemtrend = $allMonthsItemtrend->sortBy(function ($value, $key) {
         return Carbon::createFromFormat('Y-M', $key)->timestamp;
     });
-
+    
     // return response()->json([
     //     'start_date' => $startDate->toDateString(),
     //     'end_date'   => $endDate->toDateString(),
