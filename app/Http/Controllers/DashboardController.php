@@ -1252,7 +1252,17 @@ $workstationStats = $allWorkstations->map(function ($workstation) use (
     $workstationTotalQuantity = $records->sum('out_quantity');
 
     // Same as quantity (change if you have cost column)
-    $totalOutCost = $records->sum('out_quantity');
+    // $totalOutCost = $records->sum('out_quantity');
+
+    // $totalOutCost = $records->sum(function ($record) {
+    //     return $record->product->total_cost ?? 0;
+    // });
+
+   $totalOutCost = $records->sum(function ($record) {
+    return (float) (optional($record->product)->total_cost ?? 0);
+});
+
+
 
     $percentage = ($totalOutQuantity > 0)
         ? round(($workstationTotalQuantity / $totalOutQuantity) * 100, 2)
