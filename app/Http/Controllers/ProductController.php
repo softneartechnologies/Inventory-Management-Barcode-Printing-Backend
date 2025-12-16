@@ -4808,12 +4808,15 @@ public function uploadCSV(Request $request)
             // BARCODE GENERATION
             // ----------------------------------------------------
             try {
-                $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
+                // $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
+                $savedBarcodePath = (new DNS1D)->getBarcodePNG($sku, 'C39');
                 $barcodePath = "public/barcodes/{$sku}.png";
                 Storage::put($barcodePath, $barcodeImage);
-                $savedBarcodePath = str_replace("public/", "storage/", $barcodePath);
+                // $savedBarcodePath = str_replace("public/", "storage/", $barcodePath);
+                
             } catch (\Throwable $e) {
-                $savedBarcodePath = null;
+                // $savedBarcodePath = null;
+                $savedBarcodePath = (new DNS1D)->getBarcodePNG($sku, 'C39');
             }
 
             // ----------------------------------------------------
@@ -4821,12 +4824,14 @@ public function uploadCSV(Request $request)
             // ----------------------------------------------------
             try {
                 $qrImage = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
+                $savedQRCodePath = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
                 $qrFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
                 $qrPath = "public/qrcode/{$qrFile}";
                 Storage::put($qrPath, $qrImage);
-                $savedQRCodePath = str_replace("public/", "storage/", $qrPath);
+                // $savedQRCodePath = str_replace("public/", "storage/", $qrPath);
             } catch (\Throwable $e) {
-                $savedQRCodePath = null;
+                // $savedQRCodePath = null;
+                $savedQRCodePath = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
             }
 
             // ----------------------------------------------------

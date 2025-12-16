@@ -165,45 +165,143 @@ $low_stock_alert = $inventory_alert->count();
 
 
         
-    $startDate = $request->filled('start_date') 
-        ? Carbon::parse($request->start_date)->startOfMonth()
-        : Carbon::now()->subMonths(5)->startOfMonth();
+    // $startDate = $request->filled('start_date') 
+    //     ? Carbon::parse($request->start_date)->startOfMonth()
+    //     : Carbon::now()->subMonths(5)->startOfMonth();
 
-    $endDate = $request->filled('end_date') 
-        ? Carbon::parse($request->end_date)->endOfMonth()
-        : Carbon::now()->endOfMonth();
+    // $endDate = $request->filled('end_date') 
+    //     ? Carbon::parse($request->end_date)->endOfMonth()
+    //     : Carbon::now()->endOfMonth();
 
-    // Fetch raw data
-    $monthlyCountsRaw = ScanInOutProduct::select(
-            DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
-            'type',
-            DB::raw("COUNT(*) as total")
-        )
-        ->whereIn('type', ['in', 'out'])
-        ->whereBetween('created_at', [$startDate, $endDate])
-        ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'type')
-        ->orderBy('month')
-        ->get();
+    // // Fetch raw data
+    // $monthlyCountsRaw = ScanInOutProduct::select(
+    //         DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
+    //         'type',
+    //         DB::raw("COUNT(*) as total")
+    //     )
+    //     ->whereIn('type', ['in', 'out'])
+    //     ->whereBetween('created_at', [$startDate, $endDate])
+    //     ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'type')
+    //     ->orderBy('month')
+    //     ->get();
 
-    // Build base structure (fill missing months with 0)
-    $allMonths = collect();
-    $current = $startDate->copy();
-    while ($current <= $endDate) {
-        $allMonths->put($current->format('Y-m'), ['in' => 0, 'out' => 0]);
-        $current->addMonth();
-    }
+    // // Build base structure (fill missing months with 0)
+    // $allMonths = collect();
+    // $current = $startDate->copy();
+    // while ($current <= $endDate) {
+    //     $allMonths->put($current->format('Y-m'), ['in' => 0, 'out' => 0]);
+    //     $current->addMonth();
+    // }
 
-    foreach ($monthlyCountsRaw as $row) {
-        $month = $row->month;
-        $type  = $row->type;
-        $total = $row->total;
+    // foreach ($monthlyCountsRaw as $row) {
+    //     $month = $row->month;
+    //     $type  = $row->type;
+    //     $total = $row->total;
 
-        $data = $allMonths->get($month);
-        $data[$type] = $total;
-        $allMonths->put($month, $data);
+    //     $data = $allMonths->get($month);
+    //     $data[$type] = $total;
+    //     $allMonths->put($month, $data);
 
        
+    // }
+
+  
+
+
+
+
+
+    $startDate = $request->filled('start_date') 
+    ? Carbon::parse($request->start_date)->startOfMonth()
+    : Carbon::now()->subMonths(5)->startOfMonth();
+
+$endDate = $request->filled('end_date') 
+    ? Carbon::parse($request->end_date)->endOfMonth()
+    : Carbon::now()->endOfMonth();
+
+/*
+|--------------------------------------------------------------------------
+| Fetch raw data (month, type, product)
+|--------------------------------------------------------------------------
+*/
+// $monthlyRaw = ScanInOutProduct::with('product')->select(
+//         DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month"),
+//         'type',
+//         'product_id'
+//     )
+//     ->whereIn('type', ['in', 'out'])
+//     ->whereBetween('created_at', [$startDate, $endDate])
+//     ->orderBy('month')
+//     ->get();
+
+$monthlyRaw = ScanInOutProduct::join('products', 'products.id', '=', 'scan_in_out_products.product_id')
+    ->select(
+        DB::raw("DATE_FORMAT(scan_in_out_products.created_at, '%Y-%m') as month"),
+        'scan_in_out_products.type',
+        'scan_in_out_products.product_id',
+        'products.*'
+    )
+    ->whereIn('scan_in_out_products.type', ['in', 'out'])
+    ->whereBetween('scan_in_out_products.created_at', [$startDate, $endDate])
+    ->orderBy('month')
+    ->get();
+
+/*
+|--------------------------------------------------------------------------
+| Build base structure (same as your code)
+|--------------------------------------------------------------------------
+*/
+$allMonths = collect();
+$current = $startDate->copy();
+
+while ($current <= $endDate) {
+    $allMonths->put($current->format('Y-m'), [
+        'in' => 0,
+        'out' => 0,
+        'in_product_list' => [],
+        'out_product_list' => []
+    ]);
+    $current->addMonth();
+}
+
+/*
+|--------------------------------------------------------------------------
+| Fill month-wise data
+|--------------------------------------------------------------------------
+*/
+$grouped = $monthlyRaw->groupBy(['month', 'type', 'product_id']);
+
+foreach ($grouped as $month => $types) {
+
+    if (!$allMonths->has($month)) {
+        continue;
     }
+
+    $monthData = $allMonths->get($month);
+
+    foreach ($types as $type => $products) {
+
+        foreach ($products as $productId => $rows) {
+
+            $qty = $rows->count();
+
+            if ($type === 'in') {
+                $monthData['in'] += $qty;
+                $monthData['in_product_list'] = $rows
+                ;
+            }
+
+            if ($type === 'out') {
+                $monthData['out'] += $qty;
+                $monthData['out_product_list']= $rows
+                ;
+            }
+        }
+    }
+
+    $allMonths->put($month, $monthData);
+}
+
 
     // return response()->json([
     //     'start_date' => $startDate->toDateString(),
