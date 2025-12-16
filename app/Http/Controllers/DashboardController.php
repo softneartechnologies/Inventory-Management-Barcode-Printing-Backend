@@ -1084,16 +1084,103 @@ foreach ($grouped as $month => $types) {
             // ];
 
 
-             $startDate = $request->input('start_date');
-    $endDate   = $request->input('end_date');
+    //          $startDate = $request->input('start_date');
+    // $endDate   = $request->input('end_date');
 
-    $allWorkstations = WorkStation::select('id', 'name')->get();
+    // $allWorkstations = WorkStation::select('id', 'name')->get();
 
-    // Base query for issued records
-    $issuedQuery = ScanInOutProduct::where('type', 'out');
+    // // Base query for issued records
+    // $issuedQuery = ScanInOutProduct::where('type', 'out');
 
-    // ✅ Apply date filters
-    $issuedQuery->when($startDate && $endDate, function ($q) use ($startDate, $endDate) {
+    // // ✅ Apply date filters
+    // $issuedQuery->when($startDate && $endDate, function ($q) use ($startDate, $endDate) {
+    //     $q->whereBetween('created_at', [
+    //         Carbon::parse($startDate)->startOfDay(),
+    //         Carbon::parse($endDate)->endOfDay()
+    //     ]);
+    // })
+    // ->when($startDate && !$endDate, function ($q) use ($startDate) {
+    //     $q->whereDate('created_at', '>=', Carbon::parse($startDate)->startOfDay());
+    // })
+    // ->when(!$startDate && $endDate, function ($q) use ($endDate) {
+    //     $q->whereDate('created_at', '<=', Carbon::parse($endDate)->endOfDay());
+    // });
+
+    // // Fetch issued records
+    // $issuedRecords = $issuedQuery->get();
+
+    // // Summed issued records
+    // $issuedRecordsSum = (clone $issuedQuery)
+    //     ->whereNotNull('out_quantity')
+    //     ->whereNotNull('work_station_id')
+    //     ->groupBy('work_station_id')
+    //     ->selectRaw('work_station_id, SUM(out_quantity) as total_out_quantity')
+    //     ->get();
+
+    // $totalOutQuantity = $issuedRecordsSum->sum('total_out_quantity');
+
+    // // Group by workstation
+    // $groupedByWorkstation = $issuedRecords->groupBy('work_station_id');
+
+    // $workstationStats = $allWorkstations->map(function ($workstation) use ($groupedByWorkstation, $totalOutQuantity) {
+    //     $records = $groupedByWorkstation->get($workstation->id, collect());
+
+    //     $workstationTotalQuantity = $records->sum('out_quantity');
+    //     $totalOutCost = $records->sum('out_quantity');
+
+    //     $percentage = ($totalOutQuantity > 0)
+    //         ? round(($workstationTotalQuantity / $totalOutQuantity) * 100, 2)
+    //         : 0;
+
+    //     return [
+    //         'workstation_id'     => $workstation->id,
+    //         'workstation_name'   => $workstation->name,
+    //         'total_out_quantity' => $workstationTotalQuantity,
+    //         'total_out_cost' => $totalOutCost,
+    //         'percentage'         => $percentage,
+    //     ];
+    // });
+
+    // // Sort by highest total_out_quantity
+    // $sortedWorkstationStats = $workstationStats
+    //     ->sortByDesc('total_out_quantity')
+    //     ->values()
+    //     ->toArray();
+
+    //      $issuedRecordsWorkstation = [
+    //             'start_date'          => $startDate,
+    //             'end_date'            => $endDate,
+    //             'total_out_quantity' => $totalOutQuantity,
+    //             'total_out_cost' => $total_out_cost,
+    //             'workstation_stats'  => $sortedWorkstationStats,
+    //         ];
+
+
+    $startDate = $request->input('start_date');
+$endDate   = $request->input('end_date');
+
+/*
+|--------------------------------------------------------------------------
+| All Workstations
+|--------------------------------------------------------------------------
+*/
+$allWorkstations = WorkStation::select('id', 'name')->get();
+
+/*
+|--------------------------------------------------------------------------
+| Base Query (Issued / OUT records)
+|--------------------------------------------------------------------------
+*/
+// $issuedQuery = ScanInOutProduct::with('product.total_cost')->where('type', 'out');
+$issuedQuery = ScanInOutProduct::with('product:id,product_name,total_cost')
+    ->where('type', 'out');
+/*
+|--------------------------------------------------------------------------
+| Apply Date Filters
+|--------------------------------------------------------------------------
+*/
+$issuedQuery
+    ->when($startDate && $endDate, function ($q) use ($startDate, $endDate) {
         $q->whereBetween('created_at', [
             Carbon::parse($startDate)->startOfDay(),
             Carbon::parse($endDate)->endOfDay()
@@ -1106,51 +1193,104 @@ foreach ($grouped as $month => $types) {
         $q->whereDate('created_at', '<=', Carbon::parse($endDate)->endOfDay());
     });
 
-    // Fetch issued records
-    $issuedRecords = $issuedQuery->get();
+/*
+|--------------------------------------------------------------------------
+| Fetch Issued Records
+|--------------------------------------------------------------------------
+*/
+$issuedRecords = $issuedQuery->get();
 
-    // Summed issued records
-    $issuedRecordsSum = (clone $issuedQuery)
-        ->whereNotNull('out_quantity')
-        ->whereNotNull('work_station_id')
-        ->groupBy('work_station_id')
-        ->selectRaw('work_station_id, SUM(out_quantity) as total_out_quantity')
-        ->get();
+/*
+|--------------------------------------------------------------------------
+| Summed Issued Records (Workstation wise)
+|--------------------------------------------------------------------------
+*/
+$issuedRecordsSum = (clone $issuedQuery)
+    ->whereNotNull('out_quantity')
+    ->whereNotNull('work_station_id')
+    ->groupBy('work_station_id')
+    ->selectRaw('work_station_id, SUM(out_quantity) as total_out_quantity')
+    ->get();
 
-    $totalOutQuantity = $issuedRecordsSum->sum('total_out_quantity');
+/*
+|--------------------------------------------------------------------------
+| Overall Totals
+|--------------------------------------------------------------------------
+*/
+$totalOutQuantity = $issuedRecordsSum->sum('total_out_quantity');
 
-    // Group by workstation
-    $groupedByWorkstation = $issuedRecords->groupBy('work_station_id');
+/* 
+| If you don't have a cost column, quantity = cost
+| Otherwise replace out_quantity with out_cost
+*/
+// $total_out_cost = $issuedRecords->sum('out_quantity');
+// $total_out_cost = $issuedRecords->product['total_cost'] ?? 0;
 
-    $workstationStats = $allWorkstations->map(function ($workstation) use ($groupedByWorkstation, $totalOutQuantity) {
-        $records = $groupedByWorkstation->get($workstation->id, collect());
+$total_out_cost = $issuedRecordsSum->sum(function ($record) {
+    return $record->product->total_cost ?? 0;
+});
 
-        $workstationTotalQuantity = $records->sum('out_quantity');
+/*
+|--------------------------------------------------------------------------
+| Group Records by Workstation
+|--------------------------------------------------------------------------
+*/
+$groupedByWorkstation = $issuedRecords->groupBy('work_station_id');
 
-        $percentage = ($totalOutQuantity > 0)
-            ? round(($workstationTotalQuantity / $totalOutQuantity) * 100, 2)
-            : 0;
+/*
+|--------------------------------------------------------------------------
+| Workstation Statistics
+|--------------------------------------------------------------------------
+*/
+$workstationStats = $allWorkstations->map(function ($workstation) use (
+    $groupedByWorkstation,
+    $totalOutQuantity
+) {
 
-        return [
-            'workstation_id'     => $workstation->id,
-            'workstation_name'   => $workstation->name,
-            'total_out_quantity' => $workstationTotalQuantity,
-            'percentage'         => $percentage,
-        ];
-    });
+    $records = $groupedByWorkstation->get($workstation->id, collect());
 
-    // Sort by highest total_out_quantity
-    $sortedWorkstationStats = $workstationStats
-        ->sortByDesc('total_out_quantity')
-        ->values()
-        ->toArray();
+    $workstationTotalQuantity = $records->sum('out_quantity');
 
-         $issuedRecordsWorkstation = [
-                'start_date'          => $startDate,
-                'end_date'            => $endDate,
-                'total_out_quantity' => $totalOutQuantity,
-                'workstation_stats'  => $sortedWorkstationStats,
-            ];
+    // Same as quantity (change if you have cost column)
+    $totalOutCost = $records->sum('out_quantity');
+
+    $percentage = ($totalOutQuantity > 0)
+        ? round(($workstationTotalQuantity / $totalOutQuantity) * 100, 2)
+        : 0;
+
+    return [
+        'workstation_id'      => $workstation->id,
+        'workstation_name'    => $workstation->name,
+        'total_out_quantity'  => $workstationTotalQuantity,
+        'total_out_cost'      => $totalOutCost,
+        'percentage'          => $percentage,
+    ];
+});
+
+/*
+|--------------------------------------------------------------------------
+| Sort by Highest Quantity
+|--------------------------------------------------------------------------
+*/
+$sortedWorkstationStats = $workstationStats
+    ->sortByDesc('total_out_quantity')
+    ->values()
+    ->toArray();
+
+/*
+|--------------------------------------------------------------------------
+| Final Response
+|--------------------------------------------------------------------------
+*/
+$issuedRecordsWorkstation = [
+    'start_date'          => $startDate,
+    'end_date'            => $endDate,
+    'total_out_quantity'  => $totalOutQuantity,
+    'total_out_cost'      => $total_out_cost,
+    'workstation_stats'   => $sortedWorkstationStats,
+];
+
+
     // return response()->json([
     //     'start_date'          => $startDate,
     //     'end_date'            => $endDate,
