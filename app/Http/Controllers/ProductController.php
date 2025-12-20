@@ -4810,8 +4810,8 @@ public function uploadCSV(Request $request)
             try {
                 // $barcodeImage = (new DNS1D)->getBarcodePNG($sku, 'C39');
                 $savedBarcodePath = (new DNS1D)->getBarcodePNG($sku, 'C39');
-                $barcodePath = "public/barcodes/{$sku}.png";
-                Storage::put($barcodePath, $barcodeImage);
+                // $barcodePath = "public/barcodes/{$sku}.png";
+                // Storage::put($barcodePath, $barcodeImage);
                 // $savedBarcodePath = str_replace("public/", "storage/", $barcodePath);
                 
             } catch (\Throwable $e) {
@@ -4825,9 +4825,9 @@ public function uploadCSV(Request $request)
             try {
                 $qrImage = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
                 $savedQRCodePath = (new DNS2D)->getBarcodePNG(json_encode(['sku' => $sku]), 'QRCODE');
-                $qrFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
-                $qrPath = "public/qrcode/{$qrFile}";
-                Storage::put($qrPath, $qrImage);
+                // $qrFile = 'qrcode_' . time() . '_' . uniqid() . '.png';
+                // $qrPath = "public/qrcode/{$qrFile}";
+                // Storage::put($qrPath, $qrImage);
                 // $savedQRCodePath = str_replace("public/", "storage/", $qrPath);
             } catch (\Throwable $e) {
                 // $savedQRCodePath = null;
